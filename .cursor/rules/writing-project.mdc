@@ -1,0 +1,57 @@
+---
+description: Long-form bilingual essay norms — pipeline layers, markup, lexicons
+alwaysApply: true
+---
+
+# Writing project norms
+
+This workspace is for long-form bilingual essay writing (English + Sanskrit), not software development.
+
+## Pipeline (per chapter)
+
+```
+rough.md → draft.md → stage.md → output.md
+```
+
+| File | Role | `\sa{key}` |
+|------|------|------------|
+| `rough.md` | Expand ideas; persona debate | **Yes** — markers live here |
+| `draft.md` | Settled prose after promote | **No** — Devanagari (compiled) |
+| `stage.md` | Critical edit; content-of-record once it exists | **No** — Devanagari |
+| `output.md` | Final pass after green flag | **No** — Devanagari |
+
+- Debate / personas → edit **rough** (with `\sa{}`).
+- “Promote to draft” → `python scripts/pipeline.py promote-draft <chapter>` — compiles rough → draft (Devanagari).
+- “New stage” → `python scripts/pipeline.py new-stage <chapter>`, then critically edit **stage**.
+- “Need rough space” → `python scripts/pipeline.py refresh-rough <chapter>` (stage → rough). Re-introduce `\sa{}` for new Sanskrit terms (refresh copies Devanagari prose).
+- “Compile draft” → `python scripts/expand_sa.py <chapter> --compile-to draft` (same as promote’s expand step).
+- “Green flag / compile output” → `python scripts/expand_sa.py <chapter> --compile-to output` (stage → output).
+- Do not hand-expand `\sa{}` in chat. Do not put `\sa{}` back into draft/stage/output unless intentionally reverting workflow.
+
+## Sanskrit markup (rough only)
+
+- Bare call: `\sa{key}` (e.g. `\sa{dharma}`).
+- **First-time define:** `\sa{halahal = हलाहल}` — sync adds glossary + rewrites to `\sa{halahal}`.
+- After Devanagari is known, agent may autofill IAST/gloss as `llm-provisional` / `inline-define`. **Never invent Devanagari.**
+- Cursor snippets: `.vscode/sa.code-snippets`. Type `sa-<key>` for a full marker, or bare key inside `\sa{…}`.
+
+## Other files
+
+- Lexicon: `lexicons/glossary.md`, chapter `glossary.md`, `lexicons/allowlist.md`
+- Ignore-once: chapter `review-log.md`
+- Pāṇini notes: `references/panini-notes.md`
+
+## Language review
+
+- Prefer **stage** (or **draft** if stage not seeded). Expect Devanagari, not `\sa{}`.
+- Respect allowlist and review-log.
+- Actions: keep / ignore once / ignore forever / add.
+
+## Critique
+
+- Unsettled + markers → **rough**; settled Devanagari → **draft**; polish → **stage**.
+- Separate form / lexicon / prayoga. Never invent sūtra IDs.
+
+## Extensibility
+
+Refine rules/skills later; prefer glossary/allowlist updates over new conventions without asking.

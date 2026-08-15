@@ -1,0 +1,502 @@
+{
+  "sa-brahma": {
+    "prefix": [
+      "sa-brahma"
+    ],
+    "body": [
+      "\\sa{brahma}"
+    ],
+    "description": "ब्रह्मा — Brahmā (creator in the narrative)",
+    "scope": "markdown"
+  },
+  "sakey-brahma": {
+    "prefix": [
+      "brahma"
+    ],
+    "body": [
+      "brahma"
+    ],
+    "description": "ब्रह्मा — Brahmā (creator in the narrative) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-cancala": {
+    "prefix": [
+      "sa-cancala"
+    ],
+    "body": [
+      "\\sa{cancala}"
+    ],
+    "description": "चंचल — not stationary (essay); not merely fickle/flickering/spry",
+    "scope": "markdown"
+  },
+  "sakey-cancala": {
+    "prefix": [
+      "cancala"
+    ],
+    "body": [
+      "cancala"
+    ],
+    "description": "चंचल — not stationary (essay); not merely fickle/flickering/spry (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-cancalata": {
+    "prefix": [
+      "sa-cancalata"
+    ],
+    "body": [
+      "\\sa{cancalata}"
+    ],
+    "description": "चंचलता — noun of cañcala; light synonyms often undersell it",
+    "scope": "markdown"
+  },
+  "sakey-cancalata": {
+    "prefix": [
+      "cancalata"
+    ],
+    "body": [
+      "cancalata"
+    ],
+    "description": "चंचलता — noun of cañcala; light synonyms often undersell it (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-darsana": {
+    "prefix": [
+      "sa-darsana"
+    ],
+    "body": [
+      "\\sa{darsana}"
+    ],
+    "description": "दर्शन — seeing; way of beholding; closer to “landscape” than assertive philosophy (essay contrast)",
+    "scope": "markdown"
+  },
+  "sakey-darsana": {
+    "prefix": [
+      "darsana"
+    ],
+    "body": [
+      "darsana"
+    ],
+    "description": "दर्शन — seeing; way of beholding; closer to “landscape” than assertive philosophy (essay contrast) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-dharma": {
+    "prefix": [
+      "sa-dharma"
+    ],
+    "body": [
+      "\\sa{dharma}"
+    ],
+    "description": "धर्म — holding; set of capacities/tools that uphold existence (essay sense)",
+    "scope": "markdown"
+  },
+  "sakey-dharma": {
+    "prefix": [
+      "dharma"
+    ],
+    "body": [
+      "dharma"
+    ],
+    "description": "धर्म — holding; set of capacities/tools that uphold existence (essay sense) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-halahal": {
+    "prefix": [
+      "sa-halahal"
+    ],
+    "body": [
+      "\\sa{halahal}"
+    ],
+    "description": "हलाहल — halahala (mythic poison; working)",
+    "scope": "markdown"
+  },
+  "sakey-halahal": {
+    "prefix": [
+      "halahal"
+    ],
+    "body": [
+      "halahal"
+    ],
+    "description": "हलाहल — halahala (mythic poison; working) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-kaam": {
+    "prefix": [
+      "sa-kaam"
+    ],
+    "body": [
+      "\\sa{kaam}"
+    ],
+    "description": "काम — desire; wanting",
+    "scope": "markdown"
+  },
+  "sakey-kaam": {
+    "prefix": [
+      "kaam"
+    ],
+    "body": [
+      "kaam"
+    ],
+    "description": "काम — desire; wanting (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-krodha": {
+    "prefix": [
+      "sa-krodha"
+    ],
+    "body": [
+      "\\sa{krodha}"
+    ],
+    "description": "क्रोध — anger",
+    "scope": "markdown"
+  },
+  "sakey-krodha": {
+    "prefix": [
+      "krodha"
+    ],
+    "body": [
+      "krodha"
+    ],
+    "description": "क्रोध — anger (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-kundalini": {
+    "prefix": [
+      "sa-kundalini"
+    ],
+    "body": [
+      "\\sa{kundalini}"
+    ],
+    "description": "कुण्डलिनी — coiled / kundalini as described in stotra and experience",
+    "scope": "markdown"
+  },
+  "sakey-kundalini": {
+    "prefix": [
+      "kundalini"
+    ],
+    "body": [
+      "kundalini"
+    ],
+    "description": "कुण्डलिनी — coiled / kundalini as described in stotra and experience (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-lobha": {
+    "prefix": [
+      "sa-lobha"
+    ],
+    "body": [
+      "\\sa{lobha}"
+    ],
+    "description": "लोभ — greed",
+    "scope": "markdown"
+  },
+  "sakey-lobha": {
+    "prefix": [
+      "lobha"
+    ],
+    "body": [
+      "lobha"
+    ],
+    "description": "लोभ — greed (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-ma": {
+    "prefix": [
+      "sa-ma"
+    ],
+    "body": [
+      "\\sa{ma}"
+    ],
+    "description": "मा — to measure, limit, give shape, create/build",
+    "scope": "markdown"
+  },
+  "sakey-ma": {
+    "prefix": [
+      "ma"
+    ],
+    "body": [
+      "ma"
+    ],
+    "description": "मा — to measure, limit, give shape, create/build (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-ma-letter": {
+    "prefix": [
+      "sa-ma-letter"
+    ],
+    "body": [
+      "\\sa{ma-letter}"
+    ],
+    "description": "म — the phoneme/letter ma; affinity with me/my/mine / मैं/मेरा",
+    "scope": "markdown"
+  },
+  "sakey-ma-letter": {
+    "prefix": [
+      "ma-letter"
+    ],
+    "body": [
+      "ma-letter"
+    ],
+    "description": "म — the phoneme/letter ma; affinity with me/my/mine / मैं/मेरा (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-mad": {
+    "prefix": [
+      "sa-mad"
+    ],
+    "body": [
+      "\\sa{mad}"
+    ],
+    "description": "मद — pride; intoxication with self",
+    "scope": "markdown"
+  },
+  "sakey-mad": {
+    "prefix": [
+      "mad"
+    ],
+    "body": [
+      "mad"
+    ],
+    "description": "मद — pride; intoxication with self (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-manas": {
+    "prefix": [
+      "sa-manas"
+    ],
+    "body": [
+      "\\sa{manas}"
+    ],
+    "description": "मन — mind / manas as existential center in the essay (“I am”)",
+    "scope": "markdown"
+  },
+  "sakey-manas": {
+    "prefix": [
+      "manas"
+    ],
+    "body": [
+      "manas"
+    ],
+    "description": "मन — mind / manas as existential center in the essay (“I am”) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-mang": {
+    "prefix": [
+      "sa-mang"
+    ],
+    "body": [
+      "\\sa{mang}"
+    ],
+    "description": "माङ् — alternate citation of the mā root as listed in some texts",
+    "scope": "markdown"
+  },
+  "sakey-mang": {
+    "prefix": [
+      "mang"
+    ],
+    "body": [
+      "mang"
+    ],
+    "description": "माङ् — alternate citation of the mā root as listed in some texts (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-matsarya": {
+    "prefix": [
+      "sa-matsarya"
+    ],
+    "body": [
+      "\\sa{matsarya}"
+    ],
+    "description": "मात्सर्य — envy; jealousy",
+    "scope": "markdown"
+  },
+  "sakey-matsarya": {
+    "prefix": [
+      "matsarya"
+    ],
+    "body": [
+      "matsarya"
+    ],
+    "description": "मात्सर्य — envy; jealousy (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-maya": {
+    "prefix": [
+      "sa-maya"
+    ],
+    "body": [
+      "\\sa{maya}"
+    ],
+    "description": "माया — that by which something is measured/limited; evaluative tool",
+    "scope": "markdown"
+  },
+  "sakey-maya": {
+    "prefix": [
+      "maya"
+    ],
+    "body": [
+      "maya"
+    ],
+    "description": "माया — that by which something is measured/limited; evaluative tool (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-moh": {
+    "prefix": [
+      "sa-moh"
+    ],
+    "body": [
+      "\\sa{moh}"
+    ],
+    "description": "मोह — delusion; attachment-confusion",
+    "scope": "markdown"
+  },
+  "sakey-moh": {
+    "prefix": [
+      "moh"
+    ],
+    "body": [
+      "moh"
+    ],
+    "description": "मोह — delusion; attachment-confusion (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-moksa": {
+    "prefix": [
+      "sa-moksa"
+    ],
+    "body": [
+      "\\sa{moksa}"
+    ],
+    "description": "मोक्ष — release; in essay folk gloss: मम् उच्च क्षयः",
+    "scope": "markdown"
+  },
+  "sakey-moksa": {
+    "prefix": [
+      "moksa"
+    ],
+    "body": [
+      "moksa"
+    ],
+    "description": "मोक्ष — release; in essay folk gloss: मम् उच्च क्षयः (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-rudrayamala": {
+    "prefix": [
+      "sa-rudrayamala"
+    ],
+    "body": [
+      "\\sa{rudrayamala}"
+    ],
+    "description": "रुद्रयामल — Rudrayāmala (source tradition cited for the stotra)",
+    "scope": "markdown"
+  },
+  "sakey-rudrayamala": {
+    "prefix": [
+      "rudrayamala"
+    ],
+    "body": [
+      "rudrayamala"
+    ],
+    "description": "रुद्रयामल — Rudrayāmala (source tradition cited for the stotra) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-sadripu": {
+    "prefix": [
+      "sa-sadripu"
+    ],
+    "body": [
+      "\\sa{sadripu}"
+    ],
+    "description": "षड्रिपु — the six inner enemies / six dimensions of valuation",
+    "scope": "markdown"
+  },
+  "sakey-sadripu": {
+    "prefix": [
+      "sadripu"
+    ],
+    "body": [
+      "sadripu"
+    ],
+    "description": "षड्रिपु — the six inner enemies / six dimensions of valuation (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-sarasvati": {
+    "prefix": [
+      "sa-sarasvati"
+    ],
+    "body": [
+      "\\sa{sarasvati}"
+    ],
+    "description": "सरस्वती — Sarasvatī",
+    "scope": "markdown"
+  },
+  "sakey-sarasvati": {
+    "prefix": [
+      "sarasvati"
+    ],
+    "body": [
+      "sarasvati"
+    ],
+    "description": "सरस्वती — Sarasvatī (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-sri-sarasvati-stotram": {
+    "prefix": [
+      "sa-sri-sarasvati-stotram"
+    ],
+    "body": [
+      "\\sa{sri-sarasvati-stotram}"
+    ],
+    "description": "श्रीसरस्वतीस्तोत्रम् — hymn to Sarasvatī",
+    "scope": "markdown"
+  },
+  "sakey-sri-sarasvati-stotram": {
+    "prefix": [
+      "sri-sarasvati-stotram"
+    ],
+    "body": [
+      "sri-sarasvati-stotram"
+    ],
+    "description": "श्रीसरस्वतीस्तोत्रम् — hymn to Sarasvatī (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-visnu": {
+    "prefix": [
+      "sa-visnu"
+    ],
+    "body": [
+      "\\sa{visnu}"
+    ],
+    "description": "विष्णु — Viṣṇu (in the narrative)",
+    "scope": "markdown"
+  },
+  "sakey-visnu": {
+    "prefix": [
+      "visnu"
+    ],
+    "body": [
+      "visnu"
+    ],
+    "description": "विष्णु — Viṣṇu (in the narrative) (inside \\sa{})",
+    "scope": "markdown"
+  },
+  "sa-ya": {
+    "prefix": [
+      "sa-ya"
+    ],
+    "body": [
+      "\\sa{ya}"
+    ],
+    "description": "या — to go, attain, move",
+    "scope": "markdown"
+  },
+  "sakey-ya": {
+    "prefix": [
+      "ya"
+    ],
+    "body": [
+      "ya"
+    ],
+    "description": "या — to go, attain, move (inside \\sa{})",
+    "scope": "markdown"
+  }
+}

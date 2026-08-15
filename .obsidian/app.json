@@ -1,0 +1,16 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "essays/01-darshan-of-kundalini",
+  "attachmentFolderPath": "essays/attachments",
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "defaultViewMode": "source",
+  "userIgnoreFilters": [
+    ".git/",
+    ".cursor/",
+    "scratch/",
+    ".tmp/"
+  ]
+}

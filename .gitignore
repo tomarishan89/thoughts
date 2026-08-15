@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/sa.code-snippets
+!.cursor/
+
+# Local scratch (optional; create as needed)
+scratch/
+.tmp/
+*.tmp
+
+# Python (if v2 tools added later)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# Obsidian — keep shared vault settings; ignore personal/workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache
+.obsidian/space-settings.json
+.trash/
+
+# Generated Sanskrit previews (regenerate anytime; output.md may be kept intentionally)
+essays/**/draft-preview.md
+essays/**/rough-preview.md
