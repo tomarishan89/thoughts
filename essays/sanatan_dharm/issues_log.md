@@ -117,6 +117,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.60: Normalized Multi-Scale Complex Measure Metric.** Formulated $\|\mu\|_{\text{norm}} = \sqrt{(\mu_{\mathbb{R}}/\mu_{\mathbb{R}}^\ominus)^2 + (\mu_{\mathfrak{Im}}/\mathcal{H}^\ominus)^2}$ in §2.1 (Eq. 129), eliminating $c^{-4}$ informational suppression in biological regimes.
 - [X] **ISSUE-6.61: Directional Macauley Brackets in Capped Drucker-Prager Yield Plasticity.** Replaced absolute value with $\langle -\operatorname{Tr}(\boldsymbol{\sigma})/3 \rangle_+$ and $\langle \operatorname{Tr}(\boldsymbol{\sigma})/3 \rangle_+$ in §2.3.1 (Eq. 221), preventing compressive crushing failure under hydrostatic tension.
 - [X] **ISSUE-6.62: Trans-Junctional Bioelectric Work with Individual Electrochemical Potentials.** Formulated $\sum_i (\mu_i^{\text{chem}} + z_i F \Delta \psi_{j \to \mathbb{S}})\mathbf{J}_i$ in §5.2 (Eq. 478), preserving electrogenic power transfer across electroneutral junctions.
+- [X] **ISSUE-6.63: Second Law Positivity in Cubic Shock Dissipation.** Added Macauley ramp bracket $\langle \cdot \rangle_+^3$ to cubic shock jump in §2.3.5 (Eq. 306), ensuring non-negative entropy production $\sigma_{\text{shock}} \ge 0$ unconditionally.
+- [X] **ISSUE-6.64: Starling Osmotic Driving Force in Interstitial Darcy Flow.** Incorporated $-\sum_i \sigma_i R T \nabla c_i$ into Darcy fluid velocity in §5.2 (Eq. 468), coupling tissue fluid flow to metabolic solute gradients.
+- [X] **ISSUE-6.65: Macromolecular van 't Hoff Solute Pressure in Donnan Lysis.** Added $+\sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}}$ to Donnan osmotic overpressure in §4.4 (Eq. 413), preventing unphysical vanishing of osmotic pressure at isoelectric points.
+- [X] **ISSUE-6.66: Two-Branch Eikonal Arrival & Sub-Critical Wavefront Quenching.** Formulated super-critical propagation branch vs sub-critical quenching threshold $r_{\text{crit}} \equiv D_{\text{diff}}/v_{\text{bistable}}$ in §4.3 (Eq. 381), eliminating the logarithmic pole.
 
 ---
 

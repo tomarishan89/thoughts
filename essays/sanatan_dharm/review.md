@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 14)
+# Formal Mathematical Physics Peer Review Report (Iteration 15)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 14 (Micro-Continuum Scaling, Relativistic Drag, and Bioelectric Gauge Audit)  
+**Review Version:** Iteration 15 (Shock Entropy Positivity, Starling Poromechanics, and Eikonal Nucleation Quenching Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Relativistic Drag on Quasi-Static Flow, Information Measure $c^{-4}$ Suppression, Tensile Crushing Failure, and Bioelectric Power Cancellation)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Negative Cubic Shock Entropy, Missing Starling Osmotic Gradient, Omitted van 't Hoff Solute Pressure, and Sub-Critical Eikonal Quenching)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the thirteenth-order resolution of parabolic well-posedness, dimensional rates, and Lyapunov starvation signs, a rigorous downstream audit of low-velocity limits, complex measure norms, yield envelopes, and bioelectric junction coupling reveals **four major calculation breakdowns and physical scaling anomalies**:
+Following the fourteenth-order resolution of relativistic interface drag, normalized measure scaling, directional Macauley yield caps, and trans-junctional bioelectric potential work, an exhaustive mathematical and thermodynamic audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four deep downstream calculation and continuum closure errors**:
 
-1. **Relativistic Speed-of-Light Drag on Quasi-Static Flow (§5.1, Eq. 440):** In the creeping limit ($\Delta \phi \ll \rho_{\text{int}} c^2 / L_0$), the regularizer $\rho_{\text{int}} c \sim 1500 \, \mathrm{Pa\cdot s}$ dominates the physical fluid viscosity $\nu_{AB} \sim 10^{-3} \, \mathrm{Pa\cdot s}$ by a factor of $10^6$, artificially slowing biological engulfment by the speed of light $c$.
-2. **Quadratic $c^{-4}$ Erasure of Biological Information (§2.1, Eq. 129):** The Landauer mass conversion parameter $\kappa_{\text{info}} \equiv \frac{k_B T \ln 2}{c^2} \sim 10^{-38} \, \mathrm{kg/bit}$ suppresses the informational component by 32 orders of magnitude in the Euclidean norm $\|\mu(E)\| = \sqrt{\mu_{\mathbb{R}}^2 + \kappa_{\text{info}}^2 \mu_{\mathfrak{Im}}^2}$ ($\Delta \|\mu\| \sim 10^{-44} \, \mathrm{kg}$ upon total DNA lysis), rendering the ontological measure physically uncoupled from biological information.
-3. **Tensile Collapse in Capped Drucker-Prager Yield Plasticity (§2.3.1, Eq. 217):** Formulating the compressive crushing threshold with an absolute value $p_{\text{crush}} - \frac{|\operatorname{Tr}(\boldsymbol{\sigma})|}{3}$ causes pure hydrostatic tension ($\operatorname{Tr}(\boldsymbol{\sigma}) > 0$) to trigger compressive crushing failure before reaching the cavitation limit.
-4. **Identical Vanishing of Bioelectric Power under Electroneutrality (§5.2, Eq. 476):** Multiplying the electrostatic potential difference $(\psi - \psi_{\mathbb{S}})$ by the total charge flux $\sum z_i F \mathbf{J}_i$ identically evaluates to zero under the electroneutral current constraint $\sum z_i F (\mathbf{J}_i \cdot \hat{n}) \equiv 0$, eliminating all bioelectric power transmission across gap junctions.
+1. **Second Law Violation from Negative Cubic Shock Entropy Jump (§2.3.5, Eq. 305):** In the Rankine-Hugoniot shock dissipation rate density, over-predicting the challenge ($\kappa_{\text{stress}}\Delta \mathcal{I} > \sigma_{\text{impact}}$) makes $\Delta \sigma_{\text{eff}} < 0$, causing the cubic term $(\Delta \sigma_{\text{eff}})^3$ to become negative. This generates spontaneous negative entropy production in violation of the Second Law.
+2. **Missing Starling Osmotic Gradient in Darcy-Nernst-Planck Flow (§5.2, Eq. 466):** Fluid velocity in porous biological matrices is driven by the total water potential gradient $\nabla(P - \Pi)$. Omitting $-\sum_i \sigma_i R T \nabla c_i$ from Darcy's law completely decouples fluid velocity from massive osmotic metabolite concentration gradients.
+3. **Omission of Macromolecular van 't Hoff Solute Pressure in Donnan Lysis (§4.4, Eq. 413):** The Donnan excess formula accounts only for the mobile counter-ions and omits the direct ideal solute pressure $+R T c_{\text{protein}}$ of the trapped polyanionic macromolecules themselves, causing osmotic pressure to artificially vanish at the isoelectric point ($z_{\text{protein}} \to 0$).
+4. **Logarithmic Pole & Sub-Critical Wavefront Quenching in Eikonal Arrival Time (§4.3, Eq. 381):** The closed-form Eikonal arrival integral has a logarithmic singularity at $r_0 = r_{\text{crit}} \equiv D_{\text{diff}}/v_{\text{bistable}}$. Microscopic receptor-scale impacts ($r_0 \ll r_{\text{crit}}$) undergo curvature-induced wavefront quenching (nucleation death), rendering the unregularized arrival metric singular.
 
 ---
 
-## 2. Fourteenth-Order Calculation Breakdown Matrix
+## 2. Fifteenth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 14 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 15 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 5.1          │ Interface Velocity (Eq. 440)  │ ρ_int·c ≈ 1500 Pa·s >> ν_fluid (slows biology by 10⁶)  │
-│ 2. Section 2.1          │ Measure Metric (Eq. 129)      │ κ_info² ∝ c⁻⁴ suppresses information by 10⁻³² in norm  │
-│ 3. Section 2.3.1        │ Drucker-Prager Cap (Eq. 217)  │ Absolute value |Tr(σ)| triggers crushing under tension │
-│ 4. Section 5.2          │ Syncytial Power (Eq. 476)     │ (ψ - ψ_S)·Σ z_i F J_i vanishes under electroneutrality │
+│ 1. Section 2.3.5        │ Shock Entropy (Eq. 305)       │ (Δσ_eff)³ < 0 yields negative entropy production       │
+│ 2. Section 5.2          │ Interstitial Darcy (Eq. 466)  │ Omits Starling osmotic gradient -Σ σ_i RT ∇c_i         │
+│ 3. Section 4.4          │ Donnan Pressure (Eq. 413)     │ Omits +RT c_protein macromolecular van 't Hoff solute  │
+│ 4. Section 4.3          │ Eikonal Arrival (Eq. 381)     │ Log singularity at r_0 = D/v; ignores wave quenching   │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,72 +40,73 @@ Following the thirteenth-order resolution of parabolic well-posedness, dimension
 
 ---
 
-### Critique 1: Relativistic Speed-of-Light Drag on Quasi-Static Flow (§5.1, Eq. 440)
+### Critique 1: Second Law Violation from Negative Cubic Shock Entropy Jump (§2.3.5, Eq. 305)
 
 * **The Formula in Draft:**  
-  $$\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A$$
+  $$\sigma_{\text{shock}}(\chi) = \left[ \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right)^2}{2 E_{\text{elastic}} T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left( \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right)^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]$$
 
-* **The Physical Calculation Flaw:**  
-  In the quasi-static limit ($\Delta \phi \to 0$), the denominator reduces to $(\nu_{AB} + \rho_{\text{int}} c)c$. Dividing numerator by denominator yields:
-  $$\mathbf{v}_n^{AB} \approx \frac{L_0 \Delta \phi_{AB}}{\nu_{AB} + \rho_{\text{int}} c} \hat{n}_A$$
-  For a standard lipid bilayer membrane, $\rho_{\text{int}} \approx 5 \times 10^{-6} \, \mathrm{kg/m^2}$, which gives $\rho_{\text{int}} c \approx 1500 \, \mathrm{Pa\cdot s}$. Because aqueous fluid viscosity is $\nu_{AB} \approx 10^{-3} \, \mathrm{Pa\cdot s}$, $\rho_{\text{int}} c$ is **$10^6$ times larger than the actual viscosity**. The speed of light $c$ artificially slows down creeping biological cell motion by six orders of magnitude.
+* **The Mathematical Flaw:**  
+  Let $\Delta \sigma_{\text{eff}}(\chi) \equiv \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi)$. When predictive cortical pre-stressing exceeds impact traction ($\kappa_{\text{stress}}\Delta \mathcal{I} > \sigma_{\text{impact}}$), $\Delta \sigma_{\text{eff}} < 0$.  
+  Because cubing preserves the negative sign, $(\Delta \sigma_{\text{eff}})^3 < 0$. Under high-amplitude shocks where the cubic term dominates, the total shock entropy production rate density becomes strictly negative:
+  $$\sigma_{\text{shock}}(\chi) < 0 \quad (\text{Violation of the Second Law of Thermodynamics})$$
+  In shock physics, the cubic Rankine-Hugoniot entropy jump is an irreversible dissipation term that applies strictly to compressive shock fronts ($\Delta \sigma_{\text{eff}} > 0$). When over-mitigated ($\Delta \sigma_{\text{eff}} \le 0$), compressive shocks do not form.
 
 * **Required Proof Closure:**  
-  The inertial regularizer must scale with the physical front velocity $v_n$, not the invariant speed of light $c$. The Galilean/Lorentz transition must decouple non-relativistic hydrodynamic friction $\nu_{AB}$ from high-traction relativistic saturation:
-  $$\boxed{\mathbf{v}_n^{AB}(x, t) = \frac{v_{\text{Stokes}}^{AB}(x, t)}{\sqrt{1 + \left(\frac{v_{\text{Stokes}}^{AB}(x, t)}{c}\right)^2 + \frac{\rho_{\text{int}} \|v_{\text{Stokes}}^{AB}\|}{\nu_{AB}}}} \hat{n}_A, \qquad v_{\text{Stokes}}^{AB} \equiv \frac{L_0 \Delta \phi_{AB}(x, t)}{\nu_{AB}}}$$
-  ensuring $\mathbf{v}_n^{AB} \to \frac{L_0 \Delta \phi}{\nu_{AB}}\hat{n}_A$ as $v/c \to 0$ and $\|\mathbf{v}_n^{AB}\| < c$ as $\Delta \phi \to \infty$.
+  Formulate the cubic hydrodynamic shock entropy jump with the positive Macauley ramp operator $\langle x \rangle_+ \equiv \max(0, x)$:
+  $$\boxed{\sigma_{\text{shock}}(\chi) = \left[ \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right)^2}{2 E_{\text{elastic}} T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
+  guaranteeing $\sigma_{\text{shock}}(\chi) \ge 0$ unconditionally across all predictive investment levels $\chi \ge 0$.
 
 ---
 
-### Critique 2: Quadratic $c^{-4}$ Suppression of Biological Information in the Measure Norm (§2.1, Eq. 129)
+### Critique 2: Missing Starling Osmotic Gradient in Darcy-Nernst-Planck Fluid Velocity (§5.2, Eq. 466)
 
 * **The Formula in Draft:**  
-  $$\|\mu(E)\| \equiv \sqrt{\mu_{\mathbb{R}}^2(E) + \kappa_{\text{info}}^2 \mu_{\mathfrak{Im}}^2(E)}, \qquad \kappa_{\text{info}} \equiv \frac{k_B T \ln 2}{c^2} \, \left[\frac{\mathrm{kg}}{\mathrm{bit}}\right]$$
+  $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}} - \mathbf{K}_{\text{eo}} \nabla \psi$$
 
 * **The Mathematical Flaw:**  
-  For a living eukaryotic cell, $\mu_{\mathbb{R}} \sim 10^{-12} \, \mathrm{kg}$ and $\mu_{\mathfrak{Im}} \sim 6 \times 10^9 \, \mathrm{bits}$. With $\kappa_{\text{info}} \approx 3.3 \times 10^{-38} \, \mathrm{kg/bit}$, the informational mass-equivalent is $\kappa_{\text{info}}\mu_{\mathfrak{Im}} \sim 2 \times 10^{-28} \, \mathrm{kg}$.  
-  Evaluating the complex Euclidean norm:
-  $$\|\mu(E)\| = \mu_{\mathbb{R}} \sqrt{1 + \left(\frac{\kappa_{\text{info}}\mu_{\mathfrak{Im}}}{\mu_{\mathbb{R}}}\right)^2} \approx \mu_{\mathbb{R}} \left( 1 + 2 \times 10^{-32} \right)$$
-  Upon complete cellular DNA cleavage ($\mu_{\mathfrak{Im}} \to 0$), the measure norm changes by only $\Delta \|\mu\| \sim 10^{-44} \, \mathrm{kg}$, making the ontological metric mathematically insensitive to biological life or death.
+  In porous biological tissues, cellular syncytia, and interstitia, fluid filtration is governed by the **classical Kedem-Katchalsky / Starling poromechanical balance**, where fluid velocity is driven by the gradient of the total chemical water potential ($\Psi_{\text{water}} = P - \Pi_{\text{osmotic}}$):
+  $$\nabla \Psi_{\text{water}} = \nabla P_{\text{interstitial}} - \sum_i \sigma_i R T \nabla c_i$$
+  When constituent nodes $\{E^j\}$ exchange high-concentration metabolites ($c_{\text{glucose}}, c_{\text{ATP}}$), osmotic concentration gradients $\|R T \nabla c_i\| \sim 10^{10} \, \mathrm{Pa/m}$ are $10^4$ to $10^6$ times larger than hydrostatic pressure gradients $\|\nabla P_{\text{interstitial}}\|$. Omitting Starling osmotic suction completely decouples interstitial fluid flow from metabolic gradients.
 
 * **Required Proof Closure:**  
-  The complex state measure is a multi-scale manifold measure defined in **relative non-equilibrium state space ($\Omega_{\mathbb{C}}$)**, where physical mass is scaled by baseline rest mass $\mu_{\mathbb{R}}^\ominus$ and informational capacity is scaled by the Landauer thermodynamic bit capacity of the cortex $\mathcal{H}^\ominus \equiv \frac{\mathcal{G}_{\text{metabolic}}}{k_B T \ln 2}$:
-  $$\boxed{\mu(E) \equiv \frac{\mu_{\mathbb{R}}(E)}{\mu_{\mathbb{R}}^\ominus} + i \, \frac{\mu_{\mathfrak{Im}}(E)}{\mathcal{H}^\ominus} \in \mathbb{C}, \qquad \|\mu(E)\|_{\text{norm}} \equiv \sqrt{\left(\frac{\mu_{\mathbb{R}}(E)}{\mu_{\mathbb{R}}^\ominus}\right)^2 + \left(\frac{\mu_{\mathfrak{Im}}(E)}{\mathcal{H}^\ominus}\right)^2}}$$
-  preserving $\mathcal{O}(1)$ sensitivity across both physical substrate loss and informational carrier cleavage.
+  Augment the Darcy-Onsager fluid momentum equation with the Starling osmotic reflection sum:
+  $$\boxed{\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \left( \nabla P_{\text{interstitial}} - \sum_i \sigma_i R T \nabla c_i \right) - \mathbf{K}_{\text{eo}} \nabla \psi}$$
+  where $\sigma_i \in [0, 1]$ is the Staverman reflection coefficient for solute species $i$.
 
 ---
 
-### Critique 3: Tensile Collapse in Capped Drucker-Prager Yield Plasticity (§2.3.1, Eq. 217)
+### Critique 3: Omission of Macromolecular van 't Hoff Solute Pressure in Donnan Lysis (§4.4, Eq. 413)
 
 * **The Formula in Draft:**  
-  $$\phi(x, t) \equiv \min\left\{ \sigma_{\text{yield}} - \left( \sqrt{3 J_2} + \alpha_{\text{DP}} \operatorname{Tr}(\boldsymbol{\sigma}) \right), \; p_{\text{crush}} - \frac{|\operatorname{Tr}(\boldsymbol{\sigma})|}{3}, \; \sigma_{\text{cavitation}} - \frac{\operatorname{Tr}(\boldsymbol{\sigma})}{3} \right\}$$
+  $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}}$$
 
 * **The Mathematical Flaw:**  
-  The first invariant is $I_1 \equiv \operatorname{Tr}(\boldsymbol{\sigma})$. Compressive pressure is $p = -\frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}) > 0$, while tensile hydrostatic stress has $\operatorname{Tr}(\boldsymbol{\sigma}) > 0$.  
-  By taking the absolute value $\frac{|\operatorname{Tr}(\boldsymbol{\sigma})|}{3}$ in the middle term, a material under pure hydrostatic tension ($\operatorname{Tr}(\boldsymbol{\sigma}) = +300 \, \mathrm{MPa}$) evaluates to $p_{\text{crush}} - 100 \, \mathrm{MPa} < 0$, triggering **compressive crushing failure under tensile stress**.
+  The total internal solute concentration at Donnan equilibrium is the sum of permeable ions ($c_+^{\text{int}} + c_-^{\text{int}}$) **plus the trapped polyanionic macromolecules themselves ($c_{\text{protein}}$)**:
+  $$c_{\text{total}}^{\text{internal}} = 2 \sqrt{c_0^2 + \left(\frac{|z_{\text{protein}}| c_{\text{protein}}}{2}\right)^2} + c_{\text{protein}}$$
+  In the low-salt limit ($c_0 \to 0, r_D \to 0$), the bracket in Eq. 413 yields $|z_{\text{protein}}| c_{\text{protein}}$, capturing only the mobile counter-ions ($c_+^{\text{int}} = |z_{\text{protein}}| c_{\text{protein}}$) and completely omitting the direct ideal solute pressure $+R T c_{\text{protein}}$ of the macromolecular species. At the isoelectric point ($z_{\text{protein}} \to 0$), Eq. 413 predicts zero osmotic pressure, ignoring the trapped protein mass.
 
 * **Required Proof Closure:**  
-  The crushing cap must activate strictly under hydrostatic compression ($p > 0$), formulated via the positive Macauley bracket $\langle \cdot \rangle_+ \equiv \max(0, \cdot)$:
-  $$\boxed{\phi(x, t) \equiv \min\left\{ \sigma_{\text{yield}} - \left( \sqrt{3 J_2} + \alpha_{\text{DP}} \operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}}) \right), \; p_{\text{crush}} - \left\langle -\frac{\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})}{3} \right\rangle_+, \; \sigma_{\text{cavitation}} - \left\langle \frac{\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})}{3} \right\rangle_+ \right\}}$$
+  Include the direct macromolecular van 't Hoff solute contribution:
+  $$\boxed{\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} \quad [\mathrm{Pa}]}$$
+  where $\sigma_{\text{protein}} \approx 1$ for impermeant cytoplasmic macromolecules.
 
 ---
 
-### Critique 4: Identical Vanishing of Bioelectric Power under Electroneutrality (§5.2, Eq. 476)
+### Critique 4: Logarithmic Singularity & Sub-Critical Wavefront Quenching in Eikonal Arrival Time (§4.3, Eq. 381)
 
 * **The Formula in Draft:**  
-  $$\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \left( \mu_i^{\text{chem}} + z_i F \left( \psi - \psi_{\mathbb{S}} \right) \right) \mathbf{J}_i \right) \cdot \hat{n}_j \, dA$$
-  under junctional electroneutrality:
-  $$\sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \equiv 0$$
+  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{d_g^{\partial E} - r_0}{v_{\text{bistable}}} + \frac{D_{\text{diff}}}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_{\text{diff}}}{v_{\text{bistable}} r_0 - D_{\text{diff}}} \right)$$
 
 * **The Mathematical Flaw:**  
-  Expanding the electrical term across the integral yields:
-  $$\int_{\mathcal{A}} \left( \psi - \psi_{\mathbb{S}} \right) \left[ \sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \right] dA = \int_{\mathcal{A}} \left( \psi - \psi_{\mathbb{S}} \right) \cdot [0] \, dA \equiv 0$$
-  The bioelectric potential work cancels identically to zero.
+  The critical nucleation radius is $r_{\text{crit}} \equiv \frac{D_{\text{diff}}}{v_{\text{bistable}}}$. In biophysical signaling ($\mathrm{Ca}^{2+}$, Rho-kinase), $D_{\text{diff}} \sim 10^{-10} \, \mathrm{m^2/s}, v_{\text{bistable}} \sim 10^{-5} \, \mathrm{m/s} \implies r_{\text{crit}} \approx 10 \, \mu\mathrm{m}$.  
+  When an impact excites a sub-critical receptor patch of radius $r_0 \ll r_{\text{crit}}$ ($r_0 \sim 10 \, \mathrm{nm}$):
+  1. The denominator inside the logarithm $v_{\text{bistable}} r_0 - D_{\text{diff}} < 0$ becomes negative.
+  2. At $r_0 = r_{\text{crit}}$, the integral diverges logarithmically ($\Delta t \to \infty$).
+  3. In excitable media (Keener, 1986), sub-critical patches undergo **wavefront quenching (nucleation death)**: the chemical wavefront collapses and fails to propagate entirely.
 
 * **Required Proof Closure:**  
-  In electrohydrodynamic membranes, bioelectric power is transferred via the individual electrochemical potential $\tilde{\mu}_i \equiv \mu_i^\ominus + R T \ln\left(\frac{\gamma_i c_i}{c_i^\ominus}\right) + z_i F \psi_i$. The individual ionic current components do not vanish ($z_i F \mathbf{J}_i \neq \mathbf{0}$); only their sum vanishes. The correct gauge-invariant junctional power density is:
-  $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \left( \mu_i^\ominus + R T \ln \left( \frac{\gamma_i c_i}{c_i^\ominus} \right) + z_i F \Delta \psi_{j \to \mathbb{S}} \right) \mathbf{J}_i \right) \cdot \hat{n}_j \, dA}$$
-  where $\Delta \psi_{j \to \mathbb{S}} \equiv \psi_j(x, t) - \psi_{\mathbb{S}}$ is the local trans-junctional potential drop.
+  Formulate the physical arrival metric with the effective nucleation patch threshold $r_{\text{eff}} \equiv \max(r_0, \, r_{\text{crit}} + \epsilon_0)$, where $\epsilon_0 \equiv \frac{\mathcal{E}_{\text{stimulus}}}{\sigma_{\text{cortex}} v_{\text{bistable}}}$, and declare the sub-critical quenching condition:
+  $$\boxed{\Delta t_{\text{response}}(x) = \begin{cases} \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_{\text{diff}}}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_{\text{diff}}}{v_{\text{bistable}} r_{\text{eff}} - D_{\text{diff}}} \right) & \text{for } r_0 \ge r_{\text{crit}} \text{ (Super-Critical Propagation)} \\ +\infty \implies \mathbf{R}_{\text{active}} \equiv \mathbf{0} & \text{for } r_0 < r_{\text{crit}} \text{ (Sub-Critical Wavefront Quenching)} \end{cases}}$$
 
 ---
 
@@ -113,18 +114,18 @@ Following the thirteenth-order resolution of parabolic well-posedness, dimension
 
 The implementing agent must carry out the following surgical modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Fix Relativistic Drag in §5.1 (Eq. 440):** Replace the linear $\rho_{\text{int}} c$ regularizer with the dimensionless Stokes-Lorentz regularizer $v_n = \frac{v_{\text{Stokes}}}{\sqrt{1 + (v_{\text{Stokes}}/c)^2 + \rho_{\text{int}} v_{\text{Stokes}} / \nu_{AB}}}$, restoring exact $\frac{L_0 \Delta \phi}{\nu_{AB}}$ creeping kinematics.
-2. **Fix Complex Measure Scaling in §2.1 (Eq. 129):** Formulate the normalized dimensionless measure norm $\|\mu(E)\|_{\text{norm}} = \sqrt{(\mu_{\mathbb{R}}/\mu_{\mathbb{R}}^\ominus)^2 + (\mu_{\mathfrak{Im}}/\mathcal{H}^\ominus)^2}$, preserving sensitivity to genetic ledger cleavage.
-3. **Fix Compressive/Tensile Yield Cap in §2.3.1 (Eq. 217):** Replace absolute value $|\operatorname{Tr}(\boldsymbol{\sigma})|$ with Macauley brackets $\langle -\operatorname{Tr}(\boldsymbol{\sigma})/3 \rangle_+$ and $\langle \operatorname{Tr}(\boldsymbol{\sigma})/3 \rangle_+$.
-4. **Fix Bioelectric Trans-Junctional Power in §5.2 (Eq. 476):** Formulate trans-junctional power using the individual electrochemical potential $\tilde{\mu}_i = \mu_i^{\text{chem}} + z_i F \Delta \psi_{j\to\mathbb{S}}$ so that electrogenic ion channels transmit electrical power across zero net current.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.59 through 6.62 to the resolved milestones log and maintain active theoretical frontiers.
+1. **Enforce Shock Entropy Positivity in §2.3.5 (Eq. 305):** Wrap the cubic Rankine-Hugoniot shock overpressure in Macauley brackets $\langle \sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta \mathcal{I}(\chi) \rangle_+^3$.
+2. **Add Starling Osmotic Gradients to Darcy Velocity in §5.2 (Eq. 466):** Insert $-\sum_i \sigma_i R T \nabla c_i$ into the bracketed hydraulic driving force $\nabla P_{\text{interstitial}}$.
+3. **Add Macromolecular van 't Hoff Solute Pressure in §4.4 (Eq. 413):** Insert $+\sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}}$ into the Kedem-Katchalsky osmotic sum.
+4. **Regularize Eikonal Arrival & Wavefront Quenching in §4.3 (Eq. 381):** Formulate the two-branch super-critical propagation vs sub-critical nucleation quenching threshold $r_{\text{crit}} \equiv D_{\text{diff}}/v_{\text{bistable}}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.63 through 6.66 to the resolved milestones log and maintain active theoretical frontiers.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 14
+## 5. Master Revision Checklist for Iteration 15
 
-- [x] **Item 1:** Update interface velocity $\mathbf{v}_n^{AB}$ in §5.1 (Eq. 440) to decouple Stokes creeping viscosity from high-traction Lorentz saturation.
-- [x] **Item 2:** Update complex ontological measure metric in §2.1 (Eq. 129) with normalized thermodynamic bit/mass scales $(\mu_{\mathbb{R}}^\ominus, \mathcal{H}^\ominus)$.
-- [x] **Item 3:** Update Capped Drucker-Prager structural margin in §2.3.1 (Eq. 217) with directional Macauley brackets $\langle \pm \operatorname{Tr}(\boldsymbol{\sigma})/3 \rangle_+$.
-- [x] **Item 4:** Update syncytial coupling operator $\mathcal{O}_{\text{coupling}}$ in §5.2 (Eq. 476) with trans-junctional potential drop $\Delta \psi_{j \to \mathbb{S}}$.
+- [x] **Item 1:** Add Macauley bracket $\langle \cdot \rangle_+^3$ to cubic shock entropy rate in §2.3.5 (Eq. 305) to ensure $\sigma_{\text{shock}} \ge 0$ unconditionally.
+- [x] **Item 2:** Add Starling osmotic gradient term $-\sum \sigma_i R T \nabla c_i$ to Darcy fluid velocity in §5.2 (Eq. 466).
+- [x] **Item 3:** Add macromolecular solute van 't Hoff term $+\sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}}$ to Donnan osmotic pressure in §4.4 (Eq. 413).
+- [x] **Item 4:** Formulate two-branch Eikonal arrival with sub-critical quenching condition ($r_0 < D/v \implies \mathbf{R}_{\text{active}} \equiv \mathbf{0}$) in §4.3 (Eq. 381).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
