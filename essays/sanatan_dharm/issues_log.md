@@ -103,6 +103,7 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.46: Permittivity Scaling in Maxwell Field Pressure.** Scaled field gradient by dielectric permittivity $\varepsilon_0 \varepsilon_r$ in §1.2.2 (Line 78) to guarantee Pascal $[\mathrm{Pa}]$ dimensions.
 - [X] **ISSUE-6.47: Intensive Local Landauer Erasure Density Rate.** Replaced extensive $\dot{\mathcal{H}}$ with local bit erasure density rate $\dot{h}_{\mathfrak{Im}}(x, t) \in [\mathrm{bits/(m^3 \cdot s)}]$ in §2.2 (Eq. 189).
 - [X] **ISSUE-6.48: Volumetric Information-Stress Coupling Coefficient.** Formulated $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{cortex}}} \in [\mathrm{Pa/bit}]$ for active pre-stressing in §2.3.5 of `draft.md`.
+- [X] **ISSUE-6.49: Outward Normal Kinematics and Parabolic Sign Convention in Level-Set PDE.** Corrected convective material derivative $\frac{\partial \phi}{\partial t} - v_n \|\nabla \phi\| = 0$ and restored forward parabolic symbol $-\gamma_{\text{surface}}\Delta_{\partial E}\phi$ in §2.3.3 of `draft.md`.
 
 ---
 
