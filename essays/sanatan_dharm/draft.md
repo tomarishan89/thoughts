@@ -26,7 +26,7 @@ The **Universal State Space ($\Omega$)** is defined across two canonical manifol
 Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the rate of state change, and "viscosity" ($\nu$) represents systemic resistance to state deformation.
 
 * **Field-Theoretic Viscosity (Regulated Green-Kubo Formalism):** For entities whose structural boundaries are maintained by gauge field stress tensors $\mathbf{T}^{\text{field}}$ (electromagnetic, gravitational, or nuclear), the macroscopic field viscosity is obtained via the Green-Kubo fluctuation-dissipation integral equipped with a thermal screening regulator (Debye mass $m_D \sim g T$) to prevent infrared long-time tail divergences ($\tau^{-d/2}$):
-  $$\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{V k_B T} \int_0^\infty \left\langle T_{xy}^{\text{field}}(0) \, T_{xy}^{\text{field}}(\tau) \right\rangle \exp\left( -\left(\frac{m_D c^2}{\hbar} + \epsilon\right)\tau \right) d\tau$$
+  $$\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{k_B T} \int_V d^3x \int_0^\infty \left\langle T_{xy}^{\text{field}}(\mathbf{0}, 0) \, T_{xy}^{\text{field}}(\mathbf{x}, \tau) \right\rangle \exp\left( -\left(\frac{m_D c^2}{\hbar} + \epsilon\right)\tau \right) d\tau$$
 * **Rest-Mass Confinement Condition ($\nu > 0$):** An entity carrying non-zero rest mass ($m > 0$) sweeps out a **timelike worldtube ($u^\mu u_\mu = -c^2, v < c$)**. Internal viscosity $\nu > 0$ represents the **Israel-Stewart shear relaxation resistance ($\tau_\pi > 0$)** that couples internal stress to the metric, preventing stress-energy from dissolving into unconfined null radiation at $c$. Along collective null causal boundaries $\mathcal{N}$ (e.g., event horizons), the Damour-Navier-Stokes membrane paradigm yields an effective horizon surface viscosity $\eta_{\text{horizon}} = \frac{c^3}{16\pi G}$ satisfying the Kovtun-Son-Starinets holographic bound $\frac{\eta}{s} \ge \frac{\hbar}{4\pi k_B}$.
 
 ---
@@ -59,12 +59,10 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
   $$\boxed{\hat{\rho}_E(t) = \Psi\left[\hat{\rho}_E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}\right] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) \hat{\rho}_E(0)}$$
 
 * **Step 5 (Magnus Lie Algebra Expansion, Convergence Radius & Topological Hysteresis):**  
-  For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the true exponential generator $\Omega_{\text{Magnus}}(t)$ satisfies the **Magnus Expansion** (Magnus, 1954):
+  For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the algebraic generator satisfies the formal **Magnus Expansion** (Magnus, 1954):
   $$\Psi\left[\hat{\rho}_E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \left[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) \right] + \cdots \right) \hat{\rho}_E(0)$$
-  * **Convergence Bound (Moan-Niesen Criterion):** The Magnus series is an asymptotic expansion convergent within the **Moan-Niesen convergence radius** (Moan & Niesen, 2008; Blanes et al., 2009):
-    $$\int_0^t \|\hat{\mathcal{L}}(\tau)\| \, d\tau < \pi \quad (\approx 2.189 \text{ in general Banach algebras})$$
-    For open systems operating beyond this temporal horizon, global state evolution is generated via the infinite-product time-ordered Dyson series $\mathcal{T} \exp(\int_0^t \hat{\mathcal{L}} d\tau)$ or resolvent product integration.
-  * **Topological Hysteresis:** Within its radius of convergence, the non-vanishing commutator $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ mathematically proves **Topological Hysteresis**: the final state depends strictly on the chronological order of intervention:
+  * **Convergence Bound & Complete Positivity (CPTP):** The Magnus series is an asymptotic expansion convergent within the **Moan-Niesen convergence radius** $\int_0^t \|\hat{\mathcal{L}}(\tau)\| d\tau < \pi$. Because the commutator $[\hat{\mathcal{L}}_1, \hat{\mathcal{L}}_2]$ of two GKSL Lindbladians is not itself in GKSL form, complete positivity ($\hat{\rho}_E(t) \ge 0$) for open dissipative trajectories is strictly guaranteed by the infinite-product time-ordered Dyson series $\mathcal{T} \exp(\int_0^t \hat{\mathcal{L}} d\tau)$, with the Magnus expansion serving as the exact asymptotic algebra for non-commuting operational ordering.
+  * **Topological Hysteresis:** The non-vanishing commutator $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ mathematically proves **Topological Hysteresis**: the final state depends strictly on the chronological order of intervention:
     $$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots; (\mathcal{O}_B \to \mathcal{O}_A)\right]$$
 
 ---
@@ -83,11 +81,12 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
      Shear distortions against lattice bonds or active cytoskeletal networks follow:
      $$\dot{\mathbf{e}} = \frac{1}{2 \mu_{\text{shear}}} \dot{\mathbf{s}} + \frac{1}{2 \nu_{\text{shear}}} \mathbf{s}$$
 
-* **Step 2 (Impulse Response ODE & Integrating Factor):**  
-  Applying unit step shear strain rate $\dot{\mathbf{e}}(t) = \delta(t)\mathbf{I}_{\text{dev}}$ and volumetric strain rate $\operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}) = \delta(t)$:
-  $$\dot{\mathbf{s}} + \frac{\mu_{\text{shear}}}{\nu_{\text{shear}}} \mathbf{s} = 2 \mu_{\text{shear}} \delta(t), \qquad \frac{1}{3}\operatorname{Tr}(\dot{\boldsymbol{\sigma}}) + \frac{K_0}{\zeta_{\text{bulk}}} \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}) = K_0 \delta(t)$$
-  Integrating via integrating factors $\exp(\frac{\mu_{\text{shear}}}{\nu_{\text{shear}}}t)$ and $\exp(\frac{K_0}{\zeta_{\text{bulk}}}t)$ yields the causal relaxation kernels:
-  $$G_{\text{shear}}(t - \tau) = \mu_{\text{shear}} \exp\left( -\frac{\mu_{\text{shear}}}{\nu_{\text{shear}}} (t - \tau) \right) \Theta(t - \tau), \qquad K_{\text{bulk}}(t - \tau) = K_0 \exp\left( -\frac{K_0}{\zeta_{\text{bulk}}} (t - \tau) \right) \Theta(t - \tau)$$
+* **Step 2 (Maxwell Differential Constitutive Equations & Integrating Factors):**  
+  The decoupled differential equations for deviatoric shear stress $\mathbf{s}(x, t)$ and isotropic pressure $\frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}(x, t))$ are:
+  $$\boxed{\dot{\mathbf{s}}(x, t) + \frac{1}{\tau_s} \mathbf{s}(x, t) = 2 \mu_{\text{shear}} \dot{\mathbf{e}}_{\text{active}}(x, t), \qquad \frac{1}{3}\operatorname{Tr}(\dot{\boldsymbol{\sigma}}(x, t)) + \frac{1}{\tau_b} \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}(x, t)) = K_0 \operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}_{\text{active}}(x, t))}$$
+  where $\tau_s \equiv \frac{\nu_{\text{shear}}}{\mu_{\text{shear}}}$ and $\tau_b \equiv \frac{\zeta_{\text{bulk}}}{K_0}$ are the characteristic shear and dilatational relaxation times.
+  Integrating via integrating factors $\exp(t/\tau_s)$ and $\exp(t/\tau_b)$ under causal initial conditions ($\boldsymbol{\sigma}(0) = \mathbf{0}$) yields the causal relaxation kernels:
+  $$G_{\text{shear}}(t - \tau) = \mu_{\text{shear}} \exp\left( -\frac{t - \tau}{\tau_s} \right) \Theta(t - \tau), \qquad K_{\text{bulk}}(t - \tau) = K_0 \exp\left( -\frac{t - \tau}{\tau_b} \right) \Theta(t - \tau)$$
 
 * **Step 3 (The 3D Causal Memory Tensor Integral):**  
   The full 3D constitutive Cauchy stress tensor is:
@@ -97,9 +96,9 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 * **Step 4 (Macroscopic Resistance & Maintenance Power Density):**  
   The outward macroscopic resistance traction vector along surface normal $\hat{n}$ is $\mathbf{R}(x, t) \equiv \boldsymbol{\sigma}(x, t) \cdot \hat{n} \in [\mathrm{Pa}]$. For steady-state deviatoric actuation $\dot{\mathbf{e}}_{\text{active}} = \dot{\mathbf{e}}_0$:
   $$\mathbf{R}_{\text{steady}} = 2 \nu_{\text{shear}} \dot{\mathbf{e}}_0 \cdot \hat{n} \implies \dot{\mathbf{e}}_{\text{maint}} = \frac{1}{2\nu_{\text{shear}}} \mathbf{s}_0 \quad \left( \text{units: } [\mathrm{s}^{-1}] \right)$$
-  Multiplying steady-state deviatoric stress by strain rate yields the **Volumetric Mechanical Power Density ($\dot{w}_{\text{maint}} \in [\mathrm{W/m^3}]$)**:
-  $$\boxed{\dot{w}_{\text{maint}} = \mathbf{s}_0 : \dot{\mathbf{e}}_{\text{maint}} = \frac{\|\mathbf{s}_0\|^2}{2\nu_{\text{shear}}} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3}}\right]}$$
-  Integrating over the entity's volume yields the total steady-state maintenance power $\dot{\mathcal{W}}_{\text{maint}} = \int_E \frac{\|\mathbf{s}_0\|^2}{2\nu_{\text{shear}}} dV \in [\mathrm{W}]$.
+  Multiplying steady-state deviatoric stress by strain rate and applying the double-dot tensor contraction identity ($\mathbf{s}_0 : \mathbf{s}_0 = 2 J_2 = \frac{2}{3}\sigma_{\mathrm{vM}}^2$) yields the **Volumetric Mechanical Power Density ($\dot{w}_{\text{maint}} \in [\mathrm{W/m^3}]$)**:
+  $$\boxed{\dot{w}_{\text{maint}} = \mathbf{s}_0 : \dot{\mathbf{e}}_{\text{maint}} = \frac{\mathbf{s}_0 : \mathbf{s}_0}{2\nu_{\text{shear}}} = \frac{\sigma_{\mathrm{vM}}^2\left(\mathbf{s}_0\right)}{3 \nu_{\text{shear}}} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3}}\right]}$$
+  Integrating over the entity's volume yields the total steady-state maintenance power $\dot{\mathcal{W}}_{\text{maint}} = \int_E \frac{\sigma_{\mathrm{vM}}^2(\mathbf{s}_0)}{3\nu_{\text{shear}}} dV \in [\mathrm{W}]$.
 
 ---
 
@@ -122,9 +121,13 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 
 ### 2.1 Topological Boundary & Dual Identity Theorems
 
-#### Axiom 3 (Complex Topological Boundary Enclosure $\partial E$):
+#### Axiom 3 (Complex Topological Boundary Enclosure $\partial E$ & Measure Metric):
 The total **Complex Topological Boundary Enclosure ($\partial E(t)$)** of an entity decomposes into two orthogonal projections on $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
-$$\boxed{\partial E(t) \equiv \partial E_{\mathbb{R}}(t) \;\oplus\; i \, \partial E_{\mathfrak{Im}}(t) \subset \Omega_{\mathbb{C}}, \qquad \mu(E(t)) > 0}$$
+$$\boxed{\partial E(t) \equiv \partial E_{\mathbb{R}}(t) \;\oplus\; i \, \partial E_{\mathfrak{Im}}(t) \subset \Omega_{\mathbb{C}}, \qquad \|\mu(E(t))\| > 0}$$
+
+The total complex ontological measure is defined with the **Landauer Mass-Equivalent Conversion Parameter ($\kappa_{\text{info}} \equiv \frac{k_B T \ln 2}{c^2} \, [\mathrm{kg/bit}]$)** to preserve dimensional homogeneity:
+$$\boxed{\mu(E) \equiv \mu_{\mathbb{R}}(E) + i \, \kappa_{\text{info}} \mu_{\mathfrak{Im}}(E) \in \mathbb{C}, \qquad \|\mu(E)\| \equiv \sqrt{\mu_{\mathbb{R}}^2(E) + \kappa_{\text{info}}^2 \mu_{\mathfrak{Im}}^2(E)} \quad \left( \text{units: } [\mathrm{kg}] \right)}$$
+where $\mu_{\mathbb{R}}(E) \equiv \int_{E_{\mathbb{R}}} \rho(\mathbf{x}) \, d^3x \in [\mathrm{kg}]$ is physical mass and $\mu_{\mathfrak{Im}}(E) \equiv \mathcal{H}(D_{\mathfrak{Im}}) \in [\mathrm{bits}]$ is informational Shannon-von Neumann entropy.
 
 1. **Real Physical Boundary ($\partial E_{\mathbb{R}} \equiv \pi_{\mathbb{R}}(\partial E) = \bigcup_{k \in K(t)} f_k(t)$):**  
    The compact codimension-1 hypersurface in real space enclosing the material fuel substrate $\mathcal{F}_{\mathbb{R}}$ where rest-mass density is non-zero ($\mu(\mathcal{F}_{\mathbb{R}}) > 0$) and internal Cauchy stress $\boldsymbol{\sigma}(x, t) \neq \mathbf{0}$ is confined.
@@ -136,7 +139,7 @@ $$\boxed{\partial E(t) \equiv \partial E_{\mathbb{R}}(t) \;\oplus\; i \, \partia
 
 #### The Interfacial Realization Trace Map ($\operatorname{Tr}_{\partial E}$):
 In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical interaction is evaluated by the **Interfacial Realization Trace Map**:
-$$\boxed{\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{J}_{\text{fuel}}(x, t) = \alpha \, \mathbf{S}(x, t) & \text{(Real Negentropy Influx)} \end{cases}}$$
+$$\boxed{\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{S}_{\text{absorbed}}(x, t) = \alpha \, \mathbf{S}_{\text{incident}}(x, t) & \text{(Absorbed Radiant Negentropy Influx)} \end{cases}}$$
 
 #### Theorem 1 (Algebraic Orthogonality of Rule and Resource):
 Because $\Omega_{\mathbb{R}}$ and $i \Omega_{\mathbb{R}}$ are complementary orthogonal subspaces of $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathbb{R}}$, the disjointness of rule and resource is an algebraic consequence of the complex field:
@@ -158,7 +161,7 @@ Both projections are co-extensive with $\mu(E) > 0$. An entity cannot cease to b
 ### 2.2 The 4-Phase Non-Equilibrium Engine Cycle ($\mathcal{E}$)
 
 An entity operates as an open thermodynamic engine executing a continuous 4-phase cycle:
-$$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\text{fuel}}) \;\longrightarrow\; \text{Fuel Partition } (\dot{\mathcal{E}}_{\mathfrak{Re}} + \dot{\mathcal{E}}_{\mathfrak{Im}}) \;\longrightarrow\; \text{Dissipation } (\sigma_{\text{total}}) \;\longrightarrow\; \text{Entropy Rejection } (\mathbf{J}_S) \Big)$$
+$$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\dot{E}_{\text{fuel}}) \;\longrightarrow\; \text{Fuel Partition } (\dot{\mathcal{E}}_{\mathfrak{Re}} + \dot{\mathcal{E}}_{\mathfrak{Im}}) \;\longrightarrow\; \text{Dissipation } (\sigma_{\text{total}}) \;\longrightarrow\; \text{Entropy Rejection } (\mathbf{J}_S) \Big)$$
 
 ```
                                   THE EXISTENTIAL ENGINE CYCLE (E)
@@ -178,8 +181,9 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\te
    (Irreversible internal entropy gen)                                    (Maintains dS_int/dt <= 0, ϕ=0)
 ```
 
-1. **Phase 1: Negentropy Intake:** Influx of free energy $\Delta \mathcal{G}_{\text{fuel}}$ carrying chemical/thermodynamic affinity $A_\alpha$:
-   $$\dot{S}_{\text{intake}} = -\frac{1}{T_{\text{internal}}} \int_{f_{\text{intake}}} \sum_\alpha A_\alpha \left(\mathbf{J}_{\text{fuel},\alpha} \cdot \hat{n}_{\text{in}}\right) dA < 0, \qquad \dot{E}_{\text{fuel}} = \int_{f_{\text{intake}}} \boldsymbol{\mu}_{\text{chem}} \cdot \mathbf{J}_{\text{fuel}} \, dA$$
+1. **Phase 1: Negentropy Intake:** Influx of free energy carrying chemical affinity $A_\alpha$ and radiant Poynting flux $\mathbf{S}$:
+   $$\dot{S}_{\text{intake}} = -\frac{1}{T_{\text{internal}}} \int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha}{T_{\text{internal}}} \mathbf{J}_{\alpha}^{\text{molar}} \right) \cdot \hat{n}_{\text{in}} \, dA < 0$$
+   $$\boxed{\dot{E}_{\text{fuel}} = \int_{f_{\text{intake}}} \left( \alpha \, \mathbf{S}(x, t) + \sum_\beta \mu_\beta^{\text{chem}}(x, t) \, \mathbf{J}_\beta^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA \quad \left( \text{units: } [\mathrm{W}] \right)}$$
 
 2. **Phase 2: Unified Local Entropy Production Density Tensor ($\sigma_{\text{total}}$):**
    $$\boxed{\sigma_{\text{total}}(x, t) = \underbrace{\frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T(x,t)}}_{\text{Viscous Strain Dissipation}} + \underbrace{\mathbf{J}_q \cdot \nabla\left(\frac{1}{T}\right)}_{\text{Thermal Conduction}} + \underbrace{\sum_\alpha \frac{A_\alpha \dot{\xi}_\alpha}{T(x,t)}}_{\text{Metabolic Fuel Conversion}} + \underbrace{k_B \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})}_{\text{Landauer Informational Erasure}} \ge 0}$$
@@ -200,27 +204,28 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\te
 ### 2.3 Structural Margin Field & Relativistic Level-Set Kinematics
 
 #### 2.3.1 Tensorial Structural Margin Field ($\phi$) and Invariant Yield Surfaces
-* **The Physical Dilemma:** An entity's boundary is not a static geometrical wall; it is an active mechanical and field interface under continuous multi-axial stress from surrounding entities and external radiation fields. Taking simple scalar vector norms ($\|\mathbf{R}\| - \|\mathbf{C}\|$) ignores shear stress tensors ($\mathbf{s} = \boldsymbol{\sigma} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma})\mathbb{I}$) and falsely predicts equilibrium under pure torsional failure. How do we quantify local boundary stability tensorially from first principles?
+* **The Physical Dilemma:** An entity's boundary is not a static geometrical wall; it is an active mechanical and field interface under continuous multi-axial stress from surrounding entities and external radiation fields. Taking simple scalar vector norms ($\|\mathbf{R}\| - \|\mathbf{C}\|$) ignores shear stress tensors ($\mathbf{s} = \boldsymbol{\sigma} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma})\mathbb{I}$) and falsely predicts equilibrium under pure torsional failure, while pure Von Mises criteria ignore hydrostatic pressure. How do we quantify local boundary stability tensorially from first principles?
 
 * **Definition (Environmental Challenge Stress Tensor):**  
   The Environmental Challenge $\boldsymbol{\sigma}_{\text{challenge}}(x, t)$ is the sum of all Cauchy stresses and field momentum fluxes exerted onto the boundary $\partial E$ by external systems $\{j\}$:
   $$\boldsymbol{\sigma}_{\text{challenge}}(x, t) \equiv \sum_{j} \boldsymbol{\sigma}_j(x, t) \quad \left( \text{units: } [\mathrm{Pa}] = [\mathrm{N/m^2}] \right)$$
 
-* **Definition (The Tensorial Structural Margin Field):**  
-  Let $\mathbf{s} \equiv \boldsymbol{\sigma}_{\text{challenge}} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})\mathbb{I}$ be the deviatoric stress tensor, and $J_2 \equiv \frac{1}{2} \mathbf{s} : \mathbf{s}$ be the second deviatoric stress invariant. The equivalent Von Mises challenge traction is $\sigma_{\mathrm{vM}} \equiv \sqrt{3 J_2}$.
-  The **Tensorial Structural Margin Field $\phi(x, t)$** is rigorously defined against the material/membrane yield strength $\sigma_{\text{yield}}(x, t)$:
-  $$\boxed{\phi(x, t) \equiv \sigma_{\text{yield}}(x, t) - \sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{challenge}}(x, t)\right)} \quad \left( \text{units: } [\mathrm{Pa}] \right)}$$
-  * **1D Isotropic Normal Traction Reduction:** Under purely hydrostatic or uniaxial normal traction, $\sigma_{\mathrm{vM}} = \|\mathbf{C}\|$ and $\sigma_{\text{yield}} = \|\mathbf{R}\|$, reducing consistently to $\phi(x, t) = \|\mathbf{R}\| - \|\mathbf{C}\|$.
+* **Definition (The Capped Tensorial Structural Margin Field):**  
+  Let $\mathbf{s} \equiv \boldsymbol{\sigma}_{\text{challenge}} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})\mathbb{I}$ be the deviatoric stress tensor, $J_2 \equiv \frac{1}{2} \mathbf{s} : \mathbf{s}$ be the second deviatoric stress invariant, and $I_1 \equiv \operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})$ be the first stress invariant (hydrostatic trace).
+  To eliminate unphysical infinite margins under extreme hydrostatic pressure and prevent unphysical tensile persistence, the **Tensorial Structural Margin Field $\phi(x, t)$** is formulated as a **Capped Drucker-Prager Yield Model** bounded by the volumetric crushing threshold ($p_{\text{crush}}$) and Rankine tensile cavitation limit ($\sigma_{\text{cavitation}}$):
+  $$\boxed{\phi(x, t) \equiv \min\left\{ \sigma_{\text{yield}} - \left( \sqrt{3 J_2} + \alpha_{\text{DP}} \operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}}) \right), \; p_{\text{crush}} - \frac{|\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})|}{3}, \; \sigma_{\text{cavitation}} - \frac{\operatorname{Tr}(\boldsymbol{\sigma}_{\text{challenge}})}{3} \right\} \quad [\mathrm{Pa}]}$$
+  where $\alpha_{\text{DP}} \ge 0$ is the frictional dilatational parameter.
+  * **1D Isotropic Reduction:** Under uniaxial normal traction ($\sigma_{11} = C, \sigma_{22}=\sigma_{33}=0$), this reduces to $\phi(x, t) = \|\mathbf{R}\| - \|\mathbf{C}\|$. Under hydrostatic crushing ($p \ge p_{\text{crush}}$), the cap triggers structural failure ($\phi < 0$) even without shear stress ($J_2 = 0$).
 
 ---
 
 #### 2.3.2 Theorem 3 (Interface Front as Derived Zero-Level Set & Equipotential Surface)
 The physical interface front $f(t)$ separating the entity's coherent interior from the environment is the emergent zero-level set:
-$$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equiv \sigma_{\text{yield}}(x, t) - \sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{challenge}}(x, t)\right)} = 0 \right\}}$$
+$$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equiv \sigma_{\text{yield}}(x, t) - \left( \sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{challenge}}(x, t)\right)} + \alpha_{\text{DP}} \operatorname{Tr}\left(\boldsymbol{\sigma}_{\text{challenge}}(x, t)\right) \right) = 0 \right\}}$$
 
 * **Equipotential Field Representation (Conservative Potential Sub-Regime):** In the special sub-case where body forces and challenge tractions derive strictly from conservative scalar potentials ($\mathbf{R} = -\nabla \Phi_{\text{internal}}, \mathbf{C} = -\nabla \Phi_{\text{external}}$, such as electrostatic work functions or Newtonian/Einstein gravitational fields), the front reduces to the **critical equipotential balance surface**:
   $$\boxed{\phi_{\text{pot}}(x, t) \equiv \|\nabla \Phi_{\text{internal}}(x, t)\| - \|\nabla \Phi_{\text{external}}(x, t)\| = 0}$$
-  anchoring the boundary level-set in classical Roche equipotentials, solid-state Fermi surfaces, and electrostatic work function interfaces, while generic continuum mechanics with shear deformation remains strictly governed by the full 6-degree-of-freedom tensorial invariant $\sigma_{\text{yield}} - \sqrt{3 J_2(\boldsymbol{\sigma})}$.
+  anchoring the boundary level-set in classical Roche equipotentials, solid-state Fermi surfaces, and electrostatic work function interfaces, while generic continuum mechanics with shear deformation remains strictly governed by the full 6-degree-of-freedom Drucker-Prager tensorial invariant $\sigma_{\text{yield}} - (\sqrt{3 J_2} + \alpha_{\text{DP}}\operatorname{Tr}(\boldsymbol{\sigma}))$.
 
 * **Universal Spectrum of Radiant Challenge Fields:**  
   For all electromagnetic and radiative fluxes $\mathbf{S}(x, t)$, the environmental challenge spans a continuous scale-invariant spectrum:
@@ -236,30 +241,25 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
 #### 2.3.3 Theorem 4 (Lorentz-Saturated Kinematic Level-Set Evolution PDE)
 * **The Physical Dilemma:** In classical level-set methods (Osher & Sethian, 1988), normal front velocity is proportional to overpressure: $v_{\text{classical}} = \frac{L_0 \phi}{\nu}$. When an entity is struck by extreme external challenges ($|\phi| \to \infty$), classical velocity diverges ($v_{\text{classical}} \to \infty$), violating special relativity ($v < c$). We formulate a causally closed, Lorentz-saturated kinematic PDE.
 
-* **Step 1 (Classical Overdamped Normal Velocity):**  
-  Balancing net boundary traction $\phi(x, t)$ ($[\mathrm{Pa}]$) against viscous shear resistance $\nu$ ($[\mathrm{Pa \cdot s}]$) across an interfacial thickness scale $L_0$ ($[\mathrm{m}]$) yields the unconstrained classical velocity:
-  $$v_{\text{classical}}(x, t) = \frac{L_0 \cdot \phi(x, t)}{\nu} \quad \left( \text{units: } \left[\frac{\mathrm{m \cdot (N/m^2)}}{\mathrm{N \cdot s/m^2}}\right] = \left[\frac{\mathrm{m}}{\mathrm{s}}\right] \right)$$
+* **Step 1 (Classical Overdamped Advective Velocity):**  
+  Balancing net boundary traction $\phi(x, t)$ ($[\mathrm{Pa}]$) against viscous shear resistance $\nu$ ($[\mathrm{Pa \cdot s}]$) across interfacial thickness $L_0$ ($[\mathrm{m}]$) yields the unconstrained classical advective velocity:
+  $$v_{\text{classical}}(x, t) = \frac{L_0 \cdot \phi(x, t)}{\nu} \quad \left( \text{units: } \left[\frac{\mathrm{m}}{\mathrm{s}}\right] \right)$$
 
-* **Step 2 (Lorentz Relativistic Velocity Saturation):**  
+* **Step 2 (Lorentz Relativistic Velocity Saturation of Advective Traction):**  
   Under Lorentzian spacetime $(\mathcal{M}, g_{\mu\nu})$, the relativistic kinematic regularizer enforces momentum saturation for an overdamped boundary front subjected to extreme traction:
-  $$v_n = \frac{v_{\text{classical}}}{\sqrt{1 + \left(\frac{v_{\text{classical}}}{c}\right)^2}}$$
+  $$v_{\text{adv}}(x, t) = \frac{c \cdot v_{\text{classical}}(x, t)}{\sqrt{c^2 + v_{\text{classical}}^2(x, t)}} = \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}}$$
+  guaranteeing $|v_{\text{adv}}| < c, \forall \phi \in (-\infty, \infty)$.
 
-* **Step 3 (Curvature Regularization & Interfacial Surface Tension):**  
-  To prevent gradient catastrophes (cusp shocks, self-intersections) characteristic of unregularized first-order Hamilton-Jacobi PDEs (Osher & Sethian, 1988), the normal velocity incorporates the classical **Mean-Curvature Surface Tension Regularizer** ($-\gamma_{\text{surface}} \kappa$):
-  $$v_n(x, t) = \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} - \gamma_{\text{surface}} \, \kappa(x, t)$$
-  where $\gamma_{\text{surface}} > 0$ is the interfacial surface tension / diffusion coefficient ($[\mathrm{m^2/s}]$) and $\kappa \equiv \nabla \cdot \left( \frac{\nabla \phi}{\|\nabla \phi\|} \right)$ is the local mean curvature of the interface front.
+* **Step 3 (Quasilinear Parabolic Mean-Curvature Regularization):**  
+  To prevent gradient catastrophes (cusp shocks, self-intersections) characteristic of unregularized first-order Hamilton-Jacobi PDEs (Osher & Sethian, 1988), the net normal front velocity combines the Lorentz-saturated advective traction velocity with the additive **Mean-Curvature Surface Tension Regularizer** ($-\gamma_{\text{surface}} \kappa$):
+  $$\boxed{v_n(x, t) = \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} - \gamma_{\text{surface}} \, \kappa(x, t)}$$
+  where $\gamma_{\text{surface}} > 0$ is the interfacial surface tension diffusivity ($[\mathrm{m^2/s}]$) and $\kappa \equiv \nabla \cdot \left( \frac{\nabla \phi}{\|\nabla \phi\|} \right)$ is the local mean curvature of the interface front ($[\mathrm{m^{-1}}]$).
 
-* **Step 4 (Asymptotic Causal Verification):**  
-  Evaluating the asymptotic limits confirms strict relativistic causal boundedness:
-  $$\lim_{|\phi| \to \infty} |v_n| = \lim_{|\phi| \to \infty} \left| \frac{c \cdot L_0 |\phi|}{L_0 |\phi| \sqrt{1 + \frac{\nu^2 c^2}{L_0^2 \phi^2}}} - \gamma_{\text{surface}}\kappa \right| \le c + \gamma_{\text{surface}}|\kappa|$$
-
-* **Step 5 (The Closed Parabolic Relativistic Level-Set Evolution PDE):**  
+* **Step 4 (The Closed Quasilinear Parabolic Relativistic Level-Set Evolution PDE):**  
   By implicit function differentiation, any material point on the propagating interface front $f(t) = \{x \mid \phi(x, t) = 0\}$ satisfies the total convective derivative:
-  $$\frac{d\phi}{dt} = \frac{\partial \phi}{\partial t} + \nabla \phi \cdot \frac{d\mathbf{x}}{dt} = 0$$
-  Substituting the outward normal front velocity $\frac{d\mathbf{x}}{dt} = \mathbf{v}_n = v_n \frac{\nabla \phi}{\|\nabla \phi\|}$:
-  $$\frac{\partial \phi}{\partial t} + v_n \|\nabla \phi\| = 0$$
-  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} \|\nabla \phi(x, t)\| - \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right] \|\nabla \phi(x, t)\| = 0}$$
-  The parabolic second-order curvature term guarantees the existence and uniqueness of smooth viscosity solutions across shock and collision regimes.
+  $$\frac{d\phi}{dt} = \frac{\partial \phi}{\partial t} + \nabla \phi \cdot \frac{d\mathbf{x}}{dt} = 0 \implies \frac{\partial \phi}{\partial t} + v_n \|\nabla \phi\| = 0$$
+  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} \|\nabla \phi(x, t)\| - \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right] \|\nabla \phi(x, t)\| = 0}$$
+  Decoupling the additive curvature Laplacian from the saturated traction radical ensures that the principal second-order symbol $-\gamma_{\text{surface}} \operatorname{Tr}\left[ \left(\mathbb{I} - \frac{\nabla \phi \otimes \nabla \phi}{\|\nabla \phi\|^2}\right) \nabla^2 \phi \right]$ remains strictly parabolic for all field magnitudes, guaranteeing existence and uniqueness of smooth viscosity solutions.
 
 ---
 
@@ -273,12 +273,12 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
 * **Step 2 (Time Derivative from First & Second Laws with Reynolds Transport):**  
   Taking the time derivative:
   $$\frac{d\mathcal{G}}{dt} = \frac{d\mathcal{U}_{\text{internal}}}{dt} - T_{\text{ambient}} \frac{dS_{\text{internal}}}{dt}$$
-  From the First Law ($\dot{\mathcal{U}}_{\text{internal}} = \dot{E}_{\text{fuel}} - \dot{W}_{\text{out}} - \dot{Q}_{\text{out}}$) and the Reynolds-augmented Second Law:
-  $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}} - \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV - \underbrace{\left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{amb}} \int_{\partial E} \left(\mathbf{J}_S - s \mathbf{v}_n\right) \cdot \hat{n} \, dA \right]}_{\ge 0 \text{ (Dissipation to Ambient Heat Bath)}}$$
+  From the First Law ($\dot{\mathcal{U}}_{\text{internal}} = \dot{E}_{\text{fuel}} - \dot{W}_{\text{out}} - \dot{Q}_{\text{out}}$) and the Reynolds-augmented Second Law, applying the **Gouy-Stodola Exergy Theorem**:
+  $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV - \underbrace{\left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{ambient}} \int_{\partial E} \left(\mathbf{J}_S - s \mathbf{v}_n\right) \cdot \hat{n} \, dA \right]}_{\ge 0 \text{ (Dissipation to Ambient Heat Bath)}}$$
 
 * **Step 3 (Lyapunov Stability Bound):**  
   Boundary persistence requires $\frac{d\mathcal{G}}{dt} \le 0$, which yields the **Critical Fuel Sufficiency Condition**:
-  $$\boxed{\frac{d\mathcal{G}}{dt} \le 0 \iff \dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV}$$
+  $$\boxed{\frac{d\mathcal{G}}{dt} \le 0 \iff \dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV}$$
 
 ---
 
@@ -293,12 +293,11 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   By Landauer's Principle, computing predictions with investment ratio $\chi$ generates erasure entropy at a strictly increasing rate:
   $$\sigma_{\text{computation}}(\chi) = \frac{k_B T \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\chi) \implies \frac{\partial \sigma_{\text{computation}}}{\partial \chi} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \chi^2} \ge 0$$
 
-* **Step 3 (Derivation of Shock Dissipation via Pre-Stress Elastic Energy):**  
-  By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\chi)$ directs active cytoskeletal pre-stressing $\sigma_{\text{pre}}(\chi) = \kappa_{\text{info}} \Delta \mathcal{I}(\chi)$. The residual unmitigated shock strain energy dissipated upon impact is:
-  $$\sigma_{\text{shock}}(\chi) = \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{info}} \Delta \mathcal{I}(\chi) \right)^2}{2 E_{\text{elastic}} T}$$
-  Because channel capacity exhibits diminishing marginal information returns ($\frac{\partial \Delta \mathcal{I}}{\partial \chi} > 0, \frac{\partial^2 \Delta \mathcal{I}}{\partial \chi^2} \le 0$):
-  $$\frac{\partial \sigma_{\text{shock}}}{\partial \chi} = -\frac{(\sigma_{\text{impact}} - \kappa_{\text{info}}\Delta \mathcal{I})\kappa_{\text{info}}}{E_{\text{elastic}} T} \frac{\partial \Delta \mathcal{I}}{\partial \chi} < 0$$
-  $$\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} = \frac{\kappa_{\text{info}}^2}{E_{\text{elastic}} T} \left( \frac{\partial \Delta \mathcal{I}}{\partial \chi} \right)^2 - \frac{(\sigma_{\text{impact}} - \kappa_{\text{info}}\Delta \mathcal{I})\kappa_{\text{info}}}{E_{\text{elastic}} T} \frac{\partial^2 \Delta \mathcal{I}}{\partial \chi^2} > 0$$
+* **Step 3 (Derivation of Shock Dissipation via Rankine-Hugoniot Elastic Rate Expansion):**  
+  By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\chi)$ directs active cytoskeletal pre-stressing $\sigma_{\text{pre}}(\chi) = \kappa_{\text{info}} \Delta \mathcal{I}(\chi)$, leaving residual unmitigated overpressure $\Delta \sigma_{\text{eff}}(\chi) \equiv \sigma_{\text{impact}} - \kappa_{\text{info}} \Delta \mathcal{I}(\chi)$. Across characteristic shock impact duration $\tau_{\text{impact}} \in [\mathrm{s}]$, the volumetric shock entropy dissipation rate is derived from the **Rankine-Hugoniot shock jump expansion** (Landau & Lifshitz, 1987) combining linear elastic strain energy with cubic hydrodynamic shock entropy jump:
+  $$\sigma_{\text{shock}}(\chi) = \left[ \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{info}} \Delta \mathcal{I}(\chi) \right)^2}{2 E_{\text{elastic}} T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left( \sigma_{\text{impact}} - \kappa_{\text{info}} \Delta \mathcal{I}(\chi) \right)^3}{12 \rho_0^3 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]$$
+  where $\Gamma \equiv \frac{1}{c_s} \left( \frac{\partial(\rho c_s)}{\partial \rho} \right)_s$ is the fundamental gasdynamic derivative.
+  Because channel capacity exhibits diminishing marginal information returns ($\frac{\partial \Delta \mathcal{I}}{\partial \chi} > 0, \frac{\partial^2 \Delta \mathcal{I}}{\partial \chi^2} \le 0$), $\sigma_{\text{shock}}(\chi)$ is strictly decreasing ($\frac{\partial \sigma_{\text{shock}}}{\partial \chi} < 0$) and strictly convex ($\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} > 0$).
 
 * **Step 4 (Convexity & Global Thermodynamic Minimum):**  
   Because $\sigma_{\text{global}}(\chi)$ is the sum of two strictly convex functions ($\frac{\partial^2 \sigma_{\text{global}}}{\partial \chi^2} > 0$), there exists a unique global thermodynamic minimum $\chi^*$ satisfying $\frac{d\sigma_{\text{global}}}{d\chi} = 0$:
@@ -363,25 +362,28 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   The total outward resistance is partitioned into instantaneous passive membrane elasticity and time-delayed active metabolic traction:
   $$\mathbf{R}(x, t) = \mathbf{R}_{\text{passive}}(x, t) \;+\; \mathbf{R}_{\text{active}}\left(x, \, t - \Delta t_{\text{response}}(x)\right)$$
 
-* **Spatial Reaction-Diffusion Wavefront Dispersion (Bistable Cooperative Kinetic Metric):**  
+* **Spatial Reaction-Diffusion Wavefront Dispersion (Bistable Cooperative & Eikonal Curvature Metric):**  
   Intracellular biochemical signaling molecules (e.g., $\mathrm{Ca}^{2+}$, second messengers $c(x, t)$) obey the non-equilibrium reaction-diffusion PDE:
   $$\frac{\partial c}{\partial t} = D_{\text{diff}} \nabla^2 c + R(c)$$
-  Intracellular enzymatic and contractile signaling networks operate via cooperative bistable switches governed by cubic/Hill reaction kinetics $R(c) = k \cdot c (c - a)(1 - c)$ with activation threshold $a \in (0, 1/2)$ (where $R'(0) = -ka < 0$). The asymptotic traveling wave velocity is:
+  Intracellular enzymatic and contractile signaling networks operate via cooperative bistable switches governed by cubic/Hill reaction kinetics $R(c) = k \cdot c (c - a)(1 - c)$ with activation threshold $a \in (0, 1/2)$ (where $R'(0) = -ka < 0$). The asymptotic planar traveling wave velocity is:
   $$v_{\text{bistable}} = \sqrt{\frac{D_{\text{diff}} \cdot k}{2}} \left( 1 - 2a \right)$$
-  For a localized external shock impacting the membrane at position $x_{\text{impact}} \in \partial E$, the chemical signal arrival time at any boundary coordinate $x \in \partial E$ is strictly linear in Euclidean geodesic distance:
-  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{v_{\text{bistable}}} = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{\sqrt{\frac{D_{\text{diff}} k}{2}}(1 - 2a)}$$
+  For an expanding chemical front on the 2D Riemannian membrane manifold $(\partial E, g_{ab})$ originating from an initial activation patch of finite radius $r_0 > r_{\text{crit}} \equiv \frac{D_{\text{diff}}}{v_{\text{bistable}}}$, the advancing circular front curvature decays as $\mathcal{K}_{\text{front}}(s) \approx 1/s$. By the **Eikonal-Curvature Relation** (Keener, 1986):
+  $$v_{\text{front}}(s) = v_{\text{bistable}} - \frac{D_{\text{diff}}}{s}$$
+  Integrating across surface geodesic distance $s \in [r_0, d_g^{\partial E}(x, x_{\text{impact}})]$ yields the exact, singularity-free biochemical signal arrival time:
+  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \int_{r_0}^{d_g^{\partial E}(x, x_{\text{impact}})} \frac{ds}{v_{\text{bistable}} - \frac{D_{\text{diff}}}{s}} = \tau_{\text{local}} + \frac{d_g^{\partial E} - r_0}{v_{\text{bistable}}} + \frac{D_{\text{diff}}}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_{\text{diff}}}{v_{\text{bistable}} r_0 - D_{\text{diff}}} \right)$$
+  where $d_g^{\partial E}(x_1, x_2) \equiv \inf_{\gamma \subset \partial E} \int_0^1 \sqrt{g_{ab}(\gamma(s)) \dot{\gamma}^a \dot{\gamma}^b} \, ds$. In the far-field limit ($d_g \gg D_{\text{diff}}/v_{\text{bistable}}$), this converges smoothly to the linear metric $\Delta t \to \tau_{\text{local}} + \frac{d_g^{\partial E}}{v_{\text{bistable}}}$.
 
 * **The Spatial Damköhler Field ($\mathrm{Da}(x)$):**  
   For an external oscillatory or shock challenge with characteristic impact frequency $\omega_0$ ($\mathbf{C}(x, t) = \mathbf{C}_0(x) \cos(\omega_0 t)$):
-  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \omega_0 \left( \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{\sqrt{\frac{D_{\text{diff}} k}{2}}(1 - 2a)} \right)}$$
+  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \omega_0 \left[ \tau_{\text{local}} + \frac{d_g^{\partial E} - r_0}{v_{\text{bistable}}} + \frac{D_{\text{diff}}}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_{\text{diff}}}{v_{\text{bistable}} r_0 - D_{\text{diff}}} \right) \right]}$$
 
-* **Dynamic Spatial Regime Classification & Localized Rupture:**
+* **Dynamic Spatial Regime Classification & Anti-Phase Destabilization Resonance:**
   $$\begin{cases} 
-  \mathrm{Da}(x) \ll 1 & \text{(Quasi-Static Homeostasis): Synchronous active stiffening; } \phi(x, t) \ge 0 \implies \text{Local Coherence} \\
-  \mathrm{Da}(x) > 1 & \text{(Dynamic Phase-Lag Rupture): Active resistance is out-of-phase: } \mathbf{R}_{\text{active}} \propto \cos(\omega_0 t - \mathrm{Da}(x))
+  \cos(\mathrm{Da}(x)) \ge 0 & \text{(In-Phase Stabilization): Synchronous active stiffening opposes challenge; } \phi(x, t) \ge 0 \\
+  \cos(\mathrm{Da}(x)) < 0 \iff \mathrm{Da}(x) \in \left(\frac{\pi}{2}, \frac{3\pi}{2}\right) \pmod{2\pi} & \text{(Anti-Phase Destabilization Resonance): Negative dynamic stiffness actively amplifies shock}
   \end{cases}$$
-  When $\mathrm{Da}(x_{\text{impact}}) > 1$, the cell at the impact site is stripped of active reinforcement and forced to rely purely on passive yield strength ($\sigma_{\text{yield}}^{\text{passive}}$). If the local shock amplitude exceeds passive yield:
-  $$\|\mathbf{C}_0(x_{\text{impact}})\| > \sigma_{\text{yield}}^{\text{passive}} \implies \phi(x_{\text{impact}}, t) < 0 \implies \text{Localized Dynamic Shock Fracture}$$
+  In the anti-phase resonance interval $\mathrm{Da}(x_{\text{impact}}) \in (\pi/2, 3\pi/2) \pmod{2\pi}$, active contractile forces pull in-phase with the destructive external shock traction ($\mathbf{R}_{\text{active}} \cdot \mathbf{C}_0 > 0$), stripping the boundary of active protection and multiplying the effective local tensile load. If local traction exceeds passive yield:
+  $$\|\mathbf{C}_0(x_{\text{impact}})\| + \|\mathbf{R}_{\text{active}}\|\cdot |\cos(\mathrm{Da})| > \sigma_{\text{yield}}^{\text{passive}} \implies \phi(x_{\text{impact}}, t) < 0 \implies \text{Localized Dynamic Shock Fracture}$$
   even if distal boundary regions remain in safe quasi-static balance ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
 
 ---
@@ -404,8 +406,8 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      where $z_{\text{protein}} < 0$ represents fixed intracellular impermeant polyanionic macromolecules. Passive ion redistribution across the permeable bilayer converges toward the **Donnan Equilibrium Ratio**:
      $$r_D \equiv \frac{c_{\mathrm{K}^+}^{\text{ext}}}{c_{\mathrm{K}^+}^{\text{int}}} = \frac{c_{\mathrm{Cl}^-}^{\text{int}}}{c_{\mathrm{Cl}^-}^{\text{ext}}} \neq 1$$
      Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation:
-     $$\Delta P_{\text{osmotic}}(t) = k_B T \left[ \sum_i \sigma_i \, \gamma_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) + \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}} \right] + \Pi_{\text{oncotic}} > 0$$
-     This drives outward water influx across the lipid bilayer with positive normal velocity:
+     $$\Delta P_{\text{osmotic}}(t) = k_B T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}} + \sum_k \sigma_k \Delta c_k^{\text{non-ionic}} \right] + \Pi_{\text{oncotic}} > 0$$
+     where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions. This drives outward water influx across the lipid bilayer with positive normal velocity:
      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
   3. **Stage 2b (Membrane Hoop Stress & Tensile Fracture):**  
@@ -432,19 +434,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   $$\boxed{\Delta \phi_{AB}(x, t) \equiv \phi_A(x, t) - \phi_B(x, t) \quad \left( \text{units: } [\mathrm{Pa}] \right)}$$
 
 * **Step 2 (The Regularized Relativistic Interface Front Velocity):**  
-  To prevent unphysical light-speed singularities for inviscid contact ($\nu_{AB} \to 0$), the relativistic level-set interface velocity is regularized by the interfacial boundary areal mass density $\rho_{\text{int}}$ ($[\mathrm{kg/m^2}]$):
-  $$\boxed{\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c L_0\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A}$$
+  To prevent unphysical light-speed singularities for inviscid contact ($\nu_{AB} \to 0$), the relativistic level-set interface velocity is regularized by the interfacial boundary areal mass density $\rho_{\text{int}}$ ($[\mathrm{kg/m^2}]$), where $\rho_{\text{int}} c \in [\mathrm{Pa \cdot s}]$ restores dimensional homogeneity:
+  $$\boxed{\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A}$$
   where $\nu_{AB} \equiv \frac{\nu_A \nu_B}{\nu_A + \nu_B}$ is the effective harmonic interface viscosity.
 
-* **Step 3 (Derivation of Measure / Volume Transfer via Reynolds Transport Theorem):**  
-  The contact interface $f_{AB} = \partial E^A \cap \partial E^B$ is a proper subset of entity $B$'s total boundary $\partial E^B = f_{AB} \cup (\partial E^B \setminus f_{AB})$. By the Reynolds Transport Theorem on deforming control volumes, the total rate of change of entity $B$'s physical measure $\mu(E^B)$ is:
-  $$\boxed{\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \left(\mathbf{v}_n^{AB} \cdot \hat{n}_A\right) dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA}$$
-  $$= -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c L_0\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA$$
+* **Step 3 (Derivation of Measure Transfer & Trophic Assimilation Efficiency):**  
+  The contact interface $f_{AB} = \partial E^A \cap \partial E^B$ is a proper subset of entity $B$'s total boundary $\partial E^B = f_{AB} \cup (\partial E^B \setminus f_{AB})$. By the Reynolds Transport Theorem on deforming control volumes, the rate of mass extraction from entity $B$ is:
+  $$\dot{\mathcal{M}}_{A \leftarrow B}(t) = \int_{f_{AB}} \rho_B \left(\mathbf{v}_n^{AB} \cdot \hat{n}_A\right) dA = \int_{f_{AB}} \frac{\rho_B \cdot c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right]$$
+  Governed by non-equilibrium biochemical thermodynamics (Lindeman metabolic efficiency), mass assimilation into predator $E^A$ satisfies the finite **Metabolic Assimilation Factor ($\eta_{\text{trophic}} \in (0, 1)$)**:
+  $$\boxed{\left.\frac{d\mu_{\mathbb{R}}(E^B)}{dt}\right|_{f_{AB}} = -\dot{\mathcal{M}}_{A \leftarrow B}(t), \qquad \left.\frac{d\mu_{\mathbb{R}}(E^A)}{dt}\right|_{f_{AB}} = +\eta_{\text{trophic}} \, \dot{\mathcal{M}}_{A \leftarrow B}(t)}$$
+  The unassimilated mass-energy fraction $(1 - \eta_{\text{trophic}}) \dot{\mathcal{M}}_{A \leftarrow B}(t)$ is ejected as metabolic entropy flux $\mathbf{J}_{\text{waste}}$ into the ambient domain ($\Omega_{\mathbb{R}} \setminus (E^A \cup E^B)$), strictly preserving the Second Law of Thermodynamics.
+  
   Evaluating the sign of the margin differential across the shared contact zone yields the **Deterministic Role Assignment Matrix**:
   $$\boxed{\begin{cases} 
-  \Delta \phi_{AB}(x, t) > 0 \implies & \left.\frac{d\mu(E^B)}{dt}\right|_{f_{AB}} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt} > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) < 0 \implies & \left.\frac{d\mu(E^A)}{dt}\right|_{f_{AB}} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = -\frac{d\mathcal{G}[E^A]}{dt} > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \left.\frac{d\mu}{dt}\right|_{f_{AB}} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
+  \Delta \phi_{AB}(x, t) > 0 \implies & \dot{\mathcal{M}}_{A \leftarrow B} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}}\left(-\frac{d\mathcal{G}[E^B]}{dt}\right) > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) < 0 \implies & \dot{\mathcal{M}}_{B \leftarrow A} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = \eta_{\text{trophic}}\left(-\frac{d\mathcal{G}[E^A]}{dt}\right) > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \dot{\mathcal{M}}_{A \leftarrow B} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
   \end{cases}}$$
 
 ---
@@ -457,15 +462,17 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   $$\begin{pmatrix} \mathbf{v}_{\text{fluid}} \\ \mathbf{I}_{\text{electric}} \end{pmatrix} = -\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix} \begin{pmatrix} \nabla P_{\text{interstitial}} \\ \nabla \psi \end{pmatrix}$$
   * **Porous Interstitial Fluid Velocity with Electro-Osmotic Coupling:**
     $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}} - \mathbf{K}_{\text{eo}} \nabla \psi$$
-    where $\mathbf{K}_{\text{perm}}$ is hydraulic permeability, $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the electro-osmotic coupling tensor.
+    where $\mathbf{K}_{\text{perm}}$ is hydraulic permeability, $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the **Helmholtz-Smoluchowski Electro-Osmotic Coupling Tensor**:
+    $$\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I} \quad \left( \text{units: } \left[\frac{\mathrm{m^2}}{\mathrm{V \cdot s}}\right] \equiv \left[\frac{\mathrm{C \cdot m}}{\mathrm{N \cdot s}}\right] \right)$$
+    where $\varepsilon_w$ is solvent permittivity $[\mathrm{F/m}]$ and $\zeta$ is the membrane zeta potential $[\mathrm{V}]$.
   * **Electrochemical Solute Flux (Nernst-Planck Equation):**
     $$\mathbf{J}_i = -D_i \left( \nabla c_i + \frac{z_i F}{R T} c_i \nabla \psi \right) + c_i \mathbf{v}_{\text{fluid}}$$
-    where $D_i$ is diffusion coefficient, $z_i$ is ionic valence, $F$ is Faraday's constant, and $\psi$ is electrical potential.
+    where $D_i$ is diffusion coefficient, $z_i$ is ionic valence, $F \equiv N_A e$ is Faraday's constant, $R \equiv N_A k_B$ is the universal gas constant, and $\psi$ is electrical potential.
 
-* **Step 2 (The Parameter-Free Syncytial Coupling Operator):**  
-  The total mechanical and electrochemical power extracted from constituent node $j$ into the collective syncytial envelope is the surface integral of the total energy flux tensor across the junctional interface:
-  $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA}$$
-  where $\tilde{\mu}_i \equiv \mu_i^0 + R T \ln c_i + z_i F \psi$ is the total electrochemical potential of species $i$.
+* **Step 2 (The Gauge-Invariant Syncytial Coupling Operator):**  
+  The total mechanical and electrochemical power extracted from constituent node $j$ into the collective syncytial envelope is the surface integral of the total energy flux tensor across the junctional interface. Enforcing the **Junctional Electroneutrality Current Conservation Constraint** ($\sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \equiv 0$) guarantees strict invariance under electrostatic gauge transformations ($\psi \to \psi + \psi_0$):
+  $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \left( \mu_i^{\text{chem}} + z_i F \left( \psi - \psi_{\mathbb{S}} \right) \right) \mathbf{J}_i \right) \cdot \hat{n}_j \, dA}$$
+  where $\mu_i^{\text{chem}} \equiv \mu_i^\ominus + R T \ln \left( \frac{\gamma_i c_i}{c_i^\ominus} \right)$ is normalized by the standard reference state $c_i^\ominus \equiv 1 \, \mathrm{M}$, $\gamma_i$ is the activity coefficient, and $\psi_{\mathbb{S}}$ is the reference syncytial bulk ground potential.
 
 * **Step 3 (The Parameter-Free Collective Envelope Survival Condition):**  
   Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$, the **Collective Envelope Survival Condition** becomes:
@@ -549,3 +556,6 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 26. **Lindblad, G.** (1976). "On the generators of quantum dynamical semigroups". *Communications in Mathematical Physics*, 48(2), 119–130.
 27. **Gorini, V., Kossakowski, A., & Sudarshan, E. C. G.** (1976). "Completely positive dynamical semigroups of N-level systems". *Journal of Mathematical Physics*, 17(5), 821–825.
 28. **Donnan, F. G.** (1911). "Theorie der Membrangleichgewichte und Membranpotentiale bei Vorhandensein von nicht dialysierenden Elektrolyten". *Zeitschrift für Elektrochemie und angewandte physikalische Chemie*, 17(14), 572–581.
+29. **Drucker, D. C., & Prager, W.** (1952). "Soil mechanics and plastic analysis or limit design". *Quarterly of Applied Mathematics*, 10(2), 157–165.
+30. **Keener, J. P.** (1986). "A geometrical theory for vulnerable phases in excitable media". *SIAM Journal on Applied Mathematics*, 46(6), 1039–1056.
+31. **Landau, L. D., & Lifshitz, E. M.** (1987). *Fluid Mechanics* (Course of Theoretical Physics, Vol. 6, 2nd ed.). Oxford: Butterworth-Heinemann.
