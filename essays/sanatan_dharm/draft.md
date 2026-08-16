@@ -510,19 +510,26 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
-- [x] ~~**Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$)**~~ (*Closed in §4.3 via reaction-diffusion wavefront PDE and spatially distributed Damköhler metric $\mathrm{Da}(x) = \omega_0 (\tau_{\text{local}} + \frac{\|x-x_0\|^2}{4 D_{\text{diff}}})$.*)
+- [x] ~~**Gouy-Stodola Ambient Reference Exergy Temperature**~~ (*Closed in §2.3.4, §4.2, and §5.2 via ambient heat bath temperature reference $T_{\text{ambient}} \int \sigma_{\text{total}} dV$.*)
+- [x] ~~**Helmholtz-Smoluchowski Electro-Osmotic Coupling Closure**~~ (*Closed in §5.2 via Onsager electro-osmotic tensor $\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}}\mathbb{I}$.*)
+- [x] ~~**Rankine-Hugoniot Non-Linear Shock Entropy Jump**~~ (*Closed in §2.3.5 via combined elastic-acoustic strain and cubic hydrodynamic shock expansion. *)
+- [x] ~~**Capped Drucker-Prager Yield Plasticity Model**~~ (*Closed in §2.3.1 via volumetric crushing $p_{\text{crush}}$ and Rankine tensile cavitation $\sigma_{\text{cavitation}}$ envelopes.*)
+- [x] ~~**Eikonal-Curvature Singularity-Free Traveling Wave Arrival Time**~~ (*Closed in §4.3 via finite nucleation patch $r_0 > D/v$ and closed-form logarithmic integral.*)
+- [x] ~~**Non-Redundant Staverman-Weighted Donnan Osmotic Excess**~~ (*Closed in §4.4 via unified Kedem-Katchalsky Donnan overpressure.*)
+- [x] ~~**Quasilinear Parabolic Principal Symbol in Relativistic Level-Set PDE**~~ (*Closed in §2.3.3 via decoupling additive mean-curvature Laplacian from Lorentz traction radical.*)
+- [x] ~~**Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$)**~~ (*Closed in §4.3 via Eikonal-curvature wavefront metric and Anti-Phase resonance zone $\cos(\mathrm{Da}) < 0$.*)
 - [x] ~~**Kinematic Divergence: Tensile Osmotic Swelling vs. Convective Measure Collapse**~~ (*Closed in §4.4 via ion pump arrest, outward osmotic swelling kinematics $\mathbf{v}_n \cdot \hat{n} > 0$, Cauchy hoop stress $\sigma_{\text{hoop}} \ge \sigma_{\text{UTS}}$, and secondary pore efflux.*)
-- [x] ~~**Hydrodynamic Darcy-Nernst-Planck Closure for Syncytial Coupling ($\mathcal{O}_{\text{coupling}}$)**~~ (*Closed in §5.2 via coupled interstitial Darcy flow and Nernst-Planck electrochemical flux integrals.*)
+- [x] ~~**Hydrodynamic Darcy-Nernst-Planck Closure for Syncytial Coupling ($\mathcal{O}_{\text{coupling}}$)**~~ (*Closed in §5.2 via coupled interstitial Darcy flow, Nernst-Planck electrochemical flux, and electroneutral current gauge invariance.*)
 - [x] ~~**High-Frequency Dynamic Boundary Rupture ($\mathrm{Da}_{\text{boundary}} > 1$)**~~ (*Closed in §4.3 via dual-modulus decomposition $\mathbf{R}_{\text{passive}} + \mathbf{R}_{\text{active}}(t - \Delta t_{\text{response}})$ and Damköhler phase-lag analysis.*)
 - [x] ~~**Non-Local Internal Carrier Ledger Cleavage**~~ (*Closed in §4.4 via $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ and the two-stage cleavage-to-osmotic-lysis cascade.*)
-- [x] ~~**Complex Topological Boundary Decomposition & Realization Operator**~~ (*Closed in §2.1 via $\partial E = \partial E_{\mathbb{R}} \oplus i \, \partial E_{\mathfrak{Im}}$ and Gauss's flux separation.*)
+- [x] ~~**Complex Topological Boundary Decomposition & Dimensionally Homogeneous Measure**~~ (*Closed in §2.1 via $\partial E = \partial E_{\mathbb{R}} \oplus i \, \partial E_{\mathfrak{Im}}$ and Landauer mass parameter $\kappa_{\text{info}}$.*)
 - [x] ~~**Equipotential Level-Set Grounding of Structural Margin**~~ (*Closed in §2.3.2 via $\phi = \|\nabla \Phi_{\text{internal}}\| - \|\nabla \Phi_{\text{external}}\| = 0$.*)
-- [x] ~~**Viscous Steady-State Maintenance Threshold**~~ (*Closed in §1.2.2 via $\mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu}\mathbf{R}_0$.*)
-- [x] ~~**Field Compression & Microscopic Origin of Elastic Modulus ($G_0$)**~~ (*Closed in §1.2.2 via $G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho}$.*)
+- [x] ~~**Viscous Steady-State Maintenance Threshold**~~ (*Closed in §1.2.2 via exact Frobenius double-dot contraction $\dot{w}_{\text{maint}} = \frac{\sigma_{\mathrm{vM}}^2}{3\nu_{\text{shear}}}$.*)
+- [x] ~~**Field Compression & Microscopic Origin of Elastic Modulus ($K_0, \mu_{\text{shear}}$)**~~ (*Closed in §1.2.2 via orthogonal volumetric/deviatoric Maxwell ODEs.*)
 - [x] ~~**Absence of a Global Free-Energy Functional ($\mathcal{G}$)**~~ (*Closed in §2.3.4 via Lyapunov stability proof $\frac{d\mathcal{G}}{dt} \le 0$.*)
-- [x] ~~**Relativistic Causal Bound on Level-Set Velocity**~~ (*Closed in §2.3.3 via Lorentz 4-velocity saturation $\lim_{|\phi|\to\infty} |v_n| = c$.*)
+- [x] ~~**Relativistic Causal Bound on Level-Set Velocity**~~ (*Closed in §2.3.3 via Lorentz velocity saturation $\lim_{|\phi|\to\infty} |v_{\text{adv}}| = c$.*)
 - [x] ~~**Unspecified Memory Kernel $G(t-\tau)$ (Constitutive Derivation Gap)**~~ (*Closed in §1.2.2 via first-principles Maxwell integrating factor.*)
-- [x] ~~**Non-Commuting Operator Composition in State-Trace Functional (Dyson Algebra)**~~ (*Closed in §1.2.1 via Neumann series and Magnus expansion.*)
+- [x] ~~**Non-Commuting Operator Composition in State-Trace Functional (Dyson Algebra)**~~ (*Closed in §1.2.1 via GKSL generator, Neumann series, and Magnus expansion.*)
 
 ---
 
