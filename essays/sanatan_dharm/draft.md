@@ -49,27 +49,24 @@ $$\Psi\left[E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \
 **Topological Hysteresis (Sequence Sensitivity):** The non-vanishing Lie bracket $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ proves that chronological order of intervention is non-commutative:
 $$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots; (\mathcal{O}_B \to \mathcal{O}_A)\right]$$
 
-#### First-Principles Viscoelastic Memory Kernel ($G(t-\tau)$)
-An abstract boundary operator $\mathcal{O} \in D_{\mathfrak{Im}}$ drives local resource allocation $\mathcal{F} \subset \mathcal{F}_{\mathbb{R}}$ to produce macroscopic resistance through hereditary convolution:
-$$\mathbf{R}(x, t) = \int_0^t G(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau$$
+#### Viscoelastic Memory Kernel ($G$) and Hereditary Resistance ($\mathbf{R}$)
+An entity’s macroscopic resistance $\mathbf{R}(x, t)$ is the hereditary convolution of intrinsic operations $\mathcal{O} \in D_{\mathfrak{Im}}$ over substrate $\mathcal{F}_{\mathbb{R}}$ via the Maxwell relaxation kernel $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$:
 
-From the Maxwell linear viscoelastic momentum balance of substrate $\mathcal{F}$ ($\dot{\boldsymbol{\varepsilon}} = \frac{1}{E_{\text{elastic}}} \dot{\boldsymbol{\sigma}} + \frac{1}{\nu} \boldsymbol{\sigma}$), the causal Green's function solution yields the exact constitutive relaxation modulus $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$, where $G_0 = \left.\frac{\delta^2 \mathcal{U}_{\text{internal}}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ is the instantaneous elastic modulus, $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the dissipative relaxation timescale, and $\Theta(t - \tau)$ enforces physical causality.
+$$\boxed{\mathbf{R}(x, t) = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
 
-Substituting the memory kernel directly into the hereditary resistance integral yields:
-$$\boxed{\mathbf{R}(x, t) = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
+where $G_0 = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ is the instantaneous elastic modulus, and $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the memory horizon.
 
-* **Steady-State Maintenance Condition:** For constant operational intervention $\mathcal{O}[\mathcal{F}]$, the steady-state asymptotic resistance evaluates to:
-  $$\mathbf{R}_{\text{steady}} = \nu \cdot \mathcal{O}[\mathcal{F}] \implies \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0$$
-  This proves that maintaining structural resistance against entropy decay requires continuous engine throughput inversely proportional to internal viscosity $\nu$.
-* **Asymptotic Limits of Memory & Viscosity:**
-  $$\begin{cases} \nu \to 0 \implies G(t-\tau) \to G_0 \, \delta(t-\tau) \implies \mathbf{R}(t) \to \mathbf{0} & \text{(Inviscid limit: zero memory horizon, instantaneous structural dissipation)} \\ \nu \to \infty \implies G(t-\tau) \to G_0 \implies \mathbf{R}(t) \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau & \text{(Elastic limit: infinite memory horizon, permanent frozen history)} \end{cases}$$
+1. **Steady-State Maintenance:** Sustaining constant structural resistance $\mathbf{R}_0$ requires continuous engine throughput:
+   $$\mathbf{R}_{\text{steady}} = \nu \cdot \mathcal{O}[\mathcal{F}] \implies \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0$$
+2. **Viscosity Limits:**
+   * **Inviscid Limit ($\nu \to 0$):** Zero memory horizon ($\mathbf{R} \to \mathbf{0}$); immediate dissipation.
+   * **Elastic Limit ($\nu \to \infty$):** Infinite memory horizon ($\mathbf{R} \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau$); permanent frozen history.
 
-#### Physical Substrate Irreversibility ($\Omega_{\mathbb{R}}$) vs. Imaginary State Inversion ($\Omega_{\mathfrak{Im}}$)
-1. **Physical Substrate Irreversibility:** Because physical viscosity produces strictly positive entropy ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$), physical state evolution in $\Omega_{\mathbb{R}}$ is an **irreversible dynamical semi-group** $\mathcal{M}_t$ ($t \ge 0$). Backward physical time $\mathcal{M}_{-t}$ is forbidden by the Second Law.
-2. **Algorithmic State Inversion:** State-trace reconstruction is executed as an **informational inversion in the Intrinsic Operator Algebra ($D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$)** via the Inverse Dyson Propagator:
+#### Physical Irreversibility ($\Omega_{\mathbb{R}}$) vs. Algorithmic State Inversion ($\Omega_{\mathfrak{Im}}$)
+1. **Physical Semi-Group ($\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$):** Viscous dissipation ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$) renders physical state evolution strictly irreversible forward in time ($t \ge 0$).
+2. **Algorithmic Inversion ($\Psi^{-1}$ in $\Omega_{\mathfrak{Im}}$):** State-trace reconstruction is an informational inversion via the Inverse Dyson Propagator:
    $$\boxed{\hat{E}(0) = \Psi^{-1}[E(t)] \equiv \mathcal{T}^{-1} \exp\left( -\int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(t)}$$
-   funded by Landauer dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under scale-invariant recovery conditions:
-   $$\text{State-Trace Recoverable} \iff \begin{cases} \mathcal{R}e^* \equiv \frac{\|\text{Inertial Drift}\|}{\|\text{Viscous Binding}\|} < \mathcal{R}e_{\text{critical}} & \text{(Quasi-static state space; no turbulent scrambling)} \\ Pe^* \equiv \frac{\|\text{Operational Advection}\|}{\|\text{Ambient Noise Diffusion}\|} \gg 1 & \text{(Informational rank preserved; no heat-bath bleed)} \\ k_B T \cdot \Delta t \ll G_0 \, \tau_{\text{relax}} & \text{(Thermal noise below memory kernel capacity)} \end{cases}$$
+   funded by Landauer dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions ($Re^* < Re_{\text{critical}}, Pe^* \gg 1$).
 
 ---
 
