@@ -49,16 +49,19 @@ $$\Psi\left[E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \
 **Topological Hysteresis (Sequence Sensitivity):** The non-vanishing Lie bracket $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ proves that chronological order of intervention is non-commutative:
 $$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots; (\mathcal{O}_B \to \mathcal{O}_A)\right]$$
 
-#### Viscoelastic Memory Kernel ($G$) and Hereditary Resistance ($\mathbf{R}$)
-An entity’s macroscopic resistance $\mathbf{R}(x, t)$ is the hereditary convolution of intrinsic operations $\mathcal{O} \in D_{\mathfrak{Im}}$ over substrate $\mathcal{F}_{\mathbb{R}}$ via the Maxwell relaxation kernel $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$:
+#### Field Compression, Viscoelastic Memory Kernel ($G$), and Hereditary Resistance ($\mathbf{R}$)
+When an external challenge $\mathbf{C}$ compresses an entity’s boundary ($\nabla \cdot \mathbf{v} < 0$), flux crowding amplifies field gradients ($\|\nabla \mathbf{\Phi}\| \uparrow$), generating isotropic **Field Pressure** $P_{\text{field}} = \frac{1}{3}\operatorname{Tr}(\mathbf{T}^{\text{field}}) = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$.
+
+The microscopic field bulk modulus $G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ defines the instantaneous elastic pushback. The entity's macroscopic resistance $\mathbf{R}(x, t)$ is the hereditary convolution of intrinsic operations $\mathcal{O} \in D_{\mathfrak{Im}}$ over substrate $\mathcal{F}_{\mathbb{R}}$ via the Maxwell relaxation memory kernel $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$:
 
 $$\boxed{\mathbf{R}(x, t) = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
 
-where $G_0 = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ is the instantaneous elastic modulus, and $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the memory horizon.
+where $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the memory horizon.
 
-1. **Steady-State Maintenance:** Sustaining constant structural resistance $\mathbf{R}_0$ requires continuous engine throughput:
+1. **Physical Chain of Causality:** Field Compression generates instantaneous potential $G_0 \longrightarrow$ Viscoelastic Memory Kernel $G(t-\tau)$ governs temporal relaxation $\longrightarrow$ Resistance Vector $\mathbf{R}(x, t)$ defends the boundary in the Structural Margin ($\phi = \|\mathbf{R}\| - \|\mathbf{C}\|$).
+2. **Steady-State Maintenance:** Sustaining constant structural resistance $\mathbf{R}_0$ requires continuous engine throughput:
    $$\mathbf{R}_{\text{steady}} = \nu \cdot \mathcal{O}[\mathcal{F}] \implies \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0$$
-2. **Viscosity Limits:**
+3. **Viscosity Limits:**
    * **Inviscid Limit ($\nu \to 0$):** Zero memory horizon ($\mathbf{R} \to \mathbf{0}$); immediate dissipation.
    * **Elastic Limit ($\nu \to \infty$):** Infinite memory horizon ($\mathbf{R} \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau$); permanent frozen history.
 
