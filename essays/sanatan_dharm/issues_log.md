@@ -125,6 +125,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.68: Ultraviolet Energy Truncation Bound for Magnus Convergence.** Formulated bounded superoperator norm $\|\hat{\mathcal{L}}\|_{\Lambda}$ on $\mathcal{H}_{\Lambda}$ with cutoff $\Lambda_{\text{UV}}$ in §1.2.1 (Line 64), eliminating vacuous $L^2$ unbounded divergence.
 - [X] **ISSUE-6.69: Bulk Dilatational Dissipation in Steady-State Maintenance Power.** Added $\frac{[\operatorname{Tr}(\boldsymbol{\sigma}_0)]^2}{9\zeta_{\text{bulk}}}$ to volumetric mechanical power density in §1.2.2 (Eq. 100), capturing hydrostatic confinement / turgor dissipation.
 - [X] **ISSUE-6.70: Laplace-Beltrami Diffusion & Convective Area Dilatation Dilution.** Formulated $\frac{\partial c}{\partial t} + c(\kappa_{\text{geom}} v_n + \nabla_{\partial E}\cdot\mathbf{v}_{\parallel}) = D_{\text{diff}}\Delta_g c + R(c)$ on curved membrane manifolds in §4.3 (Line 374).
+- [X] **ISSUE-6.71: Multiplication Operator Composition for Lindblad Jump Operators.** Replaced $\mathcal{O}_k \otimes \mathcal{F}_k$ with $\hat{L}_k = \mathcal{O}_k \hat{M}_{\sqrt{\mathcal{F}_k}}$ in §1.2.1 (Eq. 42), ensuring rigorous operator typing on Hilbert space $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$.
+- [X] **ISSUE-6.72: Kapitza Interfacial Thermal Resistance in Non-Isothermal Boundaries.** Formulated surface dissipation $\Sigma_{\text{surface}} = \int_{\partial E} \frac{(\mathbf{J}_q\cdot\hat{n})^2 R_K}{T_{\text{ambient}} T_{\text{internal}}} dA$ in §2.2 (Eq. 189 & 195).
+- [X] **ISSUE-6.73: In-Plane Cortical Phase-Gradient Shear Stress Invariant.** Formulated $\tau_{\text{shear}} \approx \frac{h_{\text{cortex}}\|\mathbf{R}_{\text{active}}\|\omega_0}{v_{\text{bistable}}}$ and multi-axial $J_2$ yield envelope in §4.3 (Eq. 396).
+- [X] **ISSUE-6.74: Predator Free-Boundary Kinematic Expansion Closure.** Formulated $\int_{\partial E^A \setminus f_{AB}} \rho_A (\mathbf{v}_n^{\text{free}}\cdot\hat{n}_A) dA = \eta_{\text{trophic}}\dot{\mathcal{M}}_{A\leftarrow B} - \int_{f_{AB}} \rho_A (\mathbf{v}_n^{AB}\cdot\hat{n}_A) dA$ in §5.1 (Eq. 452).
 
 ---
 
