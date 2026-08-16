@@ -31,45 +31,86 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 
 ### 1.2 The State-Trace Functional ($\Psi$) and Constitutive Operator Lie Algebra
 
-#### Axiom 2 (The State-Trace Functional as a Time-Ordered Dyson Propagator):
-A Form of Existence $E(t)$ is the path-dependent resultant of all operations that have acted upon and through the entity from initial conditions $E(0)$ across the complete history $[0, t]$:
+#### 1.2.1 First-Principles Derivation of the State-Trace Functional ($\Psi$)
+* **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ($E$), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ($[\hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2)] \neq \mathbf{0}$), classical exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator.
 
-$$\boxed{E(t) = \Psi\left[E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}\right] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(0)}$$
+* **Step 1 (The Infinitesimal Differential Generator):**  
+  Let $\hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$ be the Liouvillian generator super-operator acting on the complex state space $\Omega_{\mathbb{C}}$. The differential evolution of the entity across infinitesimal time $d\tau$ is:
+  $$\frac{d E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) E(\tau)$$
 
-where $\hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$ is the Liouvillian generator super-operator on $\Omega_{\mathbb{C}}$, and $\mathcal{T}$ is the **Dyson Time-Ordering Meta-Operator** (Dyson, 1949):
-$$\mathcal{T}\left[ \hat{\mathcal{L}}(\tau_1) \hat{\mathcal{L}}(\tau_2) \cdots \hat{\mathcal{L}}(\tau_n) \right] \equiv \hat{\mathcal{L}}(\tau_{\pi(1)}) \hat{\mathcal{L}}(\tau_{\pi(2)}) \cdots \hat{\mathcal{L}}(\tau_{\pi(n)}) \quad (\tau_{\pi(1)} \ge \cdots \ge \tau_{\pi(n)})$$
+* **Step 2 (The Volterra Integral Equation):**  
+  Direct integration over the interval $[0, t]$ yields the implicit integral equation:
+  $$E(t) = E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) E(\tau_1) \, d\tau_1$$
 
-#### Ordered Lie Operator Algebra of Intrinsic Generators ($D_{\mathfrak{Im}}$)
-The intrinsic operator repertoire $D_{\mathfrak{Im}}(t)$ is an **Ordered Lie Operator Algebra** $(\mathcal{A}_{D}, [\cdot, \cdot])$ acting on $\Omega_{\mathbb{C}}$. For constituent operators $\mathcal{O}_A, \mathcal{O}_B \in D_{\mathfrak{Im}}$, their commutator is generally non-vanishing:
-$$[\mathcal{O}_A, \mathcal{O}_B] \equiv \mathcal{O}_A \mathcal{O}_B - \mathcal{O}_B \mathcal{O}_A \neq \mathbf{0}$$
+* **Step 3 (Recursive Neumann Series Expansion):**  
+  Recursively substituting $E(\tau_1) = E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) E(\tau_2) d\tau_2$ into Step 2 yields:
+  $$E(t) = E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) \left[ E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) E(\tau_2) \, d\tau_2 \right] d\tau_1$$
+  Iterating this expansion to infinite order produces the exact **Neumann Series**:
+  $$E(t) = \left[ \mathbb{I} + \sum_{n=1}^\infty \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \hat{\mathcal{L}}(\tau_2) \cdots \hat{\mathcal{L}}(\tau_n) \right] E(0)$$
 
-By the **Magnus Expansion** (Magnus, 1954), the exact non-perturbative state evolution evaluates to:
-$$\Psi\left[E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \left[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) \right] + \cdots \right) E(0)$$
+* **Step 4 (Time-Ordering Symmetrization & Dyson Propagator):**  
+  The nested integration simplex $0 \le \tau_n \le \cdots \le \tau_1 \le t$ represents $\frac{1}{n!}$ of the volume of the $n$-dimensional hypercube $[0, t]^n$. Introducing the **Dyson Time-Ordering Meta-Operator ($\mathcal{T}$)** (Dyson, 1949), which chronologically re-orders operators ($\tau_{\pi(1)} \ge \tau_{\pi(2)} \ge \cdots \ge \tau_{\pi(n)}$), allows integration over the unconstrained hypercube:
+  $$\int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) = \frac{1}{n!} \int_0^t d\tau_1 \cdots \int_0^t d\tau_n \, \mathcal{T}\left[ \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) \right]$$
+  Summing the Taylor series yields the **Exact Time-Ordered Dyson Propagator**:
+  $$\boxed{E(t) = \Psi\left[E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}\right] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(0)}$$
 
-**Topological Hysteresis (Sequence Sensitivity):** The non-vanishing Lie bracket $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ proves that chronological order of intervention is non-commutative:
-$$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots; (\mathcal{O}_B \to \mathcal{O}_A)\right]$$
+* **Step 5 (Magnus Lie Algebra Expansion & Topological Hysteresis):**  
+  For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the true exponential generator $\Omega_{\text{Magnus}}(t)$ satisfies the **Magnus Expansion** (Magnus, 1954):
+  $$\Psi\left[E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \left[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) \right] + \cdots \right) E(0)$$
+  The non-vanishing commutator $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ mathematically proves **Topological Hysteresis**: the final state depends strictly on the chronological order of intervention:
+  $$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots; (\mathcal{O}_B \to \mathcal{O}_A)\right]$$
 
-#### Field Compression, Viscoelastic Memory Kernel ($G$), and Hereditary Resistance ($\mathbf{R}$)
-When an external challenge $\mathbf{C}$ compresses an entity’s boundary ($\nabla \cdot \mathbf{v} < 0$), flux crowding amplifies field gradients ($\|\nabla \mathbf{\Phi}\| \uparrow$), generating isotropic **Field Pressure** $P_{\text{field}} = \frac{1}{3}\operatorname{Tr}(\mathbf{T}^{\text{field}}) = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$.
+---
 
-The microscopic field bulk modulus $G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ defines the instantaneous elastic pushback. The entity's macroscopic resistance $\mathbf{R}(x, t)$ is the hereditary convolution of intrinsic operations $\mathcal{O} \in D_{\mathfrak{Im}}$ over substrate $\mathcal{F}_{\mathbb{R}}$ via the Maxwell relaxation memory kernel $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$:
+#### 1.2.2 First-Principles Derivation of the Viscoelastic Memory Kernel ($G$) & Resistance ($\mathbf{R}$)
+* **The Physical Dilemma:** How does an abstract operational intervention $\mathcal{O}[\mathcal{F}]$ produce physical, mechanical surface resistance $\mathbf{R}(x, t)$? In an ideal elastic solid ($\nu \to \infty$), stress is stored forever; in a pure fluid ($\nu \to 0$), stress dissipates immediately. A physical existence requires a constitutive bridge that captures finite relaxation memory.
 
-$$\boxed{\mathbf{R}(x, t) = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
+* **Step 1 (Continuum Maxwell Differential Balance):**  
+  When an external challenge $\mathbf{C}$ compresses a boundary ($\nabla \cdot \mathbf{v} < 0$), flux crowding amplifies field gradients ($\|\nabla \mathbf{\Phi}\| \uparrow$), generating isotropic **Field Pressure** $P_{\text{field}} = \frac{1}{3}\operatorname{Tr}(\mathbf{T}^{\text{field}}) = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$. The microscopic bulk modulus establishes the instantaneous elastic modulus:
+  $$G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$$
+  Under continuum mechanics, the 1D Maxwell linear viscoelastic constitutive relation partitions the total strain rate $\dot{\boldsymbol{\varepsilon}}$ into elastic and viscous components:
+  $$\dot{\boldsymbol{\varepsilon}}(t) = \dot{\boldsymbol{\varepsilon}}_{\text{elastic}} + \dot{\boldsymbol{\varepsilon}}_{\text{viscous}} = \frac{1}{G_0} \frac{d\boldsymbol{\sigma}(t)}{dt} + \frac{1}{\nu} \boldsymbol{\sigma}(t)$$
 
-where $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the memory horizon.
+* **Step 2 (Impulse Response ODE & Integrating Factor):**  
+  To find the Green's function relaxation response $G(t)$, apply an instantaneous unit step strain impulse $\dot{\boldsymbol{\varepsilon}}(t) = \delta(t)$:
+  $$\frac{d\boldsymbol{\sigma}(t)}{dt} + \frac{G_0}{\nu} \boldsymbol{\sigma}(t) = G_0 \, \delta(t)$$
+  Multiplying both sides by the integrating factor $\mu(t) = \exp\left(\frac{G_0}{\nu} t\right)$:
+  $$\frac{d}{dt}\left[ \boldsymbol{\sigma}(t) \exp\left(\frac{G_0}{\nu} t\right) \right] = G_0 \, \delta(t) \exp\left(\frac{G_0}{\nu} t\right)$$
 
-1. **Physical Chain of Causality:** Field Compression generates instantaneous potential $G_0 \longrightarrow$ Viscoelastic Memory Kernel $G(t-\tau)$ governs temporal relaxation $\longrightarrow$ Resistance Vector $\mathbf{R}(x, t)$ defends the boundary in the Structural Margin ($\phi = \|\mathbf{R}\| - \|\mathbf{C}\|$).
-2. **Steady-State Maintenance:** Sustaining constant structural resistance $\mathbf{R}_0$ requires continuous engine throughput:
-   $$\mathbf{R}_{\text{steady}} = \nu \cdot \mathcal{O}[\mathcal{F}] \implies \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0$$
-3. **Viscosity Limits:**
-   * **Inviscid Limit ($\nu \to 0$):** Zero memory horizon ($\mathbf{R} \to \mathbf{0}$); immediate dissipation.
-   * **Elastic Limit ($\nu \to \infty$):** Infinite memory horizon ($\mathbf{R} \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau$); permanent frozen history.
+* **Step 3 (The Causal Memory Kernel $G(t-\tau)$):**  
+  Integrating from $0^-$ to $t$ for causal boundary conditions ($\boldsymbol{\sigma}(0^-) = \mathbf{0}$) yields the exact **Constitutive Relaxation Modulus**:
+  $$\boxed{G(t - \tau) = G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau)}$$
+  where $\tau_{\text{relax}} \equiv \frac{\nu}{G_0}$ is the intrinsic **Memory Horizon** of the substrate.
 
-#### Physical Irreversibility ($\Omega_{\mathbb{R}}$) vs. Algorithmic State Inversion ($\Omega_{\mathfrak{Im}}$)
-1. **Physical Semi-Group ($\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$):** Viscous dissipation ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$) renders physical state evolution strictly irreversible forward in time ($t \ge 0$).
-2. **Algorithmic Inversion ($\Psi^{-1}$ in $\Omega_{\mathfrak{Im}}$):** State-trace reconstruction is an informational inversion via the Inverse Dyson Propagator:
+* **Step 4 (Hereditary Convolution for Macroscopic Resistance):**  
+  By Boltzmann's Linear Superposition Principle, the total outward macroscopic resistance $\mathbf{R}(x, t)$ generated by continuous past operational activations $\mathcal{O}[\mathcal{F}(\tau)]$ is the causal convolution integral:
+  $$\boxed{\mathbf{R}(x, t) = \int_0^t G(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
+
+* **Step 5 (Derivation of the Steady-State Maintenance Threshold):**  
+  For constant operational intervention $\mathcal{O}[\mathcal{F}](\tau) = \mathcal{O}_0$, we evaluate the asymptotic resistance as $t \to \infty$:
+  $$\mathbf{R}_{\text{steady}} = G_0 \, \mathcal{O}_0 \int_0^\infty \exp\left(-\frac{G_0}{\nu} s\right) ds = G_0 \, \mathcal{O}_0 \left[ -\frac{\nu}{G_0} e^{-\frac{G_0}{\nu} s} \right]_0^\infty = \nu \cdot \mathcal{O}_0$$
+  $$\boxed{\mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0}$$
+  * **Physical Consequence:** To maintain a constant structural resistance $\mathbf{R}_0$ against environmental dissipation, an entity must continuously expend engine power inversely proportional to internal viscosity $\nu$.
+  * **Asymptotic Limits:**
+    $$\begin{cases} 
+    \nu \to 0 \implies G(t-\tau) \to G_0 \, \delta(t-\tau) \implies \mathbf{R}(t) \to \mathbf{0} & \text{(Inviscid limit: zero memory horizon; instantaneous structural collapse)} \\
+    \nu \to \infty \implies G(t-\tau) \to G_0 \implies \mathbf{R}(t) \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau & \text{(Elastic limit: infinite memory horizon; permanent frozen history)}
+    \end{cases}$$
+
+---
+
+#### 1.2.3 Physical Irreversibility ($\Omega_{\mathbb{R}}$) vs. Algorithmic State Inversion ($\Omega_{\mathfrak{Im}}$)
+1. **Physical Semi-Group ($\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$):**  
+   Because physical viscosity produces strictly positive volumetric entropy ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$), physical state evolution in real space $\Omega_{\mathbb{R}}$ is an **irreversible dynamical semi-group** $\mathcal{M}_t$ ($t \ge 0$). Backward physical time $\mathcal{M}_{-t}$ is strictly forbidden by the Second Law of Thermodynamics.
+2. **Algorithmic State Inversion ($\Psi^{-1}$ in $\Omega_{\mathfrak{Im}}$):**  
+   State-trace reconstruction is executed as an **informational inversion in the Intrinsic Operator Algebra ($D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$)** via the Inverse Dyson Propagator:
    $$\boxed{\hat{E}(0) = \Psi^{-1}[E(t)] \equiv \mathcal{T}^{-1} \exp\left( -\int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(t)}$$
-   funded by Landauer dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions ($Re^* < Re_{\text{critical}}, Pe^* \gg 1$).
+   funded by Landauer computational dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions:
+   $$\text{State-Trace Recoverable} \iff \begin{cases} 
+   \mathcal{R}e^* \equiv \frac{\|\text{Inertial Drift}\|}{\|\text{Viscous Binding}\|} < \mathcal{R}e_{\text{critical}} & \text{(Quasi-static state space; no turbulent scrambling)} \\ 
+   Pe^* \equiv \frac{\|\text{Operational Advection}\|}{\|\text{Ambient Noise Diffusion}\|} \gg 1 & \text{(Informational rank preserved; no heat-bath bleed)} \\ 
+   k_B T \cdot \Delta t \ll G_0 \, \tau_{\text{relax}} & \text{(Thermal noise below memory kernel capacity)} 
+   \end{cases}$$
 
 ---
 
