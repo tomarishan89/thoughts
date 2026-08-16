@@ -447,6 +447,19 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
+#### Active Theoretical Frontiers (Pending Physical Resolution)
+1. **Spatial Reaction-Diffusion Dispersion of the Damköhler Field:**
+   - *Status:* **Open / Active.**
+   - *Description:* Biochemical transduction latency $\Delta t_{\text{response}}(x)$ is spatially non-uniform due to finite wavefront diffusion speed ($D_{\text{diff}}$). Localized high-frequency point loads create spatial stress concentrations where $\mathrm{Da}(x_{\text{impact}}) > 1$ while the distal boundary remains quasi-static ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
+2. **Kinematic Divergence: Compressive Level-Set vs. Tensile Osmotic Rupture:**
+   - *Status:* **Open / Active.**
+   - *Description:* The standard level-set convention tracks inward convective boundary erosion ($\mathbf{v}_n \cdot \hat{n} < 0$). In internal ledger cleavage, boundary failure occurs via outward osmotic swelling and hoop-stress tensile fracture ($P_{\text{osmotic}} > \sigma_{\text{yield}}^{\text{membrane}}$). A tensorial strain-to-failure criterion is required to couple swelling kinematics directly to measure collapse.
+3. **Hydrodynamic Closure for Syncytial Coupling Operator ($\mathcal{O}_{\text{coupling}}$):**
+   - *Status:* **Open / Active.**
+   - *Description:* In §5.2, $\mathcal{O}_{\text{coupling}}$ relies on an empirical nodal efficiency parameter $\eta_j$. A first-principles derivation requires coupling interstitial fluid mechanics (Darcy's Law) and gap-junction electrodiffusion (Nernst-Planck flux) to close the macro-Lyapunov functional.
+
+---
+
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
 - [x] ~~**High-Frequency Dynamic Boundary Rupture ($\mathrm{Da}_{\text{boundary}} > 1$)**~~ (*Closed in §4.3 via dual-modulus decomposition $\mathbf{R}_{\text{passive}} + \mathbf{R}_{\text{active}}(t - \Delta t_{\text{response}})$ and Damköhler phase-lag analysis.*)
 - [x] ~~**Non-Local Internal Carrier Ledger Cleavage**~~ (*Closed in §4.4 via $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ and the two-stage cleavage-to-osmotic-lysis cascade.*)

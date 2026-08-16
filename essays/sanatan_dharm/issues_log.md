@@ -48,6 +48,13 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 
 ---
 
-## Category 5: Physical Fragility & Temporal Bounds (Active Frontiers)
-- [ ] **ISSUE-5.1 (Active Vulnerability #1): Execution Latency in Temporal Coupling ($\mathrm{Da}_{\text{boundary}}$).** Finite response latency $\Delta t_{\text{response}} = \tau_{\text{compute}} + \tau_{\text{actuate}}$ vs. challenge frequency $\omega_0$ via Boundary Damköhler Number $\mathrm{Da}_{\text{boundary}} \equiv \omega_0 \Delta t_{\text{response}} \le 1$.
-- [ ] **ISSUE-5.2 (Active Vulnerability #3): Carrier Ledger Vulnerability.** Single-point physical fragility of substrate carrier $\mathcal{F}_{\text{ledger}}$ inducing algorithmic paralysis ($\mu(\mathcal{F}_{\text{ledger}}) \to 0 \implies D_{\mathfrak{Im}} \to \emptyset$).
+## Category 5: Physical Fragility & Temporal Bounds (Resolved Milestones)
+- [X] **ISSUE-5.1: High-Frequency Dynamic Boundary Rupture ($\mathrm{Da}_{\text{boundary}} > 1$).** Formulated dual-modulus decomposition $\mathbf{R}_{\text{passive}} + \mathbf{R}_{\text{active}}(t - \Delta t_{\text{response}})$ and proved dynamic phase-lag rupture for $\mathrm{Da}_{\text{boundary}} \equiv \omega_0 \Delta t_{\text{response}} > 1$ in §4.3 of `draft.md`.
+- [X] **ISSUE-5.2: Non-Local Internal Carrier Ledger Cleavage.** Formulated carrier-operator projection $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ and derived the two-stage cleavage-to-osmotic-lysis cascade in §4.4 of `draft.md`.
+
+---
+
+## Category 6: Downstream Theoretical Frontiers (Active Open Weaknesses)
+- [ ] **ISSUE-6.1 (Active Frontier #1): Spatial Reaction-Diffusion Dispersion of the Damköhler Field.** $\Delta t_{\text{response}}(x)$ is spatially non-uniform due to finite wavefront diffusion speed ($D_{\text{diff}}$). Localized point impacts create spatial stress concentrations where $\mathrm{Da}(x_{\text{impact}}) > 1$ while distal regions remain quasi-static ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
+- [ ] **ISSUE-6.2 (Active Frontier #2): Kinematic Divergence: Compressive Level-Set vs. Tensile Osmotic Rupture.** Level-set formulation tracks inward convective boundary erosion ($\mathbf{v}_n \cdot \hat{n} < 0$), whereas internal ledger cleavage triggers outward osmotic swelling and hoop-stress tensile rupture ($P_{\text{osmotic}} > \sigma_{\text{yield}}^{\text{membrane}}$). A tensorial strain-to-failure criterion is required.
+- [ ] **ISSUE-6.3 (Active Frontier #3): Hydrodynamic Closure for Syncytial Coupling Operator ($\mathcal{O}_{\text{coupling}}$).** In §5.2, $\mathcal{O}_{\text{coupling}}$ relies on an empirical efficiency parameter $\eta_j$. A first-principles derivation requires coupling interstitial fluid mechanics (Darcy's Law) and gap-junction electrodiffusion (Nernst-Planck flux) to close the macro-Lyapunov functional.
