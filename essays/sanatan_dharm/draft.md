@@ -192,11 +192,21 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\te
 
 ### 2.3 Structural Margin Field & Relativistic Level-Set Kinematics
 
-#### The Structural Margin Field ($\phi$) and Environmental Challenge ($\mathbf{C}$)
-$$\mathbf{C}(x, t) \equiv \sum_{j} \left(-\boldsymbol{\sigma}_j(x, t) \cdot \hat{n}\right), \qquad \phi(x, t) \equiv \|\mathbf{R}(x, t)\| - \|\mathbf{C}(x, t)\|$$
+#### 2.3.1 The Structural Margin Field ($\phi$) and Environmental Challenge ($\mathbf{C}$)
+* **The Physical Dilemma:** An entity's boundary is not a static geometrical wall; it is an active mechanical and field interface under continuous deformation from surrounding entities and external radiation fields. How do we quantify local boundary stability from first principles?
 
-#### Theorem 3 (Front as Derived Zero-Level Set & Equipotential Surface):
-The Interface Front $f(t)$ is the emergent zero-level set of the Structural Margin Field:
+* **Definition (Environmental Challenge Traction):**  
+  The Environmental Challenge $\mathbf{C}(x, t)$ is the sum of all outward Cauchy stresses and field momentum fluxes exerted onto the entity's boundary $\partial E$ by external systems $\{j\}$:
+  $$\mathbf{C}(x, t) \equiv \sum_{j} \left(-\boldsymbol{\sigma}_j(x, t) \cdot \hat{n}\right) \quad \left( \text{units: } [\mathrm{Pa}] = [\mathrm{N/m^2}] \right)$$
+
+* **Definition (The Structural Margin Field):**  
+  The scalar Structural Margin Field $\phi(x, t)$ is the local difference between the magnitude of internal resistance $\mathbf{R}(x, t)$ (derived via the hereditary kernel in §1.2.2) and the external challenge $\mathbf{C}(x, t)$:
+  $$\boxed{\phi(x, t) \equiv \|\mathbf{R}(x, t)\| - \|\mathbf{C}(x, t)\| \quad \left( \text{units: } [\mathrm{Pa}] \right)}$$
+
+---
+
+#### 2.3.2 Theorem 3 (Interface Front as Derived Zero-Level Set & Equipotential Surface)
+The physical interface front $f(t)$ separating the entity's coherent interior from the environment is the emergent zero-level set:
 $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equiv \|\mathbf{R}(x, t)\| - \|\mathbf{C}(x, t)\| = 0 \right\}}$$
 
 * **Equipotential Field Representation:** Where forces derive from scalar/tensor potentials ($\mathbf{R} = -\nabla \Phi_{\text{internal}}, \mathbf{C} = -\nabla \Phi_{\text{external}}$), the front is rigorously the **critical equipotential balance surface**:
@@ -212,21 +222,78 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   \text{Regime 3: Ablative / Fracture} & (\|\mathbf{C}\| \ge \sigma_{\text{yield}}): \text{Industrial lasers, relativistic shocks; inverts margin } \phi < 0 \implies \mathbf{v}_n \cdot \hat{n} < 0
   \end{cases}$$
 
-The infinitesimal front displacement is the Fréchet derivative of the State-Trace Functional:
-$$\mathbf{v}_n(x, t) = \left(\frac{\delta \Psi}{\delta \mathcal{O}}\dot{\mathcal{O}} + \frac{\delta \Psi}{\delta \mathcal{F}}\dot{\mathcal{F}}\right)_{\!\mathfrak{Re}}\!\cdot\hat{n}$$
+---
 
-#### Theorem 4 (Relativistic Lorentz-Bounded Level-Set Evolution PDE):
-$$\boxed{\frac{\partial \phi}{\partial t} + \mathbf{v}_n \left\|\nabla \phi\right\| = 0, \quad \text{where } \mathbf{v}_n(x, t) = \frac{c \cdot \kappa \, \phi(x, t)}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2(x, t)}} \hat{n} \implies \|\mathbf{v}_n(x, t)\| < c}$$
+#### 2.3.3 Theorem 4 (First-Principles Derivation of the Relativistic Level-Set PDE)
+* **The Physical Dilemma:** In classical level-set methods (Osher & Sethian, 1988), normal front velocity is proportional to overpressure: $v_{\text{classical}} = \frac{L_0 \phi}{\nu}$. When an entity is struck by extreme external challenges ($\|\mathbf{C}\| \gg \|\mathbf{R}\| \implies |\phi| \to \infty$), classical velocity diverges ($v_{\text{classical}} \to \infty$), violating special relativity ($v < c$). We must derive a causally closed, Lorentz-bounded kinematic PDE.
 
-#### Theorem 5 (Global Lyapunov Stability of Boundary Coherence):
-Defining $\mathcal{G}[E(t)] \equiv \mathcal{U}_{\text{internal}}[E] - T_{\text{ambient}} S_{\text{internal}}[E]$:
-$$\boxed{\frac{d\mathcal{G}}{dt} = \dot{\mathcal{U}}_{\text{internal}} - T_{\text{ambient}} \dot{S}_{\text{internal}} \le 0 \iff \dot{E}_{\text{fuel}} \ge \int_{E} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV}$$
+* **Step 1 (Classical Overdamped Normal Velocity):**  
+  Balancing net boundary traction $\phi(x, t)$ ($[\mathrm{Pa}]$) against viscous shear resistance $\nu$ ($[\mathrm{Pa \cdot s}]$) across an interfacial thickness scale $L_0$ ($[\mathrm{m}]$) yields the unconstrained classical velocity:
+  $$v_{\text{classical}}(x, t) = \frac{L_0 \cdot \phi(x, t)}{\nu} \quad \left( \text{units: } \left[\frac{\mathrm{m \cdot (N/m^2)}}{\mathrm{N \cdot s/m^2}}\right] = \left[\frac{\mathrm{m}}{\mathrm{s}}\right] \right)$$
 
-#### Theorem 6 (Optimal Predictive Investment Ratio $\chi^*$):
-Defining $\chi(t) \equiv \frac{\dot{\mathcal{E}}_{\mathfrak{Im}}(t)}{\dot{\mathcal{E}}_{\mathfrak{Re}}(t)}$, the total interaction dissipation $\sigma_{\text{global}}(\chi) = \sigma_{\text{computation}}(\chi) + \sigma_{\text{shock}}(\chi)$ exhibits a unique thermodynamic minimum at:
-$$\boxed{\left. \frac{\partial \sigma_{\text{computation}}}{\partial \chi} \right|_{\chi^*} = -\left. \frac{\partial \sigma_{\text{shock}}}{\partial \chi} \right|_{\chi^*}}$$
+* **Step 2 (Lorentz Relativistic Velocity Saturation):**  
+  Under Lorentzian spacetime $(\mathcal{M}, g_{\mu\nu})$, the relativistic 4-velocity $u^\mu = \gamma(c, \mathbf{v})$ enforces momentum saturation for an overdamped boundary front subjected to extreme force:
+  $$v_n = \frac{v_{\text{classical}}}{\sqrt{1 + \left(\frac{v_{\text{classical}}}{c}\right)^2}}$$
 
-* **Prigogine Dissipation-to-Stability Ratio:** $\Lambda(t) \equiv \frac{\int_E \sigma_{\text{total}} dV}{\int_{\partial E} \mathbf{J}_S \cdot \hat{n} dA}$. Stable dissipative structure for $\Lambda < 1$, NESS at $\Lambda = 1$, and structural bifurcation/collapse for $\Lambda > 1$.
+* **Step 3 (Algebraic Substitution & Homogeneous Metric Coupling):**  
+  Substituting $v_{\text{classical}} = \frac{L_0 \phi}{\nu}$ into Step 2:
+  $$v_n(x, t) = \frac{\frac{L_0 \phi}{\nu}}{\sqrt{1 + \frac{L_0^2 \phi^2}{\nu^2 c^2}}} = \frac{\frac{L_0 \phi}{\nu}}{\frac{\sqrt{\nu^2 c^2 + L_0^2 \phi^2}}{\nu c}} = \boxed{\frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}}}$$
+  where both $\nu c$ and $L_0 \phi$ carry dimension $[\mathrm{N/m}]$, establishing exact dimensional homogeneity.
+
+* **Step 4 (Asymptotic Causal Verification):**  
+  Evaluating the asymptotic limits confirms strict relativistic causal boundedness:
+  $$\lim_{|\phi| \to \infty} |v_n| = \lim_{|\phi| \to \infty} \frac{c \cdot L_0 |\phi|}{L_0 |\phi| \sqrt{1 + \frac{\nu^2 c^2}{L_0^2 \phi^2}}} = c \implies |v_n(x, t)| < c, \quad \forall \phi \in (-\infty, \infty)$$
+
+* **Step 5 (The Closed Relativistic Level-Set Evolution PDE):**  
+  By implicit function differentiation, any material point on the propagating interface front $f(t) = \{x \mid \phi(x, t) = 0\}$ satisfies the total convective derivative:
+  $$\frac{d\phi}{dt} = \frac{\partial \phi}{\partial t} + \nabla \phi \cdot \frac{d\mathbf{x}}{dt} = 0$$
+  Substituting the outward normal front velocity $\frac{d\mathbf{x}}{dt} = \mathbf{v}_n = v_n \frac{\nabla \phi}{\|\nabla \phi\|}$:
+  $$\frac{\partial \phi}{\partial t} + v_n \left( \frac{\nabla \phi}{\|\nabla \phi\|} \cdot \nabla \phi \right) = 0 \implies \frac{\partial \phi}{\partial t} + v_n \|\nabla \phi\| = 0$$
+  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} \|\nabla \phi(x, t)\| = 0}$$
+
+---
+
+#### 2.3.4 Theorem 5 (Global Lyapunov Stability of Boundary Coherence)
+* **The Physical Dilemma:** What thermodynamic criterion guarantees that a non-equilibrium dissipative structure persists without dissolving into maximum-entropy equilibrium?
+
+* **Step 1 (The Non-Equilibrium Free-Energy Functional):**  
+  Define the global non-equilibrium free-energy functional for an open domain $E(t)$:
+  $$\mathcal{G}[E(t)] \equiv \mathcal{U}_{\text{internal}}[E(t)] - T_{\text{ambient}} S_{\text{internal}}[E(t)]$$
+
+* **Step 2 (Time Derivative from First & Second Laws):**  
+  Taking the time derivative:
+  $$\frac{d\mathcal{G}}{dt} = \frac{d\mathcal{U}_{\text{internal}}}{dt} - T_{\text{ambient}} \frac{dS_{\text{internal}}}{dt}$$
+  From the First Law ($\dot{\mathcal{U}}_{\text{internal}} = \dot{E}_{\text{fuel}} - \dot{W}_{\text{out}} - \dot{Q}_{\text{out}}$) and the Second Law ($\dot{S}_{\text{internal}} = \int_E \sigma_{\text{total}} dV - \int_{\partial E} \mathbf{J}_S \cdot \hat{n} dA$):
+  $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}} - \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV - \underbrace{\left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{amb}} \int_{\partial E} \mathbf{J}_S \cdot \hat{n} \, dA \right]}_{\ge 0 \text{ (Dissipation to Ambient Heat Bath)}}$$
+
+* **Step 3 (Lyapunov Stability Bound):**  
+  Boundary persistence requires $\frac{d\mathcal{G}}{dt} \le 0$, which yields the **Critical Fuel Sufficiency Condition**:
+  $$\boxed{\frac{d\mathcal{G}}{dt} \le 0 \iff \dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV}$$
+
+---
+
+#### 2.3.5 Theorem 6 (First-Principles Derivation of Optimal Predictive Investment Ratio $\chi^*$)
+* **The Physical Dilemma:** Anticipatory pre-stressing reduces physical shock damage, but computing projections generates Landauer erasure heat ($k_B T \ln 2$). How does an entity calculate the exact, optimal energy partition ratio $\chi \equiv \dot{\mathcal{E}}_{\mathfrak{Im}} / \dot{\mathcal{E}}_{\mathfrak{Re}}$ without under- or over-computing?
+
+* **Step 1 (The Global Dissipation Functional):**  
+  The total thermodynamic dissipation rate of the entity during interaction is the sum of internal computational cost and external boundary shock damage:
+  $$\sigma_{\text{global}}(\chi) = \sigma_{\text{computation}}(\chi) + \sigma_{\text{shock}}(\chi)$$
+
+* **Step 2 (Monotonicity of Landauer Computational Dissipation):**  
+  By Landauer's Principle, computing predictions with investment ratio $\chi$ generates erasure entropy at a strictly increasing rate:
+  $$\sigma_{\text{computation}}(\chi) = \frac{k_B T \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\chi) \implies \frac{\partial \sigma_{\text{computation}}}{\partial \chi} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \chi^2} \ge 0$$
+
+* **Step 3 (Monotonicity of Shock Dissipation via Sagawa-Ueda):**  
+  By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\chi)$ extracts work to pre-stiffen the boundary, reducing shock damage:
+  $$\sigma_{\text{shock}}(\chi) = \sigma_0 \exp\left( -\alpha \, \Delta \mathcal{I}(\chi) \right) \implies \frac{\partial \sigma_{\text{shock}}}{\partial \chi} = -\alpha \sigma_0 e^{-\alpha \Delta \mathcal{I}} \frac{\partial \Delta \mathcal{I}}{\partial \chi} < 0, \quad \frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} > 0$$
+
+* **Step 4 (Convexity & Global Thermodynamic Minimum):**  
+  Because $\sigma_{\text{global}}(\chi)$ is the sum of two strictly convex functions ($\frac{\partial^2 \sigma_{\text{global}}}{\partial \chi^2} > 0$), there exists a unique global thermodynamic minimum $\chi^*$ satisfying $\frac{d\sigma_{\text{global}}}{d\chi} = 0$:
+  $$\boxed{\left. \frac{\partial \sigma_{\text{computation}}}{\partial \chi} \right|_{\chi^*} = -\left. \frac{\partial \sigma_{\text{shock}}}{\partial \chi} \right|_{\chi^*}}$$
+
+* **Step 5 (Prigogine Dissipation-to-Stability Ratio $\Lambda$):**  
+  Comparing internal volumetric entropy generation to outward boundary rejection defines the **Prigogine Stability Ratio**:
+  $$\boxed{\Lambda(t) \equiv \frac{\int_{E(t)} \sigma_{\text{total}}(x, t) \, dV}{\int_{\partial E(t)} \mathbf{J}_S \cdot \hat{n} \, dA} \begin{cases} < 1 & \text{Stable dissipative persistence (interior entropy pumped out)} \\ = 1 & \text{Non-Equilibrium Steady State (NESS)} \\ > 1 & \text{Structural collapse / bifurcation (internal entropy accumulates)} \end{cases}}$$
 
 ---
 
