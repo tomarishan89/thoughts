@@ -95,6 +95,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.38: Helmholtz-Smoluchowski Electro-Osmotic Coupling Closure.** Explicitly closed off-diagonal Onsager cross-coupling tensor $\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I}$ in §5.2 of `draft.md`.
 - [X] **ISSUE-6.39: Anti-Phase Destabilization Resonance Zone.** Formalized the dynamic shock traction amplification criterion $\cos(\mathrm{Da}(x)) < 0 \iff \mathrm{Da}(x) \in (\pi/2, 3\pi/2) \pmod{2\pi}$ in §4.3 of `draft.md`.
 - [X] **ISSUE-6.40: Deviatoric vs. Volumetric Decoupled Maxwell ODEs.** Formulated exact decoupled differential constitutive laws for deviatoric stress $\mathbf{s}$ and isotropic pressure $\frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma})$ in §1.2.2 of `draft.md`.
+- [X] **ISSUE-6.41: Dimensional Homogeneity in Negentropy Intake Rate.** Removed redundant outer $1/T_{\text{internal}}$ factor in §2.2 (Eq. 185) to preserve exact $[\mathrm{W/K}]$ dimensions.
+- [X] **ISSUE-6.42: Cross-Sectional Gouy-Stodola Exergy Rate Synchronization.** Synchronized critical starvation threshold in §4.2 and syncytial envelope survival condition in §5.2 to $T_{\text{ambient}}\int \sigma_{\text{total}} dV$.
+- [X] **ISSUE-6.43: Cross-Sectional Green-Kubo Formulation Synchronization.** Synchronized Tier I physical resistance field in §3.1 to the Debye-screened volume-integrated Green-Kubo integral.
+- [X] **ISSUE-6.44: Dimensional Rate Homogeneity in Enzymatic Repair Power.** Formulated repair power rate $\dot{\mathcal{W}}_{\text{repair}} \ge \dot{n}_{\text{lesions}} k_B T \ln 2 \, [\mathrm{W}]$ in §4.1 of `draft.md`.
 
 ---
 

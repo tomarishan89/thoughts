@@ -182,7 +182,7 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\dot{E}_{\text{
 ```
 
 1. **Phase 1: Negentropy Intake:** Influx of free energy carrying chemical affinity $A_\alpha$ and radiant Poynting flux $\mathbf{S}$:
-   $$\dot{S}_{\text{intake}} = -\frac{1}{T_{\text{internal}}} \int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha}{T_{\text{internal}}} \mathbf{J}_{\alpha}^{\text{molar}} \right) \cdot \hat{n}_{\text{in}} \, dA < 0$$
+   $$\dot{S}_{\text{intake}} = -\int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}(x, t)}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha(x, t)}{T_{\text{internal}}(x, t)} \mathbf{J}_{\alpha}^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA < 0 \quad \left( \text{units: } \left[\frac{\mathrm{W}}{\mathrm{K}}\right] \right)$$
    $$\boxed{\dot{E}_{\text{fuel}} = \int_{f_{\text{intake}}} \left( \alpha \, \mathbf{S}(x, t) + \sum_\beta \mu_\beta^{\text{chem}}(x, t) \, \mathbf{J}_\beta^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA \quad \left( \text{units: } [\mathrm{W}] \right)}$$
 
 2. **Phase 2: Unified Local Entropy Production Density Tensor ($\sigma_{\text{total}}$):**
@@ -316,7 +316,7 @@ Physical entities (crystals, rocks, planetary bodies, stars) possess no cognitiv
 $$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \chi^* = 0, \quad \dot{\mathcal{E}}_{\mathfrak{Im}} = 0$$
 
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** Cohesive lattice binding potential $U_{\text{bond}}$, electronic bond energies, or gravitational binding energy $U_{\text{grav}} = -\frac{3 G M^2}{5 R}$.
-* **Resistance Field ($\mathbf{R}$):** Instantaneous elastic restoring force $\boldsymbol{\sigma} = \mathbf{C}_{\text{elastic}} : \boldsymbol{\varepsilon}$, with Green-Kubo shear viscosity $\nu_{\text{field}} = \frac{1}{V k_B T}\int_0^\infty \langle T_{xy}(0) T_{xy}(\tau) \rangle d\tau$.
+* **Resistance Field ($\mathbf{R}$):** Instantaneous elastic restoring force $\boldsymbol{\sigma} = \mathbf{C}_{\text{elastic}} : \boldsymbol{\varepsilon}$, with regulated field shear viscosity $\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{k_B T}\int_V d^3x \int_0^\infty \langle T_{xy}(\mathbf{0}, 0) T_{xy}(\mathbf{x}, \tau) \rangle e^{-(\frac{m_D c^2}{\hbar} + \epsilon)\tau} d\tau$.
 * **Engine Mode Decoupling & Dormant Ground States:**  
   Physical entities exhibit hierarchical engine decoupling:
   1. **Primary Structural Engine:** Maintained by interatomic/gravitational potential ($U_{\text{bond}}$). In the absence of external illumination or mechanical challenge ($\mathbf{C} \to \mathbf{0}$), the structural margin remains positive ($\phi_{\text{lattice}} > 0$), preserving material measure $\mu(E) > 0$.
@@ -342,15 +342,15 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 4.1 Tier II Biological Forms (Metabolic Engines)
 * **Operator Algebra ($D_{\mathfrak{Im}}$):** Biochemical feedback loops, enzymatic allosteric catalysis, and genetic regulatory networks operating in metabolic phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \otimes_{\mathbb{C}} \Omega_{\mathfrak{Im}}$.
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** High-energy chemical phosphate bonds (ATP hydrolysis, $\Delta G \approx -57 \, \text{kJ/mol}$).
-* **Fuel Partitioning ($\chi^* \in (0, 1)$):** Energy is strictly partitioned between physical actuation/cytoskeletal maintenance ($\dot{\mathcal{E}}_{\mathfrak{Re}}$) and enzymatic error correction / DNA repair ($W_{\text{repair}} \ge n \cdot k_B T \ln 2$):
+* **Fuel Partitioning ($\chi^* \in (0, 1)$):** Energy is strictly partitioned between physical actuation/cytoskeletal maintenance ($\dot{\mathcal{E}}_{\mathfrak{Re}}$) and enzymatic error correction / DNA repair power ($\dot{\mathcal{W}}_{\text{repair}} \ge \dot{n}_{\text{lesions}} \cdot k_B T \ln 2 \in [\mathrm{W}]$, where $\dot{n}_{\text{lesions}}$ is lesion turnover frequency $[\mathrm{s^{-1}}]$):
   $$\dot{\mathcal{E}}_{\text{total}} = \dot{\mathcal{E}}_{\mathfrak{Re}} + \dot{\mathcal{E}}_{\mathfrak{Im}} = \left( \int_{\partial E} \mathbf{R} \cdot \mathbf{v}_n \, dA + \int_E \boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}} \, dV \right) + \left( k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \dot{\mathcal{W}}_{\text{repair}} \right)$$
 
 ### 4.2 Stress-Testing Biological Forms: Does it Hold?
 * **Metabolic Fuel Influx:** Steady-state survival requires continuous chemical fuel influx across the cellular membrane front:
   $$\dot{E}_{\text{fuel}} = \int_{f_{\text{intake}}} \boldsymbol{\mu}_{\text{chem}} \cdot \mathbf{J}_{\text{fuel}} \, dA$$
 * **Critical Starvation Threshold & Membrane Lysis:**  
-  When metabolic influx falls below the internal volumetric dissipation threshold:
-  $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV$$
+  When metabolic influx falls below the Gouy-Stodola internal dissipation threshold:
+  $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV$$
   the Lyapunov derivative becomes strictly positive ($\frac{d\mathcal{G}}{dt} > 0$). Internal osmotic and viscous stresses overwhelm cytoskeletal resistance ($\phi < 0$), driving inward front collapse ($\mathbf{v}_n \cdot \hat{n} < 0$) and causing irreversible cellular lysis ($\mu(E) \to 0$).
 
 ---
@@ -476,7 +476,7 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 * **Step 3 (The Parameter-Free Collective Envelope Survival Condition):**  
   Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$, the **Collective Envelope Survival Condition** becomes:
-  $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA \ge \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, T(x, t) \, dV}$$
+  $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA \ge T_{\text{ambient}} \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, dV}$$
 
 * **Step 4 (Programmed Nodal Apoptosis & Re-allocation):**  
   When an individual constituent node $E^j$ reaches irrecoverable genetic or metabolic damage, junctional reverse-gating drives its individual structural margin negative ($\phi(E^j) < 0 \implies \mu(E^j) \to 0$) while channeling its residual chemical inventory into $\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$, preserving the collective macro-envelope ($\mu(\mathbb{S}) > 0$).

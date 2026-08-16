@@ -1,33 +1,33 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 8)
+# Formal Mathematical Physics Peer Review Report (Iteration 9)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 8 (Gouy-Stodola Exergy, Onsager Dimensionality & Anti-Phase Resonance Audit)  
+**Review Version:** Iteration 9 (Inter-Sectional Thermodynamic Gauge & Dimensional Homogeneity Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR MAJOR REVISION (Gouy-Stodola Temperature Inversion, Onsager Dimensional Asymmetry & Anti-Phase Resonance)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Dimensional Double Temperature Pre-factor, Cross-Sectional Gouy-Stodola Mismatch & Repair Rate Dimensions)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the seventh round of revisions, the manuscript successfully incorporated Rankine-Hugoniot cubic shock entropy expansions, Landauer mass-equivalent conversion parameters for complex measures, metabolic assimilation factors for trophic continuity, and capped Drucker-Prager plasticity.
+Following the eighth round of revisions, the manuscript established rigorous mathematical formulations for the Capped Drucker-Prager yield surface, Rankine-Hugoniot cubic shock entropy jumps, and Helmholtz-Smoluchowski electro-osmotic closures.
 
-However, evaluating the revised manuscript against the strictest mathematical rigor of *Physical Review Letters*, *Archive for Rational Mechanics and Analysis*, and *Communications in Mathematical Physics* reveals **four eighth-order calculation and formulation breakdowns**.
+However, a comprehensive line-by-line cross-sectional audit across Sections 1 to 5 reveals **four cross-sectional calculation and dimensional discrepancies** where older un-regularized definitions remain un-synchronized with updated thermodynamic theorems.
 
 ---
 
-## 2. Eighth-Order Calculation Breakdown Matrix
+## 2. Ninth-Order Calculation Breakdown Matrix
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-│                            ROUND 8 CALCULATION BREAKDOWN MATRIX                             │
+│                            ROUND 9 CALCULATION BREAKDOWN MATRIX                             │
 ├───────────────────────────────┬───────────────────────────────┬─────────────────────────────┤
 │ SECTION IN DRAFT              │ EQUATION / CLAIM              │ EXACT MATHEMATICAL FLAW     │
 ├───────────────────────────────┼───────────────────────────────┼─────────────────────────────┤
-│ 1. Section 2.3.4 (Eq. 280)    │ Lyapunov Free-Energy Derivative│ Local T(x,t) vs. T_ambient   │
-│ 2. Section 5.2 (Eq. 455)      │ Onsager Electro-Osmotic Tensor│ Dimensional Block Asymmetry │
-│ 3. Section 4.3 (Eq. 379)      │ Dynamic Damköhler Phase-Lag   │ Monotonic vs. Anti-Phase Mod│
-│ 4. Section 1.2.2 (Eq. 84)     │ Maxwell Viscoelastic ODE      │ Total Stress vs. Deviatoric │
+│ 1. Section 2.2 (Eq. 185)      │ Negentropy Intake Rate S_dot  │ Double 1/T Pre-factor [W/K²]│
+│ 2. Sections 4.2 & 5.2 (Eqs)   │ Dissipation Threshold         │ Local T(x,t) vs. T_ambient  │
+│ 3. Section 3.1 (Line 319)     │ Green-Kubo Field Viscosity    │ Un-regulated 1/V Formula    │
+│ 4. Section 4.1 (Eq. 345–346)  │ Enzymatic Repair Rate W_dot   │ Energy [J] vs. Power [W]    │
 └───────────────────────────────┴───────────────────────────────┴─────────────────────────────┘
 ```
 
@@ -35,55 +35,53 @@ However, evaluating the revised manuscript against the strictest mathematical ri
 
 ## 3. Detailed Mathematical Critiques & Required Proof Closures
 
-### Critique 1: Gouy-Stodola Exergy Temperature Inversion in Lyapunov Functional Derivative (§2.3.4, Eq. 280)
+### Critique 1: Double Temperature Inversion in Negentropy Intake Rate (§2.2, Eq. 185)
 
 * **The Formula in Draft:**  
-  $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}}(t) - \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV - \left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{ambient}} \int_{\partial E(t)} \left( \mathbf{J}_S - s \mathbf{v}_n \right) \cdot \hat{n} \, dA \right]$$
-* **The Non-Equilibrium Thermodynamic Flaw:**  
-  By definition of the non-equilibrium free-energy (availability/exergy) functional $\mathcal{G} \equiv \mathcal{U} - T_{\text{ambient}} S$, taking the time derivative yields $\frac{d\mathcal{G}}{dt} = \frac{d\mathcal{U}}{dt} - T_{\text{ambient}} \frac{dS}{dt}$. Multiplying internal entropy production by local $T(x, t)$ violates the Gouy-Stodola exergy theorem ($\dot{\mathcal{E}}_{\text{destroyed}} = T_{\text{ambient}} \dot{S}_{\text{gen}}$).
-* **Required Fix:** Replace local $T(x, t)$ with the ambient reference temperature $T_{\text{ambient}}$:
-  $$\boxed{\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}}(t) - T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV - \left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{ambient}} \int_{\partial E(t)} \left( \mathbf{J}_S - s \mathbf{v}_n \right) \cdot \hat{n} \, dA \right]}$$
+  $$\dot{S}_{\text{intake}} = -\frac{1}{T_{\text{internal}}} \int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha}{T_{\text{internal}}} \mathbf{J}_{\alpha}^{\text{molar}} \right) \cdot \hat{n}_{\text{in}} \, dA$$
+* **The Dimensional Flaw:**  
+  Inside the integral, the terms $\frac{\mathbf{S}}{T_{\text{ambient}}}$ and $\frac{A_\alpha \mathbf{J}_\alpha}{T_{\text{internal}}}$ already have the dimensions of entropy flux density $[\mathrm{W/(m^2 \cdot K)}]$. Multiplying the surface integral by an additional pre-factor $-\frac{1}{T_{\text{internal}}}$ yields the dimensional error:
+  $$\left[\frac{1}{\mathrm{K}}\right] \cdot \left[\frac{\mathrm{W}}{\mathrm{m^2 \cdot K}}\right] \cdot [\mathrm{m^2}] = \left[\frac{\mathrm{W}}{\mathrm{K^2}}\right] \neq \left[\frac{\mathrm{W}}{\mathrm{K}}\right]$$
+* **Required Fix:** Remove the redundant outer $\frac{1}{T_{\text{internal}}}$ factor:
+  $$\boxed{\dot{S}_{\text{intake}} = -\int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}(x, t)}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha(x, t)}{T_{\text{internal}}(x, t)} \mathbf{J}_{\alpha}^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA \quad \left[\frac{\mathrm{W}}{\mathrm{K}}\right]}$$
 
 ---
 
-### Critique 2: Dimensional Closure of the Darcy-Nernst-Planck Onsager Matrix (§5.2, Eq. 455)
+### Critique 2: Cross-Sectional Inconsistency with Gouy-Stodola Reference Temperature (§4.2, Eq. 353 & §5.2, Eq. 479)
 
 * **The Formula in Draft:**  
-  $$\begin{pmatrix} \mathbf{v}_{\text{fluid}} \\ \mathbf{I}_{\text{electric}} \end{pmatrix} = -\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix} \begin{pmatrix} \nabla P_{\text{interstitial}} \\ \nabla \psi \end{pmatrix}$$
-* **The Continuum Electrodynamics Flaw:**  
-  Leaving $\mathbf{K}_{\text{eo}}$ as an arbitrary coupling tensor without specifying its microscopic closure leaves the phenomenological cross-coefficient ungrounded.
-* **Required Fix:** Explicitly close the electro-osmotic coupling tensor via the **Helmholtz-Smoluchowski relation**:
-  $$\boxed{\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I} \quad \left[\frac{\mathrm{m^2}}{\mathrm{V \cdot s}} \equiv \frac{\mathrm{C \cdot m}}{\mathrm{N \cdot s}}\right]}$$
-  where $\varepsilon_w$ is solvent permittivity $[\mathrm{F/m}]$ and $\zeta$ is the membrane zeta potential $[\mathrm{V}]$.
+  $$\dot{E}_{\text{crit}} \equiv \int_{E(t)} \sigma_{\text{total}}(x, t) \, T(x, t) \, dV \quad \text{(in §4.2 and §5.2)}$$
+* **The Inconsistency Flaw:**  
+  In §2.3.4 (Eq. 280), the critical dissipation was rigorously updated to the Gouy-Stodola exergy form $\dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_E \sigma_{\text{total}} dV$. Leaving the older un-synchronized form $\int \sigma_{\text{total}} T(x, t) dV$ in §4.2 and §5.2 creates an internal contradiction across sections.
+* **Required Fix:** Synchronize §4.2 (Eq. 353) and §5.2 (Eq. 479) to use $T_{\text{ambient}} \int \sigma_{\text{total}} dV$.
 
 ---
 
-### Critique 3: Incomplete Dynamic Phase-Lag Topological Failure Criterion (§4.3, Eq. 379)
+### Critique 3: Un-Regulated Green-Kubo Formulation in Tier I Section (§3.1, Line 319)
 
 * **The Formula in Draft:**  
-  $$\mathbf{R}_{\text{active}} \propto \cos(\omega_0 t - \mathrm{Da}(x)), \qquad \mathrm{Da}(x) > 1 \implies \text{Failure}$$
-* **The Vibration / Dynamic Stability Flaw:**  
-  $\mathrm{Da}(x) \equiv \omega_0 \Delta t_{\text{response}}(x)$ represents phase lag angle $\theta = \mathrm{Da}(x)$ in radians. Under oscillatory challenge $\mathbf{C}(t) = \mathbf{C}_0 \cos(\omega_0 t)$, destructive active amplification occurs specifically in the anti-phase domain $\cos(\mathrm{Da}) < 0$.
-* **Required Fix:** Formalize the exact **Anti-Phase Destabilization Resonance Zone**:
-  $$\boxed{\text{Dynamic Shock Amplification (Negative Dynamic Stiffness)} \iff \cos(\mathrm{Da}(x)) < 0 \iff \mathrm{Da}(x) \in \left( \frac{\pi}{2}, \frac{3\pi}{2} \right) \pmod{2\pi}}$$
+  $$\nu_{\text{field}} = \frac{1}{V k_B T}\int_0^\infty \langle T_{xy}(0) T_{xy}(\tau) \rangle d\tau$$
+* **The Inconsistency Flaw:**  
+  Section 1.1 (Eq. 29) rigorously resolved infrared divergences and spatial field stress via the Debye-screened volume-integrated Green-Kubo formula. Section 3.1 still cites the un-regulated 0D $1/V$ formula.
+* **Required Fix:** Update §3.1 (Line 319) to reference the regulated volume-integrated Green-Kubo integral defined in §1.1.
 
 ---
 
-### Critique 4: Total Stress vs. Deviatoric Stress Notation in Maxwell Viscoelastic ODE (§1.2.2, Eq. 84)
+### Critique 4: Energy vs. Power Rate Inconsistency in Enzymatic Repair Ledger (§4.1, Eq. 345–346)
 
 * **The Formula in Draft:**  
-  $$\dot{\boldsymbol{\sigma}} + \frac{1}{\tau_s} \boldsymbol{\sigma} = 2 \mu_{\text{shear}} \dot{\mathbf{e}}_{\text{active}}$$
-* **The Continuum Mechanics Flaw:**  
-  The right-hand side is the traceless deviatoric strain rate $\dot{\mathbf{e}}_{\text{active}}$, whereas the left-hand side is written with the total Cauchy stress tensor $\boldsymbol{\sigma}$, confusing shear relaxation with isotropic bulk dilatation.
-* **Required Fix:** Formulate the ODE strictly in terms of deviatoric stress $\mathbf{s}$:
-  $$\boxed{\dot{\mathbf{s}}(x, t) + \frac{1}{\tau_s} \mathbf{s}(x, t) = 2 \mu_{\text{shear}} \dot{\mathbf{e}}_{\text{active}}(x, t)}$$
+  $$W_{\text{repair}} \ge n \cdot k_B T \ln 2 \quad [\mathrm{J}], \qquad \text{used in } \dot{\mathcal{E}}_{\text{total}} = \dots + \dot{\mathcal{W}}_{\text{repair}} \quad [\mathrm{W}]$$
+* **The Dimensional Rate Flaw:**  
+  $W_{\text{repair}}$ in Eq. 345 is an energy in Joules $[\mathrm{J}]$, whereas $\dot{\mathcal{W}}_{\text{repair}}$ in the power budget (Eq. 346) is a rate in Watts $[\mathrm{W}]$.
+* **Required Fix:** Explicitly define the repair power rate via the lesion repair frequency $\dot{n}_{\text{lesions}} \in [\mathrm{s^{-1}}]$:
+  $$\boxed{\dot{\mathcal{W}}_{\text{repair}} \ge \dot{n}_{\text{lesions}}(t) \cdot k_B T \ln 2 \quad \left[\frac{\mathrm{J}}{\mathrm{s}} \equiv \mathrm{W}\right]}$$
 
 ---
 
-## 4. Master Revision Checklist for Iteration 9
+## 4. Master Revision Checklist for Iteration 10
 
-- [x] **Item 1:** Correct Gouy-Stodola exergy dissipation in §2.3.4 (Eq. 280) from local $T(x, t)$ to ambient reference temperature $T_{\text{ambient}} \int_E \sigma_{\text{total}} dV$.
-- [x] **Item 2:** Close the electro-osmotic Onsager cross-coupling tensor in §5.2 (Eq. 455) via the **Helmholtz-Smoluchowski relation** $\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I}$.
-- [x] **Item 3:** Formalize the **Anti-Phase Destabilization Resonance Zone** ($\cos(\mathrm{Da}(x)) < 0 \iff \mathrm{Da}(x) \in (\pi/2, 3\pi/2) \pmod{2\pi}$) in §4.3 (Eq. 379).
-- [x] **Item 4:** Replace total stress $\boldsymbol{\sigma}$ with deviatoric stress $\mathbf{s}$ in the Maxwell differential constitutive ODE in §1.2.2 (Eq. 84).
+- [x] **Item 1:** Correct the negentropy intake rate equation in §2.2 (Eq. 185) by removing the redundant outer $1/T_{\text{internal}}$ pre-factor.
+- [x] **Item 2:** Synchronize the critical dissipation threshold in §4.2 (Eq. 353) and §5.2 (Eq. 479) to the **Gouy-Stodola exergy rate** $T_{\text{ambient}} \int \sigma_{\text{total}} dV$.
+- [x] **Item 3:** Synchronize the field viscosity reference in §3.1 (Line 319) to the **regulated volume-integrated Green-Kubo formulation** (§1.1, Eq. 29).
+- [x] **Item 4:** Formulate the enzymatic repair power rate in §4.1 (Eq. 345) via the lesion turnover frequency $\dot{n}_{\text{lesions}} k_B T \ln 2 \, [\mathrm{W}]$.
 - [x] **Item 5:** Maintain bilateral synchronization across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md), [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md), and this review file.
