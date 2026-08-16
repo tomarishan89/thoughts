@@ -121,6 +121,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.64: Starling Osmotic Driving Force in Interstitial Darcy Flow.** Incorporated $-\sum_i \sigma_i R T \nabla c_i$ into Darcy fluid velocity in §5.2 (Eq. 468), coupling tissue fluid flow to metabolic solute gradients.
 - [X] **ISSUE-6.65: Macromolecular van 't Hoff Solute Pressure in Donnan Lysis.** Added $+\sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}}$ to Donnan osmotic overpressure in §4.4 (Eq. 413), preventing unphysical vanishing of osmotic pressure at isoelectric points.
 - [X] **ISSUE-6.66: Two-Branch Eikonal Arrival & Sub-Critical Wavefront Quenching.** Formulated super-critical propagation branch vs sub-critical quenching threshold $r_{\text{crit}} \equiv D_{\text{diff}}/v_{\text{bistable}}$ in §4.3 (Eq. 381), eliminating the logarithmic pole.
+- [X] **ISSUE-6.67: Spatial Yukawa-Debye Screening Regulator in Green-Kubo Field Viscosity.** Added $\exp(-\frac{m_D c}{\hbar}\|\mathbf{x}\|)$ to spatial volume integral in §1.1 (Eq. 29), eliminating logarithmic spatial infrared volume divergence.
+- [X] **ISSUE-6.68: Ultraviolet Energy Truncation Bound for Magnus Convergence.** Formulated bounded superoperator norm $\|\hat{\mathcal{L}}\|_{\Lambda}$ on $\mathcal{H}_{\Lambda}$ with cutoff $\Lambda_{\text{UV}}$ in §1.2.1 (Line 64), eliminating vacuous $L^2$ unbounded divergence.
+- [X] **ISSUE-6.69: Bulk Dilatational Dissipation in Steady-State Maintenance Power.** Added $\frac{[\operatorname{Tr}(\boldsymbol{\sigma}_0)]^2}{9\zeta_{\text{bulk}}}$ to volumetric mechanical power density in §1.2.2 (Eq. 100), capturing hydrostatic confinement / turgor dissipation.
+- [X] **ISSUE-6.70: Laplace-Beltrami Diffusion & Convective Area Dilatation Dilution.** Formulated $\frac{\partial c}{\partial t} + c(\kappa_{\text{geom}} v_n + \nabla_{\partial E}\cdot\mathbf{v}_{\parallel}) = D_{\text{diff}}\Delta_g c + R(c)$ on curved membrane manifolds in §4.3 (Line 374).
 
 ---
 
