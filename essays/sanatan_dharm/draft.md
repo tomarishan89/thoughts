@@ -366,24 +366,47 @@ parameterized exclusively by the spectral dimensionality and Lie algebra class o
 
 ### 5.3 Intra-Tier Symmetry Breaking & Dynamic Role Assignment
 
-#### Theorem 7 (Intra-Tier Symmetry Breaking and Dynamic Role Assignment):
-Let $E^A, E^B \in T_\alpha$ across shared interface $f_{AB} = \partial E^A \cap \partial E^B$. The operational role assignment is governed by the **Interfacial Structural Margin Differential ($\Delta \phi_{AB}$)**:
+#### 5.3.1 Theorem 7 (First-Principles Derivation of Intra-Tier Symmetry Breaking and Dynamic Role Assignment)
+* **The Physical Dilemma:** When two entities $E^A, E^B \in T_\alpha$ collide or establish a shared contact interface $f_{AB} = \partial E^A \cap \partial E^B$, classical biology, economics, and sociology invoke teleological or anthropomorphic concepts ("predator", "prey", "buyer", "seller", "invader"). How does non-equilibrium continuum mechanics determine which entity cleaves, assimilates, or yields to the other purely from interfacial boundary jump conditions?
 
-$$\Delta \phi_{AB}(x, t) \equiv \phi_A(x, t) - \phi_B(x, t) = \left(\|\mathbf{R}_A\| - \|\mathbf{C}_A\|\right) - \left(\|\mathbf{R}_B\| - \|\mathbf{C}_B\|\right)$$
+* **Step 1 (Interface Traction Jump Condition):**  
+  Along the shared boundary $f_{AB}$, let $\hat{n}_A$ be the outward unit normal vector of entity $A$ (so that $\hat{n}_B = -\hat{n}_A$). The net normal traction jump $\Delta \sigma_{\text{interface}}$ across the boundary is:
+  $$\Delta \sigma_{\text{interface}}(x, t) \equiv \left( \boldsymbol{\sigma}_A(x, t) - \boldsymbol{\sigma}_B(x, t) \right) \cdot \hat{n}_A = \|\mathbf{R}_A\| - \|\mathbf{C}_A\| - \left( \|\mathbf{R}_B\| - \|\mathbf{C}_B\| \right)$$
+  which defines the **Interfacial Structural Margin Differential ($\Delta \phi_{AB}$)**:
+  $$\boxed{\Delta \phi_{AB}(x, t) \equiv \phi_A(x, t) - \phi_B(x, t) \quad \left( \text{units: } [\mathrm{Pa}] \right)}$$
 
-$$\boxed{\begin{cases} 
-\Delta \phi_{AB}(x, t) > 0 \implies & E^A \text{ operates on } E^B \text{ as fuel} \quad \left(\dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt}, \; \frac{d\mu(E^B)}{dt} < 0\right) \\
-\Delta \phi_{AB}(x, t) < 0 \implies & E^B \text{ operates on } E^A \text{ as fuel} \quad \left(\dot{\mathcal{E}}_{\text{fuel}}^B = -\frac{d\mathcal{G}[E^A]}{dt}, \; \frac{d\mu(E^A)}{dt} < 0\right) \\
-\Delta \phi_{AB}(x, t) = 0 \implies & \text{Kinematic elastic balance} \quad \left(\mathbf{v}_n^A = -\mathbf{v}_n^B, \; \frac{d\mu}{dt} = 0\right)
-\end{cases}}$$
+* **Step 2 (The Relativistic Interface Front Velocity):**  
+  By the Relativistic Level-Set Evolution PDE (Theorem 4), the normal velocity of the shared interface front $\mathbf{v}_n^{AB}$ in the direction of $\hat{n}_A$ is:
+  $$\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A$$
+  where $\nu_{AB} \equiv \frac{\nu_A \nu_B}{\nu_A + \nu_B}$ is the effective harmonic interface viscosity.
 
-#### Theorem 8 (Inter-Tier Coupling and Collective Fuel Sufficiency):
-A collective system $\mathbb{S} \in T_m$ enclosing constituent nodes $\{E^j\} \in T_n$ maintains envelope boundary coherence if and only if:
+* **Step 3 (Derivation of Measure / Volume Transfer via Reynolds Transport Theorem):**  
+  By the Reynolds Transport Theorem, the rate of change of entity $B$'s physical measure $\mu(E^B)$ across the active interface $f_{AB}$ is:
+  $$\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \mathbf{v}_n^{AB} \cdot \hat{n}_A \, dA = -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA$$
+  Evaluating the sign of the margin differential yields the **Deterministic Role Assignment Matrix**:
+  $$\boxed{\begin{cases} 
+  \Delta \phi_{AB}(x, t) > 0 \implies & \frac{d\mu(E^B)}{dt} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt} > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) < 0 \implies & \frac{d\mu(E^A)}{dt} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = -\frac{d\mathcal{G}[E^A]}{dt} > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \frac{d\mu}{dt} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
+  \end{cases}}$$
 
-$$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{m \to n}\left[\Delta \mathcal{G}_j(t)\right] \ge \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, T(x, t) \, dV}$$
+---
 
-#### Systemic Nodal Resource Re-allocation:
-An individual node re-allocates resources $\mathcal{F}_j \to \mathbb{S}$ such that $\phi(E^j) < 0$ ($\mu(E^j) \to 0$) while preserving collective envelope measure $\mu(\mathbb{S}) > 0$.
+#### 5.3.2 Theorem 8 (Inter-Tier Coupling and Collective Fuel Sufficiency)
+* **The Physical Dilemma:** How does a higher-order collective existence $\mathbb{S} \in T_m$ (multicellular organism, colony, swarm, institution) maintain its macro-boundary envelope when its constituent nodes $\{E^j\} \in T_n$ are subjected to individual entropic dissipation?
+
+* **Step 1 (Constituent Nodal Free-Energy Extraction):**  
+  Each constituent node $E^j$ generates free energy at internal rate $\Delta \dot{\mathcal{G}}_j(t)$. The inter-tier coupling operator $\mathcal{O}_{\text{coupling}}^{m \to n}$ extracts a coupling fraction $\eta_j \in [0, 1]$ from node $j$ into the collective envelope:
+  $$\dot{\mathcal{E}}_{\text{extracted}}^j(t) = \eta_j \cdot \mathcal{O}_{\text{coupling}}^{m \to n}\left[ \Delta \mathcal{G}_j(t) \right]$$
+
+* **Step 2 (Collective Energy Balance & Macro-Lyapunov Stability):**  
+  Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$ yields the collective fuel intake rate:
+  $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{m \to n}\left[ \Delta \mathcal{G}_j(t) \right]$$
+  Applying Theorem 5 to the collective envelope $\mathbb{S}$, the **Collective Envelope Survival Condition** strictly requires:
+  $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{m \to n}\left[\Delta \mathcal{G}_j(t)\right] \ge \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, T(x, t) \, dV}$$
+
+* **Step 3 (Systemic Nodal Resource Re-allocation / Apoptosis):**  
+  An individual constituent node $E^j$ can re-allocate its local resource pool ($\eta_j \to 1, \dot{\mathcal{E}}_{\text{fuel}}^j \to 0$), driving its individual structural margin negative ($\phi(E^j) < 0 \implies \mu(E^j) \to 0$) while preserving the collective envelope measure ($\mu(\mathbb{S}) > 0$).
 
 ---
 
