@@ -54,7 +54,14 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 
 ---
 
-## Category 6: Downstream Theoretical Frontiers (Active Open Weaknesses)
-- [ ] **ISSUE-6.1 (Active Frontier #1): Spatial Reaction-Diffusion Dispersion of the Damköhler Field.** $\Delta t_{\text{response}}(x)$ is spatially non-uniform due to finite wavefront diffusion speed ($D_{\text{diff}}$). Localized point impacts create spatial stress concentrations where $\mathrm{Da}(x_{\text{impact}}) > 1$ while distal regions remain quasi-static ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
-- [ ] **ISSUE-6.2 (Active Frontier #2): Kinematic Divergence: Compressive Level-Set vs. Tensile Osmotic Rupture.** Level-set formulation tracks inward convective boundary erosion ($\mathbf{v}_n \cdot \hat{n} < 0$), whereas internal ledger cleavage triggers outward osmotic swelling and hoop-stress tensile rupture ($P_{\text{osmotic}} > \sigma_{\text{yield}}^{\text{membrane}}$). A tensorial strain-to-failure criterion is required.
-- [ ] **ISSUE-6.3 (Active Frontier #3): Hydrodynamic Closure for Syncytial Coupling Operator ($\mathcal{O}_{\text{coupling}}$).** In §5.2, $\mathcal{O}_{\text{coupling}}$ relies on an empirical efficiency parameter $\eta_j$. A first-principles derivation requires coupling interstitial fluid mechanics (Darcy's Law) and gap-junction electrodiffusion (Nernst-Planck flux) to close the macro-Lyapunov functional.
+## Category 6: Downstream Spatial & Hydrodynamic Bounds (Resolved Milestones)
+- [X] **ISSUE-6.1: Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$).** Formulated intracellular reaction-diffusion $\frac{\partial c}{\partial t} = D_{\text{diff}}\nabla^2 c + R(c)$ and derived spatially distributed Damköhler field $\mathrm{Da}(x) = \omega_0 (\tau_{\text{local}} + \frac{\|x-x_{\text{impact}}\|^2}{4 D_{\text{diff}}})$ in §4.3 of `draft.md`.
+- [X] **ISSUE-6.2: Kinematic Divergence: Tensile Osmotic Swelling vs. Convective Measure Collapse.** Resolved sign divergence via hyper-osmotic influx $\Delta P_{\text{osmotic}} > 0$, outward normal expansion ($\mathbf{v}_n \cdot \hat{n} > 0$), membrane hoop-stress tensile rupture ($\sigma_{\text{hoop}} \ge \sigma_{\text{UTS}}^{\text{membrane}}$), and secondary lysis pore evacuation ($\frac{d\mu}{dt} \ll 0$) in §4.4 of `draft.md`.
+- [X] **ISSUE-6.3: Hydrodynamic Darcy-Nernst-Planck Closure for Syncytial Coupling ($\mathcal{O}_{\text{coupling}}$).** Replaced empirical efficiency parameters with coupled interstitial Darcy fluid flow and Nernst-Planck electrochemical flux integrals, closing the collective Lyapunov envelope survival condition in §5.2 of `draft.md`.
+
+---
+
+## Category 7: Continuum-Closure Frontiers (Active Open Weaknesses)
+- [ ] **ISSUE-7.1 (Active Frontier #1): Non-Linear Wavefront Steepening & Soliton Disruption.** Reaction-diffusion with non-linear FitzHugh-Nagumo / Hodgkin-Huxley kinetics under extreme shock amplitudes leading to chemical shock steepening and wavefront curvature instabilities.
+- [ ] **ISSUE-7.2 (Active Frontier #2): Viscoelastic Rate-Dependent Plasticity in Lipid Bilayer Strain-to-Failure.** Dynamic strain-rate dependence of ultimate tensile strength $\sigma_{\text{UTS}}(\dot{\varepsilon})$ coupling Kelvin-Voigt cortex elasticity to Maxwell bilayer fluid dissipation under high strain rates ($\dot{\varepsilon} \sim 10^2 \, \mathrm{s}^{-1}$).
+- [ ] **ISSUE-7.3 (Active Frontier #3): Interstitial Poromechanical Matrix Tortuosity & Biot Consolidation.** Strain-dependent interstitial permeability tensor $\mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon})$ and Biot poromechanical consolidation in non-rigid extracellular tissue matrices under dynamic macro-deformation.

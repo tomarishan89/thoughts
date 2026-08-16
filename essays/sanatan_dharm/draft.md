@@ -343,48 +343,61 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-### 4.3 High-Frequency Dynamic Boundary Rupture ($\mathrm{Da}_{\text{boundary}} > 1$)
-* **The Physical Dilemma:** Cellular homeostatic stiffening and active cytoskeletal remodeling (e.g., actin-myosin contractility, Rho-kinase cascades) require finite biochemical signal transduction latency ($\Delta t_{\text{response}} = \tau_{\text{biochem}} + \tau_{\text{actuate}} \sim 10^{-3}\text{ to } 10^1 \, \mathrm{s}$). How does an entity respond when struck by high-frequency acoustic, shock, or ballistic stress waves?
+### 4.3 High-Frequency Dynamic Boundary Rupture & Spatial Damköhler Dispersion ($\mathrm{Da}(x) > 1$)
+* **The Physical Dilemma:** Cellular homeostatic stiffening and active cytoskeletal remodeling (e.g., actin-myosin contractility, Rho-kinase cascades) require finite biochemical signal transduction latency ($\Delta t_{\text{response}} = \tau_{\text{biochem}} + \tau_{\text{actuate}} \sim 10^{-3}\text{ to } 10^1 \, \mathrm{s}$). How does an entity respond when struck by high-frequency acoustic, shock, or ballistic stress waves, and how does spatial signal dispersion govern localized rupture?
 
 * **Dual-Modulus Resistance Decomposition:**  
   The total outward resistance is partitioned into instantaneous passive membrane elasticity and time-delayed active metabolic traction:
-  $$\mathbf{R}(x, t) = \mathbf{R}_{\text{passive}}(x, t) \;+\; \mathbf{R}_{\text{active}}\left(x, \, t - \Delta t_{\text{response}}\right)$$
+  $$\mathbf{R}(x, t) = \mathbf{R}_{\text{passive}}(x, t) \;+\; \mathbf{R}_{\text{active}}\left(x, \, t - \Delta t_{\text{response}}(x)\right)$$
 
-* **The Boundary Damköhler Number ($\mathrm{Da}_{\text{boundary}}$):**  
-  For an external oscillatory or shock challenge with characteristic impact frequency $\omega_0$ ($\mathbf{C}(t) = \mathbf{C}_0 \cos(\omega_0 t)$):
-  $$\boxed{\mathrm{Da}_{\text{boundary}} \equiv \omega_0 \cdot \Delta t_{\text{response}}}$$
+* **Spatial Reaction-Diffusion Wavefront Dispersion:**  
+  Intracellular biochemical signaling molecules (e.g., $\mathrm{Ca}^{2+}$, second messengers $c(x, t)$) obey the non-equilibrium reaction-diffusion PDE:
+  $$\frac{\partial c}{\partial t} = D_{\text{diff}} \nabla^2 c + R(c)$$
+  For a localized external shock impacting the membrane at position $x_{\text{impact}} \in \partial E$, the chemical signal arrival time at any boundary coordinate $x \in \partial E$ is governed by the diffusion-reaction propagation metric:
+  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|^2}{4 D_{\text{diff}}}$$
 
-* **Dynamic Regime Classification:**
+* **The Spatial Damköhler Field ($\mathrm{Da}(x)$):**  
+  For an external oscillatory or shock challenge with characteristic impact frequency $\omega_0$ ($\mathbf{C}(x, t) = \mathbf{C}_0(x) \cos(\omega_0 t)$):
+  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \omega_0 \left( \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|^2}{4 D_{\text{diff}}} \right)}$$
+
+* **Dynamic Spatial Regime Classification & Localized Rupture:**
   $$\begin{cases} 
-  \mathrm{Da}_{\text{boundary}} \ll 1 & \text{(Quasi-Static Homeostasis): Synchronous active stiffening; } \phi(t) \ge 0 \implies \text{Boundary Coherence} \\
-  \mathrm{Da}_{\text{boundary}} > 1 & \text{(Dynamic Phase-Lag Rupture): Active resistance is out-of-phase: } \mathbf{R}_{\text{active}} \propto \cos(\omega_0 t - \mathrm{Da})
+  \mathrm{Da}(x) \ll 1 & \text{(Quasi-Static Homeostasis): Synchronous active stiffening; } \phi(x, t) \ge 0 \implies \text{Local Coherence} \\
+  \mathrm{Da}(x) > 1 & \text{(Dynamic Phase-Lag Rupture): Active resistance is out-of-phase: } \mathbf{R}_{\text{active}} \propto \cos(\omega_0 t - \mathrm{Da}(x))
   \end{cases}$$
-  When $\mathrm{Da}_{\text{boundary}} > 1$, the cell is forced to rely entirely on passive membrane yield strength ($\sigma_{\text{yield}}^{\text{passive}}$). If the shock amplitude exceeds passive yield:
-  $$\|\mathbf{C}_0\| > \sigma_{\text{yield}}^{\text{passive}} \implies \phi(x, t) < 0 \implies \text{Instantaneous Dynamic Membrane Rupture}$$
-  occurring well before any metabolic feedback loops or enzymatic repair pathways can actuate.
+  When $\mathrm{Da}(x_{\text{impact}}) > 1$, the cell at the impact site is stripped of active reinforcement and forced to rely purely on passive yield strength ($\sigma_{\text{yield}}^{\text{passive}}$). If the local shock amplitude exceeds passive yield:
+  $$\|\mathbf{C}_0(x_{\text{impact}})\| > \sigma_{\text{yield}}^{\text{passive}} \implies \phi(x_{\text{impact}}, t) < 0 \implies \text{Localized Dynamic Shock Fracture}$$
+  even if distal boundary regions remain in safe quasi-static balance ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
 
 ---
 
-### 4.4 Non-Local Internal Carrier Ledger Cleavage (Point-Cleavage Triggering Global Lysis)
-* **The Physical Dilemma:** In standard level-set continuum mechanics, volume loss is strictly surface-convective: $\frac{d\mu(E)}{dt} = -\int_{\partial E} \mathbf{v}_n \cdot \hat{n} \, dA$. However, in biological systems, the constitutive operator algebra $D_{\mathfrak{Im}}$ is physically stored on an ultra-low-mass internal substrate (the DNA ledger $\mu(\mathcal{F}_{\text{DNA}}) \sim 10^{-14} \, \mathrm{g}$) inside a macroscopic cellular volume ($\mu(E) \sim 10^{-9} \, \mathrm{g}$). How does a microscopic internal cleavage event ($\Delta \mu \sim 10^{-14} \, \mathrm{g}$) induce total global boundary dissolution ($\mu(E) \to 0$)?
+### 4.4 Non-Local Internal Carrier Ledger Cleavage & Tensile Osmotic Rupture
+* **The Physical Dilemma:** In standard level-set continuum mechanics, volume loss is assumed to occur via inward compressive erosion ($\mathbf{v}_n \cdot \hat{n} < 0$). However, upon internal carrier DNA cleavage, ion pumps fail, causing hyper-osmotic influx where the cell **swells outward ($\mathbf{v}_n \cdot \hat{n} > 0$)** before bursting. How is this kinematic sign divergence rigorously reconciled with total measure collapse?
 
 * **Carrier-Operator Projection Coupling:**  
   The active metabolic operator algebra is physically generated by the internal carrier ledger:
   $$D_{\mathfrak{Im}}(t) \equiv \hat{\pi}_{\text{carrier}}\left( \mathcal{F}_{\text{ledger}}(t) \right)$$
 
-* **The Two-Stage Cleavage-Lysis Sequence:**
+* **The Two-Stage Cleavage-Swelling-Bursting Sequence:**
   1. **Stage 1 (Primary Internal Ledger Cleavage at $\Delta \mu \approx 0$):**  
-     A single double-strand break induced by ionizing radiation or endonuclease activity cleaves the internal carrier:
+     Ionizing radiation or endonuclease activity induces a double-strand break:
      $$\mu(\mathcal{F}_{\text{ledger}}) < \mu_{\text{critical}} \implies D_{\mathfrak{Im}} \longrightarrow \emptyset$$
-     The direct mass loss is completely negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
-  2. **Stage 2 (Secondary Surface Osmotic Lysis):**  
-     Cleavage terminates all active enzymatic error repair and metabolic pump replenishment:
-     $$D_{\mathfrak{Im}} \to \emptyset \implies \dot{\mathcal{W}}_{\text{repair}} \to 0 \implies \mathbf{R}_{\text{active}} \longrightarrow \mathbf{0}$$
-     Ambient osmotic pressure and thermal dissipation immediately invert the boundary margin across the entire outer membrane:
-     $$\phi(x, t) = \|\mathbf{R}_{\text{passive}}\| - \|\mathbf{C}_{\text{ambient}}\| < 0, \quad \forall x \in \partial E$$
-     By the Relativistic Level-Set PDE, this induces total convective boundary collapse:
-     $$\mathbf{v}_n \cdot \hat{n} < 0 \implies \frac{d\mu(E)}{dt} = -\int_{\partial E} \frac{c \cdot L_0 |\phi|}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2}} dA \ll 0 \implies \mu(E) \longrightarrow 0$$
-  This rigorously couples internal microscopic point cleavage to macroscopic continuum boundary lysis.
+     Direct mass loss is negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
+  2. **Stage 2a (Ion Pump Arrest & Outward Osmotic Swelling Kinematics):**  
+     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$), causing uncontrolled intracellular ion accumulation and generating hyper-osmotic pressure:
+     $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) > 0$$
+     This drives outward water influx across the lipid bilayer with positive normal velocity:
+     $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
+     where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
+  3. **Stage 2b (Membrane Hoop Stress & Tensile Fracture):**  
+     For a spherical/cylindrical cell of radius $r(t)$ and bilayer thickness $h$, outward swelling generates tensile Cauchy hoop stress:
+     $$\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)}{2 h}$$
+     Tensile membrane failure occurs when hoop stress exceeds the ultimate tensile strength of the lipid-cytoskeletal cortex ($\sigma_{\text{UTS}}^{\text{membrane}}$):
+     $$\sigma_{\text{hoop}}(t) \ge \sigma_{\text{UTS}}^{\text{membrane}} \implies \text{Membrane Pore Cavitation / Mechanical Lysis}$$
+  4. **Stage 2c (Secondary Convective Mass Evacuation):**  
+     The formation of macroscopic lysis pores inverts the effective kinematic boundary condition from swelling expansion to rapid hydrodynamic efflux:
+     $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \mathbf{v}_{\text{efflux}} \cdot \hat{n} \, dA \ll 0 \implies \mu(E) \longrightarrow 0$$
+  This rigorously reconciles outward osmotic swelling kinematics with irreversible global measure collapse.
 
 ---
 
@@ -416,21 +429,29 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-### 5.2 Theorem 8 (Inter-Tier Coupling and Collective Fuel Sufficiency)
-* **The Physical Dilemma:** How does a higher-order multicellular organism or collective biological syncytium $\mathbb{S}$ maintain its macro-boundary envelope when its constituent cellular nodes $\{E^j\}$ are subjected to individual entropic dissipation?
+### 5.2 Theorem 8 (Inter-Tier Coupling and Darcy-Nernst-Planck Hydrodynamic Closure)
+* **The Physical Dilemma:** In multicellular organisms and biological syncytia $\mathbb{S}$, constituent cellular nodes $\{E^j\}$ exchange mass, ions, and high-energy metabolites. How is the collective coupling operator $\mathcal{O}_{\text{coupling}}$ rigorously closed from continuum fluid dynamics and electrodiffusion without invoking empirical scaling fractions ($\eta$)?
 
-* **Step 1 (Constituent Nodal Free-Energy Extraction):**  
-  Each constituent cellular node $E^j$ generates free energy at internal rate $\Delta \dot{\mathcal{G}}_j(t)$. The inter-tier coupling operator $\mathcal{O}_{\text{coupling}}$ extracts a coupling fraction $\eta_j \in [0, 1]$ from node $j$ into the collective envelope (e.g., vascular transport, gap junction flux):
-  $$\dot{\mathcal{E}}_{\text{extracted}}^j(t) = \eta_j \cdot \mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right]$$
+* **Step 1 (Continuum Intercellular Hydrodynamics & Electrodiffusion):**  
+  Mass and electrochemical energy transfer across cellular gap junctions and interstitial porous channels $\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}$ are governed by coupled **Darcy-Nernst-Planck transport**:
+  * **Porous Interstitial Fluid Velocity (Darcy's Law):**
+    $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}}$$
+    where $\mathbf{K}_{\text{perm}}$ is the interstitial hydraulic permeability tensor and $\mu_{\text{fluid}}$ is fluid dynamic viscosity.
+  * **Electrochemical Solute Flux (Nernst-Planck Equation):**
+    $$\mathbf{J}_i = -D_i \left( \nabla c_i + \frac{z_i F}{R T} c_i \nabla \psi \right) + c_i \mathbf{v}_{\text{fluid}}$$
+    where $D_i$ is diffusion coefficient, $z_i$ is ionic valence, $F$ is Faraday's constant, and $\psi$ is electrical potential.
 
-* **Step 2 (Collective Energy Balance & Macro-Lyapunov Stability):**  
-  Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$ yields the collective fuel intake rate:
-  $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right]$$
-  Applying Theorem 5 to the collective envelope $\mathbb{S}$, the **Collective Envelope Survival Condition** strictly requires:
-  $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}\left[\Delta \mathcal{G}_j(t)\right] \ge \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, T(x, t) \, dV}$$
+* **Step 2 (The Parameter-Free Syncytial Coupling Operator):**  
+  The total mechanical and electrochemical power extracted from constituent node $j$ into the collective syncytial envelope is the surface integral of the total energy flux tensor across the junctional interface:
+  $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA}$$
+  where $\tilde{\mu}_i \equiv \mu_i^0 + R T \ln c_i + z_i F \psi$ is the total electrochemical potential of species $i$.
 
-* **Step 3 (Programmed Nodal Apoptosis & Re-allocation):**  
-  An individual constituent cellular node $E^j$ can re-allocate its local resource pool ($\eta_j \to 1, \dot{\mathcal{E}}_{\text{fuel}}^j \to 0$), driving its individual structural margin negative ($\phi(E^j) < 0 \implies \mu(E^j) \to 0$) while preserving the collective organismal envelope measure ($\mu(\mathbb{S}) > 0$).
+* **Step 3 (The Parameter-Free Collective Envelope Survival Condition):**  
+  Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$, the **Collective Envelope Survival Condition** becomes:
+  $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA \ge \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, T(x, t) \, dV}$$
+
+* **Step 4 (Programmed Nodal Apoptosis & Re-allocation):**  
+  When an individual constituent node $E^j$ reaches irrecoverable genetic or metabolic damage, junctional reverse-gating drives its individual structural margin negative ($\phi(E^j) < 0 \implies \mu(E^j) \to 0$) while channeling its residual chemical inventory into $\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$, preserving the collective macro-envelope ($\mu(\mathbb{S}) > 0$).
 
 ---
 
@@ -448,19 +469,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **Spatial Reaction-Diffusion Dispersion of the Damköhler Field:**
+1. **Non-Linear Wavefront Steepening & Soliton Disruption:**
    - *Status:* **Open / Active.**
-   - *Description:* Biochemical transduction latency $\Delta t_{\text{response}}(x)$ is spatially non-uniform due to finite wavefront diffusion speed ($D_{\text{diff}}$). Localized high-frequency point loads create spatial stress concentrations where $\mathrm{Da}(x_{\text{impact}}) > 1$ while the distal boundary remains quasi-static ($\mathrm{Da}(x_{\text{distal}}) \ll 1$).
-2. **Kinematic Divergence: Compressive Level-Set vs. Tensile Osmotic Rupture:**
+   - *Description:* In §4.3, linear reaction-diffusion $\frac{\partial c}{\partial t} = D_{\text{diff}} \nabla^2 c + R(c)$ models moderate signal gradients. Under extreme shock amplitudes, non-linear FitzHugh-Nagumo / Hodgkin-Huxley kinetics induce chemical shock steepening and wavefront curvature instabilities, requiring non-linear soliton stability bounds.
+2. **Viscoelastic Rate-Dependent Plasticity in Lipid Bilayer Strain-to-Failure:**
    - *Status:* **Open / Active.**
-   - *Description:* The standard level-set convention tracks inward convective boundary erosion ($\mathbf{v}_n \cdot \hat{n} < 0$). In internal ledger cleavage, boundary failure occurs via outward osmotic swelling and hoop-stress tensile fracture ($P_{\text{osmotic}} > \sigma_{\text{yield}}^{\text{membrane}}$). A tensorial strain-to-failure criterion is required to couple swelling kinematics directly to measure collapse.
-3. **Hydrodynamic Closure for Syncytial Coupling Operator ($\mathcal{O}_{\text{coupling}}$):**
+   - *Description:* In §4.4, membrane hoop stress $\sigma_{\text{hoop}}$ assumes quasi-static elastic yield. At finite strain rates ($\dot{\varepsilon} \sim 10^2 \, \mathrm{s}^{-1}$), rate-dependent viscoelastic plasticity (Kelvin-Voigt cortex vs. Maxwell fluid bilayer) alters the ultimate tensile strength $\sigma_{\text{UTS}}(\dot{\varepsilon})$, requiring a dynamic strain-rate failure envelope.
+3. **Interstitial Poromechanical Matrix Tortuosity & Biot Consolidation:**
    - *Status:* **Open / Active.**
-   - *Description:* In §5.2, $\mathcal{O}_{\text{coupling}}$ relies on an empirical nodal efficiency parameter $\eta_j$. A first-principles derivation requires coupling interstitial fluid mechanics (Darcy's Law) and gap-junction electrodiffusion (Nernst-Planck flux) to close the macro-Lyapunov functional.
+   - *Description:* In §5.2, Darcy's permeability tensor $\mathbf{K}_{\text{perm}}$ assumes a rigid extracellular matrix. Under large mechanical deformations, dynamic tissue strain alters pore geometry ($\mathbf{K}(\boldsymbol{\varepsilon})$), requiring fully coupled Biot poromechanics to close interstitial fluid flow.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$)**~~ (*Closed in §4.3 via reaction-diffusion wavefront PDE and spatially distributed Damköhler metric $\mathrm{Da}(x) = \omega_0 (\tau_{\text{local}} + \frac{\|x-x_0\|^2}{4 D_{\text{diff}}})$.*)
+- [x] ~~**Kinematic Divergence: Tensile Osmotic Swelling vs. Convective Measure Collapse**~~ (*Closed in §4.4 via ion pump arrest, outward osmotic swelling kinematics $\mathbf{v}_n \cdot \hat{n} > 0$, Cauchy hoop stress $\sigma_{\text{hoop}} \ge \sigma_{\text{UTS}}$, and secondary pore efflux.*)
+- [x] ~~**Hydrodynamic Darcy-Nernst-Planck Closure for Syncytial Coupling ($\mathcal{O}_{\text{coupling}}$)**~~ (*Closed in §5.2 via coupled interstitial Darcy flow and Nernst-Planck electrochemical flux integrals.*)
 - [x] ~~**High-Frequency Dynamic Boundary Rupture ($\mathrm{Da}_{\text{boundary}} > 1$)**~~ (*Closed in §4.3 via dual-modulus decomposition $\mathbf{R}_{\text{passive}} + \mathbf{R}_{\text{active}}(t - \Delta t_{\text{response}})$ and Damköhler phase-lag analysis.*)
 - [x] ~~**Non-Local Internal Carrier Ledger Cleavage**~~ (*Closed in §4.4 via $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ and the two-stage cleavage-to-osmotic-lysis cascade.*)
 - [x] ~~**Complex Topological Boundary Decomposition & Realization Operator**~~ (*Closed in §2.1 via $\partial E = \partial E_{\mathbb{R}} \oplus i \, \partial E_{\mathfrak{Im}}$ and Gauss's flux separation.*)
