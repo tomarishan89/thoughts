@@ -105,10 +105,10 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 #### 1.2.3 Physical Irreversibility ($\Omega_{\mathbb{R}}$) vs. Algorithmic State Inversion ($\Omega_{\mathfrak{Im}}$)
 1. **Physical Semi-Group ($\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$):**  
    Because physical viscosity produces strictly positive volumetric entropy ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$), physical state evolution in real space $\Omega_{\mathbb{R}}$ is an **irreversible dynamical semi-group** $\mathcal{M}_t$ ($t \ge 0$). Backward physical time $\mathcal{M}_{-t}$ is strictly forbidden by the Second Law of Thermodynamics.
-2. **Algorithmic State Inversion ($\Psi^{-1}$ in $\Omega_{\mathfrak{Im}}$):**  
-   State-trace reconstruction is executed as an **informational inversion in the Intrinsic Operator Algebra ($D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$)** via the Inverse Dyson Propagator:
-   $$\boxed{\hat{E}(0) = \Psi^{-1}[E(t)] \equiv \mathcal{T}^{-1} \exp\left( -\int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(t)}$$
-   funded by Landauer computational dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions:
+2. **Algorithmic State Inversion ($\mathcal{R}_{\sigma, \Psi}$ in $\Omega_{\mathfrak{Im}}$):**  
+   Because non-unitary GKSL Lindblad generators $\hat{\mathcal{L}}$ possess strictly dissipative decay spectra ($\operatorname{Re}(\lambda_n) \le 0$), naive exponential negation $-\hat{\mathcal{L}}$ induces unbounded, unphysical explosive growth ($e^{+|\lambda_n|t} \to \infty$). State-trace reconstruction is executed as an **informational recovery in the Intrinsic Operator Algebra ($D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$)** via the **Petz Transpose Recovery Channel ($\mathcal{R}_{\sigma, \Psi}$)** (Petz, 1986; Barnum & Knill, 2002):
+   $$\boxed{\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}\left[ \hat{\rho}_E(t) \right] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \Psi(\hat{\sigma})^{-1/2} \, \hat{\rho}_E(t) \, \Psi(\hat{\sigma})^{-1/2} \right) \hat{\sigma}^{1/2}}$$
+   where $\Psi^\dagger$ is the adjoint quantum channel with respect to the Hilbert-Schmidt inner product, and $\hat{\sigma}$ is the invariant reference state ($\Psi(\hat{\sigma}) = \hat{\sigma}$). Exact recovery is funded by Landauer computational dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions:
    $$\text{State-Trace Recoverable} \iff \begin{cases} 
    \mathcal{R}e^* \equiv \frac{\|\text{Inertial Drift}\|}{\|\text{Viscous Binding}\|} < \mathcal{R}e_{\text{critical}} & \text{(Quasi-static state space; no turbulent scrambling)} \\ 
    Pe^* \equiv \frac{\|\text{Operational Advection}\|}{\|\text{Ambient Noise Diffusion}\|} \gg 1 & \text{(Informational rank preserved; no heat-bath bleed)} \\ 
@@ -141,9 +141,13 @@ where $\mu_{\mathbb{R}}(E) \equiv \int_{E_{\mathbb{R}}} \rho(\mathbf{x}) \, d^3x
 In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical interaction is evaluated by the **Interfacial Realization Trace Map**:
 $$\boxed{\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{S}_{\text{absorbed}}(x, t) = \alpha \, \mathbf{S}_{\text{incident}}(x, t) & \text{(Absorbed Radiant Negentropy Influx)} \end{cases}}$$
 
-#### Theorem 1 (Algebraic Orthogonality of Rule and Resource):
-Because $\Omega_{\mathbb{R}}$ and $i \Omega_{\mathbb{R}}$ are complementary orthogonal subspaces of $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathbb{R}}$, the disjointness of rule and resource is an algebraic consequence of the complex field:
-$$\langle \mathcal{F}_{\mathbb{R}}(t), \; D_{\mathfrak{Im}}(t) \rangle_{\mathbb{R}} \equiv 0 \implies D_{\mathfrak{Im}}(t) \cap \mathcal{F}_{\mathbb{R}}(t) = \emptyset$$
+#### Theorem 1 (State-Space Orthogonality and Physical Carrier Embedding):
+1. **State-Space Tangent Orthogonality:** Under the canonical Hermitian metric $h = g + i\omega$ on complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, state-space tangent projections are mutually orthogonal:
+   $$\langle T\Omega_{\mathbb{R}}, \; T\Omega_{\mathfrak{Im}} \rangle_g \equiv 0$$
+   ensuring algebraic independence between present physical configuration coordinates $\mathbf{x} \in \Omega_{\mathbb{R}}$ and informational operator states in $\Omega_{\mathfrak{Im}}$.
+2. **Physical Carrier Spatial Embedding:** In real space $\Omega_{\mathbb{R}}$, physical information storage requires material substrates. The spatial support of informational operators $D_{\mathfrak{Im}}$ obeys hierarchical spatial inclusion within the physical fuel ledger:
+   $$\boxed{\operatorname{supp}\left(D_{\mathfrak{Im}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\text{ledger}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\mathbb{R}}(t)\right) \subset \Omega_{\mathbb{R}}}$$
+   reconciling functional rule-resource independence in phase space with material carrier embodiment in continuum space.
 
 #### Theorem 2 (Dual Ontological Identity of Non-Equilibrium Existence):
 For any active existence $E \subset \Omega$, maintaining a bounded topological enclosure with non-zero measure ($\mu(E) > 0$) strictly requires a positive non-equilibrium Gibbs free-energy potential ($\mathcal{G}[E] = \mathcal{U} - T_{\text{ambient}} S > 0$). This single physical condition simultaneously and necessarily establishes a **Dual Ontological Projection**:
@@ -252,16 +256,16 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   guaranteeing $|v_{\text{adv}}| < c, \forall \phi \in (-\infty, \infty)$.
 
 * **Step 3 (Quasilinear Parabolic Mean-Curvature Regularization):**  
-  To prevent gradient catastrophes (cusp shocks, self-intersections) characteristic of unregularized first-order Hamilton-Jacobi PDEs (Osher & Sethian, 1988), the net normal front velocity combines the Lorentz-saturated advective traction velocity with the additive **Mean-Curvature Surface Tension Regularizer** ($-\gamma_{\text{surface}} \kappa$):
-  $$\boxed{v_n(x, t) = \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} - \gamma_{\text{surface}} \, \kappa(x, t)}$$
-  where $\gamma_{\text{surface}} > 0$ is the interfacial surface tension diffusivity ($[\mathrm{m^2/s}]$) and $\kappa \equiv \nabla \cdot \left( \frac{\nabla \phi}{\|\nabla \phi\|} \right)$ is the local mean curvature of the interface front ($[\mathrm{m^{-1}}]$).
+  To prevent gradient catastrophes (cusp shocks, self-intersections) characteristic of unregularized first-order Hamilton-Jacobi PDEs (Osher & Sethian, 1988), surface tension drives inward curvature-driven relaxation. Defining the outward unit normal $\hat{n} \equiv -\frac{\nabla \phi}{\|\nabla \phi\|}$, the geometric mean curvature is $\kappa_{\text{geom}} \equiv \nabla \cdot \hat{n} = -\nabla \cdot \left(\frac{\nabla \phi}{\|\nabla \phi\|}\right)$. The physical outward normal front velocity is:
+  $$\boxed{v_n(x, t) = \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} - \gamma_{\text{surface}} \, \kappa_{\text{geom}}(x, t) = \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} + \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right]}$$
+  where $\gamma_{\text{surface}} > 0$ is the interfacial surface tension diffusivity ($[\mathrm{m^2/s}]$).
 
 * **Step 4 (The Closed Quasilinear Parabolic Relativistic Level-Set Evolution PDE):**  
   Under the interior-positive margin definition ($\phi > 0$ inside $E(t)$), the inward-pointing gradient $\nabla \phi$ defines the outward unit normal as $\hat{n} = -\frac{\nabla \phi}{\|\nabla \phi\|}$. The front moves with velocity $\mathbf{v} = v_n \hat{n} = -v_n \frac{\nabla \phi}{\|\nabla \phi\|}$. By implicit function differentiation, any material point on the propagating interface front $f(t) = \{x \mid \phi(x, t) = 0\}$ satisfies the total convective derivative:
   $$\frac{d\phi}{dt} = \frac{\partial \phi}{\partial t} + \nabla \phi \cdot \mathbf{v} = 0 \implies \frac{\partial \phi}{\partial t} - v_n \|\nabla \phi\| = 0 \iff \frac{\partial \phi}{\partial t} = v_n \|\nabla \phi\|$$
-  Substituting $v_n = v_{\text{adv}} - \gamma_{\text{surface}}\kappa$ yields the **Closed Quasilinear Parabolic Relativistic Level-Set PDE**:
-  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} - \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} \|\nabla \phi(x, t)\| + \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right] \|\nabla \phi(x, t)\| = 0}$$
-  Decoupling the additive curvature Laplacian from the saturated traction radical ensures that the principal second-order symbol $-\gamma_{\text{surface}} \operatorname{Tr}\left[ \left(\mathbb{I} - \frac{\nabla \phi \otimes \nabla \phi}{\|\nabla \phi\|^2}\right) \nabla^2 \phi \right]$ remains strictly forward parabolic for all field magnitudes ($\frac{\partial \phi}{\partial t} \sim -\gamma_{\text{surface}}\Delta_{\partial E}\phi$), guaranteeing existence and uniqueness of smooth viscosity solutions without noise blowups.
+  Substituting $v_n = v_{\text{adv}} + \gamma_{\text{surface}}\nabla \cdot \left(\frac{\nabla \phi}{\|\nabla \phi\|}\right)$ yields the **Closed Quasilinear Parabolic Relativistic Level-Set PDE**:
+  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} - \frac{c \cdot \frac{L_0 \phi(x, t)}{\nu}}{\sqrt{c^2 + \left(\frac{L_0 \phi(x, t)}{\nu}\right)^2}} \|\nabla \phi(x, t)\| - \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right] \|\nabla \phi(x, t)\| = 0}$$
+  Decoupling the additive curvature Laplacian from the saturated traction radical ensures that the principal second-order symbol $-\gamma_{\text{surface}} \operatorname{Tr}\left[ \left(\mathbb{I} - \frac{\nabla \phi \otimes \nabla \phi}{\|\nabla \phi\|^2}\right) \nabla^2 \phi \right]$ remains strictly forward parabolic for all field magnitudes ($\frac{\partial \phi}{\partial t} \approx v_{\text{adv}}\|\nabla \phi\| + \gamma_{\text{surface}}\Delta_{\partial E}\phi$), guaranteeing relaxation spectrum $\omega(k) = -\gamma_{\text{surface}}k^2 \le 0$ and the existence and uniqueness of smooth viscosity solutions without Hadamard instabilities.
 
 ---
 
@@ -278,9 +282,11 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   From the First Law ($\dot{\mathcal{U}}_{\text{internal}} = \dot{E}_{\text{fuel}} - \dot{W}_{\text{out}} - \dot{Q}_{\text{out}}$) and the Reynolds-augmented Second Law, applying the **Gouy-Stodola Exergy Theorem**:
   $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV - \underbrace{\left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{ambient}} \int_{\partial E} \left(\mathbf{J}_S - s \mathbf{v}_n\right) \cdot \hat{n} \, dA \right]}_{\ge 0 \text{ (Dissipation to Ambient Heat Bath)}}$$
 
-* **Step 3 (Lyapunov Stability Bound):**  
-  Boundary persistence requires $\frac{d\mathcal{G}}{dt} \le 0$, which yields the **Critical Fuel Sufficiency Condition**:
-  $$\boxed{\frac{d\mathcal{G}}{dt} \le 0 \iff \dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV}$$
+* **Step 3 (Non-Equilibrium Exergy Sufficiency & Stability Bound):**  
+  Boundary persistence requires maintaining non-equilibrium free-energy above the ground-state lysis threshold ($\mathcal{G}[E(t)] \ge \mathcal{G}_{\text{threshold}} > 0$). Steady-state metabolic maintenance yields the **Critical Fuel Sufficiency Condition**:
+  $$\boxed{\dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV \implies \frac{d\mathcal{G}}{dt} \ge 0 \quad (\text{Exergy Sufficiency})}$$
+  Conversely, under metabolic deprivation:
+  $$\boxed{\dot{E}_{\text{fuel}}(t) < \dot{E}_{\text{crit}} \implies \frac{d\mathcal{G}}{dt} < 0 \implies \mathcal{G}[E(t)] \longrightarrow 0 \quad (\text{Exergy Depletion \& Lysis})}$$
 
 ---
 
@@ -292,8 +298,8 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   $$\sigma_{\text{global}}(\chi) = \sigma_{\text{computation}}(\chi) + \sigma_{\text{shock}}(\chi)$$
 
 * **Step 2 (Monotonicity of Landauer Computational Dissipation):**  
-  By Landauer's Principle, computing predictions with investment ratio $\chi$ generates erasure entropy at a strictly increasing rate:
-  $$\sigma_{\text{computation}}(\chi) = \frac{k_B T \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\chi) \implies \frac{\partial \sigma_{\text{computation}}}{\partial \chi} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \chi^2} \ge 0$$
+  By Landauer's Principle, erasing information generates entropy $\Delta S \ge k_B \ln 2 \, [\mathrm{J/K}]$ per bit. Computing predictions with investment ratio $\chi$ generates erasure entropy rate density:
+  $$\sigma_{\text{computation}}(\chi) \equiv \frac{k_B \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\chi) = k_B \ln 2 \cdot \dot{h}_{\mathfrak{Im}}(\chi) \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right] \implies \frac{\partial \sigma_{\text{computation}}}{\partial \chi} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \chi^2} \ge 0$$
 
 * **Step 3 (Derivation of Shock Dissipation via Rankine-Hugoniot Elastic Rate Expansion):**  
   By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\chi)$ directs active cytoskeletal pre-stressing $\sigma_{\text{pre}}(\chi) = \kappa_{\text{stress}} \Delta \mathcal{I}(\chi)$, leaving residual unmitigated overpressure $\Delta \sigma_{\text{eff}}(\chi) \equiv \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi)$, where $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{cortex}}} \in \left[\frac{\mathrm{J/m^3}}{\mathrm{bit}} \equiv \frac{\mathrm{Pa}}{\mathrm{bit}}\right]$ is the Volumetric Information-Stress Coupling Coefficient. Across characteristic shock impact duration $\tau_{\text{impact}} \in [\mathrm{s}]$, the volumetric shock entropy dissipation rate is derived from the **Rankine-Hugoniot shock jump expansion** (Landau & Lifshitz, 1987) combining linear elastic strain energy with cubic hydrodynamic shock entropy jump:
@@ -353,7 +359,7 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 * **Critical Starvation Threshold & Membrane Lysis:**  
   When metabolic influx falls below the Gouy-Stodola internal dissipation threshold:
   $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV$$
-  the Lyapunov derivative becomes strictly positive ($\frac{d\mathcal{G}}{dt} > 0$). Internal osmotic and viscous stresses overwhelm cytoskeletal resistance ($\phi < 0$), driving inward front collapse ($\mathbf{v}_n \cdot \hat{n} < 0$) and causing irreversible cellular lysis ($\mu(E) \to 0$).
+  the exergy time derivative becomes strictly negative ($\frac{d\mathcal{G}}{dt} < 0$), continuously draining internal free-energy reserves until $\mathcal{G}[E(t)] \to 0$. Internal osmotic and viscous stresses overwhelm cytoskeletal resistance ($\phi < 0$), driving inward front collapse ($\mathbf{v}_n \cdot \hat{n} < 0$) and causing irreversible cellular lysis ($\mu(E) \to 0$).
 
 ---
 
@@ -403,12 +409,8 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      $$\mu(\mathcal{F}_{\text{ledger}}) < \mu_{\text{critical}} \implies D_{\mathfrak{Im}} \longrightarrow \emptyset$$
      Direct mass loss is negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
   2. **Stage 2a (Ion Pump Arrest & Outward Osmotic Swelling Kinematics):**  
-     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$). Intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**:
-     $$\sum_i z_i c_i^{\text{internal}} + z_{\text{protein}} c_{\text{protein}} = 0$$
-     where $z_{\text{protein}} < 0$ represents fixed intracellular impermeant polyanionic macromolecules. Passive ion redistribution across the permeable bilayer converges toward the **Donnan Equilibrium Ratio**:
-     $$r_D \equiv \frac{c_{\mathrm{K}^+}^{\text{ext}}}{c_{\mathrm{K}^+}^{\text{int}}} = \frac{c_{\mathrm{Cl}^-}^{\text{int}}}{c_{\mathrm{Cl}^-}^{\text{ext}}} \neq 1$$
-     Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation:
-     $$\Delta P_{\text{osmotic}}(t) = k_B T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}} + \sum_k \sigma_k \Delta c_k^{\text{non-ionic}} \right] + \Pi_{\text{oncotic}} > 0$$
+     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$). Intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation with universal molar gas constant $R \equiv N_A k_B$:
+     $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]$$
      where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions. This drives outward water influx across the lipid bilayer with positive normal velocity:
      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
@@ -418,8 +420,8 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      Tensile membrane failure occurs when hoop stress exceeds the ultimate tensile strength of the lipid-cytoskeletal cortex ($\sigma_{\text{UTS}}^{\text{membrane}}$):
      $$\sigma_{\text{hoop}}(t) \ge \sigma_{\text{UTS}}^{\text{membrane}} \implies \text{Membrane Pore Cavitation / Mechanical Lysis}$$
   4. **Stage 2c (Secondary Convective Mass Evacuation):**  
-     The formation of macroscopic lysis pores inverts the effective kinematic boundary condition from swelling expansion to rapid hydrodynamic efflux:
-     $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \mathbf{v}_{\text{efflux}} \cdot \hat{n} \, dA \ll 0 \implies \mu(E) \longrightarrow 0$$
+     The formation of macroscopic lysis pores inverts the effective kinematic boundary condition from swelling expansion to rapid hydrodynamic efflux scaled by cytoplasmic mass density $\rho(x, t) \in [\mathrm{kg/m^3}]$:
+     $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \ll 0 \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \mu(E) \longrightarrow 0$$
   This rigorously reconciles outward osmotic swelling kinematics with irreversible global measure collapse.
 
 ---
