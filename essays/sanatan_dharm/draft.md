@@ -351,6 +351,14 @@ Computes exact bifurcation point       Calculates trade-off between           El
   *Closed in §1.2 via the irreversible dissipative semi-group ($\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$) and active Dyson inverse propagator ($\Psi^{-1}$ in $\Omega_{\mathfrak{Im}}$).*
 - [x] ~~**Non-Commuting Operator Composition in State-Trace Functional (Dyson Algebra)**~~  
   *Closed in §1.2 via the Lie operator algebra $(\mathcal{A}_D, [\cdot, \cdot])$ and Magnus expansion path ordering.*
+- [x] ~~**Complex Topological Boundary Decomposition & Realization Operator**~~  
+  *Closed in §2.1 via $\partial E = \partial E_{\mathbb{R}} \oplus i \, \partial E_{\mathfrak{Im}}$, Gauss's divergence flux separation, and the realization projection operator $\hat{\pi}_{\text{real}}$.*
+- [x] ~~**Equipotential Level-Set Grounding of Structural Margin**~~  
+  *Closed in §2.3 via $\phi = \|\nabla \Phi_{\text{internal}}\| - \|\nabla \Phi_{\text{external}}\| = 0$, unifying Roche lobes, Fermi surfaces, and work functions.*
+- [x] ~~**Viscous Steady-State Maintenance Threshold**~~  
+  *Closed in §1.2 via $\mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu}\mathbf{R}_0$ establishing the continuous engine throughput required against entropy decay across asymptotic limits $\nu \to 0$ vs. $\nu \to \infty$.*
+- [x] ~~**Field Compression & Microscopic Origin of Elastic Modulus ($G_0$)**~~  
+  *Closed in §1.2 via $G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho}$ from isotropic field pressure $P_{\text{field}} = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$, establishing the complete causal chain to boundary resistance $\mathbf{R}$.*
 
 ---
 
