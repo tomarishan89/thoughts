@@ -129,6 +129,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.72: Kapitza Interfacial Thermal Resistance in Non-Isothermal Boundaries.** Formulated surface dissipation $\Sigma_{\text{surface}} = \int_{\partial E} \frac{(\mathbf{J}_q\cdot\hat{n})^2 R_K}{T_{\text{ambient}} T_{\text{internal}}} dA$ in §2.2 (Eq. 189 & 195).
 - [X] **ISSUE-6.73: In-Plane Cortical Phase-Gradient Shear Stress Invariant.** Formulated $\tau_{\text{shear}} \approx \frac{h_{\text{cortex}}\|\mathbf{R}_{\text{active}}\|\omega_0}{v_{\text{bistable}}}$ and multi-axial $J_2$ yield envelope in §4.3 (Eq. 396).
 - [X] **ISSUE-6.74: Predator Free-Boundary Kinematic Expansion Closure.** Formulated $\int_{\partial E^A \setminus f_{AB}} \rho_A (\mathbf{v}_n^{\text{free}}\cdot\hat{n}_A) dA = \eta_{\text{trophic}}\dot{\mathcal{M}}_{A\leftarrow B} - \int_{f_{AB}} \rho_A (\mathbf{v}_n^{AB}\cdot\hat{n}_A) dA$ in §5.1 (Eq. 452).
+- [X] **ISSUE-6.75: Canonical Volume Measure on Complex Hilbert State Space.** Formulated $d\mu_g = \sqrt{\det g} \, d^3x d^3y$ on $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$ in §1.1, rigorously closing operator adjoints and Petz transpose recovery.
+- [X] **ISSUE-6.76: Tensile Apex Regularization in Capped Drucker-Prager Yield Model.** Formulated $\min(\operatorname{Tr}(\boldsymbol{\sigma}), \frac{\sigma_{\text{yield}}}{\alpha_{\text{DP}}})$ in §2.3.1 (Eq. 225), eliminating negative deviatoric radius singularities.
+- [X] **ISSUE-6.77: Incompressible Dynamic Membrane Thinning in Osmotic Hoop Stress.** Formulated $h(t) = h_0 (r_0/r)^2 \implies \sigma_{\text{hoop}} \propto r^3/(2 h_0 r_0^2)$ in §4.4 (Eq. 426), capturing cubic radius scaling.
+- [X] **ISSUE-6.78: Closed Elliptic Potential PDE for Syncytial Potential.** Formulated $\nabla \cdot (\boldsymbol{\sigma}_{\text{conduct}}\nabla\psi) = -\nabla\cdot[\mathbf{K}_{\text{eo}}^T(\nabla P - \sum\sigma_i RT\nabla c_i)] + F\sum z_i \nabla\cdot\mathbf{J}_i^{\text{diff}}$ in §5.2 (Eq. 484).
 
 ---
 
