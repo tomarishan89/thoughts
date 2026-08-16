@@ -66,6 +66,12 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.9: Hermitian/Kähler Metric ($h = g + i\omega$).** Equipped complex state space $\Omega_{\mathbb{C}}$ with compatible Hermitian/Kähler metric tensor in §1.1 of `draft.md`.
 - [X] **ISSUE-6.10: State Density Operator Representation ($\hat{\rho}_E \in \mathcal{S}(\mathcal{H})$).** Formulated rigorous Hilbert state representation for Liouvillian super-operator in §1.2.1 of `draft.md`.
 - [X] **ISSUE-6.11: Interfacial Realization Trace Map ($\operatorname{Tr}_{\partial E}$).** Replaced non-idempotent projection operator with interfacial realization trace map in §2.1 of `draft.md`.
+- [X] **ISSUE-6.12: GKSL Trace-Preserving Lindblad Generator.** Formulated $\hat{\mathcal{L}}$ in standard Lindblad/GKSL super-operator form ensuring $\operatorname{Tr}(\hat{\mathcal{L}}\hat{\rho}) \equiv 0$ in §1.2.1 of `draft.md`.
+- [X] **ISSUE-6.13: Parabolic Mean-Curvature Regularizer ($-\gamma_{\text{surface}}\kappa$).** Added mean-curvature surface-tension regularizer to the Relativistic Level-Set PDE to eliminate gradient catastrophe shocks in §2.3.3 of `draft.md`.
+- [X] **ISSUE-6.14: Interfacial Boundary Inertia Regularization ($\rho_{\text{int}} c L_0$).** Eliminated the $\nu_{AB} \to 0 \implies v_n \to c$ light-speed singularity for inviscid contact in §5.1 of `draft.md`.
+- [X] **ISSUE-6.15: Onsager Reciprocal Electrodiffusive Matrix.** Formulated symmetric Onsager cross-coupling matrix with electro-osmotic fluid coupling ($-\mathbf{K}_{\text{eo}}\nabla \psi$) in §5.2 of `draft.md`.
+- [X] **ISSUE-6.16: Donnan Electroneutrality Constraint ($r_D$).** Formulated macroscopic electroneutrality $\sum z_i c_i = 0$ and Donnan ratio $r_D$ governing osmotic overpressure in §4.4 of `draft.md`.
+- [X] **ISSUE-6.17: 3D Tensorial Bulk vs. Shear Modulus Split.** Formulated explicit orthogonal split between volumetric dilatation ($K_0, \zeta_{\text{bulk}}$) and deviatoric shear ($\mu_{\text{shear}}, \nu_{\text{shear}}$) in §1.2.2 of `draft.md`.
 
 ---
 

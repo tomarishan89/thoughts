@@ -34,11 +34,13 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 ### 1.2 The State-Trace Functional ($\Psi$) and Constitutive Operator Lie Algebra
 
 #### 1.2.1 First-Principles Derivation of the State-Trace Functional ($\Psi$)
-* **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ($E$), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ($[\hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2)] \neq \mathbf{0}$), classical exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator.
+* **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ($E$), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ($[\hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2)] \neq \mathbf{0}$ frictionally and dissipation occurs), classical unitary exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator that strictly preserves probability trace.
 
-* **Step 1 (The Infinitesimal Differential Generator on Hilbert State Space):**  
-  Let the state configuration of an entity be represented by a positive semi-definite state density operator $\hat{\rho}_E(t) \in \mathcal{S}(\mathcal{H})$ ($\operatorname{Tr}(\hat{\rho}_E) = 1$) defined on the complex state Hilbert space $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$. Let $\hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$ be the Liouvillian generator super-operator acting on $\mathcal{S}(\mathcal{H})$. The differential evolution of the entity across infinitesimal time $d\tau$ is:
-  $$\frac{d \hat{\rho}_E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) \hat{\rho}_E(\tau)$$
+* **Step 1 (The Gorini-Kossakowski-Sudarshan-Lindblad Generator on Hilbert State Space):**  
+  Let the state configuration of an entity be represented by a positive semi-definite state density operator $\hat{\rho}_E(t) \in \mathcal{S}(\mathcal{H})$ ($\operatorname{Tr}(\hat{\rho}_E) = 1, \hat{\rho}_E \ge 0$) defined on the complex state Hilbert space $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$. By the **GKSL Theorem** (Gorini, Kossakowski, Sudarshan, 1976; Lindblad, 1976), the most general trace-preserving, completely positive Markovian generator super-operator $\hat{\mathcal{L}}(\tau)$ acting on $\mathcal{S}(\mathcal{H})$ is:
+  $$\boxed{\frac{d \hat{\rho}_E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) \hat{\rho}_E(\tau) = -i \left[ \hat{H}(\tau), \hat{\rho}_E(\tau) \right] + \sum_k \gamma_k(\tau) \left( \hat{L}_k(\tau) \hat{\rho}_E(\tau) \hat{L}_k^\dagger(\tau) - \frac{1}{2}\left\{ \hat{L}_k^\dagger(\tau) \hat{L}_k(\tau), \hat{\rho}_E(\tau) \right\} \right)}$$
+  where $\hat{H}(\tau) = \hat{H}^\dagger(\tau)$ is the effective Hamiltonian driving coherent internal dynamics, and $\hat{L}_k(\tau) \equiv \mathcal{O}_k(\tau) \otimes \mathcal{F}_k(\tau)$ are Lindblad jump operators representing irreversible dissipative interventions and fuel consumption. Taking the trace yields exact probability conservation:
+  $$\operatorname{Tr}\left( \frac{d\hat{\rho}_E}{d\tau} \right) = -i \operatorname{Tr}\left( [\hat{H}, \hat{\rho}_E] \right) + \sum_k \gamma_k \operatorname{Tr}\left( \hat{L}_k^\dagger \hat{L}_k \hat{\rho}_E - \hat{L}_k^\dagger \hat{L}_k \hat{\rho}_E \right) \equiv 0 \implies \operatorname{Tr}(\hat{\rho}_E(t)) = 1, \quad \forall t \ge 0$$
 
 * **Step 2 (The Volterra Integral Equation):**  
   Direct integration over the interval $[0, t]$ yields the implicit integral equation:
@@ -58,7 +60,7 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 
 * **Step 5 (Magnus Lie Algebra Expansion, Convergence Radius & Topological Hysteresis):**  
   For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the true exponential generator $\Omega_{\text{Magnus}}(t)$ satisfies the **Magnus Expansion** (Magnus, 1954):
-  $$\Psi\left[E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \left[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) \right] + \cdots \right) E(0)$$
+  $$\Psi\left[\hat{\rho}_E(0); \dots\right] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \left[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) \right] + \cdots \right) \hat{\rho}_E(0)$$
   * **Convergence Bound (Moan-Niesen Criterion):** The Magnus series is an asymptotic expansion convergent within the **Moan-Niesen convergence radius** (Moan & Niesen, 2008; Blanes et al., 2009):
     $$\int_0^t \|\hat{\mathcal{L}}(\tau)\| \, d\tau < \pi \quad (\approx 2.189 \text{ in general Banach algebras})$$
     For open systems operating beyond this temporal horizon, global state evolution is generated via the infinite-product time-ordered Dyson series $\mathcal{T} \exp(\int_0^t \hat{\mathcal{L}} d\tau)$ or resolvent product integration.
@@ -70,41 +72,34 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 #### 1.2.2 First-Principles Derivation of the Viscoelastic Memory Kernel ($G$) & Resistance ($\mathbf{R}$)
 * **The Physical Dilemma:** How does an operational intervention $\mathcal{O}[\mathcal{F}]$ produce physical, mechanical surface resistance $\mathbf{R}(x, t)$? In an ideal elastic solid ($\nu \to \infty$), stress is stored forever; in a pure fluid ($\nu \to 0$), stress dissipates immediately. A physical existence requires a constitutive bridge that captures finite relaxation memory.
 
-* **Step 1 (Continuum Maxwell Differential Balance):**  
-  When an external challenge $\mathbf{C}$ compresses a boundary ($\nabla \cdot \mathbf{v} < 0$), flux crowding amplifies field gradients ($\|\nabla \mathbf{\Phi}\| \uparrow$), generating isotropic **Field Pressure** $P_{\text{field}} = \frac{1}{3}\operatorname{Tr}(\mathbf{T}^{\text{field}}) = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$. The microscopic bulk modulus establishes the instantaneous elastic modulus:
-  $$G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$$
-  Under continuum mechanics, the 1D Maxwell linear viscoelastic constitutive relation partitions the total strain rate $\dot{\boldsymbol{\varepsilon}}$ into elastic and viscous components:
-  $$\dot{\boldsymbol{\varepsilon}}(t) = \dot{\boldsymbol{\varepsilon}}_{\text{elastic}} + \dot{\boldsymbol{\varepsilon}}_{\text{viscous}} = \frac{1}{G_0} \frac{d\boldsymbol{\sigma}(t)}{dt} + \frac{1}{\nu} \boldsymbol{\sigma}(t)$$
+* **Step 1 (Continuum 3D Tensorial Maxwell Differential Balance):**  
+  In 3D continuum mechanics, linear viscoelastic deformation splits orthogonally into **volumetric dilatation (spherical)** and **deviatoric shear** modes:
+  $$\boldsymbol{\sigma}(x, t) = \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma})\mathbb{I} + \mathbf{s}(x, t), \qquad \boldsymbol{\varepsilon}(x, t) = \frac{1}{3}\operatorname{Tr}(\boldsymbol{\varepsilon})\mathbb{I} + \mathbf{e}(x, t)$$
+  where $\mathbf{s} \equiv \boldsymbol{\sigma} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma})\mathbb{I}$ and $\mathbf{e} \equiv \boldsymbol{\varepsilon} - \frac{1}{3}\operatorname{Tr}(\boldsymbol{\varepsilon})\mathbb{I}$.
+  1. **Volumetric Dilatational Balance ($K_0, \zeta_{\text{bulk}}$):**  
+     Isotropic field pressure $P_{\text{field}} = -\frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}) = \frac{1}{2}\|\nabla \mathbf{\Phi}\|^2$ governs compression against the microscopic **Volumetric Bulk Modulus**:
+     $$K_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \rho \left.\frac{\partial^2 u}{\partial \rho^2}\right|_{\mathcal{F}}, \qquad \operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}) = \frac{1}{3 K_0} \operatorname{Tr}(\dot{\boldsymbol{\sigma}}) + \frac{1}{3 \zeta_{\text{bulk}}} \operatorname{Tr}(\boldsymbol{\sigma})$$
+  2. **Deviatoric Shear Balance ($\mu_{\text{shear}}, \nu_{\text{shear}}$):**  
+     Shear distortions against lattice bonds or active cytoskeletal networks follow:
+     $$\dot{\mathbf{e}} = \frac{1}{2 \mu_{\text{shear}}} \dot{\mathbf{s}} + \frac{1}{2 \nu_{\text{shear}}} \mathbf{s}$$
 
 * **Step 2 (Impulse Response ODE & Integrating Factor):**  
-  To find the Green's function relaxation response $G(t)$, apply an instantaneous unit step strain impulse $\dot{\boldsymbol{\varepsilon}}(t) = \delta(t)$:
-  $$\frac{d\boldsymbol{\sigma}(t)}{dt} + \frac{G_0}{\nu} \boldsymbol{\sigma}(t) = G_0 \, \delta(t)$$
-  Multiplying both sides by the integrating factor $\mu(t) = \exp\left(\frac{G_0}{\nu} t\right)$:
-  $$\frac{d}{dt}\left[ \boldsymbol{\sigma}(t) \exp\left(\frac{G_0}{\nu} t\right) \right] = G_0 \, \delta(t) \exp\left(\frac{G_0}{\nu} t\right)$$
+  Applying unit step shear strain rate $\dot{\mathbf{e}}(t) = \delta(t)\mathbf{I}_{\text{dev}}$ and volumetric strain rate $\operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}) = \delta(t)$:
+  $$\dot{\mathbf{s}} + \frac{\mu_{\text{shear}}}{\nu_{\text{shear}}} \mathbf{s} = 2 \mu_{\text{shear}} \delta(t), \qquad \frac{1}{3}\operatorname{Tr}(\dot{\boldsymbol{\sigma}}) + \frac{K_0}{\zeta_{\text{bulk}}} \frac{1}{3}\operatorname{Tr}(\boldsymbol{\sigma}) = K_0 \delta(t)$$
+  Integrating via integrating factors $\exp(\frac{\mu_{\text{shear}}}{\nu_{\text{shear}}}t)$ and $\exp(\frac{K_0}{\zeta_{\text{bulk}}}t)$ yields the causal relaxation kernels:
+  $$G_{\text{shear}}(t - \tau) = \mu_{\text{shear}} \exp\left( -\frac{\mu_{\text{shear}}}{\nu_{\text{shear}}} (t - \tau) \right) \Theta(t - \tau), \qquad K_{\text{bulk}}(t - \tau) = K_0 \exp\left( -\frac{K_0}{\zeta_{\text{bulk}}} (t - \tau) \right) \Theta(t - \tau)$$
 
-* **Step 3 (The Causal Memory Kernel $G(t-\tau)$):**  
-  Integrating from $0^-$ to $t$ for causal boundary conditions ($\boldsymbol{\sigma}(0^-) = \mathbf{0}$) yields the exact **Constitutive Relaxation Modulus**:
-  $$\boxed{G(t - \tau) = G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau)}$$
-  where $\tau_{\text{relax}} \equiv \frac{\nu}{G_0}$ is the intrinsic **Memory Horizon** of the substrate.
+* **Step 3 (The 3D Causal Memory Tensor Integral):**  
+  The full 3D constitutive Cauchy stress tensor is:
+  $$\boxed{\boldsymbol{\sigma}(x, t) = \int_0^t \left[ 2 G_{\text{shear}}(t - \tau) \, \dot{\mathbf{e}}_{\text{active}}(x, \tau) + K_{\text{bulk}}(t - \tau) \operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}_{\text{active}}(x, \tau)) \mathbb{I} \right] d\tau}$$
+  where $\tau_s \equiv \frac{\nu_{\text{shear}}}{\mu_{\text{shear}}}$ and $\tau_b \equiv \frac{\zeta_{\text{bulk}}}{K_0}$ define the characteristic shear and dilatational **Memory Horizons**.
 
-* **Step 4 (Hereditary Convolution for Macroscopic Resistance):**  
-  By Boltzmann's Linear Superposition Principle, the total outward macroscopic resistance traction $\mathbf{R}(x, t)$ (in $[\mathrm{Pa}]$) generated by past operational strain activations is the causal convolution integral:
-  $$\boxed{\mathbf{R}(x, t) = \int_0^t G(t - \tau) \, \dot{\boldsymbol{\varepsilon}}_{\text{active}}(x, \tau) \, d\tau = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau) \, \dot{\boldsymbol{\varepsilon}}_{\text{active}}(x, \tau) \, d\tau}$$
-  where $\dot{\boldsymbol{\varepsilon}}_{\text{active}}(x, \tau) \equiv \mathcal{O}[\mathcal{F}(\tau)](x)$ represents the **Active Microscopic Strain Rate Tensor** carrying physical SI dimensions of inverse seconds $[\mathrm{s}^{-1}]$.
-
-* **Step 5 (Derivation of the Steady-State Maintenance Rate & Power Density):**  
-  For constant operational actuation $\dot{\boldsymbol{\varepsilon}}_{\text{active}}(\tau) = \dot{\boldsymbol{\varepsilon}}_0$, evaluating asymptotic resistance as $t \to \infty$:
-  $$\mathbf{R}_{\text{steady}} = G_0 \, \dot{\boldsymbol{\varepsilon}}_0 \int_0^\infty \exp\left(-\frac{G_0}{\nu} s\right) ds = G_0 \, \dot{\boldsymbol{\varepsilon}}_0 \left[ -\frac{\nu}{G_0} e^{-\frac{G_0}{\nu} s} \right]_0^\infty = \nu \cdot \dot{\boldsymbol{\varepsilon}}_0$$
-  $$\boxed{\dot{\boldsymbol{\varepsilon}}_{\text{maint}} \equiv \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0 \quad \left( \text{units: } \left[\frac{\mathrm{Pa}}{\mathrm{Pa \cdot s}}\right] = [\mathrm{s}^{-1}] \right)}$$
-  * **Mechanical Power Density Required for Steady-State Maintenance:**  
-    Multiplying the steady-state stress $\mathbf{R}_0$ by the active strain rate $\dot{\boldsymbol{\varepsilon}}_{\text{maint}}$ yields the required **Volumetric Mechanical Power Density ($\dot{w}_{\text{maint}} \in [\mathrm{W/m^3}]$)**:
-    $$\boxed{\dot{w}_{\text{maint}} = \mathbf{R}_0 : \dot{\boldsymbol{\varepsilon}}_{\text{maint}} = \frac{\|\mathbf{R}_0\|^2}{\nu} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3}}\right]}$$
-    Integrating over the entity's volume yields the total steady-state maintenance power $\dot{\mathcal{W}}_{\text{maint}} = \int_E \frac{\|\mathbf{R}_0\|^2}{\nu} dV \in [\mathrm{W}]$.
-  * **Asymptotic Limits:**
-    $$\begin{cases} 
-    \nu \to 0 \implies G(t-\tau) \to G_0 \, \delta(t-\tau) \implies \mathbf{R}(t) \to \mathbf{0} & \text{(Inviscid limit: zero memory horizon; instantaneous structural collapse)} \\
-    \nu \to \infty \implies G(t-\tau) \to G_0 \implies \mathbf{R}(t) \to G_0 \int_0^t \dot{\boldsymbol{\varepsilon}}_{\text{active}} d\tau & \text{(Elastic limit: infinite memory horizon; permanent frozen history)}
-    \end{cases}$$
+* **Step 4 (Macroscopic Resistance & Maintenance Power Density):**  
+  The outward macroscopic resistance traction vector along surface normal $\hat{n}$ is $\mathbf{R}(x, t) \equiv \boldsymbol{\sigma}(x, t) \cdot \hat{n} \in [\mathrm{Pa}]$. For steady-state deviatoric actuation $\dot{\mathbf{e}}_{\text{active}} = \dot{\mathbf{e}}_0$:
+  $$\mathbf{R}_{\text{steady}} = 2 \nu_{\text{shear}} \dot{\mathbf{e}}_0 \cdot \hat{n} \implies \dot{\mathbf{e}}_{\text{maint}} = \frac{1}{2\nu_{\text{shear}}} \mathbf{s}_0 \quad \left( \text{units: } [\mathrm{s}^{-1}] \right)$$
+  Multiplying steady-state deviatoric stress by strain rate yields the **Volumetric Mechanical Power Density ($\dot{w}_{\text{maint}} \in [\mathrm{W/m^3}]$)**:
+  $$\boxed{\dot{w}_{\text{maint}} = \mathbf{s}_0 : \dot{\mathbf{e}}_{\text{maint}} = \frac{\|\mathbf{s}_0\|^2}{2\nu_{\text{shear}}} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3}}\right]}$$
+  Integrating over the entity's volume yields the total steady-state maintenance power $\dot{\mathcal{W}}_{\text{maint}} = \int_E \frac{\|\mathbf{s}_0\|^2}{2\nu_{\text{shear}}} dV \in [\mathrm{W}]$.
 
 ---
 
@@ -249,21 +244,22 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   Under Lorentzian spacetime $(\mathcal{M}, g_{\mu\nu})$, the relativistic kinematic regularizer enforces momentum saturation for an overdamped boundary front subjected to extreme traction:
   $$v_n = \frac{v_{\text{classical}}}{\sqrt{1 + \left(\frac{v_{\text{classical}}}{c}\right)^2}}$$
 
-* **Step 3 (Algebraic Substitution & Homogeneous Metric Coupling):**  
-  Substituting $v_{\text{classical}} = \frac{L_0 \phi}{\nu}$ into Step 2:
-  $$v_n(x, t) = \frac{\frac{L_0 \phi}{\nu}}{\sqrt{1 + \frac{L_0^2 \phi^2}{\nu^2 c^2}}} = \frac{\frac{L_0 \phi}{\nu}}{\frac{\sqrt{\nu^2 c^2 + L_0^2 \phi^2}}{\nu c}} = \boxed{\frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}}}$$
-  where both $\nu c$ and $L_0 \phi$ carry dimension $[\mathrm{N/m}]$, establishing exact dimensional homogeneity.
+* **Step 3 (Curvature Regularization & Interfacial Surface Tension):**  
+  To prevent gradient catastrophes (cusp shocks, self-intersections) characteristic of unregularized first-order Hamilton-Jacobi PDEs (Osher & Sethian, 1988), the normal velocity incorporates the classical **Mean-Curvature Surface Tension Regularizer** ($-\gamma_{\text{surface}} \kappa$):
+  $$v_n(x, t) = \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} - \gamma_{\text{surface}} \, \kappa(x, t)$$
+  where $\gamma_{\text{surface}} > 0$ is the interfacial surface tension / diffusion coefficient ($[\mathrm{m^2/s}]$) and $\kappa \equiv \nabla \cdot \left( \frac{\nabla \phi}{\|\nabla \phi\|} \right)$ is the local mean curvature of the interface front.
 
 * **Step 4 (Asymptotic Causal Verification):**  
   Evaluating the asymptotic limits confirms strict relativistic causal boundedness:
-  $$\lim_{|\phi| \to \infty} |v_n| = \lim_{|\phi| \to \infty} \frac{c \cdot L_0 |\phi|}{L_0 |\phi| \sqrt{1 + \frac{\nu^2 c^2}{L_0^2 \phi^2}}} = c \implies |v_n(x, t)| < c, \quad \forall \phi \in (-\infty, \infty)$$
+  $$\lim_{|\phi| \to \infty} |v_n| = \lim_{|\phi| \to \infty} \left| \frac{c \cdot L_0 |\phi|}{L_0 |\phi| \sqrt{1 + \frac{\nu^2 c^2}{L_0^2 \phi^2}}} - \gamma_{\text{surface}}\kappa \right| \le c + \gamma_{\text{surface}}|\kappa|$$
 
-* **Step 5 (The Closed Relativistic Level-Set Evolution PDE):**  
+* **Step 5 (The Closed Parabolic Relativistic Level-Set Evolution PDE):**  
   By implicit function differentiation, any material point on the propagating interface front $f(t) = \{x \mid \phi(x, t) = 0\}$ satisfies the total convective derivative:
   $$\frac{d\phi}{dt} = \frac{\partial \phi}{\partial t} + \nabla \phi \cdot \frac{d\mathbf{x}}{dt} = 0$$
   Substituting the outward normal front velocity $\frac{d\mathbf{x}}{dt} = \mathbf{v}_n = v_n \frac{\nabla \phi}{\|\nabla \phi\|}$:
-  $$\frac{\partial \phi}{\partial t} + v_n \left( \frac{\nabla \phi}{\|\nabla \phi\|} \cdot \nabla \phi \right) = 0 \implies \frac{\partial \phi}{\partial t} + v_n \|\nabla \phi\| = 0$$
-  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} \|\nabla \phi(x, t)\| = 0}$$
+  $$\frac{\partial \phi}{\partial t} + v_n \|\nabla \phi\| = 0$$
+  $$\boxed{\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} \|\nabla \phi(x, t)\| - \gamma_{\text{surface}} \left[ \nabla \cdot \left( \frac{\nabla \phi(x, t)}{\|\nabla \phi(x, t)\|} \right) \right] \|\nabla \phi(x, t)\| = 0}$$
+  The parabolic second-order curvature term guarantees the existence and uniqueness of smooth viscosity solutions across shock and collision regimes.
 
 ---
 
@@ -403,8 +399,12 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      $$\mu(\mathcal{F}_{\text{ledger}}) < \mu_{\text{critical}} \implies D_{\mathfrak{Im}} \longrightarrow \emptyset$$
      Direct mass loss is negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
   2. **Stage 2a (Ion Pump Arrest & Outward Osmotic Swelling Kinematics):**  
-     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$), causing uncontrolled intracellular ion accumulation. Accounting for macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation:
-     $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \sigma_i \, \gamma_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) + \Pi_{\text{oncotic}} > 0$$
+     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$). Intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**:
+     $$\sum_i z_i c_i^{\text{internal}} + z_{\text{protein}} c_{\text{protein}} = 0$$
+     where $z_{\text{protein}} < 0$ represents fixed intracellular impermeant polyanionic macromolecules. Passive ion redistribution across the permeable bilayer converges toward the **Donnan Equilibrium Ratio**:
+     $$r_D \equiv \frac{c_{\mathrm{K}^+}^{\text{ext}}}{c_{\mathrm{K}^+}^{\text{int}}} = \frac{c_{\mathrm{Cl}^-}^{\text{int}}}{c_{\mathrm{Cl}^-}^{\text{ext}}} \neq 1$$
+     Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation:
+     $$\Delta P_{\text{osmotic}}(t) = k_B T \left[ \sum_i \sigma_i \, \gamma_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) + \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}} \right] + \Pi_{\text{oncotic}} > 0$$
      This drives outward water influx across the lipid bilayer with positive normal velocity:
      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
@@ -431,15 +431,15 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   which defines the **Interfacial Structural Margin Differential ($\Delta \phi_{AB}$)**:
   $$\boxed{\Delta \phi_{AB}(x, t) \equiv \phi_A(x, t) - \phi_B(x, t) \quad \left( \text{units: } [\mathrm{Pa}] \right)}$$
 
-* **Step 2 (The Relativistic Interface Front Velocity):**  
-  By the Relativistic Level-Set Evolution PDE (Theorem 4), the normal velocity of the shared interface front $\mathbf{v}_n^{AB}$ in the direction of $\hat{n}_A$ is:
-  $$\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A$$
+* **Step 2 (The Regularized Relativistic Interface Front Velocity):**  
+  To prevent unphysical light-speed singularities for inviscid contact ($\nu_{AB} \to 0$), the relativistic level-set interface velocity is regularized by the interfacial boundary areal mass density $\rho_{\text{int}}$ ($[\mathrm{kg/m^2}]$):
+  $$\boxed{\mathbf{v}_n^{AB}(x, t) = \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c L_0\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \hat{n}_A}$$
   where $\nu_{AB} \equiv \frac{\nu_A \nu_B}{\nu_A + \nu_B}$ is the effective harmonic interface viscosity.
 
 * **Step 3 (Derivation of Measure / Volume Transfer via Reynolds Transport Theorem):**  
   The contact interface $f_{AB} = \partial E^A \cap \partial E^B$ is a proper subset of entity $B$'s total boundary $\partial E^B = f_{AB} \cup (\partial E^B \setminus f_{AB})$. By the Reynolds Transport Theorem on deforming control volumes, the total rate of change of entity $B$'s physical measure $\mu(E^B)$ is:
   $$\boxed{\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \left(\mathbf{v}_n^{AB} \cdot \hat{n}_A\right) dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA}$$
-  $$= -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA$$
+  $$= -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\left(\nu_{AB} + \rho_{\text{int}} c L_0\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA$$
   Evaluating the sign of the margin differential across the shared contact zone yields the **Deterministic Role Assignment Matrix**:
   $$\boxed{\begin{cases} 
   \Delta \phi_{AB}(x, t) > 0 \implies & \left.\frac{d\mu(E^B)}{dt}\right|_{f_{AB}} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt} > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
@@ -449,14 +449,15 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-### 5.2 Theorem 8 (Inter-Tier Coupling and Darcy-Nernst-Planck Hydrodynamic Closure)
+### 5.2 Theorem 8 (Inter-Tier Coupling and Onsager-Coupled Darcy-Nernst-Planck Hydrodynamic Closure)
 * **The Physical Dilemma:** In multicellular organisms and biological syncytia $\mathbb{S}$, constituent cellular nodes $\{E^j\}$ exchange mass, ions, and high-energy metabolites. How is the collective coupling operator $\mathcal{O}_{\text{coupling}}$ rigorously closed from continuum fluid dynamics and electrodiffusion without invoking empirical scaling fractions ($\eta$)?
 
-* **Step 1 (Continuum Intercellular Hydrodynamics & Electrodiffusion):**  
-  Mass and electrochemical energy transfer across cellular gap junctions and interstitial porous channels $\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}$ are governed by coupled **Darcy-Nernst-Planck transport**:
-  * **Porous Interstitial Fluid Velocity (Darcy's Law):**
-    $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}}$$
-    where $\mathbf{K}_{\text{perm}}$ is the interstitial hydraulic permeability tensor and $\mu_{\text{fluid}}$ is fluid dynamic viscosity.
+* **Step 1 (Continuum Intercellular Hydrodynamics & Onsager-Coupled Electrodiffusion):**  
+  Mass and electrochemical energy transfer across cellular gap junctions and interstitial porous channels $\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}$ obey the symmetric **Onsager Reciprocal Transport Matrix** ($L_{12} = L_{21}$):
+  $$\begin{pmatrix} \mathbf{v}_{\text{fluid}} \\ \mathbf{I}_{\text{electric}} \end{pmatrix} = -\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix} \begin{pmatrix} \nabla P_{\text{interstitial}} \\ \nabla \psi \end{pmatrix}$$
+  * **Porous Interstitial Fluid Velocity with Electro-Osmotic Coupling:**
+    $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}} - \mathbf{K}_{\text{eo}} \nabla \psi$$
+    where $\mathbf{K}_{\text{perm}}$ is hydraulic permeability, $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the electro-osmotic coupling tensor.
   * **Electrochemical Solute Flux (Nernst-Planck Equation):**
     $$\mathbf{J}_i = -D_i \left( \nabla c_i + \frac{z_i F}{R T} c_i \nabla \psi \right) + c_i \mathbf{v}_{\text{fluid}}$$
     where $D_i$ is diffusion coefficient, $z_i$ is ionic valence, $F$ is Faraday's constant, and $\psi$ is electrical potential.
@@ -545,3 +546,6 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 23. **von Mises, R.** (1913). "Mechanik der festen Körper im plastisch-deformablen Zustand". *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse*, 1913, 582–592.
 24. **Kedem, O., & Katchalsky, A.** (1958). "Thermodynamic analysis of the permeability of biological membranes to non-electrolytes". *Biochimica et Biophysica Acta*, 27, 229–246.
 25. **Staverman, A. J.** (1951). "The theory of measurement of osmotic pressure". *Recueil des Travaux Chimiques des Pays-Bas*, 70(4), 344–352.
+26. **Lindblad, G.** (1976). "On the generators of quantum dynamical semigroups". *Communications in Mathematical Physics*, 48(2), 119–130.
+27. **Gorini, V., Kossakowski, A., & Sudarshan, E. C. G.** (1976). "Completely positive dynamical semigroups of N-level systems". *Journal of Mathematical Physics*, 17(5), 821–825.
+28. **Donnan, F. G.** (1911). "Theorie der Membrangleichgewichte und Membranpotentiale bei Vorhandensein von nicht dialysierenden Elektrolyten". *Zeitschrift für Elektrochemie und angewandte physikalische Chemie*, 17(14), 572–581.

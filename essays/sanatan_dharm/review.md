@@ -1,37 +1,35 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 2)
+# Formal Mathematical Physics Peer Review Report (Iteration 3)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 2 (Deep Mathematical Physics & Second-Order Calculation Audit)  
+**Review Version:** Iteration 3 (Third-Order Mathematical Physics & Non-Linear Continuum Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR MAJOR REVISION (Higher-Order Tensor, Boundary & Non-Linear PDE Proof Gaps)**  
+**Editorial Verdict:** **RETURN FOR MAJOR REVISION (Third-Order PDE, Operator & Thermodynamic Cross-Coupling Gaps)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-While the first round of revisions successfully resolved the first-order macroscopic errors (unconstrained Magnus expansion, dimensional power discrepancies, scalar structural margin over-simplification, and 0D signaling latencies), a deeper scrutiny of the mathematical physics, operator representations, and non-linear PDE steps reveals **eight second-order calculation and proof breakdowns**.
+Following the second round of revisions, the manuscript successfully resolved second-order issues (Bistable Fisher-KPP soliton velocity, conservative potential scope restriction, Green-Kubo screening regulator, free-boundary Reynolds transport integrals, and Kedem-Katchalsky osmotic formulations). 
 
-To achieve top-tier journal publication standard (*Communications in Mathematical Physics*, *Physical Review Letters*, *Journal of Mathematical Physics*, *Archive for Rational Mechanics and Analysis*), these eight mathematical proofs and boundary integrals must be formally corrected.
+However, evaluating the mathematical architecture against top-tier theoretical physics and continuum mechanics standards (*Communications in Mathematical Physics*, *Physical Review E*, *Archive for Rational Mechanics and Analysis*) reveals **six advanced third-order calculation, operator, and PDE breakdowns**.
 
 ---
 
-## 2. Deep Calculation & Proof Failure Modes Summary
+## 2. Advanced Calculation Breakdown Matrix
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-│                            DEEP CALCULATION FAILURE MODES SUMMARY                           │
+│                            ROUND 3 CALCULATION BREAKDOWN MATRIX                             │
 ├───────────────────────────────┬───────────────────────────────┬─────────────────────────────┤
 │ SECTION IN DRAFT              │ EQUATION / CLAIM              │ EXACT MATHEMATICAL FLAW     │
 ├───────────────────────────────┼───────────────────────────────┼─────────────────────────────┤
-│ 1. Section 4.3 (Eq. 372)      │ Fisher-KPP Soliton v_wave     │ Invalid for Bistable (Hill) │
-│ 2. Section 2.3.2 (Eq. 225)    │ 3D Stress = Scalar Grad ∇Φ    │ 6-DOF Tensor ≠ 3-DOF Vector │
-│ 3. Section 1.1 (Eq. 27)       │ Green-Kubo Field Viscosity    │ Infrared Long-Time Tail Div │
-│ 4. Section 5.1 (Eq. 439)      │ Volume Transfer via Reynolds  │ Ignores Free-Boundary Flux  │
-│ 5. Section 4.4 (Eq. 405)      │ Van 't Hoff Osmotic Pressure  │ Ignores Staverman Factor σ_i│
-│ 6. Section 1.1 (Eq. 19–21)    │ Complex Manifold Ω_ℂ          │ Missing Hermitian Metric    │
-│ 7. Section 1.2.1 (Eq. 38)     │ Liouvillian Tensor O ⊗ F      │ Undefined Hilbert Rep Map   │
-│ 8. Section 2.1 (Eq. 135)      │ Realization Operator π_real   │ Not Idempotent (P² ≠ P)     │
+│ 1. Section 1.2.1 (Eq. 40–41)  │ Liouvillian Density Evolution │ Violates GKSL Trace Preserv │
+│ 2. Section 2.3.3 (Eq. 264)    │ First-Order Level-Set PDE     │ Gradient Catastrophe/Shock  │
+│ 3. Section 5.1 (Eq. 436)      │ Harmonic Viscosity Limit      │ ν_AB→0 causes v_n→c Singul. │
+│ 4. Section 5.2 (Eq. 438, 441) │ Darcy-Nernst-Planck Transport │ Violates Onsager Reciprocity│
+│ 5. Section 4.4 (Eq. 407–410)  │ Donnan Osmotic Swelling       │ Lacks Electroneutrality     │
+│ 6. Section 1.2.2 (Eq. 70, 75) │ Bulk vs. Shear Modulus G₀     │ Conflates Dilatation/Shear  │
 └───────────────────────────────┴───────────────────────────────┴─────────────────────────────┘
 ```
 
@@ -39,111 +37,89 @@ To achieve top-tier journal publication standard (*Communications in Mathematica
 
 ## 3. Detailed Mathematical Critiques & Required Proof Closures
 
-### Critique 1: Fisher-KPP Wavefront Speed Fails for Cooperative Biochemical Kinetics (§4.3, Eq. 372)
+### Critique 1: Trace-Preservation Breakdown in the Liouvillian Generator (§1.2.1, Eq. 40–41)
 
 * **The Formula in Draft:**  
-  $$v_{\text{wave}} = 2 \sqrt{D_{\text{diff}} \cdot R'(0)}$$
+  $$\frac{d \hat{\rho}_E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) \hat{\rho}_E(\tau), \qquad \text{with } \hat{\rho}_E \in \mathcal{S}(\mathcal{H}), \; \operatorname{Tr}(\hat{\rho}_E) = 1$$
 * **The Calculation Flaw:**  
-  The formula $v = 2\sqrt{D R'(0)}$ is the **monostable Fisher-KPP minimum wave speed**, which strictly requires concave reaction kinetics ($R(c) \le R'(0)c$ with an unstable origin $R'(0) > 0$).  
-  However, intracellular signal transduction networks ($\mathrm{Ca}^{2+}$ waves, MAPK cascades, RhoA-GTPase contractility) operate as **cooperative bistable switches** governed by sigmoidal Hill kinetics ($n \ge 2$):
-  $$R(c) = k \cdot c (c - a)(1 - c), \qquad \text{where } R'(0) = -k a < 0$$
-  For bistable kinetics, $2\sqrt{D R'(0)}$ yields an **imaginary number** ($\sqrt{-ka} \in \mathbb{C}$)!  
-  The authentic bistable traveling wave velocity is:
-  $$v_{\text{bistable}} = \sqrt{\frac{D_{\text{diff}} \cdot k}{2}} \left( 1 - 2a \right)$$
-* **Required Fix:** Replace the monostable Fisher formula with the bistable traveling wave velocity equation parameterized by the activation threshold $a \in (0, 1/2)$.
+  For $\hat{\rho}_E(t)$ to remain a valid physical density operator ($\operatorname{Tr}(\hat{\rho}_E) \equiv 1$ and $\hat{\rho}_E \ge 0$) under non-unitary dissipative open dynamics, the generator $\hat{\mathcal{L}}$ **must satisfy the Gorini-Kossakowski-Sudarshan-Lindblad (GKSL) theorem**:
+  $$\hat{\mathcal{L}}\hat{\rho} = -i [\hat{H}, \hat{\rho}] + \sum_k \left( \hat{L}_k \hat{\rho} \hat{L}_k^\dagger - \frac{1}{2} \left\{ \hat{L}_k^\dagger \hat{L}_k, \hat{\rho} \right\} \right)$$
+  The draft defines $\hat{\mathcal{L}} \equiv \mathcal{O} \otimes \mathcal{F}$ as an unconstrained operator product without enforcing the Lindblad trace-preserving condition $\operatorname{Tr}(\hat{\mathcal{L}}\hat{\rho}) = 0$.
+* **Required Fix:** Formulate $\hat{\mathcal{L}}$ explicitly as a Lindblad/GKSL super-operator ensuring $\operatorname{Tr}(\hat{\mathcal{L}}\hat{\rho}) \equiv 0$ and complete positivity.
 
 ---
 
-### Critique 2: Mathematical Incompatibility Between 3D Cauchy Stress and Scalar Potentials (§2.3.1 vs. §2.3.2, Eq. 215 & 225)
+### Critique 2: Gradient Catastrophes & Missing Mean Curvature Regularization (§2.3.3, Eq. 264)
+
+* **The Formula in Draft:**  
+  $$\frac{\partial \phi(x, t)}{\partial t} + \frac{c \cdot L_0 \, \phi(x, t)}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2(x, t)}} \|\nabla \phi(x, t)\| = 0$$
+* **The Calculation Flaw:**  
+  Equation 264 is a purely hyperbolic, first-order Hamilton-Jacobi PDE. In non-linear front propagation (Osher & Sethian, 1988), first-order level-set equations without surface tension develop **gradient catastrophes (shocks, cusps, and self-intersections)** in finite time $t^* < \infty$, where $\|\nabla \phi\| \to \infty$ and classical differentiability breaks down.
+* **Required Fix:** Introduce the parabolic **mean-curvature surface-tension regularizer** $-\gamma_{\text{surface}} \kappa$:
+  $$v_n = \frac{c L_0 \phi}{\sqrt{\nu^2 c^2 + L_0^2 \phi^2}} - \gamma_{\text{surface}} \, \kappa, \qquad \text{where } \kappa \equiv \nabla \cdot \left( \frac{\nabla \phi}{\|\nabla \phi\|} \right)$$
+  guaranteeing existence of smooth, stable viscosity solutions.
+
+---
+
+### Critique 3: Singular Light-Speed Boundary Limit in Harmonic Viscosity (§5.1, Eq. 436–437)
 
 * **The Formulas in Draft:**  
-  Eq. 215: $\phi(x, t) = \sigma_{\text{yield}} - \sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{challenge}}\right)}$  
-  Eq. 225: $\phi(x, t) = \|\nabla \Phi_{\text{internal}}\| - \|\nabla \Phi_{\text{external}}\|$
+  $$\nu_{AB} \equiv \frac{\nu_A \nu_B}{\nu_A + \nu_B}, \qquad \mathbf{v}_n^{AB} = \frac{c \cdot L_0 \, \Delta \phi_{AB}}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2}} \hat{n}_A$$
 * **The Calculation Flaw:**  
-  The Cauchy stress tensor $\boldsymbol{\sigma}$ is a symmetric rank-2 tensor possessing **6 independent spatial degrees of freedom**. The gradient of a scalar potential $\nabla \Phi$ is a rank-1 vector possessing only **3 degrees of freedom**.  
-  In general continuum mechanics (viscous shear flows, anisotropic crystals, plastic deformation):
-  $$\boldsymbol{\sigma} \neq \nabla \Phi \otimes \hat{n}$$
-* **Required Fix:** Restrict the equipotential scalar formulation (Eq. 225) strictly to conservative electrostatic/gravitational potential fields, and clarify that general continuum mechanics is governed by the tensorial invariant $J_2(\boldsymbol{\sigma})$.
+  For contact between an elastic body $B$ and an ideal inviscid fluid $A$ ($\nu_A \to 0$), the harmonic viscosity collapses to zero ($\lim_{\nu_A \to 0} \nu_{AB} = 0$).  
+  This yields:
+  $$\mathbf{v}_n^{AB} = \frac{c \cdot L_0 \Delta \phi_{AB}}{\sqrt{0 + L_0^2 \Delta \phi_{AB}^2}} \hat{n}_A = c \cdot \operatorname{sgn}(\Delta \phi_{AB}) \hat{n}_A$$
+  predicting that the boundary instantly accelerates to the speed of light $c$ for any infinitesimal $\Delta \phi > 0$.
+* **Required Fix:** Regularize the interface velocity denominator with an interfacial boundary mass/inertial resistance term:
+  $$\mathbf{v}_n^{AB} = \frac{c \cdot L_0 \, \Delta \phi_{AB}}{\sqrt{\left(\nu_{AB} + \rho_{\text{interface}} c L_0\right)^2 c^2 + L_0^2 \Delta \phi_{AB}^2}} \hat{n}_A$$
 
 ---
 
-### Critique 3: Infrared Long-Time Tail Divergence in Green-Kubo Field Viscosity (§1.1, Eq. 27)
+### Critique 4: Violation of Onsager Reciprocal Relations in Darcy-Nernst-Planck Transport (§5.2, Eq. 438 & 441)
+
+* **The Formulas in Draft:**  
+  $$\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P_{\text{interstitial}}$$
+  $$\mathbf{J}_i = -D_i \left( \nabla c_i + \frac{z_i F}{R T} c_i \nabla \psi \right) + c_i \mathbf{v}_{\text{fluid}}$$
+* **The Calculation Flaw:**  
+  In porous charged media (interstitial syncytial tissue and gap junctions), pressure gradients and electrical potentials are **cross-coupled** via streaming currents ($\mathbf{I}_{\text{stream}} \propto \nabla P$) and electro-osmotic fluid motion ($\mathbf{v}_{\text{eo}} \propto \nabla \psi$).
+* **Required Fix:** Write the coupled transport as a symmetric Onsager matrix ($L_{12} = L_{21}$):
+  $$\begin{pmatrix} \mathbf{v}_{\text{fluid}} \\ \mathbf{I}_{\text{electric}} \end{pmatrix} = -\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix} \begin{pmatrix} \nabla P \\ \nabla \psi \end{pmatrix}$$
+
+---
+
+### Critique 5: Missing Donnan Electroneutrality Constraints in Osmotic Swelling (§4.4, Eq. 407)
 
 * **The Formula in Draft:**  
-  $$\nu_{\text{field}} = \frac{1}{V k_B T} \int_0^\infty \left\langle T_{xy}^{\text{field}}(0) \, T_{xy}^{\text{field}}(\tau) \right\rangle d\tau$$
+  $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \sigma_i \, \gamma_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) + \Pi_{\text{oncotic}}$$
 * **The Calculation Flaw:**  
-  In low-dimensional hydrodynamics and gauge field theories, stress-energy tensor auto-correlation functions exhibit **long-time power-law tails** (the Alder-Wainwright effect):
-  $$\left\langle T_{xy}(0) T_{xy}(\tau) \right\rangle \sim \tau^{-d/2}$$
-  In 2D ($d=2$), the integral $\int_0^\infty \tau^{-1} d\tau$ **diverges logarithmically**. In 3D gauge field theories without an explicit thermal screening mass (Debye mass $m_D \sim g T$) or magnetic confinement gap, the integral suffers from infrared divergences.
-* **Required Fix:** Introduce an explicit infrared screening regulator $m_D$ or non-perturbative confinement cutoff $\tau_{\text{cutoff}} = \hbar / (k_B T)$ to guarantee integral convergence.
+  Intracellular ion concentrations cannot vary independently; they are strictly constrained by **macroscopic electroneutrality**:
+  $$\sum_i z_i c_i^{\text{internal}} + z_{\text{protein}} c_{\text{protein}} = 0$$
+  Upon ion pump failure ($\dot{\mathcal{W}}_{\text{repair}} \to 0$), passive ion redistribution is governed by the **Donnan equilibrium ratio**:
+  $$r_D \equiv \frac{c_{\mathrm{K}^+}^{\text{ext}}}{c_{\mathrm{K}^+}^{\text{int}}} = \frac{c_{\mathrm{Cl}^-}^{\text{int}}}{c_{\mathrm{Cl}^-}^{\text{ext}}} \neq 1$$
+  Because $z_{\text{protein}} < 0$, Donnan equilibrium mathematically forces $\sum c_i^{\text{int}} > \sum c_i^{\text{ext}}$, proving that osmotic swelling is an inevitable physical consequence of electroneutrality.
+* **Required Fix:** Incorporate the Donnan electroneutrality condition ($\sum z_i c_i = 0$) into the derivation of $\Delta P_{\text{osmotic}}$.
 
 ---
 
-### Critique 4: Reynolds Transport Theorem Violation on Contact Sub-Manifolds (§5.1, Eq. 439)
+### Critique 6: Conflation of Dilatational Bulk Modulus and Shear Modulus in Maxwell Rheology (§1.2.2, Eq. 70 vs. 75)
 
-* **The Formula in Draft:**  
-  $$\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \mathbf{v}_n^{AB} \cdot \hat{n}_A \, dA$$
+* **The Formulas in Draft:**  
+  Eq. 70: $G_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \left.\frac{\delta^2 \mathcal{U}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$  
+  Eq. 75: $\dot{\boldsymbol{\varepsilon}} = \frac{1}{G_0} \frac{d\boldsymbol{\sigma}}{dt} + \frac{1}{\nu}\boldsymbol{\sigma}$
 * **The Calculation Flaw:**  
-  The contact interface $f_{AB} = \partial E^A \cap \partial E^B$ is only a **proper subset** of entity $B$'s total boundary:
-  $$\partial E^B = f_{AB} \cup \left( \partial E^B \setminus f_{AB} \right)$$
-  By the Reynolds Transport Theorem, the total rate of volume change of $E^B$ is:
-  $$\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} (\mathbf{v}_n^{AB} \cdot \hat{n}_A) dA + \int_{\partial E^B \setminus f_{AB}} (\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B) dA$$
-* **Required Fix:** Augment Equation 439 with the unconstrained free-boundary integral $\int_{\partial E^B \setminus f_{AB}} (\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B) dA$.
+  Equation 70 defines the volumetric **Bulk Modulus** $K_0 = \frac{\partial P}{\partial \ln \rho}$, while Equation 75 uses $G_0$ with shear viscosity $\nu$. In 3D continuum mechanics, linear viscoelasticity splits into **orthogonal spherical (dilatational) and deviatoric (shear) components**:
+  $$\operatorname{Tr}(\dot{\boldsymbol{\varepsilon}}) = \frac{1}{3 K_0} \operatorname{Tr}(\dot{\boldsymbol{\sigma}}) + \frac{1}{3 \zeta_{\text{bulk}}} \operatorname{Tr}(\boldsymbol{\sigma})$$
+  $$\dot{\mathbf{e}} = \frac{1}{2 \mu_{\text{shear}}} \dot{\mathbf{s}} + \frac{1}{2 \nu_{\text{shear}}} \mathbf{s}$$
+* **Required Fix:** Explicitly formulate the 3D tensorial split between isotropic bulk relaxation ($K_0, \zeta_{\text{bulk}}$) and deviatoric shear relaxation ($\mu_{\text{shear}}, \nu_{\text{shear}}$).
 
 ---
 
-### Critique 5: Van 't Hoff Osmotic Linearity Fails in Crowded Cytoplasm (§4.4, Eq. 405)
+## 4. Master Revision Checklist for Iteration 4
 
-* **The Formula in Draft:**  
-  $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right)$$
-* **The Calculation Flaw:**  
-  This equation assumes ideal, infinitely dilute gas-phase solute behavior. In cellular cytoplasm:
-  1. Macromolecular crowding (protein density $\sim 200\text{--}300 \, \mathrm{mg/mL}$) generates non-linear colloid-osmotic pressure $\Pi_{\text{colloid}} \propto c_{\text{protein}}^2 + c_{\text{protein}}^3$.
-  2. For a permeabilized membrane, solutes leak across pores with a species-dependent **Staverman reflection coefficient** $\sigma_i \in [0, 1]$.
-* **Required Fix:** Replace the ideal Van 't Hoff equation with the Kedem-Katchalsky non-equilibrium thermodynamic osmotic formulation:
-  $$\Delta P_{\text{osmotic}} = k_B T \sum_i \sigma_i \, \gamma_i \Delta c_i + \Pi_{\text{oncotic}}$$
-
----
-
-### Critique 6: Absence of a Hermitian/Kähler Metric on Complex State Space $\Omega_{\mathbb{C}}$ (§1.1, Eq. 19–21)
-
-* **The Claim in Draft:**  
-  $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$ equipped with almost-complex operator $J$ ($J^2 = -\mathbb{I}$).
-* **The Calculation Flaw:**  
-  To compute vector magnitudes $\|\mathbf{R}\|$, differential forms $\mathbf{J}_S$, and gradients $\nabla \phi$ on a complex manifold $\Omega_{\mathbb{C}}$, the manifold must be equipped with a **Hermitian metric tensor**:
-  $$g(J X, J Y) = g(X, Y), \qquad h(X, Y) = g(X, Y) + i \omega(X, Y)$$
-* **Required Fix:** Formally equip $\Omega_{\mathbb{C}}$ with a Hermitian/Kähler metric structure satisfying $\nabla J = 0$.
-
----
-
-### Critique 7: Undefined Algebraic Representation for the Liouvillian Super-Operator (§1.2.1, Eq. 38)
-
-* **The Formula in Draft:**  
-  $$\frac{d E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) E(\tau), \qquad \text{where } \hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$$
-* **The Calculation Flaw:**  
-  If $E(\tau)$ is a geometrical subset or topological manifold ($E \subset \Omega$), the action of a tensor product operator $\mathcal{O} \otimes \mathcal{F}$ on a set $E$ is algebraically undefined. Operators act on elements of a **Hilbert space** $\mathcal{H}$ or density matrices in $\mathcal{S}(\mathcal{H})$, not directly on geometric subsets.
-* **Required Fix:** Define the characteristic state representation $|\psi_E(t)\rangle \in \mathcal{H}$ or density operator $\hat{\rho}_E(t)$ such that $\frac{d\hat{\rho}_E}{d\tau} = \hat{\mathcal{L}}(\tau)\hat{\rho}_E(\tau)$.
-
----
-
-### Critique 8: The "Realization Operator" $\hat{\pi}_{\text{real}}$ Violates Idempotence (§2.1, Eq. 135)
-
-* **The Formula in Draft:**  
-  $$\hat{\pi}_{\text{real}}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}} = -\mathbf{T}^{\text{field}} \cdot \hat{n} \\ \mathbf{J}_{\text{fuel}} = \alpha \, \mathbf{S} \end{cases}$$
-* **The Calculation Flaw:**  
-  A projection operator $P$ on a vector space strictly requires **idempotence** ($P^2 = P$). Eq. 135 maps from product space $\mathbf{\Phi} \otimes \mathcal{F}$ to a boundary vector traction $\mathbf{C} \in [\mathrm{Pa}]$, making $P(P(x))$ undefined.
-* **Required Fix:** Rename $\hat{\pi}_{\text{real}}$ to **Interfacial Realization Trace Map** $\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right]$.
-
----
-
-## 4. Master Revision Checklist for Iteration 3
-
-- [x] **Item 1:** Replace monostable Fisher-KPP velocity with bistable traveling wave velocity $v_{\text{bistable}} = \sqrt{\frac{D k}{2}}(1 - 2a)$ in §4.3.
-- [x] **Item 2:** Restrict Eq. 225 to conservative potential fields, maintaining $J_2(\boldsymbol{\sigma})$ as the universal continuum yield invariant in §2.3.1–§2.3.2.
-- [x] **Item 3:** Add the infrared thermal Debye screening cutoff $m_D$ to the Green-Kubo viscosity integral in §1.1.
-- [x] **Item 4:** Augment the interface volume transfer equation with the free-boundary Reynolds integral in §5.1 (Eq. 439).
-- [x] **Item 5:** Replace ideal Van 't Hoff equation with Kedem-Katchalsky formulation with Staverman reflection coefficients $\sigma_i$ in §4.4 (Eq. 405).
-- [x] **Item 6:** Equip complex state space $\Omega_{\mathbb{C}}$ with a formal Hermitian/Kähler metric tensor $h(X, Y) = g(X, Y) + i\omega(X, Y)$ in §1.1.
-- [x] **Item 7:** Formulate the Hilbert space representation $\hat{\rho}_E \in \mathcal{S}(\mathcal{H})$ for the Liouvillian super-operator in §1.2.1.
-- [x] **Item 8:** Rename $\hat{\pi}_{\text{real}}$ from "Projection Operator" to "Interfacial Realization Trace Map" $\operatorname{Tr}_{\partial E}$ in §2.1.
-- [x] **Item 9:** Maintain bilateral synchronization across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md), [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md), and this review file.
+- [x] **Item 1:** Formulate $\hat{\mathcal{L}}$ in standard **Lindblad / GKSL trace-preserving generator form** ($\operatorname{Tr}(\hat{\mathcal{L}}\hat{\rho}) = 0$) in §1.2.1.
+- [x] **Item 2:** Add the **mean-curvature surface-tension regularizer** $-\gamma_{\text{surface}} \kappa$ ($\kappa = \nabla \cdot \frac{\nabla \phi}{\|\nabla \phi\|}$) to the Relativistic Level-Set PDE in §2.3.3.
+- [x] **Item 3:** Regularize harmonic interface viscosity with an **interfacial inertia/mass density parameter** ($\rho_{\text{int}} c L_0$) in §5.1 to eliminate the $\nu_{AB} \to 0 \implies v_n \to c$ singularity.
+- [x] **Item 4:** Include the **electro-osmotic coupling cross-term** $-\mathbf{K}_{\text{eo}}\nabla \psi$ in Darcy's Law in §5.2 to satisfy Onsager reciprocity ($L_{12} = L_{21}$).
+- [x] **Item 5:** Explicitly state the **Donnan electroneutrality constraint** ($\sum z_i c_i = 0$) and Donnan equilibrium ratio $r_D$ in §4.4.
+- [x] **Item 6:** Formulate the explicit 3D tensor split between **Volumetric Bulk Modulus/Viscosity ($K_0, \zeta_{\text{bulk}}$)** and **Shear Modulus/Viscosity ($\mu_{\text{shear}}, \nu_{\text{shear}}$)** in §1.2.2.
+- [x] **Item 7:** Maintain bilateral synchronization across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md), [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md), and this review file.
