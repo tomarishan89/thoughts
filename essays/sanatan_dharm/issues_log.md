@@ -99,6 +99,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.42: Cross-Sectional Gouy-Stodola Exergy Rate Synchronization.** Synchronized critical starvation threshold in §4.2 and syncytial envelope survival condition in §5.2 to $T_{\text{ambient}}\int \sigma_{\text{total}} dV$.
 - [X] **ISSUE-6.43: Cross-Sectional Green-Kubo Formulation Synchronization.** Synchronized Tier I physical resistance field in §3.1 to the Debye-screened volume-integrated Green-Kubo integral.
 - [X] **ISSUE-6.44: Dimensional Rate Homogeneity in Enzymatic Repair Power.** Formulated repair power rate $\dot{\mathcal{W}}_{\text{repair}} \ge \dot{n}_{\text{lesions}} k_B T \ln 2 \, [\mathrm{W}]$ in §4.1 of `draft.md`.
+- [X] **ISSUE-6.45: Action Quantum Dimensions in GKSL Generator.** Restored $-\frac{i}{\hbar}[\hat{H}, \hat{\rho}_E]$ in §1.2.1 (Eq. 41) to guarantee exact $[\mathrm{s^{-1}}]$ rate dimensions.
+- [X] **ISSUE-6.46: Permittivity Scaling in Maxwell Field Pressure.** Scaled field gradient by dielectric permittivity $\varepsilon_0 \varepsilon_r$ in §1.2.2 (Line 78) to guarantee Pascal $[\mathrm{Pa}]$ dimensions.
+- [X] **ISSUE-6.47: Intensive Local Landauer Erasure Density Rate.** Replaced extensive $\dot{\mathcal{H}}$ with local bit erasure density rate $\dot{h}_{\mathfrak{Im}}(x, t) \in [\mathrm{bits/(m^3 \cdot s)}]$ in §2.2 (Eq. 189).
+- [X] **ISSUE-6.48: Volumetric Information-Stress Coupling Coefficient.** Formulated $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{cortex}}} \in [\mathrm{Pa/bit}]$ for active pre-stressing in §2.3.5 of `draft.md`.
 
 ---
 
