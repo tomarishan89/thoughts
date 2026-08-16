@@ -25,7 +25,7 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 
 * **Field-Theoretic Viscosity (Green-Kubo Formalism):** For entities whose structural boundaries are maintained by gauge field stress tensors $\mathbf{T}^{\text{field}}$ (electromagnetic, gravitational, or nuclear), the macroscopic field viscosity is rigorously obtained via the Green-Kubo fluctuation-dissipation integral:
   $$\nu_{\text{field}} = \frac{1}{V k_B T} \int_0^\infty \left\langle T_{xy}^{\text{field}}(0) \, T_{xy}^{\text{field}}(\tau) \right\rangle d\tau$$
-* **Rest-Mass Confinement Condition ($\nu > 0$):** An entity carrying non-zero rest mass ($m > 0$) sweeps out a **timelike worldtube ($u^\mu u_\mu = -c^2, v < c$)**. Internal viscosity $\nu > 0$ represents the **Israel-Stewart shear relaxation resistance ($\tau_\pi > 0$)** that couples internal stress to the metric, preventing stress-energy from dissolving into unconfined null radiation at $c$.
+* **Rest-Mass Confinement Condition ($\nu > 0$):** An entity carrying non-zero rest mass ($m > 0$) sweeps out a **timelike worldtube ($u^\mu u_\mu = -c^2, v < c$)**. Internal viscosity $\nu > 0$ represents the **Israel-Stewart shear relaxation resistance ($\tau_\pi > 0$)** that couples internal stress to the metric, preventing stress-energy from dissolving into unconfined null radiation at $c$. Along collective null causal boundaries $\mathcal{N}$ (e.g., event horizons), the Damour-Navier-Stokes membrane paradigm yields an effective horizon surface viscosity $\eta_{\text{horizon}} = \frac{c^3}{16\pi G}$ satisfying the Kovtun-Son-Starinets holographic bound $\frac{\eta}{s} \ge \frac{\hbar}{4\pi k_B}$.
 
 ---
 
@@ -189,37 +189,9 @@ $$\boxed{\left. \frac{\partial \sigma_{\text{computation}}}{\partial \chi} \righ
 
 ---
 
-## Section 3: The Null Boundary Test — Light and Photons
+## Section 3: Physical Forms of Existence (Tier I Stress-Test)
 
-### 3.1 The Asymptotic Null Geodesic Limit
-Consider electromagnetic radiation (photons) propagating through spacetime $(\mathcal{M}, g_{\mu\nu})$:
-* **Null Metric Condition:** $k^\mu k_\mu = 0 \implies v = c, \; m = 0$.
-* **Vanishing Proper Time:** $d\tau \equiv \sqrt{-g_{\mu\nu} dx^\mu dx^\nu} = 0$. In the rest frame of the photon, the metric interval collapses completely.
-
-### 3.2 Stress-Testing the Framework Against Light: Does it Hold?
-
-1. **Substrate / Fuel State Analysis ($\mathcal{S}_{\text{fuel}}$):**
-   - A photon carries energy-momentum $p^\mu = \hbar k^\mu$, but possesses **zero rest mass ($m=0$)** and zero proper volume ($\mu_{\text{rest}}(E) = 0$).
-   - It encloses no internal degrees of freedom ($S_{\text{internal}} = 0$) and cannot function as an accessible localized free-energy reservoir. It is pure, unconfined energy flux propagating on the null boundary $\mathcal{N} = \partial J^+$.
-
-2. **Existential Engine Analysis ($\mathcal{E}$):**
-   - Because $d\tau = 0$, a photon executes **zero internal operational cycles** ($\hat{\mathcal{L}} = \mathbf{0}, D_{\mathfrak{Im}} = \emptyset$).
-   - It maintains no internal Cauchy stress tensor ($\boldsymbol{\sigma}_{\text{internal}} = \mathbf{0}$) and rejects no internal entropy ($\mathbf{J}_S = \mathbf{0}$). It cannot actively resist deformation.
-
-3. **Viscosity of the Light Horizon:**
-   - In vacuum, the photon possesses **zero internal shear viscosity ($\nu = 0$)**, which is precisely why it cannot form a localized timelike worldtube and must propagate at $c$.
-   - Along a collective null causal horizon $\mathcal{N}$ (e.g., black hole event horizons), the Damour-Navier-Stokes membrane paradigm (Damour, 1978; Thorne et al., 1986) establishes an effective horizon surface viscosity:
-     $$\eta_{\text{horizon}} = \frac{c^3}{16\pi G}$$
-   - Furthermore, the Kovtun-Son-Starinets holographic bound (Kovtun et al., 2005) confirms $\frac{\eta}{s} \ge \frac{\hbar}{4\pi k_B}$.
-
-#### Conclusion on Light
-Light is **not** an individual, bounded form of existence ($E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$). Rather, light represents the **Universal Asymptotic Boundary Surface (the Null Horizon $\mathcal{N}$)** against which all sub-luminal, rest-mass-confined, viscous forms of existence ($m > 0, v < c, \nu > 0$) are geometrically bounded and kinematically referenced.
-
----
-
-## Section 4: Physical Forms of Existence (Tier I Stress-Test)
-
-### 4.1 The Degenerate Reactive Engine Model
+### 3.1 The Degenerate Reactive Engine Model
 Physical entities (crystals, rocks, planetary bodies, stars) possess no cognitive or biological predictive apparatus:
 $$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \chi^* = 0, \quad \dot{\mathcal{E}}_{\mathfrak{Im}} = 0$$
 
@@ -230,7 +202,7 @@ $$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \chi^* = 0, \quad \
   1. **Primary Structural Engine:** Maintained by interatomic/gravitational potential ($U_{\text{bond}}$). In the absence of external illumination or mechanical challenge ($\mathbf{C} \to \mathbf{0}$), the structural margin remains positive ($\phi_{\text{lattice}} > 0$), preserving material measure $\mu(E) > 0$.
   2. **Secondary Interaction / Optical Modes:** Modes such as optical reflection ($A_{\text{albedo}} \mathbf{S}$) operate strictly when driven by external flux. In the dark, these secondary throughput modes go dormant ($\mathbf{S}_{\text{refl}} = \mathbf{0}, \sigma_{\text{total}} \to 0, \Lambda \to 1$), entering a zero-dissipation ground state without boundary dissolution.
 
-### 4.2 Stress-Testing Physical Forms: Does it Hold?
+### 3.2 Stress-Testing Physical Forms: Does it Hold?
 
 1. **Dissipation Tensor Simplification:**
    The unified entropy production density collapses strictly to viscous and thermal terms:
@@ -245,16 +217,16 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-## Section 5: Biological & Cognitive Forms (Tiers II & III Stress-Test)
+## Section 4: Biological & Cognitive Forms (Tiers II & III Stress-Test)
 
-### 5.1 Tier II Biological Forms (Metabolic Engines)
+### 4.1 Tier II Biological Forms (Metabolic Engines)
 * **Operator Algebra ($D_{\mathfrak{Im}}$):** Biochemical feedback loops, enzymatic catalysis, and genetic regulatory networks.
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** High-energy chemical phosphate bonds (ATP hydrolysis, $\Delta G \approx -57 \, \text{kJ/mol}$).
 * **Fuel Partition ($\chi^* \in (0, 1)$):** Energy is partitioned between physical actuation/cytoskeletal maintenance ($\dot{\mathcal{E}}_{\mathfrak{Re}}$) and enzymatic error correction / DNA repair ($W_{\text{repair}} \ge n \cdot k_B T \ln 2$).
 * **Does it Hold?**
   Metabolic influx $\dot{E}_{\text{fuel}} = \int \boldsymbol{\mu}_{\text{chem}} \cdot \mathbf{J}_{\text{fuel}} dA$ counteracts thermal lysis. Starvation below the critical threshold $\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv \int \sigma_{\text{total}} T dV$ causes immediate membrane rupture ($\phi < 0, \mu \to 0$).
 
-### 5.2 Tier III Cognitive Forms (Predictive Generative Engines)
+### 4.2 Tier III Cognitive Forms (Predictive Generative Engines)
 * **Operator Algebra ($D_{\mathfrak{Im}}$):** Hierarchical generative Bayesian inference models (Friston, 2010; Seth, 2014) running anticipatory projections in $\Omega_{\mathfrak{Im}}$.
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** Neural ATP flux + structured sensory negentropy.
 * **Optimal Investment ($\chi^* \approx 1$):** Governed by the Sagawa-Ueda information thermodynamic bound:
@@ -267,13 +239,13 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-## Section 6: Hypothesis $H_0$ — Universal Scale-Invariant Engine Architecture
+## Section 5: Hypothesis $H_0$ — Universal Scale-Invariant Engine Architecture
 
-### 6.1 Formal Hypothesis Statement
+### 5.1 Formal Hypothesis Statement
 $$\boxed{\mathbf{H_0}: \text{Every bounded non-equilibrium form of existence across all spacetime scales operates via an identical 4-phase engine cycle } \mathcal{C}_{\text{engine}},}$$
 parameterized exclusively by the spectral dimensionality and Lie algebra class of its constitutive operators $D_{\mathfrak{Im}}$.
 
-### 6.2 Universal Classification Matrix ($T_{\text{I}}$–$T_{\text{IV}}$)
+### 5.2 Universal Classification Matrix ($T_{\text{I}}$–$T_{\text{IV}}$)
 
 | Scale Tier $T_\alpha$ | State Manifold $\Omega$ | Operator Algebra $D_{\mathfrak{Im}}$ | Fuel State $\mathcal{S}_{\text{fuel}}$ | Optimal Ratio $\chi^*$ | Boundary Failure Mode |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -284,7 +256,7 @@ parameterized exclusively by the spectral dimensionality and Lie algebra class o
 
 ---
 
-### 6.3 Intra-Tier Symmetry Breaking & Dynamic Role Assignment
+### 5.3 Intra-Tier Symmetry Breaking & Dynamic Role Assignment
 
 #### Theorem 7 (Intra-Tier Symmetry Breaking and Dynamic Role Assignment):
 Let $E^A, E^B \in T_\alpha$ across shared interface $f_{AB} = \partial E^A \cap \partial E^B$. The operational role assignment is governed by the **Interfacial Structural Margin Differential ($\Delta \phi_{AB}$)**:
@@ -307,7 +279,7 @@ An individual node re-allocates resources $\mathcal{F}_j \to \mathbb{S}$ such th
 
 ---
 
-## Section 7: The "So What?" — Operational and Predictive Utility
+## Section 6: The "So What?" — Operational and Predictive Utility
 
 Why is this framework mathematically and physically necessary? What does it compute that standard equilibrium thermodynamics and classical mechanics cannot?
 
@@ -337,9 +309,9 @@ Computes exact bifurcation point       Calculates trade-off between           El
 
 ---
 
-## Section 8: Framework Vulnerabilities & Iterative Weakness Log
+## Section 7: Framework Vulnerabilities & Iterative Weakness Log
 
-### 8.1 Active Theoretical Vulnerabilities (Pending Resolution)
+### 7.1 Active Theoretical Vulnerabilities (Pending Resolution)
 
 1. **Execution Latency in Temporal Coupling ($\mathrm{Da}_{\text{boundary}}$):**
    - *Status:* **Open / Unresolved.**
@@ -359,7 +331,7 @@ Computes exact bifurcation point       Calculates trade-off between           El
 
 ---
 
-### 8.2 Formally Resolved Vulnerabilities (Closed Theoretical Gaps)
+### 7.2 Formally Resolved Vulnerabilities (Closed Theoretical Gaps)
 
 - [x] ~~**Anticipatory Overcommitment Failure Mode (Phantasmagoric Collapse)**~~  
   *Closed in §2.2 & §2.3 via Sagawa-Ueda bound, Theorem 6, and fuel partition ratio $\chi$.*
@@ -382,18 +354,18 @@ Computes exact bifurcation point       Calculates trade-off between           El
 
 ---
 
-## Section 9: Ontological & Philosophical Mapping (Interpretive Lens)
+## Section 8: Ontological & Philosophical Mapping (Interpretive Lens)
 
-This section provides the explicit formal correspondence between the continuum-mechanical / thermodynamic mechanics established in Sections 1–8 and traditional philosophical and metaphysical concepts. The mathematical physics functions independently of this interpretive layer.
+This section provides the explicit formal correspondence between the continuum-mechanical / thermodynamic mechanics established in Sections 1–7 and traditional philosophical and metaphysical concepts. The mathematical physics functions independently of this interpretive layer.
 
 | Classical Metaphysical Concept | Formal Continuum & Thermodynamic Realization | Governing Equations & Theorems |
 | :--- | :--- | :--- |
-| **Sanatan Dharm** (*Universal Eternal Order*) | The scale-invariant non-equilibrium thermodynamics governing boundary persistence, energy transfer, and entropy production across all Lorentzian spacetime scales. | Axiom 1 (§1.1), Theorem 5 (§2.3), Hypothesis $H_0$ (§6.1) |
+| **Sanatan Dharm** (*Universal Eternal Order*) | The scale-invariant non-equilibrium thermodynamics governing boundary persistence, energy transfer, and entropy production across all Lorentzian spacetime scales. | Axiom 1 (§1.1), Theorem 5 (§2.3), Hypothesis $H_0$ (§5.1) |
 | **Svadharma** (*Intrinsic Law / Duty / Policy*) | The ordered Lie operator algebra ($D_{\mathfrak{Im}}$) of constitutive boundary generators that sustain topological enclosure ($\partial E$) at optimal investment ratio $\chi^*$. | Axiom 2 (§1.2), Theorem 6 (§2.3) |
 | **Karma** (*Causal Action, Trace & Hysteresis*) | The non-Markovian Dyson path history ($\Psi$) and hereditary strain convolution ($G(t-\tau)$), encoding chronological non-commutativity ($[\hat{\mathcal{L}}_1, \hat{\mathcal{L}}_2] \neq \mathbf{0}$). | Axiom 2 (§1.2), Magnus Expansion |
 | **Maya** (*Perceptual / Interface Boundary*) | The emergent zero-level set front ($f(t)$) separating internal microstates from external environmental challenge fields. | Theorem 3 (§2.3), Level-Set PDE (§2.3) |
-| **Dharma** (*Harmonious Structural Integration*) | The inter-tier constitutive coupling operator ($\mathcal{O}_{\text{coupling}}^{m \to n}$) extracting nodal free energy to ensure collective envelope survival. | Theorem 8 (§6.3) |
-| **Karma Yoga** (*Selfless Action / Duty*) | Systemic nodal resource re-allocation sacrificing localized nodal measure ($\mu(E^j) \to 0$) to maintain collective envelope coherence ($\mu(\mathbb{S}) > 0$). | §6.3 (Nodal Re-allocation) |
+| **Dharma** (*Harmonious Structural Integration*) | The inter-tier constitutive coupling operator ($\mathcal{O}_{\text{coupling}}^{m \to n}$) extracting nodal free energy to ensure collective envelope survival. | Theorem 8 (§5.3) |
+| **Karma Yoga** (*Selfless Action / Duty*) | Systemic nodal resource re-allocation sacrificing localized nodal measure ($\mu(E^j) \to 0$) to maintain collective envelope coherence ($\mu(\mathbb{S}) > 0$). | §5.3 (Nodal Re-allocation) |
 | **Moksha / Lysis** (*Liberation / Dissolution*) | The complete relaxation of internal boundary constraints ($\partial E \to \emptyset, \mu(E) \to 0$), merging internal phase-space measure into unconstrained $\Omega$. | Axiom 3 (§2.1), Failure Spectrum |
 
 ---
