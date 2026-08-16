@@ -18,13 +18,15 @@ The **Universal State Space ($\Omega$)** is defined across two canonical manifol
 
 2. **Complexified Phase/State Space ($\Omega_{\mathbb{C}} \equiv \Omega_{\mathbb{R}} \otimes \mathbb{C} \cong \mathbb{R}^3 \oplus i \mathbb{R}^3$):**  
    - For purely reactive entities ($\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\}$, Tier I Physical matter), operational dynamics are instantaneous in spatial configuration space: $E(t) \subset \Omega_{\mathbb{R}}$.
-   - For metabolic entities ($\mathfrak{Im}(D_{\mathfrak{Im}}) \neq \{\mathbf{0}\}$, Tier II Biological cells), state loci expand onto the complexified manifold: $E(t) \subset \Omega_{\mathbb{C}}$, where real components ($\mathfrak{Re}$) represent present-moment cytoskeletal configurations and imaginary components ($\mathfrak{Im}$) represent enzymatic feedback loops and genetic repair ledgers under almost-complex operator $J$ ($J^2 = -\mathbb{I}$).
+   - For metabolic entities ($\mathfrak{Im}(D_{\mathfrak{Im}}) \neq \{\mathbf{0}\}$, Tier II Biological cells), state loci expand onto the complexified manifold: $E(t) \subset \Omega_{\mathbb{C}}$, equipped with a canonical **Hermitian/Kähler Metric Tensor ($h$)**:
+     $$h(X, Y) = g(X, Y) + i \, \omega(X, Y)$$
+     satisfying compatibility with the almost-complex operator $J$ ($J^2 = -\mathbb{I}$, $\nabla J = 0$), Riemannian metric $g(JX, JY) = g(X, Y)$, and fundamental symplectic form $\omega(X, Y) = g(JX, Y)$. Real components ($\mathfrak{Re}$) represent present-moment cytoskeletal configurations and imaginary components ($\mathfrak{Im}$) represent enzymatic feedback loops and genetic repair ledgers.
 
 #### Continuum Mechanics and Relativistic State-Space Viscosity
 Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the rate of state change, and "viscosity" ($\nu$) represents systemic resistance to state deformation.
 
-* **Field-Theoretic Viscosity (Green-Kubo Formalism):** For entities whose structural boundaries are maintained by gauge field stress tensors $\mathbf{T}^{\text{field}}$ (electromagnetic, gravitational, or nuclear), the macroscopic field viscosity is rigorously obtained via the Green-Kubo fluctuation-dissipation integral:
-  $$\nu_{\text{field}} = \frac{1}{V k_B T} \int_0^\infty \left\langle T_{xy}^{\text{field}}(0) \, T_{xy}^{\text{field}}(\tau) \right\rangle d\tau$$
+* **Field-Theoretic Viscosity (Regulated Green-Kubo Formalism):** For entities whose structural boundaries are maintained by gauge field stress tensors $\mathbf{T}^{\text{field}}$ (electromagnetic, gravitational, or nuclear), the macroscopic field viscosity is obtained via the Green-Kubo fluctuation-dissipation integral equipped with a thermal screening regulator (Debye mass $m_D \sim g T$) to prevent infrared long-time tail divergences ($\tau^{-d/2}$):
+  $$\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{V k_B T} \int_0^\infty \left\langle T_{xy}^{\text{field}}(0) \, T_{xy}^{\text{field}}(\tau) \right\rangle \exp\left( -\left(\frac{m_D c^2}{\hbar} + \epsilon\right)\tau \right) d\tau$$
 * **Rest-Mass Confinement Condition ($\nu > 0$):** An entity carrying non-zero rest mass ($m > 0$) sweeps out a **timelike worldtube ($u^\mu u_\mu = -c^2, v < c$)**. Internal viscosity $\nu > 0$ represents the **Israel-Stewart shear relaxation resistance ($\tau_\pi > 0$)** that couples internal stress to the metric, preventing stress-energy from dissolving into unconfined null radiation at $c$. Along collective null causal boundaries $\mathcal{N}$ (e.g., event horizons), the Damour-Navier-Stokes membrane paradigm yields an effective horizon surface viscosity $\eta_{\text{horizon}} = \frac{c^3}{16\pi G}$ satisfying the Kovtun-Son-Starinets holographic bound $\frac{\eta}{s} \ge \frac{\hbar}{4\pi k_B}$.
 
 ---
@@ -34,25 +36,25 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 #### 1.2.1 First-Principles Derivation of the State-Trace Functional ($\Psi$)
 * **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ($E$), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ($[\hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2)] \neq \mathbf{0}$), classical exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator.
 
-* **Step 1 (The Infinitesimal Differential Generator):**  
-  Let $\hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$ be the Liouvillian generator super-operator acting on the complex state space $\Omega_{\mathbb{C}}$. The differential evolution of the entity across infinitesimal time $d\tau$ is:
-  $$\frac{d E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) E(\tau)$$
+* **Step 1 (The Infinitesimal Differential Generator on Hilbert State Space):**  
+  Let the state configuration of an entity be represented by a positive semi-definite state density operator $\hat{\rho}_E(t) \in \mathcal{S}(\mathcal{H})$ ($\operatorname{Tr}(\hat{\rho}_E) = 1$) defined on the complex state Hilbert space $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$. Let $\hat{\mathcal{L}}(\tau) \equiv \mathcal{O}(\tau) \otimes \mathcal{F}(\tau)$ be the Liouvillian generator super-operator acting on $\mathcal{S}(\mathcal{H})$. The differential evolution of the entity across infinitesimal time $d\tau$ is:
+  $$\frac{d \hat{\rho}_E(\tau)}{d\tau} = \hat{\mathcal{L}}(\tau) \hat{\rho}_E(\tau)$$
 
 * **Step 2 (The Volterra Integral Equation):**  
   Direct integration over the interval $[0, t]$ yields the implicit integral equation:
-  $$E(t) = E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) E(\tau_1) \, d\tau_1$$
+  $$\hat{\rho}_E(t) = \hat{\rho}_E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) \hat{\rho}_E(\tau_1) \, d\tau_1$$
 
 * **Step 3 (Recursive Neumann Series Expansion):**  
-  Recursively substituting $E(\tau_1) = E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) E(\tau_2) d\tau_2$ into Step 2 yields:
-  $$E(t) = E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) \left[ E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) E(\tau_2) \, d\tau_2 \right] d\tau_1$$
+  Recursively substituting $\hat{\rho}_E(\tau_1) = \hat{\rho}_E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) \hat{\rho}_E(\tau_2) d\tau_2$ into Step 2 yields:
+  $$\hat{\rho}_E(t) = \hat{\rho}_E(0) + \int_0^t \hat{\mathcal{L}}(\tau_1) \left[ \hat{\rho}_E(0) + \int_0^{\tau_1} \hat{\mathcal{L}}(\tau_2) \hat{\rho}_E(\tau_2) \, d\tau_2 \right] d\tau_1$$
   Iterating this expansion to infinite order produces the exact **Neumann Series**:
-  $$E(t) = \left[ \mathbb{I} + \sum_{n=1}^\infty \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \hat{\mathcal{L}}(\tau_2) \cdots \hat{\mathcal{L}}(\tau_n) \right] E(0)$$
+  $$\hat{\rho}_E(t) = \left[ \mathbb{I} + \sum_{n=1}^\infty \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \hat{\mathcal{L}}(\tau_2) \cdots \hat{\mathcal{L}}(\tau_n) \right] \hat{\rho}_E(0)$$
 
 * **Step 4 (Time-Ordering Symmetrization & Dyson Propagator):**  
   The nested integration simplex $0 \le \tau_n \le \cdots \le \tau_1 \le t$ represents $\frac{1}{n!}$ of the volume of the $n$-dimensional hypercube $[0, t]^n$. Introducing the **Dyson Time-Ordering Meta-Operator ($\mathcal{T}$)** (Dyson, 1949), which chronologically re-orders operators ($\tau_{\pi(1)} \ge \tau_{\pi(2)} \ge \cdots \ge \tau_{\pi(n)}$), allows integration over the unconstrained hypercube:
   $$\int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) = \frac{1}{n!} \int_0^t d\tau_1 \cdots \int_0^t d\tau_n \, \mathcal{T}\left[ \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) \right]$$
   Summing the Taylor series yields the **Exact Time-Ordered Dyson Propagator**:
-  $$\boxed{E(t) = \Psi\left[E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}\right] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) E(0)}$$
+  $$\boxed{\hat{\rho}_E(t) = \Psi\left[\hat{\rho}_E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}\right] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) \hat{\rho}_E(0)}$$
 
 * **Step 5 (Magnus Lie Algebra Expansion, Convergence Radius & Topological Hysteresis):**  
   For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the true exponential generator $\Omega_{\text{Magnus}}(t)$ satisfies the **Magnus Expansion** (Magnus, 1954):
@@ -137,9 +139,9 @@ $$\boxed{\partial E(t) \equiv \partial E_{\mathbb{R}}(t) \;\oplus\; i \, \partia
    The boundary $\partial E$ is a geometric manifold (the spatial zero-level set locus $\phi=0$). It is strictly distinct from the dynamical transport entropy flux 1-form ($\mathbf{J}_S$), which is the integrand flowing across $\partial E$:
    $$\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA$$
 
-#### The Boundary Realization Projection Operator ($\hat{\pi}_{\text{real}}$):
-In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the interaction is evaluated by the **Realization Projection Operator**:
-$$\boxed{\hat{\pi}_{\text{real}}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{J}_{\text{fuel}}(x, t) = \alpha \, \mathbf{S}(x, t) & \text{(Real Negentropy Influx)} \end{cases}}$$
+#### The Interfacial Realization Trace Map ($\operatorname{Tr}_{\partial E}$):
+In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical interaction is evaluated by the **Interfacial Realization Trace Map**:
+$$\boxed{\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{J}_{\text{fuel}}(x, t) = \alpha \, \mathbf{S}(x, t) & \text{(Real Negentropy Influx)} \end{cases}}$$
 
 #### Theorem 1 (Algebraic Orthogonality of Rule and Resource):
 Because $\Omega_{\mathbb{R}}$ and $i \Omega_{\mathbb{R}}$ are complementary orthogonal subspaces of $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathbb{R}}$, the disjointness of rule and resource is an algebraic consequence of the complex field:
@@ -221,9 +223,9 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\te
 The physical interface front $f(t)$ separating the entity's coherent interior from the environment is the emergent zero-level set:
 $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equiv \sigma_{\text{yield}}(x, t) - \sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{challenge}}(x, t)\right)} = 0 \right\}}$$
 
-* **Equipotential Field Representation:** Where forces derive from scalar/tensor potentials ($\mathbf{R} = -\nabla \Phi_{\text{internal}}, \mathbf{C} = -\nabla \Phi_{\text{external}}$), the front is rigorously the **critical equipotential balance surface**:
-  $$\boxed{\phi(x, t) \equiv \|\nabla \Phi_{\text{internal}}(x, t)\| - \|\nabla \Phi_{\text{external}}(x, t)\| = 0}$$
-  anchoring the boundary level-set in classical Roche equipotentials, solid-state Fermi surfaces, and electrostatic work function interfaces.
+* **Equipotential Field Representation (Conservative Potential Sub-Regime):** In the special sub-case where body forces and challenge tractions derive strictly from conservative scalar potentials ($\mathbf{R} = -\nabla \Phi_{\text{internal}}, \mathbf{C} = -\nabla \Phi_{\text{external}}$, such as electrostatic work functions or Newtonian/Einstein gravitational fields), the front reduces to the **critical equipotential balance surface**:
+  $$\boxed{\phi_{\text{pot}}(x, t) \equiv \|\nabla \Phi_{\text{internal}}(x, t)\| - \|\nabla \Phi_{\text{external}}(x, t)\| = 0}$$
+  anchoring the boundary level-set in classical Roche equipotentials, solid-state Fermi surfaces, and electrostatic work function interfaces, while generic continuum mechanics with shear deformation remains strictly governed by the full 6-degree-of-freedom tensorial invariant $\sigma_{\text{yield}} - \sqrt{3 J_2(\boldsymbol{\sigma})}$.
 
 * **Universal Spectrum of Radiant Challenge Fields:**  
   For all electromagnetic and radiative fluxes $\mathbf{S}(x, t)$, the environmental challenge spans a continuous scale-invariant spectrum:
@@ -365,17 +367,17 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   The total outward resistance is partitioned into instantaneous passive membrane elasticity and time-delayed active metabolic traction:
   $$\mathbf{R}(x, t) = \mathbf{R}_{\text{passive}}(x, t) \;+\; \mathbf{R}_{\text{active}}\left(x, \, t - \Delta t_{\text{response}}(x)\right)$$
 
-* **Spatial Reaction-Diffusion Wavefront Dispersion (Fisher-KPP Soliton Metric):**  
+* **Spatial Reaction-Diffusion Wavefront Dispersion (Bistable Cooperative Kinetic Metric):**  
   Intracellular biochemical signaling molecules (e.g., $\mathrm{Ca}^{2+}$, second messengers $c(x, t)$) obey the non-equilibrium reaction-diffusion PDE:
   $$\frac{\partial c}{\partial t} = D_{\text{diff}} \nabla^2 c + R(c)$$
-  By the **Fisher-KPP Theorem**, reaction-diffusion signaling cascades propagate across the intracellular matrix as traveling wave solitons at constant asymptotic velocity:
-  $$v_{\text{wave}} = 2 \sqrt{D_{\text{diff}} \cdot R'(0)}$$
+  Intracellular enzymatic and contractile signaling networks operate via cooperative bistable switches governed by cubic/Hill reaction kinetics $R(c) = k \cdot c (c - a)(1 - c)$ with activation threshold $a \in (0, 1/2)$ (where $R'(0) = -ka < 0$). The asymptotic traveling wave velocity is:
+  $$v_{\text{bistable}} = \sqrt{\frac{D_{\text{diff}} \cdot k}{2}} \left( 1 - 2a \right)$$
   For a localized external shock impacting the membrane at position $x_{\text{impact}} \in \partial E$, the chemical signal arrival time at any boundary coordinate $x \in \partial E$ is strictly linear in Euclidean geodesic distance:
-  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{v_{\text{wave}}} = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{2\sqrt{D_{\text{diff}} R'(0)}}$$
+  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{v_{\text{bistable}}} = \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{\sqrt{\frac{D_{\text{diff}} k}{2}}(1 - 2a)}$$
 
 * **The Spatial Damköhler Field ($\mathrm{Da}(x)$):**  
   For an external oscillatory or shock challenge with characteristic impact frequency $\omega_0$ ($\mathbf{C}(x, t) = \mathbf{C}_0(x) \cos(\omega_0 t)$):
-  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \omega_0 \left( \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{2\sqrt{D_{\text{diff}} R'(0)}} \right)}$$
+  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \omega_0 \left( \tau_{\text{local}} + \frac{\|x - x_{\text{impact}}\|}{\sqrt{\frac{D_{\text{diff}} k}{2}}(1 - 2a)} \right)}$$
 
 * **Dynamic Spatial Regime Classification & Localized Rupture:**
   $$\begin{cases} 
@@ -401,8 +403,8 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      $$\mu(\mathcal{F}_{\text{ledger}}) < \mu_{\text{critical}} \implies D_{\mathfrak{Im}} \longrightarrow \emptyset$$
      Direct mass loss is negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
   2. **Stage 2a (Ion Pump Arrest & Outward Osmotic Swelling Kinematics):**  
-     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$), causing uncontrolled intracellular ion accumulation and generating hyper-osmotic pressure:
-     $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) > 0$$
+     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$), causing uncontrolled intracellular ion accumulation. Accounting for macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation:
+     $$\Delta P_{\text{osmotic}}(t) = k_B T \sum_i \sigma_i \, \gamma_i \left( c_i^{\text{internal}}(t) - c_i^{\text{external}} \right) + \Pi_{\text{oncotic}} > 0$$
      This drives outward water influx across the lipid bilayer with positive normal velocity:
      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
@@ -435,13 +437,14 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   where $\nu_{AB} \equiv \frac{\nu_A \nu_B}{\nu_A + \nu_B}$ is the effective harmonic interface viscosity.
 
 * **Step 3 (Derivation of Measure / Volume Transfer via Reynolds Transport Theorem):**  
-  By the Reynolds Transport Theorem, the rate of change of entity $B$'s physical measure $\mu(E^B)$ across the active interface $f_{AB}$ is:
-  $$\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \mathbf{v}_n^{AB} \cdot \hat{n}_A \, dA = -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA$$
-  Evaluating the sign of the margin differential yields the **Deterministic Role Assignment Matrix**:
+  The contact interface $f_{AB} = \partial E^A \cap \partial E^B$ is a proper subset of entity $B$'s total boundary $\partial E^B = f_{AB} \cup (\partial E^B \setminus f_{AB})$. By the Reynolds Transport Theorem on deforming control volumes, the total rate of change of entity $B$'s physical measure $\mu(E^B)$ is:
+  $$\boxed{\frac{d\mu(E^B)}{dt} = -\int_{f_{AB}} \left(\mathbf{v}_n^{AB} \cdot \hat{n}_A\right) dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA}$$
+  $$= -\int_{f_{AB}} \frac{c \cdot L_0 \, \Delta \phi_{AB}(x, t)}{\sqrt{\nu_{AB}^2 c^2 + L_0^2 \Delta \phi_{AB}^2(x, t)}} \, dA + \int_{\partial E^B \setminus f_{AB}} \left(\mathbf{v}_n^{\text{free}} \cdot \hat{n}_B\right) dA$$
+  Evaluating the sign of the margin differential across the shared contact zone yields the **Deterministic Role Assignment Matrix**:
   $$\boxed{\begin{cases} 
-  \Delta \phi_{AB}(x, t) > 0 \implies & \frac{d\mu(E^B)}{dt} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt} > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) < 0 \implies & \frac{d\mu(E^A)}{dt} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = -\frac{d\mathcal{G}[E^A]}{dt} > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \frac{d\mu}{dt} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
+  \Delta \phi_{AB}(x, t) > 0 \implies & \left.\frac{d\mu(E^B)}{dt}\right|_{f_{AB}} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = -\frac{d\mathcal{G}[E^B]}{dt} > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) < 0 \implies & \left.\frac{d\mu(E^A)}{dt}\right|_{f_{AB}} < 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = -\frac{d\mathcal{G}[E^A]}{dt} > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
+  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \left.\frac{d\mu}{dt}\right|_{f_{AB}} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
   \end{cases}}$$
 
 ---
@@ -540,3 +543,5 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 21. **Blanes, S., Casas, F., Oteo, J. A., & Ros, J.** (2009). "The Magnus expansion and some of its applications". *Physics Reports*, 470(5–6), 151–238.
 22. **Fisher, R. A.** (1937). "The wave of advance of advantageous genes". *Annals of Eugenics*, 7(4), 355–369.
 23. **von Mises, R.** (1913). "Mechanik der festen Körper im plastisch-deformablen Zustand". *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse*, 1913, 582–592.
+24. **Kedem, O., & Katchalsky, A.** (1958). "Thermodynamic analysis of the permeability of biological membranes to non-electrolytes". *Biochimica et Biophysica Acta*, 27, 229–246.
+25. **Staverman, A. J.** (1951). "The theory of measurement of osmotic pressure". *Recueil des Travaux Chimiques des Pays-Bas*, 70(4), 344–352.

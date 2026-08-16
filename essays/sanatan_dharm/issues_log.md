@@ -55,9 +55,17 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 ---
 
 ## Category 6: Downstream Spatial & Hydrodynamic Bounds (Resolved Milestones)
-- [X] **ISSUE-6.1: Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$).** Formulated intracellular reaction-diffusion $\frac{\partial c}{\partial t} = D_{\text{diff}}\nabla^2 c + R(c)$ and derived spatially distributed Damköhler field $\mathrm{Da}(x) = \omega_0 (\tau_{\text{local}} + \frac{\|x-x_{\text{impact}}\|^2}{4 D_{\text{diff}}})$ in §4.3 of `draft.md`.
+- [X] **ISSUE-6.1: Spatial Reaction-Diffusion Dispersion of the Damköhler Field ($\mathrm{Da}(x)$).** Formulated intracellular reaction-diffusion and derived spatially distributed Damköhler field in §4.3 of `draft.md`.
 - [X] **ISSUE-6.2: Kinematic Divergence: Tensile Osmotic Swelling vs. Convective Measure Collapse.** Resolved sign divergence via hyper-osmotic influx $\Delta P_{\text{osmotic}} > 0$, outward normal expansion ($\mathbf{v}_n \cdot \hat{n} > 0$), membrane hoop-stress tensile rupture ($\sigma_{\text{hoop}} \ge \sigma_{\text{UTS}}^{\text{membrane}}$), and secondary lysis pore evacuation ($\frac{d\mu}{dt} \ll 0$) in §4.4 of `draft.md`.
 - [X] **ISSUE-6.3: Hydrodynamic Darcy-Nernst-Planck Closure for Syncytial Coupling ($\mathcal{O}_{\text{coupling}}$).** Replaced empirical efficiency parameters with coupled interstitial Darcy fluid flow and Nernst-Planck electrochemical flux integrals, closing the collective Lyapunov envelope survival condition in §5.2 of `draft.md`.
+- [X] **ISSUE-6.4: Bistable Cooperative Kinetic Wave Velocity ($v_{\text{bistable}}$).** Replaced monostable Fisher formula with exact bistable traveling wave velocity $v_{\text{bistable}} = \sqrt{\frac{D k}{2}}(1 - 2a)$ in §4.3 of `draft.md`.
+- [X] **ISSUE-6.5: Tensorial Von Mises $J_2(\boldsymbol{\sigma})$ vs. Conservative Scalar Potentials.** Resolved 6-DOF vs. 3-DOF incompatibility by restricting $\nabla \Phi$ to conservative potential sub-regimes in §2.3.1–§2.3.2 of `draft.md`.
+- [X] **ISSUE-6.6: Infrared Thermal Debye Screening Regulator in Green-Kubo Integral.** Regularized field viscosity with thermal Debye screening mass $m_D \sim g T$ in §1.1 of `draft.md`.
+- [X] **ISSUE-6.7: Free-Boundary Reynolds Transport Integral.** Augmented contact volume transfer with unconstrained boundary flux in §5.1 of `draft.md`.
+- [X] **ISSUE-6.8: Kedem-Katchalsky Non-Equilibrium Osmotic Formulation.** Augmented osmotic overpressure with Staverman reflection coefficients $\sigma_i$ and colloid oncotic pressure $\Pi_{\text{oncotic}}$ in §4.4 of `draft.md`.
+- [X] **ISSUE-6.9: Hermitian/Kähler Metric ($h = g + i\omega$).** Equipped complex state space $\Omega_{\mathbb{C}}$ with compatible Hermitian/Kähler metric tensor in §1.1 of `draft.md`.
+- [X] **ISSUE-6.10: State Density Operator Representation ($\hat{\rho}_E \in \mathcal{S}(\mathcal{H})$).** Formulated rigorous Hilbert state representation for Liouvillian super-operator in §1.2.1 of `draft.md`.
+- [X] **ISSUE-6.11: Interfacial Realization Trace Map ($\operatorname{Tr}_{\partial E}$).** Replaced non-idempotent projection operator with interfacial realization trace map in §2.1 of `draft.md`.
 
 ---
 
