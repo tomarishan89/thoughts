@@ -53,9 +53,16 @@ $$\Psi\left[\dots; (\mathcal{O}_A \to \mathcal{O}_B)\right] \neq \Psi\left[\dots
 An abstract boundary operator $\mathcal{O} \in D_{\mathfrak{Im}}$ drives local resource allocation $\mathcal{F} \subset \mathcal{F}_{\mathbb{R}}$ to produce macroscopic resistance through hereditary convolution:
 $$\mathbf{R}(x, t) = \int_0^t G(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau$$
 
-From the Maxwell linear viscoelastic momentum balance of substrate $\mathcal{F}$ ($\dot{\boldsymbol{\varepsilon}} = \frac{1}{E_{\text{elastic}}} \dot{\boldsymbol{\sigma}} + \frac{1}{\nu} \boldsymbol{\sigma}$), the causal Green's function solution yields the exact constitutive relaxation modulus:
-$$\boxed{G(t - \tau) = G_0 \, \exp\left(-\frac{t - \tau}{\tau_{\text{relax}}}\right) \Theta(t - \tau)}$$
-where $G_0 = \left.\frac{\delta^2 \mathcal{U}_{\text{internal}}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ is the instantaneous elastic modulus, $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the dissipative relaxation timescale, and $\Theta(t - \tau)$ enforces physical causality.
+From the Maxwell linear viscoelastic momentum balance of substrate $\mathcal{F}$ ($\dot{\boldsymbol{\varepsilon}} = \frac{1}{E_{\text{elastic}}} \dot{\boldsymbol{\sigma}} + \frac{1}{\nu} \boldsymbol{\sigma}$), the causal Green's function solution yields the exact constitutive relaxation modulus $G(t-\tau) = G_0 \exp\left(-\frac{G_0}{\nu}(t-\tau)\right)\Theta(t-\tau)$, where $G_0 = \left.\frac{\delta^2 \mathcal{U}_{\text{internal}}}{\delta \boldsymbol{\varepsilon}^2}\right|_{\mathcal{F}}$ is the instantaneous elastic modulus, $\tau_{\text{relax}} = \frac{\nu}{G_0}$ is the dissipative relaxation timescale, and $\Theta(t - \tau)$ enforces physical causality.
+
+Substituting the memory kernel directly into the hereditary resistance integral yields:
+$$\boxed{\mathbf{R}(x, t) = \int_0^t G_0 \exp\left( -\frac{G_0}{\nu} (t - \tau) \right) \Theta(t - \tau) \, \mathcal{O}[\mathcal{F}(\tau)](x) \, d\tau}$$
+
+* **Steady-State Maintenance Condition:** For constant operational intervention $\mathcal{O}[\mathcal{F}]$, the steady-state asymptotic resistance evaluates to:
+  $$\mathbf{R}_{\text{steady}} = \nu \cdot \mathcal{O}[\mathcal{F}] \implies \mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu} \mathbf{R}_0$$
+  This proves that maintaining structural resistance against entropy decay requires continuous engine throughput inversely proportional to internal viscosity $\nu$.
+* **Asymptotic Limits of Memory & Viscosity:**
+  $$\begin{cases} \nu \to 0 \implies G(t-\tau) \to G_0 \, \delta(t-\tau) \implies \mathbf{R}(t) \to \mathbf{0} & \text{(Inviscid limit: zero memory horizon, instantaneous structural dissipation)} \\ \nu \to \infty \implies G(t-\tau) \to G_0 \implies \mathbf{R}(t) \to G_0 \int_0^t \mathcal{O}[\mathcal{F}] d\tau & \text{(Elastic limit: infinite memory horizon, permanent frozen history)} \end{cases}$$
 
 #### Physical Substrate Irreversibility ($\Omega_{\mathbb{R}}$) vs. Imaginary State Inversion ($\Omega_{\mathfrak{Im}}$)
 1. **Physical Substrate Irreversibility:** Because physical viscosity produces strictly positive entropy ($\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$), physical state evolution in $\Omega_{\mathbb{R}}$ is an **irreversible dynamical semi-group** $\mathcal{M}_t$ ($t \ge 0$). Backward physical time $\mathcal{M}_{-t}$ is forbidden by the Second Law.
@@ -70,9 +77,21 @@ where $G_0 = \left.\frac{\delta^2 \mathcal{U}_{\text{internal}}}{\delta \boldsym
 
 ### 2.1 Topological Boundary & Dual Identity Theorems
 
-#### Axiom 3 (Topological Boundary Enclosure $\partial E$):
-The total **Topological Boundary Enclosure ($\partial E(t)$)** of an entity is the union of its constituent interface fronts $f_k(t)$:
-$$\partial E(t) \equiv \bigcup_{k \in K(t)} f_k(t) \subset \Omega, \qquad \mu(E(t)) > 0$$
+#### Axiom 3 (Complex Topological Boundary Enclosure $\partial E$):
+The total **Complex Topological Boundary Enclosure ($\partial E(t)$)** of an entity decomposes into two orthogonal projections on $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
+$$\boxed{\partial E(t) \equiv \partial E_{\mathbb{R}}(t) \;\oplus\; i \, \partial E_{\mathfrak{Im}}(t) \subset \Omega_{\mathbb{C}}, \qquad \mu(E(t)) > 0}$$
+
+1. **Real Physical Boundary ($\partial E_{\mathbb{R}} \equiv \pi_{\mathbb{R}}(\partial E) = \bigcup_{k \in K(t)} f_k(t)$):**  
+   The compact codimension-1 hypersurface in real space enclosing the material fuel substrate $\mathcal{F}_{\mathbb{R}}$ where rest-mass density is non-zero ($\mu(\mathcal{F}_{\mathbb{R}}) > 0$) and internal Cauchy stress $\boldsymbol{\sigma}(x, t) \neq \mathbf{0}$ is confined.
+2. **Imaginary Field Boundary ($\partial E_{\mathfrak{Im}} \equiv \pi_{\mathfrak{Im}}(\partial E)$):**  
+   The extended horizon of influence / domain of operator support ($\text{supp}(D_{\mathfrak{Im}})$) where the entity's gauge field gradients and predictive models project into ambient space.
+3. **Geometric Boundary vs. Transport Flux (Gauss's Divergence Theorem):**  
+   The boundary $\partial E$ is a geometric manifold (the spatial zero-level set locus $\phi=0$). It is strictly distinct from the dynamical transport entropy flux 1-form ($\mathbf{J}_S$), which is the integrand flowing across $\partial E$:
+   $$\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA$$
+
+#### The Boundary Realization Projection Operator ($\hat{\pi}_{\text{real}}$):
+In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the interaction is evaluated by the **Realization Projection Operator**:
+$$\boxed{\hat{\pi}_{\text{real}}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{J}_{\text{fuel}}(x, t) = \alpha \, \mathbf{S}(x, t) & \text{(Real Negentropy Influx)} \end{cases}}$$
 
 #### Theorem 1 (Algebraic Orthogonality of Rule and Resource):
 Because $\Omega_{\mathbb{R}}$ and $i \Omega_{\mathbb{R}}$ are complementary orthogonal subspaces of $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathbb{R}}$, the disjointness of rule and resource is an algebraic consequence of the complex field:
@@ -135,9 +154,22 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\mathbf{J}_{\te
 #### The Structural Margin Field ($\phi$) and Environmental Challenge ($\mathbf{C}$)
 $$\mathbf{C}(x, t) \equiv \sum_{j} \left(-\boldsymbol{\sigma}_j(x, t) \cdot \hat{n}\right), \qquad \phi(x, t) \equiv \|\mathbf{R}(x, t)\| - \|\mathbf{C}(x, t)\|$$
 
-#### Theorem 3 (Front as Derived Zero-Level Set of $\Psi$):
+#### Theorem 3 (Front as Derived Zero-Level Set & Equipotential Surface):
 The Interface Front $f(t)$ is the emergent zero-level set of the Structural Margin Field:
 $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equiv \|\mathbf{R}(x, t)\| - \|\mathbf{C}(x, t)\| = 0 \right\}}$$
+
+* **Equipotential Field Representation:** Where forces derive from scalar/tensor potentials ($\mathbf{R} = -\nabla \Phi_{\text{internal}}, \mathbf{C} = -\nabla \Phi_{\text{external}}$), the front is rigorously the **critical equipotential balance surface**:
+  $$\boxed{\phi(x, t) \equiv \|\nabla \Phi_{\text{internal}}(x, t)\| - \|\nabla \Phi_{\text{external}}(x, t)\| = 0}$$
+  anchoring the boundary level-set in classical Roche equipotentials, solid-state Fermi surfaces, and electrostatic work function interfaces.
+
+* **Universal Spectrum of Radiant Challenge Fields:**  
+  For all electromagnetic and radiative fluxes $\mathbf{S}(x, t)$, the environmental challenge spans a continuous scale-invariant spectrum:
+  $$\mathbf{C}_{\text{radiant}}(x, t) = \frac{\|\mathbf{S}(x, t)\|}{c}(1 + R_{\text{refl}})\hat{n} \;\oplus\; \Delta \mathcal{I}(\mathbf{\Phi})$$
+  $$\begin{cases} 
+  \text{Regime 1: Informational Signal} & (\|\mathbf{C}\| \ll \sigma_{\text{yield}}): \text{Starlight, moonlight, LEDs; processed in } \Omega_{\mathfrak{Im}} \text{ as } \Delta \mathcal{I} > 0 \\
+  \text{Regime 2: Metabolic / Thermal} & (\|\mathbf{C}\| \sim \dot{E}_{\text{maint}}): \text{Sunlight, combustion; drives active homeostatic loops in } \Omega_{\mathbb{R}} \\
+  \text{Regime 3: Ablative / Fracture} & (\|\mathbf{C}\| \ge \sigma_{\text{yield}}): \text{Industrial lasers, relativistic shocks; inverts margin } \phi < 0 \implies \mathbf{v}_n \cdot \hat{n} < 0
+  \end{cases}$$
 
 The infinitesimal front displacement is the Fréchet derivative of the State-Trace Functional:
 $$\mathbf{v}_n(x, t) = \left(\frac{\delta \Psi}{\delta \mathcal{O}}\dot{\mathcal{O}} + \frac{\delta \Psi}{\delta \mathcal{F}}\dot{\mathcal{F}}\right)_{\!\mathfrak{Re}}\!\cdot\hat{n}$$
@@ -193,6 +225,10 @@ $$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \chi^* = 0, \quad \
 
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** Cohesive lattice binding potential $U_{\text{bond}}$, electronic bond energies, or gravitational binding energy $U_{\text{grav}} = -\frac{3 G M^2}{5 R}$.
 * **Resistance Field ($\mathbf{R}$):** Instantaneous elastic restoring force $\boldsymbol{\sigma} = \mathbf{C}_{\text{elastic}} : \boldsymbol{\varepsilon}$, with Green-Kubo shear viscosity $\nu_{\text{field}} = \frac{1}{V k_B T}\int_0^\infty \langle T_{xy}(0) T_{xy}(\tau) \rangle d\tau$.
+* **Engine Mode Decoupling & Dormant Ground States:**  
+  Physical entities exhibit hierarchical engine decoupling:
+  1. **Primary Structural Engine:** Maintained by interatomic/gravitational potential ($U_{\text{bond}}$). In the absence of external illumination or mechanical challenge ($\mathbf{C} \to \mathbf{0}$), the structural margin remains positive ($\phi_{\text{lattice}} > 0$), preserving material measure $\mu(E) > 0$.
+  2. **Secondary Interaction / Optical Modes:** Modes such as optical reflection ($A_{\text{albedo}} \mathbf{S}$) operate strictly when driven by external flux. In the dark, these secondary throughput modes go dormant ($\mathbf{S}_{\text{refl}} = \mathbf{0}, \sigma_{\text{total}} \to 0, \Lambda \to 1$), entering a zero-dissipation ground state without boundary dissolution.
 
 ### 4.2 Stress-Testing Physical Forms: Does it Hold?
 

@@ -96,6 +96,32 @@ $$E^{\text{DNA}}(t) = \Psi\left[ E^{\text{DNA}}(0); \; \{\mathcal{O}_{\text{tran
 
 ---
 
+## Case 6: The Relativistic Blast Wave & Supernova Remnant (Shock-Accretion Macro-Envelope Engine)
+
+### 6.1 The Two-Engine Framework: Progenitor Core vs. Expanding Remnant
+
+In a hypernova or Gamma-Ray Burst (GRB) catastrophe, the continuum mechanics cleanly separates into two distinct engines:
+
+1. **Engine 1: The Progenitor Nuclear Core ($r = 0, t = 0$):**
+   * Releases $\Delta \mathcal{G}_{\text{nuclear/grav}} \sim 10^{44} - 10^{47} \, \text{J}$ and collapses into a black hole/singularity at $t = 0$.
+   * Extracts zero work from distant targets ($W_{\text{core}} = 0$). Distant planetary targets are *not* fuel for this dead progenitor engine.
+2. **Engine 2: The Expanding Supernova Remnant ($\mathbb{S}_{\text{remnant}}(t)$):**
+   * The forward-and-reverse shock wave advancing across the interstellar medium for $10^3 - 10^5$ years is an **open, non-equilibrium macro-scale dissipative engine**.
+   * It requires continuous mass-loading of cold ambient matter ($\mathbf{J}_{\text{matter\_in}}$) to generate the reverse shock, amplify magnetic fields, and sustain multi-millennial synchrotron emission $\mathbf{J}_S^{\text{remnant}}$.
+
+### 6.2 Framework Mapping
+
+| Framework Primitive | Relativistic Remnant Instantiation ($\mathbb{S}_{\text{remnant}}$) |
+| :--- | :--- |
+| **Dual Identity $\mathbb{S} \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$** | • $\mathcal{S}_{\text{fuel}} =$ Swept-up cold interstellar medium + pulverized planetary matter (e.g., Earth debris).<br>• $\mathcal{E} =$ Relativistic magnetohydrodynamic shock engine. |
+| **Front $f(t)$** | Forward shock boundary ($\partial \mathbb{S}_{\text{remnant}}$) expanding into vacuum at velocity $\mathbf{v}_n(t)$. |
+| **Challenge Field $\mathbf{C}$ on Target** | Relativistic radiation pressure traction + thermal ionization shock: $\mathbf{C} = \frac{\|\mathbf{S}\|}{c}(1 + R_{\text{refl}})\hat{n} \gg \sigma_{\text{yield}}$. |
+| **Target Lysis & Boundary Assimilation** | Target margin inverts ($\phi_{\text{target}} \ll 0 \implies \mu(E_{\text{target}}) \to 0$). Pulverized substrate is annexed into the remnant envelope: $\mathcal{F}_{\mathbb{R}}^{\text{remnant}} = \mathcal{F}_{\mathbb{R}}^{\text{ejecta}} \cup \mathcal{F}_{\mathbb{R}}^{\text{debris}}$. |
+| **Viscosity & Sedov-Taylor Drag** | Swept-up mass increases plasma density $\rho$, generating shear viscosity $\nu_{\text{plasma}}$ that decelerates the shock front ($R \propto t^{2/5}$) and converts kinetic expansion into thermal radiation ($\Phi_{\text{visc}} > 0$). |
+| **Shock-Accretion Fuel Role** | Target Gibbs free energy is consumed to fund secondary synchrotron and X-ray emission: $\dot{\mathcal{E}}_{\text{fuel}}^{\text{remnant}} = -\frac{d\mathcal{G}[\text{target}]}{dt} > 0$. |
+
+---
+
 ## Cross-Case Comparison Matrix
 
 | Case Study | Scale Tier | $\chi^*$ Regime | $\Lambda$ at Steady State | Primary Boundary Failure Mode |
@@ -104,4 +130,5 @@ $$E^{\text{DNA}}(t) = \Psi\left[ E^{\text{DNA}}(0); \; \{\mathcal{O}_{\text{tran
 | **The Atom** | $T_{\text{I}}$ (Quantum) | $\chi^* = 0$ (Stationary) | $1$ (Ground state) | Ionizing radiation $\|\mathbf{C}\| \ge E_{\text{bind}}$ |
 | **Car Engine** | $T_{\text{I}}$ (Engineered) | $\chi^* = 0$ (Cyclic) | $\approx 1$ (Throttle NESS) | Fuel starvation or oil breakdown |
 | **Biological Cell** | $T_{\text{II}}$ (Biological) | $\chi^* \in (0, 1)$ | $\approx 1$ (Homeostasis) | Metabolic starvation ($\dot{E} < \dot{E}_{\text{crit}}$) or DNA lysis |
+| **Supernova Remnant** | $T_{\text{I}}$ (Cosmic Blast) | $\chi^* = 0$ (Hydrodynamic) | $\approx 1$ (Sedov-Taylor NESS) | Complete kinetic deceleration / dispersion into ISM |
 | **The Universe** | $T_{\text{I}}$ (Cosmological) | $\chi^* = 0$ | $\gg 1$ (Entropic expansion) | Asymptotic approach to global heat death |
