@@ -104,6 +104,8 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.47: Intensive Local Landauer Erasure Density Rate.** Replaced extensive $\dot{\mathcal{H}}$ with local bit erasure density rate $\dot{h}_{\mathfrak{Im}}(x, t) \in [\mathrm{bits/(m^3 \cdot s)}]$ in §2.2 (Eq. 189).
 - [X] **ISSUE-6.48: Volumetric Information-Stress Coupling Coefficient.** Formulated $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{cortex}}} \in [\mathrm{Pa/bit}]$ for active pre-stressing in §2.3.5 of `draft.md`.
 - [X] **ISSUE-6.49: Outward Normal Kinematics and Parabolic Sign Convention in Level-Set PDE.** Corrected convective material derivative $\frac{\partial \phi}{\partial t} - v_n \|\nabla \phi\| = 0$ and restored forward parabolic symbol $-\gamma_{\text{surface}}\Delta_{\partial E}\phi$ in §2.3.3 of `draft.md`.
+- [X] **ISSUE-6.50: Density Power Scaling in Volumetric Bulk Modulus Derivative.** Corrected $K_0 = \rho^2 \left.\frac{\partial^2 u}{\partial \rho^2}\right|_{\mathcal{F}}$ in §1.2.2 (Eq. 79) to ensure exact Pascal $[\mathrm{Pa}]$ units.
+- [X] **ISSUE-6.51: Volumetric Density Pre-Factor in Rankine-Hugoniot Shock Dissipation.** Corrected cubic shock jump denominator to $12 \rho_0^2 c_s^4 T \tau_{\text{impact}}$ in §2.3.5 (Eq. 299) to ensure exact volumetric dissipation rate $[\mathrm{W/(m^3 \cdot K)}]$.
 
 ---
 
