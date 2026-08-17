@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 33)
+# Formal Mathematical Physics Peer Review Report (Iteration 34)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 33 (Wheeler-DeWitt Superspace Volume Factor 1/√h, Mass-Normalized Grote-Hynes Memory Friction, Israel-Stewart Trace Preservation, and Petz Invariant State Simplification)  
+**Review Version:** Iteration 34 (Lifshitz Gradient Trace Vector Projection, Instanton Spatial Density Units, Onsager Matrix Positive-Definiteness, and Petz Dual Unitality Invariant)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Missing 1/√h Volume Factor in Wheeler-DeWitt Operator in §1.1 Line 167, Mass-Normalized Grote-Hynes Kernel in §4.1 Line 392, Israel-Stewart Trace Invariant in §1.1 Line 33, and Petz Subalgebra Simplification in §1.2.3 Line 119)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Rank-3 Trace Mismatch in Lifshitz Force in §5.2 Eq. 573, Instanton Density Dimensions in §2.2 Eq. 229, Onsager Positive-Definiteness Bound in §5.2 Eq. 552, and Petz Dual Unitality in §1.2.3 Line 119)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the thirty-second-order resolution of Bethe-Weyl cubic shock entropy scaling, 1/6 Maxwell stress isotropic pressure factor, WKB proton tunneling incident energy dispersion, and GKSL superoperator norm factor of 2, an unsparing mathematical physics, statistical mechanics, and quantum cosmological audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
+Following the thirty-third-order resolution of the Wheeler-DeWitt superspace volume form factor $1/\sqrt{h}$, mass-normalized Kramers-Grote-Hynes memory friction, Israel-Stewart trace preservation under 4-acceleration, and Petz invariant state reduction, an unsparing mathematical physics, statistical mechanics, and quantum electrodynamics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
 
-1. **Superspace Volume Form Omission in Wheeler-DeWitt Kinetic Operator (§1.1, Line 167):** In Line 167, the Wheeler-DeWitt kinetic differential operator is written as $-\frac{16\pi G\hbar^2}{c^4} G_{ijkl} \frac{\delta^2}{\delta h_{ij}\delta h_{kl}}$, missing the canonical superspace metric volume factor $\frac{1}{\sqrt{h}}$. Without $\frac{1}{\sqrt{h}}$, the kinetic operator has dimensions $[\mathrm{J \cdot m^3}]$, creating an unphysical spatial volume dimensional mismatch with the spatial scalar curvature potential term $-\frac{\sqrt{h}c^4}{16\pi G}({}^{(3)}R - 2\Lambda) \in [\mathrm{J/m^3}]$. The exact Wheeler-DeWitt functional operator is $\hat{\mathcal{H}}_{\text{WDW}} \equiv \left( -\frac{16\pi G \hbar^2}{c^4 \sqrt{h}} G_{ijkl} \frac{\delta^2}{\delta h_{ij}\delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} ({}^{(3)}R - 2\Lambda) + \hat{\mathcal{H}}_{\text{matter}} \right) \Psi[h_{ij}] = 0$.
-2. **Mass-Normalized Memory Friction Kernel Specification in Kramers-Grote-Hynes Catalysis (§4.1, Line 392):** In Line 392, the active-site memory friction is written as $\zeta_{\text{pocket}}(\tau)$ without explicitly defining the mass-normalized memory kernel $\gamma_{\text{pocket}}(\tau) \equiv \zeta_{\text{pocket}}(\tau)/m_{\text{rxn}} \in [\mathrm{s^{-2}}]$ along the reaction coordinate, creating dimensional ambiguity in the transmission factor $\kappa_{\text{Grote-Hynes}} \equiv \left[ 1 + \frac{1}{\omega_b}\int_0^\infty \gamma_{\text{pocket}}(\tau) e^{-\lambda_r \tau} d\tau \right]^{-1}$.
-3. **Causal Projector Trace Invariant in Israel-Stewart Stress-Energy Tensor (§1.1, Line 33–36):** In §1.1, the spatial projector metric is defined as $\Delta^{\mu\nu} \equiv g^{\mu\nu} + u^\mu u^\nu/c^2$ with $\Delta^\mu_\mu = 3$. The trace-free shear relaxation equation must explicitly specify the comoving convective rate $\Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu}$ preserving $g_{\mu\nu}\pi^{\mu\nu} \equiv 0$ under non-zero 4-acceleration $\dot{u}^\mu = u^\nu \nabla_\nu u^\mu \neq 0$.
-4. **Petz Transpose Channel Invariant Reference State Simplification (§1.2.3, Line 119):** In Eq. 119, the Petz transpose recovery channel is written as $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] \equiv \hat{\sigma}^{1/2} \Psi^\dagger(\Psi(\hat{\sigma})^{-1/2} \hat{\rho} \Psi(\hat{\sigma})^{-1/2}) \hat{\sigma}^{1/2}$. When $\hat{\sigma}$ is chosen as the invariant state ($\Psi(\hat{\sigma}) = \hat{\sigma}$), the inner factor simplifies to $\hat{\sigma}^{-1/2} \hat{\rho} \hat{\sigma}^{-1/2}$, yielding exact state-trace recovery $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ on the sufficiency subalgebra.
+1. **Tensorial Gradient Vector Contraction in Lifshitz Casimir Dispersion Force (§5.2, Eq. 573–574):** In Eq. 573, the Casimir force is written as $\mathbf{F} = -k_B T {\sum}' \operatorname{Tr}(\boldsymbol{\alpha}_1 \cdot \nabla_{\mathbf{R}} \mathbf{G} \cdot \boldsymbol{\alpha}_2)$. Because the matrix trace of a rank-3 tensor $\nabla_{\mathbf{R}}\mathbf{G}$ is mathematically undefined without vector projection, the force must be formulated as the spatial gradient of the scalar trace interaction free energy: $\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -\nabla_{\mathbf{R}} \mathcal{F}_{\text{Casimir}}(\mathbf{R}) = -k_B T {\sum_{n=0}^\infty}' \nabla_{\mathbf{R}} \operatorname{Tr}\left[ \boldsymbol{\alpha}_1(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n) \cdot \boldsymbol{\alpha}_2(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}^T \right] \in [\mathrm{N}]$.
+2. **Instanton Tunneling Spatial Density Dimensional Specification (§2.2, Eq. 229):** In Eq. 229, the instanton partition function exponent is $V \sum 2 K_n e^{-8\pi^2 n/g^2} \cos(n\theta)$. To ensure dimensionless exponent units when $V$ is spatial 3-volume $[\mathrm{m^3}]$, $K_n$ must be explicitly typed as the spatial instanton tunneling density rate per unit volume $K_n \in [\mathrm{m^{-3}}]$ (with 4D Euclidean spacetime volume $V_4 \equiv V \frac{\hbar}{k_B T}$).
+3. **Onsager Electro-Hydraulic Transport Matrix Positive-Definiteness Bound (§5.2, Eq. 552):** In Eq. 552, the coupled Onsager reciprocal matrix $\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix}$ requires the positive-definiteness determinant condition $\det(\boldsymbol{\sigma}_{\text{conduct}}) \det\left(\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}}\right) > \|\mathbf{K}_{\text{eo}}\|^2$ to strictly guarantee non-negative entropy generation $\sigma_{\text{electro-osmotic}} \ge 0$ across all electro-hydraulic regimes.
+4. **Petz Transpose Dual Adjoint State Preservation Invariant (§1.2.3, Line 119–120):** In Eq. 119, the Petz recovery map $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \hat{\sigma}^{1/2}\Psi^\dagger(\hat{\sigma}^{-1/2}\hat{\rho}\hat{\sigma}^{-1/2})\hat{\sigma}^{1/2}$ strictly preserves trace and complete positivity (CPTP) if and only if the adjoint channel is unital on the support of $\hat{\sigma}$ ($\Psi^\dagger(\mathbb{I}_{\text{supp}(\hat{\sigma})}) = \mathbb{I}_{\text{supp}(\hat{\sigma})}$).
 
 ---
 
-## 2. Thirty-Third-Order Calculation Breakdown Matrix
+## 2. Thirty-Fourth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 33 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 34 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 1.1          │ WDW Operator (Line 167)       │ Kinetic term lacks 1/√h; [J·m³] vs [J/m³] dimension mismatch│
-│ 2. Section 4.1          │ Grote-Hynes Rate (Line 392)   │ Memory kernel must be mass-normalized γ = ζ/m [s⁻²]    │
-│ 3. Section 1.1          │ Israel-Stewart (Lines 33-36)  │ Projector trace consistency under 4-acceleration       │
-│ 4. Section 1.2.3        │ Petz Channel (Line 119)       │ Invariant state Ψ(σ) = σ simplification closure        │
+│ 1. Section 5.2          │ Casimir Force (Eq. 573)       │ Tr(α·∇G·α) has rank-3 mismatch; must be -∇_R Tr(...)   │
+│ 2. Section 2.2          │ Instanton Density (Eq. 229)   │ K_n requires explicit spatial density units [m⁻³]      │
+│ 3. Section 5.2          │ Onsager Matrix (Eq. 552)      │ Requires det(σ)det(K/μ) > |K_eo|² for positive entropy │
+│ 4. Section 1.2.3        │ Petz Unitality (Line 119)     │ Must specify dual unitality Ψ†(I) = I on supp(σ)       │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,59 +40,57 @@ Following the thirty-second-order resolution of Bethe-Weyl cubic shock entropy s
 
 ---
 
-### Critique 1: Superspace Volume Form Omission in Wheeler-DeWitt Kinetic Operator (§1.1, Line 167)
+### Critique 1: Tensorial Gradient Vector Contraction in Lifshitz Casimir Dispersion Force (§5.2, Eq. 573–574)
 
 * **The Formula in Draft:**  
-  $$\hat{\mathcal{H}}_{\text{WDW}} \Psi[h_{ij}] \equiv \left( -\frac{16\pi G \hbar^2}{c^4} G_{ijkl} \frac{\delta^2}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} \left( {}^{(3)}R - 2\Lambda \right) + \hat{\mathcal{H}}_{\text{matter}} \right) \Psi[h_{ij}] = 0$$
+  $$\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -k_B T {\sum_{n=0}^\infty}' \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi_n) \cdot \nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n) \cdot \boldsymbol{\alpha}_2(i\xi_n) \right) \quad [\mathrm{N}]$$
 
 * **The Mathematical Flaw:**  
-  In canonical quantum general relativity, the Wheeler-DeWitt kinetic super-Hamiltonian is obtained from the canonical momentum density $\pi^{ij} = -i\hbar \frac{\delta}{\delta h_{ij}}$. Because $\pi^{ij}$ is a tensor density of weight $+1$, the kinetic term is $\frac{16\pi G}{c^4 \sqrt{h}} G_{ijkl} \pi^{ij} \pi^{kl} \in [\mathrm{J/m^3}]$. Omitting $\frac{1}{\sqrt{h}}$ causes a dimensional clash ($[\mathrm{J \cdot m^3}]$ vs $[\mathrm{J/m^3}]$) across the spatial volume element.
+  In tensor calculus, $\nabla_{\mathbf{R}}\mathbf{G}$ is a rank-3 tensor ($G_{ijk, l}$). The matrix product $\boldsymbol{\alpha}_1 \cdot \nabla_{\mathbf{R}}\mathbf{G} \cdot \boldsymbol{\alpha}_2$ carries an uncontracted vector index $l$. Taking a matrix trace $\operatorname{Tr}$ over indices $i, j$ leaves an ambiguous notation. The physical force vector is the negative gradient of the scalar trace free energy.
 
 * **Required Proof Closure:**  
-  $$\boxed{\hat{\mathcal{H}}_{\text{WDW}} \Psi[h_{ij}] \equiv \left( -\frac{16\pi G \hbar^2}{c^4 \sqrt{h}} G_{ijkl} \frac{\delta^2}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} \left( {}^{(3)}R - 2\Lambda \right) + \hat{\mathcal{H}}_{\text{matter}} \right) \Psi[h_{ij}] = 0}$$
-  where $G_{ijkl} \equiv \frac{1}{2}\left( h_{ik} h_{jl} + h_{il} h_{jk} - h_{ij} h_{kl} \right)$ is the DeWitt superspace metric.
+  $$\boxed{\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -\nabla_{\mathbf{R}} \mathcal{F}_{\text{Casimir}}(\mathbf{R}) = -k_B T {\sum_{n=0}^\infty}' \nabla_{\mathbf{R}} \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n) \cdot \boldsymbol{\alpha}_2(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}^T \right) \quad [\mathrm{N}]}$$
+  $$\boxed{\boldsymbol{\tau}_{\text{Casimir}}(\theta) = -\frac{\partial \mathcal{F}_{\text{Casimir}}}{\partial \theta} \hat{\mathbf{e}}_\theta = -k_B T {\sum_{n=0}^\infty}' \frac{\partial}{\partial \theta} \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n) \cdot \boldsymbol{\alpha}_2(i\xi_n) \cdot \mathbf{G}_{\text{retarded}}^T \right) \hat{\mathbf{e}}_\theta \quad [\mathrm{N \cdot m}]}$$
 
 ---
 
-### Critique 2: Mass-Normalized Memory Friction Kernel Specification in Kramers-Grote-Hynes Catalysis (§4.1, Line 392)
+### Critique 2: Instanton Tunneling Spatial Density Dimensional Specification (§2.2, Eq. 229)
 
 * **The Formula in Draft:**  
-  $$\kappa_{\text{Grote-Hynes}} \equiv \left[ 1 + \frac{1}{\omega_b}\int_0^\infty \zeta_{\text{pocket}}(\tau) e^{-\lambda_r \tau} d\tau \right]^{-1}$$
+  $$\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}} \exp\left( V \sum_{n=1}^\infty 2 K_n \exp\left( -\frac{8\pi^2 n}{g_{\text{eff}}^2} \right) \cos\left( n \theta_{\text{top}} \right) \right)$$
 
 * **The Mathematical Flaw:**  
-  If $\zeta_{\text{pocket}}$ is molecular friction in $[\mathrm{kg/s^2}]$, the integral evaluates to $[\mathrm{kg/s}]$, which cannot be added to $1$ when multiplied by $\frac{1}{\omega_b} \in [\mathrm{s}]$. The memory kernel must be mass-normalized along the reaction coordinate: $\gamma_{\text{pocket}}(\tau) \equiv \zeta_{\text{pocket}}(\tau)/m_{\text{rxn}} \in [\mathrm{s^{-2}}]$.
+  $V$ is the spatial 3-volume in $[\mathrm{m^3}]$. For the exponent to be dimensionless, the pre-exponential factor $K_n$ must have dimensions of inverse spatial volume $[\mathrm{m^{-3}}]$, representing the 3D tunneling rate density per unit volume.
 
 * **Required Proof Closure:**  
-  $$\boxed{k_{\text{cat}} = \kappa_{\text{Grote-Hynes}} \cdot \frac{\omega_0}{2\pi} \exp\left( -\frac{\Delta G^\ddagger}{k_B T} \right) \quad \left[\frac{1}{\mathrm{s}}\right]}$$
-  $$\boxed{\kappa_{\text{Grote-Hynes}} \equiv \left[ 1 + \frac{1}{\omega_b}\int_0^\infty \gamma_{\text{pocket}}(\tau) e^{-\lambda_r \tau} d\tau \right]^{-1} \in (0, 1]}$$
-  where $\gamma_{\text{pocket}}(\tau) \equiv \zeta_{\text{pocket}}(\tau)/m_{\text{rxn}} \in [\mathrm{s^{-2}}]$ is the mass-normalized active-site memory friction kernel.
+  $$\boxed{\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}} \exp\left( V \sum_{n=1}^\infty 2 K_n \exp\left( -\frac{8\pi^2 n}{g_{\text{eff}}^2} \right) \cos\left( n \theta_{\text{top}} \right) \right), \qquad K_n \in \left[\frac{1}{\mathrm{m^3}}\right]}$$
+  (with Euclidean 4-volume $V_4 \equiv V \frac{\hbar}{k_B T}$).
 
 ---
 
-### Critique 3: Causal Projector Trace Invariant in Israel-Stewart Stress-Energy Tensor (§1.1, Line 33–36)
+### Critique 3: Onsager Electro-Hydraulic Transport Matrix Positive-Definiteness Bound (§5.2, Eq. 552)
 
 * **The Formula in Draft:**  
-  $$\tau_\pi \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} + \pi^{\alpha\beta} = -2\eta \sigma^{\alpha\beta}$$
+  $$\begin{pmatrix} \mathbf{v}_{\text{fluid}} \\ \mathbf{I}_{\text{electric}} \end{pmatrix} = -\begin{pmatrix} \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} & \mathbf{K}_{\text{eo}} \\ \mathbf{K}_{\text{eo}}^T & \boldsymbol{\sigma}_{\text{conduct}} \end{pmatrix} \begin{pmatrix} \nabla P_{\text{interstitial}} - \sum_i \sigma_i R T \nabla c_i \\ \nabla \psi \end{pmatrix}$$
 
 * **The Mathematical Flaw:**  
-  Under relativistic 4-acceleration $\dot{u}^\mu = u^\lambda \nabla_\lambda u^\mu \neq 0$, the standard covariant derivative $u^\lambda \nabla_\lambda \pi^{\mu\nu}$ does not automatically preserve spatial orthogonality ($u_\mu \pi^{\mu\nu} = 0$) or trace-free character ($g_{\mu\nu}\pi^{\mu\nu} = 0$). The double spatial projection $\Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu}$ rigorously enforces both $u_\alpha \pi^{\alpha\beta} = 0$ and $g_{\alpha\beta}\pi^{\alpha\beta} = 0$.
+  By the Second Law of Thermodynamics, the local dissipation quadratic form $\dot{S}_{\text{transport}} = -\mathbf{v}_{\text{fluid}} \cdot \nabla \Psi - \mathbf{I} \cdot \nabla \psi \ge 0$ requires the symmetric transport matrix to be strictly positive semi-definite.
 
 * **Required Proof Closure:**  
-  Explicitly verify the algebraic contraction identity:
-  $$\boxed{g_{\alpha\beta} \pi^{\alpha\beta} \equiv 0, \qquad u_\alpha \pi^{\alpha\beta} \equiv 0, \qquad \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} = \left\langle u^\lambda \nabla_\lambda \pi^{\alpha\beta} \right\rangle_{\text{spatial, trace-free}}}$$
+  $$\boxed{\det\left( \boldsymbol{\sigma}_{\text{conduct}} \right) \cdot \det\left( \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \right) > \|\mathbf{K}_{\text{eo}}\|^2 \implies \sigma_{\text{electro-osmotic}} \ge 0 \quad \forall (\nabla P, \nabla \psi)}$$
 
 ---
 
-### Critique 4: Petz Transpose Channel Invariant Reference State Simplification (§1.2.3, Line 119)
+### Critique 4: Petz Transpose Dual Adjoint State Preservation Invariant (§1.2.3, Line 119–120)
 
 * **The Formula in Draft:**  
-  $$\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}\left[ \hat{\rho}_E(t) \right] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \Psi(\hat{\sigma})^{-1/2} \, \hat{\rho}_E(t) \, \Psi(\hat{\sigma})^{-1/2} \right) \hat{\sigma}^{1/2}$$
+  $$\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}\left[ \hat{\rho}_E(t) \right] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \hat{\sigma}^{-1/2} \, \hat{\rho}_E(t) \, \hat{\sigma}^{-1/2} \right) \hat{\sigma}^{1/2}$$
 
 * **The Mathematical Flaw:**  
-  When $\hat{\sigma}$ is the invariant steady-state reference state ($\Psi(\hat{\sigma}) = \hat{\sigma}$), the term $\Psi(\hat{\sigma})^{-1/2}$ reduces directly to $\hat{\sigma}^{-1/2}$, confirming algebraic consistency with Petz's theorem on quantum sufficiency.
+  To preserve total probability $\operatorname{Tr}(\hat{\rho}_E(0)) = 1$ for all states $\hat{\rho}$, the adjoint quantum channel $\Psi^\dagger$ must satisfy unitality on the support of the reference state: $\Psi^\dagger(\mathbb{I}_{\operatorname{supp}(\hat{\sigma})}) = \mathbb{I}_{\operatorname{supp}(\hat{\sigma})}$.
 
 * **Required Proof Closure:**  
-  $$\boxed{\Psi(\hat{\sigma}) = \hat{\sigma} \implies \mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \hat{\sigma}^{-1/2} \, \hat{\rho} \, \hat{\sigma}^{-1/2} \right) \hat{\sigma}^{1/2}, \qquad \mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \quad \forall \hat{\rho} \in \operatorname{Alg}(D_{\mathfrak{Im}})}$$
+  $$\boxed{\Psi^\dagger\left( \mathbb{I}_{\operatorname{supp}(\hat{\sigma})} \right) = \mathbb{I}_{\operatorname{supp}(\hat{\sigma})} \implies \operatorname{Tr}\left( \mathcal{R}_{\sigma, \Psi}[\hat{\rho}] \right) = \operatorname{Tr}(\hat{\rho}) = 1, \qquad \mathcal{R}_{\sigma, \Psi} \in \mathrm{CPTP}}$$
 
 ---
 
@@ -100,18 +98,18 @@ Following the thirty-second-order resolution of Bethe-Weyl cubic shock entropy s
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Insert 1/√h Volume Factor in Wheeler-DeWitt Operator in §1.1 (Line 167):** Formulate as $-\frac{16\pi G\hbar^2}{c^4\sqrt{h}} G_{ijkl} \frac{\delta^2}{\delta h_{ij}\delta h_{kl}}$.
-2. **Define Mass-Normalized Memory Friction in §4.1 (Line 392):** Formulate as $\gamma_{\text{pocket}}(\tau) \equiv \zeta_{\text{pocket}}(\tau)/m_{\text{rxn}} \in [\mathrm{s^{-2}}]$.
-3. **Verify Israel-Stewart Trace & Orthogonality Invariants in §1.1 (Line 33):** State $g_{\alpha\beta}\pi^{\alpha\beta} \equiv 0$ and $u_\alpha \pi^{\alpha\beta} \equiv 0$.
-4. **State Petz Channel Invariant State Simplification in §1.2.3 (Line 119):** Include $\Psi(\hat{\sigma}) = \hat{\sigma} \implies \mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \hat{\sigma}^{1/2} \Psi^\dagger(\hat{\sigma}^{-1/2} \hat{\rho} \hat{\sigma}^{-1/2}) \hat{\sigma}^{1/2}$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.165 through 6.168 to the milestone tracking logs.
+1. **Formulate Lifshitz Casimir Force as Scalar Free Energy Gradient in §5.2 (Eq. 573–574):** Write $\mathbf{F}_{\text{Casimir}} = -\nabla_{\mathbf{R}}\mathcal{F}_{\text{Casimir}} = -k_B T {\sum}' \nabla_{\mathbf{R}} \operatorname{Tr}(\dots)$.
+2. **Specify Spatial Instanton Density Units $K_n \in [\mathrm{m^{-3}}]$ in §2.2 (Eq. 229):** Explicitly state $K_n \in [\mathrm{m^{-3}}]$ with Euclidean 4-volume $V_4 \equiv V \frac{\hbar}{k_B T}$.
+3. **State Onsager Positive-Definiteness Determinant Condition in §5.2 (Eq. 552):** Formulate $\det(\boldsymbol{\sigma}_{\text{conduct}})\det(\mathbf{K}_{\text{perm}}/\mu) > \|\mathbf{K}_{\text{eo}}\|^2$.
+4. **State Petz Dual Unitality Condition in §1.2.3 (Line 120):** Formulate $\Psi^\dagger(\mathbb{I}_{\operatorname{supp}(\hat{\sigma})}) = \mathbb{I}_{\operatorname{supp}(\hat{\sigma})} \implies \mathcal{R}_{\sigma, \Psi} \in \mathrm{CPTP}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.169 through 6.172 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 33
+## 5. Master Revision Checklist for Iteration 34
 
-- [x] **Item 1:** Insert $\frac{1}{\sqrt{h}}$ into the kinetic term of the Wheeler-DeWitt functional equation in §1.1 (Line 167).
-- [x] **Item 2:** Formulate mass-normalized memory friction $\gamma_{\text{pocket}} \equiv \zeta/m_{\text{rxn}} \in [\mathrm{s^{-2}}]$ in Kramers-Grote-Hynes rate law in §4.1 (Line 392).
-- [x] **Item 3:** Verify Israel-Stewart spatial projector trace-free consistency $g_{\alpha\beta}\pi^{\alpha\beta} \equiv 0$ in §1.1 (Line 33).
-- [x] **Item 4:** Specify invariant state reduction $\Psi(\hat{\sigma}) = \hat{\sigma} \implies \hat{\sigma}^{-1/2}$ in Petz recovery channel in §1.2.3 (Line 119).
+- [x] **Item 1:** Formulate Lifshitz Casimir force as scalar trace gradient $\mathbf{F} = -\nabla_{\mathbf{R}}\mathcal{F}_{\text{Casimir}}$ in §5.2 (Eq. 573–574).
+- [x] **Item 2:** Specify instanton spatial density units $K_n \in [\mathrm{m^{-3}}]$ in §2.2 (Eq. 229).
+- [x] **Item 3:** State Onsager positive-definiteness determinant condition $\det(\boldsymbol{\sigma})\det(\mathbf{K}/\mu) > \|\mathbf{K}_{\text{eo}}\|^2$ in §5.2 (Eq. 552).
+- [x] **Item 4:** State Petz dual unitality condition $\Psi^\dagger(\mathbb{I}) = \mathbb{I}$ in §1.2.3 (Line 120).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
