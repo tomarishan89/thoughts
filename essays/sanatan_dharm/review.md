@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 26)
+# Formal Mathematical Physics Peer Review Report (Iteration 27)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 26 (Accelerating Thermal Dissipation in Tier I, Radical-Pair Bounded Product Yield, Shock Dissipation Macauley Ramping, and Sub-Patch Eikonal Regularization Audit)  
+**Review Version:** Iteration 27 (Petela-Landsberg Solar Negentropy, Donnan Ion Excess Sign Inversion, Finite-Temperature Matsubara Lifshitz Sum, and Thermal Hagedorn Dual Radius Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Tolman Acceleration Omission in §3.2, Radical-Pair Infinite Integral Divergence in §4.1, Pre-Stress Double-Counting in §2.3.5, and Sub-Patch Logarithmic Singularity in §4.3)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Solar Radiant Entropy Overestimation in §2.2, Donnan Ion Excess Sign Contradiction in §4.4, Zero-Temperature Lifshitz Integral in §5.2, and Thermal Hagedorn Duality Factor in §1.1)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the twenty-fifth-order resolution of active ESCRT-III pore radius radical dimensions, Brownian ratchet molar gas constant scaling, CISS chiral electron current surface density, and curved Riemannian Penrose-Diósi measure covariance, an unsparing mathematical, thermodynamic, and operator-algebraic audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, convergence, and boundary vulnerabilities**:
+Following the twenty-sixth-order resolution of relativistic Eckart-Tolman conduction in Tier I limits, radical-pair decaying sub-density matrix restriction, Macauley ramping in acoustic shock dissipation, and three-branch piecewise Eikonal wavefront arrival regularization, an unsparing mathematical, thermodynamic, and continuum audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, thermodynamic, and spectral vulnerabilities**:
 
-1. **Unsynchronized Relativistic Thermal Dissipation in Tier I Physical Limit (§3.2, Line 371):** While §2.2 (Eq. 213) correctly incorporates the relativistic Eckart-Tolman proper acceleration term $-\frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}$ into the thermal entropy production density, §3.2 (Line 371) reverts to the unregularized Newtonian conduction term $\mathbf{J}_q \cdot \nabla(1/T)$ when simplifying for Tier I physical systems. For accelerating physical bodies (relativistic jets, stellar accretion shocks, black hole horizons), this creates an internal contradiction and breaks relativistic covariance.
-2. **Infinite Integral Divergence in Radical-Pair Signaling Product Yield (§4.1, Eq. 388):** Eq. 388 defines the magnetic signaling yield as $\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{spin}}(t)) dt$. On the trace-preserving Hilbert space ($\operatorname{Tr}(\hat{\rho})=1$), the steady-state spin density matrix maintains a non-zero asymptotic projection $\lim_{t\to\infty}\operatorname{Tr}(\hat{P}_S \hat{\rho}) > 0$, causing the integral $\int_0^\infty dt$ to diverge to $+\infty$ instead of yielding a bounded probability $\Phi_S \in [0, 1]$. The integral must act strictly on the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t)$ whose trace vanishes as radicals recombine into product states.
-3. **Double-Counting Pre-Stress Work in Acoustic Shock Dissipation (§2.3.5, Eq. 340):** In Eq. 340, the linear elastic term uses unramped $(\sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I})^2$. When an entity over-anticipates ($\kappa_{\text{stress}}\Delta\mathcal{I} > \sigma_{\text{impact}}$), this term squares the negative residual stress, falsely treating internal pre-stress as external shock damage and double-counting the internal holding power $\dot{\mathcal{W}}_{\text{pre-stress}}$ already logged in Eq. 224. The elastic shock dissipation must be driven strictly by the positive transmitted overpressure $\langle \sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I} \rangle_+^2$.
-4. **Logarithmic Singularity for Sub-Patch Distances in Wavefront Arrival Latency (§4.3, Eq. 432):** In Eq. 432, for points $x$ located within the initial activation zone ($d_g^{\partial E}(x) \le r_{\text{eff}}$), the numerator inside the logarithm becomes $v_{\text{bistable}} d_g^{\partial E} - D_u \le 0$, producing a negative-infinite or undefined logarithm. The formula must be piecewise closed for $d_g^{\partial E} \le r_{\text{eff}}$ as $\Delta t_{\text{response}}(x) = \tau_{\text{local}}$.
+1. **Petela-Landsberg Radiation Source Temperature in Solar Negentropy Intake (§2.2, Eq. 208):** Eq. 208 writes the radiant entropy intake flux as $\frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{ambient}}}$. By the **Petela-Landsberg-Press law** for relativistic photon gas entropy flux, radiant entropy emitted by a high-temperature source (e.g. the Sun at $T_{\text{source}} \approx 5778 \, \mathrm{K}$) is $\mathbf{J}_{S, \text{rad}} = \frac{4}{3} \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{source}}}$. Dividing by ambient terrestrial temperature $T_{\text{ambient}} \approx 300 \, \mathrm{K}$ overestimates the incoming radiant entropy by $\frac{T_{\text{source}}}{T_{\text{ambient}}} \approx 20\times$, artificially degrading high-grade solar negentropy influx $(-\dot{S}_{\text{intake}})$ into low-grade ambient heat.
+2. **Sign Inversion in Donnan Diffusible Ion Osmotic Excess (§4.4, Eq. 478):** In Eq. 478, the diffusible ion Donnan overpressure factor is written as $\left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}}$. For negatively charged intracellular proteins ($z_{\text{protein}} < 0$), cations are attracted into the cytoplasm, mathematically enforcing $r_D(t) \equiv [\mathrm{Na}^+]_{\text{int}} / [\mathrm{Na}^+]_{\text{ext}} > 1$. Consequently, $\frac{1 - r_D}{1 + r_D} < 0$ is strictly negative, turning the Donnan ion swelling overpressure into an unphysical osmotic deficit. The exact algebraic term is $\left(\frac{r_D(t) - 1}{r_D(t) + 1}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} > 0$.
+3. **Missing Finite-Temperature Matsubara Summation in Lifshitz Dispersion Forces & Torques (§5.2, Eq. 569 & 570):** Eq. 569 and 570 formulate Lifshitz Casimir forces and alignment torques as continuous zero-temperature imaginary frequency integrals $-\frac{\hbar}{2\pi}\int_0^\infty d\xi \dots$. In biological and soft-matter systems at physiological temperature $T \approx 300 \, \mathrm{K}$, thermal fluctuations require discrete **Matsubara summation** $-k_B T {\sum_{n=0}^\infty}' \dots$ at frequencies $\xi_n \equiv \frac{2\pi n k_B T}{\hbar}$. The continuous $T=0$ integral completely omits the zero-frequency ($n=0$) static Keesom/Debye dipole orientation torque that dominates in high-permittivity aqueous media.
+4. **Thermal Hagedorn Dual Radius Factor in String Partition Function (§1.1, Eq. 162):** Eq. 162 equates $\mathcal{Z}(R) = \mathcal{Z}(\alpha'/R)$ without distinguishing spatial compactification from thermal Euclidean time compactification $\beta \equiv 1/k_B T$, where the thermal self-dual radius is the Hagedorn inverse temperature $\beta_{\text{Hagedorn}} = 2\pi\sqrt{2\alpha'} = 2\sqrt{2}\pi \ell_s$, satisfying $\mathcal{Z}(\beta) = \mathcal{Z}(\beta_{\text{Hagedorn}}^2 / \beta)$.
 
 ---
 
-## 2. Twenty-Sixth-Order Calculation Breakdown Matrix
+## 2. Twenty-Seventh-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 26 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 27 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 3.2          │ Thermal Dissipation (Line 371)│ Omits Tolman acceleration; contradicts §2.2 covariance │
-│ 2. Section 4.1          │ Product Yield (Eq. 388)       │ Integral diverges to ∞ on trace-preserving state space │
-│ 3. Section 2.3.5        │ Shock Dissipation (Eq. 340)   │ Unramped square double-counts pre-stress work as damage│
-│ 4. Section 4.3          │ Eikonal Arrival (Eq. 432)     │ Inside-patch distances (d_g ≤ r_eff) cause ln(≤0) pole │
+│ 1. Section 2.2          │ Radiant Entropy (Eq. 208)     │ Divided by T_ambient instead of (4/3) S_abs / T_source │
+│ 2. Section 4.4          │ Donnan Pressure (Eq. 478)     │ (1 - r_D)/(1 + r_D) < 0 inverts ion excess to deficit  │
+│ 3. Section 5.2          │ Lifshitz Torque (Eq. 569-570) │ Uses T=0 integral; omits n=0 static Matsubara dipole   │
+│ 4. Section 1.1          │ Thermal Duality (Eq. 162)     │ Omits Hagedorn factor in thermal duality β ↔ β_H² / β  │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,64 +40,64 @@ Following the twenty-fifth-order resolution of active ESCRT-III pore radius radi
 
 ---
 
-### Critique 1: Unsynchronized Relativistic Thermal Dissipation in Tier I Physical Limit (§3.2, Line 371)
+### Critique 1: Petela-Landsberg Radiation Source Temperature in Solar Negentropy Intake (§2.2, Eq. 208)
 
 * **The Formula in Draft:**  
-  $$\sigma_{\text{total}}(x, t) = \frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T} + \mathbf{J}_q \cdot \nabla\left(\frac{1}{T}\right) \ge 0$$
+  $$\dot{S}_{\text{intake}} = -\int_{f_{\text{intake}}} \left( \frac{\mathbf{S}_{\text{absorbed}}(x, t)}{T_{\text{ambient}}} + \sum_\alpha \frac{A_\alpha(x, t)}{T_{\text{internal}}(x, t)} \mathbf{J}_{\alpha}^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA < 0$$
 
 * **The Mathematical Flaw:**  
-  In §2.2 (Eq. 213), thermal dissipation was closed with the relativistic Eckart-Tolman proper acceleration term $\mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$. Reverting to the non-relativistic gradient $\mathbf{J}_q \cdot \nabla(1/T)$ in §3.2 creates an internal contradiction across sections and violates relativistic covariance for accelerating physical structures (e.g. relativistic stellar jets and black hole accretion flows).
+  The entropy flux carried by unpolarized blackbody radiation is governed by the **Petela-Landsberg-Press equation** $\mathbf{J}_{S, \text{rad}} = \frac{4}{3}\frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{source}}}$. High-energy photons from the solar core ($T_{\text{source}} \approx 5778 \, \mathrm{K}$) deliver low-entropy negentropy flux. Dividing by $T_{\text{ambient}} \approx 300 \, \mathrm{K}$ artificially inflates the incoming entropy by a factor of 20, falsely predicting that photosynthesis and solar harvesting operate near thermodynamic equilibrium.
 
 * **Required Proof Closure:**  
-  Synchronize §3.2 with the fully covariant relativistic conduction dissipation:
-  $$\boxed{\sigma_{\text{total}}(x, t) = \frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T(x, t)} + \mathbf{J}_q \cdot \left[ \nabla\left(\frac{1}{T(x, t)}\right) - \frac{\boldsymbol{\alpha}_{\text{proper}}(x, t)}{c^2 T(x, t)} \right] \ge 0 \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
+  Formulate the radiant entropy influx using the source radiation temperature $T_{\text{source}}$ and the relativistic photon gas coefficient $4/3$:
+  $$\boxed{\dot{S}_{\text{intake}} = -\int_{f_{\text{intake}}} \left( \frac{4}{3} \frac{\mathbf{S}_{\text{absorbed}}(x, t)}{T_{\text{source}}} + \sum_\alpha \frac{A_\alpha(x, t)}{T_{\text{internal}}(x, t)} \mathbf{J}_{\alpha}^{\text{molar}}(x, t) \right) \cdot \hat{n}_{\text{in}} \, dA < 0 \quad \left[\frac{\mathrm{W}}{\mathrm{K}}\right]}$$
 
 ---
 
-### Critique 2: Infinite Integral Divergence in Radical-Pair Signaling Product Yield (§4.1, Eq. 388)
+### Critique 2: Sign Inversion in Donnan Diffusible Ion Osmotic Excess (§4.4, Eq. 478)
 
 * **The Formula in Draft:**  
-  $$\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{spin}}(t)) dt$$
+  $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}}$$
 
 * **The Mathematical Flaw:**  
-  In a trace-preserving GKSL master equation ($\operatorname{Tr}(\hat{\rho}(t)) \equiv 1$), the state density matrix converges to a steady state $\hat{\rho}_{\text{steady}}$ with $\operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{steady}}) > 0$. Integrating a non-vanishing constant from $0$ to $\infty$ yields $\Phi_S = \infty$, violating probability conservation ($\Phi_S \le 1$). In radical-pair chemical dynamics, recombination transfers population from the active radical-pair subspace $\mathcal{H}_{\text{RP}}$ to terminal reaction product states.
+  In Donnan equilibrium, the internal cation accumulation ratio is $r_D(t) \equiv [\mathrm{Na}^+]_{\text{int}} / [\mathrm{Na}^+]_{\text{ext}} > 1$. The excess diffusible ion concentration is:
+  $$\Delta c_{\text{ions}} = c_{\text{ext}}\left(r_D + \frac{1}{r_D} - 2\right) = \left(\frac{r_D - 1}{r_D + 1}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} > 0$$
+  Writing $\left(\frac{1 - r_D}{1 + r_D}\right)$ introduces an explicit sign inversion ($\frac{1-r_D}{1+r_D} < 0$), causing the diffusible ions to erroneously subtract from the swelling pressure.
 
 * **Required Proof Closure:**  
-  Formulate the yield integral over the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t) \equiv \hat{\mathcal{P}}_{\text{RP}} \hat{\rho}_{\text{spin}}(t) \hat{\mathcal{P}}_{\text{RP}}$ satisfying $\lim_{t\to\infty}\operatorname{Tr}(\hat{\rho}_{\text{RP}}(t)) = 0$:
-  $$\boxed{\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}\left( \hat{P}_S \hat{\rho}_{\text{RP}}(t) \right) dt \in [0, 1]}$$
+  Correct the Donnan ion excess factor to its strictly positive form:
+  $$\boxed{\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{r_D(t) - 1}{r_D(t) + 1}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]}$$
 
 ---
 
-### Critique 3: Double-Counting Pre-Stress Work in Acoustic Shock Dissipation (§2.3.5, Eq. 340)
+### Critique 3: Missing Finite-Temperature Matsubara Summation in Lifshitz Dispersion Forces & Torques (§5.2, Eq. 569 & 570)
 
 * **The Formula in Draft:**  
-  $$\sigma_{\text{shock}}(\chi) = \left[ \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right)^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]$$
+  $$\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \, \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi) \cdot \nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi) \cdot \boldsymbol{\alpha}_2(i\xi) \right)$$
+  $$\boldsymbol{\tau}_{\text{Casimir}}(\theta) = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \, \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi) \cdot \frac{\partial \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi)}{\partial \theta} \cdot \boldsymbol{\alpha}_2(i\xi) \right) \hat{\mathbf{e}}_\theta$$
 
 * **The Mathematical Flaw:**  
-  When an entity over-anticipates ($\kappa_{\text{stress}}\Delta\mathcal{I} > \sigma_{\text{impact}}$), the net stress is negative. Squaring this negative value in the first term yields a positive dissipation rate, falsely counting excess internal pre-stress as external shock damage. The internal metabolic cost of holding pre-stress is already fully accounted for by $\dot{\mathcal{W}}_{\text{pre-stress}}$ in Eq. 224. Shock penetration into the acoustic core is driven strictly by the positive unmitigated overpressure.
+  At finite physiological temperature $T \approx 300 \, \mathrm{K}$, the continuous imaginary frequency integral $\frac{\hbar}{2\pi}\int_0^\infty d\xi$ transitions to a discrete summation over imaginary Matsubara frequencies $\xi_n \equiv \frac{2\pi n k_B T}{\hbar}$. The continuous $T=0$ formulation drops the zero-frequency ($n=0$) static dielectric term $\frac{1}{2} k_B T \operatorname{Tr}(\boldsymbol{\alpha}_1(0)\cdot \mathbf{G}(0)\cdot \boldsymbol{\alpha}_2(0))$, which dominates long-range orientation torques in aqueous biological environments ($\varepsilon_{\text{water}}(0) \approx 80$).
 
 * **Required Proof Closure:**  
-  Apply the positive Macauley ramp operator $\langle \cdot \rangle_+$ to the elastic strain dissipation term:
-  $$\boxed{\sigma_{\text{shock}}(\chi) = \left[ \frac{\left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
-  guaranteeing that over-anticipation ($\kappa_{\text{stress}}\Delta\mathcal{I} \ge \sigma_{\text{impact}}$) completely suppresses external shock damage ($\sigma_{\text{shock}} \equiv 0$).
+  Formulate the finite-temperature Lifshitz Casimir force and dispersion torque via discrete Matsubara summation:
+  $$\boxed{\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -k_B T {\sum_{n=0}^\infty}' \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi_n) \cdot \nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n) \cdot \boldsymbol{\alpha}_2(i\xi_n) \right) \quad [\mathrm{N}]}$$
+  $$\boxed{\boldsymbol{\tau}_{\text{Casimir}}(\theta) = -k_B T {\sum_{n=0}^\infty}' \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi_n) \cdot \frac{\partial \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi_n)}{\partial \theta} \cdot \boldsymbol{\alpha}_2(i\xi_n) \right) \hat{\mathbf{e}}_\theta \quad [\mathrm{N \cdot m}]}$$
+  where the prime ($'$) denotes that the $n=0$ zero-frequency mode is weighted by $1/2$.
 
 ---
 
-### Critique 4: Logarithmic Singularity for Sub-Patch Distances in Wavefront Arrival Latency (§4.3, Eq. 432)
+### Critique 4: Thermal Hagedorn Dual Radius Factor in String Partition Function (§1.1, Eq. 162)
 
 * **The Formula in Draft:**  
-  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_u}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_u}{v_{\text{bistable}} r_{\text{eff}} - D_u} \right)$$
+  $$d\mu_{\mathfrak{Im}}(R) = \sqrt{\det g_{\mathfrak{Im}}} \, d^d y \ge \left( 2\pi \sqrt{\alpha'} \right)^d = (2\pi \ell_s)^d, \quad \mathcal{Z}(R) = \mathcal{Z}\left(\frac{\alpha'}{R}\right)$$
 
 * **The Mathematical Flaw:**  
-  For points $x$ located within the initial stimulation patch ($d_g^{\partial E}(x_0, x) \le r_{\text{eff}}$), the numerator inside the logarithm satisfies $v_{\text{bistable}} d_g^{\partial E} - D_u \le 0$, producing a singular or negative-infinite latency $\Delta t \to -\infty$. For points inside the activation patch, traveling wave propagation distance is zero, and activation occurs on the local biochemical timescale $\tau_{\text{local}}$.
+  While target-space spatial radii invert as $R \leftrightarrow \alpha'/R$, thermal string ensembles compactified on Euclidean time circles of circumference $\beta \equiv 1/k_B T$ invert across the **Hagedorn temperature** with the geometric $2\pi$ factor: $\beta \leftrightarrow \frac{\beta_{\text{Hagedorn}}^2}{\beta} = \frac{(2\pi)^2 \alpha'}{\beta}$.
 
 * **Required Proof Closure:**  
-  Formulate the arrival latency as a three-branch piecewise function:
-  $$\boxed{\Delta t_{\text{response}}(x) = \begin{cases} 
-  \tau_{\text{local}} & \text{for } d_g^{\partial E}(x) \le r_{\text{eff}} \text{ and } r_0 \ge r_{\text{crit}} \quad (\text{Local Nucleation Zone}) \\
-  \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_u}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_u}{v_{\text{bistable}} r_{\text{eff}} - D_u} \right) & \text{for } d_g^{\partial E}(x) > r_{\text{eff}}, \, r_0 \ge r_{\text{crit}}, \, \chi_{\text{soliton}} < \chi_{\text{crit}} \quad (\text{Super-Critical Wavefront}) \\
-  +\infty \implies \mathbf{R}_{\text{active}} \equiv \mathbf{0} & \text{for } r_0 < r_{\text{crit}} \text{ or } \chi_{\text{soliton}} \ge \chi_{\text{crit}} \quad (\text{Sub-Critical Quenching})
-  \end{cases}}$$
+  Distinguish spatial target-space duality from thermal Euclidean time duality:
+  $$\boxed{d\mu_{\mathfrak{Im}}(R) \ge (2\pi \ell_s)^d, \qquad \mathcal{Z}_{\text{spatial}}(R) = \mathcal{Z}_{\text{spatial}}\left(\frac{\alpha'}{R}\right), \qquad \mathcal{Z}_{\text{thermal}}(\beta) = \mathcal{Z}_{\text{thermal}}\left(\frac{(2\pi)^2 \alpha'}{\beta}\right)}$$
 
 ---
 
@@ -105,18 +105,18 @@ Following the twenty-fifth-order resolution of active ESCRT-III pore radius radi
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Synchronize Relativistic Conduction in §3.2 (Line 371):** Update to $\sigma_{\text{total}} = \frac{\boldsymbol{\sigma}_{\text{viscous}}:\dot{\boldsymbol{\varepsilon}}}{T} + \mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$.
-2. **Bound Radical-Pair Signaling Yield Integral in §4.1 (Eq. 388):** Define $\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{RP}}(t)) dt \in [0, 1]$ on the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t)$.
-3. **Add Macauley Ramp to Elastic Shock Dissipation in §2.3.5 (Eq. 340):** Replace $(\sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I})^2$ with $\langle \sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I} \rangle_+^2$.
-4. **Piecewise Regularize Eikonal Wavefront Arrival Time in §4.3 (Eq. 432):** Add the explicit inside-patch branch $\Delta t_{\text{response}}(x) = \tau_{\text{local}}$ for $d_g^{\partial E}(x) \le r_{\text{eff}}$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.137 through 6.140 to the milestone tracking logs.
+1. **Update Radiant Entropy Influx in §2.2 (Eq. 208):** Formulate as $\frac{4}{3} \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{source}}}$.
+2. **Correct Donnan Ion Excess Sign in §4.4 (Eq. 478):** Replace $(1 - r_D)/(1 + r_D)$ with $(r_D(t) - 1)/(r_D(t) + 1)$.
+3. **Upgrade Lifshitz Casimir Force and Torque to Discrete Matsubara Sums in §5.2 (Eq. 569–570):** Replace $\frac{\hbar}{2\pi}\int_0^\infty d\xi$ with $-k_B T {\sum_{n=0}^\infty}'$.
+4. **Clarify Spatial vs Thermal String Duality in §1.1 (Eq. 162):** State $\mathcal{Z}_{\text{spatial}}(R) = \mathcal{Z}(\alpha'/R)$ and $\mathcal{Z}_{\text{thermal}}(\beta) = \mathcal{Z}((2\pi)^2 \alpha' / \beta)$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.141 through 6.144 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 26
+## 5. Master Revision Checklist for Iteration 27
 
-- [x] **Item 1:** Update thermal dissipation in §3.2 (Line 371) to include relativistic Tolman acceleration $\mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$.
-- [x] **Item 2:** Restrict radical-pair signaling yield integral in §4.1 (Eq. 388) to decaying subspace $\hat{\rho}_{\text{RP}}(t)$.
-- [x] **Item 3:** Insert Macauley ramp $\langle \cdot \rangle_+^2$ into linear elastic shock dissipation in §2.3.5 (Eq. 340).
-- [x] **Item 4:** Formulate three-branch arrival latency in §4.3 (Eq. 432) with local patch branch $\Delta t = \tau_{\text{local}}$ for $d_g \le r_{\text{eff}}$.
+- [x] **Item 1:** Correct solar negentropy intake in §2.2 (Eq. 208) to $\frac{4}{3} \frac{\mathbf{S}_{\text{absorbed}}}{T_{\text{source}}}$.
+- [x] **Item 2:** Fix Donnan ion excess sign in §4.4 (Eq. 478) to $\left(\frac{r_D(t) - 1}{r_D(t) + 1}\right) > 0$.
+- [x] **Item 3:** Upgrade Lifshitz Casimir force and torque in §5.2 (Eq. 569 & 570) to discrete Matsubara sums $-k_B T {\sum_{n=0}^\infty}'$.
+- [x] **Item 4:** Formulate thermal Hagedorn dual radius $\beta \leftrightarrow (2\pi)^2 \alpha' / \beta$ in §1.1 (Eq. 162).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
