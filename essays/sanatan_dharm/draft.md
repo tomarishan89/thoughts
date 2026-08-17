@@ -148,13 +148,15 @@ In ultrafast photoreceptive sensory transduction (e.g. retinal conical intersect
 $$\gamma_C \equiv \oint_C \mathbf{A}_{\text{Berry}}(\mathbf{R}) \cdot d\mathbf{R} = i \oint_C \langle \psi_1(\mathbf{R}) | \nabla_{\mathbf{R}} \psi_1(\mathbf{R}) \rangle \cdot d\mathbf{R} = \pi$$
 enforcing constructive wavepacket interference along productive perceptual realization pathways and destructive cancellation along dissipative non-reactive branches.
 
-#### Theorem 1 (State-Space Orthogonality and Physical Carrier Embedding):
+#### Theorem 1 (State-Space Orthogonality, Carrier Embedding & Penrose-Diósi Gravitational Decoherence):
 1. **State-Space Tangent Orthogonality:** Under the canonical Hermitian metric $h = g + i\omega$ on complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, state-space tangent projections are mutually orthogonal:
    $$\langle T\Omega_{\mathbb{R}}, \; T\Omega_{\mathfrak{Im}} \rangle_g \equiv 0$$
    ensuring algebraic independence between present physical configuration coordinates $\mathbf{x} \in \Omega_{\mathbb{R}}$ and informational operator states in $\Omega_{\mathfrak{Im}}$.
-2. **Physical Carrier Spatial Embedding:** In real space $\Omega_{\mathbb{R}}$, physical information storage requires material substrates. The spatial support of informational operators $D_{\mathfrak{Im}}$ obeys hierarchical spatial inclusion within the physical fuel ledger:
+2. **Physical Carrier Spatial Embedding & Gravitational Reduction:** In real space $\Omega_{\mathbb{R}}$, physical information storage requires material substrates. The spatial support of informational operators $D_{\mathfrak{Im}}$ obeys hierarchical spatial inclusion within the physical fuel ledger:
    $$\boxed{\operatorname{supp}\left(D_{\mathfrak{Im}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\text{ledger}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\mathbb{R}}(t)\right) \subset \Omega_{\mathbb{R}}}$$
-   reconciling functional rule-resource independence in phase space with material carrier embodiment in continuum space.
+   Superpositions of macroscopic mass distributions $\rho_1(\mathbf{x}), \rho_2(\mathbf{x})$ experience objective reduction bounded by the **Penrose-Diósi Gravitational Self-Energy Decoherence Rate**:
+   $$\boxed{\Gamma_{\text{grav}} \equiv \frac{1}{\tau_{\text{grav}}} = \frac{G}{\hbar} \iint_{\Omega_{\mathbb{R}} \times \Omega_{\mathbb{R}}} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\|\mathbf{x} - \mathbf{y}\|} d^3x \, d^3y}$$
+   reconciling quantum operator superposition with classical spacetime metric localization.
 
 #### Theorem 2 (Dual Ontological Identity of Non-Equilibrium Existence):
 For any active existence $E \subset \Omega$, maintaining a bounded topological enclosure with non-zero measure ($\mu(E) > 0$) strictly requires a positive non-equilibrium Gibbs free-energy potential ($\mathcal{G}[E] = \mathcal{U} - T_{\text{ambient}} S > 0$). This single physical condition simultaneously and necessarily establishes a **Dual Ontological Projection**:
@@ -445,7 +447,9 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
       $$\mathcal{C}_0(t) \equiv \frac{1}{2 h(t)} \left( \frac{\Delta A_0 + \int_0^t \frac{\dot{N}_{\text{flippase}}(\tau) a_{\text{lipid}}}{\rho_{\text{lipid}}} d\tau}{A_{\text{mid}}(t)} \right)$$
       which alters the **Canham-Helfrich Membrane Bending Energy Density**:
       $$w_{\text{bend}} = \frac{\kappa_{\text{bend}}}{2} \left( 2 H(x, t) - \mathcal{C}_0(t) \right)^2 + \kappa_{\text{Gauss}} K_{\text{Gauss}}(x, t)$$
-      where $H$ is mean curvature and $K_{\text{Gauss}}$ is Gaussian curvature. Concurrently, intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation with universal molar gas constant $R \equiv N_A k_B$:
+      where $H$ is mean curvature and $K_{\text{Gauss}}$ is Gaussian curvature. In 2D correlated dipole-electron liquids at the membrane-water interface, dissipationless edge transport is governed by the **TKNN Topological Chern Invariant**:
+      $$\mathcal{C}_{\text{Chern}} \equiv \frac{1}{2\pi} \int_{\text{BZ}} \Omega_{xy}(\mathbf{k}) \, d^2k \in \mathbb{Z}, \qquad \sigma_{xy}^{\text{hall}} = \mathcal{C}_{\text{Chern}} \frac{e^2}{h}$$
+      Concurrently, intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation with universal molar gas constant $R \equiv N_A k_B$:
       $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]$$
       where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions and $\sigma_{\text{protein}} \approx 1$ accounts for the direct van 't Hoff ideal solute pressure of trapped cytoplasmic macromolecules. This drives outward water influx across the lipid bilayer with positive normal velocity:
       $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
@@ -527,12 +531,14 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
     where $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the **Helmholtz-Smoluchowski Electro-Osmotic Coupling Tensor**:
     $$\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I} \quad \left( \text{units: } \left[\frac{\mathrm{m^2}}{\mathrm{V \cdot s}}\right] \equiv \left[\frac{\mathrm{C \cdot m}}{\mathrm{N \cdot s}}\right] \right)$$
     where $\varepsilon_w$ is solvent permittivity $[\mathrm{F/m}]$ and $\zeta$ is the membrane zeta potential $[\mathrm{V}]$.
-  * **Electrochemical Solute, Quantum Proton Tunneling & CISS Electron Flux:**  
+  * **Electrochemical Solute, Quantum Tunneling, CISS & Lifshitz Casimir Torques:**  
     Classical solutes follow the Nernst-Planck equation $\mathbf{J}_i = -D_i (\nabla c_i + \frac{z_i F}{RT} c_i \nabla \psi) + c_i \mathbf{v}_{\text{fluid}}$. Across sub-nanometer $\mathrm{F}_0\mathrm{F}_1$-ATP synthase channels and proton water wires under extreme fields ($E > 10^7 \, \mathrm{V/m}$), proton flux transitions to **Quantum Grotthuss Wavepacket Tunneling**:
     $$\boxed{\mathbf{J}_{H^+}^{\text{quantum}} = \frac{q_p}{h} \int_{E_F}^{E_F + q_p \Delta\psi} T_{\text{tunnel}}(E) \left[ f_{\text{FD}}(E) - f_{\text{FD}}(E - q_p \Delta\psi) \right] dE \cdot \hat{n}_{\text{channel}}}$$
     where $T_{\text{tunnel}}(E) = \exp\left( -\frac{2}{\hbar}\int_0^{a_0} \sqrt{2m_p(V_0 - q_p E_f x)}dx - \frac{\eta_{\text{bath}}a_0^2}{\hbar} \right)$. In chiral $\alpha$-helical protein complexes, spin-orbit coupling drives **Chiral Induced Spin Selectivity (CISS) Electron Transport**:
     $$\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}}$$
-    where $\mathcal{P}_{\text{CISS}} \equiv \frac{m_e \alpha_{\text{SOC}} R_{\text{helix}} \omega_{\text{pitch}}}{\hbar^2}$, filtering paramagnetic radical recombination during syncytial metabolic respiration.
+    where $\mathcal{P}_{\text{CISS}} \equiv \frac{m_e \alpha_{\text{SOC}} R_{\text{helix}} \omega_{\text{pitch}}}{\hbar^2}$. Between adjacent chiral biopolymers ($d \in (1, 10) \, \mathrm{nm}$), zero-point electromagnetic fluctuations generate **Lifshitz Retarded Casimir-Polder Dispersion Torques**:
+    $$\boldsymbol{\tau}_{\text{Casimir}} = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \, \operatorname{Tr}\left( \boldsymbol{\alpha}_1(i\xi) \cdot \nabla_{\mathbf{R}} \mathbf{G}(\mathbf{R}, i\xi) \cdot \boldsymbol{\alpha}_2(i\xi) \right)$$
+    governing non-contact macromolecular alignment during extracellular matrix self-assembly.
   * **Closed Elliptic Syncytial Potential PDE & Booth-Onsager Dielectric Saturation:**  
     In sub-nanometer channels ($d < 1 \, \mathrm{nm}$), water dipoles undergo field-dependent **Booth-Onsager Dielectric Saturation**:
     $$\varepsilon(\|\nabla\psi\|) = n^2 + (\varepsilon_{\text{bulk}} - n^2) \frac{3}{\beta_{\text{dipole}} \|\nabla\psi\|} \left( \coth(\beta_{\text{dipole}} \|\nabla\psi\|) - \frac{1}{\beta_{\text{dipole}} \|\nabla\psi\|} \right)$$
@@ -568,19 +574,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **Planck-Scale Spacetime Fluctuations in Quantum Gravitational Wavefunctions:**
+1. **String-Theoretic T-Duality Compactification Invariants on Information Manifolds:**
    - *Status:* **Open / Active.**
-   - *Description:* In §1.1, space-time is treated as a smooth pseudo-Riemannian metric $g_{\mu\nu}$. At Planck scales ($\ell_P \sim 10^{-35} \, \mathrm{m}$), metric foam fluctuations induce Penrose-Diósi gravitational state reduction on macroscopic coherence times $\tau_{\text{grav}} = \hbar / E_G$.
-2. **Retarded Casimir-Polder Van der Waals Torques in Chiral Meshes:**
+   - *Description:* In §1.1, the complexified phase space $\Omega_{\mathbb{C}}$ assumes continuous Riemannian geometry. At string length scales ($\ell_s = \sqrt{\alpha'}$), target space T-duality $R \leftrightarrow \alpha'/R$ imposes a fundamental minimum informational volume element on $\Omega_{\mathfrak{Im}}$.
+2. **Non-Perturbative Instantons in Holographic Boundary Conformal Field Theories:**
    - *Status:* **Open / Active.**
-   - *Description:* In §5.2, steric potentials assume contact hard-spheres. Retarded quantum vacuum electromagnetic fluctuations generate Casimir-Polder dispersion torques between adjacent chiral helical biopolymers at separation distances $d \in (1, 10) \, \mathrm{nm}$.
-3. **Topological Anyonic Braiding Invariants at 2D Lipid-Water Interfaces:**
+   - *Description:* In §2.1, path integrals over open quantum engine trajectories assume perturbative semiclassical saddle points. Non-perturbative instanton tunneling configurations ($e^{-S_{\text{instanton}}/\hbar}$) induce non-local phase transitions across boundary realization maps.
+3. **Bekenstein-Hawking Holographic Area Entropy Bounds on Syncytial Information Storage:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.4, lipid bilayer conduction assumes classical electrodiffusion. Correlated 2D electron-dipole liquids at the membrane interfacial plane may exhibit fractionalized topological Chern numbers $\mathcal{C}_{\text{Chern}} \in \mathbb{Z}$, providing topological protection against thermal noise.
+   - *Description:* In §5.2, informational channel capacity $\mathcal{H}$ scales with spatial volume $V$. Under extreme gravitational / high-energy limits, holographic principle bounds require total bit density to saturate at the boundary horizon area limit $I_{\max} \le \frac{A c^3}{4 G \hbar \ln 2}$.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**TKNN Topological Chern Number Invariant at Interfacial Bilayers**~~ (*Closed in §4.4 via topological quantized Hall conductance $\sigma_{xy}^{\text{hall}} = \mathcal{C}_{\text{Chern}} \frac{e^2}{h}$ where $\mathcal{C}_{\text{Chern}} = \frac{1}{2\pi}\int_{\text{BZ}} \Omega_{xy}(\mathbf{k}) d^2k \in \mathbb{Z}$.*)
+- [x] ~~**Lifshitz Retarded Casimir-Polder Dispersion Torques**~~ (*Closed in §5.2 via retarded vacuum torque tensor $\boldsymbol{\tau}_{\text{Casimir}} = -\frac{\hbar}{2\pi}\int_0^\infty d\xi \operatorname{Tr}(\boldsymbol{\alpha}_1(i\xi)\cdot\nabla_{\mathbf{R}}\mathbf{G}\cdot\boldsymbol{\alpha}_2(i\xi))$.*)
+- [x] ~~**Penrose-Diósi Gravitational Self-Energy Decoherence Rate**~~ (*Closed in §1.1 via objective gravitational reduction rate $\Gamma_{\text{grav}} = \frac{G}{\hbar}\iint \frac{(\Delta\rho(\mathbf{x}))(\Delta\rho(\mathbf{y}))}{\|\mathbf{x}-\mathbf{y}\|} d^3x d^3y$.*)
 - [x] ~~**Quantum Vibronic Tunneling of ATP $\gamma$-Phosphate in Catalytic Pockets**~~ (*Closed in §4.1 via Bixon-Jortner non-Born-Oppenheimer tunneling rate $k_{\text{vibronic}} \propto \sum \frac{S^{v'}}{v'!}\exp(-\frac{(\Delta G + \lambda_0 + v'\hbar\omega)^2}{4\lambda_0 k_B T})$.*)
 - [x] ~~**Non-Adiabatic Berry Phase Holonomy in Retinal Photoisomerization**~~ (*Closed in §1.1 via topological geometric phase $\gamma_C = i\oint \langle\psi_1|\nabla_{\mathbf{R}}\psi_1\rangle\cdot d\mathbf{R} = \pi$ around conical intersections.*)
 - [x] ~~**Booth-Onsager Dielectric Saturation in Nanoconfined Pores**~~ (*Closed in §5.2 via non-linear dielectric function $\varepsilon(E) = n^2 + (\varepsilon_{\text{bulk}}-n^2)\frac{3}{\beta E}(\coth(\beta E) - \frac{1}{\beta E})$.*)
