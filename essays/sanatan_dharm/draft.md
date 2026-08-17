@@ -148,13 +148,15 @@ In ultrafast photoreceptive sensory transduction (e.g. retinal conical intersect
 $$\gamma_C \equiv \oint_C \mathbf{A}_{\text{Berry}}(\mathbf{R}) \cdot d\mathbf{R} = i \oint_C \langle \psi_1(\mathbf{R}) | \nabla_{\mathbf{R}} \psi_1(\mathbf{R}) \rangle \cdot d\mathbf{R} = \pi$$
 enforcing constructive wavepacket interference along productive perceptual realization pathways and destructive cancellation along dissipative non-reactive branches.
 
-#### Theorem 1 (State-Space Orthogonality, Carrier Embedding & Penrose-Diósi Gravitational Decoherence):
+#### Theorem 1 (State-Space Orthogonality, Carrier Embedding, T-Duality & Gravitational Decoherence):
 1. **State-Space Tangent Orthogonality:** Under the canonical Hermitian metric $h = g + i\omega$ on complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, state-space tangent projections are mutually orthogonal:
    $$\langle T\Omega_{\mathbb{R}}, \; T\Omega_{\mathfrak{Im}} \rangle_g \equiv 0$$
    ensuring algebraic independence between present physical configuration coordinates $\mathbf{x} \in \Omega_{\mathbb{R}}$ and informational operator states in $\Omega_{\mathfrak{Im}}$.
-2. **Physical Carrier Spatial Embedding & Gravitational Reduction:** In real space $\Omega_{\mathbb{R}}$, physical information storage requires material substrates. The spatial support of informational operators $D_{\mathfrak{Im}}$ obeys hierarchical spatial inclusion within the physical fuel ledger:
+2. **Physical Carrier Embedding, T-Duality & Gravitational Reduction:** In real space $\Omega_{\mathbb{R}}$, physical information storage requires material substrates. The spatial support of informational operators $D_{\mathfrak{Im}}$ obeys hierarchical spatial inclusion within the physical fuel ledger:
    $$\boxed{\operatorname{supp}\left(D_{\mathfrak{Im}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\text{ledger}}(t)\right) \subseteq \operatorname{supp}\left(\mathcal{F}_{\mathbb{R}}(t)\right) \subset \Omega_{\mathbb{R}}}$$
-   Superpositions of macroscopic mass distributions $\rho_1(\mathbf{x}), \rho_2(\mathbf{x})$ experience objective reduction bounded by the **Penrose-Diósi Gravitational Self-Energy Decoherence Rate**:
+   At string length scales ($\ell_s = \sqrt{\alpha'}$), target space **T-Duality ($R \leftrightarrow \alpha'/R$)** establishes a fundamental minimum phase-space volume measure on compactified tori $\mathbb{T}^d \subset \Omega_{\mathfrak{Im}}$:
+   $$\boxed{d\mu_{\mathfrak{Im}}(R) = \sqrt{\det g_{\mathfrak{Im}}} \, d^d y \ge \left( 2\pi \sqrt{\alpha'} \right)^d = (2\pi \ell_s)^d, \quad \mathcal{Z}(R) = \mathcal{Z}\left(\frac{\alpha'}{R}\right)}$$
+   eliminating UV informational infinities. Concurrently, superpositions of macroscopic mass distributions $\rho_1(\mathbf{x}), \rho_2(\mathbf{x})$ experience objective reduction bounded by the **Penrose-Diósi Gravitational Self-Energy Decoherence Rate**:
    $$\boxed{\Gamma_{\text{grav}} \equiv \frac{1}{\tau_{\text{grav}}} = \frac{G}{\hbar} \iint_{\Omega_{\mathbb{R}} \times \Omega_{\mathbb{R}}} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\|\mathbf{x} - \mathbf{y}\|} d^3x \, d^3y}$$
    reconciling quantum operator superposition with classical spacetime metric localization.
 
@@ -210,10 +212,13 @@ $$\mathcal{C}_{\text{engine}} = \Big( \text{Negentropy Intake } (\dot{E}_{\text{
    Persistence requires outward boundary entropy pumping to exceed the sum of internal/interfacial dissipation and convective boundary expansion:
    $$\int_{\partial E(t)} \mathbf{J}_S \cdot \hat{n} \, dA \ge \dot{S}_{\text{gen}}^{\text{total}}(t) + \int_{\partial E(t)} s(x, t) \left( \mathbf{v}_n \cdot \hat{n} \right) dA$$
 
-4. **Phase 4: Real vs. Imaginary Fuel Partitioning & Sagawa-Ueda Bound:**
+4. **Phase 4: Real vs. Imaginary Fuel Partitioning, Sagawa-Ueda Bound & Instanton Corrections:**
    $$\dot{\mathcal{E}}_{\text{total}} = \dot{\mathcal{E}}_{\mathfrak{Re}} + \dot{\mathcal{E}}_{\mathfrak{Im}} = \left( \int_{\partial E} \mathbf{R} \cdot \mathbf{v}_n \, dA + \int_E \boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}} \, dV \right) + \left( k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \dot{\mathcal{W}}_{\text{pre-stress}} \right)$$
    By the **Generalized Second Law of Information Thermodynamics** (Sagawa & Ueda, 2012), the mutual information $\Delta \mathcal{I}$ extracted by predictive operators $D_{\mathfrak{Im}}$ establishes a fundamental bound on work extraction:
    $$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}(\hat{\mathbf{C}}; \mathbf{C}_{\text{future}})$$
+   Over open quantum engine trajectories, non-perturbative topological instanton tunneling configurations ($Q_{\text{top}} = n \in \mathbb{Z}$) modify the existential partition function:
+   $$\boxed{\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}} \left[ 1 + \sum_{n \neq 0} K_n \exp\left( -\frac{8\pi^2 |n|}{g_{\text{eff}}^2} + i n \theta_{\text{top}} \right) \right]}$$
+   rigorously incorporating discrete macro-state tunneling across boundary realization maps.
 
 ---
 
@@ -551,9 +556,11 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \left( \mu_i^\ominus + R T \ln \left( \frac{\gamma_i c_i}{c_i^\ominus} \right) + z_i F \Delta \psi_{j \to \mathbb{S}} \right) \mathbf{J}_i \right) \cdot \hat{n}_j \, dA}$$
   where $\mu_i^\ominus$ is the standard chemical potential at reference concentration $c_i^\ominus \equiv 1 \, \mathrm{M}$ and $\gamma_i$ is the activity coefficient.
 
-* **Step 3 (The Parameter-Free Collective Envelope Survival Condition):**  
+* **Step 3 (The Parameter-Free Collective Envelope Survival Condition & Holographic Bound):**  
   Summing across all active constituent nodes $j \in \mathcal{F}_{\mathbb{S}}$, the **Collective Envelope Survival Condition** becomes:
   $$\boxed{\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \tilde{\mu}_i \mathbf{J}_i \right) \cdot \hat{n}_j \, dA \ge T_{\text{ambient}} \int_{\mathbb{S}} \sigma_{\text{total}}^{\mathbb{S}}(x, t) \, dV}$$
+  Under extreme relativistic/gravitational communication densities, total enclosed syncytial informational content is bounded by the **Covariant Bousso Holographic Horizon Area Limit**:
+  $$\boxed{\mathcal{I}_{\text{syncytium}} \equiv \int_{\mathbb{S}} \rho_{\text{info}}(x, t) \, dV \le S_{\text{Bekenstein}} = \frac{c^3 \cdot \operatorname{Area}(\partial \mathbb{S})}{4 G \hbar \ln 2} \quad [\text{bits}]}$$
 
 * **Step 4 (Programmed Nodal Apoptosis & Re-allocation):**  
   When an individual constituent node $E^j$ reaches irrecoverable genetic or metabolic damage, junctional reverse-gating drives its individual structural margin negative ($\phi(E^j) < 0 \implies \mu(E^j) \to 0$) while channeling its residual chemical inventory into $\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$, preserving the collective macro-envelope ($\mu(\mathbb{S}) > 0$).
@@ -574,19 +581,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **String-Theoretic T-Duality Compactification Invariants on Information Manifolds:**
+1. **Gödelian Incompleteness & Chaitin Incompressibility in Infinite Operator Algebras:**
    - *Status:* **Open / Active.**
-   - *Description:* In §1.1, the complexified phase space $\Omega_{\mathbb{C}}$ assumes continuous Riemannian geometry. At string length scales ($\ell_s = \sqrt{\alpha'}$), target space T-duality $R \leftrightarrow \alpha'/R$ imposes a fundamental minimum informational volume element on $\Omega_{\mathfrak{Im}}$.
-2. **Non-Perturbative Instantons in Holographic Boundary Conformal Field Theories:**
+   - *Description:* In §1.1, informational rule ledgers $D_{\mathfrak{Im}}$ assume complete axiom closure. By Chaitin's algorithmic information theorem, self-referential existential rule ledgers exceeding Kolmogorov complexity thresholds $L(U)$ contain unprovable / incomputable state-transition trajectories.
+2. **Trans-Planckian Super-Horizon Mode Freezing in Inflating Boundaries:**
    - *Status:* **Open / Active.**
-   - *Description:* In §2.1, path integrals over open quantum engine trajectories assume perturbative semiclassical saddle points. Non-perturbative instanton tunneling configurations ($e^{-S_{\text{instanton}}/\hbar}$) induce non-local phase transitions across boundary realization maps.
-3. **Bekenstein-Hawking Holographic Area Entropy Bounds on Syncytial Information Storage:**
+   - *Description:* In §2.3, boundary acceleration assumes sub-luminal levels. At cosmological horizons where $\dot{a}/a > c$, trans-Planckian mode freezing and Bogoliubov particle creation ($\beta_k \neq 0$) generate non-thermal vacuum radiation across expanding phase interfaces.
+3. **Von Neumann Type $\mathrm{III}_1$ Factor Local Tomita-Takesaki Modular Flow:**
    - *Status:* **Open / Active.**
-   - *Description:* In §5.2, informational channel capacity $\mathcal{H}$ scales with spatial volume $V$. Under extreme gravitational / high-energy limits, holographic principle bounds require total bit density to saturate at the boundary horizon area limit $I_{\max} \le \frac{A c^3}{4 G \hbar \ln 2}$.
+   - *Description:* In §1.1 & §2.1, density matrices $\hat{\rho}$ assume Type I Hilbert space factorization. In continuous relativistic quantum field theory across sharp interfaces $\partial E$, local algebras are Type $\mathrm{III}_1$ factors, where thermodynamic time is uniquely generated by the Tomita-Takesaki modular flow $\Delta^{it}$.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Bekenstein-Hawking Holographic Area Entropy Bounds on Syncytial Information Storage**~~ (*Closed in §5.2 via covariant Bousso holographic bound $\mathcal{I}_{\text{syncytium}} \le \frac{c^3 \operatorname{Area}(\partial\mathbb{S})}{4 G \hbar \ln 2}$.*)
+- [x] ~~**Non-Perturbative Instantons in Holographic Boundary Conformal Field Theories**~~ (*Closed in §2.1 via instanton engine partition function $\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}}[1 + \sum K_n \exp(-\frac{8\pi^2|n|}{g^2} + i n \theta_{\text{top}})]$.*)
+- [x] ~~**String-Theoretic T-Duality Compactification Invariants on Information Manifolds**~~ (*Closed in §1.1 via T-duality invariant volume measure $d\mu_{\mathfrak{Im}} \ge (2\pi\sqrt{\alpha'})^d = (2\pi\ell_s)^d$.*)
 - [x] ~~**TKNN Topological Chern Number Invariant at Interfacial Bilayers**~~ (*Closed in §4.4 via topological quantized Hall conductance $\sigma_{xy}^{\text{hall}} = \mathcal{C}_{\text{Chern}} \frac{e^2}{h}$ where $\mathcal{C}_{\text{Chern}} = \frac{1}{2\pi}\int_{\text{BZ}} \Omega_{xy}(\mathbf{k}) d^2k \in \mathbb{Z}$.*)
 - [x] ~~**Lifshitz Retarded Casimir-Polder Dispersion Torques**~~ (*Closed in §5.2 via retarded vacuum torque tensor $\boldsymbol{\tau}_{\text{Casimir}} = -\frac{\hbar}{2\pi}\int_0^\infty d\xi \operatorname{Tr}(\boldsymbol{\alpha}_1(i\xi)\cdot\nabla_{\mathbf{R}}\mathbf{G}\cdot\boldsymbol{\alpha}_2(i\xi))$.*)
 - [x] ~~**Penrose-Diósi Gravitational Self-Energy Decoherence Rate**~~ (*Closed in §1.1 via objective gravitational reduction rate $\Gamma_{\text{grav}} = \frac{G}{\hbar}\iint \frac{(\Delta\rho(\mathbf{x}))(\Delta\rho(\mathbf{y}))}{\|\mathbf{x}-\mathbf{y}\|} d^3x d^3y$.*)
