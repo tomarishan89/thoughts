@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 22)
+# Formal Mathematical Physics Peer Review Report (Iteration 23)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 22 (Modular Hamiltonian Units, Casimir Torque vs. Force Gradient, Continuum Grotthuss Flux Scaling, and Galilean Doppler Wavefront Audit)  
+**Review Version:** Iteration 23 (Israel-Stewart Trace Decoupling, Brownian Ratchet Driving Sign, Triphasic Donnan Swelling Stress, and Hugoniot Elastic Impedance Scaling)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Modular Hamiltonian Dimensional Inconsistency, Casimir Spatial Gradient Force vs. Torque Ambiguity, Grotthuss Continuum Areal Flux Scaling, and Pseudo-Relativistic Galilean Advection Artifact)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Israel-Stewart Trace Inconsistency, Brownian Ratchet Exergonic Sign Inversion, Donnan Poromechanical Stress Sign Error, and Elastic Shock Hugoniot Dimensional Mismatch)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the twenty-first-order resolution of Haag-Kastler local nets of $C^*$-algebras, additive FitzHugh-Nagumo reaction kinetics, dimensionally closed non-isothermal membrane thermal PDEs, and consistent ESCRT-III active constriction forces, an unsparing mathematical and continuum review of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, dimensional, and kinematic errors**:
+Following the twenty-second-order resolution of modular Hamiltonian thermal energy scaling, Casimir translational force vs. rotational torque separation, continuum Grotthuss channel density scaling, and Galilean Doppler wavefront kinematics, an unsparing mathematical and thermodynamic review of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, tensorial, and thermodynamic errors**:
 
-1. **Dimensional Inconsistency in the Modular Hamiltonian Exponent (§2.1, Eq. 195):** Defining $\hat{K}_{\text{modular}} \equiv -\hbar \ln \hat{\Delta}_\Omega$ gives $\hat{K}_{\text{modular}}$ units of Action $[\mathrm{J \cdot s}]$ instead of Energy $[\mathrm{J}]$, leaving the time evolution exponent $\frac{\hat{K}_{\text{modular}} t}{\hbar}$ with physical units of seconds $[\mathrm{s}]$ rather than being dimensionless. The modular Hamiltonian must be defined with an effective thermal energy scale $\hat{K}_{\text{modular}} \equiv -k_B T_{\text{eff}} \ln \hat{\Delta}_\Omega \in [\mathrm{J}]$.
-2. **Confusion of Translational Force and Rotational Torque in Casimir Dispersion (§5.2, Eq. 563):** The spatial gradient with respect to center-of-mass separation $\nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}$ yields the translational Casimir-Polder force $\mathbf{F}_{\text{Casimir}} \in [\mathrm{N}]$, whereas rotational torque $\boldsymbol{\tau}_{\text{Casimir}} \in [\mathrm{N \cdot m}]$ is the angular derivative with respect to orientation angle $\frac{\partial \mathbf{G}}{\partial \theta}$.
-3. **1D Single-Channel Current vs. 3D Current Density Mismatch in Grotthuss Tunneling (§5.2, Eq. 557):** The Landauer-Büttiker expression $\frac{q_p}{h} \int dE$ has units of electric current $[\mathrm{A}]$ through a single 1D channel. In 3D continuum transport, current density must have units of $[\mathrm{A/m^2}]$, requiring multiplication by the channel surface number density $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$.
-4. **Pseudo-Relativistic Lorentz Artifact in Galilean Advective Reaction-Diffusion (§4.3, Line 421):** The factor $\frac{1}{\sqrt{1 - \mathrm{Ma}_{\text{chem}}^2}}$ introduces a fictitious relativistic spatial dilation into non-relativistic cytosolic fluid flow. In Galilean continuum mechanics, advection simply Doppler-shifts the laboratory wave velocity $\mathbf{v}_{\text{front}}^{\text{lab}} = v_{\text{bistable}} \hat{n} + \mathbf{v}_{\text{cytosol}}$ while preserving the intrinsic front width $\ell_{\text{front}} = \frac{D_u}{v_{\text{bistable}}}$.
+1. **Tensorial Trace Inconsistency in Israel-Stewart Relativistic Viscosity (§1.1, Eq. 18):** Eq. 18 lumps the pure-trace bulk scalar $-\zeta \theta \Delta^{\alpha\beta}$ into the evolution equation for the trace-free shear stress tensor $\pi^{\alpha\beta}$. Taking the trace yields $\operatorname{Tr}(\text{LHS}) = 0 \neq -3\zeta\theta = \operatorname{Tr}(\text{RHS})$, creating a direct algebraic contradiction ($0 = -3\zeta\theta$). Shear stress $\pi^{\alpha\beta}$ and scalar bulk pressure $\Pi$ must be decoupled into two distinct relaxation ODEs.
+2. **Exergonic Fuel Sign Inversion in Brownian Ratchet Polymerization Velocity (§4.3, Eq. 392):** The affinity factor is written as $1 - \exp(-\Delta G_{\text{ATP}}/k_B T)$. Because ATP hydrolysis is exergonic ($\Delta G_{\text{ATP}} \approx -57 \, \mathrm{kJ/mol} < 0$), the exponent $-\Delta G_{\text{ATP}}/k_B T > 0$, making $\exp(+\dots) > 1$ and yielding a **negative velocity ($v_{\text{poly}} < 0$)** under spontaneous exergonic fuel intake. The correct driving factor is $1 - \exp(-|\Delta G_{\text{ATP}}|/k_B T) \equiv 1 - \exp(\Delta G_{\text{ATP}}/k_B T) \in (0, 1)$.
+3. **Tensile Swelling Sign Inversion in Triphasic Mooney-Rivlin Poromechanics (§5.2, Eq. 550):** The continuum Cauchy stress is written as $\boldsymbol{\sigma}_{\text{total}} = \boldsymbol{\sigma}_{\text{solid}} - (P_{\text{interstitial}} + \Delta \Pi_{\text{Donnan}}^{\text{steric}})\mathbb{I}$. Adding Donnan osmotic pressure to interstitial pressure treats Donnan swelling as a compressive hydrostatic squeeze rather than generating internal tensile turgor expansion ($P_{\text{eff}} = P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}}$).
+4. **Missing Sound Velocity Factor in Rankine-Hugoniot Elastic Shock Dissipation (§2.3.5, Eq. 336):** The denominator of the quadratic elastic dissipation term is written as $2 \rho_0 c_s T \tau_{\text{impact}}$ ($c_s^1$) instead of $2 \rho_0 c_s^2 T \tau_{\text{impact}}$ ($2 K_0 T \tau_{\text{impact}}$). This creates an acoustic impedance dimensional error of $[\mathrm{m/s}]$, breaking dimensional homogeneity with the volumetric entropy generation rate $[\mathrm{W/(m^3 \cdot K)}]$.
 
 ---
 
-## 2. Twenty-Second-Order Calculation Breakdown Matrix
+## 2. Twenty-Third-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 22 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 23 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 2.1          │ Modular Flow (Eq. 195)        │ K_mod = -ħ ln Δ has units [J·s]; exponent [Kt/ħ] in [s] │
-│ 2. Section 5.2          │ Casimir Torque (Eq. 563)      │ Spatial derivative ∇_R G yields Force [N], not Torque  │
-│ 3. Section 5.2          │ Grotthuss Current (Eq. 557)   │ Single-channel current [A] lacks channel density [m⁻²] │
-│ 4. Section 4.3          │ Mach Front Width (Line 421)   │ Lorentz factor 1/√(1-Ma²) invalid for Galilean fluids  │
+│ 1. Section 1.1          │ Israel-Stewart (Eq. 18)       │ Lumps trace bulk -ζθΔ into trace-free π; yields 0=-3ζθ │
+│ 2. Section 4.3          │ Brownian Ratchet (Eq. 392)    │ 1 - exp(-ΔG/kT) with ΔG < 0 yields negative velocity   │
+│ 3. Section 5.2          │ Mooney-Rivlin (Eq. 550)       │ -(P + ΔΠ) treats osmotic swelling as compression       │
+│ 4. Section 2.3.5        │ Shock Hugoniot (Eq. 336)      │ Denominator 2ρ₀c_s Tτ lacks c_s²; breaks [W/(m³·K)]    │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,82 +40,89 @@ Following the twenty-first-order resolution of Haag-Kastler local nets of $C^*$-
 
 ---
 
-### Critique 1: Dimensional Inconsistency in Modular Hamiltonian Exponent (§2.1, Eq. 195)
+### Critique 1: Tensorial Trace Inconsistency in Israel-Stewart Relativistic Viscosity (§1.1, Eq. 18)
 
 * **The Formula in Draft:**  
-  $$\sigma_t^\Omega(\hat{A}) \equiv \exp\left( \frac{i \hat{K}_{\text{modular}} t}{\hbar} \right) \hat{A} \exp\left( -\frac{i \hat{K}_{\text{modular}} t}{\hbar} \right), \qquad \hat{K}_{\text{modular}} \equiv -\hbar \ln \hat{\Delta}_\Omega$$
+  $$\tau_\pi \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} + \pi^{\alpha\beta} = -2\eta \sigma^{\alpha\beta} - \zeta \theta \Delta^{\alpha\beta}$$
 
 * **The Mathematical Flaw:**  
-  $\hat{\Delta}_\Omega$ is dimensionless. $[\hbar \ln \hat{\Delta}_\Omega] = [\mathrm{J \cdot s}]$ (Action). Evaluating the exponent:
-  $$\left[ \frac{\hat{K}_{\text{modular}} t}{\hbar} \right] = \frac{[\mathrm{J \cdot s}] \cdot [\mathrm{s}]}{[\mathrm{J \cdot s}]} = [\mathrm{s}] \quad (\text{Non-dimensionless exponent})$$
+  $\pi^{\alpha\beta}$ is defined as the trace-free symmetric shear stress tensor ($\pi^\mu_\mu \equiv 0$). The shear tensor $\sigma^{\alpha\beta}$ is also trace-free ($\sigma^\mu_\mu \equiv 0$).  
+  However, the spatial projector metric has non-zero trace: $\Delta^\mu_\mu = g^{\mu\nu}(g_{\mu\nu} + u_\mu u_\nu / c^2) = 4 - 1 = 3$.  
+  Taking the trace of both sides:
+  $$\tau_\pi \cdot 0 + 0 = -2\eta \cdot 0 - 3 \zeta \theta \implies 0 = -3 \zeta \theta \quad (\text{Algebraic Inconsistency})$$
 
 * **Required Proof Closure:**  
-  Define the Modular Hamiltonian with the effective thermal energy scale $k_B T_{\text{eff}} \equiv \hbar / \tau_0 \in [\mathrm{J}]$:
-  $$\boxed{\hat{K}_{\text{modular}} \equiv -k_B T_{\text{eff}} \ln \hat{\Delta}_\Omega \quad [\mathrm{J}], \qquad \sigma_t^\Omega(\hat{A}) \equiv \exp\left( \frac{i \hat{K}_{\text{modular}} t}{\hbar} \right) \hat{A} \exp\left( -\frac{i \hat{K}_{\text{modular}} t}{\hbar} \right)}$$
+  Decouple the trace-free shear stress tensor $\pi^{\alpha\beta}$ from the scalar bulk viscous pressure $\Pi$:
+  $$\boxed{\tau_\pi \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} + \pi^{\alpha\beta} = -2\eta \sigma^{\alpha\beta} \quad (\text{Trace-Free Shear Relaxation})}$$
+  $$\boxed{\tau_\Pi u^\lambda \nabla_\lambda \Pi + \Pi = -\zeta \theta \quad (\text{Scalar Bulk Relaxation})}$$
+  $$\boxed{T^{\mu\nu} = (\rho c^2 + P + \Pi) \frac{u^\mu u^\nu}{c^2} + (P + \Pi) g^{\mu\nu} + \pi^{\mu\nu}}$$
 
 ---
 
-### Critique 2: Confusion of Translational Force and Rotational Torque in Casimir Dispersion (§5.2, Eq. 563)
+### Critique 2: Exergonic Fuel Sign Inversion in Brownian Ratchet Polymerization Velocity (§4.3, Eq. 392)
 
 * **The Formula in Draft:**  
-  $$\boldsymbol{\tau}_{\text{Casimir}} = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \operatorname{Tr} \left( \boldsymbol{\alpha}_1(i\xi) \cdot \nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}(\mathbf{R}, i\xi) \cdot \boldsymbol{\alpha}_2(i\xi) \right)$$
+  $$v_{\text{poly}}(F_{\text{load}}) = v_0 \frac{1 - \exp(-\Delta G_{\text{ATP}}/k_B T)}{1 + (c_{\text{crit}}/c)\exp(F_{\text{load}}\delta/k_B T)}$$
 
 * **The Mathematical Flaw:**  
-  The center-of-mass spatial gradient $-\nabla_{\mathbf{R}}\mathcal{F}_{\text{Casimir}}$ yields the translational force $\mathbf{F}_{\text{Casimir}} \in [\mathrm{N}]$. Rotational torque $\boldsymbol{\tau} \in [\mathrm{N \cdot m}]$ is the derivative with respect to relative orientation angle $\theta$:
-  $$[\nabla_{\mathbf{R}}\mathbf{G}] = [1/\mathrm{m}] \implies \mathbf{F} \in [\mathrm{N}], \qquad \left[\frac{\partial \mathbf{G}}{\partial \theta}\right] = [1/\mathrm{rad}] \implies \boldsymbol{\tau} \in [\mathrm{N \cdot m}]$$
+  ATP hydrolysis is an exergonic reaction: $\Delta G_{\text{ATP}} \approx -57 \, \mathrm{kJ/mol} < 0$.  
+  Therefore, $-\Delta G_{\text{ATP}} > 0 \implies \exp(-\Delta G_{\text{ATP}}/k_B T) = \exp(+|\Delta G_{\text{ATP}}|/k_B T) \approx e^{23} \gg 1$.  
+  Evaluating the numerator:
+  $$1 - \exp\left(-\frac{\Delta G_{\text{ATP}}}{k_B T}\right) = 1 - e^{+23} < 0 \implies v_{\text{poly}} < 0 \quad (\text{Fails Second Law / Inverts Polymerization})$$
 
 * **Required Proof Closure:**  
-  Explicitly formulate both the translational force vector and the rotational torque tensor:
-  $$\boxed{\mathbf{F}_{\text{Casimir}}(\mathbf{R}) = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \operatorname{Tr} \left( \boldsymbol{\alpha}_1(i\xi) \cdot \nabla_{\mathbf{R}} \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi) \cdot \boldsymbol{\alpha}_2(i\xi) \right) \quad [\mathrm{N}]}$$
-  $$\boxed{\boldsymbol{\tau}_{\text{Casimir}}(\theta) = -\frac{\hbar}{2\pi} \int_0^\infty d\xi \operatorname{Tr} \left( \boldsymbol{\alpha}_1(i\xi) \cdot \frac{\partial \mathbf{G}_{\text{retarded}}(\mathbf{R}, \theta, i\xi)}{\partial \theta} \cdot \boldsymbol{\alpha}_2(i\xi) \right) \hat{\mathbf{e}}_\theta \quad [\mathrm{N \cdot m}]}$$
+  Formulate the true thermodynamic affinity factor:
+  $$\boxed{v_{\text{poly}}(F_{\text{load}}) = v_0 \frac{1 - \exp\left( \frac{\Delta G_{\text{ATP}}}{k_B T} \right)}{1 + \left( \frac{c_{\text{crit}}}{c} \right) \exp\left( \frac{F_{\text{load}} \delta}{k_B T} \right)} = v_0 \frac{1 - \exp\left( -\frac{|\Delta G_{\text{ATP}}|}{k_B T} \right)}{1 + \left( \frac{c_{\text{crit}}}{c} \right) \exp\left( \frac{F_{\text{load}} \delta}{k_B T} \right)} > 0 \quad \left[\frac{\mathrm{m}}{\mathrm{s}}\right]}$$
 
 ---
 
-### Critique 3: 1D Channel Current vs. 3D Current Density Mismatch in Grotthuss Tunneling (§5.2, Eq. 557)
+### Critique 3: Tensile Swelling Sign Inversion in Triphasic Mooney-Rivlin Poromechanics (§5.2, Eq. 550)
 
 * **The Formula in Draft:**  
-  $$\mathbf{J}_{H^+}^{\text{quantum}} = \frac{q_p}{h} \int_{E_F}^{E_F + q_p \Delta\psi} T_{\text{tunnel}}(E) \left[ f_{\text{FD}}(E) - f_{\text{FD}}(E - q_p \Delta\psi) \right] dE \cdot \hat{n}_{\text{channel}}$$
+  $$\boldsymbol{\sigma}_{\text{total}} = \frac{2}{J} \mathbf{F} \frac{\partial W}{\partial \mathbf{C}} \mathbf{F}^T - \left( P_{\text{interstitial}} + \Delta \Pi_{\text{Donnan}}^{\text{steric}} \right) \mathbb{I}$$
 
 * **The Mathematical Flaw:**  
-  $\frac{q_p}{h}\int dE \in \frac{[\mathrm{C}]}{[\mathrm{J \cdot s}]}[\mathrm{J}] = [\mathrm{A}]$ (total current through a single channel). In 3D continuum electrophysiology, $\mathbf{J}$ must be an areal current density $[\mathrm{A/m^2}]$.
+  In continuous poromechanics of fluid-saturated ionized tissues, Donnan osmotic swelling pressure $\Delta \Pi_{\text{Donnan}}^{\text{steric}} > 0$ generates an internal **tensile turgor expansion** that expands the elastic solid matrix against external fluid pressure.  
+  Writing $-(P_{\text{interstitial}} + \Delta \Pi_{\text{Donnan}})\mathbb{I}$ adds osmotic pressure to compressive fluid pressure, forcing the solid matrix into compression and inverting the turgor expansion mechanics.
 
 * **Required Proof Closure:**  
-  Multiply by the channel areal density $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$:
-  $$\boxed{\mathbf{J}_{H^+}^{\text{quantum}} = \rho_{\text{channel}} \cdot \frac{q_p}{h} \int_{E_F}^{E_F + q_p \Delta\psi} T_{\text{tunnel}}(E) \left[ f_{\text{FD}}(E) - f_{\text{FD}}(E - q_p \Delta\psi) \right] dE \cdot \hat{n}_{\text{channel}} \quad \left[\frac{\mathrm{A}}{\mathrm{m^2}}\right]}$$
+  Formulate the effective pore fluid pressure as $P_{\text{eff}} = P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}}$:
+  $$\boxed{\boldsymbol{\sigma}_{\text{total}} = \frac{2}{J} \mathbf{F} \frac{\partial W}{\partial \mathbf{C}} \mathbf{F}^T - \left( P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}} \right) \mathbb{I} \quad [\mathrm{Pa}], \qquad \nabla \cdot \boldsymbol{\sigma}_{\text{total}} = \mathbf{0}}$$
 
 ---
 
-### Critique 4: Pseudo-Relativistic Lorentz Artifact in Galilean Advection-Diffusion (§4.3, Line 421)
+### Critique 4: Missing Sound Velocity Factor in Rankine-Hugoniot Elastic Shock Dissipation (§2.3.5, Eq. 336)
 
 * **The Formula in Draft:**  
-  $$\ell_{\text{front}} = \frac{D_u}{v_{\text{bistable}} \sqrt{1 - \mathrm{Ma}_{\text{chem}}^2}}$$
+  $$\sigma_{\text{shock}}(\chi) = \frac{\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta\mathcal{I} \rangle_+^2}{2 \rho_0 c_s T \tau_{\text{impact}}} + \frac{\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta\mathcal{I} \rangle_+^3}{12 \rho_0^2 c_s^4 T \tau_{\text{impact}}}$$
 
 * **The Mathematical Flaw:**  
-  Lorentz dilation $1/\sqrt{1 - \mathrm{Ma}^2}$ is physically invalid for non-relativistic Galilean fluid advection. In Galilean reaction-diffusion, fluid advection simply translates the laboratory wavefront velocity without dilating the intrinsic diffusive width.
+  Let us check the SI dimensions of the quadratic term:
+  $$\left[ \frac{\Delta\sigma^2}{\rho_0 c_s T \tau_{\text{impact}}} \right] = \frac{[\mathrm{Pa^2}]}{[\mathrm{kg/m^3}][\mathrm{m/s}][\mathrm{K}][\mathrm{s}]} = \frac{[\mathrm{kg^2 / (m^2 \cdot s^4)}]}{[\mathrm{kg \cdot K / m^2}]} = \left[ \frac{\mathrm{kg}}{\mathrm{s^4 \cdot K}} \right] = \left[ \frac{\mathrm{W}}{\mathrm{m^3 \cdot K}} \right] \cdot \left[ \frac{\mathrm{m}}{\mathrm{s}} \right]$$
+  The denominator has $\rho_0 c_s$ (acoustic impedance) instead of $\rho_0 c_s^2 = K_0$ (bulk elastic modulus), creating a velocity scale error $[c_s] \in [\mathrm{m/s}]$.
 
 * **Required Proof Closure:**  
-  Formulate the Galilean Doppler-convected front velocity and intrinsic width:
-  $$\boxed{\mathbf{v}_{\text{front}}^{\text{lab}} = v_{\text{bistable}} \hat{n} + \mathbf{v}_{\text{cytosol}}, \qquad \ell_{\text{front}} = \frac{D_u}{v_{\text{bistable}}} \quad [\mathrm{m}]}$$
-  with shock washout occurring when opposing advection exceeds bistable speed ($\|\mathbf{v}_{\text{cytosol}} \cdot \hat{n}\| > v_{\text{bistable}}$).
+  Restore the second power of sound speed $c_s^2$ in the elastic quadratic dissipation denominator:
+  $$\boxed{\sigma_{\text{shock}}(\chi) = \frac{\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta\mathcal{I} \rangle_+^2}{2 \rho_0 c_s^2 T \tau_{\text{impact}}} + \frac{\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta\mathcal{I} \rangle_+^3}{12 \rho_0^2 c_s^4 T \tau_{\text{impact}}} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
 
 ---
 
 ## 4. Master Instructions for the Implementing Agent
 
-The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
+The implementing agent must carry out the following surgical modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Fix Modular Hamiltonian Scale in §2.1 (Eq. 195):** Redefine $\hat{K}_{\text{modular}} \equiv -k_B T_{\text{eff}} \ln \hat{\Delta}_\Omega \in [\mathrm{J}]$ with $T_{\text{eff}} = \hbar / (k_B \tau_0)$.
-2. **Distinguish Casimir Force from Rotational Torque in §5.2 (Eq. 563):** Provide both translational force $\mathbf{F}_{\text{Casimir}} \propto \nabla_{\mathbf{R}}\mathbf{G} \in [\mathrm{N}]$ and rotational torque $\boldsymbol{\tau}_{\text{Casimir}} \propto \frac{\partial \mathbf{G}}{\partial \theta} \in [\mathrm{N \cdot m}]$.
-3. **Scale Grotthuss Tunneling Current by Channel Density in §5.2 (Eq. 557):** Multiply Landauer integral by $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$ to ensure $[\mathrm{A/m^2}]$ units.
-4. **Remove Lorentz Dilation in Galilean Advective Reaction-Diffusion in §4.3 (Line 421):** Replace $\frac{1}{\sqrt{1-\mathrm{Ma}^2}}$ with Galilean Doppler velocity $\mathbf{v}_{\text{front}}^{\text{lab}} = v_{\text{bistable}}\hat{n} + \mathbf{v}_{\text{cytosol}}$ and $\ell_{\text{front}} = D_u/v_{\text{bistable}}$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.121 through 6.124 to the resolved milestones log.
+1. **Decouple Israel-Stewart Shear and Bulk Stress in §1.1 (Eq. 18):** Split into trace-free $\tau_\pi \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} + \pi^{\alpha\beta} = -2\eta \sigma^{\alpha\beta}$ and scalar $\tau_\Pi u^\lambda \nabla_\lambda \Pi + \Pi = -\zeta \theta$.
+2. **Correct Thermodynamic Affinity Sign in Brownian Ratchet in §4.3 (Eq. 392):** Replace $1 - \exp(-\Delta G_{\text{ATP}}/k_B T)$ with $1 - \exp(\Delta G_{\text{ATP}}/k_B T) = 1 - \exp(-|\Delta G_{\text{ATP}}|/k_B T)$.
+3. **Correct Donnan Swelling Stress Sign in Mooney-Rivlin Poromechanics in §5.2 (Eq. 550):** Update effective pore pressure to $-(P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}})\mathbb{I}$.
+4. **Restore $c_s^2$ in Elastic Rankine-Hugoniot Dissipation in §2.3.5 (Eq. 336):** Update quadratic denominator to $2 \rho_0 c_s^2 T \tau_{\text{impact}}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.125 through 6.128 to the resolved milestones log.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 22
+## 5. Master Revision Checklist for Iteration 23
 
-- [x] **Item 1:** Redefine Modular Hamiltonian as energy $\hat{K}_{\text{modular}} \equiv -k_B T_{\text{eff}} \ln \hat{\Delta}_\Omega \in [\mathrm{J}]$ in §2.1 (Eq. 195).
-- [x] **Item 2:** Separate Casimir translational force $\mathbf{F}(\mathbf{R})$ from orientation torque $\boldsymbol{\tau}(\theta)$ in §5.2 (Eq. 563).
-- [x] **Item 3:** Scale Grotthuss tunneling current density by $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$ in §5.2 (Eq. 557).
-- [x] **Item 4:** Replace pseudo-relativistic Lorentz front dilation with Galilean Doppler convection $\mathbf{v}_{\text{front}}^{\text{lab}} = v_{\text{bistable}}\hat{n} + \mathbf{v}_{\text{cytosol}}$ in §4.3 (Line 421).
+- [x] **Item 1:** Decouple Israel-Stewart trace-free shear relaxation $\pi^{\alpha\beta}$ from scalar bulk relaxation $\Pi$ in §1.1 (Eq. 18).
+- [x] **Item 2:** Correct exergonic driving sign to $1 - \exp(\Delta G_{\text{ATP}}/k_B T)$ in Brownian ratchet equation in §4.3 (Eq. 392).
+- [x] **Item 3:** Correct Donnan swelling turgor stress sign to $-(P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}})\mathbb{I}$ in §5.2 (Eq. 550).
+- [x] **Item 4:** Restore $c_s^2$ in elastic shock dissipation denominator $2 \rho_0 c_s^2 T \tau_{\text{impact}}$ in §2.3.5 (Eq. 336).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
