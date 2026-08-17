@@ -354,7 +354,10 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ## Section 4: Biological Forms of Existence (Tier II Stress-Test)
 
 ### 4.1 Tier II Biological Forms (Metabolic Engines)
-* **Operator Algebra ($D_{\mathfrak{Im}}$):** Biochemical feedback loops, enzymatic allosteric catalysis, and genetic regulatory networks operating in metabolic phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \otimes_{\mathbb{C}} \Omega_{\mathfrak{Im}}$.
+* **Operator Algebra ($D_{\mathfrak{Im}}$) & Quantum Radical Pair Coherence:**  
+  Biochemical feedback loops, enzymatic allosteric catalysis, and genetic regulatory networks operating in metabolic phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \otimes_{\mathbb{C}} \Omega_{\mathfrak{Im}}$. In cryptochrome / flavin radical-pair sensory networks, quantum spin coherence modulates metabolic reaction rates via the **Haberkorn Stochastic Master Equation**:
+  $$\frac{d\hat{\rho}_{\text{spin}}}{dt} = -\frac{i}{\hbar} \left[ \hat{H}_{\text{Zeeman}}(\mathbf{B}) + \hat{H}_{\text{hyperfine}}, \, \hat{\rho}_{\text{spin}} \right] - \frac{k_S}{2} \left\{ \hat{P}_S, \hat{\rho}_{\text{spin}} \right\} - \frac{k_T}{2} \left\{ \hat{P}_T, \hat{\rho}_{\text{spin}} \right\}$$
+  yielding the magnetic-field-dependent signaling product yield $\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{spin}}(t)) dt$, coupling sub-thermal environmental magnetic fields directly to enzymatic repair gating.
 * **Fuel State ($\mathcal{S}_{\text{fuel}}$):** High-energy chemical phosphate bonds (ATP hydrolysis, $\Delta G \approx -57 \, \text{kJ/mol}$).
 * **Fuel Partitioning ($\chi^* \in (0, 1)$):** Energy is strictly partitioned between physical actuation/cytoskeletal maintenance ($\dot{\mathcal{E}}_{\mathfrak{Re}}$) and enzymatic error correction / DNA repair power ($\dot{\mathcal{W}}_{\text{repair}} \ge \dot{n}_{\text{lesions}} \cdot k_B T \ln 2 \in [\mathrm{W}]$, where $\dot{n}_{\text{lesions}}$ is lesion turnover frequency $[\mathrm{s^{-1}}]$):
   $$\dot{\mathcal{E}}_{\text{total}} = \dot{\mathcal{E}}_{\mathfrak{Re}} + \dot{\mathcal{E}}_{\mathfrak{Im}} = \left( \int_{\partial E} \mathbf{R} \cdot \mathbf{v}_n \, dA + \int_E \boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}} \, dV \right) + \left( k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \dot{\mathcal{W}}_{\text{repair}} \right)$$
@@ -372,9 +375,12 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 4.3 High-Frequency Dynamic Boundary Rupture & Spatial Damköhler Dispersion ($\mathrm{Da}(x) > 1$)
 * **The Physical Dilemma:** Cellular homeostatic stiffening and active cytoskeletal remodeling (e.g., actin-myosin contractility, Rho-kinase cascades) require finite biochemical signal transduction latency ($\Delta t_{\text{response}} = \tau_{\text{biochem}} + \tau_{\text{actuate}} \sim 10^{-3}\text{ to } 10^1 \, \mathrm{s}$). How does an entity respond when struck by high-frequency acoustic, shock, or ballistic stress waves, and how does spatial signal dispersion govern localized rupture?
 
-* **Dual-Modulus Resistance Decomposition:**  
+* **Dual-Modulus Resistance Decomposition & Brownian Ratchet Force-Velocity Limits:**  
   The total outward resistance is partitioned into instantaneous passive membrane elasticity and time-delayed active metabolic traction:
   $$\mathbf{R}(x, t) = \mathbf{R}_{\text{passive}}(x, t) \;+\; \mathbf{R}_{\text{active}}\left(x, \, t - \Delta t_{\text{response}}(x)\right)$$
+  Microscopic actin filament barbed-end polymerization at the membrane boundary is bounded by the **Peskin-Odorico-Oster Brownian Ratchet Law** under normal compressive load force $F_{\text{load}}(x, t) \equiv \langle \boldsymbol{\sigma}_{\text{challenge}} : (\hat{n} \otimes \hat{n}) \rangle_+ a_{\text{filament}}$ (with monomer size $\delta_{\text{monomer}} \approx 2.7 \, \mathrm{nm}$ and filament cross-sectional area $a_{\text{filament}}$):
+  $$\boxed{v_{\text{poly}}(F_{\text{load}}) = v_0 \left( \frac{1 - \exp\left(-\frac{\Delta G_{\text{ATP}}}{k_B T}\right)}{1 + \frac{c_{\text{actin}}^{\text{crit}}}{c_{\text{actin}}} \exp\left(\frac{F_{\text{load}} \delta_{\text{monomer}}}{k_B T}\right)} \right), \qquad \|\mathbf{R}_{\text{active}}\|_{\max} = \rho_{\text{actin}} \frac{k_B T}{\delta_{\text{monomer}}} \ln\left( \frac{c_{\text{actin}}}{c_{\text{actin}}^{\text{crit}}} \right)}$$
+  which strictly upper-bounds active stiffening capacity under extreme localized ballistic impact loads.
 
 * **Spatial Reaction-Diffusion Wavefront Dispersion (Coupled Fast-Slow Manifold Kinetics & Soliton Bounds):**  
   Intracellular biochemical signaling molecules (e.g., fast activator $\mathrm{Ca}^{2+}$ / active RhoA $u(x, t)$ and slow inhibitory recovery enzyme $w(x, t)$) obey the non-equilibrium coupled **FitzHugh-Nagumo Reaction-Diffusion System** on the deforming 2D Riemannian membrane manifold $(\partial E, g_{ab})$ equipped with the **Laplace-Beltrami Operator** $\Delta_g \equiv \frac{1}{\sqrt{\det g}} \partial_a (\sqrt{\det g} \, g^{ab} \partial_b)$, **Surface Dilatational Dilution Rate** ($(\kappa_{\text{geom}} v_n + \nabla_{\partial E} \cdot \mathbf{v}_{\parallel})$), and **Cytoplasmic Convective Advection** ($\mathbf{v}_{\text{cytosol}} \cdot \nabla_{\partial E}$):
@@ -427,12 +433,16 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      Ionizing radiation or endonuclease activity induces a double-strand break:
      $$\mu(\mathcal{F}_{\text{ledger}}) < \mu_{\text{critical}} \implies D_{\mathfrak{Im}} \longrightarrow \emptyset$$
      Direct mass loss is negligible ($\frac{\Delta \mu_{\text{cleavage}}}{\mu(E)} \sim 10^{-5}$).
-  2. **Stage 2a (Ion Pump Arrest & Outward Osmotic Swelling Kinematics):**  
-     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$). Intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation with universal molar gas constant $R \equiv N_A k_B$:
-     $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]$$
-     where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions and $\sigma_{\text{protein}} \approx 1$ accounts for the direct van 't Hoff ideal solute pressure of trapped cytoplasmic macromolecules. This drives outward water influx across the lipid bilayer with positive normal velocity:
-     $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
-     where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
+  2. **Stage 2a (Ion Pump Arrest, Flippase Leaflet Asymmetry & Outward Osmotic Swelling Kinematics):**  
+     Cleavage terminates ATP-dependent ion pump repair ($\dot{\mathcal{W}}_{\text{repair}} \to 0$) and P4-ATPase phospholipid flippase activity ($\dot{N}_{\text{flippase}} \to 0$). Trans-bilayer lipid pumping ceases, freezing the **Dynamic Spontaneous Curvature Field**:
+      $$\mathcal{C}_0(t) \equiv \frac{1}{2 h(t)} \left( \frac{\Delta A_0 + \int_0^t \frac{\dot{N}_{\text{flippase}}(\tau) a_{\text{lipid}}}{\rho_{\text{lipid}}} d\tau}{A_{\text{mid}}(t)} \right)$$
+      which alters the **Canham-Helfrich Membrane Bending Energy Density**:
+      $$w_{\text{bend}} = \frac{\kappa_{\text{bend}}}{2} \left( 2 H(x, t) - \mathcal{C}_0(t) \right)^2 + \kappa_{\text{Gauss}} K_{\text{Gauss}}(x, t)$$
+      where $H$ is mean curvature and $K_{\text{Gauss}}$ is Gaussian curvature. Concurrently, intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$) and solute-specific **Staverman reflection coefficients ($\sigma_i \in [0, 1]$)** via the Kedem-Katchalsky formulation with universal molar gas constant $R \equiv N_A k_B$:
+      $$\Delta P_{\text{osmotic}}(t) = R T \left[ \bar{\sigma}_{\text{ion}} \left(\frac{1 - r_D(t)}{1 + r_D(t)}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} \right] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]$$
+      where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions and $\sigma_{\text{protein}} \approx 1$ accounts for the direct van 't Hoff ideal solute pressure of trapped cytoplasmic macromolecules. This drives outward water influx across the lipid bilayer with positive normal velocity:
+      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
+      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
   3. **Stage 2b (Membrane Incompressible Thinning & Rate-Dependent Viscoelastic Plasticity):**  
      For a spherical cell of radius $r(t)$ and unswollen radius $r_0$ with bilayer cortex thickness $h(t)$, **bilayer volume-incompressibility** ($V_{\text{cortex}} = 4\pi r(t)^2 h(t) = 4\pi r_0^2 h_0$) enforces dynamic area-expansion thinning $h(t) = h_0 \left( \frac{r_0}{r(t)} \right)^2$. The dynamic membrane expansion strain rate is:
      $$\dot{\varepsilon}(t) \equiv \frac{\dot{r}(t)}{r(t)} = \frac{L_p}{r(t)} \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \quad [\mathrm{s}^{-1}]$$
@@ -545,19 +555,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **Nuclear Spin-State Hyperpolarization & Radical Pair Recombination:**
+1. **Chiral Induced Spin Selectivity (CISS) in Helical Biomolecular Conduction:**
    - *Status:* **Open / Active.**
-   - *Description:* In §1.1 & §3.2, enzymatic activation is modeled via thermal reaction rates. In cryptochrome / flavin radical pairs, sub-thermal magnetic Zeeman perturbations alter singlet-triplet interconversion yields, introducing quantum spin-coherence control into metabolic reaction kinetics.
-2. **Non-Equilibrium ATP Hydrolysis in Membrane Leaflet Lipid Flip-Flop:**
+   - *Description:* In §1.1 & §5.2, electron transport in metabolic enzymes is modeled through isotropic conductances. CISS effects across chiral alpha-helices generate spin-polarized tunneling currents, filtering paramagnetic radical recombinations.
+2. **Lipid Trans-Gauche Isomerization Latent Heat in Dynamic Phase Transitions:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.4, lipid bilayer leaflets are assumed to have symmetric surface density. P4-ATPase flippases actively pump phospholipids between inner and outer leaflets, generating non-equilibrium trans-bilayer area differences and driving dynamic spontaneous curvature $\mathcal{C}_0(t)$.
-3. **Dynamic Cytoskeletal Polymerization-Depolymerization Force-Velocity Limits:**
+   - *Description:* In §4.4, lipid bilayer elasticity assumes isothermal deformation. Under high-strain ballistic loading, liquid-ordered to liquid-disordered phase transitions absorb latent heat $\Delta H_{\text{trans}}$, inducing localized thermal quenching.
+3. **Formin / Arp2/3 Branching Angle Compliance Under Cortical Shear:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.3, active traction $\mathbf{R}_{\text{active}}$ assumes phenomenological contractile response. Microscopic actin polymerization at the membrane cortex follows a Brownian ratchet force-velocity relation $v_{\text{poly}} = v_0 \exp(-F_{\text{load}} \delta / k_B T)$, bounding active stiffening under extreme compressive shock.
+   - *Description:* In §4.3, cortical actin gel is treated as an isotropic continuum. Microscopic $70^\circ$ Arp2/3 dendritic junctions deform under shear, introducing an anisotropic junctional spring compliance tensor $\mathbf{K}_{\text{branch}}$.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Peskin-Odorico-Oster Brownian Ratchet Force-Velocity Relation**~~ (*Closed in §4.3 via Brownian ratchet velocity $v_{\text{poly}}(F_{\text{load}}) = v_0 \frac{1 - \exp(-\Delta G_{\text{ATP}}/k_B T)}{1 + (c_{\text{crit}}/c)\exp(F_{\text{load}}\delta/k_B T)}$ and upper-bound traction $\|\mathbf{R}_{\text{active}}\|_{\max}$.*)
+- [x] ~~**P4-ATPase Flippase Leaflet Lipid Pumping & Dynamic Spontaneous Curvature**~~ (*Closed in §4.4 via dynamic area asymmetry spontaneous curvature $\mathcal{C}_0(t) = \frac{\Delta A_0 + \int \dot{N} a / \rho d\tau}{2 h A_{\text{mid}}}$ and Canham-Helfrich bending energy.*)
+- [x] ~~**Haberkorn Radical Pair Quantum Spin-State Master Equation**~~ (*Closed in §4.1 via Haberkorn master equation $\frac{d\hat{\rho}}{dt} = -\frac{i}{\hbar}[\hat{H}, \hat{\rho}] - \frac{k_S}{2}\{\hat{P}_S, \hat{\rho}\} - \frac{k_T}{2}\{\hat{P}_T, \hat{\rho}\}$ and magnetic field yield $\Phi_S(\mathbf{B})$.*)
 - [x] ~~**Carnahan-Starling Steric Excluded Volume Donnan Virial Swelling**~~ (*Closed in §5.2 via hard-sphere packing fraction $\eta_{\text{pack}}$ and virial expansion $\Delta\Pi_{\text{Donnan}}^{\text{steric}} = RT[(\sqrt{c_F^2+4c_{\text{bath}}^2}-2c_{\text{bath}})\frac{1+\eta+\eta^2-\eta^3}{(1-\eta)^3} + \sum B_{km}c_k c_m]$.*)
 - [x] ~~**Active ESCRT-III Polymer Constriction & Dynamic Resealing Radius**~~ (*Closed in §4.4 via active pore ODE $2\pi\eta\dot{r} = 2\pi(\Gamma r - \gamma) - \kappa_f/r^2 - \dot{\mathcal{W}}_{\text{ATPase}}/(2\pi r v)$ and expanded survival radius $r_{\text{pore}}^{\text{crit, active}}$.*)
 - [x] ~~**Quantum Phase Slip & Grotthuss Wavepacket Proton Tunneling**~~ (*Closed in §5.2 via Caldeira-Leggett dissipative tunneling transmission $T_{\text{tunnel}}$ and quantum current $\mathbf{J}_{H^+}^{\text{quantum}} = \frac{q}{h}\int T(E)[f(E) - f(E-q\Delta\psi)]dE$.*)
