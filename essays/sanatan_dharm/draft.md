@@ -612,7 +612,7 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 
 ---
 
-#### Formally Resolved Theoretical Milestones (All 124 Gaps Closed)
+#### Formally Resolved Theoretical Milestones (All 128 Gaps Closed)
 - [x] ~~**Decoupled Relativistic Israel-Stewart Trace-Free Shear & Bulk Viscosity ODEs**~~ (*Closed in §1.1 via decoupled hyperbolic equations $\tau_\pi \Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} + \pi^{\alpha\beta} = -2\eta \sigma^{\alpha\beta}$ and $\tau_\Pi u^\lambda \nabla_\lambda \Pi + \Pi = -\zeta \theta$, resolving algebraic trace contradiction.*)
 - [x] ~~**Peskin-Odorico-Oster Brownian Ratchet Exergonic Thermodynamic Affinity Sign**~~ (*Closed in §4.3 via $v_{\text{poly}} \propto 1 - \exp(\Delta G_{\text{ATP}}/k_B T) = 1 - \exp(-|\Delta G_{\text{ATP}}|/k_B T) > 0$, ensuring positive forward polymerization velocity.*)
 - [x] ~~**Triphasic Mooney-Rivlin Donnan Osmotic Turgor Swelling Poromechanical Stress**~~ (*Closed in §5.2 via $\boldsymbol{\sigma}_{\text{total}} = \frac{2}{J}\mathbf{F}\frac{\partial W}{\partial\mathbf{C}}\mathbf{F}^T - (P_{\text{interstitial}} - \Delta \Pi_{\text{Donnan}}^{\text{steric}})\mathbb{I}$, capturing tensile turgor expansion.*)
