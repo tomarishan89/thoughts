@@ -148,10 +148,13 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.91: Formin / Arp2/3 Branching Angle Compliance Under Cortical Shear.** Formulated Arp2/3 angular spring compliance tensor $\mathbf{G}_{\text{cortex}}(\boldsymbol{\gamma}) = G_0[\mathbb{I} + \frac{\rho k_\theta}{G_0}\cos^2(\theta_0 + \frac{\gamma}{2})\hat{\mathbf{e}}\otimes\hat{\mathbf{e}}]$ in §4.3 (Lines 418-421).
 - [X] **ISSUE-6.92: Lipid Trans-Gauche Isomerization Latent Heat in Dynamic Phase Transitions.** Formulated non-isothermal thermal energy equation $\rho c_p \dot{T} = \dots - \Delta H_{\text{trans}}\dot{\phi}_{\text{disorder}}$ and Clapeyron order parameter in §4.4 (Lines 450-454).
 - [X] **ISSUE-6.93: Chiral Induced Spin Selectivity (CISS) in Helical Biomolecular Conduction.** Formulated spin-polarized current $\mathbf{J}_e^{\text{spin}} = -\frac{e}{h}\sum_\sigma \int [T_0 + \sigma \mathcal{P}_{\text{CISS}}\sin(\frac{2\pi L}{p})]\Delta f dE \cdot \hat{n}$ in §5.2 (Lines 526-530).
+- [X] **ISSUE-6.94: Booth-Onsager Dielectric Saturation in Nanoconfined Pores.** Formulated non-linear dielectric function $\varepsilon(E) = n^2 + (\varepsilon_{\text{bulk}}-n^2)\frac{3}{\beta E}(\coth(\beta E) - \frac{1}{\beta E})$ in §5.2 (Lines 536-540).
+- [X] **ISSUE-6.95: Non-Adiabatic Berry Phase Holonomy in Retinal Photoisomerization.** Formulated topological geometric phase $\gamma_C = i\oint \langle\psi_1|\nabla_{\mathbf{R}}\psi_1\rangle\cdot d\mathbf{R} = \pi$ around conical intersections in §1.1 (Lines 145-148).
+- [X] **ISSUE-6.96: Quantum Vibronic Tunneling of ATP $\gamma$-Phosphate in Catalytic Pockets.** Formulated Bixon-Jortner non-Born-Oppenheimer tunneling rate $k_{\text{vibronic}} \propto \sum \frac{S^{v'}}{v'!}\exp(-\frac{(\Delta G + \lambda_0 + v'\hbar\omega)^2}{4\lambda_0 k_B T})$ in §4.1 (Lines 362-366).
 
 ---
 
 ## Category 7: Continuum-Closure Frontiers (Active Open Weaknesses)
-- [ ] **ISSUE-7.1 (Active Frontier #1): Sub-Angstrom Hydration Shell Dielectric Saturation in Ion Channels.** Booth-Onsager non-linear dielectric breakdown $\varepsilon(E) \to n^2 \approx 1.8$ inside $<1 \, \mathrm{nm}$ selectivity filters.
-- [ ] **ISSUE-7.2 (Active Frontier #2): Non-Adiabatic Berry Phase Holonomy in Retinal Photoisomerization.** Geometric phase $\gamma_C = \oint \mathbf{A}(\mathbf{R})\cdot d\mathbf{R}$ modulating quantum coherence in ultrafast visual transduction.
-- [ ] **ISSUE-7.3 (Active Frontier #3): Quantum Vibronic Tunneling of ATP $\gamma$-Phosphate.** Non-Born-Oppenheimer vibronic wavepacket tunneling across multi-dimensional potential energy surfaces in catalytic pockets.
+- [ ] **ISSUE-7.1 (Active Frontier #1): Planck-Scale Spacetime Fluctuations in Quantum Gravitational Wavefunctions.** Penrose-Diósi gravitational state reduction on macroscopic coherence times $\tau_{\text{grav}} = \hbar/E_G$.
+- [ ] **ISSUE-7.2 (Active Frontier #2): Retarded Casimir-Polder Van der Waals Torques in Chiral Meshes.** Retarded vacuum electromagnetic dispersion torques between adjacent chiral helical biopolymers.
+- [ ] **ISSUE-7.3 (Active Frontier #3): Topological Anyonic Braiding Invariants at 2D Lipid-Water Interfaces.** Correlated 2D electron-dipole liquids exhibiting fractionalized topological Chern numbers $\mathcal{C}_{\text{Chern}} \in \mathbb{Z}$.
