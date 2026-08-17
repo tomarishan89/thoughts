@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 25)
+# Formal Mathematical Physics Peer Review Report (Iteration 26)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 25 (Active Pore Quadratic Radical Dimensions, Brownian Ratchet Molar/Molecular Exponent, CISS Current Density Scaling, and Curved Covariant Penrose-Diósi Measure Audit)  
+**Review Version:** Iteration 26 (Accelerating Thermal Dissipation in Tier I, Radical-Pair Bounded Product Yield, Shock Dissipation Macauley Ramping, and Sub-Patch Eikonal Regularization Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Dimensional Incommensurability under Radical in §4.4, Avogadro Exponent Scale Error in §4.3, Single-Molecule vs Continuum Current Mismatch in §5.2, and Riemannian Measure Covariance Gap in §1.1)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Tolman Acceleration Omission in §3.2, Radical-Pair Infinite Integral Divergence in §4.1, Pre-Stress Double-Counting in §2.3.5, and Sub-Patch Logarithmic Singularity in §4.3)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the twenty-fourth-order resolution of Green-Kubo spatial IR synchronization, instanton partition function extensivity, Gauss-Bonnet topological pore bending line tension, and relativistic Eckart-Tolman heat conduction dissipation, a microscopic calculation, dimensional, and covariance audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, dimensional, and geometric vulnerabilities**:
+Following the twenty-fifth-order resolution of active ESCRT-III pore radius radical dimensions, Brownian ratchet molar gas constant scaling, CISS chiral electron current surface density, and curved Riemannian Penrose-Diósi measure covariance, an unsparing mathematical, thermodynamic, and operator-algebraic audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, convergence, and boundary vulnerabilities**:
 
-1. **Dimensional Incommensurability in Active ESCRT-III Critical Resealing Pore Radius (§4.4, Eq. 495):** In Eq. 495, the active ATPase disassembly force term $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N}]$ was placed inside the quadratic discriminant parentheses alongside the Gaussian curvature modulus $\kappa_{\text{Gauss}} \in [\mathrm{N \cdot m}]$. Multiplying by $\Gamma_{\text{tension}} \in [\mathrm{N/m}]$ yields a term of units $[\mathrm{N^2/m}]$, which is dimensionally incommensurate with $\gamma_{\text{line}}^2 \in [\mathrm{N^2}]$ under the square root. Because ATPase disassembly is a constant radial constriction force $[\mathrm{N}]$, it must be combined with edge line tension: $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$.
-2. **Molar vs. Molecular Thermal Energy Scale Discrepancy in Brownian Ratchet Exponent (§4.3, Eq. 413):** In Eq. 413, the exergonic driving factor is written as $\exp\left(-\frac{|\Delta G_{\text{ATP}}|}{k_B T}\right)$. Because $\Delta G_{\text{ATP}}$ is defined in §4.1 (Line 390) as molar free energy ($-57 \, \mathrm{kJ/mol}$), dividing directly by single-molecule Boltzmann thermal energy $k_B T \in [\mathrm{J}]$ without Avogadro's constant $N_A$ causes an unphysical $\sim 10^{23}$ scale error in the exponent ($\Delta G / k_B T \approx 10^{25}$). The exponent must be formulated as $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$ or $-\frac{|\Delta g_{\text{ATP}}^{\text{molecular}}|}{k_B T}$.
-3. **Missing Areal Number Density Scaling in CISS Chiral Electron Current Density (§5.2, Eq. 563):** While §5.2 (Eq. 561) correctly scales quantum Grotthuss proton current by channel surface density $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$ to obtain areal current density $[\mathrm{A/m^2}]$, Eq. 563 integrates single-molecule CISS Landauer transmission yielding Amperes $[\mathrm{A}]$ but equates it to the continuum flux density vector $\mathbf{J}_e^{\text{spin}} \in [\mathrm{A/m^2}]$. It must be scaled by chiral biomolecular surface density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$.
-4. **Coordinate Volume Element & Geodesic Distance Break in Penrose-Diósi Decoherence (§1.1, Eq. 168):** Eq. 168 formulates gravitational self-energy decoherence using flat Cartesian volume elements $d^3x \, d^3y$ and flat Euclidean distance $\|\mathbf{x}-\mathbf{y}\|$, violating general covariance on the curved spatial 3-manifold $(\Sigma, h_{ij})$ established in Axiom 1. It must be closed with the Riemannian invariant volume form $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and Riemannian geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
+1. **Unsynchronized Relativistic Thermal Dissipation in Tier I Physical Limit (§3.2, Line 371):** While §2.2 (Eq. 213) correctly incorporates the relativistic Eckart-Tolman proper acceleration term $-\frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}$ into the thermal entropy production density, §3.2 (Line 371) reverts to the unregularized Newtonian conduction term $\mathbf{J}_q \cdot \nabla(1/T)$ when simplifying for Tier I physical systems. For accelerating physical bodies (relativistic jets, stellar accretion shocks, black hole horizons), this creates an internal contradiction and breaks relativistic covariance.
+2. **Infinite Integral Divergence in Radical-Pair Signaling Product Yield (§4.1, Eq. 388):** Eq. 388 defines the magnetic signaling yield as $\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{spin}}(t)) dt$. On the trace-preserving Hilbert space ($\operatorname{Tr}(\hat{\rho})=1$), the steady-state spin density matrix maintains a non-zero asymptotic projection $\lim_{t\to\infty}\operatorname{Tr}(\hat{P}_S \hat{\rho}) > 0$, causing the integral $\int_0^\infty dt$ to diverge to $+\infty$ instead of yielding a bounded probability $\Phi_S \in [0, 1]$. The integral must act strictly on the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t)$ whose trace vanishes as radicals recombine into product states.
+3. **Double-Counting Pre-Stress Work in Acoustic Shock Dissipation (§2.3.5, Eq. 340):** In Eq. 340, the linear elastic term uses unramped $(\sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I})^2$. When an entity over-anticipates ($\kappa_{\text{stress}}\Delta\mathcal{I} > \sigma_{\text{impact}}$), this term squares the negative residual stress, falsely treating internal pre-stress as external shock damage and double-counting the internal holding power $\dot{\mathcal{W}}_{\text{pre-stress}}$ already logged in Eq. 224. The elastic shock dissipation must be driven strictly by the positive transmitted overpressure $\langle \sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I} \rangle_+^2$.
+4. **Logarithmic Singularity for Sub-Patch Distances in Wavefront Arrival Latency (§4.3, Eq. 432):** In Eq. 432, for points $x$ located within the initial activation zone ($d_g^{\partial E}(x) \le r_{\text{eff}}$), the numerator inside the logarithm becomes $v_{\text{bistable}} d_g^{\partial E} - D_u \le 0$, producing a negative-infinite or undefined logarithm. The formula must be piecewise closed for $d_g^{\partial E} \le r_{\text{eff}}$ as $\Delta t_{\text{response}}(x) = \tau_{\text{local}}$.
 
 ---
 
-## 2. Twenty-Fifth-Order Calculation Breakdown Matrix
+## 2. Twenty-Sixth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 25 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 26 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 4.4          │ Pore Radius (Eq. 495)         │ Radical has [N²] - [N²/m] dimensional incommensurability│
-│ 2. Section 4.3          │ Ratchet Exponent (Eq. 413)    │ Molar ΔG_ATP divided by molecular k_B T (10²³ error)   │
-│ 3. Section 5.2          │ CISS Current (Eq. 563)        │ Single-molecule [A] equated to flux density [A/m²]     │
-│ 4. Section 1.1          │ Decoherence (Eq. 168)         │ Flat d³x / norm breaks curved 3-manifold covariance    │
+│ 1. Section 3.2          │ Thermal Dissipation (Line 371)│ Omits Tolman acceleration; contradicts §2.2 covariance │
+│ 2. Section 4.1          │ Product Yield (Eq. 388)       │ Integral diverges to ∞ on trace-preserving state space │
+│ 3. Section 2.3.5        │ Shock Dissipation (Eq. 340)   │ Unramped square double-counts pre-stress work as damage│
+│ 4. Section 4.3          │ Eikonal Arrival (Eq. 432)     │ Inside-patch distances (d_g ≤ r_eff) cause ln(≤0) pole │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,64 +40,64 @@ Following the twenty-fourth-order resolution of Green-Kubo spatial IR synchroniz
 
 ---
 
-### Critique 1: Dimensional Incommensurability in Active ESCRT-III Critical Resealing Pore Radius (§4.4, Eq. 495)
+### Critique 1: Unsynchronized Relativistic Thermal Dissipation in Tier I Physical Limit (§3.2, Line 371)
 
 * **The Formula in Draft:**  
-  $$r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \sqrt{\gamma_{\text{line}}^2 - 4 \Gamma_{\text{tension}}(t) \left( \kappa_{\text{Gauss}} - \frac{\kappa_f}{2\pi r_{\text{pore}}} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right)}}{2 \Gamma_{\text{tension}}(t)}$$
+  $$\sigma_{\text{total}}(x, t) = \frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T} + \mathbf{J}_q \cdot \nabla\left(\frac{1}{T}\right) \ge 0$$
 
 * **The Mathematical Flaw:**  
-  - $\gamma_{\text{line}}^2 \in [\mathrm{N^2}]$.
-  - $\Gamma_{\text{tension}} \in [\mathrm{N/m}]$.
-  - $\kappa_{\text{Gauss}} \in [\mathrm{J}] = [\mathrm{N \cdot m}] \implies \Gamma_{\text{tension}} \kappa_{\text{Gauss}} \in [\mathrm{N^2}]$.
-  - $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in \left[\frac{\mathrm{N \cdot m/s}}{\mathrm{m/s}}\right] = [\mathrm{N}] \implies \Gamma_{\text{tension}} \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N/m}] \cdot [\mathrm{N}] = [\mathrm{N^2/m}]$.  
-  Adding $[\mathrm{N^2}]$ and $[\mathrm{N^2/m}]$ under the radical is mathematically invalid. In the underlying force balance (Eq. 493), $-\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}}$ is a constant radial constriction force $[\mathrm{N}]$ and acts directly in parallel with line tension $2\pi \gamma_{\text{line}}$.
+  In §2.2 (Eq. 213), thermal dissipation was closed with the relativistic Eckart-Tolman proper acceleration term $\mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$. Reverting to the non-relativistic gradient $\mathbf{J}_q \cdot \nabla(1/T)$ in §3.2 creates an internal contradiction across sections and violates relativistic covariance for accelerating physical structures (e.g. relativistic stellar jets and black hole accretion flows).
 
 * **Required Proof Closure:**  
-  Combine the constant constriction force with edge line tension to define $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N}]$, yielding the dimensionally closed quadratic root:
-  $$\boxed{r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\left( \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right) + \sqrt{\left( \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right)^2 - 4 \Gamma_{\text{tension}}(t) \left( \kappa_{\text{Gauss}} - \frac{\kappa_f}{2\pi r_{\text{pore}}} \right)}}{2 \Gamma_{\text{tension}}(t)} \quad [\mathrm{m}]}$$
-  where every term under the radical has exact units $[\mathrm{N^2}]$ and $r_{\text{pore}}^{\text{crit, active}} \in [\mathrm{m}]$.
+  Synchronize §3.2 with the fully covariant relativistic conduction dissipation:
+  $$\boxed{\sigma_{\text{total}}(x, t) = \frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T(x, t)} + \mathbf{J}_q \cdot \left[ \nabla\left(\frac{1}{T(x, t)}\right) - \frac{\boldsymbol{\alpha}_{\text{proper}}(x, t)}{c^2 T(x, t)} \right] \ge 0 \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
 
 ---
 
-### Critique 2: Molar vs. Molecular Thermal Energy Scale Discrepancy in Brownian Ratchet Exponent (§4.3, Eq. 413)
+### Critique 2: Infinite Integral Divergence in Radical-Pair Signaling Product Yield (§4.1, Eq. 388)
 
 * **The Formula in Draft:**  
-  $$v_{\text{poly}}(F_{\text{load}}) = v_0 \left( \frac{1 - \exp\left(-\frac{|\Delta G_{\text{ATP}}|}{k_B T}\right)}{1 + \frac{c_{\text{actin}}^{\text{crit}}}{c_{\text{actin}}} \exp\left(\frac{F_{\text{load}} \delta_{\text{monomer}}}{k_B T}\right)} \right)$$
+  $$\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{spin}}(t)) dt$$
 
 * **The Mathematical Flaw:**  
-  In §4.1 (Line 390), $\Delta G_{\text{ATP}} \approx -57 \, \mathrm{kJ/mol}$ is given in molar units $[\mathrm{J/mol}]$. In Eq. 413, dividing by molecular thermal energy $k_B T \approx 4.1 \times 10^{-21} \, \mathrm{J}$ yields an unphysical dimensionless exponent $\sim 10^{25}$, conflating macroscopic molar free energy with single-molecule transition kinetics.
+  In a trace-preserving GKSL master equation ($\operatorname{Tr}(\hat{\rho}(t)) \equiv 1$), the state density matrix converges to a steady state $\hat{\rho}_{\text{steady}}$ with $\operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{steady}}) > 0$. Integrating a non-vanishing constant from $0$ to $\infty$ yields $\Phi_S = \infty$, violating probability conservation ($\Phi_S \le 1$). In radical-pair chemical dynamics, recombination transfers population from the active radical-pair subspace $\mathcal{H}_{\text{RP}}$ to terminal reaction product states.
 
 * **Required Proof Closure:**  
-  Formulate the exponent consistently using the universal gas constant $R \equiv N_A k_B$ for molar values:
-  $$\boxed{v_{\text{poly}}(F_{\text{load}}) = v_0 \left( \frac{1 - \exp\left(-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}\right)}{1 + \frac{c_{\text{actin}}^{\text{crit}}}{c_{\text{actin}}} \exp\left(\frac{F_{\text{load}} \delta_{\text{monomer}}}{k_B T}\right)} \right)}$$
+  Formulate the yield integral over the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t) \equiv \hat{\mathcal{P}}_{\text{RP}} \hat{\rho}_{\text{spin}}(t) \hat{\mathcal{P}}_{\text{RP}}$ satisfying $\lim_{t\to\infty}\operatorname{Tr}(\hat{\rho}_{\text{RP}}(t)) = 0$:
+  $$\boxed{\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}\left( \hat{P}_S \hat{\rho}_{\text{RP}}(t) \right) dt \in [0, 1]}$$
 
 ---
 
-### Critique 3: Missing Areal Number Density Scaling in CISS Chiral Electron Current Density (§5.2, Eq. 563)
+### Critique 3: Double-Counting Pre-Stress Work in Acoustic Shock Dissipation (§2.3.5, Eq. 340)
 
 * **The Formula in Draft:**  
-  $$\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}}$$
+  $$\sigma_{\text{shock}}(\chi) = \left[ \frac{\left( \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right)^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]$$
 
 * **The Mathematical Flaw:**  
-  The Landauer single-channel integral $\frac{e}{h}\int \Delta f dE$ has units $[\mathrm{C/s}] = [\mathrm{A}]$, representing electric current through a single macromolecule. Equating this to the macroscopic current density vector $\mathbf{J}_e^{\text{spin}} \in [\mathrm{A/m^2}]$ omits the areal density of conducting helical polymers.
+  When an entity over-anticipates ($\kappa_{\text{stress}}\Delta\mathcal{I} > \sigma_{\text{impact}}$), the net stress is negative. Squaring this negative value in the first term yields a positive dissipation rate, falsely counting excess internal pre-stress as external shock damage. The internal metabolic cost of holding pre-stress is already fully accounted for by $\dot{\mathcal{W}}_{\text{pre-stress}}$ in Eq. 224. Shock penetration into the acoustic core is driven strictly by the positive unmitigated overpressure.
 
 * **Required Proof Closure:**  
-  Scale by chiral macromolecular surface number density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$:
-  $$\boxed{\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\rho_{\text{helix}} \cdot \frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}} \quad \left[\frac{\mathrm{A}}{\mathrm{m^2}}\right]}$$
+  Apply the positive Macauley ramp operator $\langle \cdot \rangle_+$ to the elastic strain dissipation term:
+  $$\boxed{\sigma_{\text{shock}}(\chi) = \left[ \frac{\left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{(\Gamma + 1) \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} \right] \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
+  guaranteeing that over-anticipation ($\kappa_{\text{stress}}\Delta\mathcal{I} \ge \sigma_{\text{impact}}$) completely suppresses external shock damage ($\sigma_{\text{shock}} \equiv 0$).
 
 ---
 
-### Critique 4: Coordinate Volume Element & Geodesic Distance Break in Penrose-Diósi Decoherence (§1.1, Eq. 168)
+### Critique 4: Logarithmic Singularity for Sub-Patch Distances in Wavefront Arrival Latency (§4.3, Eq. 432)
 
 * **The Formula in Draft:**  
-  $$\Gamma_{\text{grav}} = \frac{G}{\hbar} \iint_{\Omega_{\mathbb{R}} \times \Omega_{\mathbb{R}}} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\sqrt{\|\mathbf{x} - \mathbf{y}\|^2 + R_0^2}} \, d^3x \, d^3y < \infty$$
+  $$\Delta t_{\text{response}}(x) = \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_u}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_u}{v_{\text{bistable}} r_{\text{eff}} - D_u} \right)$$
 
 * **The Mathematical Flaw:**  
-  On a curved spatial 3-manifold $(\Sigma, h_{ij})$, flat coordinate volume measures $d^3x \, d^3y$ and flat Euclidean distance $\|\mathbf{x}-\mathbf{y}\|$ violate general coordinate invariance.
+  For points $x$ located within the initial stimulation patch ($d_g^{\partial E}(x_0, x) \le r_{\text{eff}}$), the numerator inside the logarithm satisfies $v_{\text{bistable}} d_g^{\partial E} - D_u \le 0$, producing a singular or negative-infinite latency $\Delta t \to -\infty$. For points inside the activation patch, traveling wave propagation distance is zero, and activation occurs on the local biochemical timescale $\tau_{\text{local}}$.
 
 * **Required Proof Closure:**  
-  Formulate the gravitationally induced decoherence rate with the invariant Riemannian volume elements and geodesic metric distance:
-  $$\boxed{\Gamma_{\text{grav}} = \frac{G}{\hbar} \iint_{\Sigma \times \Sigma} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\sqrt{d_h(\mathbf{x}, \mathbf{y})^2 + R_0^2}} \sqrt{\det h(\mathbf{x})} \, d^3x \sqrt{\det h(\mathbf{y})} \, d^3y < \infty}$$
+  Formulate the arrival latency as a three-branch piecewise function:
+  $$\boxed{\Delta t_{\text{response}}(x) = \begin{cases} 
+  \tau_{\text{local}} & \text{for } d_g^{\partial E}(x) \le r_{\text{eff}} \text{ and } r_0 \ge r_{\text{crit}} \quad (\text{Local Nucleation Zone}) \\
+  \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_u}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_u}{v_{\text{bistable}} r_{\text{eff}} - D_u} \right) & \text{for } d_g^{\partial E}(x) > r_{\text{eff}}, \, r_0 \ge r_{\text{crit}}, \, \chi_{\text{soliton}} < \chi_{\text{crit}} \quad (\text{Super-Critical Wavefront}) \\
+  +\infty \implies \mathbf{R}_{\text{active}} \equiv \mathbf{0} & \text{for } r_0 < r_{\text{crit}} \text{ or } \chi_{\text{soliton}} \ge \chi_{\text{crit}} \quad (\text{Sub-Critical Quenching})
+  \end{cases}}$$
 
 ---
 
@@ -105,18 +105,18 @@ Following the twenty-fourth-order resolution of Green-Kubo spatial IR synchroniz
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Fix Active Pore Discriminant Dimensions in §4.4 (Eq. 495):** Group ATPase force with line tension $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$ to ensure strict $[\mathrm{N^2}]$ dimensional homogeneity under the radical.
-2. **Normalize Brownian Ratchet Driving Exponent in §4.3 (Eq. 413):** Replace $k_B T$ with $R T$ in the molar free energy exponent $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$.
-3. **Scale CISS Current Density in §5.2 (Eq. 563):** Introduce areal density factor $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$ to establish $[\mathrm{A/m^2}]$ flux dimensions.
-4. **Generalize Penrose-Diósi Integral in §1.1 (Eq. 168):** Formulate with Riemannian volume forms $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.133 through 6.136 to the milestone tracking logs.
+1. **Synchronize Relativistic Conduction in §3.2 (Line 371):** Update to $\sigma_{\text{total}} = \frac{\boldsymbol{\sigma}_{\text{viscous}}:\dot{\boldsymbol{\varepsilon}}}{T} + \mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$.
+2. **Bound Radical-Pair Signaling Yield Integral in §4.1 (Eq. 388):** Define $\Phi_S(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{RP}}(t)) dt \in [0, 1]$ on the decaying radical-pair sub-density matrix $\hat{\rho}_{\text{RP}}(t)$.
+3. **Add Macauley Ramp to Elastic Shock Dissipation in §2.3.5 (Eq. 340):** Replace $(\sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I})^2$ with $\langle \sigma_{\text{impact}} - \kappa_{\text{stress}}\Delta\mathcal{I} \rangle_+^2$.
+4. **Piecewise Regularize Eikonal Wavefront Arrival Time in §4.3 (Eq. 432):** Add the explicit inside-patch branch $\Delta t_{\text{response}}(x) = \tau_{\text{local}}$ for $d_g^{\partial E}(x) \le r_{\text{eff}}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.137 through 6.140 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 25
+## 5. Master Revision Checklist for Iteration 26
 
-- [x] **Item 1:** Correct active pore radius quadratic radical in §4.4 (Eq. 495) with $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$.
-- [x] **Item 2:** Update Brownian ratchet driving exponent in §4.3 (Eq. 413) to $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$.
-- [x] **Item 3:** Scale CISS electron current in §5.2 (Eq. 563) by surface number density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$.
-- [x] **Item 4:** Upgrade Penrose-Diósi decoherence in §1.1 (Eq. 168) to curved covariant measure $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
+- [x] **Item 1:** Update thermal dissipation in §3.2 (Line 371) to include relativistic Tolman acceleration $\mathbf{J}_q \cdot [\nabla(1/T) - \frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}]$.
+- [x] **Item 2:** Restrict radical-pair signaling yield integral in §4.1 (Eq. 388) to decaying subspace $\hat{\rho}_{\text{RP}}(t)$.
+- [x] **Item 3:** Insert Macauley ramp $\langle \cdot \rangle_+^2$ into linear elastic shock dissipation in §2.3.5 (Eq. 340).
+- [x] **Item 4:** Formulate three-branch arrival latency in §4.3 (Eq. 432) with local patch branch $\Delta t = \tau_{\text{local}}$ for $d_g \le r_{\text{eff}}$.
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
