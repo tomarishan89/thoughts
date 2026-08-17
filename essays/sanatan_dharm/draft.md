@@ -429,11 +429,13 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions and $\sigma_{\text{protein}} \approx 1$ accounts for the direct van 't Hoff ideal solute pressure of trapped cytoplasmic macromolecules. This drives outward water influx across the lipid bilayer with positive normal velocity:
      $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
      where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
-  3. **Stage 2b (Membrane Incompressible Thinning & Tensile Fracture):**  
-     For a spherical cell of radius $r(t)$ and unswollen radius $r_0$ with bilayer cortex thickness $h(t)$, **bilayer volume-incompressibility** ($V_{\text{cortex}} = 4\pi r(t)^2 h(t) = 4\pi r_0^2 h_0$) enforces dynamic area-expansion thinning $h(t) = h_0 \left( \frac{r_0}{r(t)} \right)^2$. Outward swelling generates tensile Cauchy hoop stress scaling cubically with radius:
-     $$\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)}{2 h(t)} = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)^3}{2 h_0 r_0^2}$$
-     Tensile membrane failure occurs when hoop stress exceeds the ultimate tensile strength of the lipid-cytoskeletal cortex ($\sigma_{\text{UTS}}^{\text{membrane}}$):
-     $$\boxed{\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)^3}{2 h_0 r_0^2} \ge \sigma_{\text{UTS}}^{\text{membrane}} \implies \text{Membrane Pore Cavitation / Mechanical Lysis}}$$
+  3. **Stage 2b (Membrane Incompressible Thinning & Rate-Dependent Viscoelastic Plasticity):**  
+     For a spherical cell of radius $r(t)$ and unswollen radius $r_0$ with bilayer cortex thickness $h(t)$, **bilayer volume-incompressibility** ($V_{\text{cortex}} = 4\pi r(t)^2 h(t) = 4\pi r_0^2 h_0$) enforces dynamic area-expansion thinning $h(t) = h_0 \left( \frac{r_0}{r(t)} \right)^2$. The dynamic membrane expansion strain rate is:
+     $$\dot{\varepsilon}(t) \equiv \frac{\dot{r}(t)}{r(t)} = \frac{L_p}{r(t)} \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \quad [\mathrm{s}^{-1}]$$
+     Coupling cortical Kelvin-Voigt elasticity to 2D lipid fluid dissipation, the ultimate tensile strength obeys the **Cowper-Symonds Rate-Dependent Viscoplastic Yield Envelope**:
+     $$\sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}) \equiv \sigma_{\text{UTS}}^0 \left[ 1 + \left( \frac{\dot{\varepsilon}(t)}{\dot{\varepsilon}_0} \right)^{1/p_{\text{rate}}} \right] + \eta_{\text{cortex}} \dot{\varepsilon}(t) \quad [\mathrm{Pa}]$$
+     where $\sigma_{\text{UTS}}^0$ is the quasi-static failure strength, $\dot{\varepsilon}_0$ is the reference plastic strain rate, $p_{\text{rate}} \ge 1$ is the dynamic viscoplastic hardening exponent, and $\eta_{\text{cortex}}$ is 2D cortical shear viscosity. Tensile membrane rupture occurs when hoop stress exceeds the dynamic rate-dependent failure limit:
+     $$\boxed{\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)^3}{2 h_0 r_0^2} \ge \sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}(t)) \implies \text{Dynamic Bilayer Cavitation / Mechanical Lysis}}$$
   4. **Stage 2c (Secondary Convective Mass Evacuation):**  
      The formation of macroscopic lysis pores inverts the effective kinematic boundary condition from swelling expansion to rapid hydrodynamic efflux scaled by cytoplasmic mass density $\rho(x, t) \in [\mathrm{kg/m^3}]$:
      $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \ll 0 \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \mu(E) \longrightarrow 0$$
@@ -527,9 +529,9 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 1. **Discrete IP3R Calcium-Induced Calcium Release (CICR) Stochastic Jump Clustering:**
    - *Status:* **Open / Active.**
    - *Description:* In §4.3, reaction-diffusion operates in the continuum limit. At sub-micron scales ($< 1 \, \mu\mathrm{m}$), discrete clustering of endoplasmic reticulum $\mathrm{IP}_3$ receptor channels introduces state-dependent stochastic Langevin noise $\boldsymbol{\xi}(x, t)$, producing sub-continuum nucleation latency variance $\mathrm{Var}(\Delta t_{\text{response}})$.
-2. **Viscoelastic Rate-Dependent Plasticity in Lipid Bilayer Strain-to-Failure:**
+2. **High-Strain Hydrodynamic Pore Edge Line Tension & Self-Healing Closure Rate:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.4, membrane hoop stress $\sigma_{\text{hoop}}$ assumes quasi-static elastic yield. At finite strain rates ($\dot{\varepsilon} \sim 10^2 \, \mathrm{s}^{-1}$), rate-dependent viscoelastic plasticity (Kelvin-Voigt cortex vs. Maxwell fluid bilayer) alters the ultimate tensile strength $\sigma_{\text{UTS}}(\dot{\varepsilon})$, requiring a dynamic strain-rate failure envelope.
+   - *Description:* In §4.4, transient lysis pores nucleate when $\sigma_{\text{hoop}} > \sigma_{\text{UTS}}(\dot{\varepsilon})$. Pore edge line tension $\gamma_{\text{line}} \sim 10^{-11} \, \mathrm{N}$ competes with residual cortex tension $\sigma_{\text{residual}}$, requiring an energy balance to close the spontaneous resealing condition ($\dot{r}_{\text{pore}} < 0$).
 3. **Interstitial Poromechanical Matrix Tortuosity & Biot Consolidation:**
    - *Status:* **Open / Active.**
    - *Description:* In §5.2, Darcy's permeability tensor $\mathbf{K}_{\text{perm}}$ assumes a rigid extracellular matrix. Under large mechanical deformations, dynamic tissue strain alters pore geometry ($\mathbf{K}(\boldsymbol{\varepsilon})$), requiring fully coupled Biot poromechanics to close interstitial fluid flow.
@@ -537,6 +539,7 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Rate-Dependent Viscoelastic Plasticity in Lipid Bilayer Strain-to-Failure**~~ (*Closed in §4.4 via dynamic strain rate $\dot{\varepsilon} \equiv \dot{r}/r$ and Cowper-Symonds failure envelope $\sigma_{\text{UTS}}(\dot{\varepsilon}) = \sigma_{\text{UTS}}^0 [1 + (\dot{\varepsilon}/\dot{\varepsilon}_0)^{1/p}] + \eta_{\text{cortex}}\dot{\varepsilon}$.*)
 - [x] ~~**Coupled FitzHugh-Nagumo Kinetics & Chemical Soliton Stability Bound**~~ (*Closed in §4.3 via coupled fast-slow activator-inhibitor system $(u, w)$, chemical Mach number $\mathrm{Ma}_{\text{chem}} \equiv \|\mathbf{v}_{\text{cytosol}}\|/v_{\text{bistable}} < 1$, and soliton stability invariant $\chi_{\text{soliton}} < \frac{1}{2}$.*)
 - [x] ~~**Canonical Volume Measure on Complex Hilbert State Space**~~ (*Closed in §1.1 via $d\mu_g = \sqrt{\det g} \, d^3x d^3y$, rigorously closing inner products, operator adjoints, and Petz recovery.*)
 - [x] ~~**Tensile Apex Cut-Off Regularization in Capped Drucker-Prager Yield Model**~~ (*Closed in §2.3.1 via $\min(\operatorname{Tr}(\boldsymbol{\sigma}), \frac{\sigma_{\text{yield}}}{\alpha_{\text{DP}}})$, eliminating negative $\sqrt{3J_2}$ singularities.*)
