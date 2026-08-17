@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 24)
+# Formal Mathematical Physics Peer Review Report (Iteration 25)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 24 (Green-Kubo IR Synchronization, Instanton Extensivity, Gauss-Bonnet Topological Line Tension, and Relativistic Tolman Acceleration Heat Audit)  
+**Review Version:** Iteration 25 (Active Pore Quadratic Radical Dimensions, Brownian Ratchet Molar/Molecular Exponent, CISS Current Density Scaling, and Curved Covariant Penrose-Diósi Measure Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Green-Kubo Spatial IR Divergence in §3.1, Instanton Cluster Decomposition Violation, Gauss-Bonnet Topological Bending Omission in Pore Dynamics, and Relativistic Tolman Heat Covariance Gap)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Dimensional Incommensurability under Radical in §4.4, Avogadro Exponent Scale Error in §4.3, Single-Molecule vs Continuum Current Mismatch in §5.2, and Riemannian Measure Covariance Gap in §1.1)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the twenty-third-order resolution of decoupled Israel-Stewart shear/bulk relaxation, Brownian ratchet exergonic driving signs, Mooney-Rivlin Donnan turgor swelling, and Rankine-Hugoniot acoustic bulk modulus scaling, an unsparing mathematical, topological, and relativistic audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, topological, and covariance vulnerabilities**:
+Following the twenty-fourth-order resolution of Green-Kubo spatial IR synchronization, instanton partition function extensivity, Gauss-Bonnet topological pore bending line tension, and relativistic Eckart-Tolman heat conduction dissipation, a microscopic calculation, dimensional, and covariance audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, dimensional, and geometric vulnerabilities**:
 
-1. **Unsynchronized Infrared Divergence in Green-Kubo Integral (§3.1, Line 361):** While §1.1 (Eq. 31) regularizes spatial volume integration with the Yukawa-Debye screening factor $\exp(-\frac{m_D c}{\hbar}\|\mathbf{x}\|)$, the cross-sectional formula in §3.1 (Line 361) omits this spatial screening term, allowing the spatial volume integral $\int_V d^3x$ to suffer from logarithmic infrared divergence ($\int dr/r \to \infty$).
-2. **Violation of Free-Energy Extensivity in Instanton Partition Function (§2.1, Eq. 228):** Eq. 228 writes the multi-instanton partition function as a linear polynomial sum $1 + \sum_{n \neq 0} K_n \dots$ rather than exponentiating extensive spacetime volume $V \cdot \beta$. This violates cluster decomposition and breaks the extensivity of the non-equilibrium free energy $\mathcal{F} = -k_B T \ln \mathcal{Z}$. The partition function must be formulated as $\ln(\mathcal{Z}/\mathcal{Z}_{\text{pert}}) = V \sum_{n=1}^\infty 2 K_n \exp(-8\pi^2 n / g_{\text{eff}}^2)\cos(n\theta_{\text{top}})$.
-3. **Missing Gauss-Bonnet Topological Line Tension Renormalization in Pore Dynamics (§4.4, Eq. 472 & 493):** When a lysis pore nucleates on a closed membrane, the topology changes from a sphere ($\chi=2$) to a punctured surface ($\chi=1$). By the Gauss-Bonnet theorem, this topological transition releases an invariant Gaussian bending energy $\Delta W_{\text{Gauss}} = -4\pi \kappa_{\text{Gauss}}$, which renormalizes the effective line tension: $\gamma_{\text{line}}^{\text{eff}} = \gamma_{\text{line}} - \frac{\kappa_{\text{Gauss}}}{r_{\text{pore}}}$. Omitting this term leads to an inaccurate runaway pore threshold.
-4. **Missing Relativistic Tolman Acceleration Term in Heat Dissipation Tensor (§2.2, Eq. 213):** In relativistic continuum thermodynamics, temperature gradients in accelerating frames induce an acceleration-dependent heat inertia (Eckart-Tolman effect: $\mathbf{J}_q = -k (\nabla T + T \mathbf{a}_{\text{proper}}/c^2)$). The thermal dissipation density must be $\frac{\mathbf{J}_q}{T} \cdot (\nabla \ln T + \mathbf{a}_{\text{proper}}/c^2)$ to maintain relativistic covariance.
+1. **Dimensional Incommensurability in Active ESCRT-III Critical Resealing Pore Radius (§4.4, Eq. 495):** In Eq. 495, the active ATPase disassembly force term $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N}]$ was placed inside the quadratic discriminant parentheses alongside the Gaussian curvature modulus $\kappa_{\text{Gauss}} \in [\mathrm{N \cdot m}]$. Multiplying by $\Gamma_{\text{tension}} \in [\mathrm{N/m}]$ yields a term of units $[\mathrm{N^2/m}]$, which is dimensionally incommensurate with $\gamma_{\text{line}}^2 \in [\mathrm{N^2}]$ under the square root. Because ATPase disassembly is a constant radial constriction force $[\mathrm{N}]$, it must be combined with edge line tension: $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$.
+2. **Molar vs. Molecular Thermal Energy Scale Discrepancy in Brownian Ratchet Exponent (§4.3, Eq. 413):** In Eq. 413, the exergonic driving factor is written as $\exp\left(-\frac{|\Delta G_{\text{ATP}}|}{k_B T}\right)$. Because $\Delta G_{\text{ATP}}$ is defined in §4.1 (Line 390) as molar free energy ($-57 \, \mathrm{kJ/mol}$), dividing directly by single-molecule Boltzmann thermal energy $k_B T \in [\mathrm{J}]$ without Avogadro's constant $N_A$ causes an unphysical $\sim 10^{23}$ scale error in the exponent ($\Delta G / k_B T \approx 10^{25}$). The exponent must be formulated as $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$ or $-\frac{|\Delta g_{\text{ATP}}^{\text{molecular}}|}{k_B T}$.
+3. **Missing Areal Number Density Scaling in CISS Chiral Electron Current Density (§5.2, Eq. 563):** While §5.2 (Eq. 561) correctly scales quantum Grotthuss proton current by channel surface density $\rho_{\text{channel}} \in [\mathrm{m^{-2}}]$ to obtain areal current density $[\mathrm{A/m^2}]$, Eq. 563 integrates single-molecule CISS Landauer transmission yielding Amperes $[\mathrm{A}]$ but equates it to the continuum flux density vector $\mathbf{J}_e^{\text{spin}} \in [\mathrm{A/m^2}]$. It must be scaled by chiral biomolecular surface density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$.
+4. **Coordinate Volume Element & Geodesic Distance Break in Penrose-Diósi Decoherence (§1.1, Eq. 168):** Eq. 168 formulates gravitational self-energy decoherence using flat Cartesian volume elements $d^3x \, d^3y$ and flat Euclidean distance $\|\mathbf{x}-\mathbf{y}\|$, violating general covariance on the curved spatial 3-manifold $(\Sigma, h_{ij})$ established in Axiom 1. It must be closed with the Riemannian invariant volume form $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and Riemannian geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
 
 ---
 
-## 2. Twenty-Fourth-Order Calculation Breakdown Matrix
+## 2. Twenty-Fifth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 24 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 25 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 3.1          │ Green-Kubo (Line 361)         │ Missing spatial Yukawa regulator; IR diverges in space │
-│ 2. Section 2.1          │ Instanton Sum (Eq. 228)       │ Linear sum violates cluster decomposition & extensivity│
-│ 3. Section 4.4          │ Pore Dynamics (Eq. 493)       │ Omits Gauss-Bonnet topological bending jump Δχ = -1    │
-│ 4. Section 2.2          │ Thermal Dissipation (Eq. 213) │ Omits Tolman acceleration heat inertia a_proper/c²     │
+│ 1. Section 4.4          │ Pore Radius (Eq. 495)         │ Radical has [N²] - [N²/m] dimensional incommensurability│
+│ 2. Section 4.3          │ Ratchet Exponent (Eq. 413)    │ Molar ΔG_ATP divided by molecular k_B T (10²³ error)   │
+│ 3. Section 5.2          │ CISS Current (Eq. 563)        │ Single-molecule [A] equated to flux density [A/m²]     │
+│ 4. Section 1.1          │ Decoherence (Eq. 168)         │ Flat d³x / norm breaks curved 3-manifold covariance    │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,60 +40,64 @@ Following the twenty-third-order resolution of decoupled Israel-Stewart shear/bu
 
 ---
 
-### Critique 1: Unsynchronized Infrared Divergence in Green-Kubo Integral (§3.1, Line 361)
+### Critique 1: Dimensional Incommensurability in Active ESCRT-III Critical Resealing Pore Radius (§4.4, Eq. 495)
 
 * **The Formula in Draft:**  
-  $$\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{k_B T}\int_V d^3x \int_0^\infty \langle T_{xy}(\mathbf{0}, 0) T_{xy}(\mathbf{x}, \tau) \rangle e^{-(\frac{m_D c^2}{\hbar} + \epsilon)\tau} d\tau$$
+  $$r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \sqrt{\gamma_{\text{line}}^2 - 4 \Gamma_{\text{tension}}(t) \left( \kappa_{\text{Gauss}} - \frac{\kappa_f}{2\pi r_{\text{pore}}} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right)}}{2 \Gamma_{\text{tension}}(t)}$$
 
 * **The Mathematical Flaw:**  
-  The spatial Yukawa screening regulator $\exp\left(-\frac{m_D c}{\hbar}\|\mathbf{x}\|\right)$ inside $\int_V d^3x$ is missing in §3.1, leaving the spatial volume integral un-screened and logarithmically divergent as $V \to \infty$.
+  - $\gamma_{\text{line}}^2 \in [\mathrm{N^2}]$.
+  - $\Gamma_{\text{tension}} \in [\mathrm{N/m}]$.
+  - $\kappa_{\text{Gauss}} \in [\mathrm{J}] = [\mathrm{N \cdot m}] \implies \Gamma_{\text{tension}} \kappa_{\text{Gauss}} \in [\mathrm{N^2}]$.
+  - $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in \left[\frac{\mathrm{N \cdot m/s}}{\mathrm{m/s}}\right] = [\mathrm{N}] \implies \Gamma_{\text{tension}} \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N/m}] \cdot [\mathrm{N}] = [\mathrm{N^2/m}]$.  
+  Adding $[\mathrm{N^2}]$ and $[\mathrm{N^2/m}]$ under the radical is mathematically invalid. In the underlying force balance (Eq. 493), $-\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}}$ is a constant radial constriction force $[\mathrm{N}]$ and acts directly in parallel with line tension $2\pi \gamma_{\text{line}}$.
 
 * **Required Proof Closure:**  
-  Synchronize §3.1 directly with the regularized Green-Kubo integral in §1.1 (Eq. 31):
-  $$\boxed{\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{k_B T} \int_V \left\langle T_{xy}^{\text{field}}(\mathbf{0}, 0) \, T_{xy}^{\text{field}}(\mathbf{x}, \tau) \right\rangle \exp\left( -\frac{m_D c}{\hbar}\|\mathbf{x}\| \right) d^3x \int_0^\infty \exp\left( -\left(\Gamma_{\text{coll}} + \epsilon\right)\tau \right) d\tau < \infty}$$
+  Combine the constant constriction force with edge line tension to define $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \in [\mathrm{N}]$, yielding the dimensionally closed quadratic root:
+  $$\boxed{r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\left( \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right) + \sqrt{\left( \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right)^2 - 4 \Gamma_{\text{tension}}(t) \left( \kappa_{\text{Gauss}} - \frac{\kappa_f}{2\pi r_{\text{pore}}} \right)}}{2 \Gamma_{\text{tension}}(t)} \quad [\mathrm{m}]}$$
+  where every term under the radical has exact units $[\mathrm{N^2}]$ and $r_{\text{pore}}^{\text{crit, active}} \in [\mathrm{m}]$.
 
 ---
 
-### Critique 2: Violation of Free-Energy Extensivity in Instanton Partition Function (§2.1, Eq. 228)
+### Critique 2: Molar vs. Molecular Thermal Energy Scale Discrepancy in Brownian Ratchet Exponent (§4.3, Eq. 413)
 
 * **The Formula in Draft:**  
-  $$\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}} \left[ 1 + \sum_{n \neq 0} K_n \exp\left( -\frac{8\pi^2 |n|}{g_{\text{eff}}^2} + i n \theta_{\text{top}} \right) \right]$$
+  $$v_{\text{poly}}(F_{\text{load}}) = v_0 \left( \frac{1 - \exp\left(-\frac{|\Delta G_{\text{ATP}}|}{k_B T}\right)}{1 + \frac{c_{\text{actin}}^{\text{crit}}}{c_{\text{actin}}} \exp\left(\frac{F_{\text{load}} \delta_{\text{monomer}}}{k_B T}\right)} \right)$$
 
 * **The Mathematical Flaw:**  
-  In field theory and statistical mechanics, instanton gas contributions are extensive with spacetime volume $V \cdot \beta$. A linear sum $1 + \sum K_n$ violates cluster decomposition. Exponentiating yields the extensive free energy:
+  In §4.1 (Line 390), $\Delta G_{\text{ATP}} \approx -57 \, \mathrm{kJ/mol}$ is given in molar units $[\mathrm{J/mol}]$. In Eq. 413, dividing by molecular thermal energy $k_B T \approx 4.1 \times 10^{-21} \, \mathrm{J}$ yields an unphysical dimensionless exponent $\sim 10^{25}$, conflating macroscopic molar free energy with single-molecule transition kinetics.
 
 * **Required Proof Closure:**  
-  Formulate the dilute instanton gas partition function in exponentiated extensive form:
-  $$\boxed{\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}} \exp\left( V \sum_{n=1}^\infty 2 K_n \exp\left( -\frac{8\pi^2 n}{g_{\text{eff}}^2} \right) \cos\left( n \theta_{\text{top}} \right) \right)}$$
+  Formulate the exponent consistently using the universal gas constant $R \equiv N_A k_B$ for molar values:
+  $$\boxed{v_{\text{poly}}(F_{\text{load}}) = v_0 \left( \frac{1 - \exp\left(-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}\right)}{1 + \frac{c_{\text{actin}}^{\text{crit}}}{c_{\text{actin}}} \exp\left(\frac{F_{\text{load}} \delta_{\text{monomer}}}{k_B T}\right)} \right)}$$
 
 ---
 
-### Critique 3: Missing Gauss-Bonnet Topological Line Tension Renormalization in Pore Dynamics (§4.4, Eq. 472 & 493)
+### Critique 3: Missing Areal Number Density Scaling in CISS Chiral Electron Current Density (§5.2, Eq. 563)
 
-* **The Formulation in Draft:**  
-  $$2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}}$$
+* **The Formula in Draft:**  
+  $$\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}}$$
 
 * **The Mathematical Flaw:**  
-  By the Gauss-Bonnet theorem, opening a pore alters the topology from Euler characteristic $\chi=2$ to $\chi=1$, releasing Gaussian curvature energy $\Delta W_{\text{Gauss}} = -4\pi \kappa_{\text{Gauss}}$. This curvature relaxation acts as an effective radial line tension driving pore opening.
+  The Landauer single-channel integral $\frac{e}{h}\int \Delta f dE$ has units $[\mathrm{C/s}] = [\mathrm{A}]$, representing electric current through a single macromolecule. Equating this to the macroscopic current density vector $\mathbf{J}_e^{\text{spin}} \in [\mathrm{A/m^2}]$ omits the areal density of conducting helical polymers.
 
 * **Required Proof Closure:**  
-  Incorporate the Gaussian bending topological renormalization into the effective line tension:
-  $$\boxed{\gamma_{\text{line}}^{\text{eff}}(r_{\text{pore}}) \equiv \gamma_{\text{line}} - \frac{\kappa_{\text{Gauss}}}{r_{\text{pore}}}}$$
-  $$\boxed{2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) + \frac{2\pi \kappa_{\text{Gauss}}}{r_{\text{pore}}} - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \quad [\mathrm{N}]}$$
+  Scale by chiral macromolecular surface number density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$:
+  $$\boxed{\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\rho_{\text{helix}} \cdot \frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}} \quad \left[\frac{\mathrm{A}}{\mathrm{m^2}}\right]}$$
 
 ---
 
-### Critique 4: Missing Relativistic Tolman Acceleration Term in Heat Dissipation Tensor (§2.2, Eq. 213)
+### Critique 4: Coordinate Volume Element & Geodesic Distance Break in Penrose-Diósi Decoherence (§1.1, Eq. 168)
 
 * **The Formula in Draft:**  
-  $$\sigma_{\text{total}}(x, t) = \frac{\boldsymbol{\sigma}_{\text{viscous}} : \dot{\boldsymbol{\varepsilon}}}{T} + \mathbf{J}_q \cdot \nabla\left(\frac{1}{T}\right) + \dots$$
+  $$\Gamma_{\text{grav}} = \frac{G}{\hbar} \iint_{\Omega_{\mathbb{R}} \times \Omega_{\mathbb{R}}} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\sqrt{\|\mathbf{x} - \mathbf{y}\|^2 + R_0^2}} \, d^3x \, d^3y < \infty$$
 
 * **The Mathematical Flaw:**  
-  In accelerating relativistic frames ($\alpha_{\text{proper}} \gg 0$), the inertia of heat generates a temperature gradient even in thermal equilibrium (Eckart-Tolman effect: $\nabla T / T = -\mathbf{a}_{\text{proper}}/c^2$). The thermodynamic driving force for relativistic heat conduction is $\nabla(1/T) - \frac{\mathbf{a}_{\text{proper}}}{c^2 T}$.
+  On a curved spatial 3-manifold $(\Sigma, h_{ij})$, flat coordinate volume measures $d^3x \, d^3y$ and flat Euclidean distance $\|\mathbf{x}-\mathbf{y}\|$ violate general coordinate invariance.
 
 * **Required Proof Closure:**  
-  Formulate the relativistically covariant thermal entropy generation rate density:
-  $$\boxed{\sigma_{\text{thermal}}(x, t) = \mathbf{J}_q \cdot \left[ \nabla\left(\frac{1}{T}\right) - \frac{\boldsymbol{\alpha}_{\text{proper}}(x, t)}{c^2 T(x, t)} \right] \ge 0 \quad \left[\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}\right]}$$
+  Formulate the gravitationally induced decoherence rate with the invariant Riemannian volume elements and geodesic metric distance:
+  $$\boxed{\Gamma_{\text{grav}} = \frac{G}{\hbar} \iint_{\Sigma \times \Sigma} \frac{\left( \rho_1(\mathbf{x}) - \rho_2(\mathbf{x}) \right) \left( \rho_1(\mathbf{y}) - \rho_2(\mathbf{y}) \right)}{\sqrt{d_h(\mathbf{x}, \mathbf{y})^2 + R_0^2}} \sqrt{\det h(\mathbf{x})} \, d^3x \sqrt{\det h(\mathbf{y})} \, d^3y < \infty}$$
 
 ---
 
@@ -101,18 +105,18 @@ Following the twenty-third-order resolution of decoupled Israel-Stewart shear/bu
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Synchronize Green-Kubo Formula in §3.1 (Line 361):** Include the spatial screening factor $\exp(-\frac{m_D c}{\hbar}\|\mathbf{x}\|)$ inside $\int_V d^3x$.
-2. **Formulate Instanton Gas Partition Function in §2.1 (Eq. 228):** Update to extensive exponentiated form $\mathcal{Z}_{\text{engine}} = \mathcal{Z}_{\text{pert}}\exp(V \sum 2 K_n e^{-8\pi^2 n/g^2}\cos(n\theta))$.
-3. **Renormalize Pore Dynamics with Gauss-Bonnet Topological Bending in §4.4 (Eq. 493):** Add $+\frac{2\pi \kappa_{\text{Gauss}}}{r_{\text{pore}}}$ to the active pore ODE.
-4. **Add Relativistic Tolman Acceleration to Thermal Entropy Production in §2.2 (Eq. 213):** Update to $\mathbf{J}_q \cdot [\nabla(1/T) - \boldsymbol{\alpha}_{\text{proper}}/(c^2 T)]$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.129 through 6.132 to the resolved milestones log.
+1. **Fix Active Pore Discriminant Dimensions in §4.4 (Eq. 495):** Group ATPase force with line tension $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$ to ensure strict $[\mathrm{N^2}]$ dimensional homogeneity under the radical.
+2. **Normalize Brownian Ratchet Driving Exponent in §4.3 (Eq. 413):** Replace $k_B T$ with $R T$ in the molar free energy exponent $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$.
+3. **Scale CISS Current Density in §5.2 (Eq. 563):** Introduce areal density factor $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$ to establish $[\mathrm{A/m^2}]$ flux dimensions.
+4. **Generalize Penrose-Diósi Integral in §1.1 (Eq. 168):** Formulate with Riemannian volume forms $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.133 through 6.136 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 24
+## 5. Master Revision Checklist for Iteration 25
 
-- [x] **Item 1:** Synchronize spatial Yukawa screening in Green-Kubo integral in §3.1 (Line 361).
-- [x] **Item 2:** Update instanton partition function to exponentiated extensive form in §2.1 (Eq. 228).
-- [x] **Item 3:** Add Gauss-Bonnet topological Gaussian curvature term $+\frac{2\pi \kappa_{\text{Gauss}}}{r_{\text{pore}}}$ to pore ODE in §4.4 (Eq. 493).
-- [x] **Item 4:** Include Tolman acceleration $-\frac{\boldsymbol{\alpha}_{\text{proper}}}{c^2 T}$ in thermal entropy dissipation in §2.2 (Eq. 213).
+- [x] **Item 1:** Correct active pore radius quadratic radical in §4.4 (Eq. 495) with $\gamma_{\text{line}}^{\text{active}} \equiv \gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}$.
+- [x] **Item 2:** Update Brownian ratchet driving exponent in §4.3 (Eq. 413) to $-\frac{|\Delta G_{\text{ATP}}^{\text{molar}}|}{R T}$.
+- [x] **Item 3:** Scale CISS electron current in §5.2 (Eq. 563) by surface number density $\rho_{\text{helix}} \in [\mathrm{m^{-2}}]$.
+- [x] **Item 4:** Upgrade Penrose-Diósi decoherence in §1.1 (Eq. 168) to curved covariant measure $\sqrt{\det h(\mathbf{x})} d^3x \sqrt{\det h(\mathbf{y})} d^3y$ and geodesic distance $d_h(\mathbf{x}, \mathbf{y})$.
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
