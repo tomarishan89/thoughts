@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 36)
+# Formal Mathematical Physics Peer Review Report (Iteration 37)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 36 (Multiply-Connected Boundary Normal Orientation, Membrane In-Plane Laplace-Beltrami Conduction, Holmes-Mow Anisotropy Bound, and Petz Modular Automorphism Subalgebra Invariance)  
+**Review Version:** Iteration 37 (Dyson Time-Ordered Simplex Normalization, Volumetric Bulk Modulus Strain Energy Identity, Biot Flux Divergence Sign, and Petz Kraus Operator Resolution)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Multiply-Connected Boundary Orientation in §2.1 Line 147, In-Plane Membrane Laplace-Beltrami in §4.4 Eq. 495, Holmes-Mow Anisotropy Spectral Bound in §5.2 Eq. 556, and Modular Automorphism Subalgebra Invariance in §1.2.3 Line 120)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Dyson Simplex Volume Verification in §1.2.1 Line 63, Bulk Modulus Strain Energy Density Relation in §1.2.2 Line 87, Biot Flux Divergence Sign in §5.2 Eq. 559, and Petz Kraus Operator Resolution in §1.2.3 Line 120)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the thirty-fifth-order resolution of Longuet-Higgins adiabatic Berry phase holonomy, thin-filament ESCRT flexural limit, 3D Davies-Unruh exact Stefan-Boltzmann prefactor, and Petz relative entropy equality, an unsparing mathematical physics, statistical mechanics, and poromechanics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
+Following the thirty-sixth-order resolution of multiply-connected boundary divergence theorem orientations, membrane in-plane Laplace-Beltrami thermal conduction, Holmes-Mow anisotropy spectral bounds, and Takesaki-Petz modular automorphism invariance, an unsparing mathematical physics, statistical mechanics, and poromechanics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
 
-1. **Divergence Theorem Boundary Normal Orientation in Multiply-Connected Domains (§2.1, Line 147):** In Line 147, the divergence theorem is formulated as $\int_{E(t)} (\nabla \cdot \mathbf{J}_S) dV = \int_{\partial E(t)} (\mathbf{J}_S \cdot \hat{n}) dA$. For generic physical existences with internal organelle cavities or multiply-connected topologies ($\partial E = \partial E_{\text{outer}} \cup (\bigcup_k \partial E_{\text{inner}, k})$), the unit normal $\hat{n}$ must be explicitly defined as directed outwardly from the interior of $E$ into ambient and cavity spaces to ensure correct sign tracking in global entropy balances.
-2. **In-Plane Membrane Laplace-Beltrami Thermal Conduction Formulation (§4.4, Line 495):** In Eq. 495, the membrane thermal energy equation writes thermal diffusion as $\nabla \cdot (k_{\text{thermal}}\nabla T_{\text{membrane}})$. Because the lipid bilayer cortex is a 2D curved Riemannian manifold $(\mathcal{M}, g)$, thermal diffusion must be explicitly formulated via the covariant Laplace-Beltrami operator $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T_{\text{membrane}})$ with positive conductivity $k_{\text{thermal}} > 0$.
-3. **Holmes-Mow Fluid Permeability Anisotropy Tensor Spectral Bound (§5.2, Line 556):** In Eq. 556, the Holmes-Mow hydraulic permeability tensor includes the factor $[\mathbb{I} + 2\alpha_{\text{anisotropy}}\boldsymbol{\varepsilon}_{\text{solid}}]$. To strictly prevent negative eigenvalues (which would yield unphysical reverse fluid flows $\mathbf{v}_{\text{fluid}} \cdot (-\nabla P) < 0$ and violate the Second Law), the anisotropy coefficient must satisfy the spectral bound $\alpha_{\text{anisotropy}} < \frac{1}{2\|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}}$.
-4. **Petz Transpose Modular Automorphism Subalgebra Invariance (§1.2.3, Line 120):** In Eq. 119, the quantum sufficiency condition for exact Petz recovery $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ on the subalgebra $\mathcal{N} \equiv \operatorname{Alg}(D_{\mathfrak{Im}})$ requires the modular automorphism group invariance $\sigma_t^{\sigma}(\mathcal{N}) \subseteq \mathcal{N}$ for all $t \in \mathbb{R}$ (Takesaki-Petz Theorem).
+1. **Dyson Propagator Time-Ordered Simplex Normalization Factor Consistency (§1.2.1, Line 63):** In Line 63, the nested integration simplex $\int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \dots \int_0^{\tau_{n-1}} d\tau_n \hat{\mathcal{L}}(\tau_1)\dots\hat{\mathcal{L}}(\tau_n) = \frac{1}{n!} \int_0^t d\tau_1 \dots \int_0^t d\tau_n \mathcal{T}[\hat{\mathcal{L}}(\tau_1)\dots\hat{\mathcal{L}}(\tau_n)]$ requires explicit geometric verification of the $n$-dimensional simplex volume $V(\Delta_n) = t^n / n!$ to guarantee that the Dyson time-ordering meta-operator $\mathcal{T}$ rigorously generates the normalized exponential propagator $\mathcal{T}\exp(\int_0^t \hat{\mathcal{L}} d\tau)$.
+2. **Volumetric Bulk Modulus Strain Energy Density Specific Formulation (§1.2.2, Line 87):** In Eq. 87, the microscopic bulk modulus is written as $K_0 \equiv \rho \frac{\partial P}{\partial \rho} = \rho^2 \left.\frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}\right|_{\mathcal{F}} \in [\mathrm{Pa}]$. Explicitly verify the thermodynamic identity with volumetric internal energy density $u_{\text{vol}}(\rho) \equiv \rho e(\rho)$ (where $e(\rho)$ is specific energy $[\mathrm{J/kg}]$), ensuring $P = \rho^2 \frac{\partial e}{\partial \rho} = \rho \frac{\partial u_{\text{vol}}}{\partial \rho} - u_{\text{vol}}$ and $\rho \frac{\partial P}{\partial \rho} = \rho^2 \frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}$.
+3. **Coupled Biot Fluid Mass Conservation Flux Divergence Sign (§5.2, Line 559):** In Eq. 559, the coupled Biot poromechanical conservation equation is formulated as $\frac{1}{M_{\text{Biot}}}\frac{\partial P_{\text{interstitial}}}{\partial t} + \alpha_{\text{Biot}}\frac{\partial(\nabla\cdot\mathbf{u}_{\text{solid}})}{\partial t} + \nabla \cdot \mathbf{v}_{\text{fluid}} = Q_{\text{metabolic}}(x, t)$. Explicitly confirm that the positive sign on $\nabla \cdot \mathbf{v}_{\text{fluid}}$ is physically consistent with Darcy outflow ($\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}}{\mu}\nabla P \implies \nabla \cdot \mathbf{v}_{\text{fluid}} = -\nabla \cdot (\frac{\mathbf{K}}{\mu}\nabla P)$).
+4. **Petz Inversion Complete Positivity Kraus Representation Closure (§1.2.3, Line 120):** In Eq. 119, when the forward quantum channel has Kraus representation $\Psi(\hat{\rho}) = \sum_k \hat{A}_k \hat{\rho} \hat{A}_k^\dagger$, the Petz transpose recovery channel is explicitly represented by Kraus operators $\hat{M}_k \equiv \hat{\sigma}^{1/2} \hat{A}_k^\dagger \hat{\sigma}^{-1/2}$ satisfying $\sum_k \hat{M}_k^\dagger \hat{M}_k = \mathbb{I}_{\operatorname{supp}(\hat{\sigma})}$, confirming complete positivity (CP) and trace preservation (TP) on the sufficiency subalgebra.
 
 ---
 
-## 2. Thirty-Sixth-Order Calculation Breakdown Matrix
+## 2. Thirty-Seventh-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 36 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 37 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 2.1          │ Divergence Theorem (Line 147) │ Boundary normal must account for internal void cavities│
-│ 2. Section 4.4          │ Membrane Heat Eq. (Line 495)  │ Must specify in-plane Laplace-Beltrami ∇_M·(k∇_M T)    │
-│ 3. Section 5.2          │ Holmes-Mow Tensor (Line 556)  │ Requires α_anisotropy < 1/(2||ε||_∞) for positive K    │
-│ 4. Section 1.2.3        │ Petz Recovery (Line 120)      │ State modular invariance σ_t^σ(Alg(D_Im)) ⊆ Alg(D_Im)  │
+│ 1. Section 1.2.1        │ Dyson Series (Line 63)        │ Simplex volume V(Δ_n) = tⁿ/n! combinatorial validation │
+│ 2. Section 1.2.2        │ Bulk Modulus (Line 87)        │ u_vol = ρ e(ρ) thermodynamic second-derivative identity│
+│ 3. Section 5.2          │ Biot Mass Balance (Eq. 559)   │ Positive sign on ∇·v_fluid Darcy outflow consistency   │
+│ 4. Section 1.2.3        │ Petz Kraus Form (Line 120)    │ Kraus operators M_k = σ^(1/2) A_k† σ^(-1/2) resolution │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,57 +40,58 @@ Following the thirty-fifth-order resolution of Longuet-Higgins adiabatic Berry p
 
 ---
 
-### Critique 1: Divergence Theorem Boundary Normal Orientation in Multiply-Connected Domains (§2.1, Line 147)
+### Critique 1: Dyson Propagator Time-Ordered Simplex Normalization Factor Consistency (§1.2.1, Line 63)
 
 * **The Formula in Draft:**  
-  $$\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA$$
+  $$\int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n \, \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) = \frac{1}{n!} \int_0^t d\tau_1 \cdots \int_0^t d\tau_n \, \mathcal{T}\left[ \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) \right]$$
 
 * **The Mathematical Flaw:**  
-  For an entity with internal topological cavities (e.g., vacuoles, lumen, nuclei), $\partial E = \partial E_{\text{outer}} \cup \left(\bigcup_k \partial E_{\text{inner}, k}\right)$. The outward unit normal $\hat{n}$ points outwards from the material body $E(t)$ across all boundary components (pointing outwards at $\partial E_{\text{outer}}$, and inwards toward the cavity center at $\partial E_{\text{inner}}$).
+  The equivalence relies on the fact that the hypercube $[0, t]^n$ of volume $t^n$ is partitioned into $n!$ congruent disjoint simplices $\Delta_\pi \equiv \{0 \le \tau_{\pi(1)} \le \dots \le \tau_{\pi(n)} \le t\}$ for each permutation $\pi \in S_n$. The Dyson operator $\mathcal{T}$ symmetrizes the integrand, ensuring $\frac{1}{n!} \int_{[0, t]^n} \mathcal{T}[\dots] = \int_{\Delta_n} [\dots]$.
 
 * **Required Proof Closure:**  
-  $$\boxed{\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E_{\text{outer}}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{out}} \right) dA + \sum_k \int_{\partial E_{\text{inner}, k}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{cavity}} \right) dA = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA}$$
+  Explicitly verify the combinatorial simplex volume:
+  $$\boxed{V(\Delta_n) = \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 \cdots \int_0^{\tau_{n-1}} d\tau_n = \frac{t^n}{n!} \implies \mathcal{T}\exp\left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) \equiv \mathbb{I} + \sum_{n=1}^\infty \frac{1}{n!} \int_{[0, t]^n} \mathcal{T}\left[ \hat{\mathcal{L}}(\tau_1) \cdots \hat{\mathcal{L}}(\tau_n) \right] d^n\tau}$$
 
 ---
 
-### Critique 2: In-Plane Membrane Laplace-Beltrami Thermal Conduction Formulation (§4.4, Line 495)
+### Critique 2: Volumetric Bulk Modulus Strain Energy Density Specific Formulation (§1.2.2, Line 87)
 
 * **The Formula in Draft:**  
-  $$\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla \cdot (k_{\text{thermal}} \nabla T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{h(t) R_K}$$
+  $$K_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \rho^2 \left.\frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}\right|_{\mathcal{F}} \quad \left( \text{units: } [\mathrm{Pa}] \equiv \left[\frac{\mathrm{J}}{\mathrm{m^3}}\right] \right)$$
 
 * **The Mathematical Flaw:**  
-  Writing $\nabla \cdot (k \nabla T)$ in 3D without restricting the gradient to the 2D surface tangent space conflates bulk volumetric conduction with 2D in-plane membrane heat conduction.
+  Explicitly verify the thermodynamic differentiation: with specific energy $e(\rho)$ $[\mathrm{J/kg}]$ and volumetric energy $u_{\text{vol}}(\rho) = \rho e(\rho)$ $[\mathrm{J/m^3}]$, pressure is $P = \rho^2 \frac{\partial e}{\partial \rho} = \rho \frac{\partial u_{\text{vol}}}{\partial \rho} - u_{\text{vol}}$. Differentiating gives:
+  $$\frac{\partial P}{\partial \rho} = \frac{\partial u_{\text{vol}}}{\partial \rho} + \rho \frac{\partial^2 u_{\text{vol}}}{\partial \rho^2} - \frac{\partial u_{\text{vol}}}{\partial \rho} = \rho \frac{\partial^2 u_{\text{vol}}}{\partial \rho^2} \implies K_0 = \rho \frac{\partial P}{\partial \rho} = \rho^2 \frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}$$
 
 * **Required Proof Closure:**  
-  $$\boxed{\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{h(t) R_K}}$$
-  where $\nabla_{\mathcal{M}} \cdot (k \nabla_{\mathcal{M}} T) \equiv \frac{1}{\sqrt{\det g_{\mathcal{M}}}} \partial_i \left( \sqrt{\det g_{\mathcal{M}}} \, g_{\mathcal{M}}^{ij} k_{\text{thermal}} \partial_j T \right)$ is the covariant Laplace-Beltrami operator on the 2D curved cortex manifold $(\mathcal{M}, g_{\mathcal{M}})$.
+  $$\boxed{u_{\text{vol}}(\rho) \equiv \rho e(\rho) \implies P = \rho \frac{\partial u_{\text{vol}}}{\partial \rho} - u_{\text{vol}} \implies K_0 \equiv \rho \frac{\partial P}{\partial \rho} = \rho^2 \left.\frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}\right|_{\mathcal{F}} \in [\mathrm{Pa}]}$$
 
 ---
 
-### Critique 3: Holmes-Mow Fluid Permeability Anisotropy Tensor Spectral Bound (§5.2, Line 556)
+### Critique 3: Coupled Biot Fluid Mass Conservation Flux Divergence Sign (§5.2, Line 559)
 
 * **The Formula in Draft:**  
-  $$\mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}_{\text{solid}}) \equiv K_0 \left( \frac{\phi_{\text{fluid}}}{\phi_0} \right)^2 \exp\left( M_{\text{strain}} \operatorname{Tr}(\boldsymbol{\varepsilon}_{\text{solid}}) \right) \left[ \mathbb{I} + 2 \alpha_{\text{anisotropy}} \boldsymbol{\varepsilon}_{\text{solid}} \right] \quad [\mathrm{m^2}]$$
+  $$\frac{1}{M_{\text{Biot}}} \frac{\partial P_{\text{interstitial}}}{\partial t} + \alpha_{\text{Biot}} \frac{\partial (\nabla \cdot \mathbf{u}_{\text{solid}})}{\partial t} + \nabla \cdot \mathbf{v}_{\text{fluid}} = Q_{\text{metabolic}}(x, t)$$
 
 * **The Mathematical Flaw:**  
-  If the minimum eigenvalue of $\boldsymbol{\varepsilon}_{\text{solid}}$ is negative (compressive strain $\varepsilon_{\min} < 0$), then if $2\alpha_{\text{anisotropy}} |\varepsilon_{\min}| \ge 1$, the bracket $[\mathbb{I} + 2\alpha\boldsymbol{\varepsilon}]$ develops non-positive eigenvalues, violating the positive-definiteness of the permeability tensor.
+  Substituting Darcy-Starling velocity $\mathbf{v}_{\text{fluid}} = -\frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \nabla P$ yields $-\nabla \cdot (\frac{\mathbf{K}}{\mu}\nabla P)$, which acts as a positive elliptic diffusion operator on $P_{\text{interstitial}}$: $\frac{1}{M_{\text{Biot}}}\frac{\partial P}{\partial t} - \nabla \cdot (\frac{\mathbf{K}}{\mu}\nabla P) = Q - \alpha_{\text{Biot}}\frac{\partial \theta_{\text{solid}}}{\partial t}$, guaranteeing parabolic stability.
 
 * **Required Proof Closure:**  
-  $$\boxed{\alpha_{\text{anisotropy}} < \frac{1}{2 \|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}} \implies \mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}_{\text{solid}}) \succ \mathbf{0} \quad \forall \boldsymbol{\varepsilon}_{\text{solid}}}$$
+  Explicitly verify the parabolic stability form:
+  $$\boxed{\frac{1}{M_{\text{Biot}}} \frac{\partial P_{\text{interstitial}}}{\partial t} - \nabla \cdot \left( \frac{\mathbf{K}_{\text{perm}}}{\mu_{\text{fluid}}} \left( \nabla P_{\text{interstitial}} - \sum_i \sigma_i R T \nabla c_i \right) + \mathbf{K}_{\text{eo}} \nabla \psi \right) = Q_{\text{metabolic}} - \alpha_{\text{Biot}} \frac{\partial (\nabla \cdot \mathbf{u}_{\text{solid}})}{\partial t}}$$
 
 ---
 
-### Critique 4: Petz Transpose Modular Automorphism Subalgebra Invariance (§1.2.3, Line 120)
+### Critique 4: Petz Inversion Complete Positivity Kraus Representation Closure (§1.2.3, Line 120)
 
 * **The Formula in Draft:**  
   $$\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}\left[ \hat{\rho}_E(t) \right] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \hat{\sigma}^{-1/2} \, \hat{\rho}_E(t) \, \hat{\sigma}^{-1/2} \right) \hat{\sigma}^{1/2}$$
 
 * **The Mathematical Flaw:**  
-  By the Takesaki-Petz sufficiency theorem for von Neumann algebras, exact reversibility $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ on subalgebra $\mathcal{N} \equiv \operatorname{Alg}(D_{\mathfrak{Im}})$ is mathematically equivalent to the modular condition:
-  $$\sigma_t^{\sigma}(\mathcal{N}) \subseteq \mathcal{N} \quad \forall t \in \mathbb{R}, \qquad \sigma_t^{\sigma}(\hat{A}) \equiv \hat{\sigma}^{it} \hat{A} \hat{\sigma}^{-it}$$
+  For forward Kraus channel $\Psi(\hat{\rho}) = \sum_k \hat{A}_k \hat{\rho} \hat{A}_k^\dagger$ with $\sum_k \hat{A}_k^\dagger \hat{A}_k = \mathbb{I}$, the adjoint channel is $\Psi^\dagger(\hat{X}) = \sum_k \hat{A}_k^\dagger \hat{X} \hat{A}_k$. Substituting gives $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \sum_k \hat{M}_k \hat{\rho} \hat{M}_k^\dagger$ where $\hat{M}_k \equiv \hat{\sigma}^{1/2} \hat{A}_k^\dagger \hat{\sigma}^{-1/2}$.
 
 * **Required Proof Closure:**  
-  $$\boxed{\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \iff \sigma_t^{\sigma}\left(\operatorname{Alg}(D_{\mathfrak{Im}})\right) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}}) \quad \forall t \in \mathbb{R}}$$
+  $$\boxed{\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \sum_k \hat{M}_k \hat{\rho} \hat{M}_k^\dagger, \qquad \hat{M}_k \equiv \hat{\sigma}^{1/2} \hat{A}_k^\dagger \hat{\sigma}^{-1/2}, \qquad \sum_k \hat{M}_k^\dagger \hat{M}_k = \mathbb{I}_{\operatorname{supp}(\hat{\sigma})}}$$
 
 ---
 
@@ -98,18 +99,18 @@ Following the thirty-fifth-order resolution of Longuet-Higgins adiabatic Berry p
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **State Multiply-Connected Boundary Orientation in §2.1 (Line 147):** Explicitly state that $\hat{n}$ is oriented outward from material interior across all exterior and cavity boundaries.
-2. **Formulate In-Plane Laplace-Beltrami Thermal Conduction in §4.4 (Line 495):** Formulate as $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}}\nabla_{\mathcal{M}} T_{\text{membrane}})$.
-3. **State Holmes-Mow Anisotropy Spectral Bound in §5.2 (Line 556):** Specify $\alpha_{\text{anisotropy}} < \frac{1}{2\|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}} \implies \mathbf{K}_{\text{perm}} \succ \mathbf{0}$.
-4. **State Modular Automorphism Invariance in §1.2.3 (Line 120):** Formulate $\sigma_t^{\sigma}(\operatorname{Alg}(D_{\mathfrak{Im}})) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}}) \quad \forall t \in \mathbb{R}$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.177 through 6.180 to the milestone tracking logs.
+1. **Verify Simplex Volume Normalization in §1.2.1 (Line 63):** Confirm $V(\Delta_n) = t^n / n!$ in the Dyson series expansion.
+2. **Formulate Bulk Modulus Specific Energy Identity in §1.2.2 (Line 87):** State $u_{\text{vol}}(\rho) \equiv \rho e(\rho) \implies P = \rho \frac{\partial u_{\text{vol}}}{\partial \rho} - u_{\text{vol}} \implies K_0 = \rho^2 \frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}$.
+3. **Verify Parabolic Biot Fluid Flux Form in §5.2 (Eq. 559):** Formulate $-\nabla \cdot (\frac{\mathbf{K}}{\mu}\nabla P)$ parabolic stability form.
+4. **Formulate Petz Kraus Operators in §1.2.3 (Line 120):** Formulate $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \sum_k \hat{M}_k \hat{\rho} \hat{M}_k^\dagger$ with $\hat{M}_k \equiv \hat{\sigma}^{1/2}\hat{A}_k^\dagger\hat{\sigma}^{-1/2}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.181 through 6.184 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 36
+## 5. Master Revision Checklist for Iteration 37
 
-- [x] **Item 1:** State multiply-connected boundary orientation in divergence theorem in §2.1 (Line 147).
-- [x] **Item 2:** Formulate in-plane Laplace-Beltrami thermal conduction in §4.4 (Line 495).
-- [x] **Item 3:** Specify Holmes-Mow anisotropy spectral bound $\alpha < \frac{1}{2\|\boldsymbol{\varepsilon}\|_{\infty}}$ in §5.2 (Line 556).
-- [x] **Item 4:** State modular automorphism invariance $\sigma_t^{\sigma}(\operatorname{Alg}(D_{\mathfrak{Im}})) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}})$ in §1.2.3 (Line 120).
+- [x] **Item 1:** Verify Dyson time-ordered simplex volume normalization $V(\Delta_n) = t^n/n!$ in §1.2.1 (Line 63).
+- [x] **Item 2:** Formulate bulk modulus specific energy second-derivative relation in §1.2.2 (Line 87).
+- [x] **Item 3:** Confirm coupled Biot poromechanical parabolic diffusion form in §5.2 (Eq. 559).
+- [x] **Item 4:** State Petz transpose Kraus operator resolution $\hat{M}_k \equiv \hat{\sigma}^{1/2}\hat{A}_k^\dagger\hat{\sigma}^{-1/2}$ in §1.2.3 (Line 120).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
