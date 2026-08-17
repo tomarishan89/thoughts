@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 28)
+# Formal Mathematical Physics Peer Review Report (Iteration 29)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 28 (Lipid Disorder Exponent Homogeneity, GKSL Multiplier Dimensionless Normalization, Cortical WLC Post-Singularity Lockup, and Mass-Measure Efflux Scaling Audit)  
+**Review Version:** Iteration 29 (Brownian Ratchet Compressive Load Sign Inversion, Volumetric Energy Density Bulk Modulus Closure, Trophic Control Volume Kinematics, and Syncytial Electrogenic Current Coupling Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Dimensional Incommensurability in §4.4 Eq. 490, Jump Operator Field Scale in §1.2.1, Post-Singularity Softening in §4.3 Eq. 453, and Measure Normalization in §4.4 Eq. 502)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Compressive Sign Inversion in §4.3 Eq. 413, Bulk Modulus Energy Basis in §1.2.2 Line 87, Trophic Kinematic Sign Contradiction in §5.1 Line 530, and Electrogenic Current Zeroing in §5.2 Line 580)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the twenty-seventh-order resolution of Petela-Landsberg solar negentropy influx, Donnan diffusible ion excess sign consistency, discrete finite-temperature Matsubara Lifshitz sums, and thermal string Hagedorn duality scaling, an unsparing mathematical, thermodynamic, and continuum audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, dimensional, and constitutive vulnerabilities**:
+Following the twenty-eighth-order resolution of lipid disorder exponent molar homogeneity, GKSL jump operator dimensionless fractional normalization, cortical WLC post-singularity lockup, and mass-measure efflux decoupling, an unsparing mathematical, thermodynamic, and continuum mechanics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, sign, and kinematic vulnerabilities**:
 
-1. **Dimensional Inconsistency in Lipid Chain Transition Disorder Exponent (§4.4, Eq. 490):** In Eq. 490, the mechanical energy shift is written as $\Delta A_{\text{trans}} \sigma_{\text{hoop}}$, which multiplies 2D transition area $[\mathrm{m^2}]$ by 3D Cauchy hoop stress $[\mathrm{Pa} = \mathrm{N/m^2}]$, yielding units of Force $[\mathrm{N}]$ rather than Energy $[\mathrm{J}]$. Furthermore, the thermal enthalpy $\Delta H_{\text{trans}}$ is defined in molar units $[\mathrm{J/mol}]$ while the denominator uses molecular $k_B T \in [\mathrm{J}]$. The mechanical work must couple 2D surface tension $\Gamma_{\text{tension}} = \sigma_{\text{hoop}} h(t)$ with molar transition area expansion $\Delta A_{\text{trans}}^{\text{molar}} \in [\mathrm{m^2/mol}]$, normalized by $R T \in [\mathrm{J/mol}]$.
-2. **Dimensionless Normalization of GKSL Jump Operator Substrate Multipliers (§1.2.1, Line 48):** In §1.2.1 (Line 48), the Lindblad jump operators are defined as $\hat{L}_k \equiv \mathcal{O}_k \hat{M}_{\sqrt{\mathcal{F}_k}}$, where $\mathcal{F}_k$ is the unnormalized physical resource density ($[\mathrm{J/m^3}]$ or $[\mathrm{mol/m^3}]$). Consequently, the dissipative Lindbladian term $\sum_k \gamma_k \hat{L}_k \hat{\rho}_E \hat{L}_k^\dagger$ acquires anomalous dimensions of $[\mathrm{s}^{-1}] \cdot [\mathcal{F}_k]$, violating the $[\mathrm{s}^{-1}]$ dimension of $\frac{d\hat{\rho}_E}{d\tau}$. The coordinate multiplier must act on the dimensionless fractional occupancy $\hat{M}_{\sqrt{\mathcal{F}_k/\mathcal{F}_k^\ominus}}$.
-3. **Unbounded Post-Singularity Softening in Cortical Worm-Like Chain Modulus (§4.3, Eq. 453):** Eq. 453 defines the WLC strain-stiffening term as $(1 - \|\boldsymbol{\gamma}\|/\gamma_{\max})^{-2}$. Without an explicit domain restriction, applying shock strains exceeding the maximum extensible limit ($\|\boldsymbol{\gamma}\| > \gamma_{\max}$) results in positive squared values (e.g. $(1 - 1.5)^2 = 0.25 \implies 1/0.25 = 4$), falsely predicting that the actin cortex softens back to finite compliance after rupture. The constitutive law must be piecewise bounded for $\|\boldsymbol{\gamma}\| < \gamma_{\max}$, with complete steric lockup and crosslink failure for $\|\boldsymbol{\gamma}\| \ge \gamma_{\max}$.
-4. **Mass-Dimension Conflation in Pore Efflux Measure Collapse ODE (§4.4, Eq. 502):** Eq. 502 formulates boundary measure collapse as $\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho (\mathbf{v}_{\text{efflux}}\cdot\hat{n}) dA \in [\mathrm{kg/s}]$. However, by Axiom 3 (Eq. 137), $\mu(E)$ is the dimensionless normalized complex measure ($\mu(E) = \mu_{\mathbb{R}}/\mu_{\mathbb{R}}^\ominus + i \mu_{\mathfrak{Im}}/\mathcal{H}^\ominus$). Equating $\frac{d\mu}{dt}$ directly to dimensional mass flux $[\mathrm{kg/s}]$ without dividing by the reference rest-mass scale $\mu_{\mathbb{R}}^\ominus$ violates dimensional homogeneity across sections.
+1. **Compressive Normal Traction Sign Inversion in Brownian Ratchet Load Force (§4.3, Eq. 413):** In Eq. 413, the compressive load force on polymerizing actin barbed ends is defined as $F_{\text{load}}(x, t) \equiv \langle \boldsymbol{\sigma}_{\text{challenge}} : (\hat{n} \otimes \hat{n}) \rangle_+ a_{\text{filament}}$. Under standard continuum mechanics conventions, compressive normal traction is negative ($\sigma_{nn} = -P < 0$). Consequently, the positive Macauley ramp evaluates to $\langle -P \rangle_+ \equiv 0$, completely zeroing out the compressive load force and falsely predicting unretarded polymerization ($v_{\text{poly}} = v_0$) under destructive crushing impact loads. The exact physical load is $F_{\text{load}} \equiv \langle -\boldsymbol{\sigma}_{\text{challenge}} : (\hat{n} \otimes \hat{n}) \rangle_+ a_{\text{filament}} > 0$.
+2. **Volumetric vs Specific Mass Ambiguity in Bulk Modulus Second Derivative (§1.2.2, Line 87):** In Line 87, the microscopic bulk modulus is written as $K_0 \equiv \rho^2 \left.\frac{\partial^2 u}{\partial \rho^2}\right|_{\mathcal{F}}$ without explicitly specifying whether $u$ is the volumetric internal energy density $u_{\text{vol}} \in [\mathrm{J/m^3}]$ or the specific mass energy $u_{\text{mass}} \in [\mathrm{J/kg}]$. If $u$ is specific mass energy, thermodynamic consistency requires $K_0 = 2P + \rho^3 \frac{\partial^2 u_{\text{mass}}}{\partial \rho^2}$. The formulation is only valid if $u \equiv u_{\text{vol}}(\rho)$ is explicitly defined as the volumetric strain energy density.
+3. **Contradiction in Predation Control-Volume Kinematics Description (§5.1, Line 530):** Line 530 describes the non-contact predator boundary as undergoing "kinematic expansion". However, evaluating the RHS of Eq. 531 for realistic biological trophic efficiencies ($\eta_{\text{trophic}} \approx 0.1\text{--}0.2 \ll 1$) and tissue densities ($\rho_A \approx \rho_B$) yields $(\eta_{\text{trophic}}\rho_B - \rho_A) \int_{f_{AB}} (\mathbf{v}_n^{AB}\cdot\hat{n}_A) dA < 0$, which mathematically enforces inward convective contraction of trailing surfaces during forward engulfment.
+4. **Over-Constrained Zero-Current Condition Eliminating Electrogenic Syncytial Coupling (§5.2, Line 580):** Line 580 asserts that the local trans-junctional ionic current vanishes identically at every junction ($\sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \equiv 0$). This eliminates the electrical power transfer term $I_{\text{junction}}\Delta \psi_{j \to \mathbb{S}}$ across gap junctions, contradicting the electrophysiology of cardiac and neural syncytia. The constraint must be formulated as global circuit loop electroneutrality $\oint \mathbf{I} \cdot \hat{n} dA = 0$, allowing non-zero local electrogenic current $I_{\text{junction}} \neq 0$.
 
 ---
 
-## 2. Twenty-Eighth-Order Calculation Breakdown Matrix
+## 2. Twenty-Ninth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 28 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 29 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 4.4          │ Lipid Disorder (Eq. 490)      │ ΔA·σ is Force [N], not Energy [J]; molar/molecular mix │
-│ 2. Section 1.2.1        │ Jump Operators (Line 48)      │ Unnormalized F_k gives dimensions [s⁻¹·F_k] to dρ/dt   │
-│ 3. Section 4.3          │ WLC Modulus (Eq. 453)         │ Unbounded (1 - γ/γ_max)⁻² unphysically softens for γ>γ │
-│ 4. Section 4.4          │ Measure Efflux (Eq. 502)      │ dμ/dt in [kg/s] contradicts dimensionless μ(E) Eq. 137 │
+│ 1. Section 4.3          │ Ratchet Load (Eq. 413)        │ <σ:n⊗n>+ vanishes for compressive stress σ_nn = -P < 0 │
+│ 2. Section 1.2.2        │ Bulk Modulus (Line 87)        │ u lacks explicit volumetric density definition u_vol   │
+│ 3. Section 5.1          │ Predation Flow (Line 530)     │ Claims "expansion" when (η·ρ_B - ρ_A) < 0 is inward    │
+│ 4. Section 5.2          │ Syncytial Current (Line 580)  │ Local zero-current constraint zeros electrogenic power │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,66 +40,61 @@ Following the twenty-seventh-order resolution of Petela-Landsberg solar negentro
 
 ---
 
-### Critique 1: Dimensional Inconsistency in Lipid Chain Transition Disorder Exponent (§4.4, Eq. 490)
+### Critique 1: Compressive Normal Traction Sign Inversion in Brownian Ratchet Load Force (§4.3, Eq. 413)
 
 * **The Formula in Draft:**  
-  $$\phi_{\text{disorder}}(\sigma_{\text{hoop}}, T) = \left[ 1 + \exp\left( -\frac{\Delta H_{\text{trans}}\left(1 - \frac{T}{T_m}\right) + \Delta A_{\text{trans}} \sigma_{\text{hoop}}}{k_B T} \right) \right]^{-1}$$
+  $$F_{\text{load}}(x, t) \equiv \langle \boldsymbol{\sigma}_{\text{challenge}} : (\hat{n} \otimes \hat{n}) \rangle_+ a_{\text{filament}}$$
 
 * **The Mathematical Flaw:**  
-  1. $\Delta A_{\text{trans}} \in [\mathrm{m^2}]$ multiplied by 3D stress $\sigma_{\text{hoop}} \in [\mathrm{Pa} = \mathrm{N/m^2}]$ yields Force $[\mathrm{N}]$, which cannot be added to Enthalpy $[\mathrm{J/mol}]$.
-  2. $\Delta H_{\text{trans}}$ is defined in $[\mathrm{kJ/mol}]$, while the thermal denominator is $k_B T \in [\mathrm{J}]$, introducing a $10^{23}$ Avogadro scale discrepancy.
-  3. Tensile hoop stress ($\sigma_{\text{hoop}} > 0$) thins the membrane and expands lipid headgroup area, stabilizing the gauche-disordered state and lowering the melting transition temperature $T_m$, requiring a negative sign in the mechanical free-energy barrier.
+  In continuum mechanics, the normal stress along the outward unit normal $\hat{n}$ is $\sigma_{nn} \equiv \boldsymbol{\sigma} : (\hat{n} \otimes \hat{n})$. Under compressive impact, $\sigma_{nn} < 0$. The Macauley ramp $\langle \sigma_{nn} \rangle_+$ treats negative values as zero. Thus, when an external body delivers a massive compressive shock ($P = 10^6 \, \mathrm{Pa}$), $F_{\text{load}} = \langle -10^6 \rangle_+ a_{\text{filament}} = 0$, falsely calculating zero load on the polymerizing cytoskeleton and disabling force-velocity stall.
 
 * **Required Proof Closure:**  
-  Formulate the disorder fraction on a consistent molar basis with 2D membrane tension $\Gamma_{\text{tension}}(t) \equiv \sigma_{\text{hoop}}(t) h(t) \in [\mathrm{N/m}]$:
-  $$\boxed{\phi_{\text{disorder}}(\sigma_{\text{hoop}}, T) = \left[ 1 + \exp\left( -\frac{\Delta H_{\text{trans}}^{\text{molar}}\left(1 - \frac{T}{T_m}\right) - \Delta A_{\text{trans}}^{\text{molar}} \, \sigma_{\text{hoop}}(t) h(t)}{R T} \right) \right]^{-1}}$$
-  where $\Delta A_{\text{trans}}^{\text{molar}} \equiv N_A \Delta a_{\text{lipid}} \in [\mathrm{m^2/mol}]$ and $R \equiv N_A k_B \in [\mathrm{J/(mol\cdot K)}]$.
+  Define the compressive load force with the required negative sign:
+  $$\boxed{F_{\text{load}}(x, t) \equiv \langle -\boldsymbol{\sigma}_{\text{challenge}}(x, t) : (\hat{n} \otimes \hat{n}) \rangle_+ a_{\text{filament}} \ge 0 \quad [\mathrm{N}]}$$
 
 ---
 
-### Critique 2: Dimensionless Normalization of GKSL Jump Operator Substrate Multipliers (§1.2.1, Line 48)
+### Critique 2: Volumetric vs Specific Mass Ambiguity in Bulk Modulus Second Derivative (§1.2.2, Line 87)
 
 * **The Formula in Draft:**  
-  $$\hat{L}_k(\tau) \equiv \mathcal{O}_k(\tau) \, \hat{M}_{\sqrt{\mathcal{F}_k}}(\tau), \qquad (\hat{L}_k \psi)(\mathbf{x}) \equiv \mathcal{O}_k\left[\sqrt{\mathcal{F}_k(\mathbf{x}, \tau)} \, \psi(\mathbf{x})\right]$$
+  $$K_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \rho^2 \left.\frac{\partial^2 u}{\partial \rho^2}\right|_{\mathcal{F}} \quad \left( \text{units: } [\mathrm{Pa}] \equiv \left[\frac{\mathrm{J}}{\mathrm{m^3}}\right] \right)$$
 
 * **The Mathematical Flaw:**  
-  If $\mathcal{F}_k$ is a dimensional substrate density ($[\mathrm{J/m^3}]$ or $[\mathrm{mol/m^3}]$), the multiplier $\hat{M}_{\sqrt{\mathcal{F}_k}}$ carries physical dimensions. When inserted into the GKSL generator $\sum_k \gamma_k (\hat{L}_k \hat{\rho}_E \hat{L}_k^\dagger - \frac{1}{2}\{\hat{L}_k^\dagger \hat{L}_k, \hat{\rho}_E\})$, the rate of density matrix evolution acquires unphysical dimensions $[\mathrm{s}^{-1}] \cdot [\mathcal{F}_k]$ instead of the required frequency dimension $[\mathrm{s}^{-1}]$.
+  If $u$ is the specific internal energy per unit mass ($[\mathrm{J/kg}]$), $P = \rho^2 \frac{\partial u}{\partial \rho}$ leads to $K_0 \equiv \rho \frac{\partial P}{\partial \rho} = 2P + \rho^3 \frac{\partial^2 u}{\partial \rho^2}$. The simplified identity $K_0 = \rho^2 \frac{\partial^2 u}{\partial \rho^2}$ holds if and only if $u \equiv u_{\text{vol}}(\rho) \in [\mathrm{J/m^3}]$ is explicitly defined as the volumetric strain energy density.
 
 * **Required Proof Closure:**  
-  Normalize the substrate multiplier by the characteristic resource scale $\mathcal{F}_k^\ominus$:
-  $$\boxed{\hat{L}_k(\tau) \equiv \mathcal{O}_k(\tau) \, \hat{M}_{\sqrt{\mathcal{F}_k(\tau) / \mathcal{F}_k^\ominus}}, \qquad (\hat{L}_k \psi)(\mathbf{x}) \equiv \mathcal{O}_k\left[ \sqrt{\frac{\mathcal{F}_k(\mathbf{x}, \tau)}{\mathcal{F}_k^\ominus}} \, \psi(\mathbf{x}) \right]}$$
-  ensuring that $\hat{L}_k$ is a dimensionless operator on $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$ and $\gamma_k \in [\mathrm{s}^{-1}]$ represents the true microscopic jump transition rate.
+  Explicitly specify $u_{\text{vol}}(\rho) \in [\mathrm{J/m^3}]$ as the volumetric internal energy density:
+  $$\boxed{K_0 \equiv \frac{\partial P_{\text{field}}}{\partial \ln \rho} = \rho^2 \left.\frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}\right|_{\mathcal{F}} \quad \left( \text{units: } [\mathrm{Pa}] \equiv \left[\frac{\mathrm{J}}{\mathrm{m^3}}\right] \right)}$$
 
 ---
 
-### Critique 3: Unbounded Post-Singularity Softening in Cortical Worm-Like Chain Modulus (§4.3, Eq. 453)
+### Critique 3: Contradiction in Predation Control-Volume Kinematics Description (§5.1, Line 530)
 
 * **The Formula in Draft:**  
-  $$\mathbf{G}_{\text{cortex}}(\boldsymbol{\gamma}) = G_0 \left[ \left( 1 + \frac{\rho_{\text{Arp2/3}} k_\theta \sin^2\theta_0}{G_0} \right) \mathbb{I} + \left( 1 - \frac{\|\boldsymbol{\gamma}\|}{\gamma_{\max}} \right)^{-2} (\hat{\mathbf{e}}_{\parallel} \otimes \hat{\mathbf{e}}_{\parallel}) \right]$$
+  Line 530: *"Global mass conservation and volumetric continuity require kinematic expansion of predator $E^A$'s non-contact outer free surface $\partial E^A \setminus f_{AB}$..."*
 
 * **The Mathematical Flaw:**  
-  In non-linear polymer physics (MacKintosh et al., 1995), the divergence at $\|\boldsymbol{\gamma}\| = \gamma_{\max} \equiv \ell_c / \ell_p$ represents complete entropic chain extension. If unconstrained, evaluating the expression for unmitigated shock strains $\|\boldsymbol{\gamma}\| > \gamma_{\max}$ yields finite positive values (e.g. at $\|\boldsymbol{\gamma}\| = 2\gamma_{\max}$, $(1-2)^{-2} = 1$), falsely predicting that an over-extended cortex recovers compliance after being torn apart.
+  From Eq. 531:
+  $$\int_{\partial E^A \setminus f_{AB}} \rho_A \left( \mathbf{v}_n^{\text{free}} \cdot \hat{n}_A \right) dA = \int_{f_{AB}} \left( \eta_{\text{trophic}} \rho_B - \rho_A \right) \left( \mathbf{v}_n^{AB} \cdot \hat{n}_A \right) dA$$
+  Because $\eta_{\text{trophic}} \approx 0.1\text{--}0.2 \ll 1$ and $\rho_A \approx \rho_B$, the factor $(\eta_{\text{trophic}}\rho_B - \rho_A) < 0$ is strictly negative. Thus, the trailing outer boundary must undergo convective inward retraction / relaxation rather than outward expansion.
 
 * **Required Proof Closure:**  
-  Formulate the cortical shear modulus tensor with explicit domain restriction and post-singularity rupture:
-  $$\boxed{\mathbf{G}_{\text{cortex}}(\boldsymbol{\gamma}) = \begin{cases} 
-  G_0 \left[ \left( 1 + \frac{\rho_{\text{Arp2/3}} k_\theta \sin^2\theta_0}{G_0} \right) \mathbb{I} + \left( 1 - \frac{\|\boldsymbol{\gamma}\|}{\gamma_{\max}} \right)^{-2} (\hat{\mathbf{e}}_{\parallel} \otimes \hat{\mathbf{e}}_{\parallel}) \right] & \text{for } \|\boldsymbol{\gamma}\| < \gamma_{\max} \\
-  +\infty \implies \text{Steric Lockup / Crosslink Rupture Failure} & \text{for } \|\boldsymbol{\gamma}\| \ge \gamma_{\max}
-  \end{cases}}$$
+  Correct the text in Line 530 to state:
+  *"Global mass conservation and volumetric continuity govern the kinematic convective relaxation of predator $E^A$'s non-contact outer free surface $\partial E^A \setminus f_{AB}$..."*
 
 ---
 
-### Critique 4: Mass-Dimension Conflation in Pore Efflux Measure Collapse ODE (§4.4, Eq. 502)
+### Critique 4: Over-Constrained Zero-Current Condition Eliminating Electrogenic Syncytial Coupling (§5.2, Line 580)
 
 * **The Formula in Draft:**  
-  $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \ll 0 \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \mu(E) \longrightarrow 0$$
+  Line 580: *"Under the Junctional Electroneutrality Current Constraint ($\sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \equiv 0$), electrostatic gauge shifts cancel identically..."*
 
 * **The Mathematical Flaw:**  
-  By Axiom 3 (Eq. 137), $\mu(E) \in \mathbb{C}$ is a dimensionless normalized measure ($\mu(E) = \mu_{\mathbb{R}}/\mu_{\mathbb{R}}^\ominus + i \mu_{\mathfrak{Im}}/\mathcal{H}^\ominus$). Writing $\frac{d\mu(E)}{dt}$ directly as mass flux with dimensions $[\mathrm{kg/s}]$ contradicts Axiom 3 and conflates the real physical mass derivative $\frac{d\mu_{\mathbb{R}}}{dt} \in [\mathrm{kg/s}]$ with the normalized measure time derivative $\frac{d\mu}{dt} \in [\mathrm{s}^{-1}]$.
+  Enforcing $\sum_i z_i F (\mathbf{J}_i \cdot \hat{n}_j) \equiv 0$ pointwise at every junction interface forces the local electrical current density $\mathbf{I}_{\text{junction}} \cdot \hat{n}_j \equiv 0$. Consequently, the electrical power term $\sum_i z_i F \Delta \psi \mathbf{J}_i \cdot \hat{n}_j = \Delta \psi (\mathbf{I}\cdot\hat{n}_j)$ vanishes identically, eliminating active electrical communication in neural and cardiac syncytia.
 
 * **Required Proof Closure:**  
-  Decompose the dynamic measure collapse into its exact physical mass and normalized measure components:
-  $$\boxed{\left.\frac{d\mu_{\mathbb{R}}(E)}{dt}\right|_{\text{lysis}} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \frac{d\mu(E)}{dt} = \frac{1}{\mu_{\mathbb{R}}^\ominus} \frac{d\mu_{\mathbb{R}}(E)}{dt} \ll 0 \quad \left[\frac{1}{\mathrm{s}}\right] \implies \|\mu(E)\| \longrightarrow 0}$$
+  Formulate electroneutrality as a closed-circuit loop integral $\oint_{\partial \mathbb{S}} \mathbf{I} \cdot \hat{n} dA = 0$, allowing active trans-junctional ionic currents $\mathbf{I}_{\text{junction}} = F \sum_i z_i \mathbf{J}_i \neq \mathbf{0}$:
+  $$\boxed{\mathcal{O}_{\text{coupling}}\left[ \Delta \mathcal{G}_j(t) \right] \equiv \int_{\mathcal{A}_{\text{junction}}^{j \to \mathbb{S}}} \left( P_{\text{interstitial}} \, \mathbf{v}_{\text{fluid}} + \sum_i \left( \mu_i^\ominus + R T \ln \left( \frac{\gamma_i c_i}{c_i^\ominus} \right) \right) \mathbf{J}_i + \Delta \psi_{j \to \mathbb{S}} \, \mathbf{I}_{\text{electric}} \right) \cdot \hat{n}_j \, dA \quad [\mathrm{W}]}$$
 
 ---
 
@@ -107,18 +102,18 @@ Following the twenty-seventh-order resolution of Petela-Landsberg solar negentro
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Homogenize Lipid Transition Exponent in §4.4 (Eq. 490):** Update to $\phi_{\text{disorder}} = [1 + \exp(-\frac{\Delta H_{\text{trans}}^{\text{molar}}(1 - T/T_m) - \Delta A_{\text{trans}}^{\text{molar}}\sigma_{\text{hoop}}h(t)}{R T})]^{-1}$.
-2. **Normalize Jump Operator Resource Multipliers in §1.2.1 (Line 48):** Define $\hat{L}_k \equiv \mathcal{O}_k \hat{M}_{\sqrt{\mathcal{F}_k/\mathcal{F}_k^\ominus}}$.
-3. **Add Piecewise Domain Restriction to Cortical WLC Modulus in §4.3 (Eq. 453):** Restrict $(1 - \|\boldsymbol{\gamma}\|/\gamma_{\max})^{-2}$ to $\|\boldsymbol{\gamma}\| < \gamma_{\max}$ with $+\infty$ lockup for $\|\boldsymbol{\gamma}\| \ge \gamma_{\max}$.
-4. **Reconcile Dimensional Mass Efflux with Normalized Measure Collapse in §4.4 (Eq. 502):** State $\left.\frac{d\mu_{\mathbb{R}}}{dt}\right|_{\text{lysis}} = -\int \rho (\mathbf{v}\cdot\hat{n}) dA \in [\mathrm{kg/s}] \implies \frac{d\mu}{dt} = \frac{1}{\mu_{\mathbb{R}}^\ominus}\frac{d\mu_{\mathbb{R}}}{dt} \in [\mathrm{s}^{-1}]$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.145 through 6.148 to the milestone tracking logs.
+1. **Correct Compressive Load Sign in §4.3 (Eq. 413):** Replace $\langle \boldsymbol{\sigma} : (\hat{n}\otimes\hat{n}) \rangle_+$ with $\langle -\boldsymbol{\sigma}_{\text{challenge}} : (\hat{n}\otimes\hat{n}) \rangle_+$.
+2. **Explicitly Define Volumetric Strain Energy in §1.2.2 (Line 87):** State $K_0 \equiv \rho^2 \left.\frac{\partial^2 u_{\text{vol}}}{\partial \rho^2}\right|_{\mathcal{F}}$.
+3. **Correct Trailing Boundary Kinematics Description in §5.1 (Line 530):** Replace "kinematic expansion" with "kinematic convective relaxation".
+4. **Preserve Electrogenic Current Power in §5.2 (Eq. 581):** Group electrogenic power as $\Delta \psi_{j\to\mathbb{S}} \mathbf{I}_{\text{electric}} \cdot \hat{n}_j$ with closed-loop syncytial electroneutrality $\oint \mathbf{I} \cdot \hat{n} dA = 0$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.149 through 6.152 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 28
+## 5. Master Revision Checklist for Iteration 29
 
-- [x] **Item 1:** Homogenize lipid disorder exponent in §4.4 (Eq. 490) using molar units and 2D membrane tension $\sigma_{\text{hoop}} h(t)$.
-- [x] **Item 2:** Normalize GKSL jump operator multipliers in §1.2.1 (Line 48) via $\hat{M}_{\sqrt{\mathcal{F}_k/\mathcal{F}_k^\ominus}}$.
-- [x] **Item 3:** Add piecewise domain restriction to cortical WLC modulus in §4.3 (Eq. 453) for $\|\boldsymbol{\gamma}\| < \gamma_{\max}$.
-- [x] **Item 4:** Decouple physical mass efflux rate $[\mathrm{kg/s}]$ from normalized measure rate $[1/\mathrm{s}]$ in §4.4 (Eq. 502).
+- [x] **Item 1:** Fix compressive load force sign in §4.3 (Eq. 413) to $\langle -\boldsymbol{\sigma}_{\text{challenge}} : (\hat{n}\otimes\hat{n}) \rangle_+ a_{\text{filament}}$.
+- [x] **Item 2:** Clarify volumetric strain energy density $u_{\text{vol}} \in [\mathrm{J/m^3}]$ in §1.2.2 (Line 87).
+- [x] **Item 3:** Align trailing predator kinematics description in §5.1 (Line 530) with the negative sign of $(\eta_{\text{trophic}}\rho_B - \rho_A) < 0$.
+- [x] **Item 4:** Formulate trans-junctional electrogenic current power $\Delta \psi \mathbf{I}_{\text{electric}}$ under closed-loop electroneutrality in §5.2 (Eq. 581).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
