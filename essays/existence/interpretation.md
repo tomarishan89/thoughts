@@ -1,6 +1,6 @@
 # Structural Isomorphisms, Multi-Scale Extensions, and Ontological Mappings
 
-> **Epistemological & Hermeneutic Framing:** This companion document formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md). 
+> **Epistemological & Hermeneutic Framing:** This companion document formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md). 
 >
 > While the primary physical manuscript operates strictly in SI units ($[\mathrm{Pa}]$, $[\mathrm{W}]$, $[\mathrm{m/s}]$, $[\mathrm{Pa \cdot s}]$) on Lorentzian spacetime manifolds $(\mathcal{M}, g_{\mu\nu})$ for physical and biological systems (Tiers I & II), this document investigates how that same mathematical machinery serves as a rigorous structural blueprint for cognitive, social, and metaphysical domains.
 
@@ -100,7 +100,7 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 
 ## Section 3: Classical Sanskrit Concept Correspondence Dictionary
 
-The table below provides the explicit formal correspondence between the physical mechanics in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and classical Sanskrit ontological concepts:
+The table below provides the explicit formal correspondence between the physical mechanics in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) and classical Sanskrit ontological concepts:
 
 | Classical Sanskrit Concept | Formal Mathematical & Physical Realization | Governing Equations in Manuscript |
 | :--- | :--- | :--- |

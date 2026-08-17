@@ -1,6 +1,6 @@
 # Formal Issues, Critique Log, and Mathematical Milestones
 
-This log tracks all identified theoretical gaps, mathematical inconsistencies, open questions, and milestone resolutions for the manuscript [*An Ontological, Information-Theoretic, and Continuum-Mechanical Framework of Multi-Scale Existence*](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md).
+This log tracks all identified theoretical gaps, mathematical inconsistencies, open questions, and milestone resolutions for the manuscript [*An Ontological, Information-Theoretic, and Continuum-Mechanical Framework of Multi-Scale Existence*](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md).
 
 ---
 
@@ -243,6 +243,10 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-6.186: Marko-Siggia Entropic WLC Strain-Stiffening Microscopic Derivation.** Formulated tangent strain-stiffening factor $(1 - \|\boldsymbol{\gamma}\|/\gamma_{\max})^{-2}$ derived from Marko-Siggia force-extension derivative $\frac{\partial F_{\text{WLC}}}{\partial z} \approx \frac{k_B T}{2\ell_p \ell_c (1 - z/\ell_c)^3}$ in §4.3 (Lines 454-456).
 - [X] **ISSUE-6.187: Quantum Radical Pair Recombination Probability Conservation Identity.** Formulated exact chemical branching fraction sum rule $\Phi_S(\mathbf{B}) + \Phi_T(\mathbf{B}) = k_S \int_0^\infty \operatorname{Tr}(\hat{P}_S \hat{\rho}_{\text{RP}}) dt + k_T \int_0^\infty \operatorname{Tr}(\hat{P}_T \hat{\rho}_{\text{RP}}) dt \equiv 1$ in §4.1 (Lines 389-391).
 - [X] **ISSUE-6.188: Carnahan-Starling Multi-Ionic Compressibility Factor Limit.** Formulated monodisperse reduction $Z(\eta_{\text{pack}}) \equiv \frac{1 + \eta + \eta^2 - \eta^3}{(1 - \eta)^3}$ with van 't Hoff point-ion limit $Z(0)=1$ and jamming asymptote $Z(\eta \to 1) \to \infty$ in §5.2 (Lines 562-564).
+- [ ] **ISSUE-6.189: Canham-Helfrich Area Difference Elasticity (ADE) Model Formulation.** Line 479 must state the non-local Area-Difference Elasticity energy functional $\mathcal{F}_{\text{ADE}} = \frac{\pi k_{\text{ade}}}{2 A_{\text{mid}} h^2}(\Delta A - \Delta A_0(t))^2$ to ground spontaneous curvature shifts in flippase pumping.
+- [ ] **ISSUE-6.190: Macauley Ramp Monotonic Strict Convexity Proof in Optimal Information Investment.** Line 348 must formulate the analytical second derivative $\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} > 0$ proving strict convexity and the unique existence of $\chi^*$.
+- [ ] **ISSUE-6.191: Stokes-Lorentz Interface Inertial Drag Dimensionless Verification.** Eq. 525 must verify the dimensionless grouping $[\rho_{\text{int}}\|v_{\text{Stokes}}\|/\nu_{AB}] \equiv [1]$ in the relativistic contact regularizer.
+- [ ] **ISSUE-6.192: Thin-Shell Spherical Volume Incompressibility Hoop Stress Scaling.** Eq. 499 must explicitly show intermediate scaling $\sigma_{\text{hoop}} = \frac{\Delta P r}{2h}$ with $h = h_0 (r_0/r)^2 \implies \sigma_{\text{hoop}} = \frac{\Delta P r^3}{2 h_0 r_0^2}$.
 
 ---
 
@@ -250,7 +254,8 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 - [X] **ISSUE-7.1: Trans-Planckian Quantum Geometry & Wheeler-DeWitt Universal Wavefunction.** Formally Resolved in §1.1.
 - [X] **ISSUE-7.2: Topological Quantum Field Theory (TQFT) Cobordism Invariants of Worldvolumes.** Formally Resolved in §2.1.
 - [X] **ISSUE-7.3: Connes Noncommutative Spectral Triples on Singular Fractal Boundary Interfaces.** Formally Resolved in §2.3.
-- **Foundational Closure State (Iteration 38):** Complete mathematical, thermodynamic, continuum, topological, and relativistic closure achieved. All 188 milestones formally resolved across all six core dimensions. Zero open vulnerabilities remaining.
+- **Active Frontier Status (Iteration 39):** 4 active downstream calculation frontiers logged (ISSUES 6.189–6.192) enforcing the Anti-Premature Closure Invariant. All previous 188 milestones verified and closed.
+
 
 
 
