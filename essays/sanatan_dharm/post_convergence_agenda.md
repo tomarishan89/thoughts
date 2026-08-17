@@ -94,3 +94,12 @@
 * **Physics Formulation:**
   - 4 Invariant Conditions of Life: $\mu(E) > 0$, $\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$, $\phi(t) = \sigma_{\text{yield}} - (\|\mathbf{C}\| - \mathbf{R}_{\text{active}}) \ge 0$, and $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$.
   - Dual Comparison: Contrasting the Living Object with (1) the Classical Closed Universe ($\partial\mathcal{U}=\emptyset$), and (2) the Open Black Hole Universe ($\mathcal{U}_{\text{BH}}$), proving topological equivalence between living forms and cosmological bubbles.
+
+---
+
+### Item 09: Formalizing "Prospect" ($\mathcal{P}$) in the Temporal Architecture
+* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) Section 2.3.5; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/interpretation.md) Section 11.
+* **Physics Formulation:**
+  - Forward Reachable State-Space Horizon: $\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}[\phi(\hat{\mathbf{C}}(\tau))] e^{-\beta \tau} d\tau$.
+  - The Temporal Triad: **Ledger ($\mathcal{F}_{\text{ledger}}$ — Past)** $\longrightarrow$ **Prospect ($\mathcal{P}$ in $\Omega_{\mathfrak{Im}}$ — Future)** $\longrightarrow$ **Expression ($\boldsymbol{\mathcal{X}}$ on $\partial E$ — Present)**.
+  - Energetics of Prospect: $\mathcal{P} > 0 \implies$ Proactive metabolic exergy investment vs. $\mathcal{P} \le 0 \implies$ Horizon collapse, depressive withdrawal, and entropy accumulation.
