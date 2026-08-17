@@ -414,8 +414,9 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   \cos(\mathrm{Da}(x)) \ge 0 & \text{(In-Phase Stabilization): Synchronous active stiffening opposes challenge; } \phi(x, t) \ge 0 \\
   \cos(\mathrm{Da}(x)) < 0 \iff \mathrm{Da}(x) \in \left(\frac{\pi}{2}, \frac{3\pi}{2}\right) \pmod{2\pi} & \text{(Anti-Phase Destabilization Resonance): Negative dynamic stiffness actively amplifies shock}
   \end{cases}$$
-  In the anti-phase resonance interval $\mathrm{Da}(x_{\text{impact}}) \in (\pi/2, 3\pi/2) \pmod{2\pi}$, active contractile forces pull in-phase with destructive external shock traction ($\mathbf{R}_{\text{active}} \cdot \mathbf{C}_0 > 0$), stripping the boundary of active protection and multiplying the effective local tensile load. Concurrently, continuous spatial variation of the Damköhler phase creates opposing tangential contractions across adjacent patches, generating an **In-Plane Cortical Phase-Gradient Shear Stress** $\tau_{\text{shear}}^{\text{cortex}}(x) \approx \frac{h_{\text{cortex}}\|\mathbf{R}_{\text{active}}\|\omega_0}{v_{\text{bistable}}}$ (where $h_{\text{cortex}}$ is cortex thickness).  
-  The multi-axial dynamic yield failure condition combining normal traction and in-plane cortical shear is:
+  In the anti-phase resonance interval $\mathrm{Da}(x_{\text{impact}}) \in (\pi/2, 3\pi/2) \pmod{2\pi}$, active contractile forces pull in-phase with destructive external shock traction ($\mathbf{R}_{\text{active}} \cdot \mathbf{C}_0 > 0$), stripping the boundary of active protection and multiplying the effective local tensile load. Concurrently, continuous spatial variation of the Damköhler phase creates opposing tangential contractions across adjacent patches, generating an **In-Plane Cortical Phase-Gradient Shear Stress** $\tau_{\text{shear}}^{\text{cortex}}(x) \approx \frac{h_{\text{cortex}}\|\mathbf{R}_{\text{active}}\|\omega_0}{v_{\text{bistable}}}$ (where $h_{\text{cortex}}$ is cortex thickness). Elastic deformation of the $70^\circ$ dendritic branches of the **Arp2/3 Actin Nucleation Complex** ($k_\theta \approx 50 \, k_B T/\mathrm{rad}^2, \theta_0 = 70^\circ$) under in-plane shear strain $\boldsymbol{\gamma}$ defines the **Anisotropic Cortical Shear Modulus Tensor**:
+  $$\mathbf{G}_{\text{cortex}}(\boldsymbol{\gamma}) = G_0 \left[ \mathbb{I} + \frac{\rho_{\text{Arp2/3}} k_\theta}{G_0} \cos^2\left(\theta_0 + \frac{\|\boldsymbol{\gamma}\|}{2}\right) (\hat{\mathbf{e}}_{\parallel} \otimes \hat{\mathbf{e}}_{\parallel}) \right]$$
+  The multi-axial dynamic yield failure condition combining normal traction and non-linear dendritic branch shear is:
   $$\boxed{\sqrt{3 J_2\left(\boldsymbol{\sigma}_{\text{cortex}}\right)} = \sqrt{\left(\|\mathbf{C}_0(x_{\text{impact}})\| + \|\mathbf{R}_{\text{active}}\|\cdot |\cos(\mathrm{Da})|\right)^2 + 3 \left( \frac{h_{\text{cortex}} \|\mathbf{R}_{\text{active}}\| \omega_0}{v_{\text{bistable}}} \right)^2} > \sigma_{\text{yield}}^{\text{cortex}} \implies \phi(x, t) < 0}$$
   inducing localized cortical delamination and dynamic shock rupture at high frequencies ($\omega_0 \gg v_{\text{bistable}}/h_{\text{cortex}}$) even if distal regions remain in safe balance ($\mathrm{Da} \ll 1$).
 
@@ -443,10 +444,12 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
       where $\bar{\sigma}_{\text{ion}}$ is the effective mean reflection coefficient for diffusible ions and $\sigma_{\text{protein}} \approx 1$ accounts for the direct van 't Hoff ideal solute pressure of trapped cytoplasmic macromolecules. This drives outward water influx across the lipid bilayer with positive normal velocity:
       $$\mathbf{v}_n(x, t) = L_p \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \hat{n} \quad (\mathbf{v}_n \cdot \hat{n} > 0)$$
       where $L_p$ is the membrane hydraulic filtration permeability coefficient $[\mathrm{m/(Pa \cdot s)}]$.
-  3. **Stage 2b (Membrane Incompressible Thinning & Rate-Dependent Viscoelastic Plasticity):**  
+  3. **Stage 2b (Membrane Incompressible Thinning, Trans-Gauche Latent Heat & Viscoplastic Yield):**  
      For a spherical cell of radius $r(t)$ and unswollen radius $r_0$ with bilayer cortex thickness $h(t)$, **bilayer volume-incompressibility** ($V_{\text{cortex}} = 4\pi r(t)^2 h(t) = 4\pi r_0^2 h_0$) enforces dynamic area-expansion thinning $h(t) = h_0 \left( \frac{r_0}{r(t)} \right)^2$. The dynamic membrane expansion strain rate is:
      $$\dot{\varepsilon}(t) \equiv \frac{\dot{r}(t)}{r(t)} = \frac{L_p}{r(t)} \left( \Delta P_{\text{osmotic}}(t) - \Delta \Pi_{\text{ext}} \right) \quad [\mathrm{s}^{-1}]$$
-     Coupling cortical Kelvin-Voigt elasticity to 2D lipid fluid dissipation, the ultimate tensile strength obeys the **Cowper-Symonds Rate-Dependent Viscoplastic Yield Envelope**:
+     During high-strain deformation, hydrocarbon acyl chain trans-to-gauche rotational isomerization absorbs latent heat $\Delta H_{\text{trans}} \approx 3.5\text{--}5.0 \, \mathrm{kJ/mol}$, governing the **Non-Isothermal Membrane Thermal Energy Equation**:
+     $$\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla \cdot (k_{\text{thermal}} \nabla T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{R_K}$$
+     where $\phi_{\text{disorder}}(\sigma_{\text{hoop}}, T) = [1 + \exp(-(\Delta H_{\text{trans}}(1 - T/T_m) + \Delta A_{\text{trans}} \sigma_{\text{hoop}})/k_B T)]^{-1}$. Coupling cortical Kelvin-Voigt elasticity to 2D lipid fluid dissipation, the ultimate tensile strength obeys the **Cowper-Symonds Rate-Dependent Viscoplastic Yield Envelope**:
      $$\sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}) \equiv \sigma_{\text{UTS}}^0 \left[ 1 + \left( \frac{\dot{\varepsilon}(t)}{\dot{\varepsilon}_0} \right)^{1/p_{\text{rate}}} \right] + \eta_{\text{cortex}} \dot{\varepsilon}(t) \quad [\mathrm{Pa}]$$
      where $\sigma_{\text{UTS}}^0$ is the quasi-static failure strength, $\dot{\varepsilon}_0$ is the reference plastic strain rate, $p_{\text{rate}} \ge 1$ is the dynamic viscoplastic hardening exponent, and $\eta_{\text{cortex}}$ is 2D cortical shear viscosity. Tensile membrane rupture occurs when hoop stress exceeds the dynamic rate-dependent failure limit:
      $$\boxed{\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)^3}{2 h_0 r_0^2} \ge \sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}(t)) \implies \text{Dynamic Bilayer Cavitation / Mechanical Lysis}}$$
@@ -518,10 +521,12 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
     where $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the **Helmholtz-Smoluchowski Electro-Osmotic Coupling Tensor**:
     $$\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I} \quad \left( \text{units: } \left[\frac{\mathrm{m^2}}{\mathrm{V \cdot s}}\right] \equiv \left[\frac{\mathrm{C \cdot m}}{\mathrm{N \cdot s}}\right] \right)$$
     where $\varepsilon_w$ is solvent permittivity $[\mathrm{F/m}]$ and $\zeta$ is the membrane zeta potential $[\mathrm{V}]$.
-  * **Electrochemical Solute & Quantum Proton Tunneling Flux:**  
+  * **Electrochemical Solute, Quantum Proton Tunneling & CISS Electron Flux:**  
     Classical solutes follow the Nernst-Planck equation $\mathbf{J}_i = -D_i (\nabla c_i + \frac{z_i F}{RT} c_i \nabla \psi) + c_i \mathbf{v}_{\text{fluid}}$. Across sub-nanometer $\mathrm{F}_0\mathrm{F}_1$-ATP synthase channels and proton water wires under extreme fields ($E > 10^7 \, \mathrm{V/m}$), proton flux transitions to **Quantum Grotthuss Wavepacket Tunneling**:
     $$\boxed{\mathbf{J}_{H^+}^{\text{quantum}} = \frac{q_p}{h} \int_{E_F}^{E_F + q_p \Delta\psi} T_{\text{tunnel}}(E) \left[ f_{\text{FD}}(E) - f_{\text{FD}}(E - q_p \Delta\psi) \right] dE \cdot \hat{n}_{\text{channel}}}$$
-    where $T_{\text{tunnel}}(E) = \exp\left( -\frac{2}{\hbar}\int_0^{a_0} \sqrt{2m_p(V_0 - q_p E_f x)}dx - \frac{\eta_{\text{bath}}a_0^2}{\hbar} \right)$ and $f_{\text{FD}}$ is the Fermi-Dirac distribution.
+    where $T_{\text{tunnel}}(E) = \exp\left( -\frac{2}{\hbar}\int_0^{a_0} \sqrt{2m_p(V_0 - q_p E_f x)}dx - \frac{\eta_{\text{bath}}a_0^2}{\hbar} \right)$. In chiral $\alpha$-helical protein complexes, spin-orbit coupling drives **Chiral Induced Spin Selectivity (CISS) Electron Transport**:
+    $$\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\frac{e}{h} \sum_{\sigma = \pm 1} \int \left[ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} \sin\left(\frac{2\pi L_{\text{helix}}}{p_{\text{pitch}}}\right) \right] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}}$$
+    where $\mathcal{P}_{\text{CISS}} \equiv \frac{m_e \alpha_{\text{SOC}} R_{\text{helix}} \omega_{\text{pitch}}}{\hbar^2}$, filtering paramagnetic radical recombination during syncytial metabolic respiration.
   * **Closed Elliptic Syncytial Potential PDE (Quasi-Steady Charge Solenoidality):**  
     Enforcing bulk electroneutral charge conservation ($\nabla \cdot \mathbf{I}_{\text{electric}} = 0$) closes the electrostatic potential field $\psi(x, t)$:
     $$\boxed{\nabla \cdot \left( \boldsymbol{\sigma}_{\text{conduct}} \nabla \psi \right) = -\nabla \cdot \left[ \mathbf{K}_{\text{eo}}^T \left( \nabla P_{\text{interstitial}} - \sum_i \sigma_i R T \nabla c_i \right) \right] + F \sum_i z_i \nabla \cdot \mathbf{J}_i^{\text{diff}}}$$
@@ -555,19 +560,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **Chiral Induced Spin Selectivity (CISS) in Helical Biomolecular Conduction:**
+1. **Sub-Angstrom Hydration Shell Dielectric Saturation in Ion Channels:**
    - *Status:* **Open / Active.**
-   - *Description:* In §1.1 & §5.2, electron transport in metabolic enzymes is modeled through isotropic conductances. CISS effects across chiral alpha-helices generate spin-polarized tunneling currents, filtering paramagnetic radical recombinations.
-2. **Lipid Trans-Gauche Isomerization Latent Heat in Dynamic Phase Transitions:**
+   - *Description:* In §5.2, water permittivity $\varepsilon_w$ is treated as constant. Inside $<1 \, \mathrm{nm}$ selectivity filters under intense local fields ($E > 10^9 \, \mathrm{V/m}$), water dipoles undergo complete dielectric saturation ($\varepsilon(E) \to n^2 \approx 1.8$), altering single-ion desolvation barriers.
+2. **Non-Adiabatic Berry Phase Holonomy in Retinal Photoisomerization:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.4, lipid bilayer elasticity assumes isothermal deformation. Under high-strain ballistic loading, liquid-ordered to liquid-disordered phase transitions absorb latent heat $\Delta H_{\text{trans}}$, inducing localized thermal quenching.
-3. **Formin / Arp2/3 Branching Angle Compliance Under Cortical Shear:**
+   - *Description:* In §1.1 & §3.2, photon-state collapse assumes instantaneous projection. In rhodopsin conical intersections, non-adiabatic trajectory branching accumulates geometric Berry phase $\gamma_C = \oint \mathbf{A}(\mathbf{R})\cdot d\mathbf{R}$, modulating quantum coherence in ultrafast visual transduction.
+3. **Quantum Vibronic Tunneling of ATP $\gamma$-Phosphate:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.3, cortical actin gel is treated as an isotropic continuum. Microscopic $70^\circ$ Arp2/3 dendritic junctions deform under shear, introducing an anisotropic junctional spring compliance tensor $\mathbf{K}_{\text{branch}}$.
+   - *Description:* In §4.1, ATP hydrolysis is modeled via standard activation barriers. In motor protein catalytic pockets, proton-coupled phosphate transfer involves non-Born-Oppenheimer vibronic wavepacket tunneling across multi-dimensional potential energy surfaces.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Formin / Arp2/3 Branching Angle Compliance Under Cortical Shear**~~ (*Closed in §4.3 via Arp2/3 angular spring compliance tensor $\mathbf{G}_{\text{cortex}}(\boldsymbol{\gamma}) = G_0[\mathbb{I} + \frac{\rho k_\theta}{G_0}\cos^2(\theta_0 + \frac{\gamma}{2})\hat{\mathbf{e}}\otimes\hat{\mathbf{e}}]$.*)
+- [x] ~~**Lipid Trans-Gauche Isomerization Latent Heat in Dynamic Phase Transitions**~~ (*Closed in §4.4 via non-isothermal thermal energy equation $\rho c_p \dot{T} = \dots - \Delta H_{\text{trans}}\dot{\phi}_{\text{disorder}}$ and Clapeyron order parameter.*)
+- [x] ~~**Chiral Induced Spin Selectivity (CISS) in Helical Biomolecular Conduction**~~ (*Closed in §5.2 via spin-polarized current $\mathbf{J}_e^{\text{spin}} = -\frac{e}{h}\sum_\sigma \int [T_0 + \sigma \mathcal{P}_{\text{CISS}}\sin(\frac{2\pi L}{p})]\Delta f dE \cdot \hat{n}$.*)
 - [x] ~~**Peskin-Odorico-Oster Brownian Ratchet Force-Velocity Relation**~~ (*Closed in §4.3 via Brownian ratchet velocity $v_{\text{poly}}(F_{\text{load}}) = v_0 \frac{1 - \exp(-\Delta G_{\text{ATP}}/k_B T)}{1 + (c_{\text{crit}}/c)\exp(F_{\text{load}}\delta/k_B T)}$ and upper-bound traction $\|\mathbf{R}_{\text{active}}\|_{\max}$.*)
 - [x] ~~**P4-ATPase Flippase Leaflet Lipid Pumping & Dynamic Spontaneous Curvature**~~ (*Closed in §4.4 via dynamic area asymmetry spontaneous curvature $\mathcal{C}_0(t) = \frac{\Delta A_0 + \int \dot{N} a / \rho d\tau}{2 h A_{\text{mid}}}$ and Canham-Helfrich bending energy.*)
 - [x] ~~**Haberkorn Radical Pair Quantum Spin-State Master Equation**~~ (*Closed in §4.1 via Haberkorn master equation $\frac{d\hat{\rho}}{dt} = -\frac{i}{\hbar}[\hat{H}, \hat{\rho}] - \frac{k_S}{2}\{\hat{P}_S, \hat{\rho}\} - \frac{k_T}{2}\{\hat{P}_T, \hat{\rho}\}$ and magnetic field yield $\Phi_S(\mathbf{B})$.*)
