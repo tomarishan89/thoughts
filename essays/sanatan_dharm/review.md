@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 19)
+# Formal Mathematical Physics Peer Review Report (Iteration 21)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 19 (Flippase Dimensional Homogeneity, 3D Unruh Flux, Kramers-Grote-Hynes Enzymatic Hydrolysis, and Wheeler-DeWitt Scaling Audit)  
+**Review Version:** Iteration 21 (Haag's Theorem in Field CCRs, FitzHugh-Nagumo Additive Kinetics, Non-Isothermal Latent Heat Scaling, and ESCRT-III Constriction Force Audit)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Flippase Dimensional Inconsistency, 1D vs 3D Unruh Flux Mismatch, Non-Adiabatic Tunneling in Adiabatic ATP Hydrolysis, and Wheeler-DeWitt Operator Scale Discrepancy)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Haag's Theorem Representation Dilemma, FitzHugh-Nagumo Multiplicative Inhibition Bug, Thermal Energy Density Inhomogeneity, and ESCRT-III Force-per-Length Dimensional Mismatch)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the eighteenth-order resolution of syncytial bioelectric potential PDEs, dynamic membrane thinning in hoop stress, Drucker-Prager apex regularizers, and canonical volume measures on complex state spaces, a rigorous mathematical and dimensional audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation, dimensional, and rate-theoretic errors**:
+Following the twentieth-order resolution of Penrose-Diósi spatial cut-off regularization, Gauger-Benjamin-Jones CPTP radical-pair master equations, entropic WLC strain-stiffening in actin cortices, and Booth-Onsager dielectric saturation in electro-osmosis, an unsparing first-principles mathematical and dimensional review of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical mathematical physics, operator-theoretic, and dimensional discrepancies**:
 
-1. **Dimensional Inhomogeneity in Flippase Area Pumping Integral (§4.4, Line 466):** The flippase integrand $\frac{\dot{N}_{\text{flippase}} a_{\text{lipid}}}{\rho_{\text{lipid}}}$ has units $[\mathrm{m^4/s}]$ because $\rho_{\text{lipid}} \equiv 1/a_{\text{lipid}}$. Integrating over time yields $[\mathrm{m^4}]$, which is added directly to $\Delta A_0 \in [\mathrm{m^2}]$, violating fundamental dimensional homogeneity ($[\mathrm{m^2}] + [\mathrm{m^4}]$).
-2. **1D vs 3D Dimensional Mismatch in Davies-Unruh Radiation Flux (§2.3.3, Eq. 285):** The expression $\frac{\pi k_B^2 T^2}{6\hbar c}$ has units $[\mathrm{W/m}]$ (the 1+1D chiral conformal anomaly flux). In 3D spatial continuum mechanics across a 2D boundary $\partial E$, radiant flux MUST have dimensions of $[\mathrm{W/m^2}]$ governed by 3D Stefan-Boltzmann radiation: $\mathbf{J}_{\text{Unruh}}^{\text{3D}} = \frac{\pi^2 k_B^4 T_{\text{Unruh}}^4}{60 \hbar^3 c^2}\hat{n} = \frac{\hbar \alpha_{\text{proper}}^4}{960 \pi^2 c^6}\hat{n}$.
-3. **Inapplicable Weak-Coupling Non-Adiabatic Tunneling in Strongly Adiabatic ATP Cleavage (§4.1, Eq. 387):** Applying the perturbative Golden Rule Bixon-Jortner formula ($|V_{\text{electronic}}|^2 \ll k_B T$) to strongly adiabatic covalent phosphoanhydride bond cleavage ($V_{\text{electronic}} \sim 2\text{--}3 \, \mathrm{eV} \gg k_B T$) underestimates the enzymatic catalysis turnover rate by $10^{10}\times$. Strongly adiabatic catalysis is governed by Kramers-Grote-Hynes activated transition-state theory.
-4. **Missing $\hbar^2$ and $c^4$ Dimensional Scaling in the Wheeler-DeWitt Operator (§2.1, Eq. 162):** Eq. 162 writes $-16\pi G G_{ijkl} \frac{\delta^2}{\delta h_{ij}\delta h_{kl}}$, omitting $\frac{\hbar^2}{c^4}$. This introduces a $10^{102}$ scale discrepancy and breaks dimensional homogeneity with the curvature potential $\frac{\sqrt{h} c^4}{16\pi G}({}^{(3)}R - 2\Lambda)$.
+1. **Haag's Theorem Violation in Continuous Field Representations (§1.1, Line 154):** The manuscript claims the Stone-von Neumann theorem guarantees uniqueness of CCR representations on infinite-dimensional field state spaces. In rigorous quantum field theory, Stone-von Neumann holds strictly for finite degrees of freedom ($n < \infty$). For infinite degrees of freedom, **Haag's Theorem** proves the existence of uncountably many unitarily inequivalent representations, necessitating the algebraic Haag-Kastler / Araki local net formulation $\mathfrak{A}(\mathcal{O})$.
+2. **Multiplicative Inhibition Disabling Refractory Kinetics in Reaction-Diffusion System (§4.3, Eq. 418):** Defining $f(u, w) \equiv u(1-u)(u - \frac{w+b}{a})$ multiplies the inhibitory variable $w$ by $u(1-u)$. At resting ($u=0$) or excited ($u=1$) states, the inhibitory damping vanishes identically, destroying the limit cycle and disabling hyperpolarizing refractory recovery. Activator-inhibitor kinetics requires additive linear inhibition $f(u, w) = u(1-u)(u - a) - w - b$.
+3. **Dimensional Inconsistency in Non-Isothermal Bilayer Heat Equation (§4.4, Eq. 482):** In the 3D volumetric thermal equation ($\rho c_p \frac{\partial T}{\partial t} \in [\mathrm{W/m^3}]$), the trans-to-gauche latent heat $\Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t}$ has units $[\mathrm{J/(mol \cdot s)}]$, omitting lipid molar density $\rho_{\text{lipid}}^{\text{molar}} \in [\mathrm{mol/m^3}]$, while the Kapitza boundary cooling $\frac{\Delta T}{R_K}$ has units $[\mathrm{W/m^2}]$, omitting division by cortex thickness $h_{\text{cortex}} \in [\mathrm{m}]$.
+4. **Force vs. Force-per-Length Dimensional Mismatch in Active ESCRT-III Dynamics (§4.4, Eq. 489):** In the radial force balance where all other terms ($2\pi \eta \dot{r}$, $2\pi \Gamma r$, $2\pi \gamma_{\text{line}}$, $\kappa_f / r^2$) have units of force $[\mathrm{N}]$, the motor power term $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi r_{\text{pore}} v_{\text{scission}}}$ has units $[\mathrm{N/m}]$. The active constriction force is $F_{\text{ATPase}} = \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \in [\mathrm{N}]$.
 
 ---
 
-## 2. Nineteenth-Order Calculation Breakdown Matrix
+## 2. Twenty-First-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 19 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 21 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 4.4          │ Flippase Area (Line 466)      │ Integrand has units [m⁴/s]; adds [m⁴] to [m²]          │
-│ 2. Section 2.3.3        │ Unruh Radiation (Eq. 285)     │ Uses 1D flux ∝ T² [W/m] instead of 3D flux [W/m²]      │
-│ 3. Section 4.1          │ ATP Hydrolysis Rate (Eq. 387) │ Weak-coupling Golden Rule fails on adiabatic bonds     │
-│ 4. Section 2.1          │ Wheeler-DeWitt (Eq. 162)      │ Omits ħ²/c⁴ in kinetic term; 10¹⁰² scale error         │
+│ 1. Section 1.1          │ Stone-von Neumann (Line 154)  │ Fails on QFT fields; Haag's theorem enforces Haag nets │
+│ 2. Section 4.3          │ FHN Kinetics (Eq. 418)        │ Multiplicative w vanishes at u=0,1; breaks limit cycle │
+│ 3. Section 4.4          │ Bilayer Thermal (Eq. 482)     │ [J/(mol·s)] and [W/m²] added to [W/m³]; scale error    │
+│ 4. Section 4.4          │ ESCRT-III Motor (Eq. 489)     │ Divides by 2πr yielding [N/m]; adds [N/m] to [N]       │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,81 +40,83 @@ Following the eighteenth-order resolution of syncytial bioelectric potential PDE
 
 ---
 
-### Critique 1: Dimensional Inhomogeneity in Flippase Area Pumping Integral (§4.4, Line 466)
+### Critique 1: Haag's Theorem vs. Stone-von Neumann Uniqueness in Continuous Fields (§1.1, Line 154)
 
-* **The Formula in Draft:**  
-  $$\mathcal{C}_0(t) \equiv \frac{1}{2 h(t)} \left( \frac{\Delta A_0 + \int_0^t \frac{\dot{N}_{\text{flippase}}(\tau) a_{\text{lipid}}}{\rho_{\text{lipid}}} d\tau}{A_{\text{mid}}(t)} \right)$$
+* **The Formulation in Draft:**  
+  "By the Stone-von Neumann Uniqueness Theorem, all irreducible unitary representations of canonical commutation relations (CCR) are unitarily equivalent... guaranteeing unique physical measure spaces."
 
 * **The Mathematical Flaw:**  
-  $\dot{N}_{\text{flippase}} \in [\mathrm{s^{-1}}]$, $a_{\text{lipid}} \in [\mathrm{m^2}]$, and $\rho_{\text{lipid}} \equiv 1/a_{\text{lipid}} \in [\mathrm{m^{-2}}]$.  
-  $$\left[ \frac{\dot{N}_{\text{flippase}} a_{\text{lipid}}}{\rho_{\text{lipid}}} \right] = \frac{[\mathrm{s^{-1}}] \cdot [\mathrm{m^2}]}{[\mathrm{m^{-2}}]} = \left[ \frac{\mathrm{m^4}}{\mathrm{s}} \right] \implies \int_0^t \dots \, d\tau \in [\mathrm{m^4}]$$  
-  Adding $\Delta A_0 \in [\mathrm{m^2}]$ to $[\mathrm{m^4}]$ violates dimensional homogeneity.
+  Stone-von Neumann applies strictly to finite-dimensional systems ($\mathcal{H} \cong L^2(\mathbb{R}^n), n < \infty$). For continuous field operators with infinite degrees of freedom ($n \to \infty$), **Haag's Theorem** proves that the Fock representation of free fields is unitarily inequivalent to any interacting field representation.
 
 * **Required Proof Closure:**  
-  Remove the redundant density $\rho_{\text{lipid}}$ from the area pumping flux:
-  $$\boxed{\mathcal{C}_0(t) \equiv \frac{1}{2 h(t)} \left( \frac{\Delta A_0 + \int_0^t \dot{N}_{\text{flippase}}(\tau) \, a_{\text{lipid}} \, d\tau}{A_{\text{mid}}(t)} \right) \quad \left[\frac{1}{\mathrm{m}}\right]}$$
+  Formulate continuous field observables via **Haag-Kastler / Araki Local Nets of $C^*$-Algebras** $\mathfrak{A}(\mathcal{O})$ on causal spacetime diamonds $\mathcal{O} \subset \mathcal{M}$:
+  $$\boxed{\mathcal{O}_1 \subset \mathcal{O}_2 \implies \mathfrak{A}(\mathcal{O}_1) \subseteq \mathfrak{A}(\mathcal{O}_2), \qquad [\mathfrak{A}(\mathcal{O}_1), \, \mathfrak{A}(\mathcal{O}_2)] = \{0\} \quad \text{for } \mathcal{O}_1 \text{ spacelike to } \mathcal{O}_2}$$
+  with Stone-von Neumann holding on finite-dimensional local configuration subspaces.
 
 ---
 
-### Critique 2: 1D vs 3D Dimensional Mismatch in Davies-Unruh Radiation Flux (§2.3.3, Eq. 285)
+### Critique 2: Multiplicative Inhibition Disabling Refractory Kinetics in Reaction-Diffusion System (§4.3, Eq. 418)
 
-* **The Formula in Draft:**  
-  $$\mathbf{J}_{\text{Unruh}} = \frac{\hbar c^2}{24\pi} \left( \frac{\alpha_{\text{proper}}(x, t)}{c^2} \right)^2 \hat{n} = \frac{\pi k_B^2 T_{\text{Unruh}}^2}{6 \hbar c} \hat{n}$$
+* **The Formulation in Draft:**  
+  $$f(u, w) \equiv u(1-u)\left(u - \frac{w+b}{a}\right)$$
 
 * **The Mathematical Flaw:**  
-  $\frac{\pi k_B^2 T^2}{6\hbar c}$ has units $[\mathrm{W/m}]$, representing $(1+1)$-dimensional conformal radiation. In 3D continuum mechanics, radiant energy flux across a 2D surface $\partial E$ must have units of power per unit area ($[\mathrm{W/m^2}]$).
+  Because $u(1-u) = 0$ at $u=0$ and $u=1$, the inhibitory enzyme $w$ cannot drive recovery below $u=0$ or terminate the excited state at $u=1$, disabling hyperpolarization and quenching action potentials.
 
 * **Required Proof Closure:**  
-  Formulate the true 3-dimensional Stefan-Boltzmann Unruh radiation flux:
-  $$\boxed{\mathbf{J}_{\text{Unruh}}^{\text{3D}}(x, t) = \frac{\pi^2 k_B^4 T_{\text{Unruh}}^4}{60 \hbar^3 c^2} \hat{n} = \frac{\hbar \, \|\alpha_{\text{proper}}(x, t)\|^4}{960 \pi^2 c^6} \hat{n} \quad \left[\frac{\mathrm{W}}{\mathrm{m^2}}\right]}$$
+  Formulate standard additive biophysical FitzHugh-Nagumo / Rinzel kinetics:
+  $$\boxed{f(u, w) \equiv u(1 - u)(u - a) - w - b}$$
+  ensuring $w > 0$ strictly suppresses $u$ below threshold to enforce refractory recovery.
 
 ---
 
-### Critique 3: Inapplicable Weak-Coupling Tunneling in Strongly Adiabatic ATP Cleavage (§4.1, Eq. 387)
+### Critique 3: Dimensional Inconsistency in Non-Isothermal Bilayer Heat Equation (§4.4, Eq. 482)
 
 * **The Formula in Draft:**  
-  $$k_{\text{vibronic}} = \frac{2\pi}{\hbar} |V_{\text{electronic}}|^2 \sum_{v'=0}^\infty \frac{\exp(-S_{\text{Huang-Rhys}}) S_{\text{Huang-Rhys}}^{v'}}{v'!} \frac{1}{\sqrt{4\pi \lambda_0 k_B T}} \exp\left( -\frac{(\Delta G_{\text{ATP}} + \lambda_0 + v' \hbar \omega_{\text{vib}})^2}{4 \lambda_0 k_B T} \right)$$
+  $$\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla \cdot (k_{\text{thermal}} \nabla T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{R_K}$$
 
 * **The Mathematical Flaw:**  
-  The Bixon-Jortner formula applies strictly to non-adiabatic weak-coupling transitions ($|V| \ll k_B T$). ATP hydrolysis is a **strongly adiabatic covalent bond reorganization ($V \sim 2\text{--}3 \, \mathrm{eV} \gg k_B T$)** on the ground-state Born-Oppenheimer potential surface. Applying weak-coupling tunneling underestimates catalysis rates by $10^{10}\times$.
+  - $\Delta H_{\text{trans}} \in [\mathrm{J/mol}]$, so $\Delta H_{\text{trans}} \frac{\partial \phi}{\partial t} \in [\mathrm{J/(mol \cdot s)}]$, which cannot be added to volumetric energy density $[\mathrm{W/m^3}]$. It must be multiplied by lipid molar volume density $\rho_{\text{lipid}}^{\text{molar}} \equiv \frac{\rho_{\text{bilayer}}}{M_{\text{lipid}}} \in [\mathrm{mol/m^3}]$.  
+  - $\frac{\Delta T}{R_K} \in [\mathrm{W/m^2}]$ is a surface flux, which cannot be added to a 3D volumetric PDE without dividing by cortex thickness $h_{\text{cortex}} \in [\mathrm{m}]$.
 
 * **Required Proof Closure:**  
-  Formulate strongly adiabatic enzymatic bond cleavage via the **Kramers-Grote-Hynes Viscously Damped Rate Law**:
-  $$\boxed{k_{\text{cat}} = \kappa_{\text{Grote-Hynes}} \cdot \frac{\omega_0}{2\pi} \exp\left( -\frac{\Delta G^\ddagger}{k_B T} \right) \quad \left[\frac{1}{\mathrm{s}}\right]}$$
-  where $\kappa_{\text{Grote-Hynes}} \equiv \left[ 1 + \frac{1}{\omega_b}\int_0^\infty \zeta_{\text{pocket}}(\tau) e^{-\lambda_r \tau} d\tau \right]^{-1}$ accounts for active-site non-Markovian memory friction.
+  $$\boxed{\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T}{\partial t} = \nabla \cdot (k_{\text{thermal}} \nabla T) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T - T_{\text{cytosol}}}{h_{\text{cortex}} R_K} \quad \left[\frac{\mathrm{W}}{\mathrm{m^3}}\right]}$$
 
 ---
 
-### Critique 4: Missing $\hbar^2$ and $c^4$ Dimensional Scaling in Wheeler-DeWitt Operator (§2.1, Eq. 162)
+### Critique 4: Force vs. Force-per-Length Dimensional Mismatch in Active ESCRT-III Dynamics (§4.4, Eq. 489)
 
 * **The Formula in Draft:**  
-  $$\hat{\mathcal{H}}_{\text{WDW}} \Psi[h_{ij}] \equiv \left( -16\pi G \, G_{ijkl} \frac{\delta^2}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h}}{16\pi G} \left( {}^{(3)}R - 2\Lambda \right) + \hat{\mathcal{H}}_{\text{matter}} \right) \Psi[h_{ij}] = 0$$
+  $$2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi r_{\text{pore}} v_{\text{scission}}}$$
 
 * **The Mathematical Flaw:**  
-  Canonical momentum is $\hat{\pi}^{ij} = -i\hbar \frac{\delta}{\delta h_{ij}}$. The kinetic term $\frac{16\pi G}{c^4} G_{ijkl} \hat{\pi}^{ij} \hat{\pi}^{kl} = -\frac{16\pi G \hbar^2}{c^4} G_{ijkl}\frac{\delta^2}{\delta h_{ij}\delta h_{kl}}$. Omitting $\frac{\hbar^2}{c^4}$ creates a $10^{102}$ scale error and breaks dimensional homogeneity with the potential term $\frac{\sqrt{h} c^4}{16\pi G}({}^{(3)}R - 2\Lambda)$.
+  $2\pi \Gamma r_{\text{pore}} \in [\mathrm{N}]$, $2\pi \gamma_{\text{line}} \in [\mathrm{N}]$, and $\kappa_f / r_{\text{pore}}^2 \in [\mathrm{N}]$.  
+  However, $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi r_{\text{pore}} v_{\text{scission}}} \in \frac{[\mathrm{W}]}{[\mathrm{m}] \cdot [\mathrm{m/s}]} = \left[\frac{\mathrm{N}}{\mathrm{m}}\right]$.  
+  Adding $[\mathrm{N/m}]$ to $[\mathrm{N}]$ violates dimensional homogeneity.
 
 * **Required Proof Closure:**  
-  Restore explicit SI quantum-gravitational constants $\hbar^2 / c^4$ and $c^4$:
-  $$\boxed{\hat{\mathcal{H}}_{\text{WDW}} \Psi[h_{ij}] \equiv \left( -\frac{16\pi G \hbar^2}{c^4} G_{ijkl} \frac{\delta^2}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} \left( {}^{(3)}R - 2\Lambda \right) + \hat{\mathcal{H}}_{\text{matter}} \right) \Psi[h_{ij}] = 0}$$
+  Remove the extraneous $2\pi r_{\text{pore}}$ denominator to obtain the true active constriction force $F_{\text{ATPase}} = \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \in [\mathrm{N}]$:
+  $$\boxed{2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \quad [\mathrm{N}]}$$
+  $$\boxed{r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \sqrt{\gamma_{\text{line}}^2 + 4 \Gamma_{\text{tension}}(t) \left( \frac{\kappa_f}{2\pi} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}} \right)}}{2 \Gamma_{\text{tension}}(t)} \quad [\mathrm{m}]}$$
 
 ---
 
 ## 4. Master Instructions for the Implementing Agent
 
-The implementing agent must carry out the following surgical modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
+The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Fix Flippase Area Pumping Integral in §4.4 (Line 466):** Replace $\frac{\dot{N}_{\text{flippase}} a_{\text{lipid}}}{\rho_{\text{lipid}}}$ with $\dot{N}_{\text{flippase}}(\tau) a_{\text{lipid}}$.
-2. **Upgrade Davies-Unruh Radiation to 3D Stefan-Boltzmann in §2.3.3 (Eq. 285):** Replace 1D flux with $\mathbf{J}_{\text{Unruh}}^{\text{3D}} = \frac{\pi^2 k_B^4 T_{\text{Unruh}}^4}{60 \hbar^3 c^2}\hat{n} = \frac{\hbar \|\alpha_{\text{proper}}\|^4}{960 \pi^2 c^6}\hat{n}$.
-3. **Formulate Kramers-Grote-Hynes Enzymatic Hydrolysis in §4.1 (Eq. 387):** Replace perturbative Bixon-Jortner formula with Kramers-Grote-Hynes rate law $k_{\text{cat}} = \kappa_{\text{Grote-Hynes}} \frac{\omega_0}{2\pi} \exp(-\frac{\Delta G^\ddagger}{k_B T})$.
-4. **Restore $\hbar^2/c^4$ in Wheeler-DeWitt Operator in §2.1 (Eq. 162):** Update to $-\frac{16\pi G \hbar^2}{c^4} G_{ijkl}\frac{\delta^2}{\delta h_{ij}\delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G}({}^{(3)}R - 2\Lambda)$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.112 through 6.115 to the resolved milestones log and maintain active theoretical frontiers.
+1. **Formulate Haag-Kastler Local Net Axiomatics in §1.1 (Lines 154–156):** Replace naive global Stone-von Neumann with Haag-Kastler / Araki local nets $\mathfrak{A}(\mathcal{O})$ on causal spacetime diamonds.
+2. **Correct FitzHugh-Nagumo Inhibitory Kinetics in §4.3 (Eq. 418):** Replace $u(1-u)(u - \frac{w+b}{a})$ with additive $f(u, w) = u(1-u)(u-a) - w - b$.
+3. **Restore Dimensional Homogeneity in Bilayer Thermal PDE in §4.4 (Eq. 482):** Multiply latent heat by $\rho_{\text{lipid}}^{\text{molar}}$ and divide Kapitza cooling by $h_{\text{cortex}}$.
+4. **Correct ESCRT-III Active Constriction Force in §4.4 (Eq. 489 & 491):** Replace $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi r v}$ with $\frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.117 through 6.120 to the resolved milestones log.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 19
+## 5. Master Revision Checklist for Iteration 21
 
-- [x] **Item 1:** Fix flippase area pumping integral $\int \dot{N}_{\text{flippase}} a_{\text{lipid}} d\tau$ in §4.4 (Line 466).
-- [x] **Item 2:** Update Davies-Unruh radiation to 3D Stefan-Boltzmann flux $\frac{\hbar \|\alpha_{\text{proper}}\|^4}{960 \pi^2 c^6}\hat{n}$ in §2.3.3 (Eq. 285).
-- [x] **Item 3:** Replace weak-coupling tunneling with Kramers-Grote-Hynes rate $k_{\text{cat}} = \kappa_{\text{Grote-Hynes}}\frac{\omega_0}{2\pi}\exp(-\frac{\Delta G^\ddagger}{k_B T})$ in §4.1 (Eq. 387).
-- [x] **Item 4:** Restore $\hbar^2/c^4$ and $c^4$ in the Wheeler-DeWitt functional operator in §2.1 (Eq. 162).
+- [x] **Item 1:** Formulate Haag-Kastler local nets of $C^*$-algebras $\mathfrak{A}(\mathcal{O})$ on causal diamonds in §1.1.
+- [x] **Item 2:** Correct FitzHugh-Nagumo activator-inhibitor kinetics to additive form $f(u, w) = u(1-u)(u-a) - w - b$ in §4.3 (Eq. 418).
+- [x] **Item 3:** Restore dimensional homogeneity ($\rho_{\text{lipid}}^{\text{molar}}\Delta H$ and $\Delta T / (h_{\text{cortex}} R_K)$) in §4.4 (Eq. 482).
+- [x] **Item 4:** Correct ESCRT-III constriction force to $F_{\text{ATPase}} = \dot{\mathcal{W}}_{\text{ATPase}} / v_{\text{scission}}$ in §4.4 (Eq. 489 & 491).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
