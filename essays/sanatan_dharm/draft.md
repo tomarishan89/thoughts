@@ -395,9 +395,13 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   $$\boxed{\Delta t_{\text{response}}(x) = \begin{cases} \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_u}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_u}{v_{\text{bistable}} r_{\text{eff}} - D_u} \right) & \text{for } r_0 \ge r_{\text{crit}} \text{ and } \chi_{\text{soliton}} < \chi_{\text{crit}} \text{ (Super-Critical Propagation)} \\ +\infty \implies \mathbf{R}_{\text{active}} \equiv \mathbf{0} & \text{for } r_0 < r_{\text{crit}} \text{ or } \chi_{\text{soliton}} \ge \chi_{\text{crit}} \text{ (Wavefront Quenching / Soliton Disruption)} \end{cases}}$$
   where $d_g^{\partial E}(x_1, x_2) \equiv \inf_{\gamma \subset \partial E} \int_0^1 \sqrt{g_{ab}(\gamma(s)) \dot{\gamma}^a \dot{\gamma}^b} \, ds$. When an impact excites a sub-critical patch ($r_0 < r_{\text{crit}}$) or triggers soliton instability ($\chi_{\text{soliton}} \ge \chi_{\text{crit}}$), active stiffening fails to recruit.
 
-* **The Spatial Damköhler Field ($\mathrm{Da}(x)$):**  
+* **The Spatial Damköhler Field & Stochastic Channel Arrival Distribution:**  
   For an external oscillatory or shock challenge with characteristic impact frequency $\omega_0$ ($\mathbf{C}(x, t) = \mathbf{C}_0(x) \cos(\omega_0 t)$):
-  $$\boxed{\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x) = \begin{cases} \omega_0 \left[ \tau_{\text{local}} + \frac{d_g^{\partial E} - r_{\text{eff}}}{v_{\text{bistable}}} + \frac{D_{\text{diff}}}{v_{\text{bistable}}^2} \ln\left( \frac{v_{\text{bistable}} d_g^{\partial E} - D_{\text{diff}}}{v_{\text{bistable}} r_{\text{eff}} - D_{\text{diff}}} \right) \right] & (r_0 \ge r_{\text{crit}}) \\ +\infty & (r_0 < r_{\text{crit}}) \end{cases}}}$$
+  $$\mathrm{Da}(x) \equiv \omega_0 \cdot \Delta t_{\text{response}}(x)$$
+  At sub-micron scales ($< 1 \, \mu\mathrm{m}$), discrete clustering of endoplasmic reticulum $\mathrm{IP}_3\mathrm{R}$ channels ($N_{\text{channels}} \sim 10\text{--}30$) introduces state-dependent stochastic Langevin noise $\xi(x, t)$ ($\langle \xi(x, t)\xi(x', t') \rangle = \delta(x-x')\delta(t-t')$). Solving the stochastic Eikonal front propagation yields a Gaussian arrival latency distribution $\Delta t_{\text{response}}(x) \sim \mathcal{N}(\langle \Delta t_{\text{response}}(x) \rangle, \, \sigma_{\Delta t}^2(x))$ with variance:
+  $$\sigma_{\Delta t}^2(x) \equiv \frac{D_{\text{noise}} \cdot d_g^{\partial E}(x)}{N_{\text{channels}} \cdot v_{\text{bistable}}^3}$$
+  The **Probabilistic Dynamic Survival Invariant** requires that active stiffening reliably avoids the anti-phase destructive resonance window with confidence level $1 - \delta_{\text{failure}}$:
+  $$\boxed{\mathbb{P}\left( \phi(x, t) \ge 0 \right) = \frac{1}{\sqrt{2\pi}\sigma_{\Delta t}(x)} \int_{\{\tau \,:\, \cos(\omega_0 \tau) \ge 0\}} \exp\left( -\frac{\left(\tau - \langle \Delta t_{\text{response}}(x) \rangle\right)^2}{2\sigma_{\Delta t}^2(x)} \right) d\tau \ge 1 - \delta_{\text{failure}}}$$
 
 * **Dynamic Spatial Regime Classification & Anti-Phase Destabilization Resonance:**
   $$\begin{cases} 
@@ -436,10 +440,14 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
      $$\sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}) \equiv \sigma_{\text{UTS}}^0 \left[ 1 + \left( \frac{\dot{\varepsilon}(t)}{\dot{\varepsilon}_0} \right)^{1/p_{\text{rate}}} \right] + \eta_{\text{cortex}} \dot{\varepsilon}(t) \quad [\mathrm{Pa}]$$
      where $\sigma_{\text{UTS}}^0$ is the quasi-static failure strength, $\dot{\varepsilon}_0$ is the reference plastic strain rate, $p_{\text{rate}} \ge 1$ is the dynamic viscoplastic hardening exponent, and $\eta_{\text{cortex}}$ is 2D cortical shear viscosity. Tensile membrane rupture occurs when hoop stress exceeds the dynamic rate-dependent failure limit:
      $$\boxed{\sigma_{\text{hoop}}(t) = \frac{\Delta P_{\text{osmotic}}(t) \cdot r(t)^3}{2 h_0 r_0^2} \ge \sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}(t)) \implies \text{Dynamic Bilayer Cavitation / Mechanical Lysis}}$$
-  4. **Stage 2c (Secondary Convective Mass Evacuation):**  
-     The formation of macroscopic lysis pores inverts the effective kinematic boundary condition from swelling expansion to rapid hydrodynamic efflux scaled by cytoplasmic mass density $\rho(x, t) \in [\mathrm{kg/m^3}]$:
-     $$\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \ll 0 \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \mu(E) \longrightarrow 0$$
-  This rigorously reconciles outward osmotic swelling kinematics with irreversible global measure collapse.
+  4. **Stage 2c (Litster-Brochard Pore Line Tension & Secondary Convective Mass Evacuation):**  
+     Upon transient pore nucleation, the competing energies of hydrophobic edge line tension ($\gamma_{\text{line}} \sim 10^{-11} \, \mathrm{N}$) and cortical surface tension ($\Gamma_{\text{tension}}(t) \equiv \sigma_{\text{hoop}}(t) h(t)$) govern pore radius evolution via the **Litster-Brochard-Sandre Pore Dynamics Equation**:
+     $$2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right)$$
+     which defines the **Critical Runaway Lysis Pore Radius** $r_{\text{pore}}^{\text{crit}} \equiv \frac{\gamma_{\text{line}}}{\Gamma_{\text{tension}}(t)}$.
+     - **Spontaneous Resealing Branch ($r_{\text{pore}} < r_{\text{pore}}^{\text{crit}}$):** $\frac{dr_{\text{pore}}}{dt} < 0 \implies$ line tension closes the transient cavitation pore, preserving boundary integrity ($\mu(E) > 0$).
+     - **Irreversible Runaway Lysis Branch ($r_{\text{pore}} \ge r_{\text{pore}}^{\text{crit}}$):** $\frac{dr_{\text{pore}}}{dt} > 0 \implies$ hole expands unstably, triggering hydrodynamic efflux scaled by cytoplasmic mass density $\rho(x, t) \in [\mathrm{kg/m^3}]$:
+       $$\boxed{\frac{d\mu(E)}{dt} = -\int_{\text{pores}} \rho(x, t) \left( \mathbf{v}_{\text{efflux}}(x, t) \cdot \hat{n} \right) dA \ll 0 \quad \left[\frac{\mathrm{kg}}{\mathrm{s}}\right] \implies \mu(E) \longrightarrow 0}$$
+     This rigorously reconciles outward osmotic swelling kinematics with irreversible global measure collapse.
 
 ---
 
@@ -491,6 +499,9 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
     $$\mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}_{\text{solid}}) \equiv K_0 \left( \frac{\phi_{\text{fluid}}}{\phi_0} \right)^2 \exp\left( M_{\text{strain}} \operatorname{Tr}(\boldsymbol{\varepsilon}_{\text{solid}}) \right) \left[ \mathbb{I} + 2 \alpha_{\text{anisotropy}} \boldsymbol{\varepsilon}_{\text{solid}} \right] \quad [\mathrm{m^2}]$$
     with baseline permeability $K_0$, strain stiffening coefficient $M_{\text{strain}} > 0$, and Biot fluid fraction $\phi_{\text{fluid}} = \phi_0 + \alpha_{\text{Biot}} \operatorname{Tr}(\boldsymbol{\varepsilon}_{\text{solid}}) + P_{\text{interstitial}}/M_{\text{Biot}}$ (where $\alpha_{\text{Biot}}$ is the Biot-Willis coefficient and $M_{\text{Biot}}$ is the Biot modulus). The **Coupled Biot Fluid Mass Conservation Equation** is:
     $$\boxed{\frac{1}{M_{\text{Biot}}} \frac{\partial P_{\text{interstitial}}}{\partial t} + \alpha_{\text{Biot}} \frac{\partial (\nabla \cdot \mathbf{u}_{\text{solid}})}{\partial t} + \nabla \cdot \mathbf{v}_{\text{fluid}} = Q_{\text{metabolic}}(x, t)}$$
+  * **Triphasic Hyperelastic Donnan Osmotic Stress Closure:**  
+    Under finite tissue deformation with deformation gradient $\mathbf{F} = \nabla \mathbf{x}$ ($J \equiv \det \mathbf{F}$), fixed negative matrix charges ($c_F(J) \equiv c_{F0}/(J - 1 + \phi_0)$) generate Donnan osmotic swelling pressure $\Delta \Pi_{\text{Donnan}}(J, c_{\text{bath}}) = R T (\sqrt{c_F(J)^2 + 4 c_{\text{bath}}^2} - 2 c_{\text{bath}})$. Combining with the solid matrix **Mooney-Rivlin Strain Energy Density** $W(\mathbf{C}) = C_{10}(I_1 - 3) + C_{01}(I_2 - 3) + \frac{K_{\text{bulk}}}{2}(\ln J)^2$ (where $\mathbf{C} = \mathbf{F}^T \mathbf{F}$), the total continuum Cauchy stress tensor is:
+    $$\boxed{\boldsymbol{\sigma}_{\text{total}} = \frac{2}{J} \mathbf{F} \frac{\partial W}{\partial \mathbf{C}} \mathbf{F}^T - \left( P_{\text{interstitial}} + \Delta \Pi_{\text{Donnan}}(J, c_{\text{bath}}) \right) \mathbb{I}, \qquad \nabla \cdot \boldsymbol{\sigma}_{\text{total}} = \mathbf{0}}$$
     where $\mu_{\text{fluid}}$ is dynamic viscosity, and $\mathbf{K}_{\text{eo}}$ is the **Helmholtz-Smoluchowski Electro-Osmotic Coupling Tensor**:
     $$\mathbf{K}_{\text{eo}} \equiv \frac{\varepsilon_w \zeta}{\mu_{\text{fluid}}} \mathbb{I} \quad \left( \text{units: } \left[\frac{\mathrm{m^2}}{\mathrm{V \cdot s}}\right] \equiv \left[\frac{\mathrm{C \cdot m}}{\mathrm{N \cdot s}}\right] \right)$$
     where $\varepsilon_w$ is solvent permittivity $[\mathrm{F/m}]$ and $\zeta$ is the membrane zeta potential $[\mathrm{V}]$.
@@ -530,19 +541,22 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
 ### 6.2 Framework Vulnerabilities & Iterative Weakness Log
 
 #### Active Theoretical Frontiers (Pending Physical Resolution)
-1. **Discrete IP3R Calcium-Induced Calcium Release (CICR) Stochastic Jump Clustering:**
+1. **Quantum Phase Slip Coherence in Mitochondrial Proton Nanotubes:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.3, reaction-diffusion operates in the continuum limit. At sub-micron scales ($< 1 \, \mu\mathrm{m}$), discrete clustering of endoplasmic reticulum $\mathrm{IP}_3$ receptor channels introduces state-dependent stochastic Langevin noise $\boldsymbol{\xi}(x, t)$, producing sub-continuum nucleation latency variance $\mathrm{Var}(\Delta t_{\text{response}})$.
-2. **High-Strain Hydrodynamic Pore Edge Line Tension & Self-Healing Closure Rate:**
+   - *Description:* In §1.1 & §5.2, proton fluxes obey classical electrodiffusion. Across sub-nanometer $\mathrm{F}_0\mathrm{F}_1$-ATP synthase channels under transmembrane electric fields $> 10^8 \, \mathrm{V/m}$, quantum tunneling and phase slip transitions introduce sub-continuum conductance fluctuations.
+2. **ESCRT-III Biomolecular Filament Nucleation & Dynamic Neck Scission Energy:**
    - *Status:* **Open / Active.**
-   - *Description:* In §4.4, transient lysis pores nucleate when $\sigma_{\text{hoop}} > \sigma_{\text{UTS}}(\dot{\varepsilon})$. Pore edge line tension $\gamma_{\text{line}} \sim 10^{-11} \, \mathrm{N}$ competes with residual cortex tension $\sigma_{\text{residual}}$, requiring an energy balance to close the spontaneous resealing condition ($\dot{r}_{\text{pore}} < 0$).
-3. **Donnan Osmotic Swelling Coupling to Hyperelastic Matrix Strain Energy:**
+   - *Description:* In §4.4, pore closure is governed by isotropic line tension $\gamma_{\text{line}}$. At molecular scales, active pore repair requires spiraling ESCRT-III / annexin polymer assemblies, requiring an explicit ATP-driven dynamic neck constriction work functional $\mathcal{W}_{\text{ESCRT}}$.
+3. **Steric Solute Exclusion in Concentrated Proteoglycan Meshes:**
    - *Status:* **Open / Active.**
-   - *Description:* In §5.2, fixed negative charge density $\rho_e = F \sum z_i c_i^{\text{fixed}}$ inside the collagen-hyaluronan matrix generates Donnan swelling pressure that couples directly to the 3D hyperelastic Mooney-Rivlin strain energy functional $W(\mathbf{C}_{\text{Green}})$, driving non-linear tissue swelling strain under variable salt ionic strength.
+   - *Description:* In §5.2, Donnan swelling assumes point-charge ideal solution ions. At high fixed charge densities ($\phi_{\text{solid}} > 0.5$), finite ion diameter and Carnahan-Starling hard-sphere steric repulsion alter osmotic virial coefficients.
 
 ---
 
 #### Formally Resolved Theoretical Milestones (Closed Gaps)
+- [x] ~~**Triphasic Donnan Swelling Coupled to Mooney-Rivlin Hyperelasticity**~~ (*Closed in §5.2 via 3D Mooney-Rivlin strain energy density $W(\mathbf{C})$ and triphasic Cauchy stress $\boldsymbol{\sigma}_{\text{total}} = \frac{2}{J}\mathbf{F}\frac{\partial W}{\partial \mathbf{C}}\mathbf{F}^T - (P + \Delta\Pi_{\text{Donnan}})\mathbb{I}$.*)
+- [x] ~~**Litster-Brochard Pore Line Tension & Runaway Lysis Radius Threshold**~~ (*Closed in §4.4 via Litster-Brochard pore dynamics $2\pi\eta\dot{r} = 2\pi(\Gamma r - \gamma_{\text{line}})$ and critical radius $r_{\text{pore}}^{\text{crit}} \equiv \gamma_{\text{line}}/\Gamma_{\text{tension}}$.*)
+- [x] ~~**Stochastic IP3R Channel Clustering & Probabilistic Damköhler Arrival**~~ (*Closed in §4.3 via Langevin channel noise $\sigma_{\Delta t}^2(x) \propto D_{\text{noise}} d_g/(N_{\text{channels}} v^3)$ and probabilistic survival integral $\mathbb{P}(\phi \ge 0) \ge 1 - \delta_{\text{failure}}$.*)
 - [x] ~~**Non-Linear Holmes-Mow Poromechanical Permeability & Coupled Biot Consolidation**~~ (*Closed in §5.2 via Holmes-Mow permeability tensor $\mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}) = K_0 (\phi/\phi_0)^2 \exp(M_{\text{strain}}\operatorname{Tr}(\boldsymbol{\varepsilon}))[\mathbb{I} + 2\alpha\boldsymbol{\varepsilon}]$ and coupled Biot fluid mass conservation $\frac{1}{M}\frac{\partial P}{\partial t} + \alpha\frac{\partial (\nabla\cdot\mathbf{u})}{\partial t} + \nabla\cdot\mathbf{v}_{\text{fluid}} = Q$.*)
 - [x] ~~**Rate-Dependent Viscoelastic Plasticity in Lipid Bilayer Strain-to-Failure**~~ (*Closed in §4.4 via dynamic strain rate $\dot{\varepsilon} \equiv \dot{r}/r$ and Cowper-Symonds failure envelope $\sigma_{\text{UTS}}(\dot{\varepsilon}) = \sigma_{\text{UTS}}^0 [1 + (\dot{\varepsilon}/\dot{\varepsilon}_0)^{1/p}] + \eta_{\text{cortex}}\dot{\varepsilon}$.*)
 - [x] ~~**Coupled FitzHugh-Nagumo Kinetics & Chemical Soliton Stability Bound**~~ (*Closed in §4.3 via coupled fast-slow activator-inhibitor system $(u, w)$, chemical Mach number $\mathrm{Ma}_{\text{chem}} \equiv \|\mathbf{v}_{\text{cytosol}}\|/v_{\text{bistable}} < 1$, and soliton stability invariant $\chi_{\text{soliton}} < \frac{1}{2}$.*)
