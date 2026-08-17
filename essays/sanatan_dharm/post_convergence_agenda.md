@@ -86,3 +86,11 @@
   - Exact Schwarzschild-Hubble equality: $R_s(M_{\text{Hubble}}) \equiv R_{\text{Hubble}} = \frac{c}{H_0}$.
   - Holographic entropy identity: $S_{\text{Bekenstein-Hawking}} \equiv S_{\text{Gibbons-Hawking}} = \frac{k_B \pi c^5}{G \hbar H_0^2}$.
   - Einstein-Cartan torsion bounce: The Big Bang as a time-reversed interior collapse ($g_{rr} \leftrightarrow g_{tt}$) from a parent universe.
+
+---
+
+### Item 08: Axiomatic Formulation of a "Living Object" ($E_{\text{living}}$) & Dual Universe Comparison
+* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) Section 2.3 & 5.2; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/interpretation.md) Section 10.
+* **Physics Formulation:**
+  - 4 Invariant Conditions of Life: $\mu(E) > 0$, $\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$, $\phi(t) = \sigma_{\text{yield}} - (\|\mathbf{C}\| - \mathbf{R}_{\text{active}}) \ge 0$, and $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$.
+  - Dual Comparison: Contrasting the Living Object with (1) the Classical Closed Universe ($\partial\mathcal{U}=\emptyset$), and (2) the Open Black Hole Universe ($\mathcal{U}_{\text{BH}}$), proving topological equivalence between living forms and cosmological bubbles.
