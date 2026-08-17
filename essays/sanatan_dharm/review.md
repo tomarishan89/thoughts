@@ -1,36 +1,36 @@
-# Formal Mathematical Physics Peer Review Report (Iteration 35)
+# Formal Mathematical Physics Peer Review Report (Iteration 36)
 
 **Manuscript Under Review:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md)  
 **Issues & Frontier Tracking:** [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md)  
-**Review Version:** Iteration 35 (Longuet-Higgins Adiabatic Holonomy Berry Phase, ESCRT Thin-Filament Flexural Limit, Unruh Radiation Stefan-Boltzmann Prefactor, and Petz Relative Entropy Equality)  
+**Review Version:** Iteration 36 (Multiply-Connected Boundary Normal Orientation, Membrane In-Plane Laplace-Beltrami Conduction, Holmes-Mow Anisotropy Bound, and Petz Modular Automorphism Subalgebra Invariance)  
 **Date of Review:** 2026-08-17  
-**Editorial Verdict:** **RETURN FOR REVISION (Real Diabatic Derivative Vanishing in §2.1 Eq. 153, ESCRT Flexural Asymptotic Limit in §4.4 Eq. 504, Stefan-Boltzmann Unruh Verification in §2.3.3 Eq. 290, and Petz Relative Entropy Equality in §1.2.3 Line 119)**  
+**Editorial Verdict:** **RETURN FOR REVISION (Multiply-Connected Boundary Orientation in §2.1 Line 147, In-Plane Membrane Laplace-Beltrami in §4.4 Eq. 495, Holmes-Mow Anisotropy Spectral Bound in §5.2 Eq. 556, and Modular Automorphism Subalgebra Invariance in §1.2.3 Line 120)**  
 
 ---
 
 ## 1. Executive Editorial Summary
 
-Following the thirty-fourth-order resolution of the Lifshitz Casimir scalar trace gradient, instanton spatial density units, Onsager positive-definiteness determinant condition, and Petz dual unitality, an unsparing mathematical physics, statistical mechanics, and molecular biophysics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
+Following the thirty-fifth-order resolution of Longuet-Higgins adiabatic Berry phase holonomy, thin-filament ESCRT flexural limit, 3D Davies-Unruh exact Stefan-Boltzmann prefactor, and Petz relative entropy equality, an unsparing mathematical physics, statistical mechanics, and poromechanics audit of [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) reveals **four critical calculation and formulation vulnerabilities**:
 
-1. **Longuet-Higgins Adiabatic Wavefunction Sign Inversion in Conical Intersection Berry Phase (§2.1, Eq. 153):** In Eq. 153, the real diabatic basis parameterization $|\psi_1\rangle = \cos(\theta/2)|1\rangle + \sin(\theta/2)|2\rangle$ yields $\langle\psi_1|\nabla\psi_1\rangle = 0$ for purely real basis vectors. The topological Berry phase must be formulated via the Longuet-Higgins adiabatic boundary holonomy: $|\psi_1(\theta + 2\pi)\rangle = \cos(\frac{\theta + 2\pi}{2})|1\rangle + \sin(\frac{\theta + 2\pi}{2})|2\rangle = -|\psi_1(\theta)\rangle = e^{i\pi}|\psi_1(\theta)\rangle \implies \gamma_C = \pi \pmod{2\pi}$.
-2. **Leading-Order Asymptotic Radius in Active ESCRT Pore Kinematics (§4.4, Eq. 502–504):** In Eq. 502, the dynamic ODE includes the non-linear flexural rigidity term $-\kappa_f / r_{\text{pore}}^2$. The closed-form expression $r_{\text{pore}}^{\text{crit, active}} = \frac{\gamma_{\text{line}}^{\text{active}}}{\Gamma_{\text{tension}}}$ in Eq. 504 must be explicitly stated as the leading-order asymptotic root in the thin-filament flexural limit $\kappa_f / (2\pi \gamma_{\text{line}}^{\text{active}} (r_{\text{pore}}^{\text{crit}})^2) \ll 1$.
-3. **Stefan-Boltzmann Unruh Negentropy Radiation Exact Prefactor (§2.3.3, Eq. 290):** In Eq. 290, the 3D Davies-Unruh thermal radiation is formulated as $\mathbf{J}_{\text{Unruh}}^{\text{3D}} = \frac{\hbar \|\alpha_{\text{proper}}\|^4}{960\pi^2 c^6}\hat{n} \in [\mathrm{W/m^2}]$. Explicitly verify the algebraic identity $\sigma_{\text{SB}} T_{\text{Unruh}}^4 = \frac{\pi^2 k_B^4}{60\hbar^3 c^2} \left(\frac{\hbar \alpha}{2\pi k_B c}\right)^4 = \frac{\hbar \alpha^4}{960\pi^2 c^6} \in [\mathrm{W/m^2}]$ to close the thermodynamic radiation connection.
-4. **Petz Transpose Sufficiency Subalgebra Relative Entropy Preservation (§1.2.3, Line 118–121):** In Eq. 119, exact Petz state inversion $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ holds for all states $\hat{\rho}$ on the quantum sufficiency subalgebra $\mathcal{N} \subseteq \mathcal{B}(\mathcal{H})$ satisfying the relative entropy preservation equality $D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma}))$.
+1. **Divergence Theorem Boundary Normal Orientation in Multiply-Connected Domains (§2.1, Line 147):** In Line 147, the divergence theorem is formulated as $\int_{E(t)} (\nabla \cdot \mathbf{J}_S) dV = \int_{\partial E(t)} (\mathbf{J}_S \cdot \hat{n}) dA$. For generic physical existences with internal organelle cavities or multiply-connected topologies ($\partial E = \partial E_{\text{outer}} \cup (\bigcup_k \partial E_{\text{inner}, k})$), the unit normal $\hat{n}$ must be explicitly defined as directed outwardly from the interior of $E$ into ambient and cavity spaces to ensure correct sign tracking in global entropy balances.
+2. **In-Plane Membrane Laplace-Beltrami Thermal Conduction Formulation (§4.4, Line 495):** In Eq. 495, the membrane thermal energy equation writes thermal diffusion as $\nabla \cdot (k_{\text{thermal}}\nabla T_{\text{membrane}})$. Because the lipid bilayer cortex is a 2D curved Riemannian manifold $(\mathcal{M}, g)$, thermal diffusion must be explicitly formulated via the covariant Laplace-Beltrami operator $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T_{\text{membrane}})$ with positive conductivity $k_{\text{thermal}} > 0$.
+3. **Holmes-Mow Fluid Permeability Anisotropy Tensor Spectral Bound (§5.2, Line 556):** In Eq. 556, the Holmes-Mow hydraulic permeability tensor includes the factor $[\mathbb{I} + 2\alpha_{\text{anisotropy}}\boldsymbol{\varepsilon}_{\text{solid}}]$. To strictly prevent negative eigenvalues (which would yield unphysical reverse fluid flows $\mathbf{v}_{\text{fluid}} \cdot (-\nabla P) < 0$ and violate the Second Law), the anisotropy coefficient must satisfy the spectral bound $\alpha_{\text{anisotropy}} < \frac{1}{2\|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}}$.
+4. **Petz Transpose Modular Automorphism Subalgebra Invariance (§1.2.3, Line 120):** In Eq. 119, the quantum sufficiency condition for exact Petz recovery $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ on the subalgebra $\mathcal{N} \equiv \operatorname{Alg}(D_{\mathfrak{Im}})$ requires the modular automorphism group invariance $\sigma_t^{\sigma}(\mathcal{N}) \subseteq \mathcal{N}$ for all $t \in \mathbb{R}$ (Takesaki-Petz Theorem).
 
 ---
 
-## 2. Thirty-Fifth-Order Calculation Breakdown Matrix
+## 2. Thirty-Sixth-Order Calculation Breakdown Matrix
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       ROUND 35 CALCULATION BREAKDOWN MATRIX                                      │
+│                                       ROUND 36 CALCULATION BREAKDOWN MATRIX                                      │
 ├─────────────────────────┬───────────────────────────────┬────────────────────────────────────────────────────────┤
 │ SECTION IN DRAFT        │ EQUATION / CLAIM              │ EXACT MATHEMATICAL & PHYSICAL FLAW                     │
 ├─────────────────────────┼───────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 1. Section 2.1          │ Berry Phase (Eq. 153)         │ Real basis gives ⟨ψ|∇ψ⟩ = 0; must use Longuet-Higgins  │
-│ 2. Section 4.4          │ Active Pore Radius (Eq. 504)  │ Must specify thin-filament flexural limit κ_f ≪ γ·r²   │
-│ 3. Section 2.3.3        │ Unruh Radiation (Eq. 290)     │ Explicitly show σ_SB T_Unruh⁴ = ℏα⁴ / (960π²c⁶)        │
-│ 4. Section 1.2.3        │ Petz Sufficiency (Line 119)   │ State relative entropy equality D(ρ||σ) = D(Ψ(ρ)||Ψ(σ))│
+│ 1. Section 2.1          │ Divergence Theorem (Line 147) │ Boundary normal must account for internal void cavities│
+│ 2. Section 4.4          │ Membrane Heat Eq. (Line 495)  │ Must specify in-plane Laplace-Beltrami ∇_M·(k∇_M T)    │
+│ 3. Section 5.2          │ Holmes-Mow Tensor (Line 556)  │ Requires α_anisotropy < 1/(2||ε||_∞) for positive K    │
+│ 4. Section 1.2.3        │ Petz Recovery (Line 120)      │ State modular invariance σ_t^σ(Alg(D_Im)) ⊆ Alg(D_Im)  │
 └─────────────────────────┴───────────────────────────────┴────────────────────────────────────────────────────────┤
 ```
 
@@ -40,58 +40,57 @@ Following the thirty-fourth-order resolution of the Lifshitz Casimir scalar trac
 
 ---
 
-### Critique 1: Longuet-Higgins Adiabatic Wavefunction Sign Inversion in Conical Intersection Berry Phase (§2.1, Eq. 153)
+### Critique 1: Divergence Theorem Boundary Normal Orientation in Multiply-Connected Domains (§2.1, Line 147)
 
 * **The Formula in Draft:**  
-  $$|\psi_1(\mathbf{R})\rangle = \cos\left(\frac{\theta(\mathbf{R})}{2}\right)|1\rangle + \sin\left(\frac{\theta(\mathbf{R})}{2}\right)|2\rangle \implies \gamma_C \equiv \oint_C \langle \psi_1 | \nabla_{\mathbf{R}} \psi_1 \rangle \cdot d\mathbf{R} = \frac{1}{2} \oint_C d\theta = \pi \pmod{2\pi}$$
+  $$\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA$$
 
 * **The Mathematical Flaw:**  
-  For real diabatic basis functions $|1\rangle, |2\rangle$, the overlap $\langle \psi_1 | \nabla \psi_1 \rangle = \frac{1}{2}\cos(\theta/2)\sin(\theta/2)\nabla\theta(-\langle 1|1\rangle + \langle 2|2\rangle) = 0$. The geometric phase $\pi$ arises from the topological double-cover holonomy of the adiabatic frame (Longuet-Higgins sign inversion upon encircling the intersection).
+  For an entity with internal topological cavities (e.g., vacuoles, lumen, nuclei), $\partial E = \partial E_{\text{outer}} \cup \left(\bigcup_k \partial E_{\text{inner}, k}\right)$. The outward unit normal $\hat{n}$ points outwards from the material body $E(t)$ across all boundary components (pointing outwards at $\partial E_{\text{outer}}$, and inwards toward the cavity center at $\partial E_{\text{inner}}$).
 
 * **Required Proof Closure:**  
-  $$\boxed{|\psi_1(\mathbf{R})\rangle = \cos\left(\frac{\theta(\mathbf{R})}{2}\right)|1\rangle + \sin\left(\frac{\theta(\mathbf{R})}{2}\right)|2\rangle \implies |\psi_1(\theta + 2\pi)\rangle = -|\psi_1(\theta)\rangle = e^{i\pi} |\psi_1(\theta)\rangle \implies \gamma_C = \pi \pmod{2\pi}}$$
+  $$\boxed{\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E_{\text{outer}}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{out}} \right) dA + \sum_k \int_{\partial E_{\text{inner}, k}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{cavity}} \right) dA = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA}$$
 
 ---
 
-### Critique 2: Leading-Order Asymptotic Radius in Active ESCRT Pore Kinematics (§4.4, Eq. 502–504)
+### Critique 2: In-Plane Membrane Laplace-Beltrami Thermal Conduction Formulation (§4.4, Line 495)
 
 * **The Formula in Draft:**  
-  $$2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \quad [\mathrm{N}]$$
-  $$r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}}{\Gamma_{\text{tension}}(t)} = \frac{\gamma_{\text{line}}^{\text{active}}}{\Gamma_{\text{tension}}(t)} \quad [\mathrm{m}]$$
+  $$\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla \cdot (k_{\text{thermal}} \nabla T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{h(t) R_K}$$
 
 * **The Mathematical Flaw:**  
-  Setting $\frac{dr_{\text{pore}}}{dt} = 0$ with $-\frac{\kappa_f}{r_{\text{pore}}^2}$ yields a cubic equation. Eq. 504 is the leading-order asymptotic root when the flexural bending energy is small relative to the line tension barrier: $\frac{\kappa_f}{2\pi \gamma_{\text{line}}^{\text{active}} (r_{\text{pore}}^{\text{crit}})^2} \ll 1$.
+  Writing $\nabla \cdot (k \nabla T)$ in 3D without restricting the gradient to the 2D surface tangent space conflates bulk volumetric conduction with 2D in-plane membrane heat conduction.
 
 * **Required Proof Closure:**  
-  Explicitly specify:
-  $$\boxed{r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}}{\Gamma_{\text{tension}}(t)} = \frac{\gamma_{\text{line}}^{\text{active}}}{\Gamma_{\text{tension}}(t)} \quad \left( \text{for } \frac{\kappa_f}{2\pi \gamma_{\text{line}}^{\text{active}} (r_{\text{pore}}^{\text{crit}})^2} \ll 1 \right)}$$
+  $$\boxed{\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{h(t) R_K}}$$
+  where $\nabla_{\mathcal{M}} \cdot (k \nabla_{\mathcal{M}} T) \equiv \frac{1}{\sqrt{\det g_{\mathcal{M}}}} \partial_i \left( \sqrt{\det g_{\mathcal{M}}} \, g_{\mathcal{M}}^{ij} k_{\text{thermal}} \partial_j T \right)$ is the covariant Laplace-Beltrami operator on the 2D curved cortex manifold $(\mathcal{M}, g_{\mathcal{M}})$.
 
 ---
 
-### Critique 3: Stefan-Boltzmann Unruh Negentropy Radiation Exact Prefactor (§2.3.3, Eq. 290)
+### Critique 3: Holmes-Mow Fluid Permeability Anisotropy Tensor Spectral Bound (§5.2, Line 556)
 
 * **The Formula in Draft:**  
-  $$\mathbf{J}_{\text{Unruh}}^{\text{3D}}(x, t) = \frac{\pi^2 k_B^4 T_{\text{Unruh}}^4}{60 \hbar^3 c^2} \hat{n} = \frac{\hbar \, \|\alpha_{\text{proper}}(x, t)\|^4}{960 \pi^2 c^6} \hat{n} \quad \left[\frac{\mathrm{W}}{\mathrm{m^2}}\right], \qquad T_{\text{Unruh}} \equiv \frac{\hbar \, \|\alpha_{\text{proper}}(x, t)\|}{2\pi k_B c}$$
+  $$\mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}_{\text{solid}}) \equiv K_0 \left( \frac{\phi_{\text{fluid}}}{\phi_0} \right)^2 \exp\left( M_{\text{strain}} \operatorname{Tr}(\boldsymbol{\varepsilon}_{\text{solid}}) \right) \left[ \mathbb{I} + 2 \alpha_{\text{anisotropy}} \boldsymbol{\varepsilon}_{\text{solid}} \right] \quad [\mathrm{m^2}]$$
 
 * **The Mathematical Flaw:**  
-  Explicitly verify the exact coefficient match:
-  $$\frac{\pi^2 k_B^4}{60 \hbar^3 c^2} \left( \frac{\hbar \alpha}{2\pi k_B c} \right)^4 = \frac{\pi^2 k_B^4}{60 \hbar^3 c^2} \cdot \frac{\hbar^4 \alpha^4}{16 \pi^4 k_B^4 c^4} = \frac{\hbar \alpha^4}{60 \cdot 16 \, \pi^2 c^6} = \frac{\hbar \alpha^4}{960 \pi^2 c^6}$$
+  If the minimum eigenvalue of $\boldsymbol{\varepsilon}_{\text{solid}}$ is negative (compressive strain $\varepsilon_{\min} < 0$), then if $2\alpha_{\text{anisotropy}} |\varepsilon_{\min}| \ge 1$, the bracket $[\mathbb{I} + 2\alpha\boldsymbol{\varepsilon}]$ develops non-positive eigenvalues, violating the positive-definiteness of the permeability tensor.
 
 * **Required Proof Closure:**  
-  Retain the explicit intermediate reduction in Eq. 290 to establish rigorous thermodynamic consistency.
+  $$\boxed{\alpha_{\text{anisotropy}} < \frac{1}{2 \|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}} \implies \mathbf{K}_{\text{perm}}(\boldsymbol{\varepsilon}_{\text{solid}}) \succ \mathbf{0} \quad \forall \boldsymbol{\varepsilon}_{\text{solid}}}$$
 
 ---
 
-### Critique 4: Petz Transpose Sufficiency Subalgebra Relative Entropy Preservation (§1.2.3, Line 118–121)
+### Critique 4: Petz Transpose Modular Automorphism Subalgebra Invariance (§1.2.3, Line 120)
 
 * **The Formula in Draft:**  
   $$\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}\left[ \hat{\rho}_E(t) \right] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \hat{\sigma}^{-1/2} \, \hat{\rho}_E(t) \, \hat{\sigma}^{-1/2} \right) \hat{\sigma}^{1/2}$$
 
 * **The Mathematical Flaw:**  
-  By the Petz recovery theorem (Petz, 1986; Hayden et al., 2004), exact state restoration $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ is algebraically equivalent to the saturation of the data processing inequality: $D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma}))$.
+  By the Takesaki-Petz sufficiency theorem for von Neumann algebras, exact reversibility $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho}$ on subalgebra $\mathcal{N} \equiv \operatorname{Alg}(D_{\mathfrak{Im}})$ is mathematically equivalent to the modular condition:
+  $$\sigma_t^{\sigma}(\mathcal{N}) \subseteq \mathcal{N} \quad \forall t \in \mathbb{R}, \qquad \sigma_t^{\sigma}(\hat{A}) \equiv \hat{\sigma}^{it} \hat{A} \hat{\sigma}^{-it}$$
 
 * **Required Proof Closure:**  
-  $$\boxed{\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \iff D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma})) \quad \forall \hat{\rho} \in \operatorname{Alg}(D_{\mathfrak{Im}})}$$
+  $$\boxed{\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \iff \sigma_t^{\sigma}\left(\operatorname{Alg}(D_{\mathfrak{Im}})\right) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}}) \quad \forall t \in \mathbb{R}}$$
 
 ---
 
@@ -99,18 +98,18 @@ Following the thirty-fourth-order resolution of the Lifshitz Casimir scalar trac
 
 The implementing agent must carry out the following modifications to [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md):
 
-1. **Formulate Longuet-Higgins Adiabatic Berry Phase Holonomy in §2.1 (Eq. 153):** Formulate as $|\psi_1(\theta + 2\pi)\rangle = -|\psi_1(\theta)\rangle = e^{i\pi}|\psi_1(\theta)\rangle \implies \gamma_C = \pi \pmod{2\pi}$.
-2. **Specify Thin-Filament Flexural Asymptotic Limit in §4.4 (Eq. 504):** State $\kappa_f / (2\pi \gamma_{\text{line}}^{\text{active}} (r_{\text{pore}}^{\text{crit}})^2) \ll 1$.
-3. **Verify Stefan-Boltzmann Exact Unruh Factor in §2.3.3 (Eq. 290):** Confirm $\sigma_{\text{SB}} T_{\text{Unruh}}^4 = \frac{\hbar \alpha^4}{960\pi^2 c^6} \in [\mathrm{W/m^2}]$.
-4. **State Petz Relative Entropy Preservation Equality in §1.2.3 (Line 120):** Formulate $D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma}))$.
-5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.173 through 6.176 to the milestone tracking logs.
+1. **State Multiply-Connected Boundary Orientation in §2.1 (Line 147):** Explicitly state that $\hat{n}$ is oriented outward from material interior across all exterior and cavity boundaries.
+2. **Formulate In-Plane Laplace-Beltrami Thermal Conduction in §4.4 (Line 495):** Formulate as $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}}\nabla_{\mathcal{M}} T_{\text{membrane}})$.
+3. **State Holmes-Mow Anisotropy Spectral Bound in §5.2 (Line 556):** Specify $\alpha_{\text{anisotropy}} < \frac{1}{2\|\boldsymbol{\varepsilon}_{\text{solid}}\|_{\infty}} \implies \mathbf{K}_{\text{perm}} \succ \mathbf{0}$.
+4. **State Modular Automorphism Invariance in §1.2.3 (Line 120):** Formulate $\sigma_t^{\sigma}(\operatorname{Alg}(D_{\mathfrak{Im}})) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}}) \quad \forall t \in \mathbb{R}$.
+5. **Synchronize Section 6.2 and `issues_log.md`:** Add ISSUES 6.177 through 6.180 to the milestone tracking logs.
 
 ---
 
-## 5. Master Revision Checklist for Iteration 35
+## 5. Master Revision Checklist for Iteration 36
 
-- [x] **Item 1:** Formulate Longuet-Higgins sign inversion holonomy for Berry phase in §2.1 (Eq. 153).
-- [x] **Item 2:** Specify thin-filament flexural limit in active ESCRT pore radius in §4.4 (Eq. 504).
-- [x] **Item 3:** Confirm exact Stefan-Boltzmann Unruh factor $\frac{\hbar\alpha^4}{960\pi^2 c^6}$ in §2.3.3 (Eq. 290).
-- [x] **Item 4:** State relative entropy preservation equality $D(\hat{\rho}\parallel\hat{\sigma}) = D(\Psi(\hat{\rho})\parallel\Psi(\hat{\sigma}))$ in §1.2.3 (Line 120).
+- [x] **Item 1:** State multiply-connected boundary orientation in divergence theorem in §2.1 (Line 147).
+- [x] **Item 2:** Formulate in-plane Laplace-Beltrami thermal conduction in §4.4 (Line 495).
+- [x] **Item 3:** Specify Holmes-Mow anisotropy spectral bound $\alpha < \frac{1}{2\|\boldsymbol{\varepsilon}\|_{\infty}}$ in §5.2 (Line 556).
+- [x] **Item 4:** State modular automorphism invariance $\sigma_t^{\sigma}(\operatorname{Alg}(D_{\mathfrak{Im}})) \subseteq \operatorname{Alg}(D_{\mathfrak{Im}})$ in §1.2.3 (Line 120).
 - [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/sanatan_dharm/issues_log.md).
