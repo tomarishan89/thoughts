@@ -1,6 +1,6 @@
 # Structural Isomorphisms, Multi-Scale Extensions, and Ontological Mappings
 
-> **Epistemological & Hermeneutic Framing:** This companion treatise formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md). 
+> **Epistemological & Hermeneutic Framing:** This companion treatise formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](draft.md). 
 >
 > While the primary physical manuscript operates strictly in SI units ($[\mathrm{Pa}]$, $[\mathrm{W}]$, $[\mathrm{m/s}]$, $[\mathrm{Pa \cdot s}]$) on Lorentzian spacetime manifolds $(\mathcal{M}, g_{\mu\nu})$ for physical and biological systems (Tiers I & II), this treatise investigates how that same mathematical machinery serves as a rigorous structural blueprint across cognitive, social, and metaphysical scales.
 
@@ -140,7 +140,7 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 
 ## Section 3: Classical Sanskrit Concept Correspondence Dictionary
 
-The table below provides the explicit formal correspondence between the physical mechanics in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) and classical Sanskrit ontological concepts:
+The table below provides the explicit formal correspondence between the physical mechanics in [`draft.md`](draft.md) and classical Sanskrit ontological concepts:
 
 | Classical Sanskrit Concept | Formal Mathematical & Physical Realization | Governing Equations in Manuscript |
 | :--- | :--- | :--- |
@@ -421,7 +421,7 @@ Every multi-scale sovereign entity is governed by a **Dual Thermodynamic Mandate
 ### 9.1 The Schwarzschild-Hubble Horizon as the Cosmic Egg (*Brahmāṇḍa*)
 In the *Rigveda* (Nasadiya Sukta) and the *Purāṇas*, the universe is described as emerging from the *Hiraṇyagarbha* (the Golden Womb) or *Brahmāṇḍa* (the Cosmic Egg)—a bounded spherical realm enclosed within cosmic waters. 
 
-As proven in [`draft.md` §1.1.1](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
+As proven in [`draft.md` §1.1.1](draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
 $$\boxed{R_{\text{Hubble}} \equiv \frac{c}{H_0} = \frac{2 G M_{\text{Hubble}}}{c^2} = R_s(M_{\text{Hubble}}) \approx 1.37 \times 10^{26} \, \mathrm{m}}$$
 The cosmic boundary of our observable universe is mathematically identical to the Schwarzschild event horizon of an astronomical black hole containing mass $M_{\text{Hubble}} \approx 8.8 \times 10^{52} \, \mathrm{kg}$. 
 
@@ -475,7 +475,7 @@ At every scale—from the sub-nanometer ATP synthase motor to the 37-trillion-ce
 
 ### 9.4 The Exact Cosmic Energy Budget: *Māyā* as Horizon Boundary Tension & Torsional Relicts
 
-As proven in [`dialogues_and_explorations.md` §20](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/dialogues_and_explorations.md#L642-L733), the ancient Vedic paradox of *Māyā* (the cosmic veil of apparent emptiness exerting immense macroscopic power) and *Avyakta* (the unmanifest, non-luminous material substrate) resolves into exact mathematical and observational physics:
+As proven in [`dialogues_and_explorations.md` §20](dialogues_and_explorations.md#L642-L733), the ancient Vedic paradox of *Māyā* (the cosmic veil of apparent emptiness exerting immense macroscopic power) and *Avyakta* (the unmanifest, non-luminous material substrate) resolves into exact mathematical and observational physics:
 
 ```
                   THE SANSKRIT ONTOLOGICAL COSMIC BUDGET

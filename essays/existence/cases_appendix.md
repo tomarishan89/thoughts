@@ -1,6 +1,6 @@
 # Sandboxed Applied Test Cases: Framework Coverage
 
-> **Editorial Note:** This file contains **applied empirical test cases** mapping the continuum-mechanical, information-theoretic, and thermodynamic framework established in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) to concrete physical, biological, engineered, and cosmological systems. Weaknesses discovered in test cases are logged here and promoted to `draft.md` Section 8 only if they expose fundamental gaps in the core mathematical machinery.
+> **Editorial Note:** This file contains **applied empirical test cases** mapping the continuum-mechanical, information-theoretic, and thermodynamic framework established in [`draft.md`](draft.md) to concrete physical, biological, engineered, and cosmological systems. Weaknesses discovered in test cases are logged here and promoted to `draft.md` Section 8 only if they expose fundamental gaps in the core mathematical machinery.
 
 ---
 

@@ -8,7 +8,7 @@
 
 In the *Rigveda* (Nāsadīya Sūkta) and classical *Purāṇic* cosmologies, the universe is described as emerging from the *Hiraṇyagarbha* (the Golden Womb) or *Brahmāṇḍa* (the Cosmic Egg)—a bounded spherical realm enclosed within cosmic waters.
 
-As proven in [`draft.md` §1.1.1](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
+As proven in [`draft.md` §1.1.1](../draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
 
 $$\boxed{R_{\text{Hubble}} \equiv \frac{c}{H_0} = \frac{2 G M_{\text{Hubble}}}{c^2} = R_s(M_{\text{Hubble}}) \approx 1.3725 \times 10^{26} \, \mathrm{m}}$$
 

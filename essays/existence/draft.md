@@ -781,7 +781,7 @@ The multi-scale continuity of the framework is summarized in the **Universal Exi
 └──────┴──────────────────────┴────────────────────────┴─────────────────────────┴───────────────────────┘
 ```
 
-> **Detailed Iteration Archive:** All 292 microscopic mathematical physics derivations, intermediate lemmas (e.g., semiclassical Einstein horizon backreactions, Maslov caustic index phase jumps, Girsanov measure transformations, Gibbs-Thomson surface potential shifts, Atiyah-Patodi-Singer spectral flows, Grotthuss bounce actions, Carnahan-Starling fluid closures, Marangoni-Boussinesq interfacial tensors, and Skorokhod reflection boundary solutions), and issue logs accumulated across adversarial review cycles are cataloged in [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/issues_log.md).
+> **Detailed Iteration Archive:** All 292 microscopic mathematical physics derivations, intermediate lemmas (e.g., semiclassical Einstein horizon backreactions, Maslov caustic index phase jumps, Girsanov measure transformations, Gibbs-Thomson surface potential shifts, Atiyah-Patodi-Singer spectral flows, Grotthuss bounce actions, Carnahan-Starling fluid closures, Marangoni-Boussinesq interfacial tensors, and Skorokhod reflection boundary solutions), and issue logs accumulated across adversarial review cycles are cataloged in [`issues_log.md`](issues_log.md).
 
 ---
 

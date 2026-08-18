@@ -1,6 +1,6 @@
 # Formal Issues, Critique Log, and Mathematical Milestones
 
-This log tracks all identified theoretical gaps, mathematical inconsistencies, open questions, and milestone resolutions for the manuscript [*An Ontological, Information-Theoretic, and Continuum-Mechanical Framework of Multi-Scale Existence*](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md).
+This log tracks all identified theoretical gaps, mathematical inconsistencies, open questions, and milestone resolutions for the manuscript [*An Ontological, Information-Theoretic, and Continuum-Mechanical Framework of Multi-Scale Existence*](draft.md).
 
 ---
 

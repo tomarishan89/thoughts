@@ -2,7 +2,7 @@
 """
 Convert Markdown manuscripts to standard, publication-grade LaTeX (.tex) documents.
 Usage:
-    python scripts/md_to_latex.py essays/existence/draft.md -o latex/draft.tex
+    python scripts/md_to_latex.py essays/existence/draft.md -o essays/existence/latex/draft.tex
     python scripts/md_to_latex.py --all
 """
 
@@ -92,30 +92,40 @@ def md_to_latex(md_content, title="Academic Paper"):
     content = re.sub(r'^### (.*?)$', r'\\subsection{\1}', content, flags=re.MULTILINE)
     content = re.sub(r'^#### (.*?)$', r'\\subsubsection{\1}', content, flags=re.MULTILINE)
     
-    # 3. Bold & Italic
+    # 3. Handle Markdown Links [Text](url) -> \href{url}{Text} or \textbf{Text}
+    def convert_link(match):
+        text = match.group(1)
+        url = match.group(2)
+        # format text inside link
+        text = re.sub(r'`([^`]+)`', r'\\texttt{\1}', text)
+        text = text.replace('&', r'\&').replace('§', r'\S ')
+        return f"\\href{{{url}}}{{{text}}}"
+    content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', convert_link, content)
+
+    # 4. Bold & Italic & In-line Code
     content = re.sub(r'\*\*\*(.*?)\*\*\*', r'\\textbf{\\textit{\1}}', content)
     content = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', content)
     content = re.sub(r'\*(.*?)\*', r'\\textit{\1}', content)
+    content = re.sub(r'`([^`\n]+)`', r'\\texttt{\1}', content)
 
-    # 4. Strip mermaid diagrams or convert to comments
+    # 5. Strip mermaid diagrams or convert to comments
     content = re.sub(r'```mermaid.*?```', r'%% [Flowchart Diagram Omitted in Raw TeX] %%', content, flags=re.DOTALL)
     
-    # 5. Code blocks to verbatim
+    # 6. Code blocks to verbatim
     content = re.sub(r'```(.*?)```', r'\\begin{verbatim}\1\\end{verbatim}', content, flags=re.DOTALL)
     
-    # 6. Blockquotes to quote
+    # 7. Blockquotes to quote
     content = re.sub(r'^> (.*?)$', r'\\begin{quote}\1\\end{quote}', content, flags=re.MULTILINE)
 
-    # 7. Unescape or format special LaTeX characters outside math
-    # Replace & outside math with \&
+    # 8. Unescape or format special LaTeX characters outside math
+    content = content.replace(r'§', r'\S ')
     content = content.replace(r'&', r'\&')
     content = content.replace(r'%', r'\%')
     content = content.replace(r'#', r'\#')
     content = content.replace(r'_', r'\_')
 
-    # 8. Restore Math Blocks
+    # 9. Restore Math Blocks
     for idx, block in enumerate(math_blocks):
-        # clean block
         block_clean = block.strip()
         latex_block = f"\n\\begin{{equation}}\n{block_clean}\n\\end{{equation}}\n"
         content = content.replace(f"\\%\\%MATH\\_BLOCK\\_{idx}\\%\\%", latex_block)
@@ -128,10 +138,8 @@ def md_to_latex(md_content, title="Academic Paper"):
         content = content.replace(f"%%MATH_INLINE_{idx}%%", latex_inline)
 
     # Clean double escaped symbols in math
-    content = content.replace(r'\_', '_')  # restore underscores inside math if any
+    content = content.replace(r'\_', '_')  # restore underscores inside math
     
-    # Strip markdown table syntax or convert to tabular
-    # Wrap in document
     full_latex = LATEX_PREAMBLE + "\n\n" + content + "\n\n\\end{document}\n"
     return full_latex
 

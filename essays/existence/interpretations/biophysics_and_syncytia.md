@@ -6,7 +6,7 @@
 
 ## 1. The Living Cell as a Non-Equilibrium Thermodynamic Engine
 
-In [`draft.md` §2 & §5](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md), a living biological cell ($E_{\text{living}} \in T_{\text{II}}$) is formulated as an active continuum engine operating across a complex state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$.
+In [`draft.md` §2 & §5](../draft.md), a living biological cell ($E_{\text{living}} \in T_{\text{II}}$) is formulated as an active continuum engine operating across a complex state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$.
 
 ```
                              THE LIVING CELL ENGINE

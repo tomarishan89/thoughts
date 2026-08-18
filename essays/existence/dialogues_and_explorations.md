@@ -1,6 +1,6 @@
 # Philosophical Dialogues & Ontological Explorations
 
-This document logs foundational philosophical inquiries, meta-reflections, and conceptual derivations that emerge from observing and interrogating the mathematical physics framework developed in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) and [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md).
+This document logs foundational philosophical inquiries, meta-reflections, and conceptual derivations that emerge from observing and interrogating the mathematical physics framework developed in [`draft.md`](draft.md) and [`interpretation.md`](interpretation.md).
 
 ---
 
