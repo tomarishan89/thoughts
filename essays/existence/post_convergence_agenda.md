@@ -12,7 +12,7 @@
 ├────┬──────────────────────────────────────┬─────────────────────────┬────────────────────────────┤
 │ ID │ CONCEPT / FACTOR                     │ TARGET LOCATION         │ THEORETICAL IMPACT         │
 ├────┼──────────────────────────────────────┼─────────────────────────┼────────────────────────────┤
-│ 01 │ Expression Operator (𝓧)              │ draft.md §2.1, interp.md│ Interfacial Trace bridge   │
+│ 01 │ Expression Operator (𝓧)              │ draft.md §2.1 (Done), interp.md│ Interfacial Trace bridge   │
 │ 02 │ Hunger vs. Craving (Kṣudhā vs. Kāma) │ interpretation.md       │ Bottom-up vs Top-down sim  │
 │ 03 │ Ariṣaḍvarga Thermodynamics           │ interpretation.md       │ Margin distortion dynamics │
 │ 04 │ Involuntary vs. Voluntary Gating     │ draft.md §4.3, interp.md│ Landauer veto cost 𝓞_inhib │
@@ -27,10 +27,12 @@
 ## 2. Detailed Integration Roadmaps
 
 ### Item 01: Formalize "Expression" ($\boldsymbol{\mathcal{X}}$) as the Interfacial Transduction Operator
+* **Status:** **Integrated in `draft.md` §2.1**; Pending in `interpretation.md`.
 * **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.1; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 3.
 * **Physics Formulation:**
-  $$\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} -\mathbf{T}^{\text{field}} \cdot \hat{n} & \text{(Radiant / Environmental Surface Traction)} \\ \mathbf{R}_{\text{active}}(x, t - \Delta t) & \text{(Somatic Neuromuscular / Pre-stress Actuation)} \end{cases}$$
-* **Ontological Utility:** Bridges the star's radiant surface interactions (photosynthesis, reflection) with the biological body's somatic actuation of internal mental visions (adrenaline, muscular contractility).
+  $$\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)$$
+  $$\nabla \cdot \mathbf{S}_{\mathfrak{Im}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \|\mathbf{\Phi}_{\mathbb{C}}^{\text{transmitted}}\|^2 = \|\mathbf{\Phi}_{\mathbb{C}}^{\text{incident}}\|^2 - (\boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}})\cdot\hat{n}$$
+* **Theoretical Impact:** Formally proves that the extent of existence in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
 
 ---
 

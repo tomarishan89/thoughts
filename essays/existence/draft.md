@@ -146,9 +146,21 @@ where $\mu_{\mathbb{R}}(E) \equiv \int_{E_{\mathbb{R}}} \rho(\mathbf{x}) \, d^3x
    $$\boxed{\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E_{\text{outer}}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{out}} \right) dA + \sum_k \int_{\partial E_{\text{inner}, k}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{cavity}} \right) dA = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA}$$
    (where for multiply-connected topological domains $\partial E = \partial E_{\text{outer}} \cup (\bigcup_k \partial E_{\text{inner}, k})$, the unit normal $\hat{n}$ is oriented outward from the material body $E(t)$ across exterior interfaces $\hat{n}_{\text{out}}$ and internal void cavity boundaries $\hat{n}_{\text{cavity}}$).
 
-#### The Interfacial Realization Trace Map ($\operatorname{Tr}_{\partial E}$) & Non-Adiabatic Berry Phase Holonomy:
-In source-free vacuum ($\mu = 0$), fields propagate as un-manifest complex wave functionals $\mathbf{\Phi}_{\mathbb{C}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical interaction is evaluated by the **Interfacial Realization Trace Map**:
-$$\boxed{\operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \longrightarrow \begin{cases} \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Surface Challenge Traction)} \\ \mathbf{S}_{\text{absorbed}}(x, t) = \alpha \, \mathbf{S}_{\text{incident}}(x, t) & \text{(Absorbed Radiant Negentropy Influx)} \end{cases}}$$
+#### The Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$), Trace Realization & Imaginary Field Depletion:
+In source-free vacuum ($\mu = 0$), gauge fields and unmanifest potentials propagate as complex wave functionals $\mathbf{\Phi}_{\mathbb{C}} \in \Omega_{\mathfrak{Im}}$ carrying Poynting / complex amplitude flux $\mathbf{S}_{\mathfrak{Im}} = \frac{c}{8\pi} \|\mathbf{\Phi}_{\mathbb{C}}\|^2 \hat{\mathbf{k}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical realization is governed by the **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$)** via the Interfacial Trace Map:
+$$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)}$$
+where the realized modes partition the incident flux across the interface:
+$$\begin{cases} 
+\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) = \alpha(x, t) \left( \mathbf{S}_{\text{incident}} \cdot \hat{n} \right) & \text{(Absorbed Negentropy / Real Photochemical Work } \Delta \mu_{\mathbb{R}} > 0\text{)} \\ 
+\boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) = \mathcal{R}(x, t) \left( \mathbf{S}_{\text{incident}} \cdot \hat{n} \right) & \text{(Reflected Wave Field / Elastic Surface Scattering)} \\ 
+\mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Maxwell Stress Tensor Surface Traction)} 
+\end{cases}$$
+
+##### Conservation of Interfacial Flux & Imaginary Field Depletion Law:
+By global energy conservation across the orthogonal projections $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, any real physical work materialized at the boundary ($\boldsymbol{\mathcal{X}}_{\text{absorbed}} > 0$) strictly consumes the unmanifest field amplitude in imaginary space:
+$$\boxed{\nabla \cdot \mathbf{S}_{\mathfrak{Im}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \|\mathbf{\Phi}_{\mathbb{C}}^{\text{transmitted}}\|^2 = \|\mathbf{\Phi}_{\mathbb{C}}^{\text{incident}}\|^2 - \left( \boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}} \right) \cdot \hat{n}}$$
+proving that the extent of existence in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
+
 In ultrafast photoreceptive sensory transduction (e.g. retinal conical intersections), non-adiabatic electronic-nuclear trajectories accumulate a topological **Geometric Berry Phase**:
 $$\boxed{|\psi_1(\mathbf{R})\rangle = \cos\left(\frac{\theta(\mathbf{R})}{2}\right)|1\rangle + \sin\left(\frac{\theta(\mathbf{R})}{2}\right)|2\rangle \implies |\psi_1(\theta + 2\pi)\rangle = -|\psi_1(\theta)\rangle = e^{i\pi}|\psi_1(\theta)\rangle \implies \gamma_C = \pi \pmod{2\pi}}$$
 enforcing constructive wavepacket interference along productive perceptual realization pathways and destructive cancellation along dissipative non-reactive branches.
