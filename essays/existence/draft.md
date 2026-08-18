@@ -7,11 +7,13 @@
 ### 1.0 Executive Overview: The Universal Cycle of Existence
 This framework models any physical, biological, or multi-agent entity as an active, non-equilibrium thermodynamic engine operating across a complex state space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$. The universal continuity of existence across all physical and biological scales is governed by a closed 6-stage operational cycle:
 
-$$\begin{CD}
-\text{Entity } E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle @>\text{Projection } \hat{\mathbf{P}}>> \text{Transmitted Field Flux } \mathbf{S}_{\mathbf{P}} \\
-@AA\text{Fuel Influx } \dot{E}_{\text{fuel}} = \eta \boldsymbol{\mathcal{X}}A @VV\text{Arrival at } \partial E_{\text{target}}V \\
-\text{Expression } \boldsymbol{\mathcal{X}} \text{ \& Entropy } \dot{S}_{\text{gen}} @<<\text{Continuum Damping } (K_0, \nu, \mathbf{R})< \text{Environmental Challenge } \mathbf{C}
-\end{CD}$$
+$$
+\begin{matrix}
+\text{Entity } E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle & \xrightarrow{\quad \text{Projection } \hat{\mathbf{P}} \quad} & \text{Transmitted Field Flux } \mathbf{S}_{\mathbf{P}} \\
+\Big\uparrow {\scriptstyle \text{Fuel Influx } \dot{E}_{\text{fuel}} = \eta \boldsymbol{\mathcal{X}}} & & \Big\downarrow {\scriptstyle \text{Arrival at } \partial E_{\text{target}}} \\
+\text{Expression } \boldsymbol{\mathcal{X}} \text{ \& Entropy } \dot{S}_{\text{gen}} & \xleftarrow{\; \text{Continuum Damping } (K_0, \nu, \mathbf{R}) \;} & \text{Environmental Challenge } \mathbf{C}
+\end{matrix}
+$$
 
 ```
  1. Entity (E):          Maintains ordered fuel substrate (S_internal < S_ambient) via engine ℰ.
@@ -453,11 +455,13 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
 
 * **Step 1 (The Operator-Theoretic Temporal Triad):**  
   Operational existence across all cognitive and biological scales is mediated by a closed, three-phase causal transduction loop:
-  $$\begin{CD}
-  \mathcal{F}_{\text{ledger}} \subset \Omega_{\mathbb{R}} \text{ (Past Retained Substrate)} @>\text{Dual Field Generation}>> \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}} \text{ (Future/Forward Broadcast)} \\
-  @AA\text{Historical Trace Inscription}A @VV\text{Interfacial Boundary Realization } \operatorname{Tr}_{\partial E}V \\
-  \partial E(t) \subset \Omega_{\mathbb{R}} @<<\text{Traction \& Real Work Materialization}<< \boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}] \text{ (Present Expression)}
-  \end{CD}$$
+  $$
+  \begin{matrix}
+  \mathcal{F}_{\text{ledger}} \subset \Omega_{\mathbb{R}} \text{ (Past Retained Substrate)} & \xrightarrow{\quad \text{Dual Field Generation} \quad} & \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}} \text{ (Future Broadcast)} \\
+  \Big\uparrow {\scriptstyle \text{Historical Trace Inscription}} & & \Big\downarrow {\scriptstyle \text{Interfacial Boundary Realization } \operatorname{Tr}_{\partial E}} \\
+  \partial E(t) \subset \Omega_{\mathbb{R}} & \xleftarrow{\quad \text{Traction \& Real Work Materialization} \quad} & \boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}] \text{ (Present Expression)}
+  \end{matrix}
+  $$
 
 * **Step 2 (The Imaginary Projection Expectation Functional & Doob Martingale Convergence):**  
   Let $\tau_{\text{horizon}}$ be the characteristic predictive planning horizon and $\beta_{\text{discount}} \equiv \frac{\dot{S}_{\text{ambient}}}{k_B} > 0$ be the thermodynamic temporal discounting rate set by environmental decoherence. The forward reachability of the imaginary projection field $\hat{\mathbf{P}}_{\mathfrak{Im}}$ is quantified by its time-discounted structural margin expectation functional $\mathcal{P}_{\hat{\mathbf{P}}}(t)$:
