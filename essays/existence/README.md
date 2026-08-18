@@ -1,6 +1,6 @@
 # Existence: Continuum-Mechanical, Thermodynamic, and Ontological Framework
 
-This directory houses the research corpus, formal manuscript drafts, mathematical proofs, critique logs, and exploratory dialogues formulating a scale-invariant, continuum-mechanical, and non-equilibrium thermodynamic field theory of physical and biological existence.
+This directory houses the formal research corpus, mathematical physics manuscripts, proof archives, peer-review logs, and hermeneutic treatises formulating a scale-invariant, continuum-mechanical, and non-equilibrium thermodynamic field theory of physical and biological existence.
 
 ---
 
@@ -11,7 +11,7 @@ You can explore and query this research corpus interactively through Google Note
 | Scope | Target | NotebookLM Link | Description |
 | :--- | :--- | :--- | :--- |
 | **Manuscript Deep-Dive** | [`draft.md`](draft.md) | [**Open NotebookLM (draft.md)**](https://notebook.google.com/notebook/05af9f0d-d66d-4333-bb98-75a7afb13f1f) | Dedicated interactive model grounded strictly in the full mathematical physics manuscript (*A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Physical and Biological Existence*). |
-| **Corpus / Folder Suite** | `essays/existence/` | *`[Link Pending / Update with Folder URL]`* | Comprehensive interactive model spanning all 10 corpus documents (foundations, entropy models, case studies, issue logs, and philosophical dialogues). |
+| **Complete Research Suite** | `essays/existence/` | *`[Link Pending / Update with Folder URL]`* | Comprehensive interactive model spanning all corpus documents (foundations, entropy models, case studies, issue logs, and philosophical dialogues). |
 
 ---
 
@@ -19,33 +19,36 @@ You can explore and query this research corpus interactively through Google Note
 
 | File | Type | Description |
 | :--- | :--- | :--- |
-| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), and the weakness log. |
-| [`issues_log.md`](issues_log.md) | **Critique & Milestone Log** | Detailed log tracking all resolved theoretical gaps, mathematical milestones, and active downstream research frontiers across 10 categories. |
-| [`base.md`](base.md) | **Foundational Essay** | *Deconstructing Sanatan Dharm: An Ontological, Information-Theoretic, and Set-Theoretic Working Hypothesis* — establishing the definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
+| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), Schwarzschild-Hubble horizon embedding ($R_s \equiv R_H$), relativistic Bondi accretion, and the operator Temporal Triad ($\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$) with 292 closed proof milestones across 63 peer-review iterations. |
+| [`interpretation.md`](interpretation.md) | **Ontological Treatise** | Comprehensive 9-section companion paper establishing dimensional semantic transduction ($\mathbf{K}_{\text{trans}}$), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), non-equilibrium thermodynamics of the *Ariṣaḍvarga*, *Vāsanā* vs. *Viveka* Landauer gating, systemic model of psychopathy, "I Am a Universe" fractal syncytial hierarchy, and the *Brahmāṇḍa* cosmological horizon duality. |
+| [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all 292 resolved theoretical milestones, mathematical proofs, and active downstream continuum-closure frontiers across 10 categories. |
+| [`review.md`](review.md) | **Peer Review & Defense Log** | Editorial feedback, referee verdicts, and adversarial stress-tests maintained under the Anti-Premature Closure Invariant. |
+| [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm: An Ontological, Information-Theoretic, and Set-Theoretic Working Hypothesis* — establishing the definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
 | [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains (subatomic hadrons, eukaryotic membranes, Roche limits, institutional governance). |
 | [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ($\sigma_S \ge 0$), non-equilibrium state flux ($\mathbf{J}_S$), and thermodynamic bounds. |
-| [`interpretation.md`](interpretation.md) | **Ontological Mapping** | Rigorous translation between classical Sanskrit terminology (*Dharm*, *Sanatan*, *Māyā*, *Karma*, *Prāṇa*, *Citta*) and formal continuum mechanics / information theory. |
-| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Explorations & Debates** | Extended adversarial dialogues, thought experiments, stress-tests of boundary conditions, and philosophical inquiries. |
-| [`post_convergence_agenda.md`](post_convergence_agenda.md) | **Research Agenda** | Long-term theoretical roadmap, open conjectures, and downstream mathematical developments post-closure. |
-| [`review.md`](review.md) | **Peer Review & Defense** | Editorial feedback, referee critiques, and structured defenses of mathematical and thermodynamic claims. |
+| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Explorations & Debates** | Extended Socratic dialogues, thought experiments, stress-tests of boundary conditions, and philosophical inquiries. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
 
 ---
 
-## 📐 Theoretical Pillars of the Manuscript (`draft.md`)
+## 📐 Core Theoretical Architecture of the Framework
 
-1. **Axiomatic Spacetime & State Space Geometry (§1):**
-   - 4D Lorentzian manifold $(\mathcal{M}, g_{\mu\nu})$ bounded by null hypersurfaces ($\mathcal{N} = \partial J^+$).
-   - Complexified state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \otimes \mathbb{C}$ equipped with a canonical Kähler metric $h(X, Y) = g(X, Y) + i\omega(X, Y)$ and volume measure $d\mu_h$.
-   - Israel-Stewart hyperbolic causal shear and bulk relaxation ($\tau_\pi, \tau_\Pi > 0$) preventing superluminal stress-energy dissolution.
-2. **Boundary Kinematics & Structural Margin (§2):**
-   - Dynamic boundary identification via scalar equipotential margin $\phi(x, t) \equiv \|\nabla \Phi_{\text{internal}}\| - \|\nabla \Phi_{\text{external}}\| = 0$.
+1. **Axiomatic Spacetime & Cosmological Black Hole Embedding (§1):**
+   - 4D Lorentzian manifold $(\mathcal{M}, g_{\mu\nu})$ and complexified state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$ equipped with canonical Kähler volume measure $d\mu_h$.
+   - **Schwarzschild-Hubble Horizon Identity:** $R_s(M_{\text{Hubble}}) = \frac{2GM}{c^2} \equiv R_{\text{Hubble}} = \frac{c}{H_0} \approx 1.37 \times 10^{26} \, \mathrm{m}$ and holographic Gibbons-Hawking entropy $S_{\text{GH}} \approx 10^{122} \, k_B$.
+   - Non-singular Einstein-Cartan spin-torsion bounce at $a_{\text{min}} > 0$ and open relativistic Bondi accretion $\dot{M}_{\text{accrete}} \ge 0$ fueling cosmic expansion.
+2. **Boundary Kinematics, Projection & Expression (§2):**
    - Relativistic Lorentz-bounded level-set propagation: $\mathbf{v}_n = \frac{c \kappa \phi}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2}} \hat{n} \implies \|\mathbf{v}_n\| < c$.
-3. **Resilience, Degradation & Dynamic Stability (§3):**
-   - Multi-tier classification of existence: Tier I (Passive Physical Matter), Tier II (Metabolic Biological Cells), Tier III (Anticipatory / Institutional Systems).
-   - Non-equilibrium Lyapunov stability with hereditary Volterra memory kernels and continuous maintenance energy bounds $\mathcal{O}[\mathcal{F}_{\text{maint}}] = \frac{1}{\nu}\mathbf{R}_0$.
-4. **Thermodynamic Friction, Information Erasure & Landauer Bounds (§4):**
-   - Microscopic Landauer erasure dissipation $\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \, \dot{\mathcal{I}}_{\text{erased}}$ coupled to macroscopic continuum entropy production $\sigma_S = \mathbf{J}_q \cdot \nabla(1/T) + \frac{1}{T}\boldsymbol{\pi}:\boldsymbol{\sigma} + \sigma_{\text{chem}} \ge 0$.
-   - Onsager reciprocal symmetry ($L_{ij} = L_{ji}$) and Prigogine minimum entropy production bounds.
-5. **Scale Invariance & Universal Mapping (§5):**
-   - Exact mathematical dictionary mapping physical tensors ($T^{\mu\nu}, \sigma^{\alpha\beta}, \nu$), biological fluxes ($\mathbf{J}_{\text{metabolic}}, \Gamma_{\text{repair}}$), and classical Sanskrit ontological concepts ($E, \partial E, \Psi, \mathbf{C}, \mathbf{R}$).
+   - **Dual Projection Operator ($\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
+   - **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$).
+   - **Axiomatic Life Definition & Horizon Duality (Theorem 6B):** Proving that $\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})$.
+   - **The Operator Temporal Triad (Theorem 6C):** $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ with Doob forward martingale convergence and Blackwell-Rao minimal-variance estimation.
+3. **Resilience, Multi-Tier Stability & Degenerate Limits (§3–§4):**
+   - 4-Tier classification: Tier I ($\chi^* = 0$, Reactive), Tier II ($\chi^* \in (0, 1)$, Metabolic), Tier III ($\chi^* \approx 1$, Cognitive), Tier IV ($\chi^* > 1$, Collective).
+   - Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ($\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$).
+   - Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ($L_{ij} = L_{ji}$).
+4. **Continuum Biophysics & Multi-Scale Syncytia (§5):**
+   - Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
+   - Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
+   - Closed syncytial circuit electrostatics and continuous bio-electric pattern homeostasis.
+
