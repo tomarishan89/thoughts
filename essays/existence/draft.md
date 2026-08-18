@@ -55,6 +55,18 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
   $$\boxed{T^{\mu\nu} = \left(\rho c^2 + P + \Pi\right) \frac{u^\mu u^\nu}{c^2} + (P + \Pi) g^{\mu\nu} + \pi^{\mu\nu}}$$
   where $\Delta^{\mu\nu} \equiv g^{\mu\nu} + u^\mu u^\nu / c^2$ is the spatial projector metric ($\Delta^\mu_\mu = 3$, rigorously enforcing spatial orthogonality $u_\alpha \pi^{\alpha\beta} \equiv 0$ and trace-free invariance $g_{\alpha\beta}\pi^{\alpha\beta} \equiv 0$ under relativistic 4-acceleration $\dot{u}^\mu = u^\lambda \nabla_\lambda u^\mu \neq 0$ via $\Delta^\alpha_\mu \Delta^\beta_\nu u^\lambda \nabla_\lambda \pi^{\mu\nu} = \langle u^\lambda \nabla_\lambda \pi^{\alpha\beta} \rangle_{\text{spatial, trace-free}}$), $\sigma^{\alpha\beta} \equiv \Delta^\alpha_\mu \Delta^\beta_\nu \left(\frac{\nabla^\mu u^\nu + \nabla^\nu u^\mu}{2} - \frac{1}{3}\theta g^{\mu\nu}\right)$ is trace-free shear ($\sigma^\mu_\mu \equiv 0$), and $\theta \equiv \nabla_\mu u^\mu$ is expansion rate. Causal stability requires subluminal characteristic sound and shear mode propagation $v_{\text{char}}^2 = c_s^2 + \frac{\frac{4}{3}\eta + \zeta}{\left(\rho + P/c^2\right)\tau_\pi} \le c^2$, bounding the relaxation time as $\tau_\pi \ge \frac{\frac{4}{3}\eta + \zeta}{\left(\rho + P/c^2\right)\left(c^2 - c_s^2\right)}$. Along collective null causal boundaries $\mathcal{N}$ (e.g., event horizons), the Damour-Navier-Stokes membrane paradigm yields an effective horizon surface viscosity $\eta_{\text{horizon}} = -\lim_{\omega \to 0} \frac{1}{\omega} \operatorname{Im} G_{xy, xy}^R(\omega, \mathbf{0}) = \frac{c^3}{16\pi G}$ and Bekenstein-Hawking entropy density $s_{\text{horizon}} = \frac{k_B c^3}{4 G \hbar}$, saturating the Kovtun-Son-Starinets holographic bound with exact equality $\frac{\eta_{\text{horizon}}}{s_{\text{horizon}}} = \frac{\hbar}{4\pi k_B}$.
 
+#### 1.1.1 Cosmological Black Hole Embedding & Schwarzschild-Hubble Horizon Equivalence ($\mathcal{H}_1$)
+* **The Cosmological Boundary Dilemma:** In standard Friedmann-Lemaître-Robertson-Walker (FLRW) cosmology, the universe is assumed to be an isolated closed system without external boundary ($\partial \mathcal{U} = \emptyset$), which predicts inevitable maximum-entropy thermal death. Does the observable universe instead constitute an open, bounded thermodynamic engine?
+* **Exact Schwarzschild-Hubble Geometric Identity:**  
+  Let $H_0 \equiv \dot{a}/a$ be the Hubble expansion rate. The observable cosmic horizon radius is $R_{\text{Hubble}} \equiv c/H_0 \approx 1.37 \times 10^{26} \, \mathrm{m}$. In a spatially flat critical universe ($\Omega_{\text{total}} = 1$), the critical energy density is $\rho_c \equiv \frac{3 H_0^2}{8\pi G}$. Integrating over the Hubble sphere $V_{\text{Hubble}} = \frac{4}{3}\pi R_{\text{Hubble}}^3$ yields the total enclosed cosmological mass:
+  $$M_{\text{Hubble}} = \rho_c \cdot V_{\text{Hubble}} = \left( \frac{3 H_0^2}{8\pi G} \right) \left( \frac{4}{3}\pi \frac{c^3}{H_0^3} \right) = \frac{c^3}{2 G H_0} \approx 8.8 \times 10^{52} \, \mathrm{kg}$$
+  Evaluating the gravitational Schwarzschild radius $R_s(M) \equiv \frac{2 G M}{c^2}$ of this enclosed mass yields the **Exact Schwarzschild-Hubble Horizon Identity**:
+  $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \right) = \frac{c}{H_0} \equiv R_{\text{Hubble}} \iff \partial \mathcal{U} \equiv \mathcal{H}_{\text{Hubble}} = \mathcal{H}_{\text{Schwarzschild}}}$$
+* **Holographic Entropy & Trans-Horizon Accretion:**  
+  The Bekenstein-Hawking black hole horizon entropy of the universe identically matches the Gibbons-Hawking cosmological de Sitter horizon entropy:
+  $$\boxed{S_{\text{BH}}(\mathcal{U}) = \frac{k_B c^3 \operatorname{Area}(\partial \mathcal{U})}{4 G \hbar} = \frac{k_B \pi c^5}{G \hbar H_0^2} \equiv S_{\text{GH}}(\mathcal{U}) \approx 10^{122} \, k_B}$$
+  Under the Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion framework (Popławski, 2010), fermion spin density $s^{\mu\nu\rho}$ generates non-singular repulsive gravitational stresses $-\frac{1}{2}\kappa^2 s_{\mu\nu\rho}s^{\mu\nu\rho}$ at trans-nuclear densities ($\rho \sim 10^{54} \, \mathrm{kg/m^3}$), replacing the Big Bang point singularity with a non-singular cosmic bounce. The interior metric coordinates undergo a signature inversion ($g_{rr} \leftrightarrow g_{tt}$), establishing our expanding universe $\mathcal{U}_{\text{BH}}$ as the interior of an open black hole embedded in a parent spacetime, continuously fueled by trans-horizon Bondi matter accretion $\dot{M}_{\text{accrete}} \ge 0$.
+
 ---
 
 ### 1.2 The State-Trace Functional ($\Psi$) and Constitutive Operator Lie Algebra
@@ -395,6 +407,38 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
 * **Step 5 (Prigogine Dissipation-to-Stability Ratio $\Lambda$):**  
   Comparing internal volumetric entropy generation to outward boundary rejection defines the **Prigogine Stability Ratio**:
   $$\boxed{\Lambda(t) \equiv \frac{\int_{E(t)} \sigma_{\text{total}}(x, t) \, dV}{\int_{\partial E(t)} \mathbf{J}_S \cdot \hat{n} \, dA} \begin{cases} < 1 & \text{Stable dissipative persistence (interior entropy pumped out)} \\ = 1 & \text{Non-Equilibrium Steady State (NESS)} \\ > 1 & \text{Structural collapse / bifurcation (internal entropy accumulates)} \end{cases}}$$
+
+---
+
+#### 2.3.6 Theorem 6B (Axiomatic Definition of a "Living Object" & Cosmological-Biological Horizon Duality)
+* **The Biophysical Dilemma:** What mathematically and thermodynamically distinguishes a living biological entity ($E_{\text{living}}$) from an inert material crystal (Tier I) and an isolated classical universe? Can the definition of life be derived as an exact boundary condition without invoking vitalism?
+
+* **Step 1 (The 4 Invariant Axioms of a Living Entity):**  
+  An entity $E \subset \Omega_{\mathbb{C}}$ is defined as a **Living Object ($E_{\text{living}}$)** if and only if it simultaneously satisfies four invariant mathematical and thermodynamic conditions:
+  1. **Complexified State Measure & Internal Ledger Representation:**
+     $$\boxed{\mu_{\mathbb{C}}(E) \equiv \mu_{\mathbb{R}}(E) + i \, \kappa_{\text{info}} \mathcal{H}(D_{\mathfrak{Im}}) > 0, \quad \text{with } \operatorname{supp}(D_{\mathfrak{Im}}) \subseteq \operatorname{supp}(\mathcal{F}_{\text{ledger}}) \subseteq E_{\mathbb{R}} \quad (\mathfrak{Im}(D_{\mathfrak{Im}}) \neq \{\mathbf{0}\})}$$
+     The entity possesses an internal genetic/memory ledger in imaginary state space $\Omega_{\mathfrak{Im}}$ that dynamically guides state evolution in real configuration space $\Omega_{\mathbb{R}}$.
+  2. **Active Non-Equilibrium Exergy Harvesting (Metabolic Openness):**
+     $$\boxed{\dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV \implies \frac{d\mathcal{G}[E(t)]}{dt} \ge 0}$$
+     The entity sustains an internal Gibbs free-energy potential above thermodynamic equilibrium via continuous negentropy intake from its ambient environment.
+  3. **Self-Regulating Active Structural Margin (Dynamic Homeostasis):**
+     $$\boxed{\phi(x, t) \equiv \sigma_{\text{yield}}(x, t) - \left( \|\mathbf{C}(x, t)\| - \mathbf{R}_{\text{active}}(x, t - \Delta t_{\text{response}}) \right) \ge 0, \quad \forall x \in \partial E(t)}$$
+     The boundary interface $\partial E$ is actively defended against ambient deformation via phase-lagged active pre-stressing and cellular repair.
+  4. **Interfacial Projection & Reciprocal Transduction:**
+     $$\boxed{\hat{\mathbf{P}}_E \neq \mathbf{0} \implies \boldsymbol{\mathcal{X}}_E \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] \neq \mathbf{0}}$$
+     The entity continuously projects operational influence and harvests reciprocal expressions from the surrounding field across its boundary.
+
+* **Step 2 (The Dual Universe Comparison & Horizon Duality Proof):**  
+  Contrasting $E_{\text{living}}$ against cosmological boundary topologies:
+  * **Comparison A (The Classical Closed Universe $\partial \mathcal{U} = \emptyset$):**  
+    A closed, isolated universe has no boundary horizon through which to receive external fuel ($\dot{E}_{\text{fuel}} \equiv 0$). By the Second Law of Thermodynamics:
+    $$\frac{d\mathcal{G}[\mathcal{U}_{\text{closed}}]}{dt} = -T_{\text{ambient}} \int_{\mathcal{U}} \sigma_{\text{total}} \, dV \le 0 \implies \lim_{t \to \infty} \mathcal{G}[\mathcal{U}_{\text{closed}}] \to 0, \quad \Lambda(t) \to \infty$$
+    The classical closed universe inevitably undergoes irreversible dissipation toward maximum-entropy thermal death.
+  * **Comparison B (The Open Black Hole Universe $\mathcal{U}_{\text{BH}}$):**  
+    As proven in §1.1.1, an observable universe bounded by the null Schwarzschild-Hubble horizon $\partial \mathcal{U} = \mathcal{H}_{\text{Hubble}} = \{r = c/H_0\}$ is an **open thermodynamic engine** continuously accreting matter-energy from a parent spacetime ($\dot{M}_{\text{accrete}} \ge 0$).
+  * **The Horizon Duality Theorem:**  
+    $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
+    Both living cellular syncytia and cosmological black-hole universes exist as open, non-equilibrium boundary horizons $\partial E$ that extract external exergy to sustain local negative entropy production ($\frac{d\mathcal{G}}{dt} \ge 0$) in strict compliance with the Generalized Second Law.
 
 ---
 

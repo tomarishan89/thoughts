@@ -15,10 +15,12 @@
 │ 01 │ Expression Operator (𝓧)              │ draft.md §2.1 (Done), interp.md│ Interfacial Trace bridge   │
 │ 02 │ Hunger vs. Craving (Kṣudhā vs. Kāma) │ interpretation.md       │ Bottom-up vs Top-down sim  │
 │ 03 │ Ariṣaḍvarga Thermodynamics           │ interpretation.md       │ Margin distortion dynamics │
-│ 04 │ Involuntary vs. Voluntary Gating     │ draft.md §4.3, interp.md│ Landauer veto cost 𝓞_inhib │
+│ 04 │ Involuntary vs. Voluntary Gating     │ interpretation.md       │ Landauer veto cost 𝓞_inhib │
 │ 05 │ Systemic Model of Psychopathy        │ draft.md §5.1, interp.md│ Degenerate coupling 𝓞=0    │
 │ 06 │ "I Am a Universe" Fractal Hierarchy  │ draft.md §5.2, interp.md│ Scale-invariant syncytium  │
-│ 07 │ Black Hole Universe Cosmology        │ draft.md §1.1, interp.md│ Exact R_s ≡ R_H boundary   │
+│ 07 │ Black Hole Universe Cosmology        │ draft.md §1.1.1 (Done), interp.md│ Exact R_s ≡ R_H boundary   │
+│ 08 │ Axiomatic Definition of Life         │ draft.md §2.3.6 (Done), interp.md│ Dual universe comparison   │
+│ 09 │ Prospect (𝓟) in Temporal Triad       │ draft.md §2.3.5, interp.md│ Reachable state horizon    │
 └────┴──────────────────────────────────────┴─────────────────────────┴────────────────────────────┘
 ```
 
@@ -83,7 +85,8 @@
 ---
 
 ### Item 07: Cosmological Black Hole Embedding ($\mathcal{H}_1$)
-* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 1.1; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 9.
+* **Status:** **Integrated in `draft.md` §1.1.1**; Pending in `interpretation.md`.
+* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 1.1.1; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 9.
 * **Physics Formulation:**
   - Exact Schwarzschild-Hubble equality: $R_s(M_{\text{Hubble}}) \equiv R_{\text{Hubble}} = \frac{c}{H_0}$.
   - Holographic entropy identity: $S_{\text{Bekenstein-Hawking}} \equiv S_{\text{Gibbons-Hawking}} = \frac{k_B \pi c^5}{G \hbar H_0^2}$.
@@ -92,7 +95,8 @@
 ---
 
 ### Item 08: Axiomatic Formulation of a "Living Object" ($E_{\text{living}}$) & Dual Universe Comparison
-* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.3 & 5.2; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 10.
+* **Status:** **Integrated in `draft.md` §2.3.6**; Pending in `interpretation.md`.
+* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.3.6; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 10.
 * **Physics Formulation:**
   - 4 Invariant Conditions of Life: $\mu(E) > 0$, $\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$, $\phi(t) = \sigma_{\text{yield}} - (\|\mathbf{C}\| - \mathbf{R}_{\text{active}}) \ge 0$, and $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$.
   - Dual Comparison: Contrasting the Living Object with (1) the Classical Closed Universe ($\partial\mathcal{U}=\emptyset$), and (2) the Open Black Hole Universe ($\mathcal{U}_{\text{BH}}$), proving topological equivalence between living forms and cosmological bubbles.
