@@ -30,26 +30,26 @@ A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were r
 
 ### Iteration 55 (Milestones 257–260 Closed):
 1. **Trans-Horizon Sonic Point Regularity Derivative (§1.1.1):** Formulated finite velocity gradient $(\frac{du}{dr})_{\text{sonic}} = \pm \sqrt{\frac{GM}{2r_s^3}} \in \mathbb{R}$.
-2. **Kirchhoff Frequency Retardance Spectrum (§2.1):** Formulated spectral surface representation $\hat{\mathbf{\Phi}}_{\mathbb{C}}(\mathbf{x}, \omega) = \int_{\partial E} \frac{e^{i\omega R/c}}{4\pi R} \operatorname{Tr}_{\partial E}[D_{\mathfrak{Im}}](\mathbf{x}', \omega) dA'$.
-3. **Doob Martingale Maximal Inequality (§2.3.7):** Formulated upper bound on catastrophic collapse $\mathbb{P}(\sup_{0\le t\le T} |M_t - \mathcal{P}(0)| \ge \lambda) \le \frac{\operatorname{Var}(M_T)}{\lambda^2}$.
-4. **Fresnel Evanescent Wave Skin Depth Decay (§2.1):** Formulated exponential normal decay $\mathbf{S}_{\mathbf{P}}(z) = \mathbf{S}_{\mathbf{P}}(0) e^{-2z/\delta_{\text{skin}}}$ with $\delta_{\text{skin}} = \frac{c}{\omega \sqrt{(\operatorname{Re}(\tilde{n}_A)\sin\theta_i)^2 - (\operatorname{Re}(\tilde{n}_B))^2}}$.
+2. **Kirchhoff Frequency Retardance Spectrum (§2.1):** Formulated spectral surface representation $\hat{\mathbf{\Phi}}_{\mathbb{C}}(\mathbf{x}, \omega) = \int_{\partial E} \frac{e^{i\omega R/c}}{4\pi R} \mathrm{Tr}_{\partial E}[D_{\mathfrak{Im}}](\mathbf{x}', \omega) dA'$.
+3. **Doob Martingale Maximal Inequality (§2.3.7):** Formulated upper bound on catastrophic collapse $\mathbb{P}(\sup_{0\le t\le T} |M_t - \mathcal{P}(0)| \ge \lambda) \le \frac{\mathrm{Var}(M_T)}{\lambda^2}$.
+4. **Fresnel Evanescent Wave Skin Depth Decay (§2.1):** Formulated exponential normal decay $\mathbf{S}_{\mathbf{P}}(z) = \mathbf{S}_{\mathbf{P}}(0) e^{-2z/\delta_{\text{skin}}}$ with $\delta_{\text{skin}} = \frac{c}{\omega \sqrt{(\mathrm{Re}(\tilde{n}_A)\sin\theta_i)^2 - (\mathrm{Re}(\tilde{n}_B))^2}}$.
 
 ### Iteration 56 (Milestones 261–264 Closed):
 1. **Raychaudhuri Null Horizon Expansion (§1.1.1):** Formulated null expansion $\theta_{\text{null}} = 2 H_0$ with $\frac{d\theta_{\text{null}}}{d\lambda} = -\frac{1}{2}\theta_{\text{null}}^2 - \sigma_{\mu\nu}\sigma^{\mu\nu} - 8\pi G T_{\mu\nu}k^\mu k^\nu$.
 2. **Retarded Moving-Boundary Doppler Shift (§2.1):** Formulated relativistic frequency shift $\omega_{\text{obs}}(\mathbf{x}) = \omega_0 \frac{1 - (\mathbf{v}_{\text{int}}\cdot\hat{\mathbf{R}})/c}{\sqrt{1 - v_{\text{int}}^2/c^2}}$.
-3. **Blackwell-Rao Minimal Variance Margin Estimator (§2.3.7):** Formulated sufficient-statistic projection $\hat{\phi}_{\text{BR}} \equiv \mathbb{E}[\phi \mid T(\mathcal{F}_t)]$ with $\operatorname{Var}(\hat{\phi}_{\text{BR}}) \le \operatorname{Var}(\hat{\phi})$.
-4. **Generalized Optical Theorem Extinction Cross-Section (§2.1):** Formulated $\sigma_{\text{extinct}}(\theta_i) \equiv \sigma_{\text{absorb}} + \sigma_{\text{scatter}} = \frac{4\pi}{k}\operatorname{Im}[\mathbf{f}_{\text{forward}}(0)]$.
+3. **Blackwell-Rao Minimal Variance Margin Estimator (§2.3.7):** Formulated sufficient-statistic projection $\hat{\phi}_{\text{BR}} \equiv \mathbb{E}[\phi \mid T(\mathcal{F}_t)]$ with $\mathrm{Var}(\hat{\phi}_{\text{BR}}) \le \mathrm{Var}(\hat{\phi})$.
+4. **Generalized Optical Theorem Extinction Cross-Section (§2.1):** Formulated $\sigma_{\text{extinct}}(\theta_i) \equiv \sigma_{\text{absorb}} + \sigma_{\text{scatter}} = \frac{4\pi}{k}\mathrm{Im}[\mathbf{f}_{\text{forward}}(0)]$.
 
 ### Iteration 57 (Milestones 265–268 Closed):
 1. **ECSK Dirac Fermion Spin-Density Tensor (§1.1.1):** Formulated spin-torsion source $s^{\mu\nu\rho} \equiv \frac{i\hbar}{4}\bar{\psi}\gamma^{[\mu}\gamma^\nu\gamma^{\rho]}\psi$.
 2. **Kirchhoff Surface Radiation Impedance (§2.1):** Formulated specific acoustic/electromagnetic boundary impedance $Z_{\text{rad}}(\mathbf{x}, \omega) \equiv \frac{\hat{\mathbf{\Phi}}_{\mathbb{C}}}{\hat{n}'\cdot\nabla\hat{\mathbf{\Phi}}_{\mathbb{C}}} = \frac{\rho_0 c}{\sqrt{1 - (c k_\parallel/\omega)^2}}$.
 3. **Sanov's Large Deviations Bound on Projection Hallucinations (§2.3.7):** Formulated non-asymptotic hallucination probability bound $\mathbb{P}(D_{\text{KL}}(\hat{P}_N \parallel P_{\text{env}}) \ge \epsilon) \le (N+1)^{|\mathcal{X}|}e^{-N\epsilon}$.
-4. **Goos-Hänchen Interfacial Lateral Beam Shift (§2.1):** Formulated lateral wave packet displacement $\Delta x_{\text{GH}}(\theta_i) = \frac{2\sin\theta_i}{k_0 \sqrt{(\operatorname{Re}(\tilde{n}_A)\sin\theta_i)^2 - (\operatorname{Re}(\tilde{n}_B))^2}}$.
+4. **Goos-Hänchen Interfacial Lateral Beam Shift (§2.1):** Formulated lateral wave packet displacement $\Delta x_{\text{GH}}(\theta_i) = \frac{2\sin\theta_i}{k_0 \sqrt{(\mathrm{Re}(\tilde{n}_A)\sin\theta_i)^2 - (\mathrm{Re}(\tilde{n}_B))^2}}$.
 
 ### Iteration 58 (Milestones 269–272 Closed):
 1. **ECSK Friedmann-Cartan Cosmic Bounce Scale Factor (§1.1.1):** Formulated non-singular minimum bounce scale $a_{\text{min}} = a_0 (\rho_c / \rho_{\text{Planck}})^{1/6} > 0$.
 2. **Kirchhoff Retarded Multipole Moment Expansion (§2.1):** Formulated far-field multipole expansion $\hat{\mathbf{\Phi}}_{\mathbb{C}}(\mathbf{x}, \omega) = \frac{e^{ikr}}{4\pi r}[q_{\text{mono}} + ik\mathbf{p}_{\text{dip}}\cdot\hat{\mathbf{r}} - \frac{k^2}{6}\mathbf{Q}_{ij}\hat{r}_i\hat{r}_j]$.
-3. **Cramér-Rao Fisher Information Bound (§2.3.7):** Formulated lower bound on challenge anticipation variance $\operatorname{Var}(\hat{\mathbf{C}}) \ge \mathbf{I}_{\text{Fisher}}^{-1}(\theta)$.
+3. **Cramér-Rao Fisher Information Bound (§2.3.7):** Formulated lower bound on challenge anticipation variance $\mathrm{Var}(\hat{\mathbf{C}}) \ge \mathbf{I}_{\text{Fisher}}^{-1}(\theta)$.
 4. **Interfacial Kramers-Kronig Surface Impedance Causality (§2.1):** Formulated reactive surface reactance integral $X_s(\omega) = -\frac{2\omega}{\pi}\mathcal{P}\int_0^\infty \frac{R_s(\omega') - Z_\infty}{\omega'^2 - \omega^2}d\omega'$.
 
 ### Iteration 59 (Milestones 273–276 Closed):
@@ -67,7 +67,7 @@ A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were r
 ### Iteration 61 (Milestones 281–284 Closed):
 1. **Wald Noether Charge Horizon Entropy Invariant (§1.1.1):** Formulated diffeomorphism-invariant horizon entropy $S_{\text{Wald}} \equiv -2\pi \oint_{\mathcal{H}} \frac{\partial \mathcal{L}}{\partial R_{\mu\nu\rho\sigma}}\epsilon_{\mu\nu}\epsilon_{\rho\sigma} dA \equiv S_{\text{GH}}(\mathcal{U})$.
 2. **Rubinowicz-Maggi Boundary Diffraction Wave Integral (§2.1):** Formulated line-integral edge diffraction $\mathbf{\Phi}_{\text{diff}} = \frac{1}{4\pi}\oint_{\Gamma} \mathbf{\Phi}_{\text{inc}}\frac{\hat{\mathbf{R}}\times\hat{\mathbf{s}}}{R(1+\hat{\mathbf{R}}\cdot\hat{\mathbf{s}})}\cdot d\mathbf{l}$.
-3. **Skorokhod Stochastic Differential Reflection Margin Problem (§2.3.7):** Formulated reflected margin SDE $d\mathbf{X}_t = \mathbf{b}dt + \boldsymbol{\sigma}d\mathbf{W}_t + \hat{n}dL_t$ with boundary local time support $\int_0^t \mathbf{1}_{\{\mathbf{X}_s \in \operatorname{Int}(E)\}}dL_s = 0$.
+3. **Skorokhod Stochastic Differential Reflection Margin Problem (§2.3.7):** Formulated reflected margin SDE $d\mathbf{X}_t = \mathbf{b}dt + \boldsymbol{\sigma}d\mathbf{W}_t + \hat{n}dL_t$ with boundary local time support $\int_0^t \mathbf{1}_{\{\mathbf{X}_s \in \mathrm{Int}(E)\}}dL_s = 0$.
 4. **Kotchine-Rankine General Continuum Jump Condition (§2.1):** Formulated interfacial momentum jump $[\![\rho(\mathbf{v}-\mathbf{v}_{\text{int}})\otimes(\mathbf{v}-\mathbf{v}_{\text{int}}) - \boldsymbol{\sigma}]\!]\cdot\hat{n} = \gamma_s \kappa_H \hat{n} + \nabla_s \gamma_s$.
 
 ### Iteration 62 (Milestones 285–288 Closed):

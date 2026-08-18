@@ -86,7 +86,7 @@ $$\mathbf{K}_{\text{trans}}: \mathcal{T}^*\Omega_{\text{informational}} \longrig
 $$\mathbf{C}_{\text{physical}}(x, t) = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}\Big( P(\mathbf{s}) \,\|\, Q(\mathbf{s} \mid \mathbf{\theta}) \Big)$$
 
 where $\mathcal{D}_{\text{KL}}$ is the Kullback-Leibler divergence of environmental sensory signals against internal generative priors, carrying units of $[\mathrm{nats}]$, and $\mathbf{K}_{\text{trans}}$ carries the dimensional transduction factor:
-$$[\mathbf{K}_{\text{trans}}] = \left[ \frac{\mathrm{N \cdot m^{-2}}}{\mathrm{nats \cdot m^{-1}}} \right] = \left[ \frac{\mathrm{J}}{\mathrm{m^3 \cdot nats}} \right] = \left[ \frac{\mathrm{Energy \, Density}}{\mathrm{Information}} \right]$$
+$$[\mathbf{K}_{\text{trans}}] = [ \frac{\mathrm{N \cdot m^{-2}}}{\mathrm{nats \cdot m^{-1}}} ] = [ \frac{\mathrm{J}}{\mathrm{m^3 \cdot nats}} ] = [ \frac{\mathrm{Energy \, Density}}{\mathrm{Information}} ]$$
 
 This establishes that cognitive and institutional "stress" is an **informational gradient weighted by metabolic or mechanical energy density**.
 
@@ -131,7 +131,7 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 * **Mathematical Setup:** An institution $\mathbb{S} \in T_{\text{IV}}$ is a macro-envelope enclosing constituent biological/cognitive nodes $\{E^j\} \in T_{\text{II/III}}$.
 * **Constitutive Operators ($D_{\mathfrak{Im}}^{\mathbb{S}}$):** Inscribed in externalized physical ledgers (statutes, constitutions, property deeds, central bank ledgers).
 * **Inter-Tier Coupling & Fuel Extraction:**
-  $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{\text{IV} \to \text{III}}\left[ \Delta \mathcal{G}_j(t) \right]$$
+  $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{\text{IV} \to \text{III}}[ \Delta \mathcal{G}_j(t) ]$$
 * **Institutional Failure Modes:**
   1. **Coupling Decoupling:** Tax evasion, loss of civic legitimacy, or systemic corruption reduces $\eta_j \to 0$, causing collective free-energy starvation ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}} < \dot{E}_{\text{crit}}^{\mathbb{S}}$).
   2. **Carrier Ledger Cleavage:** Physical destruction of constitutional archives, loss of cryptographic private keys, or monetary hyperinflation obliterates $D_{\mathfrak{Im}}^{\mathbb{S}}$, collapsing the institution even if its physical infrastructure remains intact.
@@ -150,7 +150,7 @@ The table below provides the explicit formal correspondence between the physical
 | **Maya (माया)**<br>*(Perceptual / Interface Boundary)* | The emergent zero-level set front ($f(t)$) separating internal microstates from external environmental challenge traction fields. | Theorem 3 (§2.3.2), Level-Set PDE (§2.3.3) |
 | **Smṛti (स्मृति)**<br>*(Historical Memory Ledger)* | The immutable historical state ledger ($\mathcal{F}_{\text{ledger}} \subseteq \Omega_{\mathbb{R}}$) inscribed in real configuration space (DNA, synaptic weights, epigenetic marks, rock stratigraphy). | Axiom 2 (§1.2.1), Theorem 6C (§2.3.7) |
 | **Prakṣepaṇa (प्रक्षेपण)**<br>*(Universal Dual Projection)* | The universal dual-space broadcast operator ($\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$), projecting real mechanical stress ($\hat{\mathbf{P}}_{\mathbb{R}}$) and unmanifest anticipatory gauge wave fields ($\hat{\mathbf{P}}_{\mathfrak{Im}}$) into the forward lightcone $J^+(E)$. | Axiom 3 (§2.1), Theorem 6C (§2.3.7) |
-| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)**<br>*(Interfacial Expression / Radiation)* | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing projection fields into real physical boundary traction and matter-energy flux. | Axiom 3 (§2.1), Imaginary Field Depletion Law |
+| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)**<br>*(Interfacial Expression / Radiation)* | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing projection fields into real physical boundary traction and matter-energy flux. | Axiom 3 (§2.1), Imaginary Field Depletion Law |
 | **Dharma (धर्म)**<br>*(Harmonious Structural Integration)* | The inter-tier constitutive coupling operator ($\mathcal{O}_{\text{coupling}}^{m \to n}$) extracting nodal free energy to ensure collective envelope survival. | Theorem 8 (§5.2), Syncytial Circuit PDE |
 | **Karma Yoga (कर्म योग)**<br>*(Selfless Systemic Action)* | Systemic nodal resource re-allocation sacrificing localized nodal measure ($\mu(E^j) \to 0$) to preserve collective envelope coherence ($\mu(\mathbb{S}) > 0$). | Section 5.2 (Nodal Re-allocation / Apoptosis) |
 | **Kṣudhā vs. Kāma (क्षुधा vs. काम)**<br>*(Physical Hunger vs. Simulated Desire)* | First-law real-space exergy depletion ($\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}}$ in $\Omega_{\mathbb{R}}$) vs. anticipatory memory-ledger simulation in imaginary space ($\Delta \hat{\mathcal{G}} > 0$ in $\Omega_{\mathfrak{Im}}$). | Section 2.3.5, Information-Thermodynamic Bounds |
@@ -239,13 +239,13 @@ Human consciousness, biological cognition, and open thermodynamic engines operat
    where $\hat{\mathbf{P}}_{\mathbb{R}}$ is the outward push-forward of boundary Cauchy stress and convective mass-momentum, and $\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) = \mathbf{\Phi}_{\mathbb{C}}(x, t)$ is the complex gauge wave propagating forward in time.
    
    The forward viability of the imaginary projection is quantified by its time-discounted structural margin expectation functional:
-   $$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}\left[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) \right] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
+   $$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) ] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
    * **$\mathcal{P}_{\hat{\mathbf{P}}} > 0$ (Viable Forward Projection / Vitality):** The entity anticipates positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$), exploratory foraging, and boundary expansion.
    * **$\mathcal{P}_{\hat{\mathbf{P}}} \le 0$ (Projection Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity shuts down informational computation ($\dot{\mathcal{E}}_{\mathfrak{Im}} \to 0$) to minimize Landauer dissipation, precipitating depressive withdrawal and anergic boundary regression.
 
 3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**  
    The instantaneous realization of complex projection fields into real-space physical traction, matter exchange, and photochemical work at the boundary interface:
-   $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) \right] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad \left[\frac{\mathrm{W}}{\mathrm{m^2}}\right]}$$
+   $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \mathrm{Tr}_{\partial E}[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) ] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad [\frac{\mathrm{W}}{\mathrm{m^2}}]}$$
    Every act of speech, muscular contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously collapses unmanifest imaginary projection amplitude ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while inscribing new physical traces into the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
 
 ---
@@ -327,7 +327,7 @@ In classical Sanskrit philosophy, the *Ariṣaḍvarga* (the Six Internal Enemie
 
 ### 6.1 Kāma (काम — Unbounded Volumetric Expansion)
 * **Mechanics:** The entity continuously drives outward normal boundary expansion ($\mathbf{v}_n \cdot \hat{n} \gg 0$) driven by simulated prospective rewards ($\Delta \hat{\mathcal{G}} > 0$).
-* **Failure:** Surface area expands faster than internal vascular transport capacity ($\operatorname{Area}(\partial E) \propto r^2$ vs. $V \propto r^3$). Total baseline maintenance power $\dot{E}_{\text{crit}} \propto \operatorname{Area}(\partial E)$ eventually outstrips available environmental fuel influx $\dot{E}_{\text{fuel}}$, triggering metabolic starvation and structural lysis ($\frac{d\mathcal{G}}{dt} < 0$).
+* **Failure:** Surface area expands faster than internal vascular transport capacity ($\mathrm{Area}(\partial E) \propto r^2$ vs. $V \propto r^3$). Total baseline maintenance power $\dot{E}_{\text{crit}} \propto \mathrm{Area}(\partial E)$ eventually outstrips available environmental fuel influx $\dot{E}_{\text{fuel}}$, triggering metabolic starvation and structural lysis ($\frac{d\mathcal{G}}{dt} < 0$).
 
 ### 6.2 Krodha (क्रोध — Viscous Shear Stress Shock)
 * **Mechanics:** When confronted with an obstacle ($\mathbf{C}$), the entity generates a massive, uncontrolled spike in active resistance ($\mathbf{R}_{\text{active}} \gg \mathbf{C}$).

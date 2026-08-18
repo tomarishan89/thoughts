@@ -76,7 +76,7 @@ When external ionizing radiation exceeds the binding threshold ($\|\mathbf{C}\| 
 
 ### 4.2 State-Trace Functional on DNA ($\Psi$)
 The genome state is a hereditary viscoelastic convolution:
-$$E^{\text{DNA}}(t) = \Psi\left[ E^{\text{DNA}}(0); \; \{\mathcal{O}_{\text{transcription}}, \mathcal{O}_{\text{methylation}}, \mathcal{O}_{\text{replication}}\}_0^t \right]$$
+$$E^{\text{DNA}}(t) = \Psi[ E^{\text{DNA}}(0); \; \{\mathcal{O}_{\text{transcription}}, \mathcal{O}_{\text{methylation}}, \mathcal{O}_{\text{replication}}\}_0^t ]$$
 **Empirical Inversion Proof (Yamanaka, 2006):** Reprogramming mature fibroblasts into induced pluripotent stem cells (iPSCs) via defined transcription factors (Oct4, Sox2, Klf4, c-Myc) experimentally confirms the partial algorithmic inversion of the state-trace functional ($\Psi^{-1}$) under laminar intracellular transport conditions ($Re \ll 1, Pe \gg 1$).
 
 ---

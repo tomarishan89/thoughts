@@ -69,13 +69,13 @@ Explore and converse with the research corpus directly through dedicated Google 
 
 ### 1. The Operator-Theoretic Temporal Triad
 Operational existence across all cognitive and biological scales is mediated by a closed, three-phase causal transduction loop:
-$$
-\begin{matrix}
-\mathcal{F}_{\text{ledger}} \subset \Omega_{\mathbb{R}} \text{ (Past Retained Substrate)} & \xrightarrow{\quad \text{Dual Field Generation} \quad} & \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}} \text{ (Future Broadcast)} \\
-\Big\uparrow {\scriptstyle \text{Historical Trace Inscription}} & & \Big\downarrow {\scriptstyle \text{Interfacial Boundary Realization } \operatorname{Tr}_{\partial E}} \\
-\partial E(t) \subset \Omega_{\mathbb{R}} & \xleftarrow{\quad \text{Traction \& Real Work Materialization} \quad} & \boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}] \text{ (Present Expression)}
-\end{matrix}
-$$
+```mermaid
+graph TD
+    A["Past Substrate: ℱ_ledger ⊆ Ω_ℝ"] -->|"Dual Field Generation"| B["Future Projection: P̂ = P̂_ℝ ⊕ i P̂_𝔗𝔪"]
+    B -->|"Interfacial Realization Tr_∂E"| C["Present Expression: 𝓧 ≡ Tr_∂E [ P̂ ⊗ ℱ_ℝ ]"]
+    C -->|"Historical Trace Inscription"| D["Boundary Realization: ∂E(t) ⊆ Ω_ℝ"]
+    D -->|"Physical Inscription"| A
+```
 
 ### 2. Cosmological Black Hole Embedding & Horizon Duality
 Our observable universe satisfies the exact **Schwarzschild-Hubble Horizon Identity**:

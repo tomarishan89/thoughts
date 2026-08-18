@@ -69,13 +69,13 @@ Structural failure occurs when an entity attempts to execute operators belonging
 
 Operational existence across all cognitive and biological scales is mediated by a closed, three-phase causal transduction loop:
 
-$$
-\begin{matrix}
-\mathcal{F}_{\text{ledger}} \subset \Omega_{\mathbb{R}} \text{ (Past Retained Substrate)} & \xrightarrow{\quad \text{Dual Field Generation} \quad} & \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}} \text{ (Future Broadcast)} \\
-\Big\uparrow {\scriptstyle \text{Historical Trace Inscription}} & & \Big\downarrow {\scriptstyle \text{Interfacial Boundary Realization } \operatorname{Tr}_{\partial E}} \\
-\partial E(t) \subset \Omega_{\mathbb{R}} & \xleftarrow{\quad \text{Traction \& Real Work Materialization} \quad} & \boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}] \text{ (Present Expression)}
-\end{matrix}
-$$
+```mermaid
+graph TD
+    A["Past Substrate: ℱ_ledger ⊆ Ω_ℝ"] -->|"Dual Field Generation"| B["Future Projection: P̂ = P̂_ℝ ⊕ i P̂_𝔗𝔪"]
+    B -->|"Interfacial Realization Tr_∂E"| C["Present Expression: 𝓧 ≡ Tr_∂E [ P̂ ⊗ ℱ_ℝ ]"]
+    C -->|"Historical Trace Inscription"| D["Boundary Realization: ∂E(t) ⊆ Ω_ℝ"]
+    D -->|"Physical Inscription"| A
+```
 
 1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**  
    The immutable, physical record of past interactions inscribed in real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, rock stratigraphy).
@@ -96,7 +96,7 @@ $$
 | **Māyā (माया)** | The emergent zero-level set front ($f(t)$) separating internal microstates from external environmental challenge traction fields. | Theorem 3 (§2.3.2), Level-Set PDE (§2.3.3) |
 | **Smṛti (स्मृति)** | The immutable historical state ledger ($\mathcal{F}_{\text{ledger}} \subseteq \Omega_{\mathbb{R}}$) inscribed in real configuration space (DNA, synaptic weights, epigenetic marks). | Axiom 2 (§1.2.1), Theorem 6C (§2.3.7) |
 | **Prakṣepaṇa (प्रक्षेपण)** | The universal dual-space broadcast operator ($\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$), projecting real mechanical stress and unmanifest anticipatory fields into forward lightcone $J^+(E)$. | Axiom 3 (§2.1), Theorem 6C (§2.3.7) |
-| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)** | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing projection fields into real physical boundary traction and matter flux. | Axiom 3 (§2.1), Boundary Jump Law |
+| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)** | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing projection fields into real physical boundary traction and matter flux. | Axiom 3 (§2.1), Boundary Jump Law |
 | **Dharma (धर्म)** | The inter-tier constitutive coupling operator ($\mathcal{O}_{\text{coupling}}^{m \to n}$) extracting nodal free energy to ensure collective envelope survival. | Theorem 8 (§5.2), Syncytial Circuit PDE |
 | **Karma Yoga (कर्म योग)** | Systemic nodal resource re-allocation sacrificing localized nodal measure ($\mu(E^j) \to 0$) to preserve collective envelope coherence ($\mu(\mathbb{S}) > 0$). | Section 5.2 (Nodal Re-allocation / Apoptosis) |
 | **Jīva vs. Jaḍa (जीव vs. जड़)** | Active 4-axiom dual-space open engine ($\Omega_{\mathbb{C}}, \mu_{\mathbb{C}} > 0, \phi \ge 0, \frac{d\mathcal{G}}{dt} \ge 0$) vs. single-space reactive ground state ($\Omega_{\mathbb{R}}, \mathfrak{Im}(D) = \{\mathbf{0}\}, \chi^* = 0$). | Theorem 6B (§2.3.6), Degenerate Reactive Engine (§3.1) |

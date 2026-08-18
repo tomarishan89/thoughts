@@ -75,7 +75,7 @@ The manuscript evolves not through static agreement, but as an emergent, **non-e
 
 2. **The Conscious Entity ($\mathfrak{Im}(D_{\mathfrak{Im}}) \neq \{\mathbf{0}\}$ — Complexified State Space $\Omega_{\mathbb{C}}$):**
    - When a human has a "vision" in $\Omega_{\mathfrak{Im}}$, the operator $D_{\mathfrak{Im}}$ executes an **internal forward simulation of virtual spacetime trajectories**:
-     $$\hat{\mathbf{C}}_{\text{future}} = \Psi_{\text{internal}}\left[ D_{\mathfrak{Im}}, \, \mathbf{C}_{\text{present}} \right]$$
+     $$\hat{\mathbf{C}}_{\text{future}} = \Psi_{\text{internal}}[ D_{\mathfrak{Im}}, \, \mathbf{C}_{\text{present}} ]$$
    - It projects **inwardly** across the syncytial network ($\mathbb{S} = \bigcup_j E^j$) of $\sim 37 \text{ trillion}$ constituent living cells.
    - To a single liver cell or leukocyte inside your body, **YOU are the ambient cosmos.**
    - **"I am a universe":** The human body is a multi-scale cosmos that has achieved enough inward synchronization to act as a single point in the external world.
@@ -90,7 +90,7 @@ The manuscript evolves not through static agreement, but as an emergent, **non-e
 
 ### Definition
 **Expression ($\boldsymbol{\mathcal{X}}$)** is the **Interfacial Transduction Event** where an unmanifest potential or vision in imaginary space $\Omega_{\mathfrak{Im}}$ collides with a physical substrate $\mathcal{F}_{\mathbb{R}}$ and forces physical matter to change its state:
-$$\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right]$$
+$$\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} ]$$
 
 - **In a Star's Field:** Photons hitting a chloroplast $\to$ electron band jumps $\to$ photosynthesis / color reflection.
 - **In a Human Body:** Vision in $\Omega_{\mathfrak{Im}}$ hitting neuro-endocrine interfaces $\to$ epinephrine release, cardiac acceleration, muscular pre-stress.
@@ -120,7 +120,7 @@ $$\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\
    - Direct mechanical/chemical challenge in $\Omega_{\mathbb{R}}$. No prior episodic memory is required; a newborn infant or single-celled bacterium feels starvation.
 2. **Desire for Ice Cream (Top-Down Memory-Ledger Projection):**
    - *“Desire for ice cream cannot come unless I have tasted it before.”*
-   - The operator $D_{\mathfrak{Im}}$ requires a prior inscription on the physical memory ledger ($\operatorname{supp}(D_{\mathfrak{Im}}) \subseteq \operatorname{supp}(\mathcal{F}_{\text{ledger}})$).
+   - The operator $D_{\mathfrak{Im}}$ requires a prior inscription on the physical memory ledger ($\mathrm{supp}(D_{\mathfrak{Im}}) \subseteq \mathrm{supp}(\mathcal{F}_{\text{ledger}})$).
    - An external cue triggers $D_{\mathfrak{Im}}$ to construct a virtual reward simulation in $\Omega_{\mathfrak{Im}}$, which transduces downward into physical craving, salivation, and dopamine elevation *before* consumption occurs.
 
 ---
@@ -425,8 +425,8 @@ The six internal affective expressions (*Ariṣaḍvarga*) map directly onto the
 ```
 
 1. **Geometric Horizon Interface:** $\partial E_{\text{BH}}$ is a closed null hypersurface ($g^{\mu\nu}\nabla_\mu\Phi\nabla_\nu\Phi = 0$) where outward normal velocity reaches the speed of light ($v_n = c$).
-2. **One-Way Interfacial Trace:** $\operatorname{Tr}_{\partial E}[\mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}}]$ has absorption coefficient $\alpha_{\text{absorption}} = 1$ and zero classical outward transmission.
-3. **Holographic Entropy Saturation:** Internal volume entropy collapses to the Bekenstein-Hawking area bound $S_{\text{BH}} = \frac{k_B c^3}{4 G \hbar}\operatorname{Area}(\partial E)$ with horizon Hawking flux $\mathbf{J}_{\text{Hawking}} = \frac{\hbar \kappa_{\text{grav}}^4}{960\pi^2 c^6}\hat{n}$.
+2. **One-Way Interfacial Trace:** $\mathrm{Tr}_{\partial E}[\mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}}]$ has absorption coefficient $\alpha_{\text{absorption}} = 1$ and zero classical outward transmission.
+3. **Holographic Entropy Saturation:** Internal volume entropy collapses to the Bekenstein-Hawking area bound $S_{\text{BH}} = \frac{k_B c^3}{4 G \hbar}\mathrm{Area}(\partial E)$ with horizon Hawking flux $\mathbf{J}_{\text{Hawking}} = \frac{\hbar \kappa_{\text{grav}}^4}{960\pi^2 c^6}\hat{n}$.
 
 ---
 
@@ -537,16 +537,16 @@ A form of existence is mathematically classified as a **Living Object** ($E_{\te
 
 ### 1. Mathematical Definition
 **Prospect ($\mathcal{P}$)** is the **Forward Reachable State-Space Horizon in Imaginary Space ($\Omega_{\mathfrak{Im}}$)**, evaluated by the expected structural margin across the predictive horizon:
-$$\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}\left[ \phi\left( \hat{\mathbf{C}}_{\text{future}}(\tau) \right) \right] e^{-\beta \tau} \, d\tau$$
+$$\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}[ \phi\left( \hat{\mathbf{C}}_{\text{future}}(\tau) \right) ] e^{-\beta \tau} \, d\tau$$
 
 - **$\tau_{\text{horizon}}$:** The temporal depth of counterfactual Dyson simulation accessible to the operator $D_{\mathfrak{Im}}$.
 - **$\mathbb{E}[\phi(\tau)]:$** The expected structural yield margin along a simulated trajectory.
 - **$e^{-\beta \tau}:$** The temporal discount factor.
 
 ### 2. The Temporal Triad: Ledger, Prospect, and Expression
-1. **The Ledger ($\mathcal{F}_{\text{ledger}}$ — Inscribed Past):** Physical records on DNA, neural synapses, or external media ($\operatorname{supp}(D_{\mathfrak{Im}}) \subseteq \operatorname{supp}(\mathcal{F}_{\text{ledger}})$).
+1. **The Ledger ($\mathcal{F}_{\text{ledger}}$ — Inscribed Past):** Physical records on DNA, neural synapses, or external media ($\mathrm{supp}(D_{\mathfrak{Im}}) \subseteq \mathrm{supp}(\mathcal{F}_{\text{ledger}})$).
 2. **The Prospect ($\mathcal{P}$ — Navigable Future in $\Omega_{\mathfrak{Im}}$):** The landscape of possible trajectories and anticipated structural viability.
-3. **The Expression ($\boldsymbol{\mathcal{X}}$ — Realized Present on $\partial E$):** The physical somatic actuation collapsing the chosen prospect into real-space history ($\operatorname{Tr}_{\partial E}[\mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}}]$).
+3. **The Expression ($\boldsymbol{\mathcal{X}}$ — Realized Present on $\partial E$):** The physical somatic actuation collapsing the chosen prospect into real-space history ($\mathrm{Tr}_{\partial E}[\mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}}]$).
 
 ### 3. Biological & Energetic Dynamics
 - **High / Positive Prospect ($\mathcal{P} \gg 0$):** Anticipation of expanding margin ($\mathbb{E}[\phi] > 0$) triggers proactive dopamine release, vascular dilation, exploratory drive, and willingness to expend current exergy ($\dot{E}_{\text{fuel}}$).
@@ -598,7 +598,7 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
    In non-equilibrium thermodynamics, the total entropy generation rate of the cosmos must satisfy:
    $$\dot{S}_{\text{total}}(t) = \dot{S}_{\text{bulk}}(t) + \dot{S}_{\text{GH}}(t) \ge 0$$
    Because bulk entropy production is sub-dominant to horizon entropy ($\dot{S}_{\text{bulk}} \ll \dot{S}_{\text{GH}}$), the horizon entropy rate must be positive semi-definite:
-   $$\dot{S}_{\text{GH}}(t) = \frac{d}{dt}\left[ \frac{k_B \pi c^5}{G \hbar H(t)^2} \right] = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0$$
+   $$\dot{S}_{\text{GH}}(t) = \frac{d}{dt}[ \frac{k_B \pi c^5}{G \hbar H(t)^2} ] = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0$$
 
 3. **Monotonicity of the Scale Factor:**  
    Since $c, G, \hbar, k_B > 0$ and cosmic volume is positive ($H(t) \equiv \frac{\dot{a}(t)}{a(t)} > 0$), the condition $\dot{S}_{\text{GH}} \ge 0$ strictly enforces:
@@ -628,7 +628,7 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
    $$R_H(t) \equiv \frac{c}{H(t)} = \frac{2 G M_H(t)}{c^2} \implies M_H(t) = \frac{c^3}{2 G H(t)} \quad [\mathrm{kg}]$$
 
 2. **Differentiation with Respect to Cosmic Time:**  
-   $$\dot{M}_H(t) = \frac{d}{dt}\left[ \frac{c^3}{2 G H(t)} \right] = -\frac{c^3}{2 G H(t)^2} \dot{H}(t) = \frac{c^3}{2 G} \left( -\frac{\dot{H}}{H^2} \right)$$
+   $$\dot{M}_H(t) = \frac{d}{dt}[ \frac{c^3}{2 G H(t)} ] = -\frac{c^3}{2 G H(t)^2} \dot{H}(t) = \frac{c^3}{2 G} \left( -\frac{\dot{H}}{H^2} \right)$$
 
 3. **Substitution of the Cosmological Deceleration Parameter ($q(t)$):**  
    Recall the kinematic definition of the deceleration parameter $q(t) \equiv -\frac{\ddot{a} a}{\dot{a}^2}$:
@@ -674,7 +674,7 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
 
 2. **Inverting for the Parent Multiverse State Variables:**  
    Equating the kinematic growth rate $\dot{M}_{\text{accrete}} = \frac{c^3}{2G}(1+q_0)$ to the relativistic Bondi-Hoyle-Littleton accretion flux (§1.1.1):
-   $$\dot{M}_{\text{accrete}} = \pi \frac{G^2 M_H^2}{c^3} \left[ \frac{(1 + 3 c_s^2/c^2)^{3/2}}{(c_s/c)^3} \right] \rho_{\text{parent}} = \frac{c^3}{2 G}(1 + q_0)$$
+   $$\dot{M}_{\text{accrete}} = \pi \frac{G^2 M_H^2}{c^3} [ \frac{(1 + 3 c_s^2/c^2)^{3/2}}{(c_s/c)^3} ] \rho_{\text{parent}} = \frac{c^3}{2 G}(1 + q_0)$$
    Solving for the parent density-to-sound-speed ratio:
    $$\boxed{\frac{\rho_{\text{parent}}}{(c_s/c)^3 \left( 1 + 3 c_s^2/c^2 \right)^{-3/2}} = \frac{2 H_0^2}{\pi G} (1 + q_0) = \frac{2 (2.1843 \times 10^{-18})^2}{\pi (6.6743 \times 10^{-11})} (0.47295) = \mathbf{2.155 \times 10^{-26} \, kg/m^3}}$$
 
@@ -775,8 +775,8 @@ $$\frac{\rho_{\text{Planck}}}{\rho_{\text{DE}}} = \frac{8\pi}{3(0.6847)} \left( 
 2. **Numerical Test on the Milky Way Galaxy:**  
    * Milky Way total baryonic mass (stars + cold gas): $M_{\text{baryon}} \approx 6.0 \times 10^{10} \, M_\odot = 1.193 \times 10^{41} \, \mathrm{kg}$.
    * Theoretical asymptotic flat rotation velocity:
-     $$v_{\text{flat}} = \left[ (6.6743 \times 10^{-11}) \times (1.193 \times 10^{41}) \times (1.0422 \times 10^{-10}) \right]^{1/4}$$
-     $$v_{\text{flat}} = \left[ 8.2984 \times 10^{20} \, \mathrm{m^4/s^4} \right]^{1/4} = \mathbf{219,730 \, m/s} = \mathbf{219.7 \, km/s}$$
+     $$v_{\text{flat}} = [ (6.6743 \times 10^{-11}) \times (1.193 \times 10^{41}) \times (1.0422 \times 10^{-10}) ]^{1/4}$$
+     $$v_{\text{flat}} = [ 8.2984 \times 10^{20} \, \mathrm{m^4/s^4} ]^{1/4} = \mathbf{219,730 \, m/s} = \mathbf{219.7 \, km/s}$$
    * **Observed Milky Way Flat Rotation Velocity (Gaia DR3 / Eilers et al., 2019):**  
      $$v_{\text{obs}} = \mathbf{220.0 \pm 10.0 \, km/s}$$
      $$\text{Numerical Error} = \frac{|219.7 - 220.0|}{220.0} = \mathbf{0.14\%} \quad \text{(Exact match!)}$$
