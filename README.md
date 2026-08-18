@@ -107,6 +107,8 @@ Project_writeup_1/
 │   │   │   ├── cognitive_and_psychology.md    # Sagawa-Ueda bound, Ariṣaḍvarga & Viveka Veto
 │   │   │   └── societal_and_institutional.md  # Tier IV legal ledgers, K_trans & Psychopathy
 │   │   ├── dialogues_and_explorations.md      # Socratic debates & exact numerical proofs
+│   │   ├── latex/               # LaTeX (.tex) Source Suite for all papers
+│   │   ├── pdfs/                # Publication-grade vector PDF outputs
 │   │   ├── issues_log.md        # Comprehensive technical calculation & proof archive
 │   │   ├── review.md            # Peer review editorial verdict & adversarial defense log
 │   │   ├── base.md              # Deconstructing Sanatan Dharm (foundational working hypothesis)
@@ -114,16 +116,16 @@ Project_writeup_1/
 │   │   ├── entropy.md           # Non-equilibrium thermodynamic dissipation metrics
 │   │   └── rough.md             # Scratchpad & exploratory calculations
 │   └── interospection_01/       # Staged essay on Kuṇḍalinī darśana & Pāṇinian morphology
+│       └── references/          # Pāṇinian grammar aids and derivation logs
 ├── lexicons/                    # Terminology controls & Sanskrit master dictionaries
 │   ├── glossary.md              # Master lexicon of Sanskrit roots, roman keys & definitions
 │   └── allowlist.md             # Canonical spelling and term validations
-├── references/                  # Reference grammar and citation aids
-│   └── panini-notes.md          # Pāṇinian dhātu rules and derivation logs
-├── scripts/                     # Automation toolchain & Sanskrit markup compiler
+├── scripts/                     # Automation toolchain & PDF/LaTeX compilation pipeline
+│   ├── generate_pdf.py          # Automated vector PDF compiler (MathJax + Chrome/Edge)
+│   ├── md_to_latex.py           # Markdown to standard LaTeX (.tex) converter
+│   ├── sanitize_math.py         # KaTeX / GitHub math parser validator
 │   ├── pipeline.py              # Staged lifecycle manager (rough → draft → stage → output)
-│   ├── expand_sa.py             # Sanskrit markup compiler (\sa{key} → Devanagari)
-│   ├── glossary_add.py          # Interactive glossary entry generator
-│   └── build_sa_completions.py  # Autocomplete engine for IDEs
+│   └── expand_sa.py             # Sanskrit markup compiler (\sa{key} → Devanagari)
 └── .agents/                     # Strict agent reviewer personas & audit protocols
 ```
 

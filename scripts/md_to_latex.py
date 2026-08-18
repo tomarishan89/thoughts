@@ -141,8 +141,8 @@ def convert_file(input_md, output_tex=None):
         return
     if output_tex is None:
         base = os.path.splitext(os.path.basename(input_md))[0]
-        os.makedirs("latex", exist_ok=True)
-        output_tex = os.path.join("latex", f"{base}.tex")
+        os.makedirs("essays/existence/latex", exist_ok=True)
+        output_tex = os.path.join("essays/existence/latex", f"{base}.tex")
     else:
         os.makedirs(os.path.dirname(output_tex), exist_ok=True)
         

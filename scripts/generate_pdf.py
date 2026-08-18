@@ -261,8 +261,8 @@ def convert_md_to_pdf(input_md_path, output_pdf_path=None):
     
     if output_pdf_path is None:
         base = os.path.splitext(os.path.basename(input_md_path))[0]
-        os.makedirs("pdfs", exist_ok=True)
-        output_pdf_path = os.path.abspath(os.path.join("pdfs", f"{base}.pdf"))
+        os.makedirs("essays/existence/pdfs", exist_ok=True)
+        output_pdf_path = os.path.abspath(os.path.join("essays/existence/pdfs", f"{base}.pdf"))
     else:
         output_pdf_path = os.path.abspath(output_pdf_path)
         os.makedirs(os.path.dirname(output_pdf_path), exist_ok=True)

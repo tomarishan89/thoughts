@@ -28,6 +28,8 @@ You can explore and query this research corpus interactively through Google Note
 | [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains (subatomic hadrons, eukaryotic membranes, Roche limits, institutional governance). |
 | [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ($\sigma_S \ge 0$), non-equilibrium state flux ($\mathbf{J}_S$), and thermodynamic bounds. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
+| [`latex/`](latex/) | **LaTeX Source Suite** | Complete `.tex` manuscripts formatted with standard academic packages (`amsmath`, `amssymb`, `physics`, theorem environments) for all 8 papers. |
+| [`pdfs/`](pdfs/) | **Compiled PDFs** | Vector-rendered, publication-ready PDF documents generated with MathJax and academic typography. |
 
 ---
 
