@@ -65,7 +65,9 @@ Within $\Omega$, "velocity" ($\mathbf{v} = \frac{d\mathbf{x}}{dt}$) denotes the 
 * **Holographic Entropy & Trans-Horizon Accretion:**  
   The Bekenstein-Hawking black hole horizon entropy of the universe identically matches the Gibbons-Hawking cosmological de Sitter horizon entropy:
   $$\boxed{S_{\text{BH}}(\mathcal{U}) = \frac{k_B c^3 \operatorname{Area}(\partial \mathcal{U})}{4 G \hbar} = \frac{k_B \pi c^5}{G \hbar H_0^2} \equiv S_{\text{GH}}(\mathcal{U}) \approx 10^{122} \, k_B}$$
-  Under the Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion framework (Popławski, 2010), fermion spin density $s^{\mu\nu\rho}$ generates non-singular repulsive gravitational stresses $-\frac{1}{2}\kappa^2 s_{\mu\nu\rho}s^{\mu\nu\rho}$ at trans-nuclear densities ($\rho \sim 10^{54} \, \mathrm{kg/m^3}$), replacing the Big Bang point singularity with a non-singular cosmic bounce. The interior metric coordinates undergo a signature inversion ($g_{rr} \leftrightarrow g_{tt}$), establishing our expanding universe $\mathcal{U}_{\text{BH}}$ as the interior of an open black hole embedded in a parent spacetime, continuously fueled by trans-horizon Bondi matter accretion $\dot{M}_{\text{accrete}} \ge 0$.
+  Under the Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion framework (Popławski, 2010), fermion spin density $s^{\mu\nu\rho}$ generates non-singular repulsive gravitational stresses $-\frac{1}{2}\kappa^2 s_{\mu\nu\rho}s^{\mu\nu\rho}$ at trans-nuclear densities ($\rho \sim 10^{54} \, \mathrm{kg/m^3}$), replacing the Big Bang point singularity with a non-singular cosmic bounce. The interior metric coordinates undergo a signature inversion ($g_{rr} \leftrightarrow g_{tt}$), establishing our expanding universe $\mathcal{U}_{\text{BH}}$ as the interior of an open black hole embedded in a parent spacetime, continuously fueled by trans-horizon Bondi-Hoyle-Littleton matter accretion:
+  $$\boxed{\dot{M}_{\text{accrete}} = 4\pi \lambda_{\text{Bondi}} \frac{G^2 M_{\text{Hubble}}^2}{c_{\text{sound}}^3} \rho_{\text{parent}} \ge 0, \qquad \dot{S}_{\text{GH}}(\mathcal{U}) = \frac{2\pi k_B c^4 \dot{R}_{\text{Hubble}}}{G \hbar H_0} = \frac{2\pi k_B c^5}{G \hbar H_0^2} \left( -\frac{\dot{H}_0}{H_0} \right) \ge 0}$$
+  driving cosmological metric expansion $\dot{a}(t) > 0$ and sustaining non-zero cosmic entropy generation $\dot{S}_{\text{GH}} \ge 0$ in strict compliance with open non-equilibrium thermodynamics.
 
 ---
 
@@ -181,26 +183,29 @@ where $\mu_{\mathbb{R}}(E) \equiv \int_{E_{\mathbb{R}}} \rho(\mathbf{x}) \, d^3x
 #### The Universal Projection Operator ($\hat{\mathbf{P}}$), Interfacial Expression ($\boldsymbol{\mathcal{X}}$) & Field Depletion:
 Every active entity $E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$ acts upon ambient space by broadcasting its non-equilibrium state through the **Universal Projection Operator ($\hat{\mathbf{P}}$)**:
 $$\boxed{\hat{\mathbf{P}}: \operatorname{Int}(E) \times \partial E \longrightarrow \Omega_{\mathbb{C}} \setminus E, \qquad \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}}}$$
-1. **Real Mechanical Projection ($\hat{\mathbf{P}}_{\mathbb{R}}$):** Outward push-forward of Cauchy stress and convective mass:
-   $$\hat{\mathbf{P}}_{\mathbb{R}}[\mathcal{E}](x, t) \equiv -\left( \boldsymbol{\sigma}(x, t) \cdot \hat{n}(x) \right) \delta_{\partial E}(x) + \mathbf{j}_{\text{matter}}(x, t) \quad [\mathrm{Pa}]$$
+1. **Real Mechanical Projection ($\hat{\mathbf{P}}_{\mathbb{R}}$):** Outward push-forward of boundary Cauchy stress traction and convective mass-momentum flux:
+   $$\left.\mathbf{P}_{\mathbb{R}}[\mathcal{E}](x, t)\right|_{\partial E} \equiv -\left( \boldsymbol{\sigma}(x, t) \cdot \hat{n}(x) \right) + \left( \mathbf{j}_{\text{matter}}(x, t) \cdot \mathbf{v}_{\text{drift}}(x, t) \right) \hat{n}(x) \quad [\mathrm{Pa}], \qquad \hat{\mathbf{P}}_{\mathbb{R}}(x, t) \equiv \mathbf{P}_{\mathbb{R}}(x, t) \, \delta_{\partial E}(x) \quad \left[\frac{\mathrm{N}}{\mathrm{m^3}}\right]$$
 2. **Imaginary Gauge Projection ($\hat{\mathbf{P}}_{\mathfrak{Im}}$):** Outward propagation of unmanifest gauge potentials and complex wavefunctional amplitudes:
-   $$\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) \equiv \mathbf{\Phi}_{\mathbb{C}}(x, t) = \mathcal{A}(x, t) e^{i \theta(x, t)} \in \Omega_{\mathfrak{Im}}, \qquad \Box \mathbf{\Phi}_{\mathbb{C}}(x, t) = \operatorname{Tr}_{\partial E}\left[ D_{\mathfrak{Im}} \right] \delta(\partial E)$$
-   carrying Poynting / complex amplitude flux $\mathbf{S}_{\mathbf{P}} = \frac{c}{8\pi} \mathcal{A}^2 \frac{\mathbf{k}}{\|\mathbf{k}\|} + (\hat{\mathbf{P}}_{\mathbb{R}} \cdot \mathbf{v}_{\text{int}})\hat{n} \in [\mathrm{W/m^2}]$ bounded strictly within the forward causal cone $\operatorname{supp}(\hat{\mathbf{P}}[E]) \subseteq J^+(E)$.
+   $$\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) \equiv \mathbf{\Phi}_{\mathbb{C}}(x, t) = \mathcal{A}(x, t) e^{i \theta(x, t)} \in \Omega_{\mathfrak{Im}}, \qquad \Box \mathbf{\Phi}_{\mathbb{C}}(x, t) = \operatorname{Tr}_{\partial E}\left[ D_{\mathfrak{Im}} \right](x, t) \, \delta_{\partial E}(x)$$
+   admitting the exact causal retarded Kirchhoff surface integral representation in 4D Lorentzian spacetime:
+   $$\mathbf{\Phi}_{\mathbb{C}}(\mathbf{x}, t) = \frac{1}{4\pi}\int_{\partial E} \frac{\operatorname{Tr}_{\partial E}[D_{\mathfrak{Im}}]\left(\mathbf{x}', \, t - \frac{\|\mathbf{x}-\mathbf{x}'\|}{c}\right)}{\|\mathbf{x} - \mathbf{x}'\|} \, dA'$$
+   carrying combined Poynting and mechanical energy flux $\mathbf{S}_{\mathbf{P}} = \frac{c}{8\pi} \mathcal{A}^2 \frac{\mathbf{k}}{\|\mathbf{k}\|} + (\mathbf{P}_{\mathbb{R}} \cdot \mathbf{v}_{\text{int}})\hat{n} \in [\mathrm{W/m^2}]$ strictly bounded within the forward causal cone $\operatorname{supp}(\hat{\mathbf{P}}[E]) \subseteq J^+(E)$.
 
 ##### Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$) & Environmental Challenge ($\mathbf{C}$):
 When a projection $\hat{\mathbf{P}}_A$ intersects a target boundary $\partial E_B$, it is evaluated as the **Environmental Challenge ($\mathbf{C}_B$)** and realized via the **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}_B$)**:
 $$\boxed{\mathbf{C}_B(x, t) \equiv \operatorname{Tr}_{\partial E_B}\left[ \hat{\mathbf{P}}_A(x, t) \right] = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n}_B \quad [\mathrm{Pa}]}$$
-$$\boxed{\boldsymbol{\mathcal{X}}_B(x, t) \equiv \operatorname{Tr}_{\partial E_B}\left[ \hat{\mathbf{P}}_A \otimes \mathcal{F}_{\mathbb{R}}^B \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)}$$
-where the realized modes partition the incident flux across the interface:
+$$\boxed{\boldsymbol{\mathcal{X}}_B(x, t) \equiv \operatorname{Tr}_{\partial E_B}\left[ \hat{\mathbf{P}}_A \otimes \mathcal{F}_{\mathbb{R}}^B \right] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n}_B \quad \left[\frac{\mathrm{W}}{\mathrm{m^2}}\right]}$$
+where the realized modes partition the normal incident power flux across the interface:
 $$\begin{cases} 
-\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) = \alpha(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Absorbed Negentropy / Real Photochemical Work } \Delta \mu_{\mathbb{R}} > 0\text{)} \\ 
-\boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) = \mathcal{R}(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Reflected Wave Field / Elastic Surface Scattering)} \\ 
+\mathcal{X}_{\text{absorbed}}(x, t) = \alpha(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Absorbed Negentropy / Real Photochemical Work } \Delta \mu_{\mathbb{R}} > 0\text{)} \\ 
+\mathcal{X}_{\text{reflected}}(x, t) = \mathcal{R}(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Reflected Wave Field / Elastic Surface Scattering)} \\ 
 \mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n}_B & \text{(Real Maxwell / Gravitational Stress Surface Traction)} 
 \end{cases}$$
 
 ##### Conservation of Interfacial Flux & Imaginary Field Depletion Law:
-By global energy conservation across the orthogonal projections $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, any real physical work materialized at the boundary ($\boldsymbol{\mathcal{X}}_{\text{absorbed}} > 0$) strictly consumes the unmanifest field amplitude in imaginary space:
-$$\boxed{\nabla \cdot \mathbf{S}_{\mathbf{P}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \mathcal{A}_{\text{transmitted}}^2(x, t) = \mathcal{A}_{\text{incident}}^2(x, t) - \frac{8\pi}{c}\left( \boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}} \right) \cdot \hat{n}_B}$$
+By global energy conservation across the orthogonal projections $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, any real physical work materialized at the boundary ($\mathcal{X}_{\text{absorbed}} > 0$) strictly consumes the unmanifest field amplitude in imaginary space according to the **Boundary Jump Depletion Condition**:
+$$\boxed{\Delta \mathbf{S}_{\mathbf{P}}(x, t) \cdot \hat{n}_B \equiv \left( \mathbf{S}_{\mathbf{P}}^{\text{incident}} - \mathbf{S}_{\mathbf{P}}^{\text{transmitted}} \right) \cdot \hat{n}_B = \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t)}$$
+$$\boxed{\mathcal{A}_{\text{transmitted}}^2(x, t) = \mathcal{A}_{\text{incident}}^2(x, t) - \frac{8\pi}{c}\left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) \right)}$$
 proving that the extent of existence in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
 
 In ultrafast photoreceptive sensory transduction (e.g. retinal conical intersections), non-adiabatic electronic-nuclear trajectories accumulate a topological **Geometric Berry Phase**:
@@ -439,6 +444,30 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   * **The Horizon Duality Theorem:**  
     $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
     Both living cellular syncytia and cosmological black-hole universes exist as open, non-equilibrium boundary horizons $\partial E$ that extract external exergy to sustain local negative entropy production ($\frac{d\mathcal{G}}{dt} \ge 0$) in strict compliance with the Generalized Second Law.
+
+#### 2.3.7 Theorem 6C (The Temporal Triad of Existence: Memory Ledger, Dual Projection $\hat{\mathbf{P}}$, and Interfacial Expression $\boldsymbol{\mathcal{X}}$)
+* **The Biophysical Dilemma:** How does an entity's historical memory ledger ($\mathcal{F}_{\text{ledger}}$ in the past) determine present physical action ($\boldsymbol{\mathcal{X}}$ on $\partial E$) without violating causality? What unified operator architecture governs the energetic decision to broadcast physical traction and unmanifest anticipatory fields into the forward lightcone?
+
+* **Step 1 (The Operator-Theoretic Temporal Triad):**  
+  Operational existence across all cognitive and biological scales is mediated by a closed, three-phase causal transduction loop:
+  $$\boxed{\begin{CD}
+  \mathcal{F}_{\text{ledger}} \subset \Omega_{\mathbb{R}} \text{ (Past Retained Substrate)} @>\text{Dual Field Generation}>> \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}} \text{ (Future/Forward Broadcast)} \\
+  @AA\text{Historical Trace Inscription}A @VV\text{Interfacial Boundary Realization } \operatorname{Tr}_{\partial E}V \\
+  \partial E(t) \subset \Omega_{\mathbb{R}} @<<\text{Traction \& Real Work Materialization}<< \boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}] \text{ (Present Expression)}
+  \end{CD}}}$$
+
+* **Step 2 (The Imaginary Projection Expectation Functional):**  
+  Let $\tau_{\text{horizon}}$ be the characteristic predictive planning horizon and $\beta_{\text{discount}} \equiv \frac{\dot{S}_{\text{ambient}}}{k_B} > 0$ be the thermodynamic temporal discounting rate set by environmental decoherence. The forward reachability of the imaginary projection field $\hat{\mathbf{P}}_{\mathfrak{Im}}$ is quantified by its time-discounted structural margin expectation functional $\mathcal{P}_{\hat{\mathbf{P}}}(t)$:
+  $$\boxed{\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}\left[ \phi\left(\hat{\mathbf{C}}(t + \tau), \, \mathbf{R}_{\text{active}}(t + \tau)\right) \right] \exp\left( -\beta_{\text{discount}} \, \tau \right) d\tau \quad [\mathrm{Pa \cdot s}]}$$
+  subsuming the prospective horizon directly as a scalar functional of the underlying wavefunctional projection $\mathbf{\Phi}_{\mathbb{C}} = \hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}]$.
+
+* **Step 3 (Energetics of Projection & Anergic Collapse):**  
+  Active informational fuel allocation ($\dot{\mathcal{E}}_{\mathfrak{Im}} = k_B T \ln 2 \cdot \dot{\mathcal{H}} > 0$) is strictly conditioned on positive forward projection viability:
+  $$\boxed{\begin{cases} 
+  \mathcal{P}_{\hat{\mathbf{P}}}(t) > 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}}(t) = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0 & \text{(Proactive Negentropy Investment / Exploratory Expression } \boldsymbol{\mathcal{X}} > 0\text{)} \\ 
+  \mathcal{P}_{\hat{\mathbf{P}}}(t) \le 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}}(t) \longrightarrow 0, \; \mathbf{v}_n \cdot \hat{n} \le 0 & \text{(Projection Collapse / Behavioral Withdrawal \& Anergic Lysis)} 
+  \end{cases}}$$
+  proving that when forward projection expectations vanish ($\mathcal{P}_{\hat{\mathbf{P}}} \le 0$), metabolic computation shuts down to minimize Landauer dissipation, precipitating rapid boundary regression.
 
 ---
 

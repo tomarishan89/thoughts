@@ -12,7 +12,7 @@
 ├────┬──────────────────────────────────────┬─────────────────────────┬────────────────────────────┤
 │ ID │ CONCEPT / FACTOR                     │ TARGET LOCATION         │ THEORETICAL IMPACT         │
 ├────┼──────────────────────────────────────┼─────────────────────────┼────────────────────────────┤
-│ 01 │ Expression Operator (𝓧)              │ draft.md §2.1 (Done), interp.md §3,5 (Done)│ Interfacial Trace bridge│
+│ 01 │ Dual Projection (P̂) & Expression (𝓧) │ draft.md §2.1 (Done), interp.md §3,5 (Done)│ Interfacial Trace bridge│
 │ 02 │ Hunger vs. Craving (Kṣudhā vs. Kāma) │ interpretation.md §5.2 (Done)   │ Bottom-up vs Top-down sim  │
 │ 03 │ Ariṣaḍvarga Thermodynamics           │ interpretation.md §6 (Done)     │ Margin distortion dynamics │
 │ 04 │ Involuntary vs. Voluntary Gating     │ interpretation.md §5.3 (Done)   │ Landauer veto cost 𝓞_inhib │
@@ -20,7 +20,7 @@
 │ 06 │ "I Am a Universe" Fractal Hierarchy  │ interpretation.md §8 (Done)     │ Scale-invariant syncytium  │
 │ 07 │ Black Hole Universe Cosmology        │ draft.md §1.1.1 (Done), interp.md §9 (Done)│ Exact R_s ≡ R_H boundary│
 │ 08 │ Axiomatic Definition of Life         │ draft.md §2.3.6 (Done), interp.md §9 (Done)│ Dual universe comparison│
-│ 09 │ Prospect (𝓟) in Temporal Triad       │ interpretation.md §5.1 (Done)   │ Reachable state horizon    │
+│ 09 │ The Temporal Triad (ℱ_ledger→P̂→𝓧)   │ draft.md §2.3.7 (Done), interp.md §5.1 (Done)│ Operator temporal loop │
 └────┴──────────────────────────────────────┴─────────────────────────┴────────────────────────────┘
 ```
 
@@ -28,13 +28,13 @@
 
 ## 2. Detailed Integration Roadmaps
 
-### Item 01: Formalize "Expression" ($\boldsymbol{\mathcal{X}}$) as the Interfacial Transduction Operator
+### Item 01: Dual Projection Operator ($\hat{\mathbf{P}}$) & Interfacial Expression ($\boldsymbol{\mathcal{X}}$)
 * **Status:** **Integrated in `draft.md` §2.1 & `interpretation.md` §3, §5.1 (Done)**.
 * **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.1; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 3, Section 5.1.
 * **Physics Formulation:**
-  $$\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)$$
-  $$\nabla \cdot \mathbf{S}_{\mathfrak{Im}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \|\mathbf{\Phi}_{\mathbb{C}}^{\text{transmitted}}\|^2 = \|\mathbf{\Phi}_{\mathbb{C}}^{\text{incident}}\|^2 - (\boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}})\cdot\hat{n}$$
-* **Theoretical Impact:** Formally proves that the extent of existence in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
+  $$\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}}, \qquad \boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}} \right] = \left( \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}} + \mathcal{X}_{\text{transmitted}} \right) \hat{n}$$
+  $$\Delta \mathbf{S}_{\mathbf{P}}(x, t) \cdot \hat{n}_B = \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) \iff \mathcal{A}_{\text{transmitted}}^2 = \mathcal{A}_{\text{incident}}^2 - \frac{8\pi}{c}\left( \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}} \right)$$
+* **Theoretical Impact:** Formally proves that the unmanifest field amplitude in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
 
 ---
 
@@ -108,10 +108,10 @@
 
 ---
 
-### Item 09: Formalizing "Prospect" ($\mathcal{P}$) in the Temporal Architecture
-* **Status:** **Integrated in `interpretation.md` §5.1 (Done)**.
-* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.3.5; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 5.1.
+### Item 09: The Operator-Theoretic Temporal Triad ($\mathcal{F}_{\text{ledger}} \longrightarrow \hat{\mathbf{P}} \longrightarrow \boldsymbol{\mathcal{X}}$)
+* **Status:** **Integrated in `draft.md` §2.3.7 & `interpretation.md` §5.1 (Done)**.
+* **Target Files:** [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) Section 2.3.7; [`interpretation.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/interpretation.md) Section 5.1.
 * **Physics Formulation:**
-  - Forward Reachable State-Space Horizon: $\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}[\phi(\hat{\mathbf{C}}(\tau))] e^{-\beta \tau} d\tau$.
-  - The Temporal Triad: **Ledger ($\mathcal{F}_{\text{ledger}}$ — Past)** $\longrightarrow$ **Prospect ($\mathcal{P}$ in $\Omega_{\mathfrak{Im}}$ — Future)** $\longrightarrow$ **Expression ($\boldsymbol{\mathcal{X}}$ on $\partial E$ — Present)**.
-  - Energetics of Prospect: $\mathcal{P} > 0 \implies$ Proactive metabolic exergy investment vs. $\mathcal{P} \le 0 \implies$ Horizon collapse, depressive withdrawal, and entropy accumulation.
+  - The Causal Closed Loop: **Ledger ($\mathcal{F}_{\text{ledger}}$ — Past)** $\longrightarrow$ **Dual Projection ($\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$ — Future)** $\longrightarrow$ **Interfacial Expression ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$ — Present)**.
+  - Subsuming Prospect: Forward reachable margin expectations are computed directly as the scalar functional $\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}[\phi(\tau)] e^{-\beta \tau} d\tau$, eliminating Prospect as a redundant standalone primitive.
+  - Informational Energetics: $\mathcal{P}_{\hat{\mathbf{P}}} > 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$ vs. $\mathcal{P}_{\hat{\mathbf{P}}} \le 0 \implies$ Anergic projection collapse and boundary lysis.

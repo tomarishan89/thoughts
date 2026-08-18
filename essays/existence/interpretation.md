@@ -108,7 +108,9 @@ The table below provides the explicit formal correspondence between the physical
 | **Svadharma (स्वधर्म)**<br>*(Intrinsic Law / Policy / Duty)* | The ordered Lie operator algebra ($D_{\mathfrak{Im}}$) of constitutive boundary generators sustaining topological enclosure ($\partial E$) at optimal investment ratio $\chi^*$. | Axiom 2 (§1.2.1), Theorem 6 (§2.3.5) |
 | **Karma (कर्म)**<br>*(Causal Action & Path Hysteresis)* | The non-Markovian Dyson path history ($\Psi$) and hereditary viscoelastic memory kernel ($G(t-\tau)$), encoding chronological non-commutativity ($[\hat{\mathcal{L}}_1, \hat{\mathcal{L}}_2] \neq \mathbf{0}$). | Section 1.2.1 (Dyson Propagator), Magnus Expansion |
 | **Maya (माया)**<br>*(Perceptual / Interface Boundary)* | The emergent zero-level set front ($f(t)$) separating internal microstates from external environmental challenge traction fields. | Theorem 3 (§2.3.2), Level-Set PDE (§2.3.3) |
-| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)**<br>*(Interfacial Expression / Radiation)* | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing complex state-space projections into real physical traction and matter exchange. | Axiom 3 (§2.1), Imaginary Field Depletion Law |
+| **Smṛti (स्मृति)**<br>*(Historical Memory Ledger)* | The immutable historical state ledger ($\mathcal{F}_{\text{ledger}} \subseteq \Omega_{\mathbb{R}}$) inscribed in real configuration space (DNA, synaptic weights, epigenetic marks, rock stratigraphy). | Axiom 2 (§1.2.1), Theorem 6C (§2.3.7) |
+| **Prakṣepaṇa (प्रक्षेपण)**<br>*(Universal Dual Projection)* | The universal dual-space broadcast operator ($\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$), projecting real mechanical stress ($\hat{\mathbf{P}}_{\mathbb{R}}$) and unmanifest anticipatory gauge wave fields ($\hat{\mathbf{P}}_{\mathfrak{Im}}$) into the forward lightcone $J^+(E)$. | Axiom 3 (§2.1), Theorem 6C (§2.3.7) |
+| **Prakāśa / Abhivyakti (प्रकाश / अभिव्यक्ति)**<br>*(Interfacial Expression / Radiation)* | The interfacial realization operator ($\boldsymbol{\mathcal{X}} \equiv \operatorname{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$), transducing projection fields into real physical boundary traction and matter-energy flux. | Axiom 3 (§2.1), Imaginary Field Depletion Law |
 | **Dharma (धर्म)**<br>*(Harmonious Structural Integration)* | The inter-tier constitutive coupling operator ($\mathcal{O}_{\text{coupling}}^{m \to n}$) extracting nodal free energy to ensure collective envelope survival. | Theorem 8 (§5.2), Syncytial Circuit PDE |
 | **Karma Yoga (कर्म योग)**<br>*(Selfless Systemic Action)* | Systemic nodal resource re-allocation sacrificing localized nodal measure ($\mu(E^j) \to 0$) to preserve collective envelope coherence ($\mu(\mathbb{S}) > 0$). | Section 5.2 (Nodal Re-allocation / Apoptosis) |
 | **Kṣudhā vs. Kāma (क्षुधा vs. काम)**<br>*(Physical Hunger vs. Simulated Desire)* | First-law real-space exergy depletion ($\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}}$ in $\Omega_{\mathbb{R}}$) vs. anticipatory memory-ledger simulation in imaginary space ($\Delta \hat{\mathcal{G}} > 0$ in $\Omega_{\mathfrak{Im}}$). | Section 2.3.5, Information-Thermodynamic Bounds |
@@ -172,36 +174,39 @@ An individual floret does not "follow" the inflorescence; it is an active, const
 
 ---
 
-## Section 5: The Temporal Architecture of Consciousness: Ledger, Prospect, and Expression
+## Section 5: The Temporal Architecture of Existence: Ledger, Projection, and Expression
 
 ```
-                          THE TEMPORAL TRIAD OF EXISTENCE
-                                         │
-        ┌────────────────────────────────┼────────────────────────────────┐
-        │                                │                                │
-[SMṚTI: THE PAST LEDGER]     [ĀŚĀ: THE FUTURE PROSPECT]     [PRAKĀŚA: PRESENT EXPRESSION]
-• Inscribed in real space    • Simulated in complex space   • Realized at boundary interface
-• ℱ_ledger ⊆ Ω_ℝ             • 𝓟(t) = ∫ E[ϕ(τ)] e^(-βτ) dτ  • 𝓧 = Tr_∂E[Φ_ℂ ⊗ ℱ_ℝ]
-• Deterministic record       • Reachable horizon (Ω_𝔗𝔪)    • Real-space matter/traction
+                          THE OPERATOR-THEORETIC TEMPORAL TRIAD
+                                            │
+        ┌───────────────────────────────────┼───────────────────────────────────┐
+        │                                   │                                   │
+[SMṚTI: THE PAST LEDGER]       [PRAKṢEPAṆA: DUAL PROJECTION]       [PRAKĀŚA: PRESENT EXPRESSION]
+• Inscribed in real space      • Broadcast into complex space      • Realized at boundary interface
+• ℱ_ledger ⊆ Ω_ℝ               • P̂ = P̂_ℝ ⊕ i P̂_𝔗𝔪                  • 𝓧 = Tr_∂E[P̂ ⊗ ℱ_ℝ]
+• Deterministic physical record• Forward lightcone wave (J^+(E))   • Normal power/traction flux
 ```
 
-### 5.1 The Temporal Triad ($\mathcal{F}_{\text{ledger}} \longrightarrow \mathcal{P} \longrightarrow \boldsymbol{\mathcal{X}}$)
-Human consciousness and living cognition operate across a rigorous 3-stage temporal architecture:
+### 5.1 The Temporal Triad ($\mathcal{F}_{\text{ledger}} \longrightarrow \hat{\mathbf{P}} \longrightarrow \boldsymbol{\mathcal{X}}$)
+Human consciousness, biological cognition, and open thermodynamic engines operate across a closed three-phase causal loop:
 
 1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**  
-   The immutable, physical record of past interactions inscribed into real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA base sequences, synaptic weight distributions, epigenetic methylation, historical text archives). The ledger provides the empirical basis from which the generator algebra $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ is constructed.
+   The immutable, physical record of past interactions inscribed into real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, historical text archives, crystal dislocation networks). The ledger provides the empirical substrate from which the internal generator algebra $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ is constructed.
 
-2. **The Reachable Horizon of the Future ($\mathcal{P}$ / *Āśā* / Prospect):**  
-   The forward simulation generated in imaginary state space $\Omega_{\mathfrak{Im}}$ by evolving the Dyson propagator over potential futures. Formally, **Prospect ($\mathcal{P}$)** is the discounted expectation of future structural margin integrity across temporal horizon $\tau_{\text{horizon}}$:
-   $$\boxed{\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}\left[ \phi\left( \hat{\mathbf{C}}(\tau) \right) \right] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]}$$
-   where $\beta > 0$ is the temporal discount rate and $\mathbb{E}[\phi]$ is the predicted structural margin.
-   * **$\mathcal{P} > 0$ (Positive Prospect / Vitality):** The entity anticipates net positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} > 0$), exploratory foraging, and boundary expansion.
-   * **$\mathcal{P} \le 0$ (Horizon Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity triggers depressive withdrawal, contracting its active resistance ($\mathbf{R}_{\text{active}} \to \mathbf{0}$) to minimize Landauer computational dissipation.
+2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**  
+   The universal broadcast operator emitting real mechanical traction and unmanifest anticipatory wavefunctional fields into the forward lightcone $J^+(E)$:
+   $$\boxed{\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}} \in \Omega_{\mathbb{C}}}$$
+   where $\hat{\mathbf{P}}_{\mathbb{R}}$ is the outward push-forward of boundary Cauchy stress and convective mass-momentum, and $\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) = \mathbf{\Phi}_{\mathbb{C}}(x, t)$ is the complex gauge wave propagating forward in time.
+   
+   The forward viability of the imaginary projection is quantified by its time-discounted structural margin expectation functional:
+   $$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}\left[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) \right] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
+   * **$\mathcal{P}_{\hat{\mathbf{P}}} > 0$ (Viable Forward Projection / Vitality):** The entity anticipates positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$), exploratory foraging, and boundary expansion.
+   * **$\mathcal{P}_{\hat{\mathbf{P}}} \le 0$ (Projection Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity shuts down informational computation ($\dot{\mathcal{E}}_{\mathfrak{Im}} \to 0$) to minimize Landauer dissipation, precipitating depressive withdrawal and anergic boundary regression.
 
 3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**  
-   The instantaneous realization of complex state-space simulations into real-space physical traction and mass-energy exchange at the boundary interface:
-   $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}} + \boldsymbol{\mathcal{X}}_{\text{transmitted}}}$$
-   Every act of speech, muscle contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously depletes complex imaginary amplitude ($\nabla \cdot \mathbf{S}_{\mathbf{P}} = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}$) while creating new physical traces in the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
+   The instantaneous realization of complex projection fields into real-space physical traction, matter exchange, and photochemical work at the boundary interface:
+   $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) \right] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad \left[\frac{\mathrm{W}}{\mathrm{m^2}}\right]}$$
+   Every act of speech, muscular contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously collapses unmanifest imaginary projection amplitude ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while inscribing new physical traces into the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
 
 ---
 
