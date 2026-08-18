@@ -146,19 +146,29 @@ where $\mu_{\mathbb{R}}(E) \equiv \int_{E_{\mathbb{R}}} \rho(\mathbf{x}) \, d^3x
    $$\boxed{\int_{E(t)} \left( \nabla \cdot \mathbf{J}_S \right) dV = \int_{\partial E_{\text{outer}}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{out}} \right) dA + \sum_k \int_{\partial E_{\text{inner}, k}(t)} \left( \mathbf{J}_S \cdot \hat{n}_{\text{cavity}} \right) dA = \int_{\partial E(t)} \left( \mathbf{J}_S \cdot \hat{n} \right) dA}$$
    (where for multiply-connected topological domains $\partial E = \partial E_{\text{outer}} \cup (\bigcup_k \partial E_{\text{inner}, k})$, the unit normal $\hat{n}$ is oriented outward from the material body $E(t)$ across exterior interfaces $\hat{n}_{\text{out}}$ and internal void cavity boundaries $\hat{n}_{\text{cavity}}$).
 
-#### The Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$), Trace Realization & Imaginary Field Depletion:
-In source-free vacuum ($\mu = 0$), gauge fields and unmanifest potentials propagate as complex wave functionals $\mathbf{\Phi}_{\mathbb{C}} \in \Omega_{\mathfrak{Im}}$ carrying Poynting / complex amplitude flux $\mathbf{S}_{\mathfrak{Im}} = \frac{c}{8\pi} \|\mathbf{\Phi}_{\mathbb{C}}\|^2 \hat{\mathbf{k}}$. Upon intersecting a material boundary ($\mu(E) > 0$), the physical realization is governed by the **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$)** via the Interfacial Trace Map:
-$$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \operatorname{Tr}_{\partial E}\left[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)}$$
+#### The Universal Projection Operator ($\hat{\mathbf{P}}$), Interfacial Expression ($\boldsymbol{\mathcal{X}}$) & Field Depletion:
+Every active entity $E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$ acts upon ambient space by broadcasting its non-equilibrium state through the **Universal Projection Operator ($\hat{\mathbf{P}}$)**:
+$$\boxed{\hat{\mathbf{P}}: \operatorname{Int}(E) \times \partial E \longrightarrow \Omega_{\mathbb{C}} \setminus E, \qquad \hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}}}$$
+1. **Real Mechanical Projection ($\hat{\mathbf{P}}_{\mathbb{R}}$):** Outward push-forward of Cauchy stress and convective mass:
+   $$\hat{\mathbf{P}}_{\mathbb{R}}[\mathcal{E}](x, t) \equiv -\left( \boldsymbol{\sigma}(x, t) \cdot \hat{n}(x) \right) \delta_{\partial E}(x) + \mathbf{j}_{\text{matter}}(x, t) \quad [\mathrm{Pa}]$$
+2. **Imaginary Gauge Projection ($\hat{\mathbf{P}}_{\mathfrak{Im}}$):** Outward propagation of unmanifest gauge potentials and complex wavefunctional amplitudes:
+   $$\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) \equiv \mathbf{\Phi}_{\mathbb{C}}(x, t) = \mathcal{A}(x, t) e^{i \theta(x, t)} \in \Omega_{\mathfrak{Im}}, \qquad \Box \mathbf{\Phi}_{\mathbb{C}}(x, t) = \operatorname{Tr}_{\partial E}\left[ D_{\mathfrak{Im}} \right] \delta(\partial E)$$
+   carrying Poynting / complex amplitude flux $\mathbf{S}_{\mathbf{P}} = \frac{c}{8\pi} \mathcal{A}^2 \frac{\mathbf{k}}{\|\mathbf{k}\|} + (\hat{\mathbf{P}}_{\mathbb{R}} \cdot \mathbf{v}_{\text{int}})\hat{n} \in [\mathrm{W/m^2}]$ bounded strictly within the forward causal cone $\operatorname{supp}(\hat{\mathbf{P}}[E]) \subseteq J^+(E)$.
+
+##### Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}$) & Environmental Challenge ($\mathbf{C}$):
+When a projection $\hat{\mathbf{P}}_A$ intersects a target boundary $\partial E_B$, it is evaluated as the **Environmental Challenge ($\mathbf{C}_B$)** and realized via the **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}}_B$)**:
+$$\boxed{\mathbf{C}_B(x, t) \equiv \operatorname{Tr}_{\partial E_B}\left[ \hat{\mathbf{P}}_A(x, t) \right] = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n}_B \quad [\mathrm{Pa}]}$$
+$$\boxed{\boldsymbol{\mathcal{X}}_B(x, t) \equiv \operatorname{Tr}_{\partial E_B}\left[ \hat{\mathbf{P}}_A \otimes \mathcal{F}_{\mathbb{R}}^B \right] = \boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) + \boldsymbol{\mathcal{X}}_{\text{transmitted}}(x, t)}$$
 where the realized modes partition the incident flux across the interface:
 $$\begin{cases} 
-\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) = \alpha(x, t) \left( \mathbf{S}_{\text{incident}} \cdot \hat{n} \right) & \text{(Absorbed Negentropy / Real Photochemical Work } \Delta \mu_{\mathbb{R}} > 0\text{)} \\ 
-\boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) = \mathcal{R}(x, t) \left( \mathbf{S}_{\text{incident}} \cdot \hat{n} \right) & \text{(Reflected Wave Field / Elastic Surface Scattering)} \\ 
-\mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n} & \text{(Real Maxwell Stress Tensor Surface Traction)} 
+\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) = \alpha(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Absorbed Negentropy / Real Photochemical Work } \Delta \mu_{\mathbb{R}} > 0\text{)} \\ 
+\boldsymbol{\mathcal{X}}_{\text{reflected}}(x, t) = \mathcal{R}(x, t) \left( \mathbf{S}_{\mathbf{P}} \cdot \hat{n}_B \right) & \text{(Reflected Wave Field / Elastic Surface Scattering)} \\ 
+\mathbf{C}_{\text{real}}(x, t) = -\mathbf{T}^{\text{field}}(x, t) \cdot \hat{n}_B & \text{(Real Maxwell / Gravitational Stress Surface Traction)} 
 \end{cases}$$
 
 ##### Conservation of Interfacial Flux & Imaginary Field Depletion Law:
 By global energy conservation across the orthogonal projections $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$, any real physical work materialized at the boundary ($\boldsymbol{\mathcal{X}}_{\text{absorbed}} > 0$) strictly consumes the unmanifest field amplitude in imaginary space:
-$$\boxed{\nabla \cdot \mathbf{S}_{\mathfrak{Im}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \|\mathbf{\Phi}_{\mathbb{C}}^{\text{transmitted}}\|^2 = \|\mathbf{\Phi}_{\mathbb{C}}^{\text{incident}}\|^2 - \left( \boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}} \right) \cdot \hat{n}}$$
+$$\boxed{\nabla \cdot \mathbf{S}_{\mathbf{P}}(x, t) = -\boldsymbol{\mathcal{X}}_{\text{absorbed}}(x, t) \iff \mathcal{A}_{\text{transmitted}}^2(x, t) = \mathcal{A}_{\text{incident}}^2(x, t) - \frac{8\pi}{c}\left( \boldsymbol{\mathcal{X}}_{\text{absorbed}} + \boldsymbol{\mathcal{X}}_{\text{reflected}} \right) \cdot \hat{n}_B}$$
 proving that the extent of existence in imaginary space ($\Omega_{\mathfrak{Im}}$) decays monotonically in proportion to the real physical matter and traction ($\Omega_{\mathbb{R}}$) realized across the boundary interface $\partial E$.
 
 In ultrafast photoreceptive sensory transduction (e.g. retinal conical intersections), non-adiabatic electronic-nuclear trajectories accumulate a topological **Geometric Berry Phase**:
@@ -330,10 +340,12 @@ $$\boxed{f(t) \equiv \left\{ x \in \Omega_{\mathbb{R}} \;\Big|\; \phi(x, t) \equ
   From the First Law ($\dot{\mathcal{U}}_{\text{internal}} = \dot{E}_{\text{fuel}} - \dot{W}_{\text{out}} - \dot{Q}_{\text{out}}$) and the Reynolds-augmented Second Law, applying the **Gouy-Stodola Exergy Theorem**:
   $$\frac{d\mathcal{G}}{dt} = \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV - \underbrace{\left[ \dot{W}_{\text{out}} + \dot{Q}_{\text{out}} - T_{\text{ambient}} \int_{\partial E} \left(\mathbf{J}_S - s \mathbf{v}_n\right) \cdot \hat{n} \, dA \right]}_{\ge 0 \text{ (Dissipation to Ambient Heat Bath)}}$$
 
-* **Step 3 (Non-Equilibrium Exergy Sufficiency & Stability Bound):**  
-  Boundary persistence requires maintaining non-equilibrium free-energy above the ground-state lysis threshold ($\mathcal{G}[E(t)] \ge \mathcal{G}_{\text{threshold}} > 0$). Steady-state metabolic maintenance yields the **Critical Fuel Sufficiency Condition**:
-  $$\boxed{\dot{E}_{\text{fuel}}(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \, \dot{S}_{\text{gen}}^{\text{total}}(t) = T_{\text{ambient}} \left[ \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV + \int_{\partial E(t)} \frac{\left(\mathbf{J}_q(x, t) \cdot \hat{n}\right)^2 R_K}{T_{\text{ambient}} \, T_{\text{internal}}(x, t)} \, dA \right] \implies \frac{d\mathcal{G}}{dt} \ge 0 \quad (\text{Exergy Sufficiency})}$$
-  Conversely, under metabolic deprivation:
+* **Step 3 (Non-Equilibrium Exergy Sufficiency, Reciprocal Expression Harvesting & Stability Bound):**  
+  Boundary persistence requires maintaining non-equilibrium free-energy above the ground-state lysis threshold ($\mathcal{G}[E(t)] \ge \mathcal{G}_{\text{threshold}} > 0$). Fuel influx $\dot{E}_{\text{fuel}}^A(t)$ is supplied by endogenous fuel reserves and the **Reciprocal Expression Harvest Operator** over all interacting target entities $\{B\}$ across contact frontiers $f_{AB} = \partial E_A \cap \partial E_B$:
+  $$\boxed{\dot{E}_{\text{fuel}}^A(t) \equiv \dot{E}_{\text{basal}}^A(t) + \sum_{B} \int_{f_{AB}} \eta_{AB} \left( \boldsymbol{\mathcal{X}}_B(x, t) \cdot \hat{n}_A \right) dA \quad [\mathrm{W}]}$$
+  where $\eta_{AB} \in (0, 1)$ is the Second-Law bounded harvest efficiency. Steady-state metabolic maintenance yields the **Critical Fuel Sufficiency Condition**:
+  $$\boxed{\dot{E}_{\text{fuel}}^A(t) \ge \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \, \dot{S}_{\text{gen}}^{\text{total}}(t) = T_{\text{ambient}} \left[ \int_{E(t)} \sigma_{\text{total}}(x, t) \, dV + \int_{\partial E(t)} \frac{\left(\mathbf{J}_q(x, t) \cdot \hat{n}\right)^2 R_K}{T_{\text{ambient}} \, T_{\text{internal}}(x, t)} \, dA \right] \implies \frac{d\mathcal{G}}{dt} \ge 0 \quad (\text{Exergy Sufficiency})}$$
+  Conversely, under metabolic deprivation or harvest decouple ($\eta_{AB} \to 0$):
   $$\boxed{\dot{E}_{\text{fuel}}(t) < \dot{E}_{\text{crit}} \implies \frac{d\mathcal{G}}{dt} < 0 \implies \mathcal{G}[E(t)] \longrightarrow 0 \quad (\text{Exergy Depletion \& Lysis})}$$
 
 ---
@@ -552,12 +564,13 @@ The framework holds unconditionally for Tier I Physical systems as the **$\chi^*
   $$\boxed{\int_{\partial E^A \setminus f_{AB}} \rho_A \left( \mathbf{v}_n^{\text{free}} \cdot \hat{n}_A \right) dA = \eta_{\text{trophic}} \, \dot{\mathcal{M}}_{A \leftarrow B}(t) - \int_{f_{AB}} \rho_A \left( \mathbf{v}_n^{AB} \cdot \hat{n}_A \right) dA}$$
   which closes the level-set evolution PDE $\frac{\partial \phi_A}{\partial t} - v_n^{\text{free}} \|\nabla \phi_A\| = 0$ along the predator's deforming outer boundary $\partial E^A \setminus f_{AB}$.
   
-  Evaluating the sign of the margin differential across the shared contact zone yields the **Deterministic Role Assignment Matrix**:
+  Evaluating the sign of the margin differential across the shared contact zone yields the **Deterministic Role Assignment & Reciprocal Trophic Loop Matrix**:
   $$\boxed{\begin{cases} 
-  \Delta \phi_{AB}(x, t) > 0 \implies & \dot{\mathcal{M}}_{A \leftarrow B} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}}\left(-\frac{d\mathcal{G}[E^B]}{dt}\right) > 0 & \left(E^A \text{ operates on } E^B \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) < 0 \implies & \dot{\mathcal{M}}_{B \leftarrow A} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = \eta_{\text{trophic}}\left(-\frac{d\mathcal{G}[E^A]}{dt}\right) > 0 & \left(E^B \text{ operates on } E^A \text{ as fuel}\right) \\
-  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \dot{\mathcal{M}}_{A \leftarrow B} = 0 & \left(\text{Kinematic elastic balance / non-penetrative contact}\right)
+  \Delta \phi_{AB}(x, t) > 0 \implies & \dot{\mathcal{M}}_{A \leftarrow B} > 0, \; \boldsymbol{\mathcal{X}}_B = -\frac{d\mathcal{G}[E^B]}{dt} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}} \int_{f_{AB}} (\boldsymbol{\mathcal{X}}_B \cdot \hat{n}_A) dA > 0 & \left(\text{Predatory Cleavage: } E^A \text{ consumes } E^B\right) \\
+  \Delta \phi_{AB}(x, t) < 0 \implies & \dot{\mathcal{M}}_{B \leftarrow A} > 0, \; \boldsymbol{\mathcal{X}}_A = -\frac{d\mathcal{G}[E^A]}{dt} > 0, \; \dot{\mathcal{E}}_{\text{fuel}}^B = \eta_{\text{trophic}} \int_{f_{AB}} (\boldsymbol{\mathcal{X}}_A \cdot \hat{n}_B) dA > 0 & \left(\text{Predatory Cleavage: } E^B \text{ consumes } E^A\right) \\
+  \Delta \phi_{AB}(x, t) = 0 \implies & \mathbf{v}_n^{AB} = \mathbf{0}, \; \dot{\mathcal{M}}_{A \leftrightarrow B} = 0, \; \dot{\mathcal{E}}_{\text{fuel}}^{A \leftrightarrow B} = \mathcal{O}_{\text{coupling}}[\Delta \mathcal{G}] & \left(\text{Syncytial / Symbiotic Mutualistic Exchange}\right)
   \end{cases}}$$
+  where in the non-cleaving syncytial regime ($\Delta \phi_{AB} = 0$), projections $\hat{\mathbf{P}}_A \leftrightarrow \hat{\mathbf{P}}_B$ stimulate constructive expressions $\boldsymbol{\mathcal{X}}_A \leftrightarrow \boldsymbol{\mathcal{X}}_B$ that exchange metabolic fuel without boundary lysis.
 
 ---
 
