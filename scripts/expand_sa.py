@@ -96,7 +96,10 @@ def parse_glossary_rows(path: Path) -> list[dict[str, str]]:
 
 
 def load_lexicon(chapter_dir: Path, root: Path) -> dict[str, str]:
-    master = parse_glossary(root / "lexicons" / "glossary.md")
+    master_path = root / "essays" / "interospection_01" / "lexicons" / "glossary.md"
+    if not master_path.exists():
+        master_path = root / "lexicons" / "glossary.md"
+    master = parse_glossary(master_path)
     chapter = parse_glossary(chapter_dir / "glossary.md")
     return {**master, **chapter}
 

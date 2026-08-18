@@ -116,10 +116,8 @@ Project_writeup_1/
 │   │   ├── entropy.md           # Non-equilibrium thermodynamic dissipation metrics
 │   │   └── rough.md             # Scratchpad & exploratory calculations
 │   └── interospection_01/       # Staged essay on Kuṇḍalinī darśana & Pāṇinian morphology
-│       └── references/          # Pāṇinian grammar aids and derivation logs
-├── lexicons/                    # Terminology controls & Sanskrit master dictionaries
-│   ├── glossary.md              # Master lexicon of Sanskrit roots, roman keys & definitions
-│   └── allowlist.md             # Canonical spelling and term validations
+│       ├── lexicons/            # Terminology controls & Sanskrit master dictionaries (glossary.md, allowlist.md)
+│       └── references/          # Pāṇinian grammar aids and derivation logs (panini-notes.md)
 ├── scripts/                     # Automation toolchain & PDF/LaTeX compilation pipeline
 │   ├── generate_pdf.py          # Automated vector PDF compiler (MathJax + Chrome/Edge)
 │   ├── md_to_latex.py           # Markdown to standard LaTeX (.tex) converter

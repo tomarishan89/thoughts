@@ -123,7 +123,9 @@ def add_entry(
         path = chapter_dir / "glossary.md"
         _ensure_table(path, f"Chapter glossary - {chapter_dir.name}")
     else:
-        path = root / "lexicons" / "glossary.md"
+        path = root / "essays" / "interospection_01" / "lexicons" / "glossary.md"
+        if not path.parent.exists():
+            path = root / "lexicons" / "glossary.md"
         _ensure_table(path, "Master glossary")
 
     iast_val = iast or key

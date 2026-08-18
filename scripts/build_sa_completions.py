@@ -28,7 +28,10 @@ from expand_sa import parse_glossary_rows, project_root, resolve_chapter  # noqa
 def load_all_rows(root: Path, chapter: str | None) -> dict[str, dict[str, str]]:
     """key -> row; chapter overrides master."""
     by_key: dict[str, dict[str, str]] = {}
-    for row in parse_glossary_rows(root / "lexicons" / "glossary.md"):
+    master_path = root / "essays" / "interospection_01" / "lexicons" / "glossary.md"
+    if not master_path.exists():
+        master_path = root / "lexicons" / "glossary.md"
+    for row in parse_glossary_rows(master_path):
         by_key[row["key"]] = row
     if chapter:
         chapter_dir = resolve_chapter(chapter, root)
