@@ -1,10 +1,50 @@
 # Structural Isomorphisms, Multi-Scale Extensions, and Ontological Mappings
 
-> **Epistemological & Hermeneutic Framing:** This companion document formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md). 
+> **Epistemological & Hermeneutic Framing:** This companion treatise formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md). 
 >
-> While the primary physical manuscript operates strictly in SI units ($[\mathrm{Pa}]$, $[\mathrm{W}]$, $[\mathrm{m/s}]$, $[\mathrm{Pa \cdot s}]$) on Lorentzian spacetime manifolds $(\mathcal{M}, g_{\mu\nu})$ for physical and biological systems (Tiers I & II), this document investigates how that same mathematical machinery serves as a rigorous structural blueprint for cognitive, social, and metaphysical domains.
+> While the primary physical manuscript operates strictly in SI units ($[\mathrm{Pa}]$, $[\mathrm{W}]$, $[\mathrm{m/s}]$, $[\mathrm{Pa \cdot s}]$) on Lorentzian spacetime manifolds $(\mathcal{M}, g_{\mu\nu})$ for physical and biological systems (Tiers I & II), this treatise investigates how that same mathematical machinery serves as a rigorous structural blueprint across cognitive, social, and metaphysical scales.
 
 ---
+
+## 🧭 Specialized Modular Domain Treatises
+
+To allow domain specialists (cosmologists, biophysicists, psychologists, sociologists, or Sanskrit scholars) to explore their areas without distraction, this treatise is partitioned into dedicated domain files:
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                         SPECIALIZED INTERPRETATION MODULES                                       │
+├──────────────────────────────────────────────────────┬───────────────────────┬───────────────────────────────────┤
+│ TREATISE MODULE                                      │ DOMAIN FOCUS          │ KEY THEMES & FORMULATIONS         │
+├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
+│ 🕉️ [core_ontology_and_dharma.md](interpretations/core_ontology_and_dharma.md) │ Sanskrit Ontology &   │ • Verbal root √dhṛ (to sustain)   │
+│                                                      │ Dharma Set Theory     │ • Sanatan Dharm Union: 𝒟_T = ⋃ D  │
+│                                                      │                       │ • Category Error & Inflorescence  │
+│                                                      │                       │ • Temporal Triad: ℱ ⟶ P̂ ⟶ 𝓧      │
+├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
+│ 🌌 [cosmology_and_brahmanda.md](interpretations/cosmology_and_brahmanda.md)   │ Black Hole Cosmology  │ • Brahmāṇḍa Identity: R_s ≡ R_H   │
+│                                                      │ & Dark Sector         │ • Horizon Duality (Theorem 6B)    │
+│                                                      │                       │ • Dark Energy as Horizon Tension  │
+│                                                      │                       │ • Torsional Dark Matter Relicts   │
+├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
+│ 🧬 [biophysics_and_syncytia.md](interpretations/biophysics_and_syncytia.md)   │ Cellular Biophysics   │ • Membrane Donnan Electroneutr.   │
+│                                                      │ & Syncytial Hierarchy │ • "I Am a Universe" (37T Cells)   │
+│                                                      │                       │ • Cellular Dharma vs. Outer Līlā  │
+│                                                      │                       │ • Apoptosis as Karma Yoga         │
+├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
+│ 🧠 [cognitive_and_psychology.md](interpretations/cognitive_and_psychology.md) │ Cognitive Dynamics &  │ • Sagawa-Ueda bound (χ* ≈ 1)      │
+│                                                      │ Psychological Afflict.│ • Ariṣaḍvarga Tensor Distortions  │
+│                                                      │                       │ • Vāsanā reflex vs Viveka Veto    │
+│                                                      │                       │ • Landauer bit erasure cost       │
+├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
+│ 🏛️ [societal_and_institutional.md](interpretations/societal_and_institutional.md)│ Institutional Network│ • Tier IV multi-agent ledgers     │
+│                                                      │ & Psychopathy Model   │ • Transduction Tensor K_trans     │
+│                                                      │                       │ • Coupling Decoupling & Cleavage  │
+│                                                      │                       │ • Systemic Model of Psychopathy   │
+└──────────────────────────────────────────────────────┴───────────────────────┴───────────────────────────────────┘
+```
+
+---
+
 
 ## Section 1: The Dimensional Bridge & Semantic Transduction Problem
 

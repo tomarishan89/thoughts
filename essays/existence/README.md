@@ -20,14 +20,28 @@ You can explore and query this research corpus interactively through Google Note
 | File | Type | Description |
 | :--- | :--- | :--- |
 | [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), Schwarzschild-Hubble horizon embedding ($R_s \equiv R_H$), relativistic Bondi accretion, and the operator Temporal Triad ($\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$) with 292 closed proof milestones across 63 peer-review iterations. |
-| [`interpretation.md`](interpretation.md) | **Ontological Treatise** | Comprehensive 9-section companion paper establishing dimensional semantic transduction ($\mathbf{K}_{\text{trans}}$), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), non-equilibrium thermodynamics of the *Ariṣaḍvarga*, *Vāsanā* vs. *Viveka* Landauer gating, systemic model of psychopathy, "I Am a Universe" fractal syncytial hierarchy, and the *Brahmāṇḍa* cosmological horizon duality. |
+| [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction ($\mathbf{K}_{\text{trans}}$), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), and indexing the 5 specialized domain modules below. |
 | [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all 292 resolved theoretical milestones, mathematical proofs, and active downstream continuum-closure frontiers across 10 categories. |
 | [`review.md`](review.md) | **Peer Review & Defense Log** | Editorial feedback, referee verdicts, and adversarial stress-tests maintained under the Anti-Premature Closure Invariant. |
+| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations of cosmic expansion, mass accretion rate, Dark Energy ($\Lambda$), and Dark Matter ($a_0$). |
 | [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm: An Ontological, Information-Theoretic, and Set-Theoretic Working Hypothesis* — establishing the definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
 | [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains (subatomic hadrons, eukaryotic membranes, Roche limits, institutional governance). |
 | [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ($\sigma_S \ge 0$), non-equilibrium state flux ($\mathbf{J}_S$), and thermodynamic bounds. |
-| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Explorations & Debates** | Extended Socratic dialogues, thought experiments, stress-tests of boundary conditions, and philosophical inquiries. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
+
+---
+
+## 📚 Specialized Domain Modules (`interpretations/`)
+
+To allow domain specialists to explore specific applications without wading through unrelated fields, the companion ontology is divided into 5 focused modules:
+
+| Module File | Domain | Key Theoretical Focus |
+| :--- | :--- | :--- |
+| [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ($\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$). |
+| [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ($R_s \equiv R_H$), Horizon Duality, Dark Energy boundary tension, Bondi accretion ($48,000 \, M_\odot/\mathrm{s}$). |
+| [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium ("I Am a Universe"), Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
+| [`cognitive_and_psychology.md`](interpretations/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ($\chi^* \approx 1$), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
+| [`societal_and_institutional.md`](interpretations/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ($\chi^* > 1$), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
 
 ---
 

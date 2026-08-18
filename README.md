@@ -30,11 +30,17 @@ The project formalizes how boundaries ($\partial E$), structural margins ($\phi 
 │                                        │                             │ relativistic Bondi accretion, level-set   │
 │                                        │                             │ PDEs, and operator Temporal Triad.        │
 ├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 📖 essays/existence/interpretation.md  │ Ontological & Hermeneutic   │ 9 formal sections mapping continuum       │
-│                                        │ Treatise (Companion Paper)  │ mechanics to Sanskrit concepts:           │
-│                                        │                             │ Svadharma, Ariṣaḍvarga thermodynamics,    │
-│                                        │                             │ Vāsanā vs. Viveka Landauer gating,        │
-│                                        │                             │ systemic psychopathy, and Brahmāṇḍa.      │
+│ 📖 essays/existence/interpretation.md  │ Master Ontological Treatise │ Comprehensive companion paper establishing│
+│    ├── interpretations/                │ & Domain-Specific Modules   │ dimensional semantic transduction, and    │
+│    │   ├── core_ontology_and_dharma.md │                             │ partitioning the ontology into 5 focused  │
+│    │   ├── cosmology_and_brahmanda.md  │                             │ domain modules: Sanskrit Ontology,        │
+│    │   ├── biophysics_and_syncytia.md  │                             │ Cosmology, Biophysics, Cognitive Dynamics,│
+│    │   ├── cognitive_and_psychology.md │                             │ and Institutional Systems.                │
+│    │   └── societal_and_institutional.md│                            │                                           │
+├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
+│ 💬 essays/existence/                   │ Dialectical & Numerical     │ Extended Socratic debates, thought        │
+│    dialogues_and_explorations.md       │ Proof Archive               │ experiments, and exact numerical proofs   │
+│                                        │                             │ of cosmic expansion, accretion, and DM/DE.│
 ├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
 │ 🔍 essays/existence/issues_log.md      │ Calculation & Proof Archive │ Complete technical derivation archive of  │
 │                                        │                             │ all 292 closed milestones and downstream  │
@@ -91,13 +97,19 @@ Project_writeup_1/
 │   ├── existence/               # The Continuum Existence & Ontological Framework
 │   │   ├── README.md            # Directory-specific guide and index
 │   │   ├── draft.md             # Flagship mathematical physics paper (292 proof milestones)
-│   │   ├── interpretation.md    # Sanskrit ontological treatise (9 multi-scale sections)
+│   │   ├── interpretation.md    # Master ontological treatise (comprehensive synthesis)
+│   │   ├── interpretations/     # Specialized Domain Modules
+│   │   │   ├── core_ontology_and_dharma.md    # Sanskrit root √dhṛ, set theory & Category Error
+│   │   │   ├── cosmology_and_brahmanda.md     # Brahmāṇḍa horizon, Dark Energy & Bondi accretion
+│   │   │   ├── biophysics_and_syncytia.md     # 37T cell hierarchy, membrane & cellular Dharma
+│   │   │   ├── cognitive_and_psychology.md    # Sagawa-Ueda bound, Ariṣaḍvarga & Viveka Veto
+│   │   │   └── societal_and_institutional.md  # Tier IV legal ledgers, K_trans & Psychopathy
+│   │   ├── dialogues_and_explorations.md      # Socratic debates & exact numerical proofs
 │   │   ├── issues_log.md        # Comprehensive technical calculation & proof archive
 │   │   ├── review.md            # Peer review editorial verdict & adversarial defense log
 │   │   ├── base.md              # Deconstructing Sanatan Dharm (foundational working hypothesis)
 │   │   ├── cases_appendix.md    # Multi-scale applications (quantum to institutional)
 │   │   ├── entropy.md           # Non-equilibrium thermodynamic dissipation metrics
-│   │   ├── dialogues_and_explorations.md # Socratic debates & thought experiments
 │   │   └── rough.md             # Scratchpad & exploratory calculations
 │   └── interospection_01/       # Staged essay on Kuṇḍalinī darśana & Pāṇinian morphology
 ├── lexicons/                    # Terminology controls & Sanskrit master dictionaries
