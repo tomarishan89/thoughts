@@ -113,8 +113,8 @@ The implementing agent must carry out the following modifications to [`draft.md`
 
 ## 5. Master Revision Checklist for Iteration 39
 
-- [ ] **Item 1:** Formulate non-local ADE free energy functional $\mathcal{F}_{\text{ADE}}$ in §4.4 (Line 479).
-- [ ] **Item 2:** Write analytical second derivative $\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} > 0$ proving strict convexity in §2.3.5 (Line 348).
-- [ ] **Item 3:** Confirm dimensionless interfacial Reynolds grouping $\frac{\rho_{\text{int}}\|v\|}{\nu_{AB}} \in [1]$ in §5.1 (Eq. 525).
-- [ ] **Item 4:** State two-step spherical thin-shell incompressibility derivation for $\sigma_{\text{hoop}}(t)$ in §4.4 (Eq. 499).
-- [ ] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/issues_log.md).
+- [x] **Item 1:** Formulate non-local ADE free energy functional $\mathcal{F}_{\text{ADE}}$ in §4.4 (Line 479).
+- [x] **Item 2:** Write analytical second derivative $\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} > 0$ proving strict convexity in §2.3.5 (Line 348).
+- [x] **Item 3:** Confirm dimensionless interfacial Reynolds grouping $\frac{\rho_{\text{int}}\|v\|}{\nu_{AB}} \in [1]$ in §5.1 (Eq. 525).
+- [x] **Item 4:** State two-step spherical thin-shell incompressibility derivation for $\sigma_{\text{hoop}}(t)$ in §4.4 (Eq. 499).
+- [x] **Item 5:** Synchronize all milestone logs across [`draft.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/draft.md) and [`issues_log.md`](file:///c:/Users/tomar/Documents/Vidyaman/Project_writeup_1/essays/existence/issues_log.md).
