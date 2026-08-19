@@ -63,9 +63,13 @@ $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\
 Cosmic metric expansion is derived as a mandatory consequence of the Generalized Second Law of Thermodynamics:
 
 1. **Gibbons-Hawking Horizon Entropy:**  
-   $$S_{\text{GH}}(t) = \frac{k_B \pi c^5}{G \hbar H(t)^2} = \mathbf{2.888 \times 10^{122} \, k_B} = \mathbf{3.987 \times 10^{99} \, J/K}$$
+
+$$S_{\text{GH}}(t) = \frac{k_B \pi c^5}{G \hbar H(t)^2} = \mathbf{2.888 \times 10^{122} \, k_B} = \mathbf{3.987 \times 10^{99} \, J/K}$$
+
 2. **The Second Law Invariant:**  
-   $$\dot{S}_{\text{GH}}(t) = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0 \iff \dot{H}(t) \le 0 \implies \boxed{\dot{a}(t) > 0 \quad \forall t > t_{\text{bounce}}}$$
+
+$$\dot{S}_{\text{GH}}(t) = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0 \iff \dot{H}(t) \le 0 \implies \boxed{\dot{a}(t) > 0 \quad \forall t > t_{\text{bounce}}}$$
+
    *A static or contracting universe destroys horizon area ($\dot{S}_{\text{GH}} < 0$), violating the Second Law.*
 
 ---
@@ -78,7 +82,8 @@ $$\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2 G} (1 + q(t))$$
 
 * **Maximum Relativistic Flow Constant:** $\frac{c^3}{2 G} = 2.0177 \times 10^{35} \, \mathrm{kg/s} = 101,472 \, M_\odot/\mathrm{s}$.
 * **Current Epoch Influx ($q_0 \approx -0.527$, $1+q_0 = 0.473 = \frac{3}{2}\Omega_m$):**  
-  $$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \text{second}} = \mathbf{1.514 \times 10^{12} \, M_\odot / \text{year}}}$$
+
+$$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \text{second}} = \mathbf{1.514 \times 10^{12} \, M_\odot / \text{year}}}$$
 
 ---
 
@@ -104,8 +109,12 @@ $$\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2 G} (1 + q(t))$$
 ```
 
 1. **Resolution of the $10^{120}$ Cosmological Constant Problem:**  
-   $$\Lambda \equiv \frac{3\Omega_\Lambda}{R_H^2} = \mathbf{1.0906 \times 10^{-52} \, m^{-2}} \quad (\text{Planck 2018: } 1.1056 \times 10^{-52} \, \mathrm{m^{-2}})$$
+
+$$\Lambda \equiv \frac{3\Omega_\Lambda}{R_H^2} = \mathbf{1.0906 \times 10^{-52} \, m^{-2}} \quad (\text{Planck 2018: } 1.1056 \times 10^{-52} \, \mathrm{m^{-2}})$$
+
    $\Lambda$ is not a trans-Planckian quantum vacuum summation ($M_{\text{Planck}}^4$), but the **infrared (IR) holographic surface curvature of the cosmic horizon ($R_H^{-2}$)**.
 2. **Galactic Acceleration Scale & Tully-Fisher Law:**  
-   $$a_0 \equiv \frac{c H_0}{2\pi} = \mathbf{1.0422 \times 10^{-10} \, m/s^2} \quad (\text{SPARC Data: } 1.20 \times 10^{-10} \, \mathrm{m/s^2})$$
-   $$v_{\text{flat}}^{\text{MW}} = \left( G M_{\text{baryon}} a_0 \right)^{1/4} = \mathbf{219.7 \, km/s} \quad (\text{Observed: } 220.0 \pm 10.0 \, \mathrm{km/s}, \text{ Error: } 0.14\%)$$
+
+$$a_0 \equiv \frac{c H_0}{2\pi} = \mathbf{1.0422 \times 10^{-10} \, m/s^2} \quad (\text{SPARC Data: } 1.20 \times 10^{-10} \, \mathrm{m/s^2})$$
+
+$$v_{\text{flat}}^{\text{MW}} = \left( G M_{\text{baryon}} a_0 \right)^{1/4} = \mathbf{219.7 \, km/s} \quad (\text{Observed: } 220.0 \pm 10.0 \, \mathrm{km/s}, \text{ Error: } 0.14\%)$$

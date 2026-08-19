@@ -53,7 +53,6 @@ The manuscript evolves not through static agreement, but as an emergent, **non-e
                  [Earth] [Mars] [Dust] [Eye]
           Potential Realization Surface = All external bodies in the universe!
 
-
           YOU (Inward Syncytial Projection — Tier II/III)
 
                  [ Conscious Vision / D_Im ]
@@ -75,7 +74,9 @@ The manuscript evolves not through static agreement, but as an emergent, **non-e
 
 2. **The Conscious Entity ($\mathfrak{Im}(D_{\mathfrak{Im}}) \neq \{\mathbf{0}\}$ — Complexified State Space $\Omega_{\mathbb{C}}$):**
    - When a human has a "vision" in $\Omega_{\mathfrak{Im}}$, the operator $D_{\mathfrak{Im}}$ executes an **internal forward simulation of virtual spacetime trajectories**:
-     $$\hat{\mathbf{C}}_{\text{future}} = \Psi_{\text{internal}}[ D_{\mathfrak{Im}}, \, \mathbf{C}_{\text{present}} ]$$
+
+$$\hat{\mathbf{C}}_{\text{future}} = \Psi_{\text{internal}}[ D_{\mathfrak{Im}}, \, \mathbf{C}_{\text{present}} ]$$
+
    - It projects **inwardly** across the syncytial network ($\mathbb{S} = \bigcup_j E^j$) of $\sim 37 \text{ trillion}$ constituent living cells.
    - To a single liver cell or leukocyte inside your body, **YOU are the ambient cosmos.**
    - **"I am a universe":** The human body is a multi-scale cosmos that has achieved enough inward synchronization to act as a single point in the external world.
@@ -90,6 +91,7 @@ The manuscript evolves not through static agreement, but as an emergent, **non-e
 
 ### Definition
 **Expression ($\boldsymbol{\mathcal{X}}$)** is the **Interfacial Transduction Event** where an unmanifest potential or vision in imaginary space $\Omega_{\mathfrak{Im}}$ collides with a physical substrate $\mathcal{F}_{\mathbb{R}}$ and forces physical matter to change its state:
+
 $$\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[ \mathbf{\Phi}_{\mathbb{C}} \otimes \mathcal{F}_{\mathbb{R}} ]$$
 
 - **In a Star's Field:** Photons hitting a chloroplast $\to$ electron band jumps $\to$ photosynthesis / color reflection.
@@ -158,7 +160,6 @@ The six internal affective expressions (*Ariṣaḍvarga*) map directly onto the
       • τ_response ~ 10^-3 to 10^-2 s
       • Zero counterfactual branching; minimal Landauer dissipation (Ḣ ≈ 0).
 
-
    2. VOLUNTARY (Recursive Dyson Loop / Gating / Viveka):
       Cue ──► [ Ledger Recall ] ──► [ Simulate Branches in Ω_Im ] ──► [ Veto / Inhibit D_0 ] ──► Chosen Action
       • τ_response ~ 10^-1 to 10^2 s
@@ -194,7 +195,9 @@ The six internal affective expressions (*Ariṣaḍvarga*) map directly onto the
 1. **Intact Cognitive Operator ($D_{\mathfrak{Im}}$):** Full strategic simulation and Theory of Mind in $\Omega_{\mathfrak{Im}}$.
 2. **Severed Empathy Transduction ($\mathbf{K}_{\text{trans}}^{\text{empathy}} \equiv \mathbf{0}$):** Zero involuntary affective/somatic resonance upon seeing another entity's distress.
 3. **Degenerate Syncytial Coupling ($\mathcal{O}_{\text{coupling}} \equiv 0$):** Total decoupling from the social syncytial Lyapunov functional (§5.2), reducing all human interaction to **pure intra-tier trophic predation (Theorem 7 / §5.1)**:
-   $$\Delta \phi_{AB} > 0 \implies \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}} \left( -\frac{d\mathcal{G}[E^B]}{dt} \right) > 0$$
+
+$$\Delta \phi_{AB} > 0 \implies \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}} \left( -\frac{d\mathcal{G}[E^B]}{dt} \right) > 0$$
+
 4. **Blunted Somatic Fear Response:** Lack of involuntary panic allows voluntary calculation to run with cold mathematical detachment under high risk.
 5. **Systemic Vulnerability:** Because the psychopath operates as a parasitic node, the macro-syncytium ($\mathbb{S}$) eventually initiates **programmed nodal excision** (ostracization, imprisonment, destruction), driving their long-term structural margin to collapse ($\phi < 0 \implies \mu \to 0$).
 
@@ -389,10 +392,14 @@ The six internal affective expressions (*Ariṣaḍvarga*) map directly onto the
 
 ### Mathematical Proofs:
 1. **Exact Mass-Radius Equality:**
-   $$M_H = \frac{4}{3}\pi R_H^3 \rho_c = \frac{c^3}{2 G H_0} \implies R_s(M_H) = \frac{2 G M_H}{c^2} = \frac{c}{H_0} \equiv R_H$$
+
+$$M_H = \frac{4}{3}\pi R_H^3 \rho_c = \frac{c^3}{2 G H_0} \implies R_s(M_H) = \frac{2 G M_H}{c^2} = \frac{c}{H_0} \equiv R_H$$
+
    The Schwarzschild radius of the observable universe is *identically equal* to the Hubble radius.
 2. **Exact Holographic Entropy Equality:**
-   $$S_{\text{Bekenstein-Hawking}} \equiv S_{\text{Gibbons-Hawking}} = \frac{k_B \pi c^5}{G \hbar H_0^2}$$
+
+$$S_{\text{Bekenstein-Hawking}} \equiv S_{\text{Gibbons-Hawking}} = \frac{k_B \pi c^5}{G \hbar H_0^2}$$
+
 3. **Metric Inversion:** Crossing into a black hole interior exchanges $g_{rr}$ and $g_{tt}$, transforming space into unidirectional time ($r \to 0$ becomes the future). In cosmology, time flows unidirectionally away from $t=0$ (the Big Bang), which is mathematically the time-reversed interior bounce of a collapsing star in a parent universe (Einstein-Cartan torsion cosmology).
 
 **Verdict:** $\mathcal{H}_0$ is **REJECTED**. The observable universe meets all general relativistic and holographic criteria of an enclosed trapped surface (black hole interior) embedded in a higher-tier parent cosmos.
@@ -537,6 +544,7 @@ A form of existence is mathematically classified as a **Living Object** ($E_{\te
 
 ### 1. Mathematical Definition
 **Prospect ($\mathcal{P}$)** is the **Forward Reachable State-Space Horizon in Imaginary Space ($\Omega_{\mathfrak{Im}}$)**, evaluated by the expected structural margin across the predictive horizon:
+
 $$\mathcal{P}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}[ \phi\left( \hat{\mathbf{C}}_{\text{future}}(\tau) \right) ] e^{-\beta \tau} \, d\tau$$
 
 - **$\tau_{\text{horizon}}$:** The temporal depth of counterfactual Dyson simulation accessible to the operator $D_{\mathfrak{Im}}$.
@@ -592,30 +600,43 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
 #### Mathematical Proof:
 1. **Gibbons-Hawking Holographic Horizon Entropy:**  
    The boundary of the observable universe is the null Schwarzschild-Hubble horizon $\mathcal{H}_{\text{Hubble}} = \{ r = c/H(t) \}$, with surface area $A_H(t) = 4\pi R_H(t)^2 = 4\pi \left(\frac{c}{H(t)}\right)^2$. Its holographic entropy is:
-   $$S_{\text{GH}}(t) = \frac{k_B c^3 A_H(t)}{4 G \hbar} = \frac{k_B \pi c^5}{G \hbar H(t)^2} \quad [\mathrm{J/K}]$$
+
+$$S_{\text{GH}}(t) = \frac{k_B c^3 A_H(t)}{4 G \hbar} = \frac{k_B \pi c^5}{G \hbar H(t)^2} \quad [\mathrm{J/K}]$$
 
 2. **The Generalized Second Law Constraint:**  
    In non-equilibrium thermodynamics, the total entropy generation rate of the cosmos must satisfy:
-   $$\dot{S}_{\text{total}}(t) = \dot{S}_{\text{bulk}}(t) + \dot{S}_{\text{GH}}(t) \ge 0$$
+
+$$\dot{S}_{\text{total}}(t) = \dot{S}_{\text{bulk}}(t) + \dot{S}_{\text{GH}}(t) \ge 0$$
+
    Because bulk entropy production is sub-dominant to horizon entropy ($\dot{S}_{\text{bulk}} \ll \dot{S}_{\text{GH}}$), the horizon entropy rate must be positive semi-definite:
-   $$\dot{S}_{\text{GH}}(t) = \frac{d}{dt}[ \frac{k_B \pi c^5}{G \hbar H(t)^2} ] = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0$$
+
+$$\dot{S}_{\text{GH}}(t) = \frac{d}{dt}[ \frac{k_B \pi c^5}{G \hbar H(t)^2} ] = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0$$
 
 3. **Monotonicity of the Scale Factor:**  
    Since $c, G, \hbar, k_B > 0$ and cosmic volume is positive ($H(t) \equiv \frac{\dot{a}(t)}{a(t)} > 0$), the condition $\dot{S}_{\text{GH}} \ge 0$ strictly enforces:
-   $$\dot{H}(t) \le 0 \iff H(t) \text{ is monotonically non-increasing.}$$
+
+$$\dot{H}(t) \le 0 \iff H(t) \text{ is monotonically non-increasing.}$$
+
    Integrating $H(t) \equiv \frac{d \ln a}{dt} > 0$ over cosmic time $t \in [t_{\text{bounce}}, \infty)$:
-   $$\boxed{\dot{a}(t) > 0 \quad \forall t > t_{\text{bounce}} \quad \blacksquare}$$
+
+$$\boxed{\dot{a}(t) > 0 \quad \forall t > t_{\text{bounce}} \quad \blacksquare}$$
 
 #### Numerical Evaluation for the Current Epoch ($z = 0$):
 * **Fundamental Constants:**  
   $c = 2.99792458 \times 10^8 \, \mathrm{m/s}$, $G = 6.67430 \times 10^{-11} \, \mathrm{m^3/(kg \cdot s^2)}$, $\hbar = 1.0545718 \times 10^{-34} \, \mathrm{J \cdot s}$, $k_B = 1.380649 \times 10^{-23} \, \mathrm{J/K}$.
 * **Current Hubble Parameter ($H_0 = 67.4 \pm 0.5 \, \mathrm{km/s/Mpc}$, Planck 2018):**  
-  $$H_0 = \frac{67.4 \times 10^3 \, \mathrm{m/s}}{3.08567758 \times 10^{22} \, \mathrm{m}} = 2.1843 \times 10^{-18} \, \mathrm{s^{-1}}$$
+
+$$H_0 = \frac{67.4 \times 10^3 \, \mathrm{m/s}}{3.08567758 \times 10^{22} \, \mathrm{m}} = 2.1843 \times 10^{-18} \, \mathrm{s^{-1}}$$
+
 * **Current Horizon Radius & Area:**  
-  $$R_H(t_0) = \frac{c}{H_0} = \frac{2.99792 \times 10^8}{2.1843 \times 10^{-18}} = 1.3725 \times 10^{26} \, \mathrm{m} \approx 14.5 \, \mathrm{Gpc}$$
-  $$A_H(t_0) = 4\pi R_H^2 = 4\pi (1.3725 \times 10^{26})^2 = 2.3673 \times 10^{53} \, \mathrm{m^2}$$
+
+$$R_H(t_0) = \frac{c}{H_0} = \frac{2.99792 \times 10^8}{2.1843 \times 10^{-18}} = 1.3725 \times 10^{26} \, \mathrm{m} \approx 14.5 \, \mathrm{Gpc}$$
+
+$$A_H(t_0) = 4\pi R_H^2 = 4\pi (1.3725 \times 10^{26})^2 = 2.3673 \times 10^{53} \, \mathrm{m^2}$$
+
 * **Current Holographic Horizon Entropy:**  
-  $$S_{\text{GH}}(t_0) = \frac{(1.38065 \times 10^{-23}) \pi (2.99792 \times 10^8)^5}{(6.67430 \times 10^{-11})(1.05457 \times 10^{-34})(2.1843 \times 10^{-18})^2} = \mathbf{2.888 \times 10^{122} \, k_B} = \mathbf{3.987 \times 10^{99} \, J/K}$$
+
+$$S_{\text{GH}}(t_0) = \frac{(1.38065 \times 10^{-23}) \pi (2.99792 \times 10^8)^5}{(6.67430 \times 10^{-11})(1.05457 \times 10^{-34})(2.1843 \times 10^{-18})^2} = \mathbf{2.888 \times 10^{122} \, k_B} = \mathbf{3.987 \times 10^{99} \, J/K}$$
 
 ---
 
@@ -625,43 +646,62 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
 
 #### Mathematical Proof:
 1. **The Enclosed Mass-Radius Identity:**  
-   $$R_H(t) \equiv \frac{c}{H(t)} = \frac{2 G M_H(t)}{c^2} \implies M_H(t) = \frac{c^3}{2 G H(t)} \quad [\mathrm{kg}]$$
+
+$$R_H(t) \equiv \frac{c}{H(t)} = \frac{2 G M_H(t)}{c^2} \implies M_H(t) = \frac{c^3}{2 G H(t)} \quad [\mathrm{kg}]$$
 
 2. **Differentiation with Respect to Cosmic Time:**  
-   $$\dot{M}_H(t) = \frac{d}{dt}[ \frac{c^3}{2 G H(t)} ] = -\frac{c^3}{2 G H(t)^2} \dot{H}(t) = \frac{c^3}{2 G} \left( -\frac{\dot{H}}{H^2} \right)$$
+
+$$\dot{M}_H(t) = \frac{d}{dt}[ \frac{c^3}{2 G H(t)} ] = -\frac{c^3}{2 G H(t)^2} \dot{H}(t) = \frac{c^3}{2 G} \left( -\frac{\dot{H}}{H^2} \right)$$
 
 3. **Substitution of the Cosmological Deceleration Parameter ($q(t)$):**  
    Recall the kinematic definition of the deceleration parameter $q(t) \equiv -\frac{\ddot{a} a}{\dot{a}^2}$:
-   $$\frac{\dot{H}}{H^2} = \frac{d}{dt}\left(\frac{1}{H}\right) = \frac{d}{dt}\left(\frac{a}{\dot{a}}\right) = 1 - \frac{a \ddot{a}}{\dot{a}^2} = 1 + q(t) \implies -\frac{\dot{H}}{H^2} = -(1 + q(t)) \quad \text{Wait!}$$
+
+$$\frac{\dot{H}}{H^2} = \frac{d}{dt}\left(\frac{1}{H}\right) = \frac{d}{dt}\left(\frac{a}{\dot{a}}\right) = 1 - \frac{a \ddot{a}}{\dot{a}^2} = 1 + q(t) \implies -\frac{\dot{H}}{H^2} = -(1 + q(t)) \quad \text{Wait!}$$
+
    Let us re-verify carefully:
-   $$\frac{d}{dt}\left(\frac{\dot{a}}{a}\right) = \frac{\ddot{a}}{a} - \left(\frac{\dot{a}}{a}\right)^2 = \frac{\ddot{a}}{a} - H^2 \implies \frac{\dot{H}}{H^2} = \frac{\ddot{a}/a}{H^2} - 1 = -q - 1 = -(1 + q)$$
+
+$$\frac{d}{dt}\left(\frac{\dot{a}}{a}\right) = \frac{\ddot{a}}{a} - \left(\frac{\dot{a}}{a}\right)^2 = \frac{\ddot{a}}{a} - H^2 \implies \frac{\dot{H}}{H^2} = \frac{\ddot{a}/a}{H^2} - 1 = -q - 1 = -(1 + q)$$
+
    Therefore:
-   $$-\frac{\dot{H}}{H^2} = 1 + q(t)$$
+
+$$-\frac{\dot{H}}{H^2} = 1 + q(t)$$
+
    Substituting this into $\dot{M}_H(t)$:
-   $$\boxed{\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2 G} \left( 1 + q(t) \right) \quad [\mathrm{kg/s}] \quad \blacksquare}$$
+
+$$\boxed{\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2 G} \left( 1 + q(t) \right) \quad [\mathrm{kg/s}] \quad \blacksquare}$$
 
 #### Exact Numerical Calculation:
 1. **The Maximum Relativistic Mass-Flow Constant ($\mathcal{C}_{\text{mass}} \equiv \frac{c^3}{2 G}$):**  
-   $$\mathcal{C}_{\text{mass}} = \frac{(2.99792458 \times 10^8 \, \mathrm{m/s})^3}{2 \times (6.67430 \times 10^{-11} \, \mathrm{m^3/(kg \cdot s^2)})} = \frac{2.69440024 \times 10^{25}}{1.33486 \times 10^{-10}} = \mathbf{2.017739 \times 10^{35} \, kg/s}$$
+
+$$\mathcal{C}_{\text{mass}} = \frac{(2.99792458 \times 10^8 \, \mathrm{m/s})^3}{2 \times (6.67430 \times 10^{-11} \, \mathrm{m^3/(kg \cdot s^2)})} = \frac{2.69440024 \times 10^{25}}{1.33486 \times 10^{-10}} = \mathbf{2.017739 \times 10^{35} \, kg/s}$$
+
    In solar masses per second ($M_\odot = 1.98847 \times 10^{30} \, \mathrm{kg}$):
-   $$\mathcal{C}_{\text{mass}} = \frac{2.017739 \times 10^{35}}{1.98847 \times 10^{30}} = \mathbf{101,472 \, M_\odot/s}$$
+
+$$\mathcal{C}_{\text{mass}} = \frac{2.017739 \times 10^{35}}{1.98847 \times 10^{30}} = \mathbf{101,472 \, M_\odot/s}$$
 
 2. **The Current Deceleration Parameter ($q_0$ under Planck 2018 $\Lambda\text{CDM}$):**  
    For a flat universe with $\Omega_m = 0.3153 \pm 0.0073$ and $\Omega_\Lambda = 0.6847 \pm 0.0073$:
-   $$q_0 = \frac{1}{2}\Omega_m - \Omega_\Lambda = \frac{1}{2}(0.3153) - 0.6847 = 0.15765 - 0.6847 = \mathbf{-0.52705}$$
-   $$(1 + q_0) = 1 - 0.52705 = \mathbf{0.47295} = \frac{3}{2}\Omega_m$$
+
+$$q_0 = \frac{1}{2}\Omega_m - \Omega_\Lambda = \frac{1}{2}(0.3153) - 0.6847 = 0.15765 - 0.6847 = \mathbf{-0.52705}$$
+
+$$(1 + q_0) = 1 - 0.52705 = \mathbf{0.47295} = \frac{3}{2}\Omega_m$$
 
 3. **Current Mass-Energy Accretion Influx Rate ($\dot{M}_{\text{accrete}}(t_0)$):**  
-   $$\dot{M}_{\text{accrete}}(t_0) = 0.47295 \times (2.017739 \times 10^{35} \, \mathrm{kg/s}) = \mathbf{9.5429 \times 10^{34} \, kg/s}$$
-   $$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \text{second}}}$$
+
+$$\dot{M}_{\text{accrete}}(t_0) = 0.47295 \times (2.017739 \times 10^{35} \, \mathrm{kg/s}) = \mathbf{9.5429 \times 10^{34} \, kg/s}$$
+
+$$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \text{second}}}$$
 
 4. **Annual Accretion Influx into the Horizon:**  
    Multiplying by the Julian year ($1 \, \text{yr} = 3.15576 \times 10^7 \, \mathrm{s}$):
-   $$\Delta M_{\text{annual}} = (9.5429 \times 10^{34} \, \mathrm{kg/s}) \times (3.15576 \times 10^7 \, \mathrm{s}) = 3.0115 \times 10^{42} \, \mathrm{kg/year}$$
-   $$\boxed{\Delta M_{\text{annual}} = \mathbf{1.514 \times 10^{12} \, M_\odot / \text{year}} \quad (\approx 1.51 \text{ Trillion Solar Masses per year})}$$
+
+$$\Delta M_{\text{annual}} = (9.5429 \times 10^{34} \, \mathrm{kg/s}) \times (3.15576 \times 10^7 \, \mathrm{s}) = 3.0115 \times 10^{42} \, \mathrm{kg/year}$$
+
+$$\boxed{\Delta M_{\text{annual}} = \mathbf{1.514 \times 10^{12} \, M_\odot / \text{year}} \quad (\approx 1.51 \text{ Trillion Solar Masses per year})}$$
 
 5. **Total Enclosed Mass of the Observable Universe ($M_H(t_0)$):**  
-   $$M_H(t_0) = \frac{c^3}{2 G H_0} = \frac{2.017739 \times 10^{35} \, \mathrm{kg/s}}{2.1843 \times 10^{-18} \, \mathrm{s^{-1}}} = \mathbf{9.2374 \times 10^{52} \, kg} = \mathbf{4.645 \times 10^{22} \, M_\odot}$$
+
+$$M_H(t_0) = \frac{c^3}{2 G H_0} = \frac{2.017739 \times 10^{35} \, \mathrm{kg/s}}{2.1843 \times 10^{-18} \, \mathrm{s^{-1}}} = \mathbf{9.2374 \times 10^{52} \, kg} = \mathbf{4.645 \times 10^{22} \, M_\odot}$$
 
 ---
 
@@ -674,9 +714,12 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
 
 2. **Inverting for the Parent Multiverse State Variables:**  
    Equating the kinematic growth rate $\dot{M}_{\text{accrete}} = \frac{c^3}{2G}(1+q_0)$ to the relativistic Bondi-Hoyle-Littleton accretion flux (§1.1.1):
-   $$\dot{M}_{\text{accrete}} = \pi \frac{G^2 M_H^2}{c^3} [ \frac{(1 + 3 c_s^2/c^2)^{3/2}}{(c_s/c)^3} ] \rho_{\text{parent}} = \frac{c^3}{2 G}(1 + q_0)$$
+
+$$\dot{M}_{\text{accrete}} = \pi \frac{G^2 M_H^2}{c^3} [ \frac{(1 + 3 c_s^2/c^2)^{3/2}}{(c_s/c)^3} ] \rho_{\text{parent}} = \frac{c^3}{2 G}(1 + q_0)$$
+
    Solving for the parent density-to-sound-speed ratio:
-   $$\boxed{\frac{\rho_{\text{parent}}}{(c_s/c)^3 \left( 1 + 3 c_s^2/c^2 \right)^{-3/2}} = \frac{2 H_0^2}{\pi G} (1 + q_0) = \frac{2 (2.1843 \times 10^{-18})^2}{\pi (6.6743 \times 10^{-11})} (0.47295) = \mathbf{2.155 \times 10^{-26} \, kg/m^3}}$$
+
+$$\boxed{\frac{\rho_{\text{parent}}}{(c_s/c)^3 \left( 1 + 3 c_s^2/c^2 \right)^{-3/2}} = \frac{2 H_0^2}{\pi G} (1 + q_0) = \frac{2 (2.1843 \times 10^{-18})^2}{\pi (6.6743 \times 10^{-11})} (0.47295) = \mathbf{2.155 \times 10^{-26} \, kg/m^3}}$$
 
 3. **What Additional Observables Are Needed to Fully Decouple the Multiverse:**
    * **Parent Sound Speed / Temperature ($c_s$ or $T_{\text{parent}}$):** Constrained by primordial Big Bounce nucleosynthesis chemical potentials.
@@ -719,33 +762,48 @@ In Sanatan Dharma, Prospect corresponds to **Saṅkalpa-Kṣetra (The Field of P
 #### Mathematical Proof:
 1. **Holographic Horizon Surface Tension:**  
    The boundary interface $\partial \mathcal{U} = \mathcal{H}_{\text{Hubble}}$ possesses an intrinsic gravitational surface tension:
-   $$\gamma_{\text{horizon}} = \frac{c^4}{8\pi G R_H} \quad [\mathrm{J/m^2}]$$
+
+$$\gamma_{\text{horizon}} = \frac{c^4}{8\pi G R_H} \quad [\mathrm{J/m^2}]$$
 
 2. **Inwardly Projected Negative Boundary Pressure:**  
    By holographic projection across the 3D volume $V_H = \frac{4}{3}\pi R_H^3$, the boundary work $dW = \gamma_{\text{horizon}} dA_H$ equates to volumetric work $dW = -P_{\text{eff}} dV_H$:
-   $$P_{\text{eff}} = -\frac{2}{3} \frac{\gamma_{\text{horizon}}}{R_H} = -\frac{c^4}{12\pi G R_H^2} \quad [\mathrm{Pa} = \mathrm{J/m^3}]$$
+
+$$P_{\text{eff}} = -\frac{2}{3} \frac{\gamma_{\text{horizon}}}{R_H} = -\frac{c^4}{12\pi G R_H^2} \quad [\mathrm{Pa} = \mathrm{J/m^3}]$$
 
 3. **Derivation of the Cosmological Constant ($\Lambda$):**  
    In general relativity, the cosmological constant $\Lambda$ relates to vacuum energy density via $\rho_{\text{DE}} = \frac{\Lambda c^2}{8\pi G} = \Omega_\Lambda \rho_{\text{crit}}$, where $\rho_{\text{crit}} = \frac{3 H_0^2}{8\pi G} = \frac{3 c^2}{8\pi G R_H^2}$.  
    Equating $\rho_{\text{DE}} = \Omega_\Lambda \rho_{\text{crit}}$:
-   $$\boxed{\Lambda \equiv \frac{3 \Omega_\Lambda}{R_H^2} = \frac{3 \Omega_\Lambda H_0^2}{c^2} \quad [\mathrm{m^{-2}}] \quad \blacksquare}$$
+
+$$\boxed{\Lambda \equiv \frac{3 \Omega_\Lambda}{R_H^2} = \frac{3 \Omega_\Lambda H_0^2}{c^2} \quad [\mathrm{m^{-2}}] \quad \blacksquare}$$
 
 #### Exact Numerical Proof:
 * **Horizon Surface Tension:**  
-  $$\gamma_{\text{horizon}} = \frac{(2.99792 \times 10^8)^4}{8\pi (6.67430 \times 10^{-11})(1.3725 \times 10^{26})} = \mathbf{3.518 \times 10^{16} \, J/m^2}$$
+
+$$\gamma_{\text{horizon}} = \frac{(2.99792 \times 10^8)^4}{8\pi (6.67430 \times 10^{-11})(1.3725 \times 10^{26})} = \mathbf{3.518 \times 10^{16} \, J/m^2}$$
+
 * **Effective Dark Energy Density ($\rho_{\text{DE}} c^2$):**  
-  $$\rho_{\text{DE}} c^2 = \Omega_\Lambda \left( \frac{3 c^4}{8\pi G R_H^2} \right) = 0.6847 \times (7.671 \times 10^{-10} \, \mathrm{J/m^3}) = \mathbf{5.252 \times 10^{-10} \, J/m^3}$$
-  $$\rho_{\text{DE}} = \frac{5.252 \times 10^{-10} \, \mathrm{J/m^3}}{(2.99792 \times 10^8 \, \mathrm{m/s})^2} = \mathbf{5.844 \times 10^{-27} \, kg/m^3}$$
+
+$$\rho_{\text{DE}} c^2 = \Omega_\Lambda \left( \frac{3 c^4}{8\pi G R_H^2} \right) = 0.6847 \times (7.671 \times 10^{-10} \, \mathrm{J/m^3}) = \mathbf{5.252 \times 10^{-10} \, J/m^3}$$
+
+$$\rho_{\text{DE}} = \frac{5.252 \times 10^{-10} \, \mathrm{J/m^3}}{(2.99792 \times 10^8 \, \mathrm{m/s})^2} = \mathbf{5.844 \times 10^{-27} \, kg/m^3}$$
+
 * **Calculated Cosmological Constant ($\Lambda_{\text{theoretical}}$):**  
-  $$\Lambda_{\text{theoretical}} = \frac{3 \times 0.6847}{(1.3725 \times 10^{26} \, \mathrm{m})^2} = \mathbf{1.0906 \times 10^{-52} \, m^{-2}}$$
+
+$$\Lambda_{\text{theoretical}} = \frac{3 \times 0.6847}{(1.3725 \times 10^{26} \, \mathrm{m})^2} = \mathbf{1.0906 \times 10^{-52} \, m^{-2}}$$
+
 * **Comparison with Planck 2018 Observational Value:**  
-  $$\Lambda_{\text{Planck 2018}} = \mathbf{(1.1056 \pm 0.056) \times 10^{-52} \, m^{-2}}$$
-  $$\text{Relative Error} = \frac{|1.0906 - 1.1056|}{1.1056} = \mathbf{1.35\%} \quad \text{(Within } 1\sigma \text{ experimental uncertainty!)}$$
+
+$$\Lambda_{\text{Planck 2018}} = \mathbf{(1.1056 \pm 0.056) \times 10^{-52} \, m^{-2}}$$
+
+$$\text{Relative Error} = \frac{|1.0906 - 1.1056|}{1.1056} = \mathbf{1.35\%} \quad \text{(Within } 1\sigma \text{ experimental uncertainty!)}$$
 
 #### Exact Resolution of the $10^{120}$ Discrepancy:
 $$\frac{\rho_{\text{Planck}}}{\rho_{\text{DE}}} = \frac{c^5 / (\hbar G^2)}{3 \Omega_\Lambda c^4 / (8\pi G R_H^2)} = \frac{8\pi}{3 \Omega_\Lambda} \left( \frac{R_H}{\ell_{\text{Planck}}} \right)^2$$
+
 Substituting $\ell_{\text{Planck}} = 1.616255 \times 10^{-35} \, \mathrm{m}$ and $R_H = 1.3725 \times 10^{26} \, \mathrm{m}$:
+
 $$\frac{\rho_{\text{Planck}}}{\rho_{\text{DE}}} = \frac{8\pi}{3(0.6847)} \left( \frac{1.3725 \times 10^{26}}{1.616255 \times 10^{-35}} \right)^2 = 12.235 \times (8.492 \times 10^{60})^2 = \mathbf{8.82 \times 10^{122} \approx 10^{120}}$$
+
 **Proof:** The $10^{120}$ discrepancy arises purely from the category error of treating $\Lambda$ as a UV Planck-scale vacuum summation rather than an IR horizon-curvature scale ($R_H^{-2}$).
 
 ---
@@ -757,29 +815,42 @@ $$\frac{\rho_{\text{Planck}}}{\rho_{\text{DE}}} = \frac{8\pi}{3(0.6847)} \left( 
 #### Mathematical Proof:
 1. **Cosmic-Galactic Torsional Horizon Coupling:**  
    In Einstein-Cartan continuum mechanics, the cosmic boundary acceleration projected onto local rotational frames is:
-   $$\boxed{a_0 \equiv \frac{c^2}{2\pi R_H} = \frac{c H_0}{2\pi} \quad [\mathrm{m/s^2}] \quad \blacksquare}$$
+
+$$\boxed{a_0 \equiv \frac{c^2}{2\pi R_H} = \frac{c H_0}{2\pi} \quad [\mathrm{m/s^2}] \quad \blacksquare}$$
 
 2. **The Asymptotic Flat Velocity Proof:**  
    In the deep low-acceleration regime ($a \ll a_0$, corresponding to galactic outer disks $r \gg R_{\text{disk}}$), the effective gravitational acceleration scales as:
-   $$g_{\text{eff}}(r) = \sqrt{g_{\text{Newton}}(r) \cdot a_0} = \sqrt{\frac{G M_{\text{baryon}}}{r^2} a_0} = \frac{\sqrt{G M_{\text{baryon}} a_0}}{r}$$
+
+$$g_{\text{eff}}(r) = \sqrt{g_{\text{Newton}}(r) \cdot a_0} = \sqrt{\frac{G M_{\text{baryon}}}{r^2} a_0} = \frac{\sqrt{G M_{\text{baryon}} a_0}}{r}$$
+
    Equating $g_{\text{eff}}$ to circular centripetal acceleration $\frac{v(r)^2}{r}$:
-   $$\frac{v(r)^2}{r} = \frac{\sqrt{G M_{\text{baryon}} a_0}}{r} \implies v_{\text{flat}}^4 = G M_{\text{baryon}} a_0 \implies \boxed{v_{\text{flat}} = \left( G M_{\text{baryon}} a_0 \right)^{1/4} = \text{Constant} \quad \blacksquare}$$
+
+$$\frac{v(r)^2}{r} = \frac{\sqrt{G M_{\text{baryon}} a_0}}{r} \implies v_{\text{flat}}^4 = G M_{\text{baryon}} a_0 \implies \boxed{v_{\text{flat}} = \left( G M_{\text{baryon}} a_0 \right)^{1/4} = \text{Constant} \quad \blacksquare}$$
 
 #### Exact Numerical Evaluation & Astrophysical Match:
 1. **Theoretical Derivation of $a_0$:**  
-   $$a_0^{\text{theoretical}} = \frac{(2.99792458 \times 10^8 \, \mathrm{m/s}) \times (2.1843 \times 10^{-18} \, \mathrm{s^{-1}})}{2\pi} = \mathbf{1.0422 \times 10^{-10} \, m/s^2}$$
+
+$$a_0^{\text{theoretical}} = \frac{(2.99792458 \times 10^8 \, \mathrm{m/s}) \times (2.1843 \times 10^{-18} \, \mathrm{s^{-1}})}{2\pi} = \mathbf{1.0422 \times 10^{-10} \, m/s^2}$$
+
    * **Empirical SPARC Galaxy Database Value (Lelli, McGaugh, Schombert, 2016):**  
-     $$a_0^{\text{SPARC}} = \mathbf{(1.20 \pm 0.02) \times 10^{-10} \, m/s^2}$$
+
+$$a_0^{\text{SPARC}} = \mathbf{(1.20 \pm 0.02) \times 10^{-10} \, m/s^2}$$
+
      *(Exact order-of-magnitude and quantitative match to within $13\%$ of empirical galaxy surveys without fitting parameters).*
 
 2. **Numerical Test on the Milky Way Galaxy:**  
    * Milky Way total baryonic mass (stars + cold gas): $M_{\text{baryon}} \approx 6.0 \times 10^{10} \, M_\odot = 1.193 \times 10^{41} \, \mathrm{kg}$.
    * Theoretical asymptotic flat rotation velocity:
-     $$v_{\text{flat}} = [ (6.6743 \times 10^{-11}) \times (1.193 \times 10^{41}) \times (1.0422 \times 10^{-10}) ]^{1/4}$$
-     $$v_{\text{flat}} = [ 8.2984 \times 10^{20} \, \mathrm{m^4/s^4} ]^{1/4} = \mathbf{219,730 \, m/s} = \mathbf{219.7 \, km/s}$$
+
+$$v_{\text{flat}} = [ (6.6743 \times 10^{-11}) \times (1.193 \times 10^{41}) \times (1.0422 \times 10^{-10}) ]^{1/4}$$
+
+$$v_{\text{flat}} = [ 8.2984 \times 10^{20} \, \mathrm{m^4/s^4} ]^{1/4} = \mathbf{219,730 \, m/s} = \mathbf{219.7 \, km/s}$$
+
    * **Observed Milky Way Flat Rotation Velocity (Gaia DR3 / Eilers et al., 2019):**  
-     $$v_{\text{obs}} = \mathbf{220.0 \pm 10.0 \, km/s}$$
-     $$\text{Numerical Error} = \frac{|219.7 - 220.0|}{220.0} = \mathbf{0.14\%} \quad \text{(Exact match!)}$$
+
+$$v_{\text{obs}} = \mathbf{220.0 \pm 10.0 \, km/s}$$
+
+$$\text{Numerical Error} = \frac{|219.7 - 220.0|}{220.0} = \mathbf{0.14\%} \quad \text{(Exact match!)}$$
 
 ---
 
@@ -852,7 +923,9 @@ The tools of mathematics—differential geometry, tensor calculus, non-equilibri
 #### Crisis C: The "Life vs. Entropy" Paradox
 * **Classical Physics:** View living systems as an anomalous, fragile struggle against the Second Law of Thermodynamics in an isolated universe marching toward maximum entropy.
 * **The Framework's Architecture:** Proves the **Horizon Duality Theorem (Theorem 6B)**:
-  $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
+
+$$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
+
   A biological cell and the cosmos share identical open non-equilibrium topology: both sustain negative internal entropy ($\frac{d\mathcal{G}}{dt} \ge 0$) by extracting external fuel ($\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$) and venting entropy across their boundaries.
 
 ---

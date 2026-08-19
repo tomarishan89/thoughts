@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate publication-quality PDFs from Markdown files using MathJax vector math and Headless Chrome/Edge.
+Generate publication-quality PDFs from Markdown files using MathJax 3 vector math and Headless Chrome/Edge.
+Architecture:
+- Strictly isolates LaTeX math (both display $$ and inline $) with immutable placeholder tokens during all Markdown/HTML conversions.
+- Restores clean LaTeX math ONLY at the final assembly phase, preventing HTML escaping or regex mangling (e.g. * / _ / & / < >).
+- Uses MathJax 3 with full AMS, physics, and mathtools support.
 Usage:
     python scripts/generate_pdf.py essays/existence/draft.md
     python scripts/generate_pdf.py --all
@@ -34,61 +38,73 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
     """
     Convert Markdown content into a self-contained HTML page
     with MathJax 3 support and publication-ready academic styling.
+    Strictly preserves math without escaping or formatting corruption.
     """
     math_blocks = []
     def save_block_math(match):
         idx = len(math_blocks)
-        math_blocks.append(match.group(0))
-        return f"<!--MATH_BLOCK_{idx}-->"
+        # Store clean math without outer $$
+        raw_inner = match.group(1).strip()
+        math_blocks.append(raw_inner)
+        return f"\n\n@@MATHBLOCK_{idx}@@\n\n"
     
     math_inlines = []
     def save_inline_math(match):
         idx = len(math_inlines)
-        math_inlines.append(match.group(0))
-        return f"<!--MATH_INLINE_{idx}-->"
+        raw_inner = match.group(1).strip()
+        math_inlines.append(raw_inner)
+        return f"@@MATHINLINE_{idx}@@"
     
-    # Save $$ ... $$
+    # 1. Protect Display Math $$ ... $$
     content = re.sub(r'\$\$(.*?)\$\$', save_block_math, md_content, flags=re.DOTALL)
-    # Save $ ... $ (excluding escaped \$)
+    
+    # 2. Protect Inline Math $ ... $ (excluding escaped \$)
     content = re.sub(r'(?<!\\)\$(.*?)(?<!\\)\$', save_inline_math, content)
     
-    # Escape raw HTML characters outside math
-    content = html.escape(content)
+    # 3. Process Code Blocks before HTML escaping
+    code_blocks = []
+    def save_code_block(match):
+        idx = len(code_blocks)
+        lang = match.group(1) or ""
+        code_text = match.group(2)
+        code_blocks.append((lang, code_text))
+        return f"\n\n@@CODEBLOCK_{idx}@@\n\n"
+    content = re.sub(r'```([a-zA-Z0-9_-]*)\n(.*?)```', save_code_block, content, flags=re.DOTALL)
     
-    # Restore math blocks
-    for idx, block in enumerate(math_blocks):
-        content = content.replace(f"&lt;!--MATH_BLOCK_{idx}--&gt;", block)
-    for idx, inline in enumerate(math_inlines):
-        content = content.replace(f"&lt;!--MATH_INLINE_{idx}--&gt;", inline)
-
-    # Process headings
+    # 4. Process Markdown Headings
     content = re.sub(r'^# (.*?)$', r'<h1>\1</h1>', content, flags=re.MULTILINE)
     content = re.sub(r'^## (.*?)$', r'<h2>\1</h2>', content, flags=re.MULTILINE)
     content = re.sub(r'^### (.*?)$', r'<h3>\1</h3>', content, flags=re.MULTILINE)
     content = re.sub(r'^#### (.*?)$', r'<h4>\1</h4>', content, flags=re.MULTILINE)
 
-    # Bold & Italic
+    # 5. Process Markdown Links [text](url)
+    content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', content)
+
+    # 6. Process Bold, Italic & Inline Code (outside math)
+    content = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', content)
     content = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', content)
     content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', content)
     content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', content)
 
-    # Blockquotes
+    # 7. Blockquotes
     content = re.sub(r'^> (.*?)$', r'<blockquote>\1</blockquote>', content, flags=re.MULTILINE)
-    
-    # Code blocks
-    content = re.sub(r'```(.*?)```', r'<pre><code>\1</code></pre>', content, flags=re.DOTALL)
 
-    # Horizontal rules
+    # 8. Horizontal rules
     content = re.sub(r'^---$', r'<hr/>', content, flags=re.MULTILINE)
 
-    # Paragraphs and Tables
+    # 9. Split paragraphs & tables
     paragraphs = content.split('\n\n')
     formatted_paras = []
     for p in paragraphs:
         p = p.strip()
         if not p:
             continue
-        if p.startswith('<h') or p.startswith('<pre') or p.startswith('<hr') or p.startswith('<blockquote') or p.startswith('$$'):
+        if p.startswith('@@MATHBLOCK_') and p.endswith('@@'):
+            # Standalone display math block
+            formatted_paras.append(f"<div class='math-display'>{p}</div>")
+        elif p.startswith('@@CODEBLOCK_') and p.endswith('@@'):
+            formatted_paras.append(p)
+        elif p.startswith('<h') or p.startswith('<hr') or p.startswith('<blockquote'):
             formatted_paras.append(p)
         elif p.startswith('|'):
             # Table formatting
@@ -102,10 +118,36 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
                 table_html += "<tr>" + "".join(f"<{tag}>{c}</{tag}>" for c in cells) + "</tr>"
             table_html += "</table></div>"
             formatted_paras.append(table_html)
+        elif p.startswith('* ') or p.startswith('- ') or p.startswith('1. ') or p.startswith('2. '):
+            # List item block
+            list_lines = p.split('\n')
+            list_html = "<ul class='academic-list'>"
+            for l in list_lines:
+                item_text = re.sub(r'^(\*|-|\d+\.)\s+', '', l.strip())
+                list_html += f"<li>{item_text}</li>"
+            list_html += "</ul>"
+            formatted_paras.append(list_html)
         else:
-            formatted_paras.append(f"<p>{p.replace(chr(10), '<br/>')}</p>")
+            # Regular paragraph
+            formatted_paras.append(f"<p>{p.replace(chr(10), ' ')}</p>")
     
     body = "\n\n".join(formatted_paras)
+
+    # 10. Restore Code Blocks
+    for idx, (lang, code_text) in enumerate(code_blocks):
+        escaped_code = html.escape(code_text)
+        if lang == 'mermaid':
+            block_html = f"<div class='mermaid-diagram'><pre class='mermaid-code'>{escaped_code}</pre></div>"
+        else:
+            block_html = f"<pre><code class='language-{lang}'>{escaped_code}</code></pre>"
+        body = body.replace(f"@@CODEBLOCK_{idx}@@", block_html)
+
+    # 11. Restore Math Blocks & Inlines (PURE LaTeX, NO HTML Escaping)
+    for idx, block in enumerate(math_blocks):
+        body = body.replace(f"@@MATHBLOCK_{idx}@@", f"$${block}$$")
+        
+    for idx, inline in enumerate(math_inlines):
+        body = body.replace(f"@@MATHINLINE_{idx}@@", f"${inline}$")
 
     template = f"""<!DOCTYPE html>
 <html lang="en">
@@ -113,14 +155,19 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
     <meta charset="UTF-8">
     <title>{html.escape(title)}</title>
     <script>
-    MathJax = {{
+    window.MathJax = {{
         tex: {{
             inlineMath: [['$', '$']],
             displayMath: [['$$', '$$']],
-            processEscapes: true
+            processEscapes: true,
+            packages: {{'[+]': ['ams', 'physics', 'mathtools', 'color', 'bbox']}}
+        }},
+        options: {{
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
         }},
         chtml: {{
-            fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
+            fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2',
+            adaptiveCSS: true
         }}
     }};
     </script>
@@ -129,10 +176,15 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
         @page {{
             size: letter;
             margin: 18mm 18mm 22mm 18mm;
+            @bottom-right {{
+                content: counter(page);
+                font-family: 'Cambria', 'Georgia', serif;
+                font-size: 9pt;
+            }}
         }}
         body {{
             font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
-            font-size: 10.5pt;
+            font-size: 10pt;
             line-height: 1.55;
             color: #1a1a1a;
             max-width: 950px;
@@ -141,79 +193,95 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
             background: #fff;
         }}
         h1 {{
-            font-size: 18pt;
+            font-size: 17pt;
             font-weight: bold;
             color: #0b1d3a;
             border-bottom: 2px solid #0b1d3a;
             padding-bottom: 8px;
-            margin-top: 20px;
+            margin-top: 15px;
             margin-bottom: 16px;
             text-align: center;
         }}
         h2 {{
-            font-size: 13.5pt;
+            font-size: 13pt;
             font-weight: bold;
             color: #1b263b;
             border-bottom: 1px solid #ced4da;
             padding-bottom: 4px;
-            margin-top: 20px;
-            margin-bottom: 12px;
+            margin-top: 22px;
+            margin-bottom: 10px;
             page-break-after: avoid;
         }}
         h3 {{
-            font-size: 11.5pt;
+            font-size: 11pt;
             font-weight: bold;
             color: #2b2d42;
             margin-top: 16px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             page-break-after: avoid;
         }}
         h4 {{
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: bold;
             font-style: italic;
             color: #415a77;
             margin-top: 12px;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             page-break-after: avoid;
         }}
         p {{
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             text-align: justify;
             text-justify: inter-word;
+        }}
+        .math-display {{
+            margin: 14px 0;
+            text-align: center;
+            overflow-x: auto;
+            page-break-inside: avoid;
+        }}
+        .academic-list {{
+            margin: 8px 0 12px 20px;
+            padding-left: 10px;
+        }}
+        .academic-list li {{
+            margin-bottom: 4px;
+            text-align: justify;
         }}
         blockquote {{
             border-left: 3.5px solid #2b5c8f;
             background: #f4f6f9;
             margin: 12px 0;
-            padding: 10px 16px;
+            padding: 8px 14px;
             color: #2b2d42;
-            font-size: 10pt;
+            font-size: 9.5pt;
             border-radius: 0 4px 4px 0;
         }}
         pre {{
             background: #f8f9fa;
-            padding: 10px 14px;
+            padding: 8px 12px;
             border-radius: 4px;
             font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
-            font-size: 8.5pt;
+            font-size: 8pt;
             overflow-x: auto;
             border: 1px solid #dee2e6;
-            margin: 12px 0;
+            margin: 10px 0;
+            page-break-inside: avoid;
         }}
         .table-container {{
-            margin: 16px 0;
+            margin: 14px 0;
             overflow-x: auto;
+            page-break-inside: avoid;
         }}
         table {{
             width: 100%;
             border-collapse: collapse;
-            font-size: 9pt;
-            margin: 10px 0;
+            font-size: 8.5pt;
+            margin: 8px 0;
         }}
         th, td {{
             border: 1px solid #ced4da;
-            padding: 6px 9px;
+            padding: 5px 8px;
             text-align: left;
         }}
         th {{
@@ -227,17 +295,17 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
         hr {{
             border: none;
             border-top: 1px solid #ced4da;
-            margin: 18px 0;
+            margin: 16px 0;
         }}
         .MathJax {{
-            font-size: 102% !important;
+            font-size: 100% !important;
         }}
         @media print {{
             body {{
                 padding: 0;
                 background: none;
             }}
-            .table-container, pre, blockquote {{
+            .table-container, pre, blockquote, .math-display {{
                 page-break-inside: avoid;
             }}
         }}
@@ -283,11 +351,11 @@ def convert_md_to_pdf(input_md_path, output_pdf_path=None):
             "--headless=new",
             "--disable-gpu",
             "--no-sandbox",
-            "--virtual-time-budget=3000",
+            "--virtual-time-budget=4000",
             f"--print-to-pdf={output_pdf_path}",
             f"file:///{os.path.abspath(temp_html_path).replace(os.sep, '/')}"
         ]
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
         if os.path.exists(output_pdf_path) and os.path.getsize(output_pdf_path) > 0:
             print(f"[OK] PDF Generated: {os.path.relpath(output_pdf_path)} ({os.path.getsize(output_pdf_path) // 1024} KB)")
             return True
@@ -316,7 +384,7 @@ def main():
             "essays/existence/interpretations/cognitive_and_psychology.md",
             "essays/existence/interpretations/societal_and_institutional.md",
         ]
-        print(f"Compiling {len(target_files)} papers to PDF in pdfs/ folder...\n")
+        print(f"Compiling {len(target_files)} papers to PDF in essays/existence/pdfs/ folder...\n")
         for f in target_files:
             if os.path.exists(f):
                 convert_md_to_pdf(f)

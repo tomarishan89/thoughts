@@ -13,6 +13,7 @@
 To establish an unassailable baseline, we return to the Sanskrit root **$\sqrt{\text{धृ}}$ (*dhṛ*)**—formally cataloged in classical grammar as *dhāraṇapoṣaṇayoḥ*: “to hold, sustain, support, and maintain structural integrity.” Classical tradition captures this operational function explicitly:
 
 $$\text{\textit{“Dhāraṇāt dharmam ityāhuḥ, dharmo dhārayate prajāḥ”}}$$
+
 *(“Dharma is so named because it sustains; Dharma maintains the structured order of entities.”)*
 
 Stripped of socio-religious dogma and subjective moralizing, **Dharm** is defined through pure objective mechanics:
@@ -316,12 +317,16 @@ Because existence $E_t$ is eternal and non-empty, the master matrix of its struc
 
 ### The Mathematical Proof of the Paradox:
 1. **Sanatan Dharm** ($\mathcal{D}_T$) is the universal union of all factors mapping to all forms of existence across all spacetime:
-   $$\mathcal{D}_T = \bigcup_{t \in T} \bigcup_{i \in I} D_t^i$$
+
+$$\mathcal{D}_T = \bigcup_{t \in T} \bigcup_{i \in I} D_t^i$$
+
 2. An individual human entity $E_t^h$ is a localized composite locus operating within finite temporal coordinates:
+
 $$E_t^h = \big\{ E_t^k \mid k \in \text{Embodied Forms} \mid k \in \{\text{Organism, Mind, Citizen, Parent}, \dots\} \big\}$$
 
 3. The operational factors required by $E_t^h$ to maintain its localized existence constitute a tiny, contextual subset ($d_t^h \subset \mathcal{D}_T$), designated as **Svadharma**:
-   $$d_t^h = \bigcup_{k \in \text{Embodied Forms}} D_t^k \quad \ll \quad \mathcal{D}_T$$
+
+$$d_t^h = \bigcup_{k \in \text{Embodied Forms}} D_t^k \quad \ll \quad \mathcal{D}_T$$
 
 ### Conclusion:
 An individual cannot "follow" the total universal matrix $\mathcal{D}_T$, any more than a single floret can be the entire marigold bloom, or a single hydrogen atom can execute cosmic gravitation.

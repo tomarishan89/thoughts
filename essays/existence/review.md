@@ -41,7 +41,7 @@ A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were r
 4. **Generalized Optical Theorem Extinction Cross-Section (§2.1):** Formulated $\sigma_{\text{extinct}}(\theta_i) \equiv \sigma_{\text{absorb}} + \sigma_{\text{scatter}} = \frac{4\pi}{k}\mathrm{Im}[\mathbf{f}_{\text{forward}}(0)]$.
 
 ### Iteration 57 (Milestones 265–268 Closed):
-1. **ECSK Dirac Fermion Spin-Density Tensor (§1.1.1):** Formulated spin-torsion source $s^{\mu\nu\rho} \equiv \frac{i\hbar}{4}\bar{\psi}\gamma^{[\mu}\gamma^\nu\gamma^{\rho]}\psi$.
+1. **ECSK Dirac Fermion Spin-Density Tensor (§1.1.1):** Formulated spin-torsion source $s^{\mu\nu\rho} \equiv \frac{i\hbar}{4}\bar{\psi} \, \gamma^{[\mu}\gamma^\nu\gamma^{\rho]}\psi$.
 2. **Kirchhoff Surface Radiation Impedance (§2.1):** Formulated specific acoustic/electromagnetic boundary impedance $Z_{\text{rad}}(\mathbf{x}, \omega) \equiv \frac{\hat{\mathbf{\Phi}}_{\mathbb{C}}}{\hat{n}'\cdot\nabla\hat{\mathbf{\Phi}}_{\mathbb{C}}} = \frac{\rho_0 c}{\sqrt{1 - (c k_\parallel/\omega)^2}}$.
 3. **Sanov's Large Deviations Bound on Projection Hallucinations (§2.3.7):** Formulated non-asymptotic hallucination probability bound $\mathbb{P}(D_{\text{KL}}(\hat{P}_N \parallel P_{\text{env}}) \ge \epsilon) \le (N+1)^{|\mathcal{X}|}e^{-N\epsilon}$.
 4. **Goos-Hänchen Interfacial Lateral Beam Shift (§2.1):** Formulated lateral wave packet displacement $\Delta x_{\text{GH}}(\theta_i) = \frac{2\sin\theta_i}{k_0 \sqrt{(\mathrm{Re}(\tilde{n}_A)\sin\theta_i)^2 - (\mathrm{Re}(\tilde{n}_B))^2}}$.
@@ -50,12 +50,12 @@ A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were r
 1. **ECSK Friedmann-Cartan Cosmic Bounce Scale Factor (§1.1.1):** Formulated non-singular minimum bounce scale $a_{\text{min}} = a_0 (\rho_c / \rho_{\text{Planck}})^{1/6} > 0$.
 2. **Kirchhoff Retarded Multipole Moment Expansion (§2.1):** Formulated far-field multipole expansion $\hat{\mathbf{\Phi}}_{\mathbb{C}}(\mathbf{x}, \omega) = \frac{e^{ikr}}{4\pi r}[q_{\text{mono}} + ik\mathbf{p}_{\text{dip}}\cdot\hat{\mathbf{r}} - \frac{k^2}{6}\mathbf{Q}_{ij}\hat{r}_i\hat{r}_j]$.
 3. **Cramér-Rao Fisher Information Bound (§2.3.7):** Formulated lower bound on challenge anticipation variance $\mathrm{Var}(\hat{\mathbf{C}}) \ge \mathbf{I}_{\text{Fisher}}^{-1}(\theta)$.
-4. **Interfacial Kramers-Kronig Surface Impedance Causality (§2.1):** Formulated reactive surface reactance integral $X_s(\omega) = -\frac{2\omega}{\pi}\mathcal{P}\int_0^\infty \frac{R_s(\omega') - Z_\infty}{\omega'^2 - \omega^2}d\omega'$.
+4. **Interfacial Kramers-Kronig Surface Impedance Causality (§2.1):** Formulated reactive surface reactance integral $X_s(\omega) = -\frac{2\omega}{\pi}\mathcal{P} \int_0^\infty \frac{R_s(\omega') - Z_\infty}{\omega'^2 - \omega^2}d\omega'$.
 
 ### Iteration 59 (Milestones 273–276 Closed):
 1. **Cosmological Horizon Gibbs-Duhem Chemical Equilibrium (§1.1.1):** Formulated trans-horizon chemical potential relation $d\mu_{\text{horizon}} = -s_{\text{horizon}} dT_{\text{GH}} + v_{\text{horizon}} dP_{\text{dark}} = 0$ with Gibbons-Hawking temperature $T_{\text{GH}} \equiv \frac{\hbar H_0}{2\pi k_B}$.
 2. **Kirchhoff Irrotational Acoustic Poynting Flux Condition (§2.1):** Formulated irrotational Poynting flow condition $\nabla \times \mathbf{S}_{\mathbf{P}} = 0 \iff \mathbf{S}_{\mathbf{P}} = \nabla \Phi_{\text{acoustic}}$.
-3. **Kalman-Bucy Continuous-Time Riccati Filtering (§2.3.7):** Formulated continuous-time optimal state error filtering $\dot{\mathbf{\Sigma}} = \mathbf{A}\mathbf{\Sigma} + \mathbf{\Sigma}\mathbf{A}^T - \mathbf{\Sigma}\mathbf{H}^T\mathbf{R}^{-1}\mathbf{H}\mathbf{\Sigma} + \mathbf{Q}$.
+3. **Kalman-Bucy Continuous-Time Riccati Filtering (§2.3.7):** Formulated continuous-time optimal state error filtering $\dot{\mathbf{\Sigma}} = \mathbf{A} \, \mathbf{\Sigma} + \mathbf{\Sigma} \, \mathbf{A}^T - \mathbf{\Sigma} \, \mathbf{H}^T\mathbf{R}^{-1}\mathbf{H} \, \mathbf{\Sigma} + \mathbf{Q}$.
 4. **Sommerfeld-Zenneck Surface Wave Dispersion Relation (§2.1):** Formulated surface wave propagation wavenumber $k_{\text{Zenneck}} \equiv k_0 \sqrt{\frac{\tilde{n}_{\mathbb{C}}^A \tilde{n}_{\mathbb{C}}^B}{\tilde{n}_{\mathbb{C}}^A + \tilde{n}_{\mathbb{C}}^B}}$.
 
 ### Iteration 60 (Milestones 277–280 Closed):
@@ -72,7 +72,7 @@ A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were r
 
 ### Iteration 62 (Milestones 285–288 Closed):
 1. **Bekenstein Cosmological Horizon Area Quantization (§1.1.1):** Formulated discrete area spectrum $A_n = 4\ln(k)\ell_P^2 n$.
-2. **Kirchhoff-Helmholtz High-Frequency Eikonal Phase Closure (§2.1):** Formulated eikonal wavefront phase gradient $\|\nabla S\|^2 = \frac{\omega^2}{c^2}\tilde{n}_{\mathbb{C}}^2$ with ray-tracing transport $2\nabla S \cdot \nabla \mathcal{A} + \mathcal{A}\Delta S = 0$.
+2. **Kirchhoff-Helmholtz High-Frequency Eikonal Phase Closure (§2.1):** Formulated eikonal wavefront phase gradient $\|\nabla S\|^2 = \frac{\omega^2}{c^2}\tilde{n}_{\mathbb{C}}^2$ with ray-tracing transport $2\nabla S \cdot \nabla \mathcal{A} + \mathcal{A} \Delta S = 0$.
 3. **Itô-Stratonovich Geometric Drift Correction on Margin Manifolds (§2.3.7):** Formulated Riemannian drift conversion $b^i_{\text{It\^o}} = b^i_{\text{Strat}} + \frac{1}{2}\sigma^j_k \frac{\partial \sigma^i_k}{\partial x^j} + \frac{1}{2}g^{jk}\Gamma^i_{jk}\sigma^m_p \sigma^n_p g_{mn}$.
 4. **Marangoni-Boussinesq Surface Viscous Stress Tensor (§2.1):** Formulated full 2D interfacial viscous stress tensor $\boldsymbol{\sigma}_s = (\gamma_s + \kappa_s \nabla_s \cdot \mathbf{v}_s)\mathbf{I}_s + 2\mu_s \mathbf{D}_s$.
 

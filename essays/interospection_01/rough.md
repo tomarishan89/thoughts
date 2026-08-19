@@ -24,11 +24,7 @@ Lets expound upon the idea of these 3 terms. Lets start with \sa{moksha}
 
 \sa{moksa} ~ मम् उच्च क्षयः
 
-
-
-
 Next on the list is \sa{manas} and \sa{maya}. Before these are discussed, I think it is important to look into \sa{cancala}
-
 
 ### \sa{cancala} is not merely “fickle”
 

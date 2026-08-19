@@ -31,4 +31,3 @@ Stable roman keys used in `\sa{key}` markup. Prefer IAST-like keys (`dharma`, `m
 | matsarya | मात्सर्य | mātsarya | envy; jealousy |  |  | llm-provisional |  |
 | lobha | लोभ | lobha | greed |  |  | llm-provisional |  |
 | sadripu | षड्रिपु | ṣaḍripu | the six inner enemies / six dimensions of valuation |  |  | llm-provisional |  |
-

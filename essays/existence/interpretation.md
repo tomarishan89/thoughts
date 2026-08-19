@@ -45,7 +45,6 @@ To allow domain specialists (cosmologists, biophysicists, psychologists, sociolo
 
 ---
 
-
 ## Section 1: The Dimensional Bridge & Semantic Transduction Problem
 
 ### 1.1 The Dimensional Incommensurability Fault Line
@@ -86,6 +85,7 @@ $$\mathbf{K}_{\text{trans}}: \mathcal{T}^*\Omega_{\text{informational}} \longrig
 $$\mathbf{C}_{\text{physical}}(x, t) = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}\Big( P(\mathbf{s}) \,\|\, Q(\mathbf{s} \mid \mathbf{\theta}) \Big)$$
 
 where $\mathcal{D}_{\text{KL}}$ is the Kullback-Leibler divergence of environmental sensory signals against internal generative priors, carrying units of $[\mathrm{nats}]$, and $\mathbf{K}_{\text{trans}}$ carries the dimensional transduction factor:
+
 $$[\mathbf{K}_{\text{trans}}] = [ \frac{\mathrm{N \cdot m^{-2}}}{\mathrm{nats \cdot m^{-1}}} ] = [ \frac{\mathrm{J}}{\mathrm{m^3 \cdot nats}} ] = [ \frac{\mathrm{Energy \, Density}}{\mathrm{Information}} ]$$
 
 This establishes that cognitive and institutional "stress" is an **informational gradient weighted by metabolic or mechanical energy density**.
@@ -119,7 +119,9 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 * **Mathematical Setup:** Cognitive agents operate on complexified phase spaces $\Omega_{\mathbb{C}}$, where real components $\mathfrak{Re}$ represent current physiological/motor states and imaginary components $\mathfrak{Im}$ represent anticipatory generative models (Friston, 2010; Seth, 2014).
 * **Fuel Allocation ($\chi^* \approx 1$):** Energy is partitioned between immediate sensorimotor actuation ($\dot{\mathcal{E}}_{\mathfrak{Re}}$) and generative prediction updating ($\dot{\mathcal{E}}_{\mathfrak{Im}}$).
 * **The Sagawa-Ueda Bound:**
-  $$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}(\hat{\mathbf{C}}; \mathbf{C}_{\text{future}})$$
+
+$$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}(\hat{\mathbf{C}}; \mathbf{C}_{\text{future}})$$
+
   Pre-stiffening cognitive priors reduces physical trauma to near zero upon predictable impacts.
 * **Failure Modes:**
   1. $\chi \to 0$ (Zero predictive investment): Sensory overload and reactive shock trauma.
@@ -131,7 +133,9 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 * **Mathematical Setup:** An institution $\mathbb{S} \in T_{\text{IV}}$ is a macro-envelope enclosing constituent biological/cognitive nodes $\{E^j\} \in T_{\text{II/III}}$.
 * **Constitutive Operators ($D_{\mathfrak{Im}}^{\mathbb{S}}$):** Inscribed in externalized physical ledgers (statutes, constitutions, property deeds, central bank ledgers).
 * **Inter-Tier Coupling & Fuel Extraction:**
-  $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{\text{IV} \to \text{III}}[ \Delta \mathcal{G}_j(t) ]$$
+
+$$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{\text{IV} \to \text{III}}[ \Delta \mathcal{G}_j(t) ]$$
+
 * **Institutional Failure Modes:**
   1. **Coupling Decoupling:** Tax evasion, loss of civic legitimacy, or systemic corruption reduces $\eta_j \to 0$, causing collective free-energy starvation ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}} < \dot{E}_{\text{crit}}^{\mathbb{S}}$).
   2. **Carrier Ledger Cleavage:** Physical destruction of constitutional archives, loss of cryptographic private keys, or monetary hyperinflation obliterates $D_{\mathfrak{Im}}^{\mathbb{S}}$, collapsing the institution even if its physical infrastructure remains intact.
@@ -167,10 +171,13 @@ The table below provides the explicit formal correspondence between the physical
 
 ### 4.1 The Sanskrit Root $\sqrt{\text{धृ}}$ (*dhṛ*)
 The word *Dharma* derives from the primary verbal root:
+
 $$\sqrt{\text{धृ}} \quad (\textit{dhṛ}) \quad \longrightarrow \quad \textit{dhāraṇapoṣaṇayoḥ} \quad (\text{“to hold, sustain, support, maintain structural integrity”})$$
 
 In the *Mahabharata* (Karna Parva, 69.58), this structural sustenance is stated with mathematical clarity:
+
 $$\text{\textit{“Dhāraṇāt dharmam ityāhuḥ, dharmo dhārayate prajāḥ”}}$$
+
 *(“Dharma is so named because it sustains; Dharma maintains the structured order of all created entities.”)*
 
 Under our framework, an entity's *Svadharma* is the **mathematically constrained operational Lie algebra ($D_{\mathfrak{Im}}$)** that generates internal resistance $\mathbf{R}(x, t)$ to sustain boundary coherence against external challenge fields ($\mathbf{C}$).
@@ -185,6 +192,7 @@ Let $I(t)$ be the index set of all extant forms of existence at time $t$ across 
 $$\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfrak{Im}}^i(t)$$
 
 For any temporal domain $T_{\text{active}} \subseteq T$ where at least one form of existence persists ($\exists E^i(t) \neq \emptyset$), the master matrix $\mathcal{D}_T$ is strictly non-empty:
+
 $$\Big( \forall t \in T_{\text{active}}, \; \exists E^i(t) \neq \emptyset \Big) \implies \mathcal{D}_T \neq \emptyset \quad \text{and} \quad \lim_{|T_{\text{active}}| \to \infty} \mu(\mathcal{D}_T) = \infty$$
 
 Sanatan Dharm represents the totality of all physical, biological, cognitive, and collective laws that permit any bounded non-equilibrium structure to maintain topological enclosure against entropic dissolution.
@@ -201,6 +209,7 @@ From the set-theoretic formulation of $\mathcal{D}_T$ and $D_{\mathfrak{Im}}^i(t
    > *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
 
 An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
+
 $$D_{\mathfrak{Im}}^i(t) \subset \mathcal{D}_T$$
 
 Structural failure occurs when an entity attempts to execute operators belonging to $\mathcal{D}_T \setminus D_{\mathfrak{Im}}^i(t)$ for which it lacks the physical substrate ($\mathcal{F}_{\mathbb{R}}^i$), violating its localized conservation bounds (*"Paradharmo bhayāvahaḥ"*, Bhagavad Gita 3.35).
@@ -235,17 +244,23 @@ Human consciousness, biological cognition, and open thermodynamic engines operat
 
 2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**  
    The universal broadcast operator emitting real mechanical traction and unmanifest anticipatory wavefunctional fields into the forward lightcone $J^+(E)$:
-   $$\boxed{\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}} \in \Omega_{\mathbb{C}}}$$
+
+$$\boxed{\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}} \in \Omega_{\mathbb{C}}}$$
+
    where $\hat{\mathbf{P}}_{\mathbb{R}}$ is the outward push-forward of boundary Cauchy stress and convective mass-momentum, and $\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) = \mathbf{\Phi}_{\mathbb{C}}(x, t)$ is the complex gauge wave propagating forward in time.
    
    The forward viability of the imaginary projection is quantified by its time-discounted structural margin expectation functional:
-   $$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) ] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
+
+$$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) ] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
+
    * **$\mathcal{P}_{\hat{\mathbf{P}}} > 0$ (Viable Forward Projection / Vitality):** The entity anticipates positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$), exploratory foraging, and boundary expansion.
    * **$\mathcal{P}_{\hat{\mathbf{P}}} \le 0$ (Projection Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity shuts down informational computation ($\dot{\mathcal{E}}_{\mathfrak{Im}} \to 0$) to minimize Landauer dissipation, precipitating depressive withdrawal and anergic boundary regression.
 
 3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**  
    The instantaneous realization of complex projection fields into real-space physical traction, matter exchange, and photochemical work at the boundary interface:
-   $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \mathrm{Tr}_{\partial E}[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) ] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad [\frac{\mathrm{W}}{\mathrm{m^2}}]}$$
+
+$$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \mathrm{Tr}_{\partial E}[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) ] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad [\frac{\mathrm{W}}{\mathrm{m^2}}]}$$
+
    Every act of speech, muscular contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously collapses unmanifest imaginary projection amplitude ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while inscribing new physical traces into the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
 
 ---
@@ -255,14 +270,20 @@ The framework provides an exact thermodynamic distinction between physical biolo
 
 * **Hunger (*Kṣudhā*):**  
   A bottom-up First-Law exergy deficit occurring entirely in real configuration space $\Omega_{\mathbb{R}}$:
-  $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_E \sigma_{\text{total}} \, dV \implies \frac{d\mathcal{G}}{dt} < 0$$
+
+$$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_E \sigma_{\text{total}} \, dV \implies \frac{d\mathcal{G}}{dt} < 0$$
+
   *Kṣudhā* is a direct biochemical indicator of metabolic depletion (e.g., declining ATP/AMP ratios, falling blood glucose). It requires zero episodic memory or cognitive simulation, occurring in simple prokaryotes and unconscious organisms.
 
 * **Desire / Craving (*Kāma / Tṛṣṇā*):**  
   A top-down simulation executed in imaginary phase space $\Omega_{\mathfrak{Im}}$:
-  $$D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}}) \xrightarrow{\text{simulation}} \Delta \hat{\mathcal{G}}_{\text{predicted}} > 0$$
+
+$$D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}}) \xrightarrow{\text{simulation}} \Delta \hat{\mathcal{G}}_{\text{predicted}} > 0$$
+
   *Kāma* occurs when the cognitive model recalls past reward states from $\mathcal{F}_{\text{ledger}}$ and projects an artificial free-energy surplus ($\Delta \hat{\mathcal{G}} > 0$). This top-down prediction transduces downward into physical physiology via the Semantic Transduction Tensor:
-  $$\mathbf{C}_{\text{craving}} = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}\left( P_{\text{craved}} \,\|\, Q_{\text{current}} \right)$$
+
+$$\mathbf{C}_{\text{craving}} = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}\left( P_{\text{craved}} \,\|\, Q_{\text{current}} \right)$$
+
   generating visceral dopamine cascades, somatic restlessness, and salivary/gastric secretions **even when the organism is fully satiated ($\dot{E}_{\text{fuel}} \gg \dot{E}_{\text{crit}}$)**.
 
 ---
@@ -286,11 +307,13 @@ Living cognitive agents possess two distinct modes of interfacial actuation:
    An automated feed-forward reflex arc where incoming challenge traction $\mathbf{C}$ directly triggers motor expression $\boldsymbol{\mathcal{X}}$ through pre-configured neural pathways ($\tau_{\text{latency}} \sim 10^{-2}\,\mathrm{s}$). Because no deliberative computation or state re-evaluation occurs, the Landauer informational entropy cost is zero ($\dot{\mathcal{H}} \approx 0$).
 
 2. **Voluntary Discriminative Veto (*Viveka*):**  
-   The conscious intervention of the higher-order Dyson loop ($\mathcal{T}\exp(\int \hat{\mathcal{L}} d\tau)$), which inspects the automated trajectory and applies an active inhibitory gate ($\mathcal{O}_{\text{inhibit}}$) to prevent expression.
+   The conscious intervention of the higher-order Dyson loop ($\mathcal{T} \exp(\int \hat{\mathcal{L}} d\tau)$), which inspects the automated trajectory and applies an active inhibitory gate ($\mathcal{O}_{\text{inhibit}}$) to prevent expression.
 
 3. **The Metabolic Cost of Willpower (The Landauer Veto Law):**  
    Erasing an automated behavioral trajectory from the neural sub-density matrix requires active computational bit erasure. By Landauer's Principle, voluntary self-control is fundamentally bounded by a non-zero metabolic exergy tax:
-   $$\boxed{\dot{\mathcal{E}}_{\text{veto}} = k_B T_{\text{brain}} \ln 2 \cdot \dot{\mathcal{H}}_{\text{erasure}} > 0 \quad [\mathrm{W}]}$$
+
+$$\boxed{\dot{\mathcal{E}}_{\text{veto}} = k_B T_{\text{brain}} \ln 2 \cdot \dot{\mathcal{H}}_{\text{erasure}} > 0 \quad [\mathrm{W}]}$$
+
    This proves why conscious restraint (*Viveka*) is exhaustible under mental fatigue or glucose starvation: when metabolic fuel reserves decline ($\dot{E}_{\text{fuel}} < \dot{\mathcal{E}}_{\text{veto}}$), the brain can no longer pay the Landauer bit-erasure price, and the organism collapses back into involuntary reactive conditioning (*Vāsanā*).
 
 ---
@@ -367,14 +390,20 @@ In classical Sanskrit philosophy, the *Ariṣaḍvarga* (the Six Internal Enemie
 
 ### 7.1 Empathic Transduction Severance ($\mathbf{K}_{\text{trans}}^{\text{empathy}} \equiv \mathbf{0}$)
 In a healthy biological syncytium or cooperative society, when a neighboring node $E^B$ undergoes stress ($\phi_B < 0$), its emitted distress signals (biochemical cytokines, acoustic cries, facial expressions) are transduced across the observer's interface via the **Empathic Transduction Tensor**:
+
 $$\mathbf{C}_{\text{somatic}}^A = \mathbf{K}_{\text{trans}}^{\text{empathy}} \cdot \boldsymbol{\mathcal{X}}_B^{\text{distress}}$$
+
 inducing vicarious physical tension in entity $A$, driving cooperative mutual aid ($\mathcal{O}_{\text{coupling}} > 0$). In clinical psychopathy, this tensor is mathematically severed:
+
 $$\mathbf{K}_{\text{trans}}^{\text{empathy}} \equiv \mathbf{0}$$
+
 The psychopathic agent registers the other's distress purely as an unweighted informational signal without somatic cost.
 
 ### 7.2 Reversion to Pure Intra-Tier Predatory Cleavage
 With $\mathcal{O}_{\text{coupling}} \equiv 0$, the psychopath evaluates human relationships strictly through the **Predatory Cleavage Matrix** derived in Theorem 7 (§5.1):
+
 $$\Delta \phi_{AB}(x, t) > 0 \implies \dot{\mathcal{E}}_{\text{fuel}}^A = \eta_{\text{trophic}} \int_{f_{AB}} \left( -\frac{d\mathcal{G}[E^B]}{dt} \right) dA > 0$$
+
 The psychopathic entity treats social institutions and human companions as consumable trophic biomass ($E^B$), extracting their economic, emotional, and physical free energy to maximize its own measure ($\mu(E^A)$) through boundary lysis.
 
 ### 7.3 The Inevitable Macro-Syncytial Excision
@@ -411,7 +440,9 @@ Every multi-scale sovereign entity is governed by a **Dual Thermodynamic Mandate
 
 2. **External Līlā (*Prakāśa* / Cosmic Play and Creative Projection):**  
    Once internal Dharma is secured and homeostatic maintenance is satisfied ($\dot{E}_{\text{fuel}} \ge \dot{E}_{\text{crit}}$), the sovereign possesses a free-energy surplus ($\Delta \mathcal{G} > 0$). This surplus is projected outward across the skin boundary into the external universe as **Līlā (creative expression, scientific inquiry, artistic beauty, exploration)**:
-   $$\boxed{\dot{\mathcal{W}}_{\text{Līlā}} = \dot{E}_{\text{fuel}}^{\text{surplus}} \equiv \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{\mathbb{S}} \sigma_{\text{total}} \, dV > 0 \implies \hat{\mathbf{P}}_{\mathbb{S}} \longrightarrow \boldsymbol{\mathcal{X}}_{\text{creative}}}$$
+
+$$\boxed{\dot{\mathcal{W}}_{\text{Līlā}} = \dot{E}_{\text{fuel}}^{\text{surplus}} \equiv \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{\mathbb{S}} \sigma_{\text{total}} \, dV > 0 \implies \hat{\mathbf{P}}_{\mathbb{S}} \longrightarrow \boldsymbol{\mathcal{X}}_{\text{creative}}}$$
+
    *Līlā* is not trivial recreation; it is the fundamental thermodynamic signature of an open engine that has mastered its internal stability and now enriches the universal state space.
 
 ---
@@ -422,7 +453,9 @@ Every multi-scale sovereign entity is governed by a **Dual Thermodynamic Mandate
 In the *Rigveda* (Nasadiya Sukta) and the *Purāṇas*, the universe is described as emerging from the *Hiraṇyagarbha* (the Golden Womb) or *Brahmāṇḍa* (the Cosmic Egg)—a bounded spherical realm enclosed within cosmic waters. 
 
 As proven in [`draft.md` §1.1.1](draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
+
 $$\boxed{R_{\text{Hubble}} \equiv \frac{c}{H_0} = \frac{2 G M_{\text{Hubble}}}{c^2} = R_s(M_{\text{Hubble}}) \approx 1.37 \times 10^{26} \, \mathrm{m}}$$
+
 The cosmic boundary of our observable universe is mathematically identical to the Schwarzschild event horizon of an astronomical black hole containing mass $M_{\text{Hubble}} \approx 8.8 \times 10^{52} \, \mathrm{kg}$. 
 
 ```
@@ -500,5 +533,4 @@ As proven in [`dialogues_and_explorations.md` §20](dialogues_and_explorations.m
    The galactic MOND acceleration scale $a_0 \equiv \frac{c H_0}{2\pi} \approx 1.042 \times 10^{-10} \, \mathrm{m/s^2}$ derives directly from spin-torsion boundary coupling, exactly predicting the flat rotational velocity of the Milky Way ($v_{\text{MW}} = 219.7 \, \mathrm{km/s}$ vs. observed $220.0 \pm 10.0 \, \mathrm{km/s}$ to $< 0.2\%$ error) and proving that dark matter is geometric torsion and incoming cold parent relict flux rather than elusive subatomic particles.
 
 ---
-
 

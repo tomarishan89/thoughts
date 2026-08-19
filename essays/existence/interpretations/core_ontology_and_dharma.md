@@ -7,10 +7,13 @@
 ## 1. Etymological Alignment: The Sanskrit Root $\sqrt{\text{धृ}}$ (*dhṛ*)
 
 The Sanskrit term *Dharma* is derived from the primary verbal root:
+
 $$\sqrt{\text{धृ}} \quad (\textit{dhṛ}) \quad \longrightarrow \quad \textit{dhāraṇapoṣaṇayoḥ} \quad (\text{“to hold, sustain, support, maintain structural integrity”})$$
 
 In classical philosophical treatises, such as the *Mahābhārata* (Karṇa Parva, 69.58), this principle of structural sustenance is articulated with axiomatic precision:
+
 $$\text{\textit{“Dhāraṇāt dharmam ityāhuḥ, dharmo dhārayate prajāḥ”}}$$
+
 *(“Dharma is so named because it sustains; Dharma maintains the structured order of all created entities.”)*
 
 Under our continuum-mechanical framework:
@@ -30,7 +33,9 @@ $$\boxed{\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfra
 ### Mathematical Properties:
 1. **Non-Emptiness & Scale Invariance:**  
    For any temporal domain $T_{\text{active}} \subseteq T$ where at least one entity persists ($\exists E^i(t) \neq \emptyset$), the master matrix $\mathcal{D}_T$ is strictly non-empty:
-   $$\Big( \forall t \in T_{\text{active}}, \; \exists E^i(t) \neq \emptyset \Big) \implies \mathcal{D}_T \neq \emptyset \quad \text{and} \quad \lim_{|T_{\text{active}}| \to \infty} \mu(\mathcal{D}_T) = \infty$$
+
+$$\Big( \forall t \in T_{\text{active}}, \; \exists E^i(t) \neq \emptyset \Big) \implies \mathcal{D}_T \neq \emptyset \quad \text{and} \quad \lim_{|T_{\text{active}}| \to \infty} \mu(\mathcal{D}_T) = \infty$$
+
 2. **Totality of Conservation Laws:**  
    $\mathcal{D}_T$ represents the comprehensive space of all physically viable, dissipative, and non-equilibrium solutions that permit bounded order to resist entropic dissolution across the universe.
 
@@ -58,6 +63,7 @@ $$\boxed{\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfra
    > *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
 
 An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
+
 $$\boxed{D_{\mathfrak{Im}}^i(t) \subset \mathcal{D}_T}$$
 
 ### The Failure of Cross-Domain Overreach (*Paradharma*):

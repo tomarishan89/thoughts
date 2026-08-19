@@ -67,4 +67,3 @@ To allow domain specialists to explore specific applications without wading thro
    - Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
    - Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
    - Closed syncytial circuit electrostatics and continuous bio-electric pattern homeostasis.
-

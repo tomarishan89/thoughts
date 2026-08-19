@@ -37,7 +37,8 @@ In [`draft.md` §2 & §5](../draft.md), a living biological cell ($E_{\text{livi
    The cell consumes metabolic free energy (ATP hydrolysis, $\Delta G_{\text{ATP}} \approx -57 \, \mathrm{kJ/mol}$) to polymerize actin filaments and activate myosin molecular motors, maintaining an active contractile cortex that balances osmotic pressure.
 3. **Structural Margin ($\phi \ge 0$):**  
    Lysis is prevented if and only if the structural yield margin remains non-negative:
-   $$\phi(x, t) \equiv \sigma_{\text{yield}} - \left( \|\mathbf{C}_{\text{external}}(x, t)\| - \|\mathbf{R}_{\text{active}}(x, t - \Delta t)\| \right) \ge 0$$
+
+$$\phi(x, t) \equiv \sigma_{\text{yield}} - \left( \|\mathbf{C}_{\text{external}}(x, t)\| - \|\mathbf{R}_{\text{active}}(x, t - \Delta t)\| \right) \ge 0$$
 
 ---
 
