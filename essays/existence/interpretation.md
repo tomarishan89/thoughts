@@ -1,6 +1,6 @@
 # Structural Isomorphisms, Multi-Scale Extensions, and Ontological Mappings
 
-> **Epistemological & Hermeneutic Framing:** This companion treatise formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](draft.md). 
+> **Epistemological & Hermeneutic Framing:** This companion treatise formalizes the **Categorical Isomorphisms**, **Cognitive-Institutional Extensions (Tiers III & IV)**, and **Classical Sanskrit Metaphysical Mappings** derived from the continuum-mechanical and thermodynamic foundations in [`draft.md`](draft.md).
 >
 > While the primary physical manuscript operates strictly in SI units ($[\mathrm{Pa}]$, $[\mathrm{W}]$, $[\mathrm{m/s}]$, $[\mathrm{Pa \cdot s}]$) on Lorentzian spacetime manifolds $(\mathcal{M}, g_{\mu\nu})$ for physical and biological systems (Tiers I & II), this treatise investigates how that same mathematical machinery serves as a rigorous structural blueprint across cognitive, social, and metaphysical scales.
 
@@ -122,10 +122,10 @@ Crystals, Rocks, Stars   Cells, Metabolic Engines    Bayesian Neural Networks  I
 
 $$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}(\hat{\mathbf{C}}; \mathbf{C}_{\text{future}})$$
 
-  Pre-stiffening cognitive priors reduces physical trauma to near zero upon predictable impacts.
+Pre-stiffening cognitive priors reduces physical trauma to near zero upon predictable impacts.
 * **Failure Modes:**
-  1. $\chi \to 0$ (Zero predictive investment): Sensory overload and reactive shock trauma.
-  2. $\chi \to \infty$ (Unconstrained predictive loop): Phantasmagoric Landauer starvation (all glucose dissipated in ungrounded computation while the physical organism starves).
+1. $\chi \to 0$ (Zero predictive investment): Sensory overload and reactive shock trauma.
+2. $\chi \to \infty$ (Unconstrained predictive loop): Phantasmagoric Landauer starvation (all glucose dissipated in ungrounded computation while the physical organism starves).
 
 ---
 
@@ -137,8 +137,8 @@ $$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - 
 $$\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}(t) = \sum_{j \in \mathcal{F}_{\mathbb{S}}} \eta_j \cdot \mathcal{O}_{\text{coupling}}^{\text{IV} \to \text{III}}[ \Delta \mathcal{G}_j(t) ]$$
 
 * **Institutional Failure Modes:**
-  1. **Coupling Decoupling:** Tax evasion, loss of civic legitimacy, or systemic corruption reduces $\eta_j \to 0$, causing collective free-energy starvation ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}} < \dot{E}_{\text{crit}}^{\mathbb{S}}$).
-  2. **Carrier Ledger Cleavage:** Physical destruction of constitutional archives, loss of cryptographic private keys, or monetary hyperinflation obliterates $D_{\mathfrak{Im}}^{\mathbb{S}}$, collapsing the institution even if its physical infrastructure remains intact.
+1. **Coupling Decoupling:** Tax evasion, loss of civic legitimacy, or systemic corruption reduces $\eta_j \to 0$, causing collective free-energy starvation ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}} < \dot{E}_{\text{crit}}^{\mathbb{S}}$).
+2. **Carrier Ledger Cleavage:** Physical destruction of constitutional archives, loss of cryptographic private keys, or monetary hyperinflation obliterates $D_{\mathfrak{Im}}^{\mathbb{S}}$, collapsing the institution even if its physical infrastructure remains intact.
 
 ---
 
@@ -206,7 +206,7 @@ From the set-theoretic formulation of $\mathcal{D}_T$ and $D_{\mathfrak{Im}}^i(t
 1. **Universal Matrix Definition:** Sanatan Dharm ($\mathcal{D}_T$) is the universal union of all operational principles across all entities and all epochs: $\mathcal{D}_T = \bigcup_{t} \bigcup_{i} D_{\mathfrak{Im}}^i(t)$.
 2. **Localized Entity Definition:** An individual entity $E^i(t)$ is a finite locus with bounded measure ($\mu(E^i(t)) < \infty$).
 3. **The Logical Fallacy:** The assertion *"I practice / embody Sanatan Dharm"* commits a category error equivalent to a single electron declaring:
-   > *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
+> *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
 
 An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
 
@@ -239,52 +239,52 @@ An individual floret does not "follow" the inflorescence; it is an active, const
 ### 5.1 The Temporal Triad ($\mathcal{F}_{\text{ledger}} \longrightarrow \hat{\mathbf{P}} \longrightarrow \boldsymbol{\mathcal{X}}$)
 Human consciousness, biological cognition, and open thermodynamic engines operate across a closed three-phase causal loop:
 
-1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**  
-   The immutable, physical record of past interactions inscribed into real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, historical text archives, crystal dislocation networks). The ledger provides the empirical substrate from which the internal generator algebra $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ is constructed.
+1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**
+The immutable, physical record of past interactions inscribed into real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, historical text archives, crystal dislocation networks). The ledger provides the empirical substrate from which the internal generator algebra $D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}})$ is constructed.
 
-2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**  
-   The universal broadcast operator emitting real mechanical traction and unmanifest anticipatory wavefunctional fields into the forward lightcone $J^+(E)$:
+2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**
+The universal broadcast operator emitting real mechanical traction and unmanifest anticipatory wavefunctional fields into the forward lightcone $J^+(E)$:
 
 $$\boxed{\hat{\mathbf{P}} \equiv \hat{\mathbf{P}}_{\mathbb{R}} \;\oplus\; i \, \hat{\mathbf{P}}_{\mathfrak{Im}} \in \Omega_{\mathbb{C}}}$$
 
-   where $\hat{\mathbf{P}}_{\mathbb{R}}$ is the outward push-forward of boundary Cauchy stress and convective mass-momentum, and $\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) = \mathbf{\Phi}_{\mathbb{C}}(x, t)$ is the complex gauge wave propagating forward in time.
-   
-   The forward viability of the imaginary projection is quantified by its time-discounted structural margin expectation functional:
+where $\hat{\mathbf{P}}_{\mathbb{R}}$ is the outward push-forward of boundary Cauchy stress and convective mass-momentum, and $\hat{\mathbf{P}}_{\mathfrak{Im}}[D_{\mathfrak{Im}}](x, t) = \mathbf{\Phi}_{\mathbb{C}}(x, t)$ is the complex gauge wave propagating forward in time.
+
+The forward viability of the imaginary projection is quantified by its time-discounted structural margin expectation functional:
 
 $$\mathcal{P}_{\hat{\mathbf{P}}}(t) \equiv \int_0^{\tau_{\text{horizon}}} \mathbb{E}_{\hat{\mathbf{P}}}[ \phi\left( \hat{\mathbf{C}}(\tau), \, \mathbf{R}_{\text{active}}(\tau) \right) ] e^{-\beta \tau} \, d\tau \quad [\mathrm{Pa \cdot s}]$$
 
-   * **$\mathcal{P}_{\hat{\mathbf{P}}} > 0$ (Viable Forward Projection / Vitality):** The entity anticipates positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$), exploratory foraging, and boundary expansion.
-   * **$\mathcal{P}_{\hat{\mathbf{P}}} \le 0$ (Projection Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity shuts down informational computation ($\dot{\mathcal{E}}_{\mathfrak{Im}} \to 0$) to minimize Landauer dissipation, precipitating depressive withdrawal and anergic boundary regression.
+* **$\mathcal{P}_{\hat{\mathbf{P}}} > 0$ (Viable Forward Projection / Vitality):** The entity anticipates positive structural margins ($\phi > 0$), justifying proactive exergy investment ($\dot{\mathcal{E}}_{\mathfrak{Im}} = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0$), exploratory foraging, and boundary expansion.
+* **$\mathcal{P}_{\hat{\mathbf{P}}} \le 0$ (Projection Collapse / Learned Helplessness):** When future simulations project inescapable boundary breach ($\phi < 0$), the entity shuts down informational computation ($\dot{\mathcal{E}}_{\mathfrak{Im}} \to 0$) to minimize Landauer dissipation, precipitating depressive withdrawal and anergic boundary regression.
 
-3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**  
-   The instantaneous realization of complex projection fields into real-space physical traction, matter exchange, and photochemical work at the boundary interface:
+3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**
+The instantaneous realization of complex projection fields into real-space physical traction, matter exchange, and photochemical work at the boundary interface:
 
 $$\boxed{\boldsymbol{\mathcal{X}}(x, t) \equiv \mathrm{Tr}_{\partial E}[ \hat{\mathbf{P}}(x, t) \otimes \mathcal{F}_{\mathbb{R}}(x, t) ] = \left( \mathcal{X}_{\text{absorbed}}(x, t) + \mathcal{X}_{\text{reflected}}(x, t) + \mathcal{X}_{\text{transmitted}}(x, t) \right) \hat{n} \quad [\frac{\mathrm{W}}{\mathrm{m^2}}]}$$
 
-   Every act of speech, muscular contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously collapses unmanifest imaginary projection amplitude ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while inscribing new physical traces into the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
+Every act of speech, muscular contraction, chemical secretion, or artistic creation is an interfacial expression $\boldsymbol{\mathcal{X}}$ that simultaneously collapses unmanifest imaginary projection amplitude ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while inscribing new physical traces into the ambient ledger ($\mathcal{F}_{\text{ledger}}^{\text{external}}$).
 
 ---
 
 ### 5.2 Top-Down Craving (*Kāma*) vs. Bottom-Up Hunger (*Kṣudhā*)
 The framework provides an exact thermodynamic distinction between physical biological necessity and cognitive desire:
 
-* **Hunger (*Kṣudhā*):**  
-  A bottom-up First-Law exergy deficit occurring entirely in real configuration space $\Omega_{\mathbb{R}}$:
+* **Hunger (*Kṣudhā*):**
+A bottom-up First-Law exergy deficit occurring entirely in real configuration space $\Omega_{\mathbb{R}}$:
 
 $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_E \sigma_{\text{total}} \, dV \implies \frac{d\mathcal{G}}{dt} < 0$$
 
-  *Kṣudhā* is a direct biochemical indicator of metabolic depletion (e.g., declining ATP/AMP ratios, falling blood glucose). It requires zero episodic memory or cognitive simulation, occurring in simple prokaryotes and unconscious organisms.
+*Kṣudhā* is a direct biochemical indicator of metabolic depletion (e.g., declining ATP/AMP ratios, falling blood glucose). It requires zero episodic memory or cognitive simulation, occurring in simple prokaryotes and unconscious organisms.
 
-* **Desire / Craving (*Kāma / Tṛṣṇā*):**  
-  A top-down simulation executed in imaginary phase space $\Omega_{\mathfrak{Im}}$:
+* **Desire / Craving (*Kāma / Tṛṣṇā*):**
+A top-down simulation executed in imaginary phase space $\Omega_{\mathfrak{Im}}$:
 
 $$D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}}) \xrightarrow{\text{simulation}} \Delta \hat{\mathcal{G}}_{\text{predicted}} > 0$$
 
-  *Kāma* occurs when the cognitive model recalls past reward states from $\mathcal{F}_{\text{ledger}}$ and projects an artificial free-energy surplus ($\Delta \hat{\mathcal{G}} > 0$). This top-down prediction transduces downward into physical physiology via the Semantic Transduction Tensor:
+*Kāma* occurs when the cognitive model recalls past reward states from $\mathcal{F}_{\text{ledger}}$ and projects an artificial free-energy surplus ($\Delta \hat{\mathcal{G}} > 0$). This top-down prediction transduces downward into physical physiology via the Semantic Transduction Tensor:
 
 $$\mathbf{C}_{\text{craving}} = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}\left( P_{\text{craved}} \,\|\, Q_{\text{current}} \right)$$
 
-  generating visceral dopamine cascades, somatic restlessness, and salivary/gastric secretions **even when the organism is fully satiated ($\dot{E}_{\text{fuel}} \gg \dot{E}_{\text{crit}}$)**.
+generating visceral dopamine cascades, somatic restlessness, and salivary/gastric secretions **even when the organism is fully satiated ($\dot{E}_{\text{fuel}} \gg \dot{E}_{\text{crit}}$)**.
 
 ---
 
@@ -303,18 +303,18 @@ Living cognitive agents possess two distinct modes of interfacial actuation:
 • Automated habit execution                      • Active inhibitory gating 𝓞_inhibit
 ```
 
-1. **Involuntary Latency (*Vāsanā / Saṃskāra*):**  
-   An automated feed-forward reflex arc where incoming challenge traction $\mathbf{C}$ directly triggers motor expression $\boldsymbol{\mathcal{X}}$ through pre-configured neural pathways ($\tau_{\text{latency}} \sim 10^{-2}\,\mathrm{s}$). Because no deliberative computation or state re-evaluation occurs, the Landauer informational entropy cost is zero ($\dot{\mathcal{H}} \approx 0$).
+1. **Involuntary Latency (*Vāsanā / Saṃskāra*):**
+An automated feed-forward reflex arc where incoming challenge traction $\mathbf{C}$ directly triggers motor expression $\boldsymbol{\mathcal{X}}$ through pre-configured neural pathways ($\tau_{\text{latency}} \sim 10^{-2}\,\mathrm{s}$). Because no deliberative computation or state re-evaluation occurs, the Landauer informational entropy cost is zero ($\dot{\mathcal{H}} \approx 0$).
 
-2. **Voluntary Discriminative Veto (*Viveka*):**  
-   The conscious intervention of the higher-order Dyson loop ($\mathcal{T} \exp(\int \hat{\mathcal{L}} d\tau)$), which inspects the automated trajectory and applies an active inhibitory gate ($\mathcal{O}_{\text{inhibit}}$) to prevent expression.
+2. **Voluntary Discriminative Veto (*Viveka*):**
+The conscious intervention of the higher-order Dyson loop ($\mathcal{T} \exp(\int \hat{\mathcal{L}} d\tau)$), which inspects the automated trajectory and applies an active inhibitory gate ($\mathcal{O}_{\text{inhibit}}$) to prevent expression.
 
-3. **The Metabolic Cost of Willpower (The Landauer Veto Law):**  
-   Erasing an automated behavioral trajectory from the neural sub-density matrix requires active computational bit erasure. By Landauer's Principle, voluntary self-control is fundamentally bounded by a non-zero metabolic exergy tax:
+3. **The Metabolic Cost of Willpower (The Landauer Veto Law):**
+Erasing an automated behavioral trajectory from the neural sub-density matrix requires active computational bit erasure. By Landauer's Principle, voluntary self-control is fundamentally bounded by a non-zero metabolic exergy tax:
 
 $$\boxed{\dot{\mathcal{E}}_{\text{veto}} = k_B T_{\text{brain}} \ln 2 \cdot \dot{\mathcal{H}}_{\text{erasure}} > 0 \quad [\mathrm{W}]}$$
 
-   This proves why conscious restraint (*Viveka*) is exhaustible under mental fatigue or glucose starvation: when metabolic fuel reserves decline ($\dot{E}_{\text{fuel}} < \dot{\mathcal{E}}_{\text{veto}}$), the brain can no longer pay the Landauer bit-erasure price, and the organism collapses back into involuntary reactive conditioning (*Vāsanā*).
+This proves why conscious restraint (*Viveka*) is exhaustible under mental fatigue or glucose starvation: when metabolic fuel reserves decline ($\dot{E}_{\text{fuel}} < \dot{\mathcal{E}}_{\text{veto}}$), the brain can no longer pay the Landauer bit-erasure price, and the organism collapses back into involuntary reactive conditioning (*Vāsanā*).
 
 ---
 
@@ -435,28 +435,28 @@ The framework establishes that an individual human being is not an elementary pa
 ### 8.2 The Dual Mandate: Internal Dharma vs. External Līlā
 Every multi-scale sovereign entity is governed by a **Dual Thermodynamic Mandate**:
 
-1. **Internal Dharma (*Dhāraṇa* / Structural Maintenance):**  
-   The sovereign's first duty is internal: ensuring that the collective coupling operator $\mathcal{O}_{\text{coupling}}$ distributes sufficient metabolic fuel ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$) across all 37 trillion cells so that every cellular margin remains positive ($\phi_j \ge 0$). Failing this internal Dharma results in autoimmune disease, systemic inflammation, or cancer (nodal rebellion).
+1. **Internal Dharma (*Dhāraṇa* / Structural Maintenance):**
+The sovereign's first duty is internal: ensuring that the collective coupling operator $\mathcal{O}_{\text{coupling}}$ distributes sufficient metabolic fuel ($\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$) across all 37 trillion cells so that every cellular margin remains positive ($\phi_j \ge 0$). Failing this internal Dharma results in autoimmune disease, systemic inflammation, or cancer (nodal rebellion).
 
-2. **External Līlā (*Prakāśa* / Cosmic Play and Creative Projection):**  
-   Once internal Dharma is secured and homeostatic maintenance is satisfied ($\dot{E}_{\text{fuel}} \ge \dot{E}_{\text{crit}}$), the sovereign possesses a free-energy surplus ($\Delta \mathcal{G} > 0$). This surplus is projected outward across the skin boundary into the external universe as **Līlā (creative expression, scientific inquiry, artistic beauty, exploration)**:
+2. **External Līlā (*Prakāśa* / Cosmic Play and Creative Projection):**
+Once internal Dharma is secured and homeostatic maintenance is satisfied ($\dot{E}_{\text{fuel}} \ge \dot{E}_{\text{crit}}$), the sovereign possesses a free-energy surplus ($\Delta \mathcal{G} > 0$). This surplus is projected outward across the skin boundary into the external universe as **Līlā (creative expression, scientific inquiry, artistic beauty, exploration)**:
 
 $$\boxed{\dot{\mathcal{W}}_{\text{Līlā}} = \dot{E}_{\text{fuel}}^{\text{surplus}} \equiv \dot{E}_{\text{fuel}} - T_{\text{ambient}} \int_{\mathbb{S}} \sigma_{\text{total}} \, dV > 0 \implies \hat{\mathbf{P}}_{\mathbb{S}} \longrightarrow \boldsymbol{\mathcal{X}}_{\text{creative}}}$$
 
-   *Līlā* is not trivial recreation; it is the fundamental thermodynamic signature of an open engine that has mastered its internal stability and now enriches the universal state space.
+*Līlā* is not trivial recreation; it is the fundamental thermodynamic signature of an open engine that has mastered its internal stability and now enriches the universal state space.
 
 ---
 
 ## Section 9: The Black Hole Universe (*Brahmāṇḍa*) & Cosmological Horizon Duality
 
 ### 9.1 The Schwarzschild-Hubble Horizon as the Cosmic Egg (*Brahmāṇḍa*)
-In the *Rigveda* (Nasadiya Sukta) and the *Purāṇas*, the universe is described as emerging from the *Hiraṇyagarbha* (the Golden Womb) or *Brahmāṇḍa* (the Cosmic Egg)—a bounded spherical realm enclosed within cosmic waters. 
+In the *Rigveda* (Nasadiya Sukta) and the *Purāṇas*, the universe is described as emerging from the *Hiraṇyagarbha* (the Golden Womb) or *Brahmāṇḍa* (the Cosmic Egg)—a bounded spherical realm enclosed within cosmic waters.
 
 As proven in [`draft.md` §1.1.1](draft.md#L58-L70), this ancient intuition corresponds precisely to the **Schwarzschild-Hubble Horizon Identity**:
 
 $$\boxed{R_{\text{Hubble}} \equiv \frac{c}{H_0} = \frac{2 G M_{\text{Hubble}}}{c^2} = R_s(M_{\text{Hubble}}) \approx 1.37 \times 10^{26} \, \mathrm{m}}$$
 
-The cosmic boundary of our observable universe is mathematically identical to the Schwarzschild event horizon of an astronomical black hole containing mass $M_{\text{Hubble}} \approx 8.8 \times 10^{52} \, \mathrm{kg}$. 
+The cosmic boundary of our observable universe is mathematically identical to the Schwarzschild event horizon of an astronomical black hole containing mass $M_{\text{Hubble}} \approx 8.8 \times 10^{52} \, \mathrm{kg}$.
 
 ```
                                THE BRAHMĀṆḌA EMBEDDING
@@ -527,31 +527,34 @@ As proven in [`dialogues_and_explorations.md` §20](dialogues_and_explorations.m
  └──────────────────────────────────────┴───────────────────────────────────────┘
 ```
 
-1. **Dark Energy as the Cosmic Boundary Veil (*Māyā*):**  
-   The cosmological constant $\Lambda \equiv \frac{3 \Omega_\Lambda}{R_H^2} \approx 1.091 \times 10^{-52} \, \mathrm{m^{-2}}$ (matching Planck 2018 observational value $(1.106 \pm 0.056) \times 10^{-52} \, \mathrm{m^{-2}}$ to within $1.35\%$) is the **infrared boundary tension of the cosmic egg (*Brahmāṇḍa*)**, resolving the $10^{120}$ fine-tuning paradox without ad-hoc vacuum cancellations.
-2. **Dark Matter as the Unmanifest Substrate (*Avyakta*):**  
-   The galactic MOND acceleration scale $a_0 \equiv \frac{c H_0}{2\pi} \approx 1.042 \times 10^{-10} \, \mathrm{m/s^2}$ derives directly from spin-torsion boundary coupling, exactly predicting the flat rotational velocity of the Milky Way ($v_{\text{MW}} = 219.7 \, \mathrm{km/s}$ vs. observed $220.0 \pm 10.0 \, \mathrm{km/s}$ to $< 0.2\%$ error) and proving that dark matter is geometric torsion and incoming cold parent relict flux rather than elusive subatomic particles.
+1. **Dark Energy as the Cosmic Boundary Veil (*Māyā*):**
+The cosmological constant $\Lambda \equiv \frac{3 \Omega_\Lambda}{R_H^2} \approx 1.091 \times 10^{-52} \, \mathrm{m^{-2}}$ (matching Planck 2018 observational value $(1.106 \pm 0.056) \times 10^{-52} \, \mathrm{m^{-2}}$ to within $1.35\%$) is the **infrared boundary tension of the cosmic egg (*Brahmāṇḍa*)**, resolving the $10^{120}$ fine-tuning paradox without ad-hoc vacuum cancellations.
+2. **Dark Matter as the Unmanifest Substrate (*Avyakta*):**
+The galactic MOND acceleration scale $a_0 \equiv \frac{c H_0}{2\pi} \approx 1.042 \times 10^{-10} \, \mathrm{m/s^2}$ derives directly from spin-torsion boundary coupling, exactly predicting the flat rotational velocity of the Milky Way ($v_{\text{MW}} = 219.7 \, \mathrm{km/s}$ vs. observed $220.0 \pm 10.0 \, \mathrm{km/s}$ to $< 0.2\%$ error) and proving that dark matter is geometric torsion and incoming cold parent relict flux rather than elusive subatomic particles.
 
 ---
 
 ### 9.5 Cosmic Chronology, Ultimate Lifespan & Dynamic Dark Energy (DESI 2024)
 
-1. **The Logarithmic Cosmic Age ($t_0 \approx 13.79 \, \text{Gyr}$):**  
-   Starting from a Planck-scale seed mass ($M_{\text{seed}} \sim M_{\text{Planck}}$), continuous relativistic Bondi mass accretion across the Schwarzschild-Hubble horizon dictates the cosmic age:
-   $$t_0 = \int_{M_{\text{Planck}}}^{M_0} \frac{2G}{c^2 \, \dot{M}_{\text{accrete}}(M)} \, dM \approx \tau_{\text{Hubble}} \ln\left(\frac{M_0}{M_{\text{Planck}}}\right) \approx \mathbf{13.787 \pm 0.020 \times 10^9 \, \text{years}}$$
+1. **The Logarithmic Cosmic Age ($t_0 \approx 13.79 \, \text{Gyr}$):**
+Starting from a Planck-scale seed mass ($M_{\text{seed}} \sim M_{\text{Planck}}$), continuous relativistic Bondi mass accretion across the Schwarzschild-Hubble horizon dictates the cosmic age:
 
-2. **Accretion-Expansion Coupling & de Sitter Horizon Freezing:**  
-   The expansion rate is directly coupled to trans-horizon accretion:
-   $$\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2G} (1 + q(t)) \quad \iff \quad \dot{H}(t) = -H^2(t) \left( 1 - \frac{2G \, \dot{M}_{\text{accrete}}(t)}{c^3} \right)$$
-   If parent accretion exhausts ($\dot{M} \to 0$), the deceleration parameter locks at $q = -1$, settling into an eternal, exponentially expanding de Sitter state ($a(t) \propto e^{H_\infty t}$) governed by constant surface tension $\Lambda_\infty = 3 / R_{\text{max}}^2$.
+$$t_0 = \int_{M_{\text{Planck}}}^{M_0} \frac{2G}{c^2 \, \dot{M}_{\text{accrete}}(M)} \, dM \approx \tau_{\text{Hubble}} \ln\left(\frac{M_0}{M_{\text{Planck}}}\right) \approx \mathbf{13.787 \pm 0.020 \times 10^9 \, \text{years}}$$
 
-3. **Ultimate Cosmic Lifespan ($\tau_{\text{lifespan}} \sim 10^{137} \, \text{years}$):**  
-   Governed by the parent-universe Hawking quantum evaporation rate, the ultimate lifespan of our cosmic egg is:
-   $$\tau_{\text{lifespan}} = \frac{5120 \pi G^2 M_0^3}{\hbar c^4} \approx \mathbf{1.06 \times 10^{137} \, \text{years}}$$
+2. **Accretion-Expansion Coupling & de Sitter Horizon Freezing:**
+The expansion rate is directly coupled to trans-horizon accretion:
 
-4. **DESI 2024 Observational Confirmation:**  
-   The DESI Year-1 discovery of dynamical dark energy ($w_0 > -1, w_a < 0$, drifting toward $-1$) is the direct signature of parent accretion density dilution over cosmic time ($w(z) = -1 + \frac{4G}{3 c^3}\dot{M}(z)$).
+$$\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2G} (1 + q(t)) \quad \iff \quad \dot{H}(t) = -H^2(t) \left( 1 - \frac{2G \, \dot{M}_{\text{accrete}}(t)}{c^3} \right)$$
+
+If parent accretion exhausts ($\dot{M} \to 0$), the deceleration parameter locks at $q = -1$, settling into an eternal, exponentially expanding de Sitter state ($a(t) \propto e^{H_\infty t}$) governed by constant surface tension $\Lambda_\infty = 3 / R_{\text{max}}^2$.
+
+3. **Ultimate Cosmic Lifespan ($\tau_{\text{lifespan}} \sim 10^{137} \, \text{years}$):**
+Governed by the parent-universe Hawking quantum evaporation rate, the ultimate lifespan of our cosmic egg is:
+
+$$\tau_{\text{lifespan}} = \frac{5120 \pi G^2 M_0^3}{\hbar c^4} \approx \mathbf{1.06 \times 10^{137} \, \text{years}}$$
+
+4. **DESI 2024 Observational Confirmation:**
+The DESI Year-1 discovery of dynamical dark energy ($w_0 > -1, w_a < 0$, drifting toward $-1$) is the direct signature of parent accretion density dilution over cosmic time ($w(z) = -1 + \frac{4G}{3 c^3}\dot{M}(z)$).
 
 ---
-
 

@@ -107,11 +107,11 @@ $$E^{\text{DNA}}(t) = \Psi[ E^{\text{DNA}}(0); \; \{\mathcal{O}_{\text{transcrip
 In a hypernova or Gamma-Ray Burst (GRB) catastrophe, the continuum mechanics cleanly separates into two distinct engines:
 
 1. **Engine 1: The Progenitor Nuclear Core ($r = 0, t = 0$):**
-   * Releases $\Delta \mathcal{G}_{\text{nuclear/grav}} \sim 10^{44} - 10^{47} \, \text{J}$ and collapses into a black hole/singularity at $t = 0$.
-   * Extracts zero work from distant targets ($W_{\text{core}} = 0$). Distant planetary targets are *not* fuel for this dead progenitor engine.
+* Releases $\Delta \mathcal{G}_{\text{nuclear/grav}} \sim 10^{44} - 10^{47} \, \text{J}$ and collapses into a black hole/singularity at $t = 0$.
+* Extracts zero work from distant targets ($W_{\text{core}} = 0$). Distant planetary targets are *not* fuel for this dead progenitor engine.
 2. **Engine 2: The Expanding Supernova Remnant ($\mathbb{S}_{\text{remnant}}(t)$):**
-   * The forward-and-reverse shock wave advancing across the interstellar medium for $10^3 - 10^5$ years is an **open, non-equilibrium macro-scale dissipative engine**.
-   * It requires continuous mass-loading of cold ambient matter ($\mathbf{J}_{\text{matter\_in}}$) to generate the reverse shock, amplify magnetic fields, and sustain multi-millennial synchrotron emission $\mathbf{J}_S^{\text{remnant}}$.
+* The forward-and-reverse shock wave advancing across the interstellar medium for $10^3 - 10^5$ years is an **open, non-equilibrium macro-scale dissipative engine**.
+* It requires continuous mass-loading of cold ambient matter ($\mathbf{J}_{\text{matter\_in}}$) to generate the reverse shock, amplify magnetic fields, and sustain multi-millennial synchrotron emission $\mathbf{J}_S^{\text{remnant}}$.
 
 ### 6.2 Framework Mapping
 

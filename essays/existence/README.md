@@ -50,20 +50,20 @@ To allow domain specialists to explore specific applications without wading thro
 ## 📐 Core Theoretical Architecture of the Framework
 
 1. **Axiomatic Spacetime & Cosmological Black Hole Embedding (§1):**
-   - 4D Lorentzian manifold $(\mathcal{M}, g_{\mu\nu})$ and complexified state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$ equipped with canonical Kähler volume measure $d\mu_h$.
-   - **Schwarzschild-Hubble Horizon Identity:** $R_s(M_{\text{Hubble}}) = \frac{2GM}{c^2} \equiv R_{\text{Hubble}} = \frac{c}{H_0} \approx 1.37 \times 10^{26} \, \mathrm{m}$ and holographic Gibbons-Hawking entropy $S_{\text{GH}} \approx 10^{122} \, k_B$.
-   - Non-singular Einstein-Cartan spin-torsion bounce at $a_{\text{min}} > 0$ and open relativistic Bondi accretion $\dot{M}_{\text{accrete}} \ge 0$ fueling cosmic expansion.
+- 4D Lorentzian manifold $(\mathcal{M}, g_{\mu\nu})$ and complexified state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$ equipped with canonical Kähler volume measure $d\mu_h$.
+- **Schwarzschild-Hubble Horizon Identity:** $R_s(M_{\text{Hubble}}) = \frac{2GM}{c^2} \equiv R_{\text{Hubble}} = \frac{c}{H_0} \approx 1.37 \times 10^{26} \, \mathrm{m}$ and holographic Gibbons-Hawking entropy $S_{\text{GH}} \approx 10^{122} \, k_B$.
+- Non-singular Einstein-Cartan spin-torsion bounce at $a_{\text{min}} > 0$ and open relativistic Bondi accretion $\dot{M}_{\text{accrete}} \ge 0$ fueling cosmic expansion.
 2. **Boundary Kinematics, Projection & Expression (§2):**
-   - Relativistic Lorentz-bounded level-set propagation: $\mathbf{v}_n = \frac{c \kappa \phi}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2}} \hat{n} \implies \|\mathbf{v}_n\| < c$.
-   - **Dual Projection Operator ($\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
-   - **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$).
-   - **Axiomatic Life Definition & Horizon Duality (Theorem 6B):** Proving that $\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})$.
-   - **The Operator Temporal Triad (Theorem 6C):** $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ with Doob forward martingale convergence and Blackwell-Rao minimal-variance estimation.
+- Relativistic Lorentz-bounded level-set propagation: $\mathbf{v}_n = \frac{c \kappa \phi}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2}} \hat{n} \implies \|\mathbf{v}_n\| < c$.
+- **Dual Projection Operator ($\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
+- **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$).
+- **Axiomatic Life Definition & Horizon Duality (Theorem 6B):** Proving that $\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})$.
+- **The Operator Temporal Triad (Theorem 6C):** $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ with Doob forward martingale convergence and Blackwell-Rao minimal-variance estimation.
 3. **Resilience, Multi-Tier Stability & Degenerate Limits (§3–§4):**
-   - 4-Tier classification: Tier I ($\chi^* = 0$, Reactive), Tier II ($\chi^* \in (0, 1)$, Metabolic), Tier III ($\chi^* \approx 1$, Cognitive), Tier IV ($\chi^* > 1$, Collective).
-   - Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ($\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$).
-   - Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ($L_{ij} = L_{ji}$).
+- 4-Tier classification: Tier I ($\chi^* = 0$, Reactive), Tier II ($\chi^* \in (0, 1)$, Metabolic), Tier III ($\chi^* \approx 1$, Cognitive), Tier IV ($\chi^* > 1$, Collective).
+- Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ($\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$).
+- Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ($L_{ij} = L_{ji}$).
 4. **Continuum Biophysics & Multi-Scale Syncytia (§5):**
-   - Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
-   - Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
-   - Closed syncytial circuit electrostatics and continuous bio-electric pattern homeostasis.
+- Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
+- Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
+- Closed syncytial circuit electrostatics and continuous bio-electric pattern homeostasis.

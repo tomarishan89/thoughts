@@ -31,13 +31,13 @@ Let $(\mathcal{M}, g_{\mu\nu})$ be a 4D Lorentzian spacetime manifold, and let $
 $$\boxed{\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfrak{Im}}^i(t)}$$
 
 ### Mathematical Properties:
-1. **Non-Emptiness & Scale Invariance:**  
-   For any temporal domain $T_{\text{active}} \subseteq T$ where at least one entity persists ($\exists E^i(t) \neq \emptyset$), the master matrix $\mathcal{D}_T$ is strictly non-empty:
+1. **Non-Emptiness & Scale Invariance:**
+For any temporal domain $T_{\text{active}} \subseteq T$ where at least one entity persists ($\exists E^i(t) \neq \emptyset$), the master matrix $\mathcal{D}_T$ is strictly non-empty:
 
 $$\Big( \forall t \in T_{\text{active}}, \; \exists E^i(t) \neq \emptyset \Big) \implies \mathcal{D}_T \neq \emptyset \quad \text{and} \quad \lim_{|T_{\text{active}}| \to \infty} \mu(\mathcal{D}_T) = \infty$$
 
-2. **Totality of Conservation Laws:**  
-   $\mathcal{D}_T$ represents the comprehensive space of all physically viable, dissipative, and non-equilibrium solutions that permit bounded order to resist entropic dissolution across the universe.
+2. **Totality of Conservation Laws:**
+$\mathcal{D}_T$ represents the comprehensive space of all physically viable, dissipative, and non-equilibrium solutions that permit bounded order to resist entropic dissolution across the universe.
 
 ---
 
@@ -60,7 +60,7 @@ $$\Big( \forall t \in T_{\text{active}}, \; \exists E^i(t) \neq \emptyset \Big) 
 1. **Universal Matrix ($\mathcal{D}_T$):** The infinite set-theoretic union of all operational principles across all scales and epochs.
 2. **Localized Entity ($E^i$):** A finite locus with bounded spatial and phase-space measure ($\mu(E^i(t)) < \infty$).
 3. **The Logical Fallacy:** The assertion *"I practice / embody Sanatan Dharm"* commits a category error identical to a single electron declaring:
-   > *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
+> *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
 
 An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
 
@@ -83,12 +83,12 @@ graph TD
     D -->|"Physical Inscription"| A
 ```
 
-1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**  
-   The immutable, physical record of past interactions inscribed in real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, rock stratigraphy).
-2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**  
-   The universal broadcast operator emitting real mechanical traction ($\hat{\mathbf{P}}_{\mathbb{R}}$) and unmanifest anticipatory wavefunctional fields ($\hat{\mathbf{P}}_{\mathfrak{Im}}$) into the forward lightcone $J^+(E)$.
-3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**  
-   The interfacial boundary realization collapsing unmanifest imaginary field amplitude into real physical traction, chemical flux, and work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while writing new historical traces into $\mathcal{F}_{\text{ledger}}$.
+1. **The Ledger of the Past ($\mathcal{F}_{\text{ledger}}$ / *Smṛti*):**
+The immutable, physical record of past interactions inscribed in real configuration space $\Omega_{\mathbb{R}}$ (e.g., DNA nucleotide sequences, synaptic weight distributions, epigenetic methylation, rock stratigraphy).
+2. **The Dual Projection of the Future ($\hat{\mathbf{P}}$ / *Prakṣepaṇa*):**
+The universal broadcast operator emitting real mechanical traction ($\hat{\mathbf{P}}_{\mathbb{R}}$) and unmanifest anticipatory wavefunctional fields ($\hat{\mathbf{P}}_{\mathfrak{Im}}$) into the forward lightcone $J^+(E)$.
+3. **The Expression of the Present ($\boldsymbol{\mathcal{X}}$ / *Prakāśa* / *Abhivyakti*):**
+The interfacial boundary realization collapsing unmanifest imaginary field amplitude into real physical traction, chemical flux, and work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{absorbed}} + \mathcal{X}_{\text{reflected}}$) while writing new historical traces into $\mathcal{F}_{\text{ledger}}$.
 
 ---
 

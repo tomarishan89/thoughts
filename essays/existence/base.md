@@ -63,12 +63,12 @@ Consider an escalating kinetic or acoustic challenge vector ($\mathcal{C}$) dire
 
 ### Operational Distinction:
 1. **Static / Passive Resistance (The Brick Wall):**
-   * The wall’s factors (molecular cohesion, material shear strength, brick density) operate strictly via Newtonian mechanics.
-   * It possesses no sensory feedback loops, information storage, or spatial mobility. It offers fixed resistance at time $t$ until the energy of $\mathcal{C}$ exceeds its material yield stress on its weakest interface (e.g., mortar bonding), resulting in catastrophic structural failure (fracture into physical rubble).
+* The wall’s factors (molecular cohesion, material shear strength, brick density) operate strictly via Newtonian mechanics.
+* It possesses no sensory feedback loops, information storage, or spatial mobility. It offers fixed resistance at time $t$ until the energy of $\mathcal{C}$ exceeds its material yield stress on its weakest interface (e.g., mortar bonding), resulting in catastrophic structural failure (fracture into physical rubble).
 
 2. **Active / Adaptive Resistance (The Human Organism):**
-   * The human organism possesses sensory interfaces (auditory/visual nerves) and locomotive apparatus (musculature).
-   * When exposed to high acoustic or kinetic energy, sensory factors detect the perturbation *before* mechanical yield occurs. The human executes a behavioral adjustment—stepping back—altering their spatial coordinates to neutralize the challenge vector $\mathcal{C}$ before structural collapse occurs.
+* The human organism possesses sensory interfaces (auditory/visual nerves) and locomotive apparatus (musculature).
+* When exposed to high acoustic or kinetic energy, sensory factors detect the perturbation *before* mechanical yield occurs. The human executes a behavioral adjustment—stepping back—altering their spatial coordinates to neutralize the challenge vector $\mathcal{C}$ before structural collapse occurs.
 
 ---
 
@@ -95,9 +95,9 @@ This explains why targeted, low-magnitude challenges matching a system's interna
 ### 3.2 The Front Margin Delta ($\Delta \mathbf{R}$) and Dynamic Operational Extent
 An entity does not face stress as a scalar uniform lump. It interacts along specific boundary interfaces called **Fronts ($f_k$)**.
 
-Let $E_t^i$ denote a specific form of existence at time $t$.  
-Let $\mathcal{C}_t^i(f_k)$ denote the Contest interrogating front $f_k$.  
-Let $\mathbf{R}_t^i(f_k)$ denote the vector resistance offered by the entity's factor set on front $f_k$.  
+Let $E_t^i$ denote a specific form of existence at time $t$.
+Let $\mathcal{C}_t^i(f_k)$ denote the Contest interrogating front $f_k$.
+Let $\mathbf{R}_t^i(f_k)$ denote the vector resistance offered by the entity's factor set on front $f_k$.
 Let $\mathbf{R}_{\text{min}}(f_k)$ denote the minimum required resistance threshold to prevent failure on front $f_k$.
 
 We define the **Front Margin Delta ($\Delta \mathbf{R}$)**:
@@ -149,7 +149,7 @@ $$\partial E_t^i = \bigcup_{k \in \text{Fronts}} \Big\{ f_k \;\Big|\; \mathbf{R}
 ### 4.1 The Predictive Perception Engine ($\mathcal{P}$)
 Living, cognitive, and social systems do not merely react at the moment of physical collision. They execute an internal **Predictive Perception Engine ($\mathcal{P}$)** that calculates the delta between present state and projected future state.
 
-Let $\mathcal{S}_{\text{current}}$ be the observed state at time $t$.  
+Let $\mathcal{S}_{\text{current}}$ be the observed state at time $t$.
 Let $\hat{\mathcal{S}}_{t+\Delta t}$ be the projected state calculated by extrapolating ledger records into the future.
 
 $$\text{Perception Operator: } \mathcal{P}_t = \text{Evaluate}\left(\hat{\mathcal{S}}_{t+\Delta t} - \mathcal{S}_{\text{current}}\right)$$
@@ -214,7 +214,7 @@ $$\text{Tier 4 Boundary Sustained: } P_{\text{system}}(t) = \prod_{k \in \text{E
 
 1. **Passive Decoupling (Atrophy):** Environmental drift or lack of interaction causes functional recognition $P(\mathcal{V}_k)$ to fade gradually below threshold $\Theta$. The invisible network architecture simply evaporates into thin air, leaving physical human nodes standing unharmed biologically but informationally disconnected.
 2. **Active Rupture (Revolt / Divorce / Oncogenesis):** A constituent sub-locus ($E^{\text{sub}}$) observes that the higher-order structure ($\mathbb{S}$) generates a negative margin ($\Delta \mathbf{R} < 0$). To prevent its own localized collapse, $E^{\text{sub}}$ deploys an **Active Counter-Contest ($\mathcal{C}_{\text{counter}}$)** to intentionally sever the boundary of $\mathbb{S}$.
-   * *Scale Invariance:* At Tier 2, cancer (oncogenesis) is an active counter-contest where a mutated cell line severs compliance with host regulatory boundaries to maximize its localized margins, eventually causing secondary host collapse. At Tier 4, a political revolution or divorce is an active counter-contest where constituent human nodes sever compliance with a failing state or marriage.
+* *Scale Invariance:* At Tier 2, cancer (oncogenesis) is an active counter-contest where a mutated cell line severs compliance with host regulatory boundaries to maximize its localized margins, eventually causing secondary host collapse. At Tier 4, a political revolution or divorce is an active counter-contest where constituent human nodes sever compliance with a failing state or marriage.
 
 ---
 
