@@ -1131,7 +1131,7 @@ arrowprops=dict(facecolor='black', shrink=0.05, width=1, headwidth=6),
 fontsize=10, bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="gray", lw=1))
 
 # Plot 2: Total S
-ax2.plot(log_t, S_total, color=color2, linewidth=2.5, label=r'Total Accumulated Entropy ($S$)')
+ax2.plot(log_t, S_total, color=color2, linewidth=2.5, label=r'Total Accumulated Entropy ( $S$ )')
 ax2.set_xlabel('Star\'s Lifetime (Years, $\log_{10}$ Scale)', fontsize=12, fontweight='bold')
 ax2.set_ylabel('Total Entropy $S$ (Accumulated)', fontsize=12, fontweight='bold', color=color2)
 ax2.set_yscale('log')
@@ -1207,8 +1207,8 @@ c_total = '#1F4E78' # Deep navy blue
 # --- PANEL 1: RATE OF CHANGE (dS/dt) ---
 ax1.plot(log_t, ds_dt, color=c_rate, linewidth=2.5, label=r'Rate of Entropy Change $\left(\frac{dS}{dt}\right)$')
 ax1.set_yscale('log')
-ax1.set_ylabel(r'Entropy Rate $\frac{dS}{dt}$ ($\mathrm{J \cdot K^{-1} \cdot s^{-1}}$)', fontsize=11, fontweight='bold', color=c_rate)
-ax1.set_title("Stellar Evolution: Entropy Rate of Change $\left(\\frac{dS}{dt}\\right)$ vs. Total Accumulated Entropy ($S$)", fontsize=13, fontweight='bold', pad=14)
+ax1.set_ylabel(r'Entropy Rate $\frac{dS}{dt}$ ( $\mathrm{J \cdot K^{-1} \cdot s^{-1}}$ )', fontsize=11, fontweight='bold', color=c_rate)
+ax1.set_title("Stellar Evolution: Entropy Rate of Change $\left(\\frac{dS}{dt}\\right)$ vs. Total Accumulated Entropy ( $S$ )", fontsize=13, fontweight='bold', pad=14)
 ax1.grid(True, which="both", linestyle=':', alpha=0.5)
 ax1.tick_params(axis='y', labelcolor=c_rate)
 
@@ -1222,10 +1222,10 @@ arrowprops=dict(facecolor='black', shrink=0.08, width=1, headwidth=5),
 fontsize=9.5, fontweight='bold', bbox=dict(boxstyle="round,pad=0.3", fc="#f0f0f0", ec=c_rate, lw=1.2))
 
 # --- PANEL 2: TOTAL ACCUMULATED ENTROPY (S) ---
-ax2.plot(log_t, S_total, color=c_total, linewidth=2.5, label=r'Total Entropy ($S$)')
+ax2.plot(log_t, S_total, color=c_total, linewidth=2.5, label=r'Total Entropy ( $S$ )')
 ax2.set_yscale('log')
 ax2.set_xlabel('Star\'s Lifetime (Years, $\log_{10}$ Scale)', fontsize=11, fontweight='bold')
-ax2.set_ylabel(r'Total Accumulated Entropy $S$ ($\mathrm{J \cdot K^{-1}}$)', fontsize=11, fontweight='bold', color=c_total)
+ax2.set_ylabel(r'Total Accumulated Entropy $S$ ( $\mathrm{J \cdot K^{-1}}$ )', fontsize=11, fontweight='bold', color=c_total)
 ax2.grid(True, which="both", linestyle=':', alpha=0.5)
 ax2.tick_params(axis='y', labelcolor=c_total)
 

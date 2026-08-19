@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary & Batch Trajectory Assessment
 
-Across Iterations 53 through 62, the manuscript underwent an extensive, ten-stage microscopic hardening loop. Every mathematical operator, field-theoretic boundary condition, and stochastic process introduced during the structural extension of Projection ($\hat{\mathbf{P}}$), Challenge ($\mathbf{C}$), and Interfacial Realization ($\boldsymbol{\mathcal{X}}$) was systematically resolved down to exact continuum and non-equilibrium thermodynamic closure limits.
+Across Iterations 53 through 62, the manuscript underwent an extensive, ten-stage microscopic hardening loop. Every mathematical operator, field-theoretic boundary condition, and stochastic process introduced during the structural extension of Projection ( $\hat{\mathbf{P}}$ ), Challenge ( $\mathbf{C}$ ), and Interfacial Realization ( $\boldsymbol{\mathcal{X}}$ ) was systematically resolved down to exact continuum and non-equilibrium thermodynamic closure limits.
 
 A total of **40 new microscopic milestones (ISSUES 6.249 through 6.288)** were rigorously formulated, verified for dimensional homogeneity, subjected to substitution stress-testing, and embedded into the canonical text of `draft.md` and `issues_log.md`.
 

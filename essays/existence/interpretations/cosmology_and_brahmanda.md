@@ -43,7 +43,7 @@ The cosmic boundary of our observable universe is mathematically identical to th
 
 ## 2. The Horizon Duality Theorem (Theorem 6B)
 
-Under Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion physics, the Big Bang was not an ex-nihilo singularity, but a **torsional bounce** occurring at trans-nuclear density inside a parent black hole ($a_{\text{min}} > 0$).
+Under Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion physics, the Big Bang was not an ex-nihilo singularity, but a **torsional bounce** occurring at trans-nuclear density inside a parent black hole ( $a_{\text{min}} > 0$ ).
 
 $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
 
@@ -52,13 +52,13 @@ $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\
 | Category | State Space $\Omega$ | Boundary Interface $\partial E$ | Energy Transfer $\dot{E}_{\text{fuel}}$ | Asymptotic Fate |
 | :--- | :--- | :--- | :--- | :--- |
 | **Inert Matter (*Jaḍa*)** | Real Space $\Omega_{\mathbb{R}}$ | Static interatomic lattice | $\dot{E}_{\text{fuel}} = 0$, bound by $U_{\text{bond}}$ | Ground state / mechanical erosion |
-| **Closed Universe ($\mathcal{U}_{\text{closed}}$)** | Isolated $\mathbb{R}^4$ | No boundary ($\partial \mathcal{U} = \emptyset$) | $\dot{E}_{\text{fuel}} \equiv 0$ (Strictly isolated) | Irreversible maximum-entropy thermal death |
-| **Black Hole Universe ($\mathcal{U}_{\text{BH}}$)** | Open Lorentzian $(\mathcal{M}, g)$ | Null Hubble Horizon $\mathcal{H}_H$ | $\dot{M}_{\text{accrete}} \ge 0$ (Trans-horizon influx) | Continuous open non-equilibrium evolution |
-| **Living Organism (*Jīva*)** | Complex Space $\Omega_{\mathbb{C}}$ | Active lipid/cellular cortex $\partial E$ | $\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$ (Metabolic harvest) | Active non-equilibrium homeostasis ($\phi \ge 0$) |
+| **Closed Universe ( $\mathcal{U}_{\text{closed}}$ )** | Isolated $\mathbb{R}^4$ | No boundary ( $\partial \mathcal{U} = \emptyset$ ) | $\dot{E}_{\text{fuel}} \equiv 0$ (Strictly isolated) | Irreversible maximum-entropy thermal death |
+| **Black Hole Universe ( $\mathcal{U}_{\text{BH}}$ )** | Open Lorentzian $(\mathcal{M}, g)$ | Null Hubble Horizon $\mathcal{H}_H$ | $\dot{M}_{\text{accrete}} \ge 0$ (Trans-horizon influx) | Continuous open non-equilibrium evolution |
+| **Living Organism (*Jīva*)** | Complex Space $\Omega_{\mathbb{C}}$ | Active lipid/cellular cortex $\partial E$ | $\dot{E}_{\text{fuel}} \ge T_{\text{amb}}\dot{S}_{\text{gen}}$ (Metabolic harvest) | Active non-equilibrium homeostasis ( $\phi \ge 0$ ) |
 
 ---
 
-## 3. Thermodynamic Proof of Cosmic Expansion ($\dot{a}(t) > 0$)
+## 3. Thermodynamic Proof of Cosmic Expansion ( $\dot{a}(t) > 0$ )
 
 Cosmic metric expansion is derived as a mandatory consequence of the Generalized Second Law of Thermodynamics:
 
@@ -70,7 +70,7 @@ $$S_{\text{GH}}(t) = \frac{k_B \pi c^5}{G \hbar H(t)^2} = \mathbf{2.888 \times 1
 
 $$\dot{S}_{\text{GH}}(t) = -\frac{2\pi k_B c^5}{G \hbar H(t)^3} \dot{H}(t) \ge 0 \iff \dot{H}(t) \le 0 \implies \boxed{\dot{a}(t) > 0 \quad \forall t > t_{\text{bounce}}}$$
 
-*A static or contracting universe destroys horizon area ($\dot{S}_{\text{GH}} < 0$), violating the Second Law.*
+*A static or contracting universe destroys horizon area ( $\dot{S}_{\text{GH}} < 0$ ), violating the Second Law.*
 
 ---
 
@@ -81,7 +81,7 @@ Differentiating the enclosed horizon mass $M_H(t) = \frac{c^3}{2 G H(t)}$ yields
 $$\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2 G} (1 + q(t))$$
 
 * **Maximum Relativistic Flow Constant:** $\frac{c^3}{2 G} = 2.0177 \times 10^{35} \, \mathrm{kg/s} = 101,472 \, M_\odot/\mathrm{s}$.
-* **Current Epoch Influx ($q_0 \approx -0.527$, $1+q_0 = 0.473 = \frac{3}{2}\Omega_m$):**
+* **Current Epoch Influx ( $q_0 \approx -0.527$, $1+q_0 = 0.473 = \frac{3}{2}\Omega_m$ ):**
 
 $$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \text{second}} = \mathbf{1.514 \times 10^{12} \, M_\odot / \text{year}}}$$
 
@@ -112,7 +112,7 @@ $$\boxed{\dot{M}_{\text{accrete}}(t_0) = \mathbf{47,991 \pm 350 \, M_\odot / \te
 
 $$\Lambda \equiv \frac{3\Omega_\Lambda}{R_H^2} = \mathbf{1.0906 \times 10^{-52} \, m^{-2}} \quad (\text{Planck 2018: } 1.1056 \times 10^{-52} \, \mathrm{m^{-2}})$$
 
-$\Lambda$ is not a trans-Planckian quantum vacuum summation ($M_{\text{Planck}}^4$), but the **infrared (IR) holographic surface curvature of the cosmic horizon ($R_H^{-2}$)**.
+$\Lambda$ is not a trans-Planckian quantum vacuum summation ( $M_{\text{Planck}}^4$ ), but the **infrared (IR) holographic surface curvature of the cosmic horizon ( $R_H^{-2}$ )**.
 2. **Galactic Acceleration Scale & Tully-Fisher Law:**
 
 $$a_0 \equiv \frac{c H_0}{2\pi} = \mathbf{1.0422 \times 10^{-10} \, m/s^2} \quad (\text{SPARC Data: } 1.20 \times 10^{-10} \, \mathrm{m/s^2})$$
@@ -123,8 +123,8 @@ $$v_{\text{flat}}^{\text{MW}} = \left( G M_{\text{baryon}} a_0 \right)^{1/4} = \
 
 ## 6. Cosmic Chronology, Lifespan & DESI 2024 Dynamical Dark Energy
 
-### 1. Present Age ($t_0 \approx 13.79 \, \text{Gyr}$): The Logarithmic Growth Time
-Rather than expanding from a mathematical singularity, the *Brahmāṇḍa* universe grows via continuous Bondi accretion from a Planck seed mass ($M_{\text{seed}} \sim M_{\text{Planck}}$) across its Schwarzschild-Hubble horizon:
+### 1. Present Age ( $t_0 \approx 13.79 \, \text{Gyr}$ ): The Logarithmic Growth Time
+Rather than expanding from a mathematical singularity, the *Brahmāṇḍa* universe grows via continuous Bondi accretion from a Planck seed mass ( $M_{\text{seed}} \sim M_{\text{Planck}}$ ) across its Schwarzschild-Hubble horizon:
 
 $$t_0 = \int_{M_{\text{Planck}}}^{M_0} \frac{2G}{c^2 \, \dot{M}_{\text{accrete}}(M)} \, dM \approx \tau_{\text{Hubble}} \ln\left(\frac{M_0}{M_{\text{Planck}}}\right) \approx \mathbf{13.787 \pm 0.020 \times 10^9 \, \text{years}}$$
 
@@ -133,16 +133,16 @@ The rate of expansion and the deceleration parameter $q(t)$ are strictly determi
 
 $$\boxed{\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2G} (1 + q(t)) \quad \iff \quad \dot{H}(t) = -H^2(t) \left( 1 - \frac{2G \, \dot{M}_{\text{accrete}}(t)}{c^3} \right)}$$
 
-* **If Accretion Halts ($\dot{M} \to 0$):**
-Expansion does **not** stop. Instead, $q \to -1$, and the universe locks into an eternal, exponentially expanding de Sitter state ($a(t) \propto e^{H_\infty t}$) governed by static horizon surface tension $\Lambda_\infty = 3 / R_{\text{max}}^2$.
+* **If Accretion Halts ( $\dot{M} \to 0$ ):**
+Expansion does **not** stop. Instead, $q \to -1$, and the universe locks into an eternal, exponentially expanding de Sitter state ( $a(t) \propto e^{H_\infty t}$ ) governed by static horizon surface tension $\Lambda_\infty = 3 / R_{\text{max}}^2$.
 
-### 3. Ultimate Cosmic Lifespan ($\tau_{\text{lifespan}} \sim 10^{137} \, \text{years}$)
+### 3. Ultimate Cosmic Lifespan ( $\tau_{\text{lifespan}} \sim 10^{137} \, \text{years}$ )
 If the external parent universe cools to vacuum, the *Brahmāṇḍa* black hole universe will eventually evaporate via Hawking radiation:
 
 $$\tau_{\text{lifespan}} = \frac{5120 \pi G^2 M_0^3}{\hbar c^4} \approx \mathbf{1.06 \times 10^{137} \, \text{years}}$$
 
 ### 4. Empirical Validation: DESI 2024 Year-1 Observations
-Recent data from the **Dark Energy Spectroscopic Instrument (DESI 2024 Year 1)** indicates that Dark Energy is dynamical ($w_0 > -1, w_a < 0$, drifting toward $-1$). In the Black Hole Universe framework, this is a natural consequence of the dilution of parent accretion density over cosmic time:
+Recent data from the **Dark Energy Spectroscopic Instrument (DESI 2024 Year 1)** indicates that Dark Energy is dynamical ( $w_0 > -1, w_a < 0$, drifting toward $-1$ ). In the Black Hole Universe framework, this is a natural consequence of the dilution of parent accretion density over cosmic time:
 
 $$w(z) = -1 + \frac{4G}{3 c^3} \dot{M}_{\text{accrete}}(z)$$
 

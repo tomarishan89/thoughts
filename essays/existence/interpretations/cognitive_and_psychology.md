@@ -6,9 +6,9 @@
 
 ## 1. Tier III: Cognitive Agents as Complex Predictive Engines
 
-In [`draft.md` §2.3.4 & §4](../draft.md), a cognitive agent ($E \in T_{\text{III}}$) operates across complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
-* **Real Substrate ($\Omega_{\mathbb{R}}$):** Immediate somatic, motor, and neurochemical configurations.
-* **Imaginary Substrate ($\Omega_{\mathfrak{Im}}$):** Internal generative Bayesian models simulating counterfactual future trajectories ($\hat{\mathbf{C}}_{\text{future}}$).
+In [`draft.md` §2.3.4 & §4](../draft.md), a cognitive agent ( $E \in T_{\text{III}}$ ) operates across complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
+* **Real Substrate ( $\Omega_{\mathbb{R}}$ ):** Immediate somatic, motor, and neurochemical configurations.
+* **Imaginary Substrate ( $\Omega_{\mathfrak{Im}}$ ):** Internal generative Bayesian models simulating counterfactual future trajectories ( $\hat{\mathbf{C}}_{\text{future}}$ ).
 
 ```
                          THE COGNITIVE ENERGY ALLOCATION FORK
@@ -28,7 +28,7 @@ The dissipation required to survive an environmental shock is reduced by the mut
 
 $$\boxed{\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}\left( \hat{\mathbf{C}}_{\text{predicted}}; \, \mathbf{C}_{\text{future}} \right)}$$
 
-Pre-stiffening cognitive priors ($\mathbf{R}_{\text{active}}(t - \Delta t)$) reduces physical damage to near zero upon predictable impacts.
+Pre-stiffening cognitive priors ( $\mathbf{R}_{\text{active}}(t - \Delta t)$ ) reduces physical damage to near zero upon predictable impacts.
 
 ---
 
@@ -49,15 +49,15 @@ Living cognitive agents possess two distinct modes of interfacial actuation:
 ```
 
 1. **Involuntary Reflex (*Vāsanā / Saṃskāra*):**
-An automated feed-forward reflex arc where incoming challenge traction $\mathbf{C}$ directly triggers motor expression $\boldsymbol{\mathcal{X}}$ through pre-configured neural pathways ($\tau_{\text{latency}} \sim 10^{-2}\,\mathrm{s}$). Because no deliberative computation or state re-evaluation occurs, the Landauer informational entropy cost is zero ($\dot{\mathcal{H}} \approx 0$).
+An automated feed-forward reflex arc where incoming challenge traction $\mathbf{C}$ directly triggers motor expression $\boldsymbol{\mathcal{X}}$ through pre-configured neural pathways ( $\tau_{\text{latency}} \sim 10^{-2}\,\mathrm{s}$ ). Because no deliberative computation or state re-evaluation occurs, the Landauer informational entropy cost is zero ( $\dot{\mathcal{H}} \approx 0$ ).
 
 2. **Voluntary Discriminative Veto (*Viveka*):**
-The conscious intervention of the higher-order Dyson loop ($\mathcal{T} \exp(\int \hat{\mathcal{L}} d\tau)$), which inspects the automated trajectory and applies an active inhibitory gate ($\mathcal{O}_{\text{inhibit}}$) to prevent expression.
+The conscious intervention of the higher-order Dyson loop ( $\mathcal{T} \exp(\int \hat{\mathcal{L}} d\tau)$ ), which inspects the automated trajectory and applies an active inhibitory gate ( $\mathcal{O}_{\text{inhibit}}$ ) to prevent expression.
 * **The Landauer Metabolic Tax:** Erasing the automated motor command requires physical bit erasure, demanding continuous free-energy dissipation:
 
 $$\boxed{\dot{\mathcal{E}}_{\text{veto}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}_{\text{erasure}} > 0}$$
 
-* Exercising conscious restraint (*Viveka / Dama*) is physically exhausting because it consumes real biochemical glucose ($k_B T \ln 2$) to clear neural register buffers.
+* Exercising conscious restraint (*Viveka / Dama*) is physically exhausting because it consumes real biochemical glucose ( $k_B T \ln 2$ ) to clear neural register buffers.
 
 ---
 
@@ -75,7 +75,7 @@ A top-down simulation executed in imaginary phase space $\Omega_{\mathfrak{Im}}$
 
 $$D_{\mathfrak{Im}} = \hat{\pi}(\mathcal{F}_{\text{ledger}}) \xrightarrow{\text{simulation}} \Delta \hat{\mathcal{G}}_{\text{predicted}} > 0$$
 
-*Kāma* occurs when the cognitive model recalls past reward states from $\mathcal{F}_{\text{ledger}}$ and projects an artificial free-energy surplus. This top-down prediction transduces downward into physical physiology via the Semantic Transduction Tensor ($\mathbf{C}_{\text{craving}} = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}$), generating visceral dopamine cascades and restlessness **even when fully satiated**.
+*Kāma* occurs when the cognitive model recalls past reward states from $\mathcal{F}_{\text{ledger}}$ and projects an artificial free-energy surplus. This top-down prediction transduces downward into physical physiology via the Semantic Transduction Tensor ( $\mathbf{C}_{\text{craving}} = \mathbf{K}_{\text{trans}} \cdot \nabla_\theta \mathcal{D}_{\text{KL}}$ ), generating visceral dopamine cascades and restlessness **even when fully satiated**.
 
 ---
 
@@ -96,14 +96,14 @@ In classical Sanskrit psychology, the *Ariṣaḍvarga* represents the six inner
 ```
 
 1. **Kāma (काम — Unbounded Imaginary Projection Overdrive):**
-Informational fuel allocation diverges ($\chi \to \infty \implies \dot{\mathcal{E}}_{\mathfrak{Im}} \to \dot{\mathcal{E}}_{\text{total}}, \dot{\mathcal{E}}_{\mathfrak{Re}} \to 0$). The entity expends all free energy simulating ungrounded imaginary prospects while the physical substrate starves into anergic boundary collapse.
+Informational fuel allocation diverges ( $\chi \to \infty \implies \dot{\mathcal{E}}_{\mathfrak{Im}} \to \dot{\mathcal{E}}_{\text{total}}, \dot{\mathcal{E}}_{\mathfrak{Re}} \to 0$ ). The entity expends all free energy simulating ungrounded imaginary prospects while the physical substrate starves into anergic boundary collapse.
 2. **Krodha (क्रोध — Explosive Over-Reactive Stress Discharge):**
-Internal counter-stress vastly exceeds external challenge ($\|\mathbf{R}_{\text{active}}\| \gg \|\mathbf{C}\|$). The localized stress concentration generates internal Rankine-Hugoniot shock waves that fracture the entity's own boundary from within.
+Internal counter-stress vastly exceeds external challenge ( $\|\mathbf{R}_{\text{active}}\| \gg \|\mathbf{C}\|$ ). The localized stress concentration generates internal Rankine-Hugoniot shock waves that fracture the entity's own boundary from within.
 3. **Lobha (लोभ — Parasitic Resource Hoarding):**
-A constituent node hoards fuel measure ($\mu(E^j) \uparrow$) while choking metabolic syncytial flux ($\mathbf{J}_{\text{metabolic}}^{j \to k} \to 0$). This starves neighboring nodes, triggering a localized ischemia cascade that collapses the macro-envelope.
+A constituent node hoards fuel measure ( $\mu(E^j) \uparrow$ ) while choking metabolic syncytial flux ( $\mathbf{J}_{\text{metabolic}}^{j \to k} \to 0$ ). This starves neighboring nodes, triggering a localized ischemia cascade that collapses the macro-envelope.
 4. **Moha (मोह — Perceptual Delusion / Model Inversion):**
-The generative model divergence explodes ($\|\hat{\mathbf{C}} - \mathbf{C}_{\text{true}}\| \to \infty$). The entity mistakes destructive threats for fuel sources, actively opening its boundary pores ($\mathbf{v}_n \cdot \hat{n} < 0$) to toxic foreign challenge fields.
+The generative model divergence explodes ( $\|\hat{\mathbf{C}} - \mathbf{C}_{\text{true}}\| \to \infty$ ). The entity mistakes destructive threats for fuel sources, actively opening its boundary pores ( $\mathbf{v}_n \cdot \hat{n} < 0$ ) to toxic foreign challenge fields.
 5. **Mada (मद — Hubristic Invulnerability / Zero-Challenge Prior):**
-The entity sets its predicted external challenge to zero ($\hat{\mathbf{C}} \equiv \mathbf{0}$), disarming its adaptive viscoelastic dampers ($\nu \to 0$). Upon the arrival of real environmental shocks, it undergoes catastrophic brittle fracture without damping.
+The entity sets its predicted external challenge to zero ( $\hat{\mathbf{C}} \equiv \mathbf{0}$ ), disarming its adaptive viscoelastic dampers ( $\nu \to 0$ ). Upon the arrival of real environmental shocks, it undergoes catastrophic brittle fracture without damping.
 6. **Mātsarya (मात्सर्य — Malicious Zero-Sum Trophic Sabotage):**
-An entity expends its own metabolic exergy solely to diminish a neighbor's margin ($\Delta \phi_{AB} < 0$), lowering total syncytial free energy and precipitating mutual systemic lysis.
+An entity expends its own metabolic exergy solely to diminish a neighbor's margin ( $\Delta \phi_{AB} < 0$ ), lowering total syncytial free energy and precipitating mutual systemic lysis.

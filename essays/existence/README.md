@@ -19,14 +19,14 @@ You can explore and query this research corpus interactively through Google Note
 
 | File | Type | Description |
 | :--- | :--- | :--- |
-| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), Schwarzschild-Hubble horizon embedding ($R_s \equiv R_H$), relativistic Bondi accretion, and the operator Temporal Triad ($\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$) with 292 closed proof milestones across 63 peer-review iterations. |
-| [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction ($\mathbf{K}_{\text{trans}}$), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), and indexing the 5 specialized domain modules below. |
+| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), Schwarzschild-Hubble horizon embedding ( $R_s \equiv R_H$ ), relativistic Bondi accretion, and the operator Temporal Triad ( $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ) with 292 closed proof milestones across 63 peer-review iterations. |
+| [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction ( $\mathbf{K}_{\text{trans}}$ ), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), and indexing the 5 specialized domain modules below. |
 | [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all 292 resolved theoretical milestones, mathematical proofs, and active downstream continuum-closure frontiers across 10 categories. |
 | [`review.md`](review.md) | **Peer Review & Defense Log** | Editorial feedback, referee verdicts, and adversarial stress-tests maintained under the Anti-Premature Closure Invariant. |
-| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations of cosmic expansion, mass accretion rate, Dark Energy ($\Lambda$), and Dark Matter ($a_0$). |
+| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations of cosmic expansion, mass accretion rate, Dark Energy ( $\Lambda$ ), and Dark Matter ( $a_0$ ). |
 | [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm: An Ontological, Information-Theoretic, and Set-Theoretic Working Hypothesis* — establishing the definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
 | [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains (subatomic hadrons, eukaryotic membranes, Roche limits, institutional governance). |
-| [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ($\sigma_S \ge 0$), non-equilibrium state flux ($\mathbf{J}_S$), and thermodynamic bounds. |
+| [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ( $\sigma_S \ge 0$ ), non-equilibrium state flux ( $\mathbf{J}_S$ ), and thermodynamic bounds. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
 | [`latex/`](latex/) | **LaTeX Source Suite** | Complete `.tex` manuscripts formatted with standard academic packages (`amsmath`, `amssymb`, `physics`, theorem environments) for all 8 papers. |
 | [`pdfs/`](pdfs/) | **Compiled PDFs** | Vector-rendered, publication-ready PDF documents generated with MathJax and academic typography. |
@@ -39,11 +39,11 @@ To allow domain specialists to explore specific applications without wading thro
 
 | Module File | Domain | Key Theoretical Focus |
 | :--- | :--- | :--- |
-| [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ($\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$). |
-| [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ($R_s \equiv R_H$), Horizon Duality, Dark Energy boundary tension, Bondi accretion ($48,000 \, M_\odot/\mathrm{s}$). |
+| [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ( $\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ). |
+| [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ( $R_s \equiv R_H$ ), Horizon Duality, Dark Energy boundary tension, Bondi accretion ( $48,000 \, M_\odot/\mathrm{s}$ ). |
 | [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium ("I Am a Universe"), Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
-| [`cognitive_and_psychology.md`](interpretations/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ($\chi^* \approx 1$), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
-| [`societal_and_institutional.md`](interpretations/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ($\chi^* > 1$), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
+| [`cognitive_and_psychology.md`](interpretations/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ( $\chi^* \approx 1$ ), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
+| [`societal_and_institutional.md`](interpretations/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ( $\chi^* > 1$ ), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
 
 ---
 
@@ -55,14 +55,14 @@ To allow domain specialists to explore specific applications without wading thro
 - Non-singular Einstein-Cartan spin-torsion bounce at $a_{\text{min}} > 0$ and open relativistic Bondi accretion $\dot{M}_{\text{accrete}} \ge 0$ fueling cosmic expansion.
 2. **Boundary Kinematics, Projection & Expression (§2):**
 - Relativistic Lorentz-bounded level-set propagation: $\mathbf{v}_n = \frac{c \kappa \phi}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2}} \hat{n} \implies \|\mathbf{v}_n\| < c$.
-- **Dual Projection Operator ($\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
-- **Interfacial Expression Operator ($\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ($\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$).
+- **Dual Projection Operator ( $\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$ ):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
+- **Interfacial Expression Operator ( $\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$ ):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ( $\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$ ).
 - **Axiomatic Life Definition & Horizon Duality (Theorem 6B):** Proving that $\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})$.
 - **The Operator Temporal Triad (Theorem 6C):** $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ with Doob forward martingale convergence and Blackwell-Rao minimal-variance estimation.
 3. **Resilience, Multi-Tier Stability & Degenerate Limits (§3–§4):**
-- 4-Tier classification: Tier I ($\chi^* = 0$, Reactive), Tier II ($\chi^* \in (0, 1)$, Metabolic), Tier III ($\chi^* \approx 1$, Cognitive), Tier IV ($\chi^* > 1$, Collective).
-- Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ($\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$).
-- Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ($L_{ij} = L_{ji}$).
+- 4-Tier classification: Tier I ( $\chi^* = 0$, Reactive), Tier II ( $\chi^* \in (0, 1)$, Metabolic), Tier III ( $\chi^* \approx 1$, Cognitive), Tier IV ( $\chi^* > 1$, Collective).
+- Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ( $\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$ ).
+- Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ( $L_{ij} = L_{ji}$ ).
 4. **Continuum Biophysics & Multi-Scale Syncytia (§5):**
 - Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
 - Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
