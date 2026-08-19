@@ -207,7 +207,11 @@ Multiplying steady-state deviatoric stress by shear strain rate and hydrostatic 
 
 $$\boxed{\dot{w}_{\text{maint}} = \dot{w}_{\text{shear}} + \dot{w}_{\text{bulk}} = \frac{\mathbf{s}_0 : \mathbf{s}_0}{2\nu_{\text{shear}}} + \frac{[\frac{1}{3}\mathrm{Tr}(\boldsymbol{\sigma}_0)]^2}{\zeta_{\text{bulk}}} = \frac{\sigma_{\mathrm{vM}}^2\left(\mathbf{s}_0\right)}{3 \nu_{\text{shear}}} + \frac{[ \mathrm{Tr} \left(\boldsymbol{\sigma}_0\right) ]^2}{9 \zeta_{\text{bulk}}} \quad [\frac{\mathrm{W}}{\mathrm{m^3}}]}$$
 
-Integrating over the entity's volume yields the total steady-state maintenance power $\dot{\mathcal{W}}_{\text{maint}} = \int_E \left( \frac{\sigma_{\mathrm{vM}}^2(\mathbf{s}_0)}{3\nu_{\text{shear}}} + \frac{[\mathrm{Tr}(\boldsymbol{\sigma}_0)]^2}{9\zeta_{\text{bulk}}} \right) dV \in [\mathrm{W}]$, capturing both shear resistance and hydrostatic confinement / turgor pressure dissipation ( $P_0 = -\frac{1}{3}\mathrm{Tr}(\boldsymbol{\sigma}_0)$ ).
+Integrating over the entity's volume yields the total steady-state maintenance power:
+
+$$\boxed{\dot{\mathcal{W}}_{\text{maint}} = \int_E \left( \frac{\sigma_{\mathrm{vM}}^2(\mathbf{s}_0)}{3\nu_{\text{shear}}} + \frac{[ \mathrm{Tr}(\boldsymbol{\sigma}_0) ]^2}{9\zeta_{\text{bulk}}} \right) dV \quad [\mathrm{W}]}$$
+
+capturing both shear resistance and hydrostatic confinement / turgor pressure dissipation ( $P_0 = -\frac{1}{3}\mathrm{Tr}(\boldsymbol{\sigma}_0)$ ).
 
 ---
 
@@ -215,11 +219,23 @@ Integrating over the entity's volume yields the total steady-state maintenance p
 1. **Physical Semi-Group ( $\mathcal{M}_t$ in $\Omega_{\mathbb{R}}$ ):**
 Because physical viscosity produces strictly positive volumetric entropy ( $\Phi_{\text{viscous}} = 2\nu (\dot{\boldsymbol{\varepsilon}}:\dot{\boldsymbol{\varepsilon}}) > 0$ ), physical state evolution in real space $\Omega_{\mathbb{R}}$ is an **irreversible dynamical semi-group** $\mathcal{M}_t$ ( $t \ge 0$ ). Backward physical time $\mathcal{M}_{-t}$ is strictly forbidden by the Second Law of Thermodynamics.
 2. **Algorithmic State Inversion ( $\mathcal{R}_{\sigma, \Psi}$ in $\Omega_{\mathfrak{Im}}$ ):**
-While coherent quantum evolution follows the time-ordered Dyson series propagator $\mathcal{U}(t, t_0) = \mathcal{T} \exp\left(-\frac{i}{\hbar}\int_{t_0}^t \hat{H}_{\text{eff}}(\tau)d\tau\right) \equiv \sum_{n=0}^\infty \left(-\frac{i}{\hbar}\right)^n \int_{t_0}^t dt_1 \int_{t_0}^{t_1} dt_2 \dots \int_{t_0}^{t_{n-1}} dt_n \, \hat{H}_{\text{eff}}(t_1)\dots\hat{H}_{\text{eff}}(t_n)$, non-unitary GKSL Lindblad generators $\hat{\mathcal{L}}$ possess strictly dissipative decay spectra ( $\mathrm{Re}(\lambda_n) \le 0$ ), where naive exponential negation $-\hat{\mathcal{L}}$ induces unbounded, unphysical explosive growth ( $e^{+|\lambda_n|t} \to \infty$ ). State-trace reconstruction is executed as an **informational recovery in the Intrinsic Operator Algebra ( $D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$ )** via the **Petz Transpose Recovery Channel ( $\mathcal{R}_{\sigma, \Psi}$ )** (Petz, 1986; Barnum & Knill, 2002):
+While coherent quantum evolution follows the time-ordered Dyson series propagator:
+
+$$\mathcal{U}(t, t_0) = \mathcal{T} \exp\left(-\frac{i}{\hbar}\int_{t_0}^t \hat{H}_{\text{eff}}(\tau)d\tau\right) \equiv \sum_{n=0}^\infty \left(-\frac{i}{\hbar}\right)^n \int_{t_0}^t dt_1 \int_{t_0}^{t_1} dt_2 \dots \int_{t_0}^{t_{n-1}} dt_n \, \hat{H}_{\text{eff}}(t_1)\dots\hat{H}_{\text{eff}}(t_n)$$
+
+non-unitary GKSL Lindblad generators $\hat{\mathcal{L}}$ possess strictly dissipative decay spectra ( $\mathrm{Re}(\lambda_n) \le 0$ ), where naive exponential negation $-\hat{\mathcal{L}}$ induces unbounded, unphysical explosive growth ( $e^{+|\lambda_n|t} \to \infty$ ). State-trace reconstruction is executed as an **informational recovery in the Intrinsic Operator Algebra ( $D_{\mathfrak{Im}} \subset \Omega_{\mathfrak{Im}}$ )** via the **Petz Transpose Recovery Channel ( $\mathcal{R}_{\sigma, \Psi}$ )** (Petz, 1986; Barnum & Knill, 2002):
 
 $$\boxed{\hat{\rho}_E(0) = \mathcal{R}_{\sigma, \Psi}[ \hat{\rho}_E(t) ] \equiv \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \Psi(\hat{\sigma})^{-1/2} \, \hat{\rho}_E(t) \, \Psi(\hat{\sigma})^{-1/2} \right) \hat{\sigma}^{1/2} \overset{\Psi(\hat{\sigma})=\hat{\sigma}}{=} \hat{\sigma}^{1/2} \, \Psi^\dagger\left( \hat{\sigma}^{-1/2} \, \hat{\rho}_E(t) \, \hat{\sigma}^{-1/2} \right) \hat{\sigma}^{1/2}}$$
 
-(satisfying exact trace recovery $\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \iff D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma})) \iff D_\alpha(\hat{\rho} \parallel \hat{\sigma}) = D_\alpha(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma})) \; \forall \alpha \in (0, \infty) \iff \sigma_t^{\hat{\sigma}}(\mathrm{Alg}(D_{\mathfrak{Im}})) \subseteq \mathrm{Alg}(D_{\mathfrak{Im}}) \; \forall t \in \mathbb{R}$ for all states on the sufficiency subalgebra $\mathrm{Alg}(D_{\mathfrak{Im}})$ by the Takesaki-Petz-Jencova theorem with modular automorphism group $\sigma_t^{\hat{\sigma}}(A) \equiv \hat{\sigma}^{it} A \hat{\sigma}^{-it}$, with the Junge-Kraft-Renner-Sutter strengthened monotonicity bound $D(\hat{\rho} \parallel \hat{\sigma}) - D(\Psi[\hat{\rho}] \parallel \Psi[\hat{\sigma}]) \ge -\ln F(\hat{\rho}, \, \mathcal{R}_{\sigma, \Psi}[\Psi[\hat{\rho}]])$ establishing that relative entropy loss quantitatively bounds recovery infidelity), where for forward Kraus map $\Psi(\hat{\rho}) = \sum_k \hat{A}_k \hat{\rho} \hat{A}_k^\dagger$, the Petz channel has explicit Kraus representation $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \sum_k \hat{M}_k \hat{\rho} \hat{M}_k^\dagger$ with recovery operators $\hat{M}_k \equiv \hat{\sigma}^{1/2} \hat{A}_k^\dagger \hat{\sigma}^{-1/2}$ satisfying $\sum_k \hat{M}_k^\dagger \hat{M}_k = \mathbb{I}_{\mathrm{supp}(\hat{\sigma})}$ (confirming $\mathcal{R}_{\sigma, \Psi} \in \mathrm{CPTP}$ on $\mathrm{supp}(\hat{\sigma})$ ), and $\hat{\sigma}$ is the invariant reference state ( $\Psi(\hat{\sigma}) = \hat{\sigma}$ ). Exact recovery is funded by Landauer computational dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions:
+The Petz channel satisfies exact trace recovery:
+
+$$\mathcal{R}_{\sigma, \Psi}[\Psi(\hat{\rho})] = \hat{\rho} \iff D(\hat{\rho} \parallel \hat{\sigma}) = D(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma})) \iff D_\alpha(\hat{\rho} \parallel \hat{\sigma}) = D_\alpha(\Psi(\hat{\rho}) \parallel \Psi(\hat{\sigma})) \quad \forall \alpha \in (0, \infty)$$
+
+for all states on the sufficiency subalgebra $\mathrm{Alg}(D_{\mathfrak{Im}})$ by the Takesaki-Petz-Jencova theorem with modular automorphism group $\sigma_t^{\hat{\sigma}}(A) \equiv \hat{\sigma}^{it} A \hat{\sigma}^{-it}$. The Junge-Kraft-Renner-Sutter strengthened monotonicity bound:
+
+$$D(\hat{\rho} \parallel \hat{\sigma}) - D(\Psi[\hat{\rho}] \parallel \Psi[\hat{\sigma}]) \ge -\ln F\left(\hat{\rho}, \, \mathcal{R}_{\sigma, \Psi}[\Psi[\hat{\rho}]]\right)$$
+
+proves that relative entropy loss quantitatively bounds recovery infidelity. For forward Kraus map $\Psi(\hat{\rho}) = \sum_k \hat{A}_k \hat{\rho} \hat{A}_k^\dagger$, the Petz channel has explicit Kraus representation $\mathcal{R}_{\sigma, \Psi}[\hat{\rho}] = \sum_k \hat{M}_k \hat{\rho} \hat{M}_k^\dagger$ with recovery operators $\hat{M}_k \equiv \hat{\sigma}^{1/2} \hat{A}_k^\dagger \hat{\sigma}^{-1/2}$ satisfying $\sum_k \hat{M}_k^\dagger \hat{M}_k = \mathbb{I}_{\mathrm{supp}(\hat{\sigma})}$, confirming $\mathcal{R}_{\sigma, \Psi} \in \mathrm{CPTP}$ on $\mathrm{supp}(\hat{\sigma})$ with invariant reference state ( $\Psi(\hat{\sigma}) = \hat{\sigma}$ ). Exact recovery is funded by Landauer computational dissipation $\dot{\mathcal{E}}_{\mathfrak{Im}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}}) + \Delta \dot{\mathcal{I}}$ under laminar recovery conditions:
 
 $$\text{State-Trace Recoverable} \iff \begin{cases}
 \mathcal{R}e^* \equiv \frac{\|\text{Inertial Drift}\|}{\|\text{Viscous Binding}\|} < \mathcal{R}e_{\text{critical}} & \text{(Quasi-static state space; no turbulent scrambling)} \\
@@ -840,7 +856,15 @@ On dynamically curved boundary manifolds $(\mathcal{M}, g)$ with boundary $\part
 
 $$\boxed{\mathrm{ind}\left(\mathcal{D}_{\mathcal{A}}\right) \equiv \dim\ker\mathcal{D}_{\mathcal{A}} - \dim\ker\mathcal{D}_{\mathcal{A}}^\dagger = \int_{\mathcal{M}} [ \hat{A}(\mathcal{M}) \wedge \mathrm{ch}(\mathcal{E}) ]_{\text{top}} - \frac{\eta_{\text{APS}}(0) + \dim\ker(\mathcal{D}_{\partial\mathcal{M}})}{2} - \mathrm{CS}(A) = \mathcal{C}_{\text{Chern}} - \frac{\eta_{\text{APS}}(0) + h_0(\partial\mathcal{M})}{2} - \mathrm{CS}(A) \in \mathbb{Z}}$$
 
-(where $\eta_{\text{APS}}(0) \equiv \lim_{s\to 0}\sum_{\lambda\neq 0}\mathrm{sign}(\lambda)|\lambda|^{-s}$ is the boundary Dirac spectral asymmetry eta invariant obeying the adiabatic boundary variation formula $\delta \eta_{\text{APS}}(0) = \frac{1}{\pi}\int_{\partial\mathcal{M}}\mathrm{Tr}(\delta A \wedge F) - 2 \mathrm{SF}(\mathcal{D}_{\partial\mathcal{M}})$ with spectral flow $\mathrm{SF}(\mathcal{D}_{\partial\mathcal{M}})$ counting net zero-crossing eigenvalues during pore neck deformation, and $\mathrm{CS}(A) \equiv \frac{1}{4\pi}\int_{\partial\mathcal{M}}\mathrm{Tr} \left(A \wedge dA + \frac{2}{3}A \wedge A \wedge A\right)$ is the boundary Chern-Simons transgression form, reducing to classical Atiyah-Singer $\int_{\mathcal{M}} c_1(\mathcal{E}) = \mathcal{C}_{\text{Chern}}$ on closed manifolds $\partial\mathcal{M} = \emptyset$ ).
+where $\eta_{\text{APS}}(0)$ is the boundary Dirac spectral asymmetry eta invariant:
+
+$$\eta_{\text{APS}}(0) \equiv \lim_{s\to 0}\sum_{\lambda\neq 0}\mathrm{sign}(\lambda)|\lambda|^{-s}, \qquad \delta \eta_{\text{APS}}(0) = \frac{1}{\pi}\int_{\partial\mathcal{M}}\mathrm{Tr}(\delta A \wedge F) - 2 \mathrm{SF}(\mathcal{D}_{\partial\mathcal{M}})$$
+
+with spectral flow $\mathrm{SF}(\mathcal{D}_{\partial\mathcal{M}})$ counting net zero-crossing eigenvalues during pore neck deformation, and $\mathrm{CS}(A)$ is the boundary Chern-Simons transgression form:
+
+$$\mathrm{CS}(A) \equiv \frac{1}{4\pi}\int_{\partial\mathcal{M}}\mathrm{Tr} \left(A \wedge dA + \frac{2}{3}A \wedge A \wedge A\right)$$
+
+reducing to classical Atiyah-Singer $\int_{\mathcal{M}} c_1(\mathcal{E}) = \mathcal{C}_{\text{Chern}}$ on closed manifolds ( $\partial\mathcal{M} = \emptyset$ ).
 Concurrently, intracellular ion concentrations are strictly governed by macroscopic **Donnan Electroneutrality**. Because $z_{\text{protein}} < 0$, electroneutrality mathematically enforces $\sum_i c_i^{\text{internal}} > \sum_i c_i^{\text{external}}$. Combining macromolecular crowding (colloid oncotic pressure $\Pi_{\text{oncotic}}$ ) and solute-specific **Staverman reflection coefficients ( $\sigma_i \in [0, 1]$ )** via the Kedem-Katchalsky formulation (with conjugate solute flux $\mathbf{J}_s = \omega_s \Delta \pi_s + (1 - \sigma_s)\bar{c}_s \mathbf{J}_v$ ensuring Onsager reciprocal symmetry) with universal molar gas constant $R \equiv N_A k_B$:
 
 $$\boxed{\Delta P_{\text{osmotic}}(t) = R T [ \bar{\sigma}_{\text{ion}} \left(\frac{r_D(t) - 1}{r_D(t) + 1}\right) |z_{\text{protein}}| c_{\text{protein}}^{\text{molar}} + \sigma_{\text{protein}} c_{\text{protein}}^{\text{molar}} + \sum_k \sigma_k \Delta c_k^{\text{molar}} ] + \Pi_{\text{oncotic}} > 0 \quad [\mathrm{Pa}]}$$
@@ -859,7 +883,15 @@ During high-strain deformation, hydrocarbon acyl chain trans-to-gauche rotationa
 
 $$\boxed{\rho_{\text{bilayer}} c_p^{\text{membrane}} \frac{\partial T_{\text{membrane}}}{\partial t} = \nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T_{\text{membrane}}) + \boldsymbol{\sigma}_{\text{cortex}} : \dot{\boldsymbol{\varepsilon}} - \rho_{\text{lipid}}^{\text{molar}} \Delta H_{\text{trans}} \frac{\partial \phi_{\text{disorder}}}{\partial t} - \frac{T_{\text{membrane}} - T_{\text{cytosol}}}{h(t) R_K}}$$
 
-(where $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T) \equiv \frac{1}{\sqrt{\det g_{\mathcal{M}}}} \partial_i \left( \sqrt{\det g_{\mathcal{M}}} \, g_{\mathcal{M}}^{ij} k_{\text{thermal}} \partial_j T \right)$ is the covariant Laplace-Beltrami operator on the 2D curved cortex manifold $(\mathcal{M}, g_{\mathcal{M}})$ with thermal conductivity $k_{\text{thermal}} > 0$ ), where $\rho_{\text{lipid}}^{\text{molar}} \equiv \rho_{\text{bilayer}}/M_{\text{lipid}} \in [\mathrm{mol/m^3}]$ and $\phi_{\text{disorder}}(\sigma_{\text{hoop}}, T) \equiv [ 1 + \exp\left( -\frac{\Delta H_{\text{trans}}^{\text{molar}}\left(1 - \frac{T}{T_m}\right) - \Delta A_{\text{trans}}^{\text{molar}} \, \sigma_{\text{hoop}}(t) h(t)}{R T} \right) ]^{-1}$ (with $\Delta A_{\text{trans}}^{\text{molar}} \equiv N_A \Delta a_{\text{lipid}} \in [\mathrm{m^2/mol}]$ and universal gas constant $R \equiv N_A k_B \in [\mathrm{J/(mol\cdot K)}]$ ). Coupling cortical Kelvin-Voigt elasticity to 2D lipid fluid dissipation, the ultimate tensile strength obeys the **Cowper-Symonds Rate-Dependent Viscoplastic Yield Envelope**:
+where $\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T)$ is the covariant Laplace-Beltrami operator on the 2D curved cortex manifold $(\mathcal{M}, g_{\mathcal{M}})$:
+
+$$\nabla_{\mathcal{M}} \cdot (k_{\text{thermal}} \nabla_{\mathcal{M}} T) \equiv \frac{1}{\sqrt{\det g_{\mathcal{M}}}} \partial_i \left( \sqrt{\det g_{\mathcal{M}}} \, g_{\mathcal{M}}^{ij} k_{\text{thermal}} \partial_j T \right)$$
+
+and the thermal disorder fraction obeys the trans-gauche transition partition:
+
+$$\phi_{\text{disorder}}(\sigma_{\text{hoop}}, T) \equiv \left[ 1 + \exp\left( -\frac{\Delta H_{\text{trans}}^{\text{molar}}\left(1 - \frac{T}{T_m}\right) - \Delta A_{\text{trans}}^{\text{molar}} \, \sigma_{\text{hoop}}(t) h(t)}{R T} \right) \right]^{-1}$$
+
+with molar lipid density $\rho_{\text{lipid}}^{\text{molar}} \equiv \rho_{\text{bilayer}}/M_{\text{lipid}} \in [\mathrm{mol/m^3}]$, transition area expansion $\Delta A_{\text{trans}}^{\text{molar}} \equiv N_A \Delta a_{\text{lipid}} \in [\mathrm{m^2/mol}]$, and universal gas constant $R \equiv N_A k_B \in [\mathrm{J/(mol\cdot K)}]$. Coupling cortical Kelvin-Voigt elasticity to 2D lipid fluid dissipation, the ultimate tensile strength obeys the **Cowper-Symonds Rate-Dependent Viscoplastic Yield Envelope**:
 
 $$\sigma_{\text{UTS}}^{\text{membrane}}(\dot{\varepsilon}) \equiv \sigma_{\text{UTS}}^0 [ 1 + \left( \frac{\dot{\varepsilon}(t)}{\dot{\varepsilon}_0} \right)^{1/p_{\text{rate}}} ] + \eta_{\text{cortex}} \dot{\varepsilon}(t) \quad [\mathrm{Pa}]$$
 
@@ -873,7 +905,11 @@ Upon transient pore nucleation, the boundary topology shifts from a closed spher
 
 $$2\pi \eta_{\text{bilayer}} \frac{dr_{\text{pore}}}{dt} = 2\pi \left( \Gamma_{\text{tension}}(t) \, r_{\text{pore}} - \gamma_{\text{line}} \right) - \frac{\kappa_f}{r_{\text{pore}}^2} - \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{v_{\text{scission}}} \quad [\mathrm{N}]$$
 
-yielding the **Active Litster-Brochard Pore Velocity** $v_{\text{pore}}(r) \equiv \frac{dr_{\text{pore}}}{dt} = \frac{\Gamma_{\text{tension}}(t)}{2\eta_{\text{bilayer}}}\left( 1 - \frac{r_{\text{pore}}^{\text{crit, active}}(t)}{r_{\text{pore}}} \right)$ and the **Active Critical Resealing Pore Radius**:
+yielding the **Active Litster-Brochard Pore Velocity**:
+
+$$v_{\text{pore}}(r) \equiv \frac{dr_{\text{pore}}}{dt} = \frac{\Gamma_{\text{tension}}(t)}{2\eta_{\text{bilayer}}}\left( 1 - \frac{r_{\text{pore}}^{\text{crit, active}}(t)}{r_{\text{pore}}} \right)$$
+
+and the **Active Critical Resealing Pore Radius**:
 
 $$\boxed{r_{\text{pore}}^{\text{crit, active}}(t) \equiv \frac{\gamma_{\text{line}} + \frac{\dot{\mathcal{W}}_{\text{ATPase}}}{2\pi v_{\text{scission}}}}{\Gamma_{\text{tension}}(t)} = \frac{\gamma_{\text{line}}^{\text{active}}}{\Gamma_{\text{tension}}(t)} \quad \left( \text{for } \frac{\kappa_f}{2\pi \gamma_{\text{line}}^{\text{active}} (r_{\text{pore}}^{\text{crit}})^2} \ll 1 \right) \quad [\mathrm{m}]}$$
 
@@ -975,11 +1011,21 @@ Across sub-nanometer $\mathrm{F}_0\mathrm{F}_1$-ATP synthase channels and proton
 
 $$\boxed{\mathbf{J}_{H^+}^{\text{quantum}} = \rho_{\text{channel}} \cdot \frac{q_p}{h} \int_{E_F}^{E_F + q_p \Delta\psi} T_{\text{tunnel}}(E) [ f_{\text{FD}}(E) - f_{\text{FD}}(E - q_p \Delta\psi) ] dE \cdot \hat{n}_{\text{channel}} \quad [\frac{\mathrm{A}}{\mathrm{m^2}}]}$$
 
-where $T_{\text{tunnel}}(E) = \exp\left( -\frac{2}{\hbar}\int_0^{x_0(E)} \sqrt{2m_p\left(V_0 - E - q_p E_f x\right)} \, dx - S_{\text{diss}} \right)$ with classical turning point $x_0(E) \equiv \min\left(a_0, \, \frac{V_0 - E}{q_p E_f}\right)$ and Caldeira-Leggett non-local dissipative Euclidean bounce action penalty $S_{\text{diss}} \equiv \frac{\eta_{\text{bath}}a_0^2}{\hbar}$. In chiral $\alpha$-helical protein complexes, spin-orbit coupling drives **Chiral Induced Spin Selectivity (CISS) Electron Transport**:
+where the WKB wavepacket transmission coefficient is:
+
+$$T_{\text{tunnel}}(E) = \exp\left( -\frac{2}{\hbar}\int_0^{x_0(E)} \sqrt{2m_p\left(V_0 - E - q_p E_f x\right)} \, dx - S_{\text{diss}} \right)$$
+
+with classical turning point $x_0(E) \equiv \min\left(a_0, \, \frac{V_0 - E}{q_p E_f}\right)$ and Caldeira-Leggett non-local dissipative Euclidean bounce action penalty $S_{\text{diss}} \equiv \frac{\eta_{\text{bath}}a_0^2}{\hbar}$. In chiral $\alpha$-helical protein complexes, spin-orbit coupling drives **Chiral Induced Spin Selectivity (CISS) Electron Transport**:
 
 $$\boxed{\mathbf{J}_{e}^{\text{spin}}(\mathbf{x}, t) = -\rho_{\text{helix}} \cdot \frac{e}{h} \sum_{\sigma = \pm 1} \int [ T_0(E) + \sigma \mathcal{P}_{\text{CISS}} ] \left( f_{\text{FD}}(E) - f_{\text{FD}}(E + e \Delta\psi) \right) dE \cdot \hat{n}_{\text{helix}} \quad [\frac{\mathrm{A}}{\mathrm{m^2}}]}$$
 
-where electron transport along helical coordinate $s$ is governed by the non-Abelian $SU(2)$ spin-orbit covariant derivative $\mathcal{D}_\mu \equiv \partial_\mu - i \frac{e}{\hbar} A_\mu^{\text{em}} - i \frac{m_e \alpha_{\text{SOC}}}{\hbar^2} (\boldsymbol{\sigma} \times \hat{\mathbf{t}})_\mu$, with spin polarization $\mathcal{P}_{\text{CISS}} \equiv \chi_{\text{chirality}} \tanh\left( \frac{L_{\text{helix}}}{\ell_{\text{SOC}}} \right) \in [-1, +1]$ and spin-orbit coupling length $\ell_{\text{SOC}} \equiv \frac{\hbar^2}{m_e \alpha_{\text{SOC}} R_{\text{helix}} \omega_{\text{pitch}}}$.
+where electron transport along helical coordinate $s$ is governed by the non-Abelian $SU(2)$ spin-orbit covariant derivative:
+
+$$\mathcal{D}_\mu \equiv \partial_\mu - i \frac{e}{\hbar} A_\mu^{\text{em}} - i \frac{m_e \alpha_{\text{SOC}}}{\hbar^2} (\boldsymbol{\sigma} \times \hat{\mathbf{t}})_\mu$$
+
+with spin polarization and spin-orbit coupling length:
+
+$$\mathcal{P}_{\text{CISS}} \equiv \chi_{\text{chirality}} \tanh\left( \frac{L_{\text{helix}}}{\ell_{\text{SOC}}} \right) \in [-1, +1], \qquad \ell_{\text{SOC}} \equiv \frac{\hbar^2}{m_e \alpha_{\text{SOC}} R_{\text{helix}} \omega_{\text{pitch}}}$$
 
 ##### 5.2.4 Lifshitz Retarded Casimir-Polder Forces & Assembly Torques:
 Between adjacent chiral biopolymers ( $d \in (1, 10) \, \mathrm{nm}$ ), zero-point electromagnetic fluctuations generate **Lifshitz Retarded Casimir-Polder Forces and Dispersion Torques**:
@@ -1077,13 +1123,22 @@ The multi-scale continuity of the framework is summarized in the **Universal Exi
 ### 6.3 Active Theoretical Frontiers & Open Asymptotic Limits
 
 1. **Trans-Planckian Quantum Geometry & Wheeler-DeWitt Universal Wavefunction:**
-- *Equation:* $-\frac{16\pi G\hbar^2}{c^4\sqrt{h}} G_{ijkl} \frac{\delta^2 \Psi}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} ({}^{(3)}R - 2\Lambda) \Psi + \hat{\mathcal{H}}_{\text{matter}} \Psi = 0$.
+- *Equation:*
+
+$$-\frac{16\pi G\hbar^2}{c^4\sqrt{h}} G_{ijkl} \frac{\delta^2 \Psi}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} ({}^{(3)}R - 2\Lambda) \Psi + \hat{\mathcal{H}}_{\text{matter}} \Psi = 0$$
+
 - *Status:* Formally resolved on minisuperspace in §1.1; full non-perturbative quantum gravity diffeomorphism closure remains an active field frontier.
 2. **Topological Quantum Field Theory (TQFT) Cobordism Invariants of Worldvolumes:**
-- *Equation:* Functorial bordism map $\mathcal{Z}: \mathbf{Bord}_n \to \mathbf{Vect}_{\mathbb{C}}$ satisfying $\mathcal{Z}(W_1 \cup W_2) = \mathcal{Z}(W_2) \circ \mathcal{Z}(W_1)$.
+- *Equation:* Functorial bordism map $\mathcal{Z}: \mathbf{Bord}_n \to \mathbf{Vect}_{\mathbb{C}}$ satisfying:
+
+$$\mathcal{Z}(W_1 \cup W_2) = \mathcal{Z}(W_2) \circ \mathcal{Z}(W_1)$$
+
 - *Status:* Formally resolved in §2.1 for smooth cobordisms; generalized singular corner cobordisms represent an ongoing theoretical domain.
 3. **Connes Noncommutative Spectral Triples on Singular Fractal Boundary Interfaces:**
-- *Equation:* $d_{\text{Connes}}(p, q) \equiv \sup_{f \in \mathcal{A}} \{ |f(p) - f(q)| \mid \|[\mathcal{D}, \pi(f)]\| \le 1 \}$ and $\int_{\partial E} f \equiv \mathrm{Tr}_\omega(\pi(f)|\mathcal{D}|^{-d_H})$.
+- *Equation:*
+
+$$d_{\text{Connes}}(p, q) \equiv \sup_{f \in \mathcal{A}} \left\{ |f(p) - f(q)| \;\middle|\; \|[\mathcal{D}, \pi(f)]\| \le 1 \right\}, \qquad \int_{\partial E} f \equiv \mathrm{Tr}_\omega\left(\pi(f)|\mathcal{D}|^{-d_H}\right)$$
+
 - *Status:* Formally resolved in §2.3.3 for interfaces of Hausdorff dimension $d_H \in (2, 3)$; generalized multiscale fractal cascade closures remain open.
 
 ---
