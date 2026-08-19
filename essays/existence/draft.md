@@ -102,7 +102,7 @@ driving cosmological metric expansion $\dot{a}(t) > 0$ and sustaining non-zero c
 ### 1.2 The State-Trace Functional ( $\Psi$ ) and Constitutive Operator Lie Algebra
 
 #### 1.2.1 First-Principles Derivation of the State-Trace Functional ( $\Psi$ )
-* **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ( $E$ ), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ( $[\hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2)] \neq \mathbf{0}$ frictionally and dissipation occurs), classical unitary exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator that strictly preserves probability trace.
+* **The Physical Dilemma:** In classical Newtonian mechanics, states are assumed to be instantaneous memoryless coordinates $\mathbf{x}(t)$ governed by autonomous ODEs $\dot{\mathbf{x}} = A \mathbf{x}$, whose solution is a simple matrix exponential $e^{At}$. However, for any non-equilibrium form of existence ( $E$ ), state evolution is driven by time-dependent operational interventions $\mathcal{O}(t)$ that act upon resource substrates $\mathcal{F}(t)$. Because operations at different chronological times generally do not commute ( $[ \hat{\mathcal{L}}(t_1), \hat{\mathcal{L}}(t_2) ] \neq \mathbf{0}$ frictionally and dissipation occurs), classical unitary exponential integration fails. We require a rigorous non-perturbative path-ordered state propagator that strictly preserves probability trace.
 
 * **Step 1 (The Gorini-Kossakowski-Sudarshan-Lindblad Generator on Hilbert State Space):**
 Let the state configuration of an entity be represented by a positive semi-definite state density operator $\hat{\rho}_E(t) \in \mathcal{S}(\mathcal{H})$ ( $\mathrm{Tr}(\hat{\rho}_E) = 1, \hat{\rho}_E \ge 0$ ) defined on the complex state Hilbert space $\mathcal{H} = L^2(\Omega_{\mathbb{C}})$. By the **GKSL Theorem** (Gorini, Kossakowski, Sudarshan, 1976; Lindblad, 1976), the most general trace-preserving, completely positive Markovian generator super-operator $\hat{\mathcal{L}}(\tau)$ acting on $\mathcal{S}(\mathcal{H})$ is:
@@ -141,7 +141,7 @@ Summing the Taylor series yields the **Exact Time-Ordered Dyson Propagator**:
 $$\boxed{\hat{\rho}_E(t) = \Psi[\hat{\rho}_E(0);\, \{\mathcal{O}(\tau),\, \mathcal{F}(\tau)\}_{0}^{t}] \equiv \mathcal{T} \exp \left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right) \hat{\rho}_E(0)}$$
 
 * **Step 5 (Magnus Lie Algebra Expansion, Convergence Radius & Topological Hysteresis):**
-For non-commuting generators in the Ordered Lie Operator Algebra $(\mathcal{A}_D, [\cdot, \cdot])$ where $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$, the algebraic generator satisfies the formal **Magnus Expansion** (Magnus, 1954):
+For non-commuting generators in the Ordered Lie Operator Algebra ( $\mathcal{A}_D, [ \cdot, \cdot ]$ ) where $[ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) ] \neq \mathbf{0}$, the algebraic generator satisfies the formal **Magnus Expansion** (Magnus, 1954):
 
 $$\Psi[\hat{\rho}_E(0); \dots] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \, d\tau_1 + \frac{1}{2} \int_0^t d\tau_1 \int_0^{\tau_1} d\tau_2 [ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) ] + \cdots \right) \hat{\rho}_E(0)$$
 
@@ -149,8 +149,13 @@ $$\Psi[\hat{\rho}_E(0); \dots] = \exp\left( \int_0^t \hat{\mathcal{L}}(\tau_1) \
 
 $$\boxed{\|\hat{\mathcal{L}}\|_{\Lambda} \le \frac{2 \Lambda_{\text{UV}}}{\hbar} + 2 \sum_k \gamma_k \|\hat{L}_k\|_{\Lambda}^2 < \infty \implies \int_0^t \|\hat{\mathcal{L}}(\tau)\|_{\Lambda} d\tau < \pi \iff t < t_{\text{Magnus}} \equiv \frac{\pi}{\|\hat{\mathcal{L}}\|_{\Lambda}}}$$
 
-Because the commutator $[\hat{\mathcal{L}}_1, \hat{\mathcal{L}}_2]$ of two GKSL Lindbladians is not itself in GKSL form, complete positivity ( $\hat{\rho}_E(t) \ge 0$ ) for open dissipative trajectories is strictly guaranteed by the infinite-product time-ordered Dyson series $\mathcal{T} \exp(\int_0^t \hat{\mathcal{L}} d\tau)$, with the Magnus expansion serving as the exact convergent asymptotic Lie algebra on $\mathcal{H}_{\Lambda}$.
-* **Topological Hysteresis:** The non-vanishing commutator $[\hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2)] \neq \mathbf{0}$ mathematically proves **Topological Hysteresis**: the final state depends strictly on the chronological order of intervention:
+Because the commutator $ [ \hat{\mathcal{L}}_1, \hat{\mathcal{L}}_2 ] $ of two GKSL Lindbladians is not itself in GKSL form, complete positivity ( $ \hat{\rho}_E(t) \ge 0 $ ) for open dissipative trajectories is strictly guaranteed by the infinite-product time-ordered Dyson series:
+
+$$\mathcal{T} \exp\left( \int_0^t \hat{\mathcal{L}}(\tau) \, d\tau \right)$$
+
+with the Magnus expansion serving as the exact convergent asymptotic Lie algebra on $ \mathcal{H}_{\Lambda} $.
+
+* **Topological Hysteresis:** The non-vanishing commutator $ [ \hat{\mathcal{L}}(\tau_1), \hat{\mathcal{L}}(\tau_2) ] \neq \mathbf{0} $ mathematically proves **Topological Hysteresis**: the final state depends strictly on the chronological order of intervention:
 
 $$\Psi[\dots; (\mathcal{O}_A \to \mathcal{O}_B)] \neq \Psi[\dots; (\mathcal{O}_B \to \mathcal{O}_A)]$$
 
