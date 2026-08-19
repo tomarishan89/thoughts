@@ -105,7 +105,8 @@ def process_file(fpath):
     return False
 
 def main():
-    target_files = sorted(glob.glob('essays/**/*.md', recursive=True))
+    target_files = sorted(glob.glob('**/*.md', recursive=True))
+    target_files = [f for f in target_files if '.git' not in f and 'node_modules' not in f]
     count = 0
     for f in target_files:
         if process_file(f):

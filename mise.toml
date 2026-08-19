@@ -1,0 +1,26 @@
+# Mise configuration for Vidyaman Research Repository
+# Documentation: https://mise.jdx.dev/
+
+[tasks.lint]
+description = "Run comprehensive Markdown, LaTeX math, link, and formatting linter on all essays"
+run = "python scripts/lint_markdown.py"
+
+[tasks.pre-commit]
+description = "Pre-commit hook to lint all staged Markdown files before committing"
+run = "python scripts/lint_markdown.py --staged"
+
+[tasks.format]
+description = "Auto-format and sanitize math, indentation, GFM collisions, and relative links across all markdown files"
+run = "python scripts/format_all.py"
+
+[tasks.audit]
+description = "Audit LaTeX math delimiters, brace balance, and macro collisions"
+run = "python scripts/audit_math.py"
+
+[tasks.build-pdf]
+description = "Compile publication-grade academic PDFs for all essays using MathJax 3"
+run = "python scripts/generate_pdf.py --all"
+
+[tasks.setup-hooks]
+description = "Install the Git pre-commit hook into .git/hooks/"
+run = "python scripts/install_git_hooks.py"

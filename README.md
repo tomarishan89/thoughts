@@ -8,11 +8,11 @@
 
 This repository hosts a multi-disciplinary mathematical physics and philosophical research corpus investigating the fundamental question: **What is the scale-invariant physical and thermodynamic definition of an "existing entity"?**
 
-The project formalizes how boundaries ($\partial E$), structural margins ($\phi \ge 0$), energy transfers ($\dot{E}_{\text{fuel}}$), and temporal memory traces ($\mathcal{F}_{\text{ledger}}$) sustain non-equilibrium order against entropic dissolution across four scale-invariant tiers:
-1. **Tier I (Physical):** Relativistic fluid manifolds, crystal lattices, and stellar hydrodynamics ($\chi^* = 0$).
-2. **Tier II (Biological):** Lipid bilayers, cellular syncytia, and metabolic engines ($\chi^* \in (0, 1)$).
-3. **Tier III (Cognitive):** Bayesian neural networks, predictive generative models, and Landauer-bounded veto gating ($\chi^* \approx 1$).
-4. **Tier IV (Social / Cosmological):** Multi-agent institutional networks, sovereign states, and open Schwarzschild-Hubble universe embeddings ($\chi^* > 1$).
+The project formalizes how boundaries ( $\partial E$ ), structural margins ( $\phi \ge 0$ ), energy transfers ( $\dot{E}_{\text{fuel}}$ ), and temporal memory traces ( $\mathcal{F}_{\text{ledger}}$ ) sustain non-equilibrium order against entropic dissolution across four scale-invariant tiers:
+1. **Tier I (Physical):** Relativistic fluid manifolds, crystal lattices, and stellar hydrodynamics ( $\chi^* = 0$ ).
+2. **Tier II (Biological):** Lipid bilayers, cellular syncytia, and metabolic engines ( $\chi^* \in (0, 1)$ ).
+3. **Tier III (Cognitive):** Bayesian neural networks, predictive generative models, and Landauer-bounded veto gating ( $\chi^* \approx 1$ ).
+4. **Tier IV (Social / Cosmological):** Multi-agent institutional networks, sovereign states, and open Schwarzschild-Hubble universe embeddings ( $\chi^* > 1$ ).
 
 ---
 
@@ -79,14 +79,19 @@ graph TD
 
 ### 2. Cosmological Black Hole Embedding & Horizon Duality
 Our observable universe satisfies the exact **Schwarzschild-Hubble Horizon Identity**:
+
 $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \right) = \frac{c}{H_0} \equiv R_{\text{Hubble}} \approx 1.37 \times 10^{26} \, \mathrm{m}, \qquad S_{\text{BH}}(\mathcal{U}) = S_{\text{GH}}(\mathcal{U}) \approx 10^{122} \, k_B}$$
+
 Proving that living cellular syncytia and cosmological black-hole universes share identical open non-equilibrium engine topology:
+
 $$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
 
 ### 3. Deconstruction of Sanatan Dharm & The Category Error Paradox
-Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), **Sanatan Dharm ($\mathcal{D}_T$)** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ($D_{\mathfrak{Im}}^i(t)$):
+Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), **Sanatan Dharm ( $\mathcal{D}_T$ )** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ( $D_{\mathfrak{Im}}^i(t)$ ):
+
 $$\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfrak{Im}}^i(t)$$
-An individual entity $E^i(t)$ does not "embody" Sanatan Dharm; it merely instantiates its localized proper subset ($D_{\mathfrak{Im}}^i \subset \mathcal{D}_T$), just as a single floret is a constituent instantiation of an entire inflorescence bloom.
+
+An individual entity $E^i(t)$ does not "embody" Sanatan Dharm; it merely instantiates its localized proper subset ( $D_{\mathfrak{Im}}^i \subset \mathcal{D}_T$ ), just as a single floret is a constituent instantiation of an entire inflorescence bloom.
 
 ---
 
@@ -129,6 +134,21 @@ Project_writeup_1/
 
 ---
 
+## 🛡️ Pre-Commit Quality Checks & Task Automation (`mise`)
+
+This repository uses [`mise`](https://mise.jdx.dev/) as an automated task runner to guarantee mathematical rigor, delimiter safety, and Markdown rendering integrity across GitHub, Obsidian, and PDF export:
+
+| Command | Action | Description |
+| :--- | :--- | :--- |
+| `mise run setup-hooks` | **Install Git Hook** | Configures `.git/hooks/pre-commit` to automatically run linters before every commit. |
+| `mise run lint` | **Lint Repository** | Validates all Markdown files for LaTeX delimiter balance, GFM collisions, and broken links. |
+| `mise run pre-commit` | **Stage Linting** | Runs linter on staged files (blocks commit if any errors are found). |
+| `mise run format` | **Auto-Format** | Automatically fixes column-0 math alignment, GFM delimiter padding, and code indentation. |
+| `mise run audit` | **Math Audit** | Audits LaTeX bracket balance, `\left` / `\right` pairs, and macro spacing collisions. |
+| `mise run build-pdf` | **Compile PDFs** | Compiles publication-quality vector PDFs with MathJax 3 across all essays. |
+
+---
+
 ## 🛠️ Toolchain & Sanskrit Compilation Pipeline
 
 The workspace includes a built-in Python toolchain for processing staged manuscripts containing Sanskrit semantic markup:
@@ -157,4 +177,3 @@ python scripts/glossary_add.py --key dharma --dev धर्म --iast dharma --g
 
 * **Obsidian:** This repository is pre-configured as an Obsidian vault (`.obsidian/` included). Open this root directory in Obsidian for bidirectional linking and graph view.
 * **VS Code / Cursor:** Includes code snippets (`.vscode/sa.code-snippets`), syntax rules, and automated compilation hooks.
-

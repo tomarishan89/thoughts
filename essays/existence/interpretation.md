@@ -557,4 +557,3 @@ $$\tau_{\text{lifespan}} = \frac{5120 \pi G^2 M_0^3}{\hbar c^4} \approx \mathbf{
 The DESI Year-1 discovery of dynamical dark energy ( $w_0 > -1, w_a < 0$, drifting toward $-1$ ) is the direct signature of parent accretion density dilution over cosmic time ( $w(z) = -1 + \frac{4G}{3 c^3}\dot{M}(z)$ ).
 
 ---
-
