@@ -37,3 +37,6 @@ venv/
 # Generated Sanskrit previews (regenerate anytime; output.md may be kept intentionally)
 essays/**/draft-preview.md
 essays/**/rough-preview.md
+
+# Temporary agent reply files
+essays/existence/latest_reply_tmp.md

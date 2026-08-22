@@ -199,30 +199,6 @@ Sanatan Dharm represents the totality of all physical, biological, cognitive, an
 
 ---
 
-### 4.3 The Category Error Paradox & The Inflorescence Model
-
-#### The Paradox of Claiming Universal Identity
-From the set-theoretic formulation of $\mathcal{D}_T$ and $D_{\mathfrak{Im}}^i(t)$, we resolve a central category error in philosophical discourse:
-1. **Universal Matrix Definition:** Sanatan Dharm ( $\mathcal{D}_T$ ) is the universal union of all operational principles across all entities and all epochs: $\mathcal{D}_T = \bigcup_{t} \bigcup_{i} D_{\mathfrak{Im}}^i(t)$.
-2. **Localized Entity Definition:** An individual entity $E^i(t)$ is a finite locus with bounded measure ( $\mu(E^i(t)) < \infty$ ).
-3. **The Logical Fallacy:** The assertion *"I practice / embody Sanatan Dharm"* commits a category error equivalent to a single electron declaring:
-> *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
-
-An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
-
-$$D_{\mathfrak{Im}}^i(t) \subset \mathcal{D}_T$$
-
-Structural failure occurs when an entity attempts to execute operators belonging to $\mathcal{D}_T \setminus D_{\mathfrak{Im}}^i(t)$ for which it lacks the physical substrate ( $\mathcal{F}_{\mathbb{R}}^i$ ), violating its localized conservation bounds (*"Paradharmo bhayāvahaḥ"*, Bhagavad Gita 3.35).
-
-#### The Inflorescence Model (Macro Visual Anchor)
-To visualize this relationship without scalar reductionism, consider an inflorescence (such as a composite marigold or sunflower bloom):
-* **The Individual Floret:** Represents a localized intrinsic operator set ( $D_{\mathfrak{Im}}^i$ ) mapping to a specific form of existence at time $t$.
-* **The Inflorescence (The Bloom):** Represents **Sanatan Dharm** ( $\mathcal{D}_T$ )—the integrated macro-structure composed of the sum total of all florets across space and time.
-
-An individual floret does not "follow" the inflorescence; it is an active, constituent structural instantiation of it.
-
----
-
 ## Section 5: The Temporal Architecture of Existence: Ledger, Projection, and Expression
 
 ```
