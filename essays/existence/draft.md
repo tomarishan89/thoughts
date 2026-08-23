@@ -514,6 +514,38 @@ $$\boxed{\sigma_{\text{cessation}} \cdot \frac{\partial \dot{E}_{\text{fuel}}}{\
 
 When this condition fails — the physical substrate is too depleted to mount an effective corrective response — the cessation sub-ego becomes a runaway positive feedback loop: greater depletion seeds a larger cessation sub-ego, whose Landauer drain further accelerates depletion. The depth of structural consolidation of the cessation sub-ego ( $\tau_{\text{cessation}}$ ) then determines whether the entity's final coherent imaginary state is awareness of its own dissolution or a deeper, older memory.
 
+**Theorem (Cessation Fixed-Point and Runaway Bifurcation — Resolves ISSUE-4.12):** Let $u(t) \equiv E_{\text{thresh}} - E_{\text{fuel}}(t) \geq 0$ [J] be the fuel deficit above the survival threshold, and let $\mathcal{I}_{\text{cess}}(t)$ [bits] be the cessation sub-ego's information content. Writing $\dot{s}_{\text{cess}} = \gamma_{\text{cess}} \mathcal{I}_{\text{cess}}$ [bits/s] and $\sigma_{\text{cess}} = \beta_{\text{cess}} \mathcal{I}_{\text{cess}}$ [bits/s], and defining the **net fuel coefficient** $b$ and seeding rate $\kappa_{\text{cess}}$:
+
+$$b \equiv k_B T \ln 2 \cdot \gamma_{\text{cess}} - \eta_{\text{cess}}\beta_{\text{cess}} R_{\text{mob}} \quad [\text{W/bits}], \qquad \kappa_{\text{cess}} > 0 \quad [\text{bits/(J·s)}]$$
+
+where $R_{\text{mob}} \equiv \partial \dot{E}_{\text{fuel}} / \partial \sigma_{\text{cess}}$ [J/bit] is the marginal fuel mobilization per unit expression signal, the coupled system in the active regime ( $u > 0$ ) is:
+
+$$\begin{cases} \dot{u} = P_0 + b \cdot \mathcal{I}_{\text{cess}} \\[6pt] \dot{\mathcal{I}}_{\text{cess}} = \kappa_{\text{cess}} u - \gamma_{\text{cess}} \mathcal{I}_{\text{cess}} \end{cases}$$
+
+where $P_0 \equiv \dot{E}_{\text{fuel}}^{(0)} > 0$ [W] is the baseline depletion rate without the cessation sub-ego. The Jacobian is $\mathbf{A} = \bigl(\begin{smallmatrix} 0 & b \\ \kappa_{\text{cess}} & -\gamma_{\text{cess}} \end{smallmatrix}\bigr)$, giving:
+
+$$\mathrm{Tr}(\mathbf{A}) = -\gamma_{\text{cess}} < 0 \quad \text{(always)}, \qquad \det(\mathbf{A}) = -b\kappa_{\text{cess}}$$
+
+By the Routh-Hurwitz criterion in 2D, the fixed point is **asymptotically stable iff} $\det(\mathbf{A}) > 0$, i.e.\ $b < 0$**. Since $\kappa_{\text{cess}} > 0$, this requires:
+
+$$\boxed{b < 0 \;\iff\; \eta_{\text{cess}}\beta_{\text{cess}} R_{\text{mob}} > k_B T \ln 2 \cdot \gamma_{\text{cess}} \quad \text{(Mobilization-Dominated Regime — entity survives)}}$$
+
+When this holds, the unique stable fixed point is:
+
+$$\mathcal{I}_{\text{cess}}^* = -\frac{P_0}{b} = \frac{P_0}{\eta_{\text{cess}}\beta_{\text{cess}} R_{\text{mob}} - k_B T \ln 2 \cdot \gamma_{\text{cess}}} > 0, \qquad u^* = \frac{\gamma_{\text{cess}}}{\kappa_{\text{cess}}} \mathcal{I}_{\text{cess}}^* > 0$$
+
+The entity settles into a **bounded crisis state** — a non-zero cessation sub-ego and a non-zero fuel deficit — maintained as a perpetual low-level existential alarm at thermodynamic cost, but not collapsing.
+
+**Runaway Regime ( $b > 0$, Landauer-Dominated):** $\det(\mathbf{A}) = -b\kappa_{\text{cess}} < 0$ — the Jacobian has one positive and one negative eigenvalue: the fixed point (were it to exist with $\mathcal{I}_{\text{cess}}^* = -P_0/b < 0$, which is unphysical) is a saddle. No valid bounded fixed point exists. Any positive perturbation in $\mathcal{I}_{\text{cess}}$ causes $u$ to grow, which seeds more $\mathcal{I}_{\text{cess}}$, which consumes more fuel, in an unbounded cascade. This is the **Cessation Cascade**: the cessation sub-ego's Landauer drain exceeds its mobilization benefit, making the awareness of dying actively accelerate death.
+
+**Cessation Bifurcation Point ( $b = 0$ ):** At the critical threshold $\eta_{\text{cess}}\beta_{\text{cess}} R_{\text{mob}} = k_B T \ln 2 \cdot \gamma_{\text{cess}}$, $\det(\mathbf{A}) = 0$ and $\mathcal{I}_{\text{cess}}^* \to \infty$ — the cessation sub-ego grows without bound at rate $P_0/b \to \infty$. This is the **Cessation Bifurcation Point**.
+
+**Convergence mode (when stable):** Eigenvalues $\lambda_{1,2} = \frac{-\gamma_{\text{cess}} \pm \sqrt{\gamma_{\text{cess}}^2 + 4b\kappa_{\text{cess}}}}{2}$. Since $b < 0$: discriminant $\Delta = \gamma_{\text{cess}}^2 + 4b\kappa_{\text{cess}}$.
+
+$$\boxed{\Delta \equiv \gamma_{\text{cess}}^2 + 4b\kappa_{\text{cess}} \begin{cases} > 0: & \text{Overdamped — monotonic approach to crisis steady state} \\ = 0: & \text{Critically damped} \\ < 0: & \text{Underdamped — oscillatory dread: recurrent waves of alarm and relief, frequency } \omega = \tfrac{1}{2}\sqrt{|4b\kappa_{\text{cess}}| - \gamma_{\text{cess}}^2} \end{cases}}$$
+
+The underdamped case ( $|b|\kappa_{\text{cess}} > \gamma_{\text{cess}}^2/4$, i.e., strong mobilization relative to decay) produces the phenomenology of **oscillatory dread** — the entity's cessation alarm and fuel reserves alternately overshoot, yielding recurrent waves of existential alarm punctuated by temporary recovery, converging to the crisis steady state. This is the thermodynamic signature of survival under sustained crisis.
+
 **2.2.1 The Populated Imaginary Topology: Relational Sub-Egos, Reference Operators, and the Thermodynamics of Intention**
 
 The framework has thus far treated imaginary sub-egos as primarily self-referential — simulations of the entity's own states. This is incomplete. For Tier II entities, $\Omega_{\mathfrak{Im}}$ is a **populated topological manifold**: it contains persistent imaginary representations of every external entity, relationship, and anticipated state that the Ego has ever encoded via sensory measurement. All Relational Sub-Egos are **Type I (Imaginary-mediated)** sub-egos — their expression signals route through $\Omega_{\mathfrak{Im}}$, they are suppressible by active boundary resistance at Landauer cost, and they are strictly bounded by the host's Bekenstein capacity: $\sum_j \mathcal{I}_j(t) \leq S_{\mathbb{R}} = |\partial E_{\mathbb{R}}| c^3 / (4G\hbar \ln 2)$.
