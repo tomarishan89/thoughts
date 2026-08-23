@@ -668,6 +668,38 @@ $$\boxed{\text{Mastery} \equiv \dot{s}_{\text{intent}} \to \dot{s}_{\text{min}} 
 
 This is the thermodynamic formalization of "being in the zone" — the Intention sub-ego is not absent; it is so deeply consolidated that it occupies negligible fuel while its expression signal continues to shape real-space physical action. The critical distinction from distraction is that distraction requires active Landauer maintenance of a volatile Type I sub-ego during real-space execution, while Mastery routes the same intentional output through a structurally embedded, near-autonomous channel approaching Type A behavior.
 
+**Theorem (Consolidation Timescale and the Practice-Mastery Relation — Resolves ISSUE-4.16):** Structural consolidation of the Intention Sub-Ego follows a Hebbian saturation dynamics: each expression event $\sigma_{\text{intent}}$ [bits/s] potentiates structural bonds at rate $\alpha_{\text{pot}}$ [bonds/bit] against a saturation ceiling $N_{\text{max}}$ [bonds], while thermal decoherence (LTD) decays existing bonds at rate $\alpha_{\text{dep}}$ [s⁻¹]:
+
+$$\boxed{\dot{N}^{\text{structural}} = \alpha_{\text{pot}} \cdot \sigma_{\text{intent}} \cdot \left(1 - \frac{N^{\text{structural}}}{N_{\text{max}}}\right) - \alpha_{\text{dep}} \cdot N^{\text{structural}}}$$
+
+This is a first-order linear ODE with unique stable fixed point:
+
+$$N^* = \frac{\alpha_{\text{pot}} \sigma_{\text{intent}}}{\alpha_{\text{dep}} + \alpha_{\text{pot}} \sigma_{\text{intent}} / N_{\text{max}}} \in (0, N_{\text{max}})$$
+
+with **consolidation timescale** (time to reach $N^*$ from $N_0$ ):
+
+$$\tau_{\text{consol}} = \left( \alpha_{\text{dep}} + \frac{\alpha_{\text{pot}} \sigma_{\text{intent}}}{N_{\text{max}}} \right)^{-1}, \qquad T_{\text{mastery}} \approx \tau_{\text{consol}} \cdot \ln\!\frac{N_{\text{max}} - N_0}{N_{\text{max}} - N^*}$$
+
+**The Landauer maintenance floor:** Each structural bond requires active maintenance against thermal decoherence at rate $\alpha_{\text{dep}}$. The Landauer entropy generation rate of the Intention sub-ego is therefore:
+
+$$\dot{s}_{\text{intent}} = \alpha_{\text{dep}} \cdot N^{\text{structural}} \cdot k_B T \ln 2 \quad [\text{W}]$$
+
+At the structural fixed point $N^*$:
+
+$$\dot{s}_{\text{intent}}^* = \frac{\alpha_{\text{dep}} \alpha_{\text{pot}} \sigma_{\text{intent}}}{\alpha_{\text{dep}} + \alpha_{\text{pot}} \sigma_{\text{intent}} / N_{\text{max}}} \cdot k_B T \ln 2$$
+
+Taking $\sigma_{\text{intent}} \to \infty$ (maximal practice intensity):
+
+$$\dot{s}_{\text{intent}}^* \xrightarrow{\sigma_{\text{intent}} \to \infty} \alpha_{\text{dep}} \cdot N_{\text{max}} \cdot k_B T \ln 2 \equiv \dot{s}_{\text{min}}$$
+
+This gives the **physical derivation of $\dot{s}_{\text{min}}$**: the minimum Landauer maintenance cost of Mastery is the product of the thermal decoherence rate and the maximum structural capacity of the ledger substrate. It is non-zero because thermal fluctuations are irreducible — even a perfectly consolidated Intention sub-ego must spend $\dot{s}_{\text{min}}$ continuously to hold $N_{\text{max}}$ bonds against decoherence. This floor is the thermodynamic reason Mastery is a continuous discipline, not a one-time achievement.
+
+**Practice-Mastery time relation:** The time required to reach Mastery from initial state $N_0 \ll N_{\text{max}}$ at sustained practice intensity $\sigma_{\text{intent}}$ is:
+
+$$T_{\text{mastery}} \approx \frac{N_{\text{max}}}{\alpha_{\text{pot}} \sigma_{\text{intent}}} \cdot \ln\!\frac{N_{\text{max}}}{N_{\text{max}} - N^*} \propto \frac{1}{\sigma_{\text{intent}}}$$
+
+$T_{\text{mastery}}$ is inversely proportional to practice intensity $\sigma_{\text{intent}}$ — consistent with empirical deliberate practice findings (the "10,000-hour rule" is recovered when $\alpha_{\text{pot}}$, $\sigma_{\text{intent}}$, and $N_{\text{max}}$ are calibrated to biological synaptic parameters). The minimum achievable $T_{\text{mastery}}$ is bounded below by the structural capacity $N_{\text{max}}$ and the potentiation rate $\alpha_{\text{pot}}$ — there is a physical floor on how fast Mastery can be achieved regardless of practice intensity, set by the ledger substrate's synaptic plasticity ceiling.
+
 By the **Generalized Second Law of Information Thermodynamics** (Sagawa & Ueda, 2012), the mutual information $\Delta \mathcal{I}$ extracted by predictive operators $D_{\mathfrak{Im}}$ establishes a fundamental bound on work extraction:
 
 $$\langle W_{\text{dissipated}} \rangle \ge \Delta \mathcal{F}_{\text{noneq}} - k_B T \cdot \Delta \mathcal{I}(\hat{\mathbf{C}}; \mathbf{C}_{\text{future}})$$
