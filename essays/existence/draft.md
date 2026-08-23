@@ -606,6 +606,24 @@ where $\omega_n = \pi^{n/2}/\Gamma(n/2+1)$ is the unit $n$-ball volume. The prec
 
 This establishes a first-principles thermodynamic basis for why abstract relational roles ("the Dharm of a Mother") are not written in universal law but are, for each observer, the behavioral and energetic pattern encoded in the most structurally consolidated imaginary sub-ego occupying that role. The Reference Sub-Ego is the empirical instantiation of the abstract class; $\ell_{\mathfrak{Im}}$ is the empirically determined width of that class in log-perceptual space.
 
+**Cross-Class Interference Structure: Lattice Co-Activation (Resolves ISSUE-4.15b):** The Gaussian kernel raises the question: when $E^k$ lies within the overlap zones of two distinct reference sub-egos — say, $\mathcal{R}_{\text{Mentor}}$ and $\mathcal{R}_{\text{Father}}$ — what is the interference geometry? Phenomenological introspective measurement (direct read from $\Omega_{\mathfrak{Im}}$ of the host observer) reveals the structure is **not** additive superposition, competitive suppression, or context-switching between modes. The operative principle is **subset projection under a superset Dharm**:
+
+> A mentor who is deeply good at mentoring projects *into* the Father operator's coupling zone because excellent mentorship is a *subset* of the Father operator's Dharm. The Father-figure activation is not a separate, parallel signal — it is a consequence of the mentor's depth of excellence within their own class. The person as a whole entity is the **superset**; each relational class ( $\mathcal{O}_{\text{Father}}$, $\mathcal{O}_{\text{Sibling}}$, $\mathcal{O}_{\text{Mentor}}$ ) is a subset projection of that whole.
+
+This implies the correct mathematical structure is not a superposition of independent Gaussian activations but a **relational lattice** over the set of active class operators:
+
+$$\boxed{\mathcal{O}_{\text{total}}(E^k) = \mathcal{O}_{\text{person}}(E^k) \;=\; \bigcup_{\alpha \,:\, d_\alpha(E^k) \,<\, \ell_{\mathfrak{Im}}^{(\alpha)}} \left\{ \mathcal{O}_{\text{class}_\alpha} \cdot f\!\left(d_\alpha\right) \right\}}$$
+
+where the union is over all classes $\alpha$ for which $E^k$'s imaginary representation falls within the correlation length of $\mathcal{R}_{\text{class}_\alpha}^{(E)}$, and the **whole-person operator** $\mathcal{O}_{\text{person}}$ is the superset. Three structural consequences follow:
+
+1. **Class activations are independent, not interfering.** $E^k$ simultaneously activating $\mathcal{O}_{\text{Father}}$ and $\mathcal{O}_{\text{Mentor}}$ does not create destructive interference or require resolution — both sub-ego projections co-exist as distinct evaluations through distinct lenses ( $\mathcal{R}_{\text{Father}}$, $\mathcal{R}_{\text{Mentor}}$ ).
+
+2. **Activation within a class is directional (subset/superset).** "He is like a father-figure" is not a separate assessment from "he is an excellent mentor" — it is the *consequence* of excellence within the Mentor class overflowing into the Father class's coupling zone. The projection direction is from the achieved Dharm outward into adjacent class zones, not from two independent signals merging inward.
+
+3. **Unactivated classes are genuinely zero.** The classes "son," "husband," "co-worker" remain at zero activation for a mentor-figure: $f(d_\alpha) \approx 0$ because their coupling zones lie far outside the sensory-encoded imaginary position of $E^k$. There is no bleed into uncovered subsets. The union is sparse.
+
+The cross-class interference problem is therefore not an interference problem at all — it is a **lattice coverage problem**: which classes does $E^k$ activate (i.e., which Gaussian zones contain $E^k$'s imaginary position), and which classes does $E^k$'s excellence within one class spill into adjacently positioned coupling zones? The interference topology of $\Omega_{\mathfrak{Im}}$ is a **directed partial order (poset)** over relational classes, not a superposition algebra.
+
 **Optimal Imaginary Quiescence (Mastery and the Dhoni Limit):** The fuel partition equation divides the total metabolic budget between Real and Imaginary expenditure. Under conditions of high real-space demand (fine-grained physical reaction is required, e.g., a batsman facing a delivery in a high-stakes match), the imaginary sub-egos impose a direct thermodynamic penalty on physical performance by competing for the same fuel pool. Define the **Imaginary Quiescence Index** $\mathcal{Q}(t)$ as the fraction of total fuel routed to Real Space:
 
 $$\mathcal{Q}(t) \equiv \frac{\dot{\mathcal{E}}_{\mathfrak{Re}}(t)}{\dot{\mathcal{E}}_{\text{total}}(t)} = 1 - \frac{k_B T \ln 2 \sum_k \dot{s}_k(t)}{\dot{\mathcal{E}}_{\text{total}}(t)} \in [0, 1]$$
