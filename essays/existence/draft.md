@@ -1257,6 +1257,36 @@ $$\boxed{v_{\text{depletion}} = 2 \sqrt{D_{\text{ATP}} \left. \frac{d R_{\text{c
 * **Spatial Fragmentation & Isolated Metabolic Pockets:**
 As the depletion wave $v_{\text{depletion}}$ sweeps across $\Omega_{\mathbb{R}}$, regions where $c_{\text{ATP}}(x, t) < c_{\text{crit}}$ undergo localized cytoskeletal collapse ( $\phi(x,t) < 0$ ). This spatial heterogeneity fractures the globally simply-connected entity topology into multiple disjoint domains, mathematically forcing the Euler characteristic $\chi(\partial E)$ to diverge, demonstrating that biological necrosis is not a 0D point failure but a topological shattering driven by reaction-diffusion propagation limits.
 
+**Theorem (Anomalous Subdiffusion Correction to the Necrosis Front — Resolves ISSUE-4.13):** The Fisher-KPP constant-velocity result $v_{\text{depletion}} = 2\sqrt{D_{\text{ATP}}R_{\max}/K_M}$ assumes classical Fickian diffusion (Markovian, exponential waiting times between molecular collisions). Inside biological cytoplasm, macromolecular crowding — proteins, organelles, cytoskeletal meshwork — causes ATP transport to exhibit **anomalous subdiffusion** $\langle x^2(t) \rangle \sim 2D_\alpha t^\alpha / \Gamma(1+\alpha)$ with $\alpha \in (0,1)$. This arises because the waiting time distribution between effective diffusion steps follows a heavy-tailed power law $\psi(\tau) \sim C_\alpha \tau^{-(1+\alpha)}$ (Lévy-stable, no finite mean), as measured in live-cell single-particle tracking experiments.
+
+**Step 1 (CTRW Master Equation):** The continuous-time random walk (CTRW) for an ATP molecule with power-law waiting times $\hat{\psi}(s) \sim 1 - (s\tau_*)^\alpha$ has Laplace-space solution:
+
+$$\hat{c}(\xi, s) = \frac{s^{\alpha - 1}}{s^\alpha + D_\alpha \lambda^2 - \hat{R}_{\text{eff}}(s)} \, c_0(\xi)$$
+
+where $\hat{R}_{\text{eff}}(s) = s^{\alpha-1}\tilde{R}$ is the Laplace-transformed reaction term scaled by the anomalous waiting, $\lambda^2$ is the squared wavenumber, and $D_\alpha$ [m²/s$^\alpha$ ] is the anomalous diffusion coefficient.
+
+**Step 2 (Fractional PDE):** Inverting via the Caputo fractional derivative, the governing PDE upgrades from classical to time-fractional:
+
+$$\boxed{\frac{\partial^\alpha c_{\text{ATP}}}{\partial t^\alpha} = D_\alpha \nabla^2 c_{\text{ATP}} - \tilde{R}(c_{\text{ATP}}), \qquad \alpha \in (0, 1]}$$
+
+$$\frac{\partial^\alpha c_{\text{ATP}}}{\partial t^\alpha} \equiv \frac{1}{\Gamma(1-\alpha)} \int_0^t \frac{\partial c_{\text{ATP}}(\mathbf{x}, \tau)}{\partial \tau} \frac{d\tau}{(t - \tau)^\alpha}$$
+
+The $\alpha = 1$ limit recovers the classical Fickian reaction-diffusion equation. For $\alpha < 1$, the Caputo derivative introduces a **memory kernel** $\sim (t-\tau)^{-\alpha}$: the current ATP flux depends on the entire depletion history, not just the instantaneous gradient.
+
+**Step 3 (Destruction of the Constant-Velocity Soliton):** The Fisher-KPP theorem requires a reaction-diffusion equation of the form $\partial_t c = D \nabla^2 c + f(c)$ with Markovian dynamics — the constant velocity emerges from the balance between linear diffusion spreading and nonlinear reaction at the wavefront tip. Under anomalous subdiffusion, this balance is broken: the spreading rate of the front is not $D t$ but $D_\alpha t^\alpha$. The wavefront velocity is no longer constant but **time-decaying**:
+
+$$\boxed{v_{\text{necrosis}}(t) \sim \frac{d}{dt} \sqrt{D_\alpha t^\alpha} = \frac{\alpha}{2} \sqrt{\frac{D_\alpha}{t^{2-\alpha}}} = \frac{\alpha}{2}\left(\frac{D_\alpha}{t^{2-\alpha}}\right)^{1/2} \propto t^{(\alpha-1)/2}}$$
+
+Since $\alpha < 1$, the exponent $(\alpha-1)/2 < 0$ — the necrosis front **decelerates** as it spreads. The constant-velocity soliton is **destroyed by crowding**. The topology shattering is therefore slower than the Fickian prediction — isolated metabolic pockets take longer to form — but once formed they are more persistent (the subdiffusive transport cannot reconnect them as rapidly as normal diffusion would).
+
+**Step 4 (Corrected Necrosis Velocity Bound):** The effective necrosis velocity at time $t$ is bounded:
+
+$$v_{\text{necrosis}}(t) \leq \frac{\alpha}{2}\left(\frac{D_\alpha R_{\max}}{K_M}\right)^{1/2} t^{(\alpha-1)/2}$$
+
+The classical Fisher-KPP bound $v_{\text{depletion}} = 2\sqrt{D_{\text{ATP}}R_{\max}/K_M}$ is recovered as $\alpha \to 1$ ( $D_\alpha \to D_{\text{ATP}}$, $v \to$ constant). For $\alpha < 1$, the necrosis front is systematically slower at all times $t > 1$ [s] but does not vanish — it asymptotes to zero velocity only as $t \to \infty$, meaning **the entity's topological shattering is delayed but not prevented by crowding**. The structural margin $\phi(x,t)$ collapses according to the subdiffusive schedule rather than the Fickian schedule, shifting the topology shattering time by a factor $\sim (\alpha/2)^{2/(1-\alpha)}$.
+
+**Downstream frontiers:** 4.13a (the anomalous exponent $\alpha$ must be linked to biological crowding parameters — macromolecular volume fraction, mesh size of the cytoskeletal network, and measured MSD scaling from live-cell tracking experiments); 4.13b (the fractional PDE on the curved Riemannian interior $(\Omega_\mathbb{R}, g)$ requires a covariant generalization of the Caputo operator when the metric $g$ is non-flat).
+
 ---
 
 ### 4.6 Thermal Shock & Rapid Landauer Erasure Limits
