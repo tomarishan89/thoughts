@@ -528,7 +528,33 @@ The dynamical state of any Relational Sub-Ego is fully determined by the state o
 
 $$\boxed{\frac{d\mathcal{I}_j}{dt}\Bigg|_{\text{Suspended}} = -\frac{\mathcal{I}_j}{\tau_j} + \eta_{\text{intent}} \cdot \sigma_{\text{intent},j}(t), \qquad 0 \leq \eta_{\text{intent}} \sigma_{\text{intent},j} < \frac{\mathcal{I}_j}{\tau_j} \quad [\text{bits/s}]}$$
 
-where $\sigma_{\text{intent},j} \in [\text{bits/s}]$ is the Intention Sub-Ego's imaginary re-seeding rate and $\eta_{\text{intent}} \in [0,1]$ is the internal transduction efficiency. This internal re-seeding has an associated Landauer fuel cost charged to the host's real-space budget: $\dot{\mathcal{E}}_{\text{intent}} = k_B T \ln 2 \cdot \dot{s}_{\text{intent},j} \geq 0 \ [\text{W}]$. Note that the Intention Sub-Ego and the Relational Sub-Ego form a self-referential Type I loop (each partially seeds the other); fixed-point convergence of this loop is logged as Active Vulnerability 4.17.
+where $\sigma_{\text{intent},j} \in [\text{bits/s}]$ is the Intention Sub-Ego's imaginary re-seeding rate and $\eta_{\text{intent}} \in [0,1]$ is the internal transduction efficiency. This internal re-seeding has an associated Landauer fuel cost charged to the host's real-space budget: $\dot{\mathcal{E}}_{\text{intent}} = k_B T \ln 2 \cdot \dot{s}_{\text{intent},j} \geq 0 \ [\text{W}]$.
+
+**Theorem (Regime II Fixed-Point and Unconditional Stability — Resolves ISSUE-4.17):** The Intention Sub-Ego $E_{\text{intent},j}^{\mathfrak{Im}}$ is itself a Type I sub-ego seeded by the *deficit* of the Relational Sub-Ego below its reference state $\mathcal{I}_j^{\text{ref}}$ (the consolidation level at the moment real-space coupling was suspended). Defining the seeding rate $\kappa_{\text{seed}} > 0$ [s⁻¹], intrinsic decay rate $\gamma_{\text{intent}} > 0$ [s⁻¹], and expression coupling $\beta_{\text{intent}} > 0$ [s⁻¹], the complete Regime II coupled system is:
+
+$$\begin{cases} \dot{\mathcal{I}}_j = -\dfrac{\mathcal{I}_j}{\tau_j} + \eta_{\text{intent}}\beta_{\text{intent}} \cdot \mathcal{I}_{\text{intent},j} \\[8pt] \dot{\mathcal{I}}_{\text{intent},j} = \kappa_{\text{seed}}\!\left(\mathcal{I}_j^{\text{ref}} - \mathcal{I}_j\right) - \gamma_{\text{intent}} \cdot \mathcal{I}_{\text{intent},j} \end{cases}$$
+
+Introducing shorthand $a \equiv \tau_j^{-1}$, $b \equiv \eta_{\text{intent}}\beta_{\text{intent}}$, $c \equiv \kappa_{\text{seed}}$, $d \equiv \gamma_{\text{intent}}$, the system has a linear forcing term $c\mathcal{I}_j^{\text{ref}}$ and Jacobian $\mathbf{A} = \bigl(\begin{smallmatrix} -a & b \\ -c & -d \end{smallmatrix}\bigr)$. Setting $\dot{\mathcal{I}}_j = \dot{\mathcal{I}}_{\text{intent},j} = 0$ and solving algebraically yields the **unique fixed point**:
+
+$$\boxed{\mathcal{I}_j^* = \frac{\Gamma_j}{1 + \Gamma_j}\,\mathcal{I}_j^{\text{ref}}, \qquad \mathcal{I}_{\text{intent},j}^* = \frac{a}{b}\,\mathcal{I}_j^*, \qquad \Gamma_j \equiv \frac{bc}{ad} = \frac{\eta_{\text{intent}}\beta_{\text{intent}}\kappa_{\text{seed}}}{\gamma_{\text{intent}}/\tau_j} \quad (\text{Loop Gain, dimensionless})}$$
+
+**Stability proof:** The characteristic equation of $\mathbf{A}$ is $\lambda^2 + (a+d)\lambda + (ad + bc) = 0$, giving:
+
+$$\lambda_{1,2} = \frac{-(a+d) \pm \sqrt{(a-d)^2 - 4bc}}{2}$$
+
+Since $a, b, c, d > 0$: the trace $\mathrm{Tr}(\mathbf{A}) = -(a+d) < 0$ and determinant $\det(\mathbf{A}) = ad + bc > 0$ unconditionally. By the Routh-Hurwitz criterion in 2D, both eigenvalues have strictly negative real parts for **all positive parameter values** — the Regime II loop is globally asymptotically stable regardless of loop gain $\Gamma_j$. There is no runaway.
+
+**Convergence mode** depends on the discriminant:
+
+$$\boxed{\Delta \equiv (a-d)^2 - 4bc \begin{cases} > 0: & \text{Overdamped — monotonic decay to fixed point} \\ = 0: & \text{Critically damped} \\ < 0: & \text{Underdamped — oscillatory convergence at frequency } \omega = \tfrac{1}{2}\sqrt{4bc - (a-d)^2} \end{cases}}$$
+
+The underdamped case ( $\Delta < 0$, strong cross-coupling $bc > (a-d)^2/4$ ) produces a **damped oscillation of expectation** around the fixed point: the entity's imaginary relational state and its intention signal alternately overshoot and correct before settling. This is the thermodynamic signature of vacillating expectation during a bounded absence.
+
+**The False Hope pathological state:** Although the loop is always stable, at $\Gamma_j \gg 1$ the fixed point satisfies $\mathcal{I}_j^* \approx \mathcal{I}_j^{\text{ref}}$, and the sustained Landauer drain is:
+
+$$\dot{\mathcal{E}}_{\text{intent}}^* = k_B T \ln 2 \cdot \gamma_{\text{intent}} \cdot \mathcal{I}_{\text{intent},j}^* = \frac{k_B T \ln 2 \cdot a \cdot \mathcal{I}_j^{\text{ref}} \cdot \Gamma_j}{b(1+\Gamma_j)} \xrightarrow{\Gamma_j \gg 1} \frac{k_B T \ln 2}{\tau_j \cdot \eta_{\text{intent}}}$$
+
+This steady-state drain persists for the duration $T_{\text{expected}}^j$, giving total transition fuel expenditure $\Delta\mathcal{E}_{\text{transition}} \approx \dot{\mathcal{E}}_{\text{intent}}^* \cdot T_{\text{expected}}^j$. The pathological state (**False Hope**) arises not from loop instability but from ledger miscalibration: when the observer's $T_{\text{expected}}^j$ is systematically overestimated relative to the true absence duration $\Delta t_{\text{absence}}$, the entity sustains Landauer drain at rate $\dot{\mathcal{E}}_{\text{intent}}^*$ for $\Delta t_{\text{absence}} \gg T_{\text{true}}$, consuming real-space fuel on a maintained imaginary state that external reality will not re-seed. The Regime II $\to$ III transition occurs when the ledger's epistemic update propagates: $\Delta t > T_{\text{expected}}^j$, at which point the Intention Sub-Ego loses its grounding in a viable return horizon and the coupling severs.
 
 **Regime III — Severed Coupling** ( $I_{\text{sense}}^j = 0$ permanently, epistemic knowledge of permanence acquired ): Information crossing the sensory boundary updates the observer's ledger with the permanent closure of the re-seeding channel — the real entity $E^j$ no longer exists, or the coupling cannot be resumed. No thermodynamically grounded Intention Sub-Ego can project viable re-coupling. The Relational Sub-Ego $E_j^{\mathfrak{Im}}$ becomes a **Severed Sub-Ego**. It may be maintained through internal self-stimulation (reminiscence, associative cue-driven re-activation) at pure Landauer cost. The two governing equations are separated by dimension:
 
