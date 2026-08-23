@@ -584,7 +584,27 @@ The effective relational coupling operator for $E^k$ is therefore a *distance-we
 
 $$\boxed{\mathcal{O}_{\text{coupling}}^{E^k \to E} = \mathcal{O}_{\text{ref-class}} \cdot f\!\left( d_{\mathfrak{Im}}\!\left(E_k^{\mathfrak{Im}},\, \mathcal{R}_{\text{class}}^{(E)}\right) \right)}$$
 
-where $f$ is a monotonically decreasing coupling attenuation function ( $f(0)=1, f(\infty)=0$ ). This establishes a first-principles thermodynamic basis for why abstract relational roles ("the Dharm of a Mother") are not written in universal law but are, for each observer, the behavioral and energetic pattern encoded in the most structurally consolidated imaginary sub-ego occupying that role. The Reference Sub-Ego is the empirical instantiation of the abstract class.
+**Derivation of $f$ — Boltzmann Factor in Weber-Fechner Log-Space (Resolves ISSUE-4.15):** The imaginary space metric established in §1.1 is the Weber-Fechner logarithmic metric $ds_{\mathfrak{Im}}^2 = \sum_i \left(k_i \ln S_i/S_{0,i}\right)^2$. Defining log-scaled Fechner coordinates $\xi_i \equiv k_i \ln(S_i/S_{0,i})$, this metric becomes exactly Euclidean: $ds_{\mathfrak{Im}}^2 = \sum_i d\xi_i^2$. Consequently, $\Omega_{\mathfrak{Im}}$ is **flat in log-coordinates** and the imaginary distance reduces to:
+
+$$d_{\mathfrak{Im}}\!\left(E_k^{\mathfrak{Im}},\, \mathcal{R}_{\text{class}}^{(E)}\right) = \left\| \boldsymbol{\xi}_k - \boldsymbol{\xi}_{\text{ref}} \right\|_2 = \sqrt{\sum_i k_i^2 \ln^2\!\left(\frac{S_i^k}{S_i^{\text{ref}}}\right)}$$
+
+The coupling operator is derived as an Euler-Lagrange boundary functional. The thermodynamic re-encoding cost of mapping sensory pattern $I_{\text{sense}}^k$ onto the reference pattern $I_{\text{sense}}^{\text{ref}}$ in the flat $\boldsymbol{\xi}$-space is given by the fluctuation-dissipation theorem:
+
+$$\Delta W(k) = \frac{k_B T}{2\ell_{\mathfrak{Im}}^2}\, d_{\mathfrak{Im}}^2\!\left(E_k^{\mathfrak{Im}},\, \mathcal{R}_{\text{class}}^{(E)}\right)$$
+
+where $\ell_{\mathfrak{Im}} \geq 0$ [dimensionless, in units of one JND = one $\xi$-unit] is the **imaginary correlation length** — the characteristic radius in log-space over which the reference class operator retains significant coupling. The coupling attenuation function is then the Boltzmann factor of this re-encoding cost:
+
+$$\boxed{f(d_{\mathfrak{Im}}) = \exp\!\left(-\frac{d_{\mathfrak{Im}}^2}{2\ell_{\mathfrak{Im}}^2}\right), \qquad f(0) = 1, \quad f(\infty) = 0, \quad f' < 0 \quad \forall\, d_{\mathfrak{Im}} > 0}$$
+
+This is a **Gaussian kernel in Weber-Fechner log-space**, derived from the Boltzmann suppression of thermodynamic re-encoding cost — not assumed ad hoc. It has no hard cut-off radius and exhibits a long-range tail, meaning every entity $E^k$ activates every relational class operator to some degree, with activation decaying exponentially in the squared log-distance from the reference. The coupling strength $f = e^{-1/2}$ at $d_{\mathfrak{Im}} = \ell_{\mathfrak{Im}}$ (one correlation length), and $f \lesssim 0.01$ for $d_{\mathfrak{Im}} > 3\ell_{\mathfrak{Im}}$ (negligible beyond three correlation lengths).
+
+**Upper bound on $\ell_{\mathfrak{Im}}$ from Holevo capacity:** The Holevo bound on the sensory channel limits the number of distinguishable imaginary states to $N_{\text{dist}} \leq 2^{\chi_{\text{Holevo}}}$. For a Gaussian kernel in $n$-dimensional $\boldsymbol{\xi}$-space, the effective coupling volume is a ball of radius $\ell_{\mathfrak{Im}}$, giving:
+
+$$\ell_{\mathfrak{Im}} \leq \left(\frac{2^{\chi_{\text{Holevo}}}}{\omega_n}\right)^{1/n} \quad \text{(Holevo correlation length bound)}$$
+
+where $\omega_n = \pi^{n/2}/\Gamma(n/2+1)$ is the unit $n$-ball volume. The precise value of $\ell_{\mathfrak{Im}}$ requires calibration from the Weber fraction constants $\{k_i\}$ of the sensory modalities involved — flagged as ISSUE-4.15a.
+
+This establishes a first-principles thermodynamic basis for why abstract relational roles ("the Dharm of a Mother") are not written in universal law but are, for each observer, the behavioral and energetic pattern encoded in the most structurally consolidated imaginary sub-ego occupying that role. The Reference Sub-Ego is the empirical instantiation of the abstract class; $\ell_{\mathfrak{Im}}$ is the empirically determined width of that class in log-perceptual space.
 
 **Optimal Imaginary Quiescence (Mastery and the Dhoni Limit):** The fuel partition equation divides the total metabolic budget between Real and Imaginary expenditure. Under conditions of high real-space demand (fine-grained physical reaction is required, e.g., a batsman facing a delivery in a high-stakes match), the imaginary sub-egos impose a direct thermodynamic penalty on physical performance by competing for the same fuel pool. Define the **Imaginary Quiescence Index** $\mathcal{Q}(t)$ as the fraction of total fuel routed to Real Space:
 
