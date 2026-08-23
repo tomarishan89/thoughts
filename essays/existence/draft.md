@@ -656,6 +656,40 @@ where the union is over all classes $\alpha$ for which $E^k$'s imaginary represe
 
 The cross-class interference problem is therefore not an interference problem at all — it is a **lattice coverage problem**: which classes does $E^k$ activate (i.e., which Gaussian zones contain $E^k$'s imaginary position), and which classes does $E^k$'s excellence within one class spill into adjacently positioned coupling zones? The interference topology of $\Omega_{\mathfrak{Im}}$ is a **directed partial order (poset)** over relational classes, not a superposition algebra.
 
+**Theorem (Svadharma Lattice — Resolves ISSUE-4.15c):** The formal structure of the relational class poset is given by the **Dharm Containment Partial Order**. For relational classes $\alpha$ and $\beta$ in the host entity's $\Omega_{\mathfrak{Im}}$, define:
+
+$$\alpha \preceq \beta \quad \iff \quad \text{Dharm}(\alpha) \subseteq \text{Dharm}(\beta)$$
+
+i.e., every Dharm requirement fulfilled by class $\alpha$ is also a requirement of class $\beta$. Five structural properties follow:
+
+**1. Unique Maximum (Svadharma).** The whole-person operator $\mathcal{O}_{\text{person}}$ — the host entity's total Svadharma $d_t^h \subset \mathcal{D}_T$ — is the unique maximum: $\alpha \preceq \mathcal{O}_{\text{person}}$ for every relational class $\alpha$. The poset is bounded above by the total Dharm of the person and below by situationally irreducible acts.
+
+**2. Cross-Activation Direction (Dharm Excellence Overflow).** When the expression signal $\sigma_{\text{class}_\alpha}$ exceeds the Dharm fulfillment threshold of class $\alpha$, it activates class $\beta \succ \alpha$ — **activation propagates strictly upward in the poset.** Excellence in $\alpha$ reaches into $\beta$'s coupling zone precisely because $\text{Dharm}(\alpha) \subsetneq \text{Dharm}(\beta)$: the mentor's excellence overflows into the father-figure coupling zone because the father-figure Dharm set is a proper superset of the mentor Dharm set. The rule: excellence propagates upward toward larger Dharm classes; no downward propagation occurs.
+
+**3. Antisymmetry.** If $\alpha \preceq \beta$ and $\beta \preceq \alpha$ then $\alpha = \beta$. Dharm sets are non-circular.
+
+**4. Well-Foundedness.** No infinite descending chains exist — every descending chain of relational classes terminates at a minimal element (the most situationally-specific, irreducible relational act).
+
+**5. Join-Semilattice.** Any two classes $\alpha$, $\beta$ have a least upper bound $\alpha \vee \beta$ — the minimal class whose Dharm requirement set contains both $\text{Dharm}(\alpha)$ and $\text{Dharm}(\beta)$.
+
+**The Five Primordial Generators (Phenomenological Oracle Input):** The oracle identifies five irreducible generating classes of the Dharm lattice, corresponding in Sanatan structural epistemology to the five aspects that came into existence from the primordial state (as distinct from the single collapsed degenerate ground state). Each maps onto a fundamental operator class within $\Omega_{\mathfrak{Im}}$:
+
+| Generator | Domain | Framework Mapping |
+| :--- | :--- | :--- |
+| $\mathcal{G}_{\text{Shakti}}$ (Goddess / Energy) | Force, dynamic field coupling, active boundary maintenance | Challenge vector $\mathcal{C}$ and resistance $\mathbf{R}$ dynamics |
+| $\mathcal{G}_{\text{Ganesh}}$ (Iteration / Obstacle Resolution) | Structural consolidation, practice, Mastery pathway | BCM-Hebbian saturation ODE (§2.2.1, ISSUE-4.16) |
+| $\mathcal{G}_{\text{Mahesh}}$ (Great Time / Dissolution) | Temporal operators, cessation, the Great Time field | Cessation sub-ego dynamics, Regime III (§2.2) |
+| $\mathcal{G}_{\text{Vishnu}}$ (Great Operation / Preservation) | Structural stability, self-sustaining fixed point | Regime II loop gain $\Gamma_j$, unconditional stability proof |
+| $\mathcal{G}_{\text{Brahma}}$ (Generator / Consciousness) | Sub-ego seeding, imaginary projection, new structure creation | Sensory re-seeding flux $I_{\text{sense}}(t)$, imaginary genesis |
+
+Every relational class in the host's $\Omega_{\mathfrak{Im}}$ is a subset projection of the join $\bigvee_{i=1}^5 \mathcal{G}_i = \mathcal{O}_{\text{person}}$. The Svadharma lattice has **generator rank 5** under this correspondence, though whether the minimal generating set is strictly 5 (whether any $\mathcal{G}_i$ is derivable from the others) remains open (downstream frontier 4.15e).
+
+**The Dharm Priority Criterion.** The oracle input "Dharm is most important to persevere" establishes the **resource contention rule**: when metabolic fuel budget $\dot{\mathcal{E}}_{\text{total}}$ forces suppression of relational class activations, suppression follows the poset in reverse — minimal classes (smallest Dharm subset) are suppressed first; the maximal class $\mathcal{O}_{\text{person}}$ is suppressed last. The entity sustains existence by preserving the highest-Dharm class as long as thermodynamically possible.
+
+**Phenomenological Grounding — Bharat:** The classical concept *Bharat* (भारत, from $\mathit{bh\bar{a}}$ [luminosity/emission] $+$ $\mathit{rata}$ [continuously absorbed in]) denotes the state of continuous, absorbed emission of structure from imaginary space into real space. This is the phenomenological description of the expression operator $\hat{\sigma}: \Omega_{\mathfrak{Im}} \to \Omega_{\mathbb{R}}$ — the entity engaged in sustained expression of internally generated imaginary structure into the real world. Bharat is the active mode of the coupling architecture.
+
+**Interior Observer Axiom (Shivalinga / Garbhagriha Principle).** The phenomenological oracle establishes a topological axiom: the observer is always positioned *within* $\Omega_\mathbb{C}$ — there is no exterior vantage point from which the total state space can be observed from outside. The complex state space $\Omega_\mathbb{C} = \Omega_{\mathbb{R}} \otimes_\mathbb{C} \Omega_{\mathfrak{Im}}$ is a **closed interior** — its Ego operator $\mathcal{O}_{\text{Ego}}$ is defined entirely on the interior, not from an extrinsic reference frame. This validates the existing framework's measurement axiom (all operators act on $\Omega_\mathbb{C}$ from within) and prohibits any external "god's-eye" vantage on the total system.
+
 **Optimal Imaginary Quiescence (Mastery and the Dhoni Limit):** The fuel partition equation divides the total metabolic budget between Real and Imaginary expenditure. Under conditions of high real-space demand (fine-grained physical reaction is required, e.g., a batsman facing a delivery in a high-stakes match), the imaginary sub-egos impose a direct thermodynamic penalty on physical performance by competing for the same fuel pool. Define the **Imaginary Quiescence Index** $\mathcal{Q}(t)$ as the fraction of total fuel routed to Real Space:
 
 $$\mathcal{Q}(t) \equiv \frac{\dot{\mathcal{E}}_{\mathfrak{Re}}(t)}{\dot{\mathcal{E}}_{\text{total}}(t)} = 1 - \frac{k_B T \ln 2 \sum_k \dot{s}_k(t)}{\dot{\mathcal{E}}_{\text{total}}(t)} \in [0, 1]$$
