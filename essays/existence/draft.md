@@ -1311,6 +1311,42 @@ where $\Delta T_{\text{crit}}$ is the critical temperature threshold for irrever
 - **Survival Regime ( $\mathrm{Da}_{\text{erasure}} \le 1$ ):** Thermal conduction effectively dissipates the Landauer heat to the environment, maintaining $T < T_{\text{crit}}$.
 - **Thermal Necrosis ( $\mathrm{Da}_{\text{erasure}} > 1$ ):** The processing rate exceeds the thermal relaxation capacity. The internal temperature diverges past the denaturation threshold ( $\Delta T > \Delta T_{\text{crit}}$ ), inducing widespread protein unfolding, catastrophic drop in shear modulus $G_0 \to 0$, and yielding of the structural margin $\phi < 0$. This rigorously bounds the maximum cognitive/sensory processing rate of any physical entity strictly by its thermodynamic heat transfer limits.
 
+**Theorem (Cattaneo-Vernotte Causal Heat Correction — Resolves ISSUE-4.14):** The Fourier heat equation $\rho c_p \partial_t T = \nabla \cdot (k_{\text{thermal}} \nabla T) + \dot{q}_{\text{erasure}}$ implies instantaneous heat propagation (infinite characteristic speed), violating Special Relativity. At ultrafast timescales relevant to synaptic firing ( $\tau_q \sim 10^{-11}$–$10^{-9}$ s for biological soft matter) and quantum-coupled sensory processing, the heat flux $\mathbf{q}$ cannot respond instantaneously. The classical Fourier constitutive law $\mathbf{q} = -k_{\text{thermal}} \nabla T$ is replaced by the **Cattaneo-Vernotte (CV) relaxation equation**:
+
+$$\boxed{\tau_q \frac{\partial \mathbf{q}}{\partial t} + \mathbf{q} = -k_{\text{thermal}} \nabla T}$$
+
+where $\tau_q$ [s] is the thermal relaxation time. Substituting into the energy balance gives the **hyperbolic heat equation**:
+
+$$\boxed{\tau_q \rho c_p \frac{\partial^2 T}{\partial t^2} + \rho c_p \frac{\partial T}{\partial t} = k_{\text{thermal}} \nabla^2 T + \dot{q}_{\text{erasure}} + \tau_q \frac{\partial \dot{q}_{\text{erasure}}}{\partial t}}$$
+
+This is a **damped wave equation** for the temperature field. The additional term $\tau_q \partial_t^2 T$ gives heat a finite propagation speed (the "second sound" speed):
+
+$$c_{\text{thermal}} = \sqrt{\frac{k_{\text{thermal}}}{\tau_q \rho c_p}} = \sqrt{\frac{\alpha_{\text{thermal}}}{\tau_q}} \quad [\text{m/s}]$$
+
+where $\alpha_{\text{thermal}} = k_{\text{thermal}}/(\rho c_p)$ [m²/s] is the thermal diffusivity.
+
+**The Thermal Mach Number.** When the volumetric heat source $\dot{q}_{\text{erasure}}$ is concentrated at a moving challenge wavefront traveling at speed $v_{\text{challenge}}$, the system is characterized by the dimensionless **Thermal Mach Number**:
+
+$$\boxed{\mathrm{Ma}_{\text{th}} \equiv \frac{v_{\text{challenge}}}{c_{\text{thermal}}} = v_{\text{challenge}} \sqrt{\frac{\tau_q \rho c_p}{k_{\text{thermal}}}}}$$
+
+- **$\mathrm{Ma}_{\text{th}} < 1$ (subsonic challenge):** The CV equation produces smooth temperature gradients, qualitatively similar to Fourier but with finite propagation speed. The Fourier Da$_{\text{erasure}}$ criterion remains valid with the correction factor $(1 + \tau_q \nu_{\text{challenge}})^{-1}$.
+- **$\mathrm{Ma}_{\text{th}} = 1$ (thermal resonance):** The heat source exactly tracks the thermal wave — resonant amplification. Temperature accumulates without bound at the wavefront. This is the **thermal critical point**: the entity cannot survive a challenge that matches its own thermal wave speed.
+- **$\mathrm{Ma}_{\text{th}} > 1$ (supersonic challenge):** The challenge outruns the thermal wave. The entity experiences a **thermal shock wave** — a discontinuous temperature jump propagating through the interior — rather than smooth diffusive gradients. The temperature jump across the shock is:
+
+$$\Delta T_{\text{shock}} = \frac{\tau_q \dot{q}_{\text{erasure}}}{\rho c_p} \cdot \frac{\mathrm{Ma}_{\text{th}}^2}{\mathrm{Ma}_{\text{th}}^2 - 1}$$
+
+**Corrected Da$_{\text{erasure}}$ Criterion.** The Fourier criterion $\mathrm{Da}_{\text{erasure}} \leq 1$ is now modified. In the subsonic CV regime ( $\mathrm{Ma}_{\text{th}} < 1$ ), the effective erasure Damköhler number acquires a relaxation correction:
+
+$$\mathrm{Da}_{\text{erasure}}^{\text{CV}} \equiv \mathrm{Da}_{\text{erasure}} \cdot (1 + \tau_q \nu_{\text{challenge}}) = \frac{\nu_{\text{challenge}} \rho_{\text{bits}} k_B T \ln 2 \cdot L^2}{k_{\text{thermal}} \Delta T_{\text{crit}}} \cdot (1 + \tau_q \nu_{\text{challenge}})$$
+
+The thermal necrosis threshold is therefore **lowered** relative to the Fourier estimate — the entity fails at a lower challenge frequency than predicted by Fourier. At $\nu_{\text{challenge}} \tau_q \gg 1$ (ultrafast regime), the correction factor $\tau_q \nu_{\text{challenge}} \gg 1$ dominates and the CV criterion becomes:
+
+$$\mathrm{Da}_{\text{erasure}}^{\text{CV}} \approx \frac{\rho_{\text{bits}} k_B T \ln 2 \cdot L^2 \cdot \tau_q \nu_{\text{challenge}}^2}{k_{\text{thermal}} \Delta T_{\text{crit}}}$$
+
+This scales as $\nu_{\text{challenge}}^2$ rather than $\nu_{\text{challenge}}^1$ — thermal necrosis in the ultrafast regime is **quadratically sensitive** to challenge frequency, not linearly. The supersonic thermal shock condition ( $\mathrm{Ma}_{\text{th}} > 1$ ) provides an absolute ceiling: entities for which $v_{\text{challenge}} > c_{\text{thermal}}$ fail catastrophically regardless of Da$_{\text{erasure}}$ — the thermal shock wave produces a spatially discontinuous temperature collapse that severs structural margin $\phi$ across a surface rather than a volume, creating a **thermal cleavage plane** rather than volumetric necrosis.
+
+**Downstream frontiers:** 4.14a ( $\tau_q$ for biological soft matter must be bounded from measured thermal relaxation spectra; estimates range $\tau_q \sim 10^{-11}$–$10^{-9}$ s for cytoplasm — this sets the challenge frequency threshold for the CV correction to dominate); 4.14b (the thermal cleavage plane geometry under supersonic challenge — the discontinuous temperature jump selectively severs biological interfaces along the challenge wavefront's normal direction, which is topologically distinct from volumetric necrosis).
+
 ---
 
 ## Section 5: Dynamic Role Assignment & Interfacial Cleavage
