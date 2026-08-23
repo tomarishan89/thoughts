@@ -1411,6 +1411,32 @@ where $b_p^{(2)}(\widetilde{\mathbb{S}}) = \dim_\Gamma \ker(\Delta_p)$ is the $p
 * **Step 4 (Programmed Nodal Apoptosis & Re-allocation):**
 When an individual constituent node $E^j$ reaches irrecoverable genetic or metabolic damage, junctional reverse-gating drives its individual structural margin negative ( $\phi(E^j) < 0 \implies \mu(E^j) \to 0$ ) while channeling its residual chemical inventory into $\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$, preserving the collective macro-envelope ( $\mu(\mathbb{S}) > 0$ ).
 
+**Theorem (n-k Syncytial Failure Cascade Bounds — Resolves ISSUE-4.11):** Let the syncytium $\mathbb{S}$ contain $n$ constituent nodes $\{E^j\}_{j=1}^n$, each with metabolic capacity $\mathcal{C}^j$ [W] and current load $\mathcal{L}^j$ [W], and safety margin $\Delta^j \equiv \mathcal{C}^j - \mathcal{L}^j > 0$. When $k$ nodes fail and their loads are redistributed to the surviving $n-k$ nodes according to weight matrix $W_{ij}$ (fraction of node $i$'s load rerouted to node $j$ on failure of $i$ ), the additional load imposed on survivor $j$ is $\delta\mathcal{L}^j = \sum_{i \in \mathcal{F}} W_{ij} \mathcal{L}^i$, where $\mathcal{F}$ is the set of failed nodes. Define the dimensionless **Cascade Propagation Number**:
+
+$$\boxed{\mathrm{Cp} \equiv \frac{\max_{j \notin \mathcal{F}} \delta\mathcal{L}^j}{\min_{j \notin \mathcal{F}} \Delta^j} = \frac{\max_{j \notin \mathcal{F}} \sum_{i \in \mathcal{F}} W_{ij} \mathcal{L}^i}{\min_{j \notin \mathcal{F}} (\mathcal{C}^j - \mathcal{L}^j)}}$$
+
+The cascade is **finite (absorbed)** iff $\mathrm{Cp} < 1$. The cascade **propagates** (secondary failures) iff $\mathrm{Cp} \geq 1$.
+
+**Mean-field case (homogeneous network: $\mathcal{C}^j = \mathcal{C}$, $\mathcal{L}^j = \mathcal{L}$, uniform redistribution $W_{ij} = 1/(n-k)$ ):** The survivor load becomes $\mathcal{L}_{\text{survivor}} = n\mathcal{L}/(n-k)$, and the no-cascade condition $\mathcal{L}_{\text{survivor}} \leq \mathcal{C}$ gives the **critical outage number**:
+
+$$\boxed{k^* = \left\lfloor n\left(1 - \rho\right) \right\rfloor = \left\lfloor n\frac{\Delta}{\mathcal{C}} \right\rfloor, \qquad \rho \equiv \frac{\mathcal{L}}{\mathcal{C}} \in (0,1)}$$
+
+The syncytium tolerates at most $k^*$ simultaneous nodal failures without cascade. The **critical fraction** $f^* = k^*/n = 1-\rho = \Delta/\mathcal{C}$ equals the normalized safety margin — the tolerable failure fraction is entirely determined by the metabolic headroom, not by network size. In the homogeneous mean-field case, $\mathrm{Cp} = k\rho/(1-\rho)(n-k)^{-1} \cdot n$; simplifying, **$\mathrm{Cp} < 1$ iff $k < k^*$**.
+
+**Cascade size distribution (subcritical branching):** Below criticality ( $\mathrm{Cp} < 1$ ), each failed node triggers on average $\mathrm{Cp}$ secondary failures. The cascade obeys a Galton-Watson branching process with offspring mean $\mu \equiv \mathrm{Cp}$, giving the expected total cascade size:
+
+$$\langle S \rangle = \frac{k}{1 - \mathrm{Cp}} \quad (\mathrm{Cp} < 1)$$
+
+At the critical point $\mathrm{Cp} = 1$ (the **Syncytial Critical Point**), the cascade size distribution acquires a power-law tail $P(S) \sim S^{-3/2}$ (classical Galton-Watson critical exponent). Above criticality ( $\mathrm{Cp} > 1$ ), the cascade engulfs $O(n)$ nodes — network-wide collapse. The Syncytial Critical Point is the boundary between programmed nodal loss (functional apoptosis, Step 4 above) and catastrophic syndromic collapse.
+
+**Landauer cost of cascade:** Each failing node $E^j$ erases its ledger $\mathcal{I}^j_{\mathbb{S}}$ at Bekenstein-bounded Landauer cost:
+
+$$\mathcal{E}_{\text{cascade}} = k_B T \ln 2 \sum_{j \in \mathcal{C}\text{ascade}} S^j_{\mathbb{R}}, \qquad S^j_{\mathbb{R}} = \frac{|\partial E^j_{\mathbb{R}}| c^3}{4G\hbar \ln 2} \quad [\text{bits}]$$
+
+The cascade is therefore not merely a metabolic event but an **irreversible Landauer erasure cascade** — the network's total information content is reduced by $\mathcal{E}_{\text{cascade}}/(k_BT\ln2)$ bits per cascade event, permanently.
+
+**Connection to Step 4:** Programmed apoptosis is the mechanism by which the syncytium operates at $\mathrm{Cp} < 1$ under controlled nodal removal — junctional reverse-gating ensures failed-node load is rerouted to the collective fuel pool $\dot{\mathcal{E}}_{\text{fuel}}^{\mathbb{S}}$ rather than to adjacent nodes, keeping $\delta\mathcal{L}^j \approx 0$ and $\mathrm{Cp} \approx 0$ per apoptotic event. Pathological cascade (necrotic collapse) is the regime $\mathrm{Cp} \geq 1$ where this rerouting fails.
+
 ---
 
 ## Section 6: Non-Equilibrium Stability, Collapse Bounds, and Synthesis
