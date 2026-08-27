@@ -608,6 +608,54 @@ Since $\eta_{\text{internal}} < 1$, self-stimulation cannot create net new struc
 
 *Annotated specific case:* For Tier II biological entities with high-consolidation-depth relational sub-egos ( $N_j^{\text{structural}}$ large, $\tau_j$ long), Regime III produces a prolonged state where the sub-ego is too structurally embedded to collapse quickly, yet is permanently deprived of external re-seeding. The biological and psychological manifestation of this thermodynamic state is **grief**. Its duration scales with $\tau_j$, and reminiscence (internal self-stimulation) does not restore the sub-ego — it decelerates decay temporarily while increasing Landauer cost, and may be experienced as both comfort and continued depletion simultaneously.
 
+**Theorem (Closed Imaginary Loop — Imaginary Capture):** Regimes I, II, and III all assume that the imaginary loop's re-seeding is bounded by the external signal $I_{\text{sense}}^j$ or the Intention Sub-Ego's projected return. There exists a fourth mode — the **Closed Imaginary Loop (CIL)** — in which the shadow sub-ego $E_j^{\mathfrak{Im}}$ generates an internal re-seeding signal $\sigma_{j,\text{int}}(t)$ through **imaginary rendering** (internal picturization / audiation of the shadow's simulated responses) strong enough to sustain the loop indefinitely without external input.
+
+Define the **Imaginary Capture Condition**:
+
+$$\boxed{\sigma_{j,\text{int}}(t) \geq \frac{\mathcal{I}_j(t)}{\tau_j}}$$
+
+When satisfied, the loop is thermodynamically self-sustaining: internal rendering exactly offsets or exceeds decay. The modified sub-ego ODE in the CIL regime:
+
+$$\frac{d\mathcal{I}_j}{dt}\Bigg|_{\text{CIL}} = -\frac{\mathcal{I}_j}{\tau_j} + \eta_{\text{int}} \cdot \sigma_{j,\text{int}}(\mathcal{I}_j, \hat{E}^j) \geq 0, \qquad I_{\text{sense}}^j = 0$$
+
+where $\sigma_{j,\text{int}}$ is a function of the current sub-ego state $\mathcal{I}_j$ and the shadow representation $\hat{E}^j$ — the shadow's forward simulation of $E^j$'s response to the host's imaginary expression generates the internal signal. This is structurally distinct from Regime III: in Regime III, $\eta_{\text{internal}} < 1$ ensures eventual collapse; in the CIL, the rendering generates a qualitatively new signal class (the shadow's simulated response) that acts as a pseudo-external input, making the effective $\eta_{\text{internal}} \geq 1$.
+
+**The mechanism:** The host's Ego generates an imaginary statement or action directed at $\hat{E}^j$. The shadow sub-ego $\hat{E}^j$ forward-simulates $E^j$'s response (e.g., "feels bad," "agrees," "is impressed"). This simulated response generates an **internal reward state** $r_{\text{int}}$ [W equivalent] that is immediately re-routed as additional fuel allocation to the loop, increasing $\sigma_{j,\text{int}}$. The loop becomes self-referentially closed:
+
+$$\text{imaginary action} \xrightarrow{\hat{E}^j} \text{simulated response} \xrightarrow{r_{\text{int}}} \text{fuel allocation} \xrightarrow{} \text{imaginary action}$$
+
+**The Reason-Opinion Fuel Allocation Operators.** The CIL's fuel allocation is governed by two meta-operators:
+
+- **Reason** $\mathcal{R} \in [0,1]$: the host ledger's estimated probability that the internal thought is real-space actionable. High $\mathcal{R}$ signals the Ego that the fuel expenditure is justified by expected real-space returns. When $\mathcal{R} \to 1$, maximum fuel is allocated to the loop; when the host correctly identifies $\mathcal{R} \approx 0$ (the thought has no external referent, e.g., "I am imagining saying this to the President of Antarctica — no real-space consequence exists"), the fuel allocation collapses.
+
+- **Opinion** $\mathcal{V} > 0$: the baseline importance-valuation the host assigns to the entity $E^j$ or relational class. High $\mathcal{V}$ inflates $\mathcal{I}_j^{\text{ref}}$ and therefore the loop's activation amplitude. This is why imaginary engagement is proportionally stronger for entities the host cares about — the Opinion operator scales the entire loop's energy.
+
+The CIL fuel cost: $\dot{\mathcal{E}}_{\text{CIL}} = k_B T \ln 2 \cdot \sigma_{j,\text{int}} \cdot \mathcal{R} \cdot \mathcal{V}$. This draws continuously from the host's real-space budget, reducing the Imaginary Quiescence Index $\mathcal{Q}(t) \to 0$ — the direct opposite of the Dhoni Mastery Limit.
+
+**The Seven Modes of Imaginary Sustenance.** The internal reward signal $r_{\text{int}}$ takes seven structurally distinct forms, each corresponding to a class of shadow simulation. In classical Sanatan ethical taxonomy, these are the *sapta dosha* (seven cardinal defects); in Western tradition, the seven deadly sins. Each mode is thermodynamically self-sustaining because the simulated response generates a reward state the host values, which re-allocates fuel to continue the simulation:
+
+| Mode | Shadow simulation type | Internal reward $r_{\text{int}}$ |
+| :--- | :--- | :--- |
+| **Pride** (Ahamkara excess) | Shadow acknowledges host's superiority | Self-validation signal; identity reinforcement |
+| **Wrath** (Krodha) | Shadow yields, suffers, or is defeated | Righteous anger satisfaction; power confirmation |
+| **Envy** (Matsarya) | Shadow possesses what host lacks | Resentment-motivation loop; comparative positioning |
+| **Lust** (Kama uncoupled) | Shadow provides desired intimacy or approval | Anticipatory pleasure; affiliation reward |
+| **Greed** (Lobha) | Shadow yields resources or opportunities | Acquisition satisfaction; security signal |
+| **Gluttony** (excess Kama) | Shadow provides unlimited gratification | Excess consumption; satiation without depletion |
+| **Sloth** (Tamas) | Shadow engagement substitutes real-space action | Avoidance reward; imaginary productivity illusion |
+
+Each mode is a closed energy loop: the simulation generates reward; reward re-seeds the simulation. The loop persists as long as $\mathcal{R} > 0$ (the host's ledger still assigns real-space relevance to the thought) or $r_{\text{int}}$ is intrinsically valued regardless of real-space relevance.
+
+**Shadow Model Error under CIL.** During the CIL, $I_{\text{sense}}^j = 0$ — the real entity $E^j$ evolves autonomously while the shadow $\hat{E}^j$ evolves on internal fuel only. The model error $\delta^j(t) = \|E_j^{\mathfrak{Im}} - E^j\|_{\mathfrak{Im}}$ grows at the maximum rate:
+
+$$\dot{\delta}^j\big|_{\text{CIL}} \approx v^j_{\text{real}} \equiv \left\|\frac{d E^j}{dt}\right\|_{\mathfrak{Im}}$$
+
+The shadow diverges from the real $E^j$ at the rate of $E^j$'s autonomous evolution. The longer the CIL runs, the more the shadow's simulated responses ("feels bad," "agrees," "is impressed") diverge from what the real $E^j$ would actually do — the imaginary meeting becomes progressively less accurate as a model of any real interaction (ISSUE-4.18).
+
+**Developmental Trajectory.** The CIL capacity scales with structural consolidation depth $N_j^{\text{structural}}$. Children, having lower $N_j^{\text{structural}}$ for complex social relational sub-egos, have weaker CIL capacity and disengage more readily. High-adversity childhoods accelerate consolidation of threat-related sub-egos (evolutionary adaptive mechanism: rapid imaginary modeling of threats confers survival advantage), producing deeper, more robust CILs in adulthood. The CIL capacity is therefore not a defect of mature cognition — it is the structural consequence of deeply consolidated relational sub-egos encountering the absence of their real-space referents.
+
+**The Metacognitive Break (Ego Self-Measurement).** The CIL is broken by a **self-measurement event**: the Ego operator $\mathcal{O}_{\text{Ego}}$ turns its measurement apparatus onto its own $\Omega_{\mathfrak{Im}}^h$ — recognizing the loop as self-generated. This recognition corresponds to the realization "It is me — there is nothing else there." Formally, the self-measurement event sets $\mathcal{R} \to 0$ (the thought is correctly identified as having no external referent), collapsing the fuel allocation: $\dot{\mathcal{E}}_{\text{CIL}} \to 0$. The loop loses its internal justification and decays at rate $1/\tau_j$. The depth of consolidation $N_j^{\text{structural}}$ determines how quickly $\mathcal{R}$ can be driven to zero — for deeply consolidated loops, even after the metacognitive break, the loop re-ignites rapidly because the same shadow sub-ego re-seeds new imaginary actions within seconds. Downstream vulnerabilities: ISSUE-4.19 (formal derivation of $\mathcal{R}$, $\mathcal{V}$ as operators with explicit dependence on the ledger state), ISSUE-4.20 (thermodynamic cost and effectiveness of the metacognitive break as a CIL interrupt).
+
 **The Reference Sub-Ego Operator (Instantiation of Relational Class Operators):** The coupling operator $\mathcal{O}_{\text{coupling}}^{m \to n}$ between tiers has been derived as a variational Euler-Lagrange functional. However, the framework requires a mechanism for *calibrating* the abstract relational class operators (e.g., the "Mother," "Adversary," or "Mentor" operator class). This calibration is not encoded in a universal abstract ledger; it is instantiated from the specific, most-deeply-consolidated Relational Sub-Ego that first seeded that class for a given observer.
 
 **Definition (Reference Sub-Ego Operator):** For an observer entity $E$, the **Reference Operator** $\mathcal{R}_{\text{class}}^{(E)}$ for a relational class (e.g., "Mother") is defined as the most structurally consolidated Relational Sub-Ego within that class in $\Omega_{\mathfrak{Im}}^{(E)}$:
