@@ -6,7 +6,7 @@
 
 ## 1. Tier III: Cognitive Agents as Complex Predictive Engines
 
-In [`draft.md` §2.3.4 & §4](../draft.md), a cognitive agent ( $E \in T_{\text{III}}$ ) operates across complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
+In [`draft.md` §2.3.4 & §4](../existence/draft.md), a cognitive agent ( $E \in T_{\text{III}}$ ) operates across complexified phase space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$:
 * **Real Substrate ( $\Omega_{\mathbb{R}}$ ):** Immediate somatic, motor, and neurochemical configurations.
 * **Imaginary Substrate ( $\Omega_{\mathfrak{Im}}$ ):** Internal generative Bayesian models simulating counterfactual future trajectories ( $\hat{\mathbf{C}}_{\text{future}}$ ).
 

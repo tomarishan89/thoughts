@@ -42,8 +42,8 @@ To allow domain specialists to explore specific applications without wading thro
 | [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ( $\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ). |
 | [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ( $R_s \equiv R_H$ ), Horizon Duality, Dark Energy boundary tension, Bondi accretion ( $48,000 \, M_\odot/\mathrm{s}$ ). |
 | [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium ("I Am a Universe"), Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
-| [`cognitive_and_psychology.md`](interpretations/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ( $\chi^* \approx 1$ ), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
-| [`societal_and_institutional.md`](interpretations/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ( $\chi^* > 1$ ), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
+| [`cognitive_and_psychology.md`](../cognitive_social_extensions/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ( $\chi^* \approx 1$ ), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
+| [`societal_and_institutional.md`](../cognitive_social_extensions/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ( $\chi^* > 1$ ), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
 
 ---
 

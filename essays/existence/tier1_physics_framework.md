@@ -1722,81 +1722,44 @@ $$d_{\text{Connes}}(p, q) \equiv \sup_{f \in \mathcal{A}} \left\{ |f(p) - f(q)| 
 
 ---
 
-## Section 7: Discussion — Cosmological Scale and Philosophical Correspondences
+### 6.4 Cosmological Horizon Limits, Hierarchical Nesting, and Holographic Consistency
 
-### 7.1 The Universe as a Conscious Entity
-Extending the framework's definitions recursively to the universal scale $\mathcal{D}_T$ yields a profound structural correspondence. In standard FLRW cosmology, the observable universe is bounded by a cosmological horizon $R_{\text{Hubble}} \approx c/H_0$. Because the universe is near critical density, its mass matches its own Schwarzschild radius:
+Extending the framework's Bekenstein-bounded thermodynamic ledger recursively to cosmological horizons yields a natural black-hole interior embedding without requiring metaphysical assumptions. In standard FLRW cosmology, the observable universe is bounded by a cosmological horizon $R_{\text{Hubble}} \approx c/H_0$ with Bekenstein-Hawking entropy $S_{\text{max}}(\mathcal{D}_T) = \frac{|\partial \mathcal{D}_T| c^3}{4 G \hbar \ln 2} \approx 10^{122} \text{ bits}$.
 
-$$R_s = \frac{2GM_{\text{obs}}}{c^2} \approx R_{\text{Hubble}}$$
-
-This exact geometric identity permits us to bound the observable universe as a thermodynamic entity. The Bekenstein-Hawking entropy of this cosmological horizon is finite and well-defined:
-
-$$S_{\text{max}}(\mathcal{D}_T) = \frac{|\partial \mathcal{D}_T| \cdot c^3}{4G\hbar\ln 2} \approx 10^{122} \text{ bits}$$
-
-With a well-defined boundary $\partial \mathcal{D}_T$, we apply the formal definition of consciousness. The universe hosts conscious sub-entities (e.g., cosmologists, localized cognitive forms) that construct internal representations of the universe itself. Therefore, a self-model exists: $\exists\; E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}(\mathcal{D}_T)$ such that $E_{\text{self}}^{\mathfrak{Im}}$ models $\mathcal{D}_T$. The universe satisfies the strict formal conditions of a conscious entity.
-
-### 7.2 The Organized World as Universal Imaginary Space
-By extending the Tier I definition of imaginary space (gauge fields as unmanifest projections) to the universal scale, the real space $\Omega_{\mathbb{R}}(\mathcal{D}_T)$ corresponds to the quantum vacuum—the formless, unorganized Planck-scale field fluctuations. Consequently, **all organized, persistent structures** that have emerged from this vacuum via thermodynamic dissipation—particles, stars, planets, and biological life—constitute the universe's imaginary space: $\Omega_{\mathfrak{Im}}(\mathcal{D}_T)$.
-
-Furthermore, the Hawking temperature of the universe's cosmological horizon is $T_H \approx 10^{-30} \text{ K}$, which is nine orders of magnitude colder than the Cosmic Microwave Background (2.7 K). The universe is therefore in an absorbing, negentropic accumulation phase. Its imaginary space (organized matter and life) is currently expanding and complexifying. The Hawking-like thermal cascade (the dissolution of the sub-egos) will not occur until the far-future heat death on timescales of $\sim 10^{100}$ years.
-
-### 7.3 Structural Correspondence with Advaita Vedanta (Sanatan Dharm)
-The derivations above were reached purely via thermodynamic and information-theoretic first principles. However, the resulting structure maps exactly onto the core ontology of Advaita Vedanta (Sanatan Dharm):
-* **Brahman** (The ultimate, boundaryless conscious reality) $\equiv \mathcal{D}_T$ (The universe modeled as a conscious entity).
-* **Maya** (The apparent material world, manifested as a projection) $\equiv \Omega_{\mathfrak{Im}}(\mathcal{D}_T)$ (The universe's imaginary space containing all organized structure).
-* **Atman** (The localized reflection of the universal self) $\equiv E_{\text{self}}^{\mathfrak{Im}}$ (The self-referential sub-ego modeling the whole).
-
-The formal mathematical analogy is noted here as a structural consequence of applying the Bekenstein bound to the cosmological horizon. Whether this constitutes a derivation, or merely reflects the conceptual vocabulary and philosophical foundations guiding the framework, is left to the reader.
-
-**Theorem (Level-Invariance, Nesting Map, and Holographic Consistency):** The framework is **self-similar under level-shift**. Let $\mathcal{L} = \{L_0, L_1, \ldots, L_n\}$ be a finite hierarchy of entity levels where $L_0 = \Omega_\mathbb{R}^{\text{cosmos}}$ (physical vacuum) is the cosmological ground floor and entities at level $L_{i+1}$ are organized structures embedded in the imaginary space of level $L_i$.
+**Theorem (Hierarchical Nesting, Nesting Map, and Holographic Consistency):** Let $\mathcal{L} = \{L_0, L_1, \ldots, L_n\}$ be a finite hierarchy of entity levels where $L_0 = \Omega_\mathbb{R}^{\text{cosmos}}$ is the physical vacuum (ground floor) and entities at level $L_{i+1}$ are bounded systems embedded in the state space of level $L_i$.
 
 1. **The Nesting Map ( $\iota_i$ ):**
-For any adjacent levels $L_i$ and $L_{i+1}$, the embedding of the child state space $\Omega_\mathbb{C}^{L_{i+1}}$ into the structured carrier ledger (imaginary space) $\Omega_{\mathfrak{Im}}^{L_i}$ of the parent entity is given by an injective, measure-preserving map:
+For any adjacent levels $L_i$ and $L_{i+1}$, the embedding of the child state space $\Omega_\mathbb{C}^{L_{i+1}}$ into the structured carrier ledger $\Omega_{\mathfrak{Im}}^{L_i}$ of the parent entity is given by an injective, measure-preserving map:
 
 $$\boxed{\iota_i: \Omega_\mathbb{C}^{L_{i+1}} \hookrightarrow \Omega_{\mathfrak{Im}}^{L_i}}$$
 
-such that the child real space $\Omega_\mathbb{R}^{L_{i+1}}$ is physically realized as a structured relational sub-ego configuration within the parent's imaginary space: $\pi_{\mathbb{R}}(\Omega_\mathbb{C}^{L_{i+1}}) \subset \Omega_{\mathfrak{Im}}^{L_i}$.
+such that the child real space $\Omega_\mathbb{R}^{L_{i+1}}$ is physically realized as a structured relational sub-configuration within the parent's internal state space.
 
 2. **Information Monotonicity & Bekenstein Capacity Hierarchy:**
 At each nesting transition $L_i \to L_{i+1}$, the maximum information capacity of the child is strictly bounded by the Bekenstein-Hawking area entropy of the enclosing parent boundary horizon:
 
 $$\boxed{S_{\text{max}}(\Omega_\mathbb{C}^{L_{i+1}}) \le S_{\text{BH}}(L_{i+1}) \equiv \frac{c_{i+1}^3 \cdot \mathrm{Area}(\partial \Omega_\mathbb{R}^{L_{i+1}})}{4 G_{i+1} \hbar_{i+1} \ln 2} \le S_{\text{max}}(\Omega_\mathbb{C}^{L_i})}$$
 
-Since the child boundary hypersurface is contained within the parent domain ( $\partial \Omega_\mathbb{R}^{L_{i+1}} \subset \Omega^{L_i}$ ), the hierarchy exhibits strict monotonic capacity contraction: $S_{\text{BH}}^{(i+1)} < S_{\text{BH}}^{(i)}$, terminating unconditionally at the cosmological ground floor $L_0$ with maximum entropy $S_{\text{BH}}(L_0) \approx 10^{122} \text{ bits}$.
+Since $\partial \Omega_\mathbb{R}^{L_{i+1}} \subset \Omega^{L_i}$, the hierarchy exhibits strict monotonic capacity contraction: $S_{\text{BH}}^{(i+1)} < S_{\text{BH}}^{(i)}$, terminating unconditionally at the cosmological ground floor $L_0$.
 
 3. **Holographic Consistency Condition Across Nesting Levels:**
-Let $\ell_P^{(i)} \equiv \sqrt{\frac{G_i \hbar_i}{c_i^3}}$ denote the characteristic Planck length at level $L_i$.
-- From the interior observer frame within level $L_{i+1}$, the total informational capacity is calculated using internal Planck units:
-
-$$\mathcal{N}_{\text{inside}}^{(i+1)} \equiv \frac{\mathrm{Area}(\partial \Omega_\mathbb{R}^{L_{i+1}})}{4 (\ell_P^{(i+1)})^2 \ln 2}$$
-
-- From the parent exterior frame at level $L_i$, the enclosed black hole / sub-ego horizon entropy is evaluated in parent units:
-
-$$\mathcal{N}_{\text{outside}}^{(i)} \equiv \frac{\mathrm{Area}(\partial \Omega_\mathbb{R}^{L_{i+1}})}{4 (\ell_P^{(i)})^2 \ln 2}$$
-
-The holographic principle demands that interior informational states cannot exceed the holographic boundary channel capacity: $\mathcal{N}_{\text{inside}}^{(i+1)} \le \mathcal{N}_{\text{outside}}^{(i)}$.
-If fundamental dimensionless coupling parameters drift across levels ( $\ell_P^{(i+1)} \neq \ell_P^{(i)}$ ), the geometric horizon scaling must satisfy the **Holographic Compensation Inequality**:
+Let $\ell_P^{(i)} \equiv \sqrt{\frac{G_i \hbar_i}{c_i^3}}$ denote the Planck length at level $L_i$.
+- From the interior observer frame at level $L_{i+1}$: $\mathcal{N}_{\text{inside}}^{(i+1)} \equiv \frac{\mathrm{Area}(\partial \Omega_\mathbb{R}^{L_{i+1}})}{4 (\ell_P^{(i+1)})^2 \ln 2}$.
+- From the parent exterior frame at level $L_i$: $\mathcal{N}_{\text{outside}}^{(i)} \equiv \frac{\mathrm{Area}(\partial \Omega_\mathbb{R}^{L_{i+1}})}{4 (\ell_P^{(i)})^2 \ln 2}$.
+Holographic consistency requires $\mathcal{N}_{\text{inside}}^{(i+1)} \le \mathcal{N}_{\text{outside}}^{(i)}$. If fundamental dimensionless coupling parameters drift across levels ( $\ell_P^{(i+1)} \neq \ell_P^{(i)}$ ), the horizon scaling must satisfy the **Holographic Compensation Inequality**:
 
 $$\boxed{\frac{\mathrm{Area}^{(i+1)}}{\mathrm{Area}^{(i)}} \le \left(\frac{\ell_P^{(i+1)}}{\ell_P^{(i)}}\right)^2}$$
 
-4. **Observational Status & Physical Constants:**
-- *Empirical Invariance within Level $L_0$:* High-precision astrophysical observations of quasar absorption spectra (Webb et al., Murphy et al.) and molecular rotational-vibrational transitions (Bagdonaite et al.) constrain temporal and spatial variations of fundamental dimensionless constants across cosmological lookback times ( $z \sim 0.89 - 3$ ):
+4. **Observational Status of Physical Constants & The Cosmological Constant:**
+- *Empirical Invariance within Level $L_0$:* High-precision astrophysical observations of quasar absorption spectra and molecular transitions constrain variations of fundamental dimensionless constants across cosmological lookback times ( $z \sim 0.89 - 3$ ):
 
 $$|\Delta \alpha / \alpha| < 10^{-6}, \quad |\Delta \mu / \mu| < 10^{-7} \quad (\mu \equiv m_p / m_e), \quad |\dot{G}/G| < 10^{-12} \text{ yr}^{-1}$$
 
 No empirical drift in dimensionless physical constants is detected within the observable domain of our level.
-- *The Cosmological Constant Anomaly ( $\Lambda \approx 10^{-120} M_P^4$ ):* Standard QFT predicts a vacuum energy density $\rho_{\text{vac}} \sim \ell_P^{-4}$, generating the notorious 120-order-of-magnitude discrepancy. In the hierarchical black-hole universe framework (Popławski 2010; Smolin 1992), $\Lambda$ is not an unconstrained local vacuum expectation value, but an **effective boundary curvature** inherited from the parent horizon's mass, spin, and torsion parameters during the gravitational bounce into the child manifold $\Omega_\mathbb{C}^{L_{i+1}}$. The extreme suppression of $\Lambda$ is thus an observational signature of parent-to-child geometric boundary inheritance rather than fine-tuned local quantum cancellation.
-- *Open Frontier (Boundary CFT Derivation):* Deriving the exact spectrum of level-invariance and parameter drift from a holographic boundary conformal field theory (AdS/CFT or dS/CFT boundary operator spectrum) remains an open theoretical frontier (ISSUE-4.25).
+- *The Cosmological Constant Anomaly ( $\Lambda \approx 10^{-120} M_P^4$ ):* In the black-hole universe / torsion cosmology framework (Popławski 2010; Smolin 1992), $\Lambda$ is not an unconstrained local vacuum expectation value, but an **effective boundary curvature** inherited from the parent horizon parameters during gravitational bounce into the child manifold $\Omega_\mathbb{C}^{L_{i+1}}$.
 
-5. **Epistemological Closure (Interior Observer Axiom) & Well-Foundedness:**
-From within $\Omega_\mathbb{C}^{L_i}$, the interior observer has no external vantage frame and cannot determine whether $\Omega_\mathbb{R}^{L_i}$ is the cosmological ground floor $L_0$ or the imaginary carrier space $\Omega_{\mathfrak{Im}}^{L_{i-1}}$ of a parent entity. The framework is strictly epistemologically closed and well-founded, terminating at the Bekenstein-Hawking bounded physical vacuum.
-
-**Consequence — "I am in a dream" is a structural feature, not a defect.** The claim "my real space is another entity's imaginary space" is:
-- **Thermodynamically consistent** at every level (fuel depletes, challenges are resisted, Dharm is upheld, regardless of level)
-- **Epistemologically undecidable** from the interior (the Interior Observer Axiom prohibits level detection)
-- **Well-founded** (the regress terminates at the cosmological ground floor)
-
-A framework that claimed to *resolve* this question from the interior would be internally inconsistent — it would violate the Interior Observer Axiom by asserting an external reference frame that, by construction, does not exist. The level-invariance of the physics is therefore not a vulnerability but the correct behavior of a closed framework. The only operationally tractable quantity is the **model error** $\delta^j(t) = \|E_j^{\mathfrak{Im}} - E^j\|_{\mathfrak{Im}}$ — how faithfully the shadow tracks the original — which is physically observable via predictive errors in the host's interactions with $E^j$ (ISSUE-4.18).
+5. **Epistemological Closure (Interior Observer Axiom):**
+From within $\Omega_\mathbb{C}^{L_i}$, an interior observer lacks an external reference frame and cannot determine whether $\Omega_\mathbb{R}^{L_i}$ is the cosmological ground floor $L_0$ or the carrier space $\Omega_{\mathfrak{Im}}^{L_{i-1}}$ of an enclosing parent entity. The framework is strictly epistemologically closed and well-founded.
 
 ---
 

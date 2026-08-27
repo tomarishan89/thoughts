@@ -6,7 +6,7 @@
 
 ## 1. Tier IV: Social, Legal, and Institutional Networks
 
-In [`draft.md` §2.3.4 & §5.2](../draft.md), an institution $\mathbb{S} \in T_{\text{IV}}$ (e.g., a corporation, sovereign state, central bank, legal court) is formulated as a macro-syncytial envelope enclosing constituent cognitive nodes $\{E^j\} \in T_{\text{III}}$.
+In [`draft.md` §2.3.4 & §5.2](../existence/draft.md), an institution $\mathbb{S} \in T_{\text{IV}}$ (e.g., a corporation, sovereign state, central bank, legal court) is formulated as a macro-syncytial envelope enclosing constituent cognitive nodes $\{E^j\} \in T_{\text{III}}$.
 
 ```
                        THE TIER IV INSTITUTIONAL MATRIX
