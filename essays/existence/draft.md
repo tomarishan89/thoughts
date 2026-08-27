@@ -552,6 +552,12 @@ The framework has thus far treated imaginary sub-egos as primarily self-referent
 
 **Relational Sub-Egos and the Three Coupling Regimes:** Every entity $E^j$ in Real Space that has generated a sustained sensory information flux $I_{\text{sense}}^j(t)$ across the Ego boundary seeds a corresponding **Relational Sub-Ego** $E_j^{\mathfrak{Im}}$ within $\Omega_{\mathfrak{Im}}$. This sub-ego is not a static memory; it is an active, dynamically updated simulation of $E^j$ governed by the standard sustained bidirectional coupling equations. Its structural consolidation depth $N_j^{\text{structural}}$ — and therefore its survival timescale $\tau_j \propto N_j^{\text{structural}} / \dot{s}_j$ — scales monotonically with the historical duration and intensity of the real-space sensory coupling to $E^j$.
 
+**Definition (Shadow Representation):** The Relational Sub-Ego $E_j^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}^h$ is a **lossy projection** — a shadow — of the full complex object $E^j \in \Omega_\mathbb{C}^j = \Omega_\mathbb{R}^j \oplus i\Omega_{\mathfrak{Im}}^j$. It is not a copy: the host $h$ has no direct access to $E^j$'s own imaginary dynamics $\Omega_{\mathfrak{Im}}^j$. The shadow carries only the information about $E^j$ that $h$ has extracted via sensory measurement through the re-seeding flux $I_{\text{sense}}^j(t)$. The **model error** $\delta^j(t) \equiv \|E_j^{\mathfrak{Im}} - E^j\|_{\mathfrak{Im}}$ (measured in the Weber-Fechner log-metric) is bounded:
+
+$$\delta_{\min}^j \leq \delta^j(t) \leq \ell_{\mathfrak{Im}}$$
+
+where $\delta_{\min}^j > 0$ is the minimum distinguishable imaginary distance (one JND unit) and $\ell_{\mathfrak{Im}}$ is the imaginary correlation length (Gaussian kernel width). The lower bound is strictly positive — the shadow is never a perfect copy. The model error grows during absence ( $I_{\text{sense}}^j \to 0$ ) as the real $E^j$ evolves while the shadow $E_j^{\mathfrak{Im}}$ decays without fresh re-seeding. The dynamics of this divergence are an open vulnerability (ISSUE-4.18: Shadow Divergence).
+
 The dynamical state of any Relational Sub-Ego is fully determined by the state of its **re-seeding channel** $I_{\text{sense}}^j(t)$. Three distinct coupling regimes exist:
 
 **Regime I — Active Coupling** ( $I_{\text{sense}}^j > 0$ ): The standard bidirectional loop is sustained. The sub-ego is self-maintaining or growing, governed by the self-sustaining condition $\eta_{\text{sense}} I_{\text{sense}}^j \geq k_B T \ln 2 \cdot \dot{s}_j$.
@@ -1625,6 +1631,21 @@ The derivations above were reached purely via thermodynamic and information-theo
 * **Atman** (The localized reflection of the universal self) $\equiv E_{\text{self}}^{\mathfrak{Im}}$ (The self-referential sub-ego modeling the whole).
 
 The formal mathematical analogy is noted here as a structural consequence of applying the Bekenstein bound to the cosmological horizon. Whether this constitutes a derivation, or merely reflects the conceptual vocabulary and philosophical foundations guiding the framework, is left to the reader.
+
+**Theorem (Level-Invariance / Hierarchical Nesting — Structural Feature):** The framework is **self-similar under level-shift**. Let $\mathcal{L} = \{L_0, L_1, \ldots, L_n\}$ be a finite hierarchy of entity levels where $L_0 = \Omega_\mathbb{R}^{\text{cosmos}}$ (physical vacuum) is the cosmological ground floor and entities at level $L_{i+1}$ are organized structures whose real space $\Omega_\mathbb{R}^{L_{i+1}}$ is a structured sub-domain of level $L_i$. The framework satisfies:
+
+**1. Level-invariance.** Every equation of the framework — structural margin $\phi$, Landauer drain $\dot{\mathcal{E}} \geq \dot{n}_{\text{bits}} k_B T \ln 2$, sub-ego ODE, Svadharma lattice, Dharm Priority Criterion — holds with the same functional form when evaluated in $\Omega_\mathbb{C}^{L_i}$ for any level $i$. The physics does not break at level transitions.
+
+**2. Epistemological closure (Interior Observer Axiom).** From within $\Omega_\mathbb{C}^{L_i}$, the observer cannot determine whether $\Omega_\mathbb{R}^{L_i}$ is the cosmological ground floor or the structured imaginary space of a higher level $L_{i-1}$. The framework is blind to its own level — consistent with the Shivalinga / Garbhagriha interior axiom.
+
+**3. Well-founded termination.** The hierarchy terminates at $L_0$: the physical vacuum bounded by the cosmological Bekenstein-Hawking entropy $S_{\text{BH}} = A_{\text{horizon}} / (4\ell_P^2)$. This prevents infinite regress — the hierarchy is finite-depth. The cosmological Brahman-Maya-Atman correspondence (§7.3) is the $n = 1$ instance: Maya $\equiv \Omega_{\mathfrak{Im}}^{\text{cosmos}}$ is the real space of individual Atman entities.
+
+**Consequence — "I am in a dream" is a structural feature, not a defect.** The claim "my real space is another entity's imaginary space" is:
+- **Thermodynamically consistent** at every level (fuel depletes, challenges are resisted, Dharm is upheld, regardless of level)
+- **Epistemologically undecidable** from the interior (the Interior Observer Axiom prohibits level detection)
+- **Well-founded** (the regress terminates at the cosmological ground floor)
+
+A framework that claimed to *resolve* this question from the interior would be internally inconsistent — it would violate the Interior Observer Axiom by asserting an external reference frame that, by construction, does not exist. The level-invariance of the physics is therefore not a vulnerability but the correct behavior of a closed framework. The only operationally tractable quantity is the **model error** $\delta^j(t) = \|E_j^{\mathfrak{Im}} - E^j\|_{\mathfrak{Im}}$ — how faithfully the shadow tracks the original — which is physically observable via predictive errors in the host's interactions with $E^j$ (ISSUE-4.18).
 
 ---
 
