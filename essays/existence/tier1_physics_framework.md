@@ -1117,6 +1117,137 @@ proving that when forward projection expectations vanish ( $\mathcal{P}_{\hat{\m
 
 ---
 
+### 2.4 The Influence Field and Extent of Existence
+
+The projection operator $\hat{\mathbf{P}}$ (§2.1) defines how an entity broadcasts its non-equilibrium state through $\partial E$ into the ambient space. The **influence field** $\mathcal{F}_E$ is the result of this projection evaluated at arbitrary distance from $\partial E$ — the persistent, distance-dependent perturbation that the entity creates in the embedding medium.
+
+#### 2.4.1 Definition: The Influence Field
+
+**Definition (Influence Field).** For an entity $E$ with stress-energy content $T^{\mu\nu}_E$ embedded in a medium with metric $g_{\mu\nu}$, the influence field at point $x \notin E$ is the perturbation of the medium's state sourced by $E$:
+
+$$\mathcal{F}_E(x, t) \equiv \delta g_{\mu\nu}(x, t) \Big|_{\text{sourced by } T^{\mu\nu}_E}$$
+
+This is not a new postulate. It is the explicit form of $\hat{\mathbf{P}}[E]$ evaluated at distance $r = |x - x_E|$ from the source. The projection operator (§2.1) defines the boundary emission; the influence field is its far-field solution.
+
+For a general field perturbation $\mathcal{F}$ sourced by entity $E$ in an embedding medium, the perturbation satisfies a second-order hyperbolic PDE:
+
+$$\boxed{\rho_{\text{med}} \frac{\partial^2 \mathcal{F}}{\partial t^2} + \gamma_{\text{med}} \frac{\partial \mathcal{F}}{\partial t} = \kappa_{\text{med}} \nabla^2 \mathcal{F} + \mathcal{S}_E(x, t)}$$
+
+where:
+
+| Symbol | Name | Physical Meaning | Dimensions |
+|---|---|---|---|
+| $\kappa_{\text{med}}$ | Coupling stiffness | Restoring force per unit displacement in the medium | $[\text{Pa}]$ or $[\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}]$ |
+| $\rho_{\text{med}}$ | Inertial density | Resistance of the medium to acceleration of the perturbation | $[\text{kg} \cdot \text{m}^{-3}]$ |
+| $\gamma_{\text{med}}$ | Dissipation coefficient | Rate of energy loss from the perturbation to the medium | $[\text{kg} \cdot \text{m}^{-3} \cdot \text{s}^{-1}]$ |
+| $\mathcal{S}_E$ | Source term | The entity's stress-energy content projected onto the medium | depends on field type |
+
+This equation encompasses three regimes as limiting cases:
+
+| Regime | Condition | Behavior | Physical Example |
+|---|---|---|---|
+| **Wave** (undamped) | $\gamma_{\text{med}} = 0$ | $\partial_{tt}\mathcal{F} = v^2 \nabla^2 \mathcal{F}$ — lossless propagation | Gravitational waves in vacuum |
+| **Damped wave** | $0 < \gamma_{\text{med}} < 2\sqrt{\kappa \rho}$ | Oscillatory with exponential decay | EM in lossy dielectric |
+| **Overdamped / diffusive** | $\gamma_{\text{med}} \gg 2\sqrt{\kappa \rho}$ | $\partial_t \mathcal{F} \approx D \nabla^2 \mathcal{F}$ — diffusion | Thermal conduction |
+
+The field equation is not assumed — it is the general second-order PDE for a perturbation in a linear medium, derived from the medium's constitutive relation (stress-strain for elastic, Maxwell for EM, Einstein for gravitational). Different media produce different coefficients.
+
+#### 2.4.2 Theorem 9 (Field Propagation Speed as Derived Quantity)
+
+**Theorem 9.** *The phase velocity of the influence field in a homogeneous, non-dispersive, non-dissipative embedding medium is:*
+
+$$\boxed{v_{\text{field}} = \sqrt{\frac{\kappa_{\text{med}}}{\rho_{\text{med}}}}}$$
+
+*This velocity is an intrinsic property of the medium, independent of the source entity.*
+
+**Proof.** For the undamped case ( $\gamma_{\text{med}} = 0$ ), the homogeneous field equation reduces to:
+
+$$\frac{\partial^2 \mathcal{F}}{\partial t^2} = \frac{\kappa_{\text{med}}}{\rho_{\text{med}}} \nabla^2 \mathcal{F}$$
+
+Substituting the plane-wave ansatz $\mathcal{F} = \mathcal{F}_0 \exp[i(\mathbf{k} \cdot \mathbf{x} - \omega t)]$ yields the dispersion relation:
+
+$$\omega^2 = \frac{\kappa_{\text{med}}}{\rho_{\text{med}}} |\mathbf{k}|^2 \implies v_{\text{phase}} = \frac{\omega}{|\mathbf{k}|} = \sqrt{\frac{\kappa_{\text{med}}}{\rho_{\text{med}}}} \qquad \blacksquare$$
+
+**Recovery of known propagation speeds.** The general result $v = \sqrt{\kappa/\rho}$ recovers all known field speeds as special cases of the same structural formula:
+
+| Field Type | $\kappa_{\text{med}}$ | $\rho_{\text{med}}$ | $v_{\text{field}}$ | Value |
+|---|---|---|---|---|
+| **Electromagnetic (vacuum)** | $1/\mu_0$ | $\epsilon_0$ | $1/\sqrt{\epsilon_0 \mu_0}$ | $c = 2.998 \times 10^8$ m/s |
+| **Gravitational (vacuum)** | metric stiffness $\sim c^4/(16\pi G)$ | $\sim c^2/(16\pi G)$ | $c$ | $2.998 \times 10^8$ m/s |
+| **Sound (ideal gas)** | $\gamma_{\text{ad}} P$ | $\rho_{\text{gas}}$ | $\sqrt{\gamma_{\text{ad}} P / \rho}$ | $\sim 343$ m/s (air, STP) |
+| **Seismic P-wave** | $K + 4\mu_s/3$ | $\rho_{\text{rock}}$ | $\sqrt{(K + 4\mu_s/3)/\rho}$ | $\sim 6000$ m/s (mantle) |
+| **Alfvén wave (plasma)** | $B^2/\mu_0$ | $\rho_{\text{plasma}}$ | $B/\sqrt{\mu_0 \rho}$ | $\leq c$ |
+
+The speed of light $c$ is not a universal propagation speed imposed on the framework. It is the specific value of $v_{\text{field}}$ that emerges when the embedding medium is the Lorentzian vacuum, with coupling stiffness and inertial density fixed by the electromagnetic constitutive relations ( $\epsilon_0, \mu_0$ ) or the Einstein field equation coefficients.
+
+**Corollary (Causal Bound).** In any medium, the field propagation speed satisfies:
+
+$$v_{\text{field}} \leq c$$
+
+This follows from the requirement that the medium's constitutive relation respect the causal structure of the underlying spacetime manifold (Axiom 1, §1.1). The medium can slow the field (material dispersion, inertia) but cannot accelerate it beyond the vacuum causal bound.
+
+#### 2.4.3 Field Fall-Off from Gauss's Law
+
+In $d$ spatial dimensions, for a static, spherically symmetric source, the field magnitude satisfies Gauss's law — total flux through any closed surface enclosing the source is conserved:
+
+$$\oint_{\partial V} \mathcal{F}_E \cdot d\mathbf{A} = Q_E = \text{const}$$
+
+where $Q_E$ is the source's charge (mass, electric charge, etc.). For a sphere of radius $r$ in $d$ dimensions, $|\partial V| \propto r^{d-1}$, yielding:
+
+$$\boxed{|\mathcal{F}_E(r)| = \frac{Q_E}{\Omega_d \, r^{d-1}}}$$
+
+where $\Omega_d = 2\pi^{d/2}/\Gamma(d/2)$ is the solid angle in $d$ dimensions. For physical spacetime ( $d = 3$ ):
+
+$$|\mathcal{F}_E(r)| \propto \frac{1}{r^2} \qquad \text{(static/near-field: gravitational, Coulomb)}$$
+
+For **radiative** (propagating) field components, the amplitude falls as $1/r$ and the energy flux as $1/r^2$ (from the wave equation's retarded Green's function in $d = 3$ ):
+
+$$|\mathcal{F}_E^{\text{rad}}(r)| \propto \frac{1}{r}, \qquad |\mathbf{S}_{\text{rad}}(r)| \propto \frac{1}{r^2}$$
+
+**Key distinction.** The static field ( $1/r^2$ ) persists as long as the source exists. The radiative field ( $1/r$ ) propagates outward at $v_{\text{field}}$ and carries energy and information about changes in the source's state. Detection of gravitational waves by LIGO is detection of the radiative component — it encodes the binary black hole merger dynamics at a distance of $\sim 1.3 \times 10^9$ light-years.
+
+#### 2.4.4 Definition: Two-Component Extent of Existence
+
+The framework has defined existence as $\mu(E) > 0$ (§2.1, Axiom 3). This section refines the measure $\mu$ to include the entity's influence beyond its own boundary.
+
+**Definition (Extent of Existence).** For an entity $E$ with influence field $\mathcal{F}_E$, the extent of existence is:
+
+$$\boxed{\mu_{\text{ext}}(E, t) = \mu_{\text{int}}(E, t) + \mu_{\text{field}}(E, t)}$$
+
+**1. Interior extent** — the measure of $E$'s own structured content:
+
+$$\mu_{\text{int}}(E, t) \equiv \int_{\Omega_{\mathbb{R}}(E)} d\mu_h$$
+
+For a black hole: $\mu_{\text{int}} = S_{\text{BH}} = k_B A / (4 \ell_P^2)$. For a star: the total thermodynamic entropy. For any physical object: the information content bounded by the Bekenstein limit $S \leq 2\pi k_B R E_{\text{tot}} / (\hbar c)$.
+
+**2. Field extent** — the volume of space where $E$'s influence exceeds the ambient noise floor:
+
+$$\mu_{\text{field}}(E, t) \equiv \int_{\mathcal{M} \setminus E} \Theta\left( |\mathcal{F}_E(x, t)| - \mathcal{F}_{\text{noise}}(x) \right) d\mu_h(x)$$
+
+where $\Theta$ is the Heaviside step function and $\mathcal{F}_{\text{noise}}(x)$ is the ambient field fluctuation at $x$ (set by the medium's thermodynamic state — quantum vacuum fluctuations for gravitational fields, CMB radiation for electromagnetic).
+
+**Properties of $\mu_{\text{field}}$:**
+
+1. **Monotonic growth after creation**: For $t < r_{\text{max}} / v_{\text{field}}$, the field front has not yet reached $r_{\text{max}}$, so $\mu_{\text{field}}$ grows as:
+
+$$\mu_{\text{field}}(E, t) \leq \frac{4\pi}{3}(v_{\text{field}} \cdot t)^3 \qquad \text{(light-cone bound)}$$
+
+2. **Saturation at large $t$**: When the field decays below $\mathcal{F}_{\text{noise}}$ at radius $r_{\text{sat}}$, the field extent saturates:
+
+$$r_{\text{sat}} = \left( \frac{Q_E}{\Omega_3 \, \mathcal{F}_{\text{noise}}} \right)^{1/2} \implies \mu_{\text{field}}^{\text{sat}} = \frac{4\pi}{3} r_{\text{sat}}^3$$
+
+3. **Post-mortem persistence**: After the entity ceases ( $\mu_{\text{int}} \to 0$ ), the radiative field continues propagating outward. The field extent can grow even after the source is gone — the entity's influence outlives its existence.
+
+**Theorem 10 (Extent Monotonicity for Accreting Entities).** *For any entity with $\dot{M} \geq 0$ (non-negative mass accretion rate):*
+
+$$\frac{d\mu_{\text{ext}}}{dt} \geq 0$$
+
+*Proof.* The interior extent grows with mass: $d\mu_{\text{int}}/dt \geq 0$ (Bekenstein entropy is monotonically increasing for accreting BHs; second law of thermodynamics for physical objects). The field extent grows as the front propagates outward and the source charge $Q_E$ increases. Both terms are non-negative. $\blacksquare$
+
+**Corollary.** An entity's extent of existence can only decrease if it loses mass-energy ( $\dot{M} < 0$, e.g., Hawking evaporation, radioactive decay ) AND its field front has reached the noise-limited saturation radius.
+
+---
+
 ## Section 3: Physical Forms of Existence (Tier I Stress-Test)
 
 ### 3.1 The Degenerate Reactive Engine Model
@@ -1789,7 +1920,7 @@ Therefore:
 
 $$\boxed{\dot{M}_{\text{accrete}}(t) = \frac{c^3}{2G}(1 + q(t)) \quad [\mathrm{kg/s}]}$$
 
-*Step 4.* Numerical evaluation at the current epoch ($H_0 = 67.4 \pm 0.5 \; \mathrm{km/s/Mpc}$, $\Omega_m = 0.3153$, $\Omega_\Lambda = 0.6847$, Planck 2018):
+*Step 4.* Numerical evaluation at the current epoch ( $H_0 = 67.4 \pm 0.5 \; \mathrm{km/s/Mpc}$, $\Omega_m = 0.3153$, $\Omega_\Lambda = 0.6847$, Planck 2018):
 
 | Quantity | Value |
 |---|---|
@@ -1882,7 +2013,7 @@ This is the Gibbons-Hawking surface gravity (Ref. [32]) for an interior observer
 
 $$\kappa_{\text{dS}} = 2 \kappa_S$$
 
-*Proof.* The factor of two arises because the Schwarzschild $f_S(r)$ is linear in $1/r$ near the horizon (giving $|f_S'| = 1/r_s^2 \cdot r_s = 1/r_s$), while the de Sitter $f_{\text{dS}}(r)$ is quadratic in $r$ near the horizon (giving $|f_{\text{dS}}'| = 2r_c/r_c^2 = 2/r_c$). The metric functions have different functional forms on either side of the same null surface. $\blacksquare$
+*Proof.* The factor of two arises because the Schwarzschild $f_S(r)$ is linear in $1/r$ near the horizon (giving $|f_S'| = 1/r_s^2 \cdot r_s = 1/r_s$ ), while the de Sitter $f_{\text{dS}}(r)$ is quadratic in $r$ near the horizon (giving $|f_{\text{dS}}'| = 2r_c/r_c^2 = 2/r_c$ ). The metric functions have different functional forms on either side of the same null surface. $\blacksquare$
 
 **Theorem (Interior Observer Surface Gravity).** *For an observer interior to a Schwarzschild horizon whose interior geometry is FRW (as in the ECSK bounce model), the physically relevant surface gravity at the cosmological apparent horizon is $\kappa = c \, H_0$, not $c \, H_0/2$.*
 
@@ -1892,11 +2023,11 @@ In a general spherically symmetric spacetime, the Kodama vector $K^a$ (Kodama 19
 
 $$\kappa_{\text{KH}} = -\frac{c^2}{2} \Box R \big|_{R = R_{\text{AH}}}$$
 
-For a flat FRW spacetime ($k = 0$) with Hubble parameter $H(t)$, the apparent horizon is at $R_{\text{AH}} = c/H$, and the Kodama-Hayward surface gravity evaluates to:
+For a flat FRW spacetime ( $k = 0$ ) with Hubble parameter $H(t)$, the apparent horizon is at $R_{\text{AH}} = c/H$, and the Kodama-Hayward surface gravity evaluates to:
 
 $$\kappa_{\text{KH}} = c \, H \left(1 + \frac{\dot{H}}{2H^2}\right)$$
 
-For pure de Sitter ($\dot{H} = 0$): $\kappa_{\text{KH}} = c \, H_0 = \kappa_{\text{dS}}$. $\checkmark$
+For pure de Sitter ( $\dot{H} = 0$ ): $\kappa_{\text{KH}} = c \, H_0 = \kappa_{\text{dS}}$. $\checkmark$
 
 For $\Lambda$CDM at present epoch: $\dot{H}_0 = -\frac{3}{2} \Omega_m H_0^2$, giving $\dot{H}/(2H^2) = -\frac{3}{4}\Omega_m \approx -0.236$. This yields:
 
@@ -1912,11 +2043,11 @@ The self-consistent prescription is: **use the static de Sitter Killing surface 
 | **de Sitter Killing (interior)** | $\boldsymbol{\kappa_{\text{dS}} = c \, H_0}$ | $\boldsymbol{2/3 = 0.667}$ | **2.6%** |
 | Kodama-Hayward (dynamic) | $\kappa_{\text{KH}} = 0.764 \, c \, H_0$ | $0.509$ | 25.7% |
 
-The Israel junction conditions (Israel 1966 [38]) permit a discontinuity in the extrinsic curvature (and hence $df/dr$) across a hypersurface carrying surface stress-energy. The membrane paradigm explicitly models the horizon as such a surface. Therefore the surface gravity **can** differ on the two sides, and the interior observer's value $\kappa_{\text{dS}} = c \, H_0$ is the physically correct one for computing boundary thermodynamic quantities. $\blacksquare$
+The Israel junction conditions (Israel 1966 [38]) permit a discontinuity in the extrinsic curvature (and hence $df/dr$ ) across a hypersurface carrying surface stress-energy. The membrane paradigm explicitly models the horizon as such a surface. Therefore the surface gravity **can** differ on the two sides, and the interior observer's value $\kappa_{\text{dS}} = c \, H_0$ is the physically correct one for computing boundary thermodynamic quantities. $\blacksquare$
 
 #### 6.6.2 Membrane Paradigm Horizon Tension
 
-**Definition (Horizon Surface Tension).** By the membrane paradigm (Damour 1978 [17]; Thorne, Price, Macdonald 1986 [18]), a black hole horizon behaves as a viscous membrane with surface energy density $\sigma_H = \kappa / (8\pi G)$ [kg/m$^2$] and surface tension:
+**Definition (Horizon Surface Tension).** By the membrane paradigm (Damour 1978 [17]; Thorne, Price, Macdonald 1986 [18]), a black hole horizon behaves as a viscous membrane with surface energy density $\sigma_H = \kappa / (8\pi G)$ [kg/m$^2$ ] and surface tension:
 
 $$\gamma_H = \sigma_H \, c^2 = \frac{\kappa \, c^2}{8\pi G} \quad [\mathrm{J/m^2}]$$
 
@@ -1938,7 +2069,7 @@ $$\boxed{\Omega_\Lambda = \frac{2}{3} \approx 0.6\overline{6}}$$
 
 $$\Delta P = \frac{2\gamma}{R}$$
 
-Applying this to the Hubble horizon sphere ($R = R_H = c/H_0$):
+Applying this to the Hubble horizon sphere ( $R = R_H = c/H_0$ ):
 
 $$P_{\text{boundary}} = \frac{2\gamma_H}{R_H} = \frac{2}{R_H} \cdot \frac{c^4}{8\pi G R_H} = \frac{c^4}{4\pi G R_H^2} = \frac{c^2 H_0^2}{4\pi G} \quad [\mathrm{Pa}]$$
 
@@ -1987,7 +2118,7 @@ The predicted $\Omega_\Lambda = 2/3$ differs from the observed $0.6847$ by $\Del
 
 **Conclusion.** The de Sitter Killing surface gravity $\kappa = cH_0$ with the **measured** (total) Hubble parameter is the self-consistent choice. The matter content enters once and only once — through $H_0$. No additional Kottler correction is warranted; it is already absorbed into the measurement. The 2.6% residual remains as a genuine theoretical prediction error, potentially attributable to:
 
-- Spatial curvature corrections ($\Omega_k \neq 0$ at the $\sim 10^{-3}$ level).
+- Spatial curvature corrections ( $\Omega_k \neq 0$ at the $\sim 10^{-3}$ level).
 - Non-equilibrium membrane viscosity from trans-horizon accretion (§6.5).
 - Higher-order terms in the membrane paradigm stress tensor beyond the leading Young-Laplace approximation.
 
@@ -2005,9 +2136,9 @@ $$\rho_\Lambda - \frac{2}{3}\rho_\Lambda = \frac{2}{3}\rho_m \quad \Longrightarr
 
 | Component | Predicted Fraction | Observed (Planck 2018) | Discrepancy |
 |---|---|---|---|
-| Dark energy ($\Omega_\Lambda$) | $2/3 = 0.6\overline{6}$ | $0.6847 \pm 0.0073$ | 2.6% |
-| Matter ($\Omega_m$) | $1/3 = 0.3\overline{3}$ | $0.3153 \pm 0.0073$ | 5.7% |
-| Density ratio ($\rho_\Lambda / \rho_m$) | $2.000$ | $2.172 \pm 0.067$ | 7.9% |
+| Dark energy ( $\Omega_\Lambda$ ) | $2/3 = 0.6\overline{6}$ | $0.6847 \pm 0.0073$ | 2.6% |
+| Matter ( $\Omega_m$ ) | $1/3 = 0.3\overline{3}$ | $0.3153 \pm 0.0073$ | 5.7% |
+| Density ratio ( $\rho_\Lambda / \rho_m$ ) | $2.000$ | $2.172 \pm 0.067$ | 7.9% |
 
 **Remark (Cosmic Coincidence Problem).** The standard $\Lambda$CDM model provides no explanation for why $\rho_\Lambda$ and $\rho_m$ are of the same order of magnitude at the present epoch — the so-called "cosmic coincidence" or "why now?" problem. In the membrane tension framework, the coincidence is demystified: the boundary tension is always exactly twice the enclosed matter density, because the Young-Laplace pressure is proportional to $H^2$, and $H^2 \propto (\rho_m + \rho_\Lambda)$. The factor of 2 is a geometric consequence of the derivation, not a fine-tuned coincidence.
 
@@ -2029,7 +2160,7 @@ $$S_{\text{BH}} = \frac{k_B A_H}{4 \ell_P^2} = \frac{k_B \cdot 4\pi R_H^2}{4 (G\
 
 $$\boxed{S_{\text{BH}} = S_{\text{Bek}}}$$
 
-*The observable universe exactly saturates its Bekenstein entropy bound.* This is a second prediction of the Schwarzschild-Hubble identification, independent of the $\Omega_\Lambda = 2/3$ theorem. Only maximum-entropy objects — black holes — saturate this bound. Ordinary matter distributions fall far below it. The saturation $S_{\text{BH}} / S_{\text{Bek}} = 1.000$ (verified numerically: $S_{\text{BH}} = S_{\text{Bek}} = 2.265 \times 10^{122} \, k_B$) provides independent confirmation that the observable universe is thermodynamically equivalent to a black hole interior.
+*The observable universe exactly saturates its Bekenstein entropy bound.* This is a second prediction of the Schwarzschild-Hubble identification, independent of the $\Omega_\Lambda = 2/3$ theorem. Only maximum-entropy objects — black holes — saturate this bound. Ordinary matter distributions fall far below it. The saturation $S_{\text{BH}} / S_{\text{Bek}} = 1.000$ (verified numerically: $S_{\text{BH}} = S_{\text{Bek}} = 2.265 \times 10^{122} \, k_B$ ) provides independent confirmation that the observable universe is thermodynamically equivalent to a black hole interior.
 
 **Remark (Independence from $\Omega_\Lambda$ Theorem).** The Bekenstein saturation depends only on the Schwarzschild-Hubble identification $R_s \equiv R_H$ and the mass-horizon relationship $M_H = c^3/(2GH_0)$. It does not use the membrane paradigm, Young-Laplace equation, or any dark energy measurement. Therefore it constitutes a **genuinely independent** second prediction from the same foundational axiom.
 
@@ -2052,7 +2183,7 @@ $$\boxed{S_{\text{BH}} = S_{\text{Bek}}}$$
 | Matter | Baryons + cold dark matter | $\rho_m \propto a^{-3}$ | $3400 > z > 0.4$ |
 | Dark energy | Horizon membrane tension | $\rho_\Lambda \propto a^{0}$ | $z < 0.4$ |
 
-The epoch boundaries are defined by equality conditions ($\rho_i = \rho_j$) and shift with cosmic time as the scale factor $a(t)$ evolves.
+The epoch boundaries are defined by equality conditions ( $\rho_i = \rho_j$ ) and shift with cosmic time as the scale factor $a(t)$ evolves.
 
 **The Snapshot Nature of the $\Omega_\Lambda = 2/3$ Theorem.** The theorem (§6.6.3) evaluates $\gamma_H = c^4/(8\pi G R_H)$ at the instantaneous Hubble radius $R_H = c/H_0$. At redshift $z$, the same formula applied to $H(z)$ gives $\gamma_H(z) = c^4 H(z)^2 / (8\pi G c^2)$. The energy fraction is:
 
@@ -2062,7 +2193,7 @@ Algebraically this gives $2/3$ at all redshifts. However, this conclusion is phy
 
 $$\left|\frac{\dot{H}}{H^2}\right| \ll 1 \quad \text{(quasi-static de Sitter condition)}$$
 
-For $\Lambda$CDM: $|\dot{H}/H^2| = \frac{3}{2}\Omega_m(z)$, which is $\mathcal{O}(1)$ during the matter epoch ($\Omega_m \sim 1$) and approaches zero only as $\Omega_m \to 0$ (the de Sitter attractor at late times). **The theorem is therefore not a universal epoch-independent statement. It is an attractor condition:** as the universe asymptotes to de Sitter, the membrane tension equilibrium $\Omega_\Lambda \to 2/3$ is enforced.
+For $\Lambda$CDM: $|\dot{H}/H^2| = \frac{3}{2}\Omega_m(z)$, which is $\mathcal{O}(1)$ during the matter epoch ( $\Omega_m \sim 1$ ) and approaches zero only as $\Omega_m \to 0$ (the de Sitter attractor at late times). **The theorem is therefore not a universal epoch-independent statement. It is an attractor condition:** as the universe asymptotes to de Sitter, the membrane tension equilibrium $\Omega_\Lambda \to 2/3$ is enforced.
 
 **Corollary (Dark Energy Equation of State).** The theorem is consistent with $w_\Lambda = -1$. This can be verified by contradiction: if one forces $\Omega_\Lambda = 2/3$ at all epochs by promoting $\rho_\Lambda = H^2/(4\pi G)$ to a dynamical field, the continuity equation gives:
 
@@ -2070,11 +2201,11 @@ $$\dot{\rho}_\Lambda + 3H(1+w_\Lambda)\rho_\Lambda = 0 \quad \Longrightarrow \qu
 
 $$w_\Lambda = -1 - \frac{2\dot{H}}{3H^2}$$
 
-In the matter-dominated epoch ($\dot{H} = -3H^2/2$): $w_\Lambda = -1 + 1 = 0$ — dark energy behaves as pressureless dust. This contradicts accelerated expansion observations and is **unphysical**. The correct interpretation is that $\rho_\Lambda = \text{const}$ (standard cosmological constant, $w = -1$) while the theorem provides the *value* of $\rho_\Lambda$ from the boundary tension, not its time-evolution. The dynamics of dark energy are governed by the Einstein equations as usual. $\blacksquare$
+In the matter-dominated epoch ( $\dot{H} = -3H^2/2$ ): $w_\Lambda = -1 + 1 = 0$ — dark energy behaves as pressureless dust. This contradicts accelerated expansion observations and is **unphysical**. The correct interpretation is that $\rho_\Lambda = \text{const}$ (standard cosmological constant, $w = -1$ ) while the theorem provides the *value* of $\rho_\Lambda$ from the boundary tension, not its time-evolution. The dynamics of dark energy are governed by the Einstein equations as usual. $\blacksquare$
 
 #### 6.6.10 Dark Energy as the Ledger Boundary
 
-The framework's dual-space architecture (§2.1) partitions any bounded existence $E$ into a real-space interior $\Omega_{\mathbb{R}}$ and an imaginary-space carrier $\Omega_{\mathfrak{Im}}$, separated by a boundary $\partial E$ that acts as the information ledger. Sub-ego entities — stars, black holes, galaxies — *write to* this ledger via irreversible state transitions (Iteration Morphisms $\mathcal{I}(t) = E(t+dt) - E(t)$), with total information capacity bounded by the Bekenstein entropy.
+The framework's dual-space architecture (§2.1) partitions any bounded existence $E$ into a real-space interior $\Omega_{\mathbb{R}}$ and an imaginary-space carrier $\Omega_{\mathfrak{Im}}$, separated by a boundary $\partial E$ that acts as the information ledger. Sub-ego entities — stars, black holes, galaxies — *write to* this ledger via irreversible state transitions (Iteration Morphisms $\mathcal{I}(t) = E(t+dt) - E(t)$ ), with total information capacity bounded by the Bekenstein entropy.
 
 Dark energy occupies a categorically distinct structural role:
 
@@ -2092,10 +2223,10 @@ Dark energy occupies a categorically distinct structural role:
 |---|---|---|
 | Ledger capacity $S_{\text{BH}}(t)$ | Grows as universe expands | $\propto H(t)^{-2}$ |
 | Ledger write rate | High in radiation epoch, slows in DE epoch | $\propto \dot{\mathcal{S}}_{\text{total}}$ |
-| Fraction of capacity used ($\Omega_\Lambda$) | Increases from $\sim 0$ to $\sim 2/3$ | Approaches attractor |
+| Fraction of capacity used ( $\Omega_\Lambda$ ) | Increases from $\sim 0$ to $\sim 2/3$ | Approaches attractor |
 | Ledger boundary tension $\gamma_H$ | Decreases as $R_H$ grows | $\propto H(t)^2$ |
 
-The universe's monotonically growing ledger ($dS_{\text{BH}}/dt > 0$ as $H$ decreases) encodes the full irreversible history of all sub-ego state transitions within $\Omega_{\mathbb{R}}$. The dark energy epoch corresponds to the regime in which the ledger boundary is the dominant structural feature — the interior sub-egos (matter) become sub-dominant, and the horizon membrane itself governs the dynamics.
+The universe's monotonically growing ledger ( $dS_{\text{BH}}/dt > 0$ as $H$ decreases) encodes the full irreversible history of all sub-ego state transitions within $\Omega_{\mathbb{R}}$. The dark energy epoch corresponds to the regime in which the ledger boundary is the dominant structural feature — the interior sub-egos (matter) become sub-dominant, and the horizon membrane itself governs the dynamics.
 
 ### 6.7 Parent Black Hole Initial Conditions and Cosmic Epoch Structure
 
@@ -2123,16 +2254,16 @@ The universe, as a thermodynamic engine (§2.2), executes a macroscopic 4-phase 
 
 | Phase | Engine Role | Cosmic Epoch | Physical Content |
 |---|---|---|---|
-| 1. Fuel Injection | $\mathbf{J}_{\text{fuel}} \to \Omega_{\mathbb{R}}$ | **Radiation** ($z > 3400$) | Maximum entropy production rate $\dot{\mathcal{S}}_{\text{total}}$; photon-baryon plasma throughput; all energy in relativistic degrees of freedom |
-| 2. Partition | $\mathcal{F}_{\text{partition}}$ | **Matter** ($3400 > z > z_{\Lambda}$) | Structure formation — sub-ego hierarchies crystallize (galaxies, stars); gravitational potential wells as structural margins $\phi(x,t) = 0$; baryonic matter condenses from plasma |
+| 1. Fuel Injection | $\mathbf{J}_{\text{fuel}} \to \Omega_{\mathbb{R}}$ | **Radiation** ( $z > 3400$ ) | Maximum entropy production rate $\dot{\mathcal{S}}_{\text{total}}$; photon-baryon plasma throughput; all energy in relativistic degrees of freedom |
+| 2. Partition | $\mathcal{F}_{\text{partition}}$ | **Matter** ( $3400 > z > z_{\Lambda}$ ) | Structure formation — sub-ego hierarchies crystallize (galaxies, stars); gravitational potential wells as structural margins $\phi(x,t) = 0$; baryonic matter condenses from plasma |
 | 3. Entropy Production | $\sigma_{\text{total}} \ge 0$ | **Stellar/BH** (within matter epoch) | Sub-egos burn through Bekenstein budgets; nucleosynthesis, stellar evolution, BH formation; each star is a localized 4-phase sub-engine |
-| 4. Equilibration | $\mathbf{J}_S \to \partial\mathcal{U}$ | **Dark Energy** ($z < z_\Lambda$) | Approach to de Sitter equilibrium; ledger writes decelerate; boundary tension dominates dynamics; asymptotic state = pure de Sitter vacuum |
+| 4. Equilibration | $\mathbf{J}_S \to \partial\mathcal{U}$ | **Dark Energy** ( $z < z_\Lambda$ ) | Approach to de Sitter equilibrium; ledger writes decelerate; boundary tension dominates dynamics; asymptotic state = pure de Sitter vacuum |
 
 Each cosmic epoch transition is a **macroscopic Iteration Morphism** — an irreversible state change at the scale of the universe's ledger:
 
 $$\mathcal{I}_{\text{cosmic}}(t_{\text{eq}}) = \mathcal{U}(t_{\text{eq}} + dt) - \mathcal{U}(t_{\text{eq}}) \ne 0$$
 
-These are not gradual transitions but changes in the dominant thermodynamic regime — analogous to phase transitions in condensed matter, where the order parameter switches identity (from $\rho_r$ to $\rho_m$ to $\rho_\Lambda$) even though the underlying dynamics are continuous.
+These are not gradual transitions but changes in the dominant thermodynamic regime — analogous to phase transitions in condensed matter, where the order parameter switches identity (from $\rho_r$ to $\rho_m$ to $\rho_\Lambda$ ) even though the underlying dynamics are continuous.
 
 #### 6.7.3 Epoch Structure as a Directed Acyclic Graph
 
@@ -2164,7 +2295,7 @@ $$(1 + z_{\text{eq}})^3 = 2$$
 
 $$\boxed{z_{\text{eq}}^{(m\text{-}\Lambda)} = 2^{1/3} - 1 \approx 0.260}$$
 
-| Quantity | Predicted | Observed ($\Lambda$CDM) | Error |
+| Quantity | Predicted | Observed ( $\Lambda$CDM) | Error |
 |---|---|---|---|
 | $z_{\text{eq}}^{(m\text{-}\Lambda)}$ | $2^{1/3} - 1 = 0.260$ | $(\Omega_\Lambda/\Omega_m)^{1/3} - 1 = 0.295$ | 11.9% |
 
@@ -2189,7 +2320,7 @@ A child universe born from a more massive parent BH would have a smaller $H_0$, 
 
 #### 6.7.6 The Gap: Baryon-to-Photon Ratio
 
-The radiation-matter equality redshift $z_{\text{eq}}^{(r\text{-}m)} \approx 3400$ depends on the baryon-to-photon ratio $\eta \approx 6.1 \times 10^{-10}$, which is set by baryogenesis dynamics at the electroweak-to-QCD crossover scale ($T \sim 100$ GeV → $T \sim 150$ MeV). This involves:
+The radiation-matter equality redshift $z_{\text{eq}}^{(r\text{-}m)} \approx 3400$ depends on the baryon-to-photon ratio $\eta \approx 6.1 \times 10^{-10}$, which is set by baryogenesis dynamics at the electroweak-to-QCD crossover scale ( $T \sim 100$ GeV → $T \sim 150$ MeV). This involves:
 - CP violation in the quark sector (CKM matrix)
 - Electroweak sphalerons or leptogenesis
 - The specific reheating temperature $T_{\text{rh}}$ from the torsion bounce
@@ -2198,9 +2329,9 @@ The framework does not yet derive $\eta$ from first principles. This is a **genu
 
 #### 6.7.7 Asymptotic Ledger State
 
-In the far future ($t \to \infty$), the universe approaches pure de Sitter equilibrium:
+In the far future ( $t \to \infty$ ), the universe approaches pure de Sitter equilibrium:
 - All matter collapses into black holes (sub-ego ledgers saturate their Bekenstein budgets)
-- All black holes evaporate via Hawking radiation ($T_H \propto M^{-1}$)
+- All black holes evaporate via Hawking radiation ( $T_H \propto M^{-1}$ )
 - The universe becomes a thermal bath at $T = T_{\text{dS}} = \hbar H_\infty / (2\pi k_B)$
 - The ledger write rate $\dot{\mathcal{S}}_{\text{total}} \to 0$
 - The horizon entropy reaches its maximum: $S_{\text{BH}}^{\text{max}} = \pi k_B c^5 / (G\hbar H_\infty^2)$
@@ -2211,7 +2342,7 @@ In the framework's language, this is the universe's **thermodynamic death** — 
 
 #### 6.7.8 Black Hole–Universe Complementarity: Not "Inside" But Imaginary Space
 
-The statement "our universe is inside a black hole" uses container language that is geometrically misleading. The child universe's spatial volume can exceed the parent BH's exterior Schwarzschild radius ($R_H^{\text{now}} \sim 4.4 \times 10^{26}$ m vs. $R_s^{\text{ext}} \sim 1.4 \times 10^{26}$ m). "Inside" suggests containment, accessibility, and a size hierarchy that does not hold.
+The statement "our universe is inside a black hole" uses container language that is geometrically misleading. The child universe's spatial volume can exceed the parent BH's exterior Schwarzschild radius ( $R_H^{\text{now}} \sim 4.4 \times 10^{26}$ m vs. $R_s^{\text{ext}} \sim 1.4 \times 10^{26}$ m). "Inside" suggests containment, accessibility, and a size hierarchy that does not hold.
 
 The framework's dual-space formalism provides the precise statement. The event horizon $\partial E$ is the membrane separating two mutually inaccessible real spaces:
 
@@ -2234,7 +2365,7 @@ This is **black hole complementarity** (Susskind, 1993) expressed in the framewo
 
 #### 6.7.9 Transfer Efficiency and Structure Rebuilding at the Bounce
 
-The transfer of energy from parent $\Omega_{\mathbb{R}}$ to child $\Omega_{\mathbb{R}}$ (across $\partial E$) is not 100% efficient. During stellar collapse and BH formation:
+The transfer of energy from parent $\Omega_{\mathbb{R}}$ to child $\Omega_{\mathbb{R}}$ (across $\partial E$ ) is not 100% efficient. During stellar collapse and BH formation:
 
 | Component | Fraction of progenitor star's mass-energy | Destination |
 |---|---|---|
@@ -2243,9 +2374,9 @@ The transfer of energy from parent $\Omega_{\mathbb{R}}$ to child $\Omega_{\math
 | Gravitational wave emission | ~1–3% | Remains in parent $\Omega_{\mathbb{R}}$ |
 | Core (crosses horizon) | ~10–30% | Enters parent $\Omega_{\mathfrak{Im}}$ = child $\Omega_{\mathbb{R}}$ |
 
-Post-formation accretion introduces further losses: 5–40% of accreted mass-energy is radiated as accretion disk luminosity (remaining in parent $\Omega_{\mathbb{R}}$) before the remainder crosses the horizon. The transfer process satisfies $\sigma_{\text{total}} > 0$ — it is an irreversible, entropy-producing engine operation in the parent universe.
+Post-formation accretion introduces further losses: 5–40% of accreted mass-energy is radiated as accretion disk luminosity (remaining in parent $\Omega_{\mathbb{R}}$ ) before the remainder crosses the horizon. The transfer process satisfies $\sigma_{\text{total}} > 0$ — it is an irreversible, entropy-producing engine operation in the parent universe.
 
-**Structure destruction at the bounce.** Matter that crosses the horizon does not arrive intact in the child universe. At the bounce ($\rho = \rho_P$, $T = T_P \sim 10^{32}$ K), all prior atomic, nuclear, and hadronic structure is destroyed. The interior at the moment of bounce is a quark-gluon-lepton-photon plasma — effectively pure radiation. The matter content of the child universe is then **rebuilt from scratch** during the post-bounce expansion:
+**Structure destruction at the bounce.** Matter that crosses the horizon does not arrive intact in the child universe. At the bounce ( $\rho = \rho_P$, $T = T_P \sim 10^{32}$ K), all prior atomic, nuclear, and hadronic structure is destroyed. The interior at the moment of bounce is a quark-gluon-lepton-photon plasma — effectively pure radiation. The matter content of the child universe is then **rebuilt from scratch** during the post-bounce expansion:
 
 $$\text{Parent matter} \xrightarrow{\partial E} \text{Planck plasma} \xrightarrow{\text{baryogenesis}} \eta \neq 0 \xrightarrow{\text{cooling}} \text{child matter}$$
 
@@ -2261,10 +2392,10 @@ The framework's dual-space architecture (§2.1) partitions existence into $\Omeg
 
 | Particle Physics | Framework Dual Space |
 |---|---|
-| Matter (particles: $e^-, p, n$) | $\Omega_{\mathbb{R}}$ — the realized projection |
-| Antimatter (antiparticles: $e^+, \bar{p}, \bar{n}$) | $\Omega_{\mathfrak{Im}}$ — the conjugate complement |
+| Matter (particles: $e^-, p, n$ ) | $\Omega_{\mathbb{R}}$ — the realized projection |
+| Antimatter (antiparticles: $e^+, \bar{p}, \bar{n}$ ) | $\Omega_{\mathfrak{Im}}$ — the conjugate complement |
 | CPT conjugation | Realization operator $\hat{\pi}_{\text{real}}$ and its complement $\hat{\pi}_{\mathfrak{Im}}$ |
-| Annihilation ($e^- + e^+ \to 2\gamma$) | Boundary collapse: $\partial E \to \varnothing$, releasing pure radiation |
+| Annihilation ( $e^- + e^+ \to 2\gamma$ ) | Boundary collapse: $\partial E \to \varnothing$, releasing pure radiation |
 | $\eta = 0$ (perfect symmetry) | $\mu(\Omega_{\mathbb{R}}) = \mu(\Omega_{\mathfrak{Im}})$ — complete cancellation — **no structure** |
 | $\eta \neq 0$ (broken symmetry) | $\mu(\Omega_{\mathbb{R}}) > \mu(\Omega_{\mathfrak{Im}})$ — asymmetric projection — **structure exists** |
 
@@ -2272,7 +2403,7 @@ The framework's dual-space architecture (§2.1) partitions existence into $\Omeg
 
 $$\hat{\mathcal{A}}_E \equiv \hat{\pi}_{\text{real}} - \hat{\pi}_{\mathfrak{Im}} = 2\hat{\pi}_{\text{real}} - \mathbb{I}$$
 
-This operator acts on the full state space and encodes, for each degree of freedom, whether it was realized (projected onto $\Omega_{\mathbb{R}}$) or remained in the complement ($\Omega_{\mathfrak{Im}}$). The eigenvalues of $\hat{\mathcal{A}}_E$ are $+1$ (realized modes) and $-1$ (complement modes).
+This operator acts on the full state space and encodes, for each degree of freedom, whether it was realized (projected onto $\Omega_{\mathbb{R}}$ ) or remained in the complement ( $\Omega_{\mathfrak{Im}}$ ). The eigenvalues of $\hat{\mathcal{A}}_E$ are $+1$ (realized modes) and $-1$ (complement modes).
 
 The three-tier measurement hierarchy is:
 
@@ -2296,7 +2427,7 @@ The three Sakharov conditions [39] for generating $\eta \neq 0$ are not ad hoc r
 | 2. C and CP violation | Processes must distinguish particles from antiparticles | **Engine irreversibility**: $\sigma_{\text{total}} > 0$, the 4-phase cycle is not time-reversible | Second Law; Theorem 5 (§2.3): $d\mathcal{G}/dt \leq 0$ |
 | 3. Out of equilibrium | System must be far from thermal equilibrium | **Non-equilibrium initial conditions**: $\mathcal{G}[E] > 0$ at birth | Theorem 5 (§2.3): existence requires $\mathcal{G} > 0$ |
 
-**Proof.** (1) If the boundary is impermeable ($\mathbf{J}_S \cdot \hat{n} = 0$ everywhere), no asymmetric transfer occurs and the engine has no throughput — $\eta_E = 0$ trivially. (2) If the engine cycle is time-symmetric ($\sigma_{\text{total}} = 0$), every forward production step is exactly reversed, and the net structured output is zero — $\eta_E = 0$. (3) If the system is at thermal equilibrium ($\mathcal{G}[E] = 0$), the engine cannot run (Theorem 5), no production occurs, and $\eta_E = 0$. Therefore $\eta_E > 0$ requires all three conditions simultaneously. These are precisely the axioms of the engine formalism. $\blacksquare$
+**Proof.** (1) If the boundary is impermeable ( $\mathbf{J}_S \cdot \hat{n} = 0$ everywhere), no asymmetric transfer occurs and the engine has no throughput — $\eta_E = 0$ trivially. (2) If the engine cycle is time-symmetric ( $\sigma_{\text{total}} = 0$ ), every forward production step is exactly reversed, and the net structured output is zero — $\eta_E = 0$. (3) If the system is at thermal equilibrium ( $\mathcal{G}[E] = 0$ ), the engine cannot run (Theorem 5), no production occurs, and $\eta_E = 0$. Therefore $\eta_E > 0$ requires all three conditions simultaneously. These are precisely the axioms of the engine formalism. $\blacksquare$
 
 **Corollary (Existence Requires Nonzero Asymmetry).** *For any entity $E$ satisfying $\mu(E) > 0$:*
 
@@ -2306,7 +2437,7 @@ $$\mu(E) > 0 \implies \eta_E > 0 \implies \Omega_{\mathbb{R}} \not\cong \Omega_{
 
 #### 6.8.3 Level-Invariant $\eta$: The Selection Survival Ratio
 
-The structural asymmetry parameter $\eta_E$ is defined at every level of the hierarchy. Its numerical value is set by the microphysics at each level, but its existence ($\eta_E > 0$) is a universal structural necessity:
+The structural asymmetry parameter $\eta_E$ is defined at every level of the hierarchy. Its numerical value is set by the microphysics at each level, but its existence ( $\eta_E > 0$ ) is a universal structural necessity:
 
 | Level | Competition Pool | Survivors | $\eta$ | Mechanism |
 |---|---|---|---|---|
