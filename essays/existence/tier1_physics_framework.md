@@ -2340,6 +2340,60 @@ where $H_\infty = c\sqrt{\Lambda/3}$ is the asymptotic Hubble parameter.
 
 In the framework's language, this is the universe's **thermodynamic death** — the child ego's ledger is maximally saturated, all sub-ego ledgers have been absorbed into the horizon, and no further Iteration Morphisms are possible. The boundary $\partial\mathcal{U}$ encodes the complete, irreversible history of every sub-ego that ever existed within $\Omega_{\mathbb{R}}$.
 
+**Theorem 11 (Horizon Temperature Complementarity).** *For the identified horizon $R_s(M_H) \equiv R_H = c/H$, the interior Gibbons-Hawking (de Sitter) horizon temperature $T_{\text{dS}}$ and the exterior parent black hole Hawking temperature $T_H$ satisfy the exact factor-of-two identity:*
+
+$$T_{\text{dS}} = 2 T_H$$
+
+*Proof.* By Lemma 3 (§6.6.1), the interior observer's de Sitter Killing surface gravity is $\kappa_{\text{dS}} = c H$, while the exterior Schwarzschild surface gravity for a black hole of mass $M_H = \frac{c^3}{2GH}$ is:
+
+$$\kappa_S = \frac{c^4}{4 G M_H} = \frac{c H}{2}$$
+
+yielding $\kappa_{\text{dS}} = 2\kappa_S$. The interior Gibbons-Hawking horizon temperature is:
+
+$$T_{\text{dS}} = \frac{\hbar \kappa_{\text{dS}}}{2\pi c k_B} = \frac{\hbar H}{2\pi k_B}$$
+
+The exterior Hawking temperature is:
+
+$$T_H = \frac{\hbar \kappa_S}{2\pi c k_B} = \frac{\hbar c^3}{8\pi G M_H k_B} = \frac{\hbar H}{4\pi k_B}$$
+
+Substituting $\kappa_{\text{dS}} = 2\kappa_S$ into $T_{\text{dS}}$ gives:
+
+$$T_{\text{dS}} = \frac{\hbar (2\kappa_S)}{2\pi c k_B} = 2 \cdot \left(\frac{\hbar \kappa_S}{2\pi c k_B}\right) = 2 T_H \quad \blacksquare$$
+
+At the present epoch ( $H_0 = 2.1836 \times 10^{-18} \text{ s}^{-1}$ ):
+
+$$T_{\text{horizon}} = \frac{\hbar H_0}{2\pi k_B} \approx 2.65 \times 10^{-30} \text{ K}, \qquad T_{H,0} = \frac{\hbar H_0}{4\pi k_B} \approx 1.33 \times 10^{-30} \text{ K}$$
+
+In the asymptotic pure de Sitter limit ( $H \to H_\infty = H_0 \sqrt{\Omega_\Lambda} = H_0 \sqrt{2/3} \approx 1.783 \times 10^{-18} \text{ s}^{-1}$ ):
+
+$$T_{\text{dS}} = \frac{\hbar H_\infty}{2\pi k_B} \approx 2.17 \times 10^{-30} \text{ K}, \qquad T_{H,\infty} = \frac{\hbar H_\infty}{4\pi k_B} \approx 1.08 \times 10^{-30} \text{ K}$$
+
+**Corollary (Parent Black Hole Evaporation Timescale).** *The Hawking evaporation timescale of the parent black hole of mass $M_H = \frac{c^3}{2GH}$, expressed in terms of the child universe's horizon entropy $S_{\text{BH}} = \frac{\pi k_B c^5}{G\hbar H^2}$ and Hubble dynamical expansion time $t_{\text{Hubble}} = 1/H$, is:*
+
+$$t_{\text{evap}} = 640 \cdot \left(\frac{S_{\text{BH}}}{k_B}\right) \cdot t_{\text{Hubble}}$$
+
+*Proof.* The standard Hawking evaporation timescale for a Schwarzschild black hole of mass $M$ in vacuum (Hawking 1975 [7]) is:
+
+$$t_{\text{evap}} = \frac{5120\pi G^2 M^3}{\hbar c^4}$$
+
+Substituting the cosmological horizon mass $M_H = \frac{c^3}{2GH}$:
+
+$$M_H^3 = \frac{c^9}{8 G^3 H^3}$$
+
+which gives:
+
+$$t_{\text{evap}} = \frac{5120\pi G^2}{\hbar c^4} \cdot \frac{c^9}{8 G^3 H^3} = \frac{640\pi c^5}{G\hbar H^3}$$
+
+From Theorem (§6.6.4), the Bekenstein-Hawking horizon entropy is $S_{\text{BH}} = \frac{\pi k_B c^5}{G\hbar H^2}$, yielding $\frac{S_{\text{BH}}}{k_B} = \frac{\pi c^5}{G\hbar H^2}$. Recognizing $t_{\text{Hubble}} = 1/H$:
+
+$$t_{\text{evap}} = 640 \cdot \left(\frac{\pi c^5}{G\hbar H^2}\right) \cdot \left(\frac{1}{H}\right) = 640 \cdot \left(\frac{S_{\text{BH}}}{k_B}\right) \cdot t_{\text{Hubble}} \quad \blacksquare$$
+
+Using current cosmological parameters ( $S_{\text{BH}}/k_B \approx 2.27 \times 10^{122}$, $t_{\text{Hubble}} \approx 14.5 \text{ Gyr} \approx 4.58 \times 10^{17} \text{ s}$ ):
+
+$$t_{\text{evap}} \approx 6.64 \times 10^{142} \text{ s} \approx 2.11 \times 10^{135} \text{ years}$$
+
+**Physical Interpretation.** The child universe's irreducible quantum temperature floor $T_{\text{dS}}$ is the parent black hole's Hawking radiation observed from the interior side of the membrane $\partial E$. The child universe cools asymptotically toward this floor, approaching thermal equilibrium with the quantum emission of the horizon. The parent black hole persists for $\sim 10^{122}$ Hubble dynamical times — exactly 640 Hubble times per horizon microstate degree of freedom.
+
 #### 6.7.8 Black Hole–Universe Complementarity: Not "Inside" But Imaginary Space
 
 The statement "our universe is inside a black hole" uses container language that is geometrically misleading. The child universe's spatial volume can exceed the parent BH's exterior Schwarzschild radius ( $R_H^{\text{now}} \sim 4.4 \times 10^{26}$ m vs. $R_s^{\text{ext}} \sim 1.4 \times 10^{26}$ m). "Inside" suggests containment, accessibility, and a size hierarchy that does not hold.
@@ -2360,6 +2414,12 @@ The black hole is not a container. It is the **membrane** — the boundary that 
 | Child universe (us) | Everything within cosmological horizon | Parent universe (beyond our horizon) | Cosmological horizon (Hubble sphere) |
 
 This is **black hole complementarity** (Susskind, 1993) expressed in the framework's native language. The two descriptions — exterior observer seeing a BH with Hawking radiation, interior observer seeing an expanding universe — are complementary realization projections of the same physical system through different operators $\hat{\pi}_{\text{real}}$.
+
+**Thermal Complementarity Across the Membrane.** The complementarity of state spaces extends to horizon thermodynamics. The membrane $\partial E$ radiates quantum fluctuations to both sides, with temperatures determined by the respective extrinsic curvatures (Lemma 3):
+- The **exterior parent observer** measures a black hole event horizon at temperature $T_H = \frac{\hbar H}{4\pi k_B}$, interpreting the flux as mass-energy loss via Hawking evaporation.
+- The **interior child observer** measures a cosmological horizon at temperature $T_{\text{dS}} = 2 T_H = \frac{\hbar H}{2\pi k_B}$, interpreting the flux as the irreducible de Sitter thermal floor.
+
+Neither observer's measurement contradicts the other; they are the dual projections of the same underlying quantum membrane state across $\hat{\pi}_{\text{real}}^{\text{ext}}$ and $\hat{\pi}_{\text{real}}^{\text{int}}$. The factor of two in $T_{\text{dS}} = 2T_H$ is the exact geometric consequence of the interior observer inhabiting the concave side of the 2-sphere horizon rather than the convex exterior.
 
 **Corollary.** The Level-Invariance Theorem (§7.3) in its most compressed form: *one level's imaginary space IS the next level's real space.* The hierarchy of nested black holes (parent → child → grandchild) is a hierarchy of nested $\Omega_{\mathbb{R}} \leftrightarrow \Omega_{\mathfrak{Im}}$ exchanges across membranes.
 

@@ -1719,6 +1719,12 @@ $$\mathcal{Z}(W_1 \cup W_2) = \mathcal{Z}(W_2) \circ \mathcal{Z}(W_1)$$
 $$d_{\text{Connes}}(p, q) \equiv \sup_{f \in \mathcal{A}} \left\{ |f(p) - f(q)| \;\middle|\; \|[\mathcal{D}, \pi(f)]\| \le 1 \right\}, \qquad \int_{\partial E} f \equiv \mathrm{Tr}_\omega\left(\pi(f)|\mathcal{D}|^{-d_H}\right)$$
 
 - *Status:* Formally resolved in §2.3.3 for interfaces of Hausdorff dimension $d_H \in (2, 3)$; generalized multiscale fractal cascade closures remain open.
+4. **Horizon Temperature Complementarity & Asymptotic Metric Decoupling:**
+- *Equation:*
+
+$$T_{\text{dS}} = 2 T_H, \qquad t_{\text{evap}} = 640 \cdot \left(\frac{S_{\text{BH}}}{k_B}\right) \cdot t_{\text{Hubble}} \approx 2.11 \times 10^{135} \text{ yr}$$
+
+- *Status:* Formally resolved via Lemma 3 factor-of-two surface gravity identity ( $\kappa_{\text{dS}} = 2\kappa_S$ ) in §6.7.7–6.7.8 of the Tier I physics framework; dynamical backreaction during late evaporative horizon shrinkage ( $M_H \to M_P$ ) remains an open boundary closure frontier.
 
 ---
 
@@ -1738,7 +1744,8 @@ With a well-defined boundary $\partial \mathcal{D}_T$, we apply the formal defin
 ### 7.2 The Organized World as Universal Imaginary Space
 By extending the Tier I definition of imaginary space (gauge fields as unmanifest projections) to the universal scale, the real space $\Omega_{\mathbb{R}}(\mathcal{D}_T)$ corresponds to the quantum vacuum—the formless, unorganized Planck-scale field fluctuations. Consequently, **all organized, persistent structures** that have emerged from this vacuum via thermodynamic dissipation—particles, stars, planets, and biological life—constitute the universe's imaginary space: $\Omega_{\mathfrak{Im}}(\mathcal{D}_T)$.
 
-Furthermore, the Hawking temperature of the universe's cosmological horizon is $T_H \approx 10^{-30} \text{ K}$, which is nine orders of magnitude colder than the Cosmic Microwave Background (2.7 K). The universe is therefore in an absorbing, negentropic accumulation phase. Its imaginary space (organized matter and life) is currently expanding and complexifying. The Hawking-like thermal cascade (the dissolution of the sub-egos) will not occur until the far-future heat death on timescales of $\sim 10^{100}$ years.
+Furthermore, the Gibbons-Hawking temperature of the universe's cosmological horizon is $T_{\text{dS}} = 2 T_H \approx 2.65 \times 10^{-30} \text{ K}$ (where $T_H \approx 1.33 \times 10^{-30} \text{ K}$ is the exterior parent black hole Hawking temperature; Theorem 11 in §6.7.7 of the Tier I framework), which is nine orders of magnitude colder than the Cosmic Microwave Background ( $2.725 \text{ K}$ ). The universe is therefore in an absorbing, negentropic accumulation phase. Its imaginary space (organized matter and life) is currently expanding and complexifying. The complete Hawking evaporation of the parent horizon (the dissolution of the membrane $\partial E$ ) will not occur until far-future timescales of $\sim 10^{135}$ years ( $t_{\text{evap}} = 640 \, (S_{\text{BH}}/k_B) \, t_{\text{Hubble}}$ ).
+
 
 ### 7.3 Structural Correspondence with Advaita Vedanta (Sanatan Dharm)
 The derivations above were reached purely via thermodynamic and information-theoretic first principles. However, the resulting structure maps exactly onto the core ontology of Advaita Vedanta (Sanatan Dharm):
