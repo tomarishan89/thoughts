@@ -2179,6 +2179,7 @@ $$\boxed{S_{\text{BH}} = S_{\text{Bek}}}$$
 | 9 | Post-merger BH echoes (§6.10) | $\Delta t_{\text{echo}} = \frac{4GM}{c^3}\ln\frac{R_+}{\ell_P}$, $A_1/A_0 = 8.3 \times 10^{-5}$ | Not yet detected (GWTC-5.0) | — | **Independent** (ECSK bounce) |
 | 10 | Spectral index $n_s$ (§6.11) | $0.9624$ | $0.9649 \pm 0.0042$ (Planck 2018) | 0.6σ | Corollary of #1 + torsion |
 | 11 | Tensor-to-scalar ratio $r$ (§6.11) | $3.9 \times 10^{-3}$ | $< 0.036$ (BICEP/Keck) | Consistent | Corollary of #1 + torsion |
+| 12 | CMB temperature $T_{\text{CMB}}$ (§6.12) | $2.723$ K | $2.7255 \pm 0.0006$ K (FIRAS) | −0.10% | Corollary of #4 |
 
 #### 6.6.9 Epoch-Dependence and the Snapshot Interpretation
 
@@ -2851,6 +2852,63 @@ The derivation rests on one key theoretical input: **ECSK torsion at the bounce 
 - The identification $T_{\text{reh}} = T_{\text{baryo}}$ assumes instant preheating; delayed reheating would shift $N$
 
 This constitutes **Predictions #10** ($n_s$) and **#11** ($r$) of the framework.
+
+### 6.12 CMB Temperature and the de Sitter Measurement Floor (Prediction #12)
+
+ISSUE-4.53 asked whether the CMB temperature $T_{\text{CMB}} = 2.7255$ K can be derived as the exhaust temperature of the cosmic engine cycle (§6.7.2). The answer is yes — as a corollary of the baryogenesis derivation (§6.8.4).
+
+#### 6.12.1 Derivation of $T_{\text{CMB}}$
+
+The CMB photon bath is the free-streaming relic of the early universe's radiation field. After $e^+ e^-$ annihilation, the comoving photon number is conserved. The present-day photon number density is:
+
+$$n_\gamma = \frac{n_b}{\eta} = \frac{\Omega_b \rho_{\text{crit}}}{\eta \cdot m_H}$$
+
+where $\rho_{\text{crit}} = 3H_0^2/(8\pi G)$ is the critical density, $\eta = 6.1 \times 10^{-10}$ is the baryon-to-photon ratio (derived in §6.8.4), $\Omega_b = 0.049$ (derived in §6.8.4), and $m_H$ is the hydrogen atom mass.
+
+The photon number density for a blackbody at temperature $T$ is:
+
+$$n_\gamma = \frac{2\zeta(3)}{\pi^2}\left(\frac{k_B T}{\hbar c}\right)^3$$
+
+Solving for $T$:
+
+$$\boxed{T_{\text{CMB}} = \left[\frac{\pi^2}{2\zeta(3)} \cdot \frac{\Omega_b \rho_{\text{crit}}}{\eta \cdot m_H}\right]^{1/3} \frac{\hbar c}{k_B} = 2.723 \text{ K}}$$
+
+| Quantity | Predicted | Observed (FIRAS) | Error |
+|---|---|---|---|
+| $T_{\text{CMB}}$ | $2.723$ K | $2.7255 \pm 0.0006$ K | **−0.10%** |
+| Free parameters | 0 (given $H_0$) | — | — |
+
+The prediction matches FIRAS to $0.10\%$, using only the measured $H_0$, the framework-derived $\eta$ and $\Omega_b$, and fundamental constants ($\hbar, c, k_B, G, m_H$).
+
+**Sensitivity:** $T_{\text{CMB}} \propto (\Omega_b H_0^2 / \eta)^{1/3}$, so the prediction is weakly sensitive to parameter variations. The $-0.10\%$ discrepancy is dominated by the $-0.40\%$ error in $\Omega_b h^2$ (§6.8.4), attenuated by the cube root.
+
+#### 6.12.2 Honest Assessment: Corollary, Not Independent Prediction
+
+The derivation $T_{\text{CMB}} = f(\eta, \Omega_b, H_0)$ is standard textbook cosmology. The framework does not add new physics to this relation — it adds new constraints on the inputs ($\eta$ and $\Omega_b$ are derived rather than fitted). Therefore $T_{\text{CMB}}$ is a **corollary** of Prediction #4 ($\Omega_b h^2$), not a genuinely independent prediction. Nevertheless, the self-consistency is non-trivial: the framework's derived $\eta$ and $\Omega_b$ are mutually consistent with the observed $T_{\text{CMB}}$ to $0.10\%$.
+
+#### 6.12.3 The de Sitter Temperature as Measurement Floor
+
+The framework predicts (Theorem 11, §6.7.7) a de Sitter horizon temperature:
+
+$$T_{\text{dS}} = 2T_H = \frac{\hbar c^3}{4\pi k_B G M_H} \approx 3.9 \times 10^{-30} \text{ K}$$
+
+where $M_H \approx 3.2 \times 10^{22} M_\odot$ is the parent black hole mass (§6.7.1). This temperature sets the **absolute thermodynamic floor** of the child universe via the Landauer bound (§2.3, [2]):
+
+1. Any measurement process within the child universe requires energy $E \geq k_B T_{\text{env}} \ln 2$, where $T_{\text{env}}$ is the environmental temperature.
+2. In de Sitter spacetime, the irreducible environmental temperature is $T_{\text{dS}}$, set by the cosmological horizon.
+3. Therefore no sub-ego can resolve energy differences below $k_B T_{\text{dS}} \ln 2 \approx 3.7 \times 10^{-53}$ J.
+
+The hierarchy of thermodynamic floors is:
+
+| Floor | Temperature | Current status |
+|---|---|---|
+| CMB photon bath | $T_{\text{CMB}} = 2.725$ K | Practical EM noise floor (dominates today) |
+| Cosmic neutrino background | $T_\nu = 1.95$ K | Below CMB (practically unmeasurable) |
+| de Sitter horizon | $T_{\text{dS}} = 3.9 \times 10^{-30}$ K | Absolute thermodynamic floor (Landauer limit) |
+
+As the universe expands in the de Sitter phase, $T_{\text{CMB}} \propto 1/a \to 0$. The CMB cools below $T_{\text{dS}}$ at scale factor $a \sim 7 \times 10^{29}$ (approximately $10^{12}$ years from now, under de Sitter expansion). At that epoch, the de Sitter horizon becomes the dominant environmental noise source — the universe's electromagnetic floor is replaced by its gravitational floor. This transition marks the asymptotic approach to the equilibrium state (§6.7.2, Phase IV).
+
+This constitutes **Prediction #12** ($T_{\text{CMB}}$) and a structural result (de Sitter measurement floor) of the framework.
 
 ---
 
