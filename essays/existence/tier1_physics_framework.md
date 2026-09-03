@@ -2910,6 +2910,65 @@ As the universe expands in the de Sitter phase, $T_{\text{CMB}} \propto 1/a \to 
 
 This constitutes **Prediction #12** ($T_{\text{CMB}}$) and a structural result (de Sitter measurement floor) of the framework.
 
+### 6.13 The Scalar Amplitude Wall: Why $A_s$ Cannot Be Derived (ISSUE-4.64)
+
+The framework derives the **spectral shape** of the primordial power spectrum ($n_s$ and $r$, §6.11) but **not its normalization** $A_s = 2.1 \times 10^{-9}$. This section documents exactly where and why the derivation fails.
+
+#### 6.13.1 What $A_s$ Requires
+
+In the Starobinsky $R + \alpha R^2$ model, the scalar amplitude is:
+
+$$A_s = \frac{V_0}{24\pi^2 M_{\text{Pl}}^4 \varepsilon} = \frac{m^2}{96\pi^2 M_{\text{Pl}}^2 \varepsilon}$$
+
+where $m = M_{\text{Pl}}/\sqrt{6\alpha}$ is the scalaron mass and $\varepsilon = 3/(4N^2) \approx 2.5 \times 10^{-4}$ is the slow-roll parameter. The observed $A_s = 2.1 \times 10^{-9}$ fixes:
+
+$$\alpha_{\text{required}} \approx 5 \times 10^9 \quad \text{(in Planck units)}$$
+
+The question is: does ECSK torsion with Standard Model particle content produce $\alpha \sim 10^9$?
+
+#### 6.13.2 The Perturbative Calculation (Path A)
+
+The one-loop effective gravitational action for $N_0$ scalars, $N_{1/2}$ Weyl fermions, and $N_1$ vectors in curved spacetime generates an $R^2$ term with coefficient [46]:
+
+$$\alpha_{\text{1-loop}} = \frac{N_0 + 6N_{1/2} + 12N_1}{1920\pi^2}$$
+
+For Standard Model content ($N_0 = 4$, $N_{1/2} = 45$, $N_1 = 12$):
+
+$$\alpha_{\text{1-loop}}^{\text{SM}} = \frac{4 + 270 + 144}{1920\pi^2} = \frac{418}{1920\pi^2} \approx 0.022$$
+
+**The discrepancy is 11 orders of magnitude.** RG running from $M_P$ to $H_{\text{inf}} \sim 10^{13}$ GeV adds $\Delta\alpha \sim \beta_\alpha \cdot \ln(M_P/H_{\text{inf}}) \sim 0.3$, which is negligible.
+
+#### 6.13.3 Why the Perturbative Calculation Fails
+
+The coefficient $\alpha$ is **UV-sensitive** — it is a relevant operator in the gravitational effective action. Its value depends on:
+
+1. **The regularization scheme.** Dimensional regularization gives $\alpha \sim 0.02$. A hard Planck-scale cutoff gives $\alpha \sim (M_P/m_{\text{fermion}})^2 \sim 10^{34}$. The physical answer depends on the UV completion of gravity.
+
+2. **Non-perturbative torsion dynamics at the bounce.** At the Planck-density bounce, the Hehl-Datta four-fermion interaction is **not perturbative** — it is of the same order as the Einstein-Hilbert term. The effective $R^2$ coefficient in this regime cannot be computed by expanding around flat spacetime.
+
+3. **Particle production during the bounce.** The time-varying torsion field creates particles via the Schwinger mechanism, depositing energy into a radiation bath. The total energy in created particles sets the effective inflationary potential $V_0$, bypassing the need for $\alpha$ entirely.
+
+#### 6.13.4 The Path Forward (Path B: Semiclassical Particle Production)
+
+The most physically motivated approach avoids $\alpha$ entirely. Instead:
+
+1. Solve the Friedmann-Cartan equations through the bounce numerically.
+2. Compute Bogoliubov coefficients for particle creation in the time-varying torsion field (Parker formalism).
+3. Extract $V_0$ from the energy density of created particles at the onset of inflation.
+4. Derive $A_s = V_0 / (24\pi^2 M_{\text{Pl}}^4 \varepsilon)$.
+
+This is well-defined QFT in curved spacetime (graduate-level, not frontier quantum gravity), but has not been carried out for the ECSK bounce model in the literature. It represents a **genuine research gap** — a novel calculation that could yield the last free CMB parameter.
+
+#### 6.13.5 Framework Position
+
+| Parameter | Status | Derivation |
+|---|---|---|
+| $n_s = 0.9624$ | **Derived** | Robust — depends on $N$ only |
+| $r = 3.9 \times 10^{-3}$ | **Derived** | Robust — depends on $N$ only |
+| $A_s = 2.1 \times 10^{-9}$ | **Not derived** | Requires non-perturbative Planck-scale physics |
+
+The spectral **shape** ($n_s$, $r$) is a zero-parameter prediction of the framework. The spectral **amplitude** ($A_s$) requires UV-complete Planck-scale physics that ECSK gravity alone does not determine. This is the **single remaining free parameter** in the framework's CMB prediction.
+
 ---
 
 ## References

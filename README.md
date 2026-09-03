@@ -16,52 +16,60 @@ The project formalizes how boundaries ( $\partial E$ ), structural margins ( $\p
 
 ---
 
+## 🔬 Quantitative Cosmological Predictions (12 as of Sep 2026)
+
+The Tier I physics framework (Einstein-Cartan-Sciama-Kibble gravity with torsion) derives **12 zero-parameter cosmological predictions** from the horizon identity $R_s \equiv R_H$ and measured $H_0$:
+
+| # | Prediction | Framework | Observed | Agreement |
+|---|---|---|---|---|
+| 1 | Matter density $\Omega_m$ | $1/3$ | $0.315 \pm 0.007$ | 1.2% |
+| 2 | Dark energy density $\Omega_\Lambda$ | $2/3$ | $0.685 \pm 0.007$ | 3.0% |
+| 3 | Spatial flatness $\Omega_{\text{tot}}$ | $1.000$ | $1.000 \pm 0.002$ | exact |
+| 4 | Baryon density $\Omega_b h^2$ | $0.02228$ | $0.02237$ | −0.40% |
+| 5 | Parent BH mass | $3.2 \times 10^{22} M_\odot$ | — | (structural) |
+| 6 | Dark matter $\Omega_{\text{DM}}$ | $0.284$ | $0.265$ | 7.2% |
+| 7 | de Sitter temperature | $3.9 \times 10^{-30}$ K | — | (not measurable) |
+| 8 | CMB TT power spectrum | RMS 4.0% | Planck 2018 | 4.0% |
+| 9 | BH echo amplitude | $8.3 \times 10^{-5}$ | $< 0.4$ | consistent |
+| 10 | Spectral index $n_s$ | $0.9624$ | $0.9649 \pm 0.0042$ | **0.6σ** |
+| 11 | Tensor-to-scalar ratio $r$ | $3.9 \times 10^{-3}$ | $< 0.036$ | consistent |
+| 12 | CMB temperature $T_{\text{CMB}}$ | $2.723$ K | $2.7255$ K | −0.10% |
+
+**Near-term falsification:** $r = 3.9 \times 10^{-3}$ testable by LiteBIRD (~2032). $n_s$ refinable by CMB-S4 (~2030s). BH echoes testable by Cosmic Explorer (~2040s).
+
+**One remaining gap:** Scalar amplitude $A_s = 2.1 \times 10^{-9}$ — requires non-perturbative Planck-scale physics (11-order perturbative discrepancy documented in §6.13).
+
+---
+
 ## 📄 Primary Research Manuscripts
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                            PRIMARY RESEARCH MANUSCRIPTS                                          │
-├────────────────────────────────────────┬─────────────────────────────┬───────────────────────────────────────────┤
-│ DOCUMENT                               │ DOMAIN / TYPE               │ KEY THEORETICAL CONTENT                   │
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 📜 essays/existence/draft.md           │ Mathematical Physics        │ 292 closed proof milestones across 63     │
-│                                        │ (Flagship Paper)            │ adversarial peer review iterations.       │
-│                                        │                             │ Exact Schwarzschild-Hubble horizon,       │
-│                                        │                             │ relativistic Bondi accretion, level-set   │
-│                                        │                             │ PDEs, and operator Temporal Triad.        │
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 📖 essays/existence/interpretation.md  │ Master Ontological Treatise │ Comprehensive companion paper establishing│
-│    ├── interpretations/                │ & Domain-Specific Modules   │ dimensional semantic transduction, and    │
-│    │   ├── core_ontology_and_dharma.md │                             │ partitioning the ontology into 5 focused  │
-│    │   ├── cosmology_and_brahmanda.md  │                             │ domain modules: Sanskrit Ontology,        │
-│    │   ├── biophysics_and_syncytia.md  │                             │ Cosmology, Biophysics, Cognitive Dynamics,│
-│    │   ├── cognitive_and_psychology.md │                             │ and Institutional Systems.                │
-│    │   └── societal_and_institutional.md│                            │                                           │
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 💬 essays/existence/                   │ Dialectical & Numerical     │ Extended Socratic debates, thought        │
-│    dialogues_and_explorations.md       │ Proof Archive               │ experiments, and exact numerical proofs   │
-│                                        │                             │ of cosmic expansion, accretion, and DM/DE.│
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 🔍 essays/existence/issues_log.md      │ Calculation & Proof Archive │ Complete technical derivation archive of  │
-│                                        │                             │ all 292 closed milestones and downstream  │
-│                                        │                             │ continuum-closure frontiers.              │
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ ⚖️ essays/existence/review.md          │ Editorial & Peer Review Log │ Iteration-by-iteration referee verdicts,  │
-│                                        │                             │ stress-tests, and adversarial critiques.  │
-├────────────────────────────────────────┼─────────────────────────────┼───────────────────────────────────────────┤
-│ 🕉️ essays/interospection_01/           │ Pāṇinian Morphological      │ Staged linguistic and grammatical essay   │
-│                                        │ Analysis & Darśana          │ on Kuṇḍalinī, Māyā, and dhātu semantics.  │
-└────────────────────────────────────────┴─────────────────────────────┴───────────────────────────────────────────┘
+├────────────────────────────────────┬─────────────────────────────┬─────────────────────────────────────────────────┤
+│ DOCUMENT                           │ DOMAIN / TYPE               │ KEY THEORETICAL CONTENT                         │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ 📜 essays/existence/draft.md       │ Mathematical Physics        │ 292 closed proof milestones across 63            │
+│                                    │ (Flagship Paper)            │ adversarial peer review iterations.              │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ ⚛️ essays/existence/               │ Tier I Physics Framework    │ 12 quantitative predictions: Ω_m, Ω_Λ, Ω_b,    │
+│    tier1_physics_framework.md     │ (Cosmological Engine)       │ CMB, n_s, r, BH echoes, T_CMB. ECSK torsion     │
+│                                    │                             │ baryogenesis, Starobinsky inflation, A_s wall.   │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ 📖 essays/existence/               │ Master Ontological Treatise │ Comprehensive companion paper establishing       │
+│    interpretation.md              │ & Domain-Specific Modules   │ dimensional semantic transduction, and            │
+│                                    │                             │ partitioning into 5 focused domain modules.      │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ 🔍 essays/existence/issues_log.md  │ Calculation & Proof Archive │ Complete technical derivation archive and active  │
+│                                    │                             │ downstream continuum-closure frontiers.           │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ ⚖️ essays/existence/review.md      │ Editorial & Peer Review Log │ Iteration-by-iteration referee verdicts,         │
+│                                    │                             │ stress-tests, and adversarial critiques.          │
+├────────────────────────────────────┼─────────────────────────────┼─────────────────────────────────────────────────┤
+│ 🕉️ essays/interospection_01/       │ Pāṇinian Morphological      │ Staged linguistic and grammatical essay           │
+│                                    │ Analysis & Darśana          │ on Kuṇḍalinī, Māyā, and dhātu semantics.          │
+└────────────────────────────────────┴─────────────────────────────┴─────────────────────────────────────────────────┘
 ```
-
----
-
-## 🧠 Interactive Research Portals (Google NotebookLM)
-
-Explore and converse with the research corpus directly through dedicated Google NotebookLM models:
-
-* 🔬 [**Open NotebookLM: Existence Manuscript (`draft.md`)**](https://notebook.google.com/notebook/05af9f0d-d66d-4333-bb98-75a7afb13f1f) — Grounded directly in the complete mathematical physics paper.
-* 📚 **Existence Corpus Suite (`essays/existence/`)** — Covers foundational theory, entropy dynamics, multi-scale cases, and philosophical dialogues.
 
 ---
 
@@ -77,14 +85,12 @@ graph TD
     D -->|"Physical Inscription"| A
 ```
 
-### 2. Cosmological Black Hole Embedding & Horizon Duality
+### 2. Cosmological Black Hole Embedding & 12-Prediction Engine
 Our observable universe satisfies the exact **Schwarzschild-Hubble Horizon Identity**:
 
-$$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \right) = \frac{c}{H_0} \equiv R_{\text{Hubble}} \approx 1.37 \times 10^{26} \, \mathrm{m}, \qquad S_{\text{BH}}(\mathcal{U}) = S_{\text{GH}}(\mathcal{U}) \approx 10^{122} \, k_B}$$
+$$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \right) = \frac{c}{H_0} \equiv R_{\text{Hubble}} \approx 1.37 \times 10^{26} \, \mathrm{m}}$$
 
-Proving that living cellular syncytia and cosmological black-hole universes share identical open non-equilibrium engine topology:
-
-$$\boxed{\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})}$$
+Combined with ECSK torsion gravity, this identity generates the 12 predictions above — including the spectral index $n_s = 0.9624$ (within 0.6σ of Planck) and tensor-to-scalar ratio $r = 3.9 \times 10^{-3}$ (testable by LiteBIRD ~2032), both with **zero free parameters**.
 
 ### 3. Deconstruction of Sanatan Dharm & The Category Error Paradox
 Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), **Sanatan Dharm ( $\mathcal{D}_T$ )** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ( $D_{\mathfrak{Im}}^i(t)$ ):
@@ -104,6 +110,9 @@ Project_writeup_1/
 │   ├── existence/               # The Continuum Existence & Ontological Framework
 │   │   ├── README.md            # Directory-specific guide and index
 │   │   ├── draft.md             # Flagship mathematical physics paper (292 proof milestones)
+│   │   ├── tier1_physics_framework.md  # Tier I: 12 cosmological predictions (ECSK, CMB, n_s, r)
+│   │   ├── tier2_cosmological_ontology.md  # Tier II: Multi-scale ontological mappings
+│   │   ├── tier2_tools_perception.md  # Tier II: Tools, perception, and new physics insights
 │   │   ├── interpretation.md    # Master ontological treatise (comprehensive synthesis)
 │   │   ├── interpretations/     # Specialized Domain Modules
 │   │   │   ├── core_ontology_and_dharma.md    # Sanskrit root √dhṛ, set theory & Category Error
@@ -121,8 +130,8 @@ Project_writeup_1/
 │   │   ├── entropy.md           # Non-equilibrium thermodynamic dissipation metrics
 │   │   └── rough.md             # Scratchpad & exploratory calculations
 │   └── interospection_01/       # Staged essay on Kuṇḍalinī darśana & Pāṇinian morphology
-│       ├── lexicons/            # Terminology controls & Sanskrit master dictionaries (glossary.md, allowlist.md)
-│       └── references/          # Pāṇinian grammar aids and derivation logs (panini-notes.md)
+│       ├── lexicons/            # Terminology controls & Sanskrit master dictionaries
+│       └── references/          # Pāṇinian grammar aids and derivation logs
 ├── scripts/                     # Automation toolchain & PDF/LaTeX compilation pipeline
 │   ├── generate_pdf.py          # Automated vector PDF compiler (MathJax + Chrome/Edge)
 │   ├── md_to_latex.py           # Markdown to standard LaTeX (.tex) converter

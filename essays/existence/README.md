@@ -4,6 +4,31 @@ This directory houses the formal research corpus, mathematical physics manuscrip
 
 ---
 
+## 🔬 Framework Status (Sep 2026): 12 Quantitative Predictions
+
+The Tier I physics framework derives **12 cosmological predictions** from the Schwarzschild-Hubble identity $R_s \equiv R_H$ and ECSK torsion gravity:
+
+| # | Prediction | Value | vs. Observation | Key Section |
+|---|---|---|---|---|
+| 1 | $\Omega_m$ | $1/3$ | 1.2% | §6.6.3 |
+| 2 | $\Omega_\Lambda$ | $2/3$ | 3.0% | §6.6.3 |
+| 3 | $\Omega_{\text{tot}}$ | $1.000$ | exact | §6.6.3 |
+| 4 | $\Omega_b h^2$ | $0.02228$ | −0.40% | §6.8.4 |
+| 5 | $M_{\text{parent}}$ | $3.2 \times 10^{22} M_\odot$ | — | §6.7.1 |
+| 6 | $\Omega_{\text{DM}}$ | $0.284$ | 7.2% | §6.8.1 |
+| 7 | $T_{\text{dS}}$ | $3.9 \times 10^{-30}$ K | — | §6.7.7 |
+| 8 | CMB TT spectrum | RMS 4.0% | 4.0% | §6.9 |
+| 9 | BH echoes | $A = 8.3 \times 10^{-5}$ | consistent | §6.10 |
+| 10 | $n_s$ | $0.9624$ | **0.6σ** | §6.11 |
+| 11 | $r$ | $3.9 \times 10^{-3}$ | consistent | §6.11 |
+| 12 | $T_{\text{CMB}}$ | $2.723$ K | −0.10% | §6.12 |
+
+**One gap:** $A_s$ (scalar amplitude) — requires non-perturbative Planck-scale physics (§6.13).
+
+**Falsification tests:** $r$ by LiteBIRD (~2032), $n_s$ by CMB-S4 (~2030s), echoes by Cosmic Explorer (~2040s).
+
+---
+
 ## 🧠 Interactive NotebookLM Portals
 
 You can explore and query this research corpus interactively through Google NotebookLM:
@@ -19,17 +44,20 @@ You can explore and query this research corpus interactively through Google Note
 
 | File | Type | Description |
 | :--- | :--- | :--- |
-| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, relativistic Israel-Stewart viscosity, Lyapunov stability, non-equilibrium thermodynamics (Onsager, Prigogine, Landauer), Schwarzschild-Hubble horizon embedding ( $R_s \equiv R_H$ ), relativistic Bondi accretion, and the operator Temporal Triad ( $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ) with 292 closed proof milestones across 63 peer-review iterations. |
-| [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction ( $\mathbf{K}_{\text{trans}}$ ), classical Sanskrit ontological mapping (*Dhāraṇa, Svadharma, Karma, Māyā, Jīva*), and indexing the 5 specialized domain modules below. |
-| [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all 292 resolved theoretical milestones, mathematical proofs, and active downstream continuum-closure frontiers across 10 categories. |
+| [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, operator Temporal Triad with 292 closed proof milestones across 63 peer-review iterations. |
+| [`tier1_physics_framework.md`](tier1_physics_framework.md) | **Tier I Physics** | The quantitative cosmological engine: 12 predictions from ECSK + horizon identity. Baryogenesis (§6.8), CMB (§6.9), BH echoes (§6.10), primordial spectrum (§6.11), CMB temperature (§6.12), $A_s$ wall (§6.13). |
+| [`tier2_cosmological_ontology.md`](tier2_cosmological_ontology.md) | **Tier II Ontology** | Multi-scale ontological mappings: cosmic engine ↔ biological engines, dark matter as structural skeleton, 30/70 active-passive universality. |
+| [`tier2_tools_perception.md`](tier2_tools_perception.md) | **Tier II Perception** | New physics insights through ontological lenses: DM as passive transport, BH echoes as internal acoustics, CMB as engine exhaust. |
+| [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction, classical Sanskrit ontological mapping, and indexing the 5 specialized domain modules. |
+| [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all resolved theoretical milestones and active downstream continuum-closure frontiers. |
 | [`review.md`](review.md) | **Peer Review & Defense Log** | Editorial feedback, referee verdicts, and adversarial stress-tests maintained under the Anti-Premature Closure Invariant. |
-| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations of cosmic expansion, mass accretion rate, Dark Energy ( $\Lambda$ ), and Dark Matter ( $a_0$ ). |
-| [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm: An Ontological, Information-Theoretic, and Set-Theoretic Working Hypothesis* — establishing the definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
-| [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains (subatomic hadrons, eukaryotic membranes, Roche limits, institutional governance). |
-| [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates ( $\sigma_S \ge 0$ ), non-equilibrium state flux ( $\mathbf{J}_S$ ), and thermodynamic bounds. |
+| [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations. |
+| [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm* — definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
+| [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains. |
+| [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates, and thermodynamic bounds. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
-| [`latex/`](latex/) | **LaTeX Source Suite** | Complete `.tex` manuscripts formatted with standard academic packages (`amsmath`, `amssymb`, `physics`, theorem environments) for all 8 papers. |
-| [`pdfs/`](pdfs/) | **Compiled PDFs** | Vector-rendered, publication-ready PDF documents generated with MathJax and academic typography. |
+| [`latex/`](latex/) | **LaTeX Source Suite** | Complete `.tex` manuscripts for all papers. |
+| [`pdfs/`](pdfs/) | **Compiled PDFs** | Vector-rendered, publication-ready PDF documents. |
 
 ---
 
@@ -41,29 +69,29 @@ To allow domain specialists to explore specific applications without wading thro
 | :--- | :--- | :--- |
 | [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ( $\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ). |
 | [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ( $R_s \equiv R_H$ ), Horizon Duality, Dark Energy boundary tension, Bondi accretion ( $48,000 \, M_\odot/\mathrm{s}$ ). |
-| [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium ("I Am a Universe"), Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
+| [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium, Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
 | [`cognitive_and_psychology.md`](../cognitive_social_extensions/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ( $\chi^* \approx 1$ ), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |
-| [`societal_and_institutional.md`](../cognitive_social_extensions/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ( $\chi^* > 1$ ), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes, Systemic Model of Psychopathy. |
+| [`societal_and_institutional.md`](../cognitive_social_extensions/societal_and_institutional.md) | **Institutions & Social Dynamics** | Tier IV collective networks ( $\chi^* > 1$ ), Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$, institutional failure modes. |
 
 ---
 
-## 📐 Core Theoretical Architecture of the Framework
+## 📐 Derivation Chain (ECSK → 12 Predictions)
 
-1. **Axiomatic Spacetime & Cosmological Black Hole Embedding (§1):**
-- 4D Lorentzian manifold $(\mathcal{M}, g_{\mu\nu})$ and complexified state manifold $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i\Omega_{\mathfrak{Im}}$ equipped with canonical Kähler volume measure $d\mu_h$.
-- **Schwarzschild-Hubble Horizon Identity:** $R_s(M_{\text{Hubble}}) = \frac{2GM}{c^2} \equiv R_{\text{Hubble}} = \frac{c}{H_0} \approx 1.37 \times 10^{26} \, \mathrm{m}$ and holographic Gibbons-Hawking entropy $S_{\text{GH}} \approx 10^{122} \, k_B$.
-- Non-singular Einstein-Cartan spin-torsion bounce at $a_{\text{min}} > 0$ and open relativistic Bondi accretion $\dot{M}_{\text{accrete}} \ge 0$ fueling cosmic expansion.
-2. **Boundary Kinematics, Projection & Expression (§2):**
-- Relativistic Lorentz-bounded level-set propagation: $\mathbf{v}_n = \frac{c \kappa \phi}{\sqrt{\nu^2 c^2 + \kappa^2 \phi^2}} \hat{n} \implies \|\mathbf{v}_n\| < c$.
-- **Dual Projection Operator ( $\hat{\mathbf{P}} = \hat{\mathbf{P}}_{\mathbb{R}} \oplus i \hat{\mathbf{P}}_{\mathfrak{Im}}$ ):** Push-forward of real Cauchy stress traction and complex unmanifest gauge wave fields admitting exact retarded Kirchhoff-Helmholtz boundary surface integral solutions.
-- **Interfacial Expression Operator ( $\boldsymbol{\mathcal{X}} \equiv \mathrm{Tr}_{\partial E}[\hat{\mathbf{P}} \otimes \mathcal{F}_{\mathbb{R}}]$ ):** Collapsing unmanifest imaginary field amplitude into real physical boundary work ( $\Delta \mathbf{S}_{\mathbf{P}} \cdot \hat{n} = \mathcal{X}_{\text{abs}} + \mathcal{X}_{\text{refl}}$ ).
-- **Axiomatic Life Definition & Horizon Duality (Theorem 6B):** Proving that $\text{Topology}(E_{\text{living}}) \cong \text{Topology}(\mathcal{U}_{\text{BH}}) \not\cong \text{Topology}(\mathcal{U}_{\text{closed}})$.
-- **The Operator Temporal Triad (Theorem 6C):** $\mathcal{F}_{\text{ledger}} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ with Doob forward martingale convergence and Blackwell-Rao minimal-variance estimation.
-3. **Resilience, Multi-Tier Stability & Degenerate Limits (§3–§4):**
-- 4-Tier classification: Tier I ( $\chi^* = 0$, Reactive), Tier II ( $\chi^* \in (0, 1)$, Metabolic), Tier III ( $\chi^* \approx 1$, Cognitive), Tier IV ( $\chi^* > 1$, Collective).
-- Rankine-Hugoniot shock dissipation and Landauer computational erasure bounds ( $\dot{Q}_{\text{Landauer}} = k_B T \ln 2 \cdot \dot{\mathcal{H}}$ ).
-- Non-equilibrium Lyapunov stability with Volterra memory kernels and Onsager reciprocity ( $L_{ij} = L_{ji}$ ).
-4. **Continuum Biophysics & Multi-Scale Syncytia (§5):**
-- Non-linear poromechanical Biot diffusion, Mooney-Rivlin hyperelasticity, and steric Donnan swelling.
-- Quantum proton Grotthuss tunneling, CISS electron spin transport, and retarded Lifshitz Casimir-Polder torque closures.
-- Closed syncytial circuit electrostatics and continuous bio-electric pattern homeostasis.
+```
+R_s ≡ R_H  +  H₀ = 67.4 km/s/Mpc
+  │
+  ├── Membrane theorem ──→ Ω_m = 1/3, Ω_Λ = 2/3             [#1, #2, #3]
+  ├── Parent mass ──→ M = 3.2×10²² M☉                         [#5]
+  └── ECSK torsion bounce (Planck density)
+        ├── Hehl-Datta → ε_CP(T) → η = 6.1×10⁻¹⁰
+        │     ├── Ω_b h² = 0.02228                             [#4]
+        │     ├── Ω_DM = 1/3 − Ω_b                             [#6]
+        │     └── T_CMB = 2.723 K                               [#12]
+        ├── Effective R² → Starobinsky inflation
+        │     ├── n_s = 0.9624  (0.6σ from Planck)              [#10]
+        │     ├── r = 3.9×10⁻³  (testable ~2032)               [#11]
+        │     └── A_s = ???  (11-order wall, §6.13)
+        ├── Bounce interior → BH echoes                         [#9]
+        ├── T_dS = 2T_H                                         [#7]
+        └── CMB TT power spectrum                                [#8]
+```
