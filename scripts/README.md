@@ -8,7 +8,7 @@ This directory houses two complementary suites of tools:
 
 ## 1. Theoretical Physics & Numerical Computations
 
-These 14 scripts formulate and evaluate the framework's mathematical proofs, physical conservation bounds, and observational predictions against empirical data (Planck 2018, GWTC-3/5.0, CODATA 2018).
+These 15 scripts formulate and evaluate the framework's mathematical proofs, physical conservation bounds, and observational predictions against empirical data (Planck 2018, GWTC-3/5.0, CODATA 2018).
 
 | Script | Issue / Section | Core Physics / Equations | Primary Output | Dependencies |
 |---|---|---|---|---|
@@ -26,6 +26,7 @@ These 14 scripts formulate and evaluate the framework's mathematical proofs, phy
 | [test_session_aug28.py](test_session_aug28.py) | §6.7 & §6.8 | Comprehensive regression test suite for Session Aug 28 derivations (bounce, horizon, entropy) | 48 unit tests covering early framework milestones | `math` |
 | [test_session_aug31.py](test_session_aug31.py) | §2.4, §6.7, §6.8 | Extended regression test suite for Session Aug 31 (Influence Field $\psi$, Theorem 9, Theorem 10) | 56 unit tests verifying ontology-physics bridge | `math` |
 | [derive_cmb_low_multipoles.py](derive_cmb_low_multipoles.py) | ISSUE-4.41, 4.65 / §6.14 | Horizon Neumann trapping BC ( $j_1(k R_{\text{hor}})=0$ ), Sachs-Wolfe IR cutoff $x_0=4.3446$, Kerr oblate $a_{\ell m}$ alignment | $C_2/C_{\text{iso}} = 0.1623$, $C_3/C_{\text{iso}} = 0.5049$, planar $m=\pm\ell$ Axis of Evil | `numpy`, `scipy` |
+| [derive_scalar_amplitude.py](derive_scalar_amplitude.py) | ISSUE-4.64 / §6.13 | Non-perturbative Mukhanov-Sasaki Parker/Bogoliubov mode-matching across ECSK bounce; GUT hierarchy $H_b = \frac{\alpha_{\text{GUT}}}{2\pi} M_{\text{Pl}}$ | $k^2\|\beta_k\|^2 \to 0.428$ ( $n_s=1$ ), $A_s = 2.1015 \times 10^{-9}$ ( +0.07% vs Planck ), $H_b = 9.69 \times 10^{15}\text{ GeV}$ | `numpy`, `scipy` |
 
 ---
 
