@@ -1746,7 +1746,6 @@ By extending the Tier I definition of imaginary space (gauge fields as unmanifes
 
 Furthermore, the Gibbons-Hawking temperature of the universe's cosmological horizon is $T_{\text{dS}} = 2 T_H \approx 2.65 \times 10^{-30} \text{ K}$ (where $T_H \approx 1.33 \times 10^{-30} \text{ K}$ is the exterior parent black hole Hawking temperature; Theorem 11 in §6.7.7 of the Tier I framework), which is nine orders of magnitude colder than the Cosmic Microwave Background ( $2.725 \text{ K}$ ). The universe is therefore in an absorbing, negentropic accumulation phase. Its imaginary space (organized matter and life) is currently expanding and complexifying. The complete Hawking evaporation of the parent horizon (the dissolution of the membrane $\partial E$ ) will not occur until far-future timescales of $\sim 10^{135}$ years ( $t_{\text{evap}} = 640 \, (S_{\text{BH}}/k_B) \, t_{\text{Hubble}}$ ).
 
-
 ### 7.3 Structural Correspondence with Advaita Vedanta (Sanatan Dharm)
 The derivations above were reached purely via thermodynamic and information-theoretic first principles. However, the resulting structure maps exactly onto the core ontology of Advaita Vedanta (Sanatan Dharm):
 * **Brahman** (The ultimate, boundaryless conscious reality) $\equiv \mathcal{D}_T$ (The universe modeled as a conscious entity).

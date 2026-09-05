@@ -37,7 +37,7 @@ where $\epsilon_{CP}$ is the CP violation parameter, $\kappa$ is the washout fac
 
 $$\hat{\mathcal{N}}[\text{cosmic web}] = (\underbrace{V = \text{galaxies}}_{\text{active, 30\%}},\; \underbrace{\mathcal{E} = \text{DM filaments}}_{\text{passive, 70\%}},\; W)$$
 
-**The insight:** Dark matter is the universe's **passive transport medium** — the cosmic equivalent of water + glia in the brain, or the extracellular matrix in tissue. It doesn't participate in electromagnetic processes ($\hat{\pi}_{\text{EM}} = 0$ from §6.8.1) but provides the gravitational scaffolding that the active 30% (baryonic matter) organizes along.
+**The insight:** Dark matter is the universe's **passive transport medium** — the cosmic equivalent of water + glia in the brain, or the extracellular matrix in tissue. It doesn't participate in electromagnetic processes ( $\hat{\pi}_{\text{EM}} = 0$ from §6.8.1) but provides the gravitational scaffolding that the active 30% (baryonic matter) organizes along.
 
 This reframes the dark matter question: instead of asking "what particle is DM made of?", the Tier-2 Tools ask "what structural role does the passive 70% play in network formation?" The answer: **DM is the minimum-energy scaffolding that a dissipative network requires to maintain its transport topology.**
 
@@ -59,7 +59,7 @@ $$f_{\text{echo},n} = f_{\text{QNM}} + \frac{n}{\Delta t_{\text{echo}}}, \quad n
 
 with amplitudes decaying as $A_n \propto e^{-n \gamma_{\text{horizon}}}$ where $\gamma_{\text{horizon}}$ is the horizon's viscous damping rate.
 
-**Status:** This is testable by LIGO O4/O5. The echo spectrum's spacing depends on $M$ in a specific way ($\propto 1/(M \ln M)$) that distinguishes ECSK from other "near-horizon structure" models (e.g., firewalls, fuzzballs).
+**Status:** This is testable by LIGO O4/O5. The echo spectrum's spacing depends on $M$ in a specific way ( $\propto 1/(M \ln M)$ ) that distinguishes ECSK from other "near-horizon structure" models (e.g., firewalls, fuzzballs).
 
 ---
 
@@ -72,7 +72,7 @@ with amplitudes decaying as $A_n \propto e^{-n \gamma_{\text{horizon}}}$ where $
 - Phase III: CMB release at recombination (waste exhaust: thermal photons at T ~ 3000 K, redshifted to 2.725 K)
 - Phase IV: Dark energy dominated era (reset/expansion)
 
-**The insight:** The CMB temperature is NOT a free parameter — it's the exhaust temperature of a thermodynamic cycle. If the engine's hot reservoir is the Planck temperature ($T_P \sim 10^{32}$ K) and the cycle runs at Curzon-Ahlborn efficiency:
+**The insight:** The CMB temperature is NOT a free parameter — it's the exhaust temperature of a thermodynamic cycle. If the engine's hot reservoir is the Planck temperature ( $T_P \sim 10^{32}$ K) and the cycle runs at Curzon-Ahlborn efficiency:
 
 $$T_{\text{CMB, recombination}} = T_P \cdot (1 - \eta_{CA})^{1/4} \cdot a_{\text{recombination}}$$
 
@@ -84,7 +84,7 @@ This is a calculation that can be done. The CMB temperature would become a deriv
 
 ### 5. Tool T5 (Ledger) × ISSUE-4.54 (Evaporative Horizon Contraction)
 
-**New perception:** When the parent BH evaporates ($dM_H/dt < 0$), the interior universe's Bekenstein capacity shrinks: $|\mathbb{L}_{\text{max}}| = S_{\text{BH}} \propto M^2 \to 0$. In Ledger language: the universe's maximum information content decreases.
+**New perception:** When the parent BH evaporates ( $dM_H/dt < 0$ ), the interior universe's Bekenstein capacity shrinks: $|\mathbb{L}_{\text{max}}| = S_{\text{BH}} \propto M^2 \to 0$. In Ledger language: the universe's maximum information content decreases.
 
 **The insight:** This is a Ledger erasure event — information is being lost. The Landauer bound applies: each erased bit releases $k_B T \ln 2$ of heat into the parent universe (as Hawking radiation). The interior universe doesn't experience a "Big Crunch" in the traditional sense — it experiences **Ledger compression**: the information content is squeezed out through the horizon as Hawking radiation.
 

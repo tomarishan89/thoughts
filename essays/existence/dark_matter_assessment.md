@@ -44,14 +44,14 @@ where each $\hat{\pi}_{\text{sector}}$ has eigenvalues $\{0, 1\}$. The particle 
 
 | Particle Type | $\hat{\pi}_{\text{grav}}$ | $\hat{\pi}_{\text{EM}}$ | $\hat{\pi}_{\text{weak}}$ | $\hat{\pi}_{\text{strong}}$ | Status |
 |---|---|---|---|---|---|
-| Baryonic matter ($p, n, e^-$) | $+1$ | $+1$ | $+1$ | $+1$ | Fully realized |
-| Neutrinos ($\nu$) | $+1$ | $0$ | $+1$ | $0$ | Gravitational + weak only |
+| Baryonic matter ( $p, n, e^-$ ) | $+1$ | $+1$ | $+1$ | $+1$ | Fully realized |
+| Neutrinos ( $\nu$ ) | $+1$ | $0$ | $+1$ | $0$ | Gravitational + weak only |
 | Dark matter (candidate) | $+1$ | $0$ | $0$ or $+1$ | $0$ | Gravitational (± weak) only |
-| Photons ($\gamma$) | $+1$* | $+1$ | $0$ | $0$ | EM carrier (massless) |
-| Dark energy ($\Lambda$) | $+1$ | $0$ | $0$ | $0$ | Membrane tension (§6.6.10) |
+| Photons ( $\gamma$ ) | $+1$* | $+1$ | $0$ | $0$ | EM carrier (massless) |
+| Dark energy ( $\Lambda$ ) | $+1$ | $0$ | $0$ | $0$ | Membrane tension (§6.6.10) |
 
 > [!WARNING]
-> **Referee assessment:** This is a notational recasting of the Standard Model particle content into the framework's language. It is **descriptive**, not predictive. It tells you what dark matter IS (in framework terms: gravitationally realized, electromagnetically imaginary), but it does NOT derive what particle it is, its mass, or its cross-section. To become predictive, the spectral decomposition would need to derive the specific projection pattern from the ECSK bounce dynamics. This connects directly to ISSUE-4.46 (Spectral Decomposition of $\hat{\mathcal{A}}_E$).
+> **Referee assessment:** This is a notational recasting of the Standard Model particle content into the framework's language. It is **descriptive**, not predictive. It tells you what dark matter IS (in framework terms: gravitationally realized, electromagnetically imaginary), but it does NOT derive what particle it is, its mass, or its cross-section. To become predictive, the spectral decomposition would need to derive the specific projection pattern from the ECSK bounce dynamics. This connects directly to ISSUE-4.46 (Spectral Decomposition of $\hat{\mathcal{A}}_E$ ).
 
 **What it DOES provide:** A formal definition of dark matter within the framework:
 
@@ -65,7 +65,7 @@ This is dark matter as **partially realized existence** — gravitationally real
 
 The ECSK bounce (Popławski [9]) replaces the big bang singularity with a spin-torsion bounce at Planck density. The Hehl-Datta equation modifies the Dirac equation:
 
-$$\left(i \gamma^\mu D_\mu - m\right) \psi = -\frac{3\kappa}{8} (\bar{\psi}\gamma^\mu\gamma^5\psi)\gamma_\mu\gamma^5\psi$$
+$$\left(i \gamma^\mu D_\mu - m\right) \psi = -\frac{3\kappa}{8} (\bar{\psi} \, \gamma^\mu\gamma^5\psi)\gamma_\mu\gamma^5\psi$$
 
 where $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant. This cubic self-interaction at Planck density could:
 
@@ -90,9 +90,9 @@ where $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant. This cubic s
 
 This is the most interesting route and the one closest to the framework's own logic:
 
-The membrane $\partial E$ separates $\Omega_{\mathbb{R}}$ from $\Omega_{\mathfrak{Im}}$. Dark energy is the membrane itself (§6.6.10). Baryonic matter is fully realized in $\Omega_{\mathbb{R}}$. 
+The membrane $\partial E$ separates $\Omega_{\mathbb{R}}$ from $\Omega_{\mathfrak{Im}}$. Dark energy is the membrane itself (§6.6.10). Baryonic matter is fully realized in $\Omega_{\mathbb{R}}$.
 
-**Question:** Is dark matter the **gravitational imprint of the parent universe** ($\Omega_{\mathfrak{Im}}$) leaking through the membrane?
+**Question:** Is dark matter the **gravitational imprint of the parent universe** ( $\Omega_{\mathfrak{Im}}$ ) leaking through the membrane?
 
 The membrane paradigm (Thorne 1986) endows the horizon with viscosity $\eta_H$ and surface charge density $\sigma_H$. For EM, the horizon acts as a perfect conductor — no EM signal crosses. But for gravity, the membrane is transparent (the Gauss law for gravity has no analogue of the conductor boundary condition). Therefore:
 
@@ -104,7 +104,7 @@ The membrane paradigm (Thorne 1986) endows the horizon with viscosity $\eta_H$ a
 > [!WARNING]
 > **Referee assessment (SEVERE):** This hypothesis is structurally appealing but **fails on multiple observational grounds:**
 >
-> 1. **Distribution mismatch.** Dark matter halos are concentric with galaxies and galaxy clusters. If DM were parent-universe leakage, its distribution would correlate with the parent's mass distribution outside the BH, not with the child's internal structure. Parent mass is expected to be roughly uniform on the child's horizon scale → would produce an isotropic contribution (like $\Lambda$), not halo-scale anisotropy.
+> 1. **Distribution mismatch.** Dark matter halos are concentric with galaxies and galaxy clusters. If DM were parent-universe leakage, its distribution would correlate with the parent's mass distribution outside the BH, not with the child's internal structure. Parent mass is expected to be roughly uniform on the child's horizon scale → would produce an isotropic contribution (like $\Lambda$ ), not halo-scale anisotropy.
 >
 > 2. **Growth mismatch.** Dark matter perturbations grow via gravitational instability from $z \sim 3400$ onward, seeding structure formation. Parent-leakage would be set by exterior conditions, not by interior density perturbations.
 >
@@ -166,12 +166,12 @@ Within the internally generated 1/3:
 
 | Fraction | Production mechanism |
 |---|---|
-| $\Omega_b \approx 0.05$ | CP violation during ECSK bounce → Sakharov selection ($\eta \sim 10^{-10}$) |
+| $\Omega_b \approx 0.05$ | CP violation during ECSK bounce → Sakharov selection ( $\eta \sim 10^{-10}$ ) |
 | $\Omega_{\text{DM}} \approx 0.28$ | Hehl-Datta torsion self-interaction during bounce → gravitationally active but EM-inert modes |
 
 ### Structural Conclusions
 
-1. **Dark matter has no direct relationship to specific forms of existence in the parent universe's real space.** DM is entirely internal — produced during our ECSK bounce, not inherited from the parent. The parent contributes only the boundary condition ($\Lambda$).
+1. **Dark matter has no direct relationship to specific forms of existence in the parent universe's real space.** DM is entirely internal — produced during our ECSK bounce, not inherited from the parent. The parent contributes only the boundary condition ( $\Lambda$ ).
 
 2. **The parent's real space is inaccessible.** By the Interior Observer Axiom (§7.3 of tier-2 document), we cannot observe $\Omega_\mathbb{R}^{(\text{parent})}$. The parent's real space manifests to us only as the horizon boundary condition → $\Lambda$.
 
@@ -192,16 +192,15 @@ $$\underbrace{\Omega_\Lambda = 2/3}_{\text{Parent's horizon pressure}} + \underb
 
 The framework's net contribution to the dark matter problem is:
 
-1. **It predicts the total DM density** ($\Omega_{DM} \approx 0.284$) as a structural corollary of the membrane theorem — not from particle physics, but from horizon geometry. This is a genuine prediction at 7.2% accuracy.
+1. **It predicts the total DM density** ( $\Omega_{DM} \approx 0.284$ ) as a structural corollary of the membrane theorem — not from particle physics, but from horizon geometry. This is a genuine prediction at 7.2% accuracy.
 
-2. **It provides a formal definition** of dark matter as partially-realized modes ($\hat{\pi}_{\text{grav}} = +1$, $\hat{\pi}_{\text{EM}} = 0$), which is structurally consistent but not predictive of microphysics.
+2. **It provides a formal definition** of dark matter as partially-realized modes ( $\hat{\pi}_{\text{grav}} = +1$, $\hat{\pi}_{\text{EM}} = 0$ ), which is structurally consistent but not predictive of microphysics.
 
 3. **It does NOT derive** what dark matter is made of, its mass, its production mechanism, or its interaction cross-section. These require embedding Standard Model microphysics (Hehl-Datta equation, freeze-out calculation) into the framework — a research program beyond the current scope.
 
 4. **It rules out** one otherwise tempting framework-native hypothesis (DM as parent-universe gravitational leakage) on observational grounds (Bullet Cluster, halo anisotropy).
 
-5. **It establishes the ontological provenance:** DM belongs entirely to the internal bounce products ($\Omega_m = 1/3$), not to the parent's boundary contribution ($\Omega_\Lambda = 2/3$). Dark energy is the parent's fingerprint; dark matter is ours.
+5. **It establishes the ontological provenance:** DM belongs entirely to the internal bounce products ( $\Omega_m = 1/3$ ), not to the parent's boundary contribution ( $\Omega_\Lambda = 2/3$ ). Dark energy is the parent's fingerprint; dark matter is ours.
 
 > [!TIP]
 > The cleanest deliverable is **Prediction #6**: $\Omega_{DM} = 1/3 - \Omega_b \approx 0.284$. This should be added to §6.6.8 immediately. Everything else is downstream frontier.
-

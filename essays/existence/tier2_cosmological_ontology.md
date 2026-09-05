@@ -115,7 +115,7 @@ bounded by the Curzon-Ahlborn efficiency $\eta_{CA} = 1 - \sqrt{T_{\text{cold}}/
 
 **Tier invariance:** The cycle topology is identical at every scale. Only the fuel type, work output, and waste product change.
 
-| Scale | Fuel ($\mathcal{S}_{\text{fuel}}$) | Work | Waste | $\eta$ |
+| Scale | Fuel ( $\mathcal{S}_{\text{fuel}}$ ) | Work | Waste | $\eta$ |
 |---|---|---|---|---|
 | Cosmos | Gravitational collapse | Structure formation | CMB photons + neutrinos | $\sim 10^{-10}$ (baryogenesis) |
 | Star | Nuclear fusion (H) | Radiation + nucleosynthesis | He, C, O, Fe | $\sim 0.007$ (mass-energy) |
@@ -139,12 +139,12 @@ where $\phi$ is the signed distance function, $\mathbf{v}$ is the advective velo
 
 $$\hat{\mathcal{A}}_E: \quad N_{\text{initial}} \xrightarrow{\text{selection}} N_{\text{surviving}} = \eta \cdot N_{\text{initial}}, \quad \eta \ll 1$$
 
-requiring three structural conditions (§6.8.2 Sakharov conditions at level $L_i$):
-1. Permeable boundary ($\partial E$ allows asymmetric transport)
+requiring three structural conditions (§6.8.2 Sakharov conditions at level $L_i$ ):
+1. Permeable boundary ( $\partial E$ allows asymmetric transport)
 2. Irreversible cycle (C and CP violation at cosmological scale; competitive exclusion at biological scale)
 3. Non-equilibrium state (departure from thermal equilibrium)
 
-**Tier invariance:** The selection fraction $\eta$ varies enormously ($10^{-10}$ for baryons, $0.5$ for neurons, $0.02$ for T-cells), but the 3-condition structure is identical.
+**Tier invariance:** The selection fraction $\eta$ varies enormously ( $10^{-10}$ for baryons, $0.5$ for neurons, $0.02$ for T-cells), but the 3-condition structure is identical.
 
 #### Tool T5: The Ledger Dynamics Operator $\hat{\mathcal{D}}_\mathbb{L}$
 
@@ -174,7 +174,7 @@ The Tier-2 Tools, when applied across scales, reveal structural isomorphisms tha
 
 #### 7.5.1 Galaxy ↔ Cell: The Membrane Isomorphism
 
-Applying Tool T1 ($\hat{\mathcal{M}}$) to both a galaxy (with central SMBH and accretion disc) and a biological cell:
+Applying Tool T1 ( $\hat{\mathcal{M}}$ ) to both a galaxy (with central SMBH and accretion disc) and a biological cell:
 
 | Framework Variable | Accretion Disc (Galaxy) | Cell Membrane |
 |---|---|---|
@@ -191,7 +191,7 @@ This is not a claim that galaxies ARE cells. It is the claim that the mathematic
 
 #### 7.5.2 Cosmic Web ↔ Neural Network: The Network Isomorphism
 
-Applying Tool T6 ($\hat{\mathcal{N}}$) to both the cosmic web and the brain neural network:
+Applying Tool T6 ( $\hat{\mathcal{N}}$ ) to both the cosmic web and the brain neural network:
 
 **Quantitative comparison (Vazza & Feletti, 2020 [32]):**
 
@@ -199,16 +199,16 @@ Applying Tool T6 ($\hat{\mathcal{N}}$) to both the cosmic web and the brain neur
 |---|---|---|
 | Number of nodes | $\sim 10^{11}$ galaxies | $\sim 10^{11}$ neurons |
 | Connections | Dark matter filaments | Axons / synapses |
-| Active fraction | $\sim 30\%$ ($\Omega_m \approx 1/3$) | $\sim 30\%$ (neurons by volume) |
-| Passive fraction | $\sim 70\%$ ($\Omega_\Lambda \approx 2/3$) | $\sim 70\%$ (water + glia) |
+| Active fraction | $\sim 30\%$ ( $\Omega_m \approx 1/3$ ) | $\sim 30\%$ (neurons by volume) |
+| Passive fraction | $\sim 70\%$ ( $\Omega_\Lambda \approx 2/3$ ) | $\sim 70\%$ (water + glia) |
 | Fractal dimension | $\sim 1.5$–$2.0$ | $\sim 1.5$–$2.0$ |
-| Spectral density slope | $P(k) \propto k^{-\beta}$ | $P(k) \propto k^{-\beta}$ (same $\beta$) |
+| Spectral density slope | $P(k) \propto k^{-\beta}$ | $P(k) \propto k^{-\beta}$ (same $\beta$ ) |
 
-**Framework interpretation:** The 30/70 active-passive split is the engine cycle's equilibrium partition (Theorem 7, Clausius bound). In a dissipative network optimized for transport efficiency, $1/3$ of the system's energy maintains active structure while $2/3$ is dissipated into the passive medium. This partition is not imposed — it emerges from the thermodynamic optimization constraint at every scale where Tool T2 ($\hat{\mathcal{C}}$) operates.
+**Framework interpretation:** The 30/70 active-passive split is the engine cycle's equilibrium partition (Theorem 7, Clausius bound). In a dissipative network optimized for transport efficiency, $1/3$ of the system's energy maintains active structure while $2/3$ is dissipated into the passive medium. This partition is not imposed — it emerges from the thermodynamic optimization constraint at every scale where Tool T2 ( $\hat{\mathcal{C}}$ ) operates.
 
 #### 7.5.3 Neuron Firing ↔ Engine Cycle: The Threshold Isomorphism
 
-Applying Tool T2 ($\hat{\mathcal{C}}$) to a single neuron's action potential:
+Applying Tool T2 ( $\hat{\mathcal{C}}$ ) to a single neuron's action potential:
 
 | Engine Phase | Neuron Action Potential | AGN Outburst (for comparison) |
 |---|---|---|
@@ -265,24 +265,23 @@ The **neuron's ion channels are miniature horizons**. Each action potential is a
 
 ---
 
-
 ### 7.6 The Ledger Mirror: Brain as Universe Simulator
 
 #### 7.6.1 The Hypothesis
 
-Applying Tool T5 ($\hat{\mathcal{D}}_\mathbb{L}$) recursively: every existence $E$ maintains an internal Ledger $\mathbb{L}(E)$. The brain $E_{\text{brain}}$ maintains $\mathbb{L}_{\text{brain}}$ that models the external world $\mathbb{L}_{\text{external}}$. The claim:
+Applying Tool T5 ( $\hat{\mathcal{D}}_\mathbb{L}$ ) recursively: every existence $E$ maintains an internal Ledger $\mathbb{L}(E)$. The brain $E_{\text{brain}}$ maintains $\mathbb{L}_{\text{brain}}$ that models the external world $\mathbb{L}_{\text{external}}$. The claim:
 
 $$\lim_{t \to \infty} \mathbb{L}_{\text{brain}}(t) \to \mathbb{L}_{\text{universe}} \quad \text{(up to Bekenstein truncation)}$$
 
-The brain's internal model converges toward a faithful representation of the universe's own Ledger, bounded only by the brain's information capacity ($\sim 10^{16}$ bits vs. the universe's $\sim 10^{122}$ bits).
+The brain's internal model converges toward a faithful representation of the universe's own Ledger, bounded only by the brain's information capacity ( $\sim 10^{16}$ bits vs. the universe's $\sim 10^{122}$ bits).
 
 #### 7.6.2 The Evolutionary Convergence Argument
 
-The convergence is driven by Tool T4 ($\hat{\mathcal{A}}_E$) at the species level:
+The convergence is driven by Tool T4 ( $\hat{\mathcal{A}}_E$ ) at the species level:
 
 1. **Overproduction:** Each generation produces offspring with variant neural architectures (genetic variation in neural development)
 2. **Selection:** Organisms whose $\mathbb{L}_{\text{brain}}$ more accurately models $\mathbb{L}_{\text{external}}$ survive and reproduce (natural selection for predictive accuracy)
-3. **Iteration:** Over $\sim 10^9$ years ($\sim 10^{10}$ generations for neural organisms), the neural network topology converges toward the optimal Ledger-mirror architecture
+3. **Iteration:** Over $\sim 10^9$ years ( $\sim 10^{10}$ generations for neural organisms), the neural network topology converges toward the optimal Ledger-mirror architecture
 4. **Result:** The brain's network topology converges to the cosmic web topology — because it is optimizing for the same dissipative transport problem under the same thermodynamic constraints (Tool T6)
 
 This explains the Vazza-Feletti result: the brain doesn't merely resemble the cosmic web — it converges to the same network topology because **both are solutions to the same optimization problem** (minimize free energy subject to maintaining information transport across a bounded dissipative system).

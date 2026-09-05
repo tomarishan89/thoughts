@@ -11,6 +11,7 @@
 If the interior of every BH has an ECSK bounce (no singularity), perturbations reflect off the bounce surface and re-emerge as delayed echoes of the ringdown signal.
 
 ### Echo Delay Time
+
 $$\Delta t_{\text{echo}} \sim \frac{4 G M}{c^3} \ln\!\left(\frac{R_{\text{horizon}}}{\ell_P}\right)$$
 
 | BH Type | Mass | Echo Delay |
@@ -70,9 +71,9 @@ The mathematical operators governing galaxy structure are isomorphic to those go
 ### Galaxy Types as Boundary Morphologies
 - NOT mapping galaxy types to cell types one-to-one
 - INSTEAD: the same viscous-membrane dynamics produces diverse morphologies depending on:
-  - Angular momentum (L): spiral vs. elliptical
-  - Accretion rate (Mdot): Seyfert 1 vs. 2 (viewing angle + accretion)
-  - Merger history: disturbed morphologies
+- Angular momentum (L): spiral vs. elliptical
+- Accretion rate (Mdot): Seyfert 1 vs. 2 (viewing angle + accretion)
+- Merger history: disturbed morphologies
 - The framework's level-set equation governs boundary evolution at both scales
 - The specific morphology depends on initial/boundary conditions, not on the operator itself
 

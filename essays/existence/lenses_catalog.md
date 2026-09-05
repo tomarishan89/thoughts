@@ -30,7 +30,7 @@
 
 ## L3: The Membrane Lens (Tool T1)
 **Discovery:** Kedem-Katchalsky transport equations applied cross-scale.
-**What it does:** Identifies the transport coefficients ($\gamma$, $\nu$, $L_p$, $\sigma$) of any boundary and writes the transport equations. Asks: "what passes through? What is reflected? What is the selectivity?"
+**What it does:** Identifies the transport coefficients ( $\gamma$, $\nu$, $L_p$, $\sigma$ ) of any boundary and writes the transport equations. Asks: "what passes through? What is reflected? What is the selectivity?"
 **Applied to:**
 - Accretion disc ↔ cell membrane (§7.5.1)
 - Nanochannel ↔ BH horizon (§7.5.4, Grotthuss mechanism)
@@ -83,10 +83,10 @@
 **Discovery:** §6.8.2 (Sakharov conditions at cosmological scale) + generalization.
 **What it does:** Identifies the three structural conditions for asymmetric selection at any scale: permeable boundary, irreversible cycle, non-equilibrium state. Asks: "what is overproduced? What survives? What is the selection fraction $\eta$?"
 **Applied to:**
-- Baryogenesis ($\eta \sim 10^{-10}$)
-- Neural pruning ($\eta \sim 0.5$)
-- T-cell selection ($\eta \sim 0.02$)
-- Darwinian evolution ($\eta_{\text{species}} \ll 1$)
+- Baryogenesis ( $\eta \sim 10^{-10}$ )
+- Neural pruning ( $\eta \sim 0.5$ )
+- T-cell selection ( $\eta \sim 0.02$ )
+- Darwinian evolution ( $\eta_{\text{species}} \ll 1$ )
 
 ---
 

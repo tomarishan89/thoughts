@@ -23,12 +23,12 @@
 | QFT (Planck cutoff) | 0 | $\sim 1$ | $10^{122}\times$ | Sum zero-point modes to $M_P$ → catastrophe |
 | QFT (EW cutoff) | 0 | $\sim 1$ | $10^{56}\times$ | Higgs VEV + EW condensates → still catastrophe |
 | Broken SUSY | 1+ | $\sim 1$ | $10^{60}\times$ | Partial boson-fermion cancellation → still catastrophe |
-| Holographic DE (Li 2004) | 1 ($c$) | $\sim 0.73$ | 6.6% | IR cutoff at future event horizon; $c$ tuned |
+| Holographic DE (Li 2004) | 1 ( $c$ ) | $\sim 0.73$ | 6.6% | IR cutoff at future event horizon; $c$ tuned |
 | Padmanabhan (2012) | 0 | $\to 1$ (asymptotic) | — | $N_{\text{sur}} - N_{\text{bulk}}$ drives expansion; no fixed present value |
-| Quintessence (tracker) | 2+ ($V(\phi)$) | $\sim 0.7$ | tunable | Scalar field tracks matter; value depends on potential shape |
+| Quintessence (tracker) | 2+ ( $V(\phi)$ ) | $\sim 0.7$ | tunable | Scalar field tracks matter; value depends on potential shape |
 | Verlinde EG (2016) | 0 | — | — | Not directly addressed |
-| MOND/TeVeS | 1 ($a_0$) | — | — | Not addressed |
-| LQC | 1 ($\gamma$) | — | — | Not addressed |
+| MOND/TeVeS | 1 ( $a_0$ ) | — | — | Not addressed |
+| LQC | 1 ( $\gamma$ ) | — | — | Not addressed |
 | String Landscape | $\sim 10^{500}$ | Any | — | Anthropic selection from $10^{500}$ vacua; no unique prediction |
 
 > [!IMPORTANT]
@@ -50,7 +50,7 @@
 | All others | — | — | Not addressed |
 
 > [!TIP]
-> **The cosmic coincidence is one of the great unsolved problems.** This framework is the only one that gives a specific, parameter-free value ($\rho_\Lambda / \rho_m = 2$) with a geometric explanation (Young-Laplace pressure = twice the enclosed matter density).
+> **The cosmic coincidence is one of the great unsolved problems.** This framework is the only one that gives a specific, parameter-free value ( $\rho_\Lambda / \rho_m = 2$ ) with a geometric explanation (Young-Laplace pressure = twice the enclosed matter density).
 
 ---
 
@@ -80,7 +80,7 @@
 | Framework | Value | Error | How |
 |---|---|---|---|
 | **This framework** | **$1/3 = 0.333$** | **5.7%** | Complement of $\Omega_\Lambda = 2/3$ |
-| ΛCDM | $0.315$ | 0% | **Fitted** ($\Omega_c h^2$ is a free parameter) |
+| ΛCDM | $0.315$ | 0% | **Fitted** ( $\Omega_c h^2$ is a free parameter) |
 | QFT | — | — | Not addressed |
 | MOND | $\Omega_b \approx 0.05$ (no DM) | 84% off total $\Omega_m$ | Eliminates DM → gets total matter fraction catastrophically wrong at cosmological scales |
 | All others | — | — | Either fitted or not addressed |
@@ -106,7 +106,7 @@
 | Framework | Value | Error | How |
 |---|---|---|---|
 | **This framework** | **$1/3 - \Omega_b = 0.284$** | **7.2%** | Structural corollary: $\Omega_m = 1/3$, baryons from BBN |
-| ΛCDM | $0.265$ | 0% | **Fitted** ($\Omega_c h^2$ is a free parameter) |
+| ΛCDM | $0.265$ | 0% | **Fitted** ( $\Omega_c h^2$ is a free parameter) |
 | Verlinde EG (2016) | $\Omega_{\text{DM}}^2 \approx \frac{4}{3}\Omega_b$ → apparent $\Omega_{\text{DM}} \sim 0.26$ | ~2% | Emergent effect from entanglement entropy displacement; **no DM particles** |
 | MOND/TeVeS | $0$ | 100% | DM doesn't exist by construction; fails at cluster/CMB scales |
 | Superfluid DM (Berezhiani-Khoury) | $\sim 0.27$ (fitted) | — | DM exists but has superfluid phase at galaxy scales |
@@ -115,7 +115,7 @@
 | String Landscape | Many candidates | — | Neutralinos, axions, KK modes... no unique prediction |
 
 > [!NOTE]
-> **Verlinde's emergent gravity** gives a comparable prediction ($\sim 0.26$) with 0 free parameters, but it claims DM **doesn't exist** — it's an apparent effect of entanglement entropy. This framework claims DM **does exist** as partially-realized modes. The Bullet Cluster remains a key discriminator: Verlinde's framework struggles with it; this framework's particle DM is consistent.
+> **Verlinde's emergent gravity** gives a comparable prediction ( $\sim 0.26$ ) with 0 free parameters, but it claims DM **doesn't exist** — it's an apparent effect of entanglement entropy. This framework claims DM **does exist** as partially-realized modes. The Bullet Cluster remains a key discriminator: Verlinde's framework struggles with it; this framework's particle DM is consistent.
 
 ---
 
@@ -152,8 +152,8 @@
 | ΛCDM | 6 | 0 (all fitted/derived) | 4/7 |
 | QFT vacuum (all cutoffs) | 0 | 1 (catastrophically wrong) | 1/7 |
 | Holographic DE | 1 | 0 (fitted) | 2/7 |
-| Verlinde EG | 0 | 1 ($\Omega_{\text{DM}}$) | 1/7 |
-| MOND | 1 | 1 (wrong: $\Omega_{\text{DM}} = 0$) | 1/7 |
+| Verlinde EG | 0 | 1 ( $\Omega_{\text{DM}}$ ) | 1/7 |
+| MOND | 1 | 1 (wrong: $\Omega_{\text{DM}} = 0$ ) | 1/7 |
 
 ---
 
@@ -166,7 +166,7 @@
 | BBN light element abundances | $^4$He, D, $^7$Li predictions | Not addressed (uses $\Omega_b$ as input) | Medium |
 | Galaxy rotation curves | NFW profile + DM halos | Not addressed | Medium |
 | BAO peak positions | Sub-percent precision | Not addressed | Medium |
-| Hubble tension ($H_0$) | Unresolved ($\sim 5\sigma$) | $H_0$ is contingent (parent BH dependent) | Low (by design) |
+| Hubble tension ( $H_0$ ) | Unresolved ( $\sim 5\sigma$ ) | $H_0$ is contingent (parent BH dependent) | Low (by design) |
 | Gravitational wave spectrum | LIGO/Virgo predictions | Not addressed | Low |
 
 > [!TIP]

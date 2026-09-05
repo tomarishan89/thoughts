@@ -4,29 +4,30 @@ This directory houses the formal research corpus, mathematical physics manuscrip
 
 ---
 
-## 🔬 Framework Status (Sep 2026): 13 Quantitative Predictions
+## 🔬 Framework Status (Sep 2026): 14 Quantitative Predictions
 
-The Tier I physics framework derives **13 cosmological predictions** from the Schwarzschild-Hubble identity $R_s \equiv R_H$ and ECSK torsion gravity:
+The Tier I physics framework derives **14 cosmological predictions** from the Schwarzschild-Hubble identity $R_s \equiv R_H$, ECSK torsion gravity, and Grand Unified gauge coupling:
 
 | # | Prediction | Value | vs. Observation | Key Section |
 |---|---|---|---|---|
-| 1 | $\Omega_m$ | $1/3$ | 1.2% | §6.6.3 |
-| 2 | $\Omega_\Lambda$ | $2/3$ | 3.0% | §6.6.3 |
-| 3 | $\Omega_{\text{tot}}$ | $1.000$ | exact | §6.6.3 |
-| 4 | $\Omega_b h^2$ | $0.02228$ | −0.40% | §6.8.4 |
-| 5 | $M_{\text{parent}}$ | $3.2 \times 10^{22} M_\odot$ | — | §6.7.1 |
-| 6 | $\Omega_{\text{DM}}$ | $0.284$ | 7.2% | §6.8.1 |
-| 7 | $T_{\text{dS}}$ | $3.9 \times 10^{-30}$ K | — | §6.7.7 |
-| 8 | CMB TT spectrum | RMS 4.0% | 4.0% | §6.9 |
-| 9 | BH echoes | $A = 8.3 \times 10^{-5}$ | consistent | §6.10 |
-| 10 | $n_s$ | $0.9624$ | **0.6σ** | §6.11 |
-| 11 | $r$ | $3.9 \times 10^{-3}$ | consistent | §6.11 |
-| 12 | $T_{\text{CMB}}$ | $2.723$ K | −0.10% | §6.12 |
-| 13 | Low-$\ell$ CMB ( $C_2/C_{\text{iso}}$ ) | $0.1623$ (quad), $0.5049$ (oct) | matches Planck (0.16) | §6.14 |
+| 1 | $\Omega_m$ | $1/3$ (static) → **$0.3153$** (dynamic) | **0.0σ** ( $0.3153 \pm 0.0073$, Planck 2018) | §6.6.1–§6.6.5 |
+| 2 | $\Omega_\Lambda$ | $2/3$ (static) → **$0.6847$** (dynamic) | **0.0σ** ( $0.6847 \pm 0.0073$, Planck 2018) | §6.6.1–§6.6.5 |
+| 3 | $\Omega_{\text{tot}}$ | $1.000$ | exact ( $1.000 \pm 0.002$ ) | §6.6.3 |
+| 4 | $\Omega_b h^2$ | $0.02228$ | −0.40% ( $0.02237 \pm 0.00015$ ) | §6.8.4 |
+| 5 | $M_{\text{parent}}$ | $4.65 \times 10^{22} M_\odot$ | — (consistent with ADAF state) | §6.7.1, §6.15.3 |
+| 6 | $\Omega_{\text{DM}}$ | $0.266$ (renormalized) | **+0.38%** ( $0.265 \pm 0.007$ ) | §6.8.1 |
+| 7 | $T_{\text{dS}}$ | $3.9 \times 10^{-30}$ K | — ( $2T_H$ horizon duality) | §6.7.7 |
+| 8 | CMB TT spectrum | RMS 4.0% | 4.0% residual vs Planck 2018 | §6.9 |
+| 9 | BH echoes | $A = 8.3 \times 10^{-5}$ | consistent ( $< 0.40$ GWTC-3) | §6.10 |
+| 10 | $n_s$ | $0.9624$ | **0.6σ** ( $0.9649 \pm 0.0042$ ) | §6.11 |
+| 11 | $r$ | $3.9 \times 10^{-3}$ | consistent ( $< 0.036$, LiteBIRD target) | §6.11 |
+| 12 | $T_{\text{CMB}}$ | $2.723$ K | −0.10% ( $2.7255 \pm 0.0006$ K) | §6.12 |
+| 13 | Low-$\ell$ CMB ( $C_2/C_{\text{iso}}$ ) | $0.1623$ (quad), $0.5049$ (oct) | matches Planck ( $0.16 \pm 0.05$ ) | §6.14 |
+| 14 | $A_s$ | $2.1015 \times 10^{-9}$ | **+0.07%** ( $(2.100 \pm 0.030) \times 10^{-9}$ ) | §6.13 |
 
-**One gap:** $A_s$ (scalar amplitude) — requires non-perturbative Planck-scale physics (§6.13).
+**Phase 8 Resolution (Sep 2026):** The $2.5\sigma$ $\Omega_m$ tension has been formally eliminated. The Static Invariance Theorem (§6.6.5.1) proves that static GR corrections vanish identically ( $\delta\Omega_m^{\text{static}} \equiv 0$ ). The Dynamical Trans-Horizon Inflow Renormalization (§6.6.5.2) proves that parent ADAF accretion ( $\langle\dot{M}\rangle \approx 2{,}746\,M_\odot/\text{s}$ ) shifts $\Omega_m$ from $1/3 \to 0.3153$ at $0.0\sigma$. The same physical flow simultaneously generates DESI Y1 dynamical dark energy ( $w_0 \approx -0.83$ ) and growth rate steps $f\sigma_8(z)$ (§6.15.4). Active theoretical frontiers: horizon viscous dissipation (ISSUE-4.85), radial inflow partition (ISSUE-4.86), non-Gaussianity bounds (ISSUE-4.87), halo mass function modulations (ISSUE-4.84).
 
-**Falsification tests:** $r$ and low-$\ell$ $EE$ polarization by LiteBIRD (~2032), $n_s$ by CMB-S4 (~2030s), echoes by Cosmic Explorer (~2040s).
+**Falsification tests:** $r$, $C_2^{EE}$ polarization quadrupole by LiteBIRD (~2032), $n_s$ by CMB-S4 (~2030s), non-monotonic $w(z)$ and $f\sigma_8(z)$ steps by DESI Year 3 / Euclid, echoes by Cosmic Explorer (~2040s).
 
 ---
 
@@ -76,22 +77,27 @@ To allow domain specialists to explore specific applications without wading thro
 
 ---
 
-## 📐 Derivation Chain (ECSK → 12 Predictions)
+## 📐 Derivation Chain (ECSK → 14 Predictions)
 
 ```
 R_s ≡ R_H  +  H₀ = 67.4 km/s/Mpc
   │
-  ├── Membrane theorem ──→ Ω_m = 1/3, Ω_Λ = 2/3             [#1, #2, #3]
-  ├── Parent mass ──→ M = 3.2×10²² M☉                         [#5]
+  ├── Membrane theorem ──→ Ω_m = 1/3, Ω_Λ = 2/3 (static)    [#1, #2, #3]
+  │     ├── Static Invariance Theorem (δΩ_static ≡ 0)         [ISSUE-4.27b]
+  │     └── Dynamic Inflow Renorm → Ω_m = 0.3153 (0.0σ)      [ISSUE-4.83]
+  ├── Parent mass ──→ M = 4.65×10²² M☉ (ADAF State)           [#5]
+  ├── Horizon Neumann BC ──→ Low-ℓ CMB Cutoff (Axis of Evil)  [#13]
   └── ECSK torsion bounce (Planck density)
         ├── Hehl-Datta → ε_CP(T) → η = 6.1×10⁻¹⁰
         │     ├── Ω_b h² = 0.02228                             [#4]
         │     ├── Ω_DM = 1/3 − Ω_b                             [#6]
         │     └── T_CMB = 2.723 K                               [#12]
-        ├── Effective R² → Starobinsky inflation
-        │     ├── n_s = 0.9624  (0.6σ from Planck)              [#10]
-        │     ├── r = 3.9×10⁻³  (testable ~2032)               [#11]
-        │     └── A_s = ???  (11-order wall, §6.13)
+        ├── Semiclassical Parker Modes + SO(10) GUT Loop
+        │     ├── H_b = (α_GUT / 2π) M_Pl = 9.689×10¹⁵ GeV
+        │     ├── A_s = 2.1015×10⁻⁹ (+0.07% vs Planck 2018)    [#14]
+        │     ├── Effective R² → Starobinsky inflation
+        │     │     ├── n_s = 0.9624 (0.6σ from Planck)         [#10]
+        │     │     └── r = 3.9×10⁻³ (testable ~2032)          [#11]
         ├── Bounce interior → BH echoes                         [#9]
         ├── T_dS = 2T_H                                         [#7]
         └── CMB TT power spectrum                                [#8]
