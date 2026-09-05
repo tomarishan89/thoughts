@@ -8,7 +8,7 @@ This directory houses two complementary suites of tools:
 
 ## 1. Theoretical Physics & Numerical Computations
 
-These 13 scripts formulate and evaluate the framework's mathematical proofs, physical conservation bounds, and observational predictions against empirical data (Planck 2018, GWTC-3/5.0, CODATA 2018).
+These 14 scripts formulate and evaluate the framework's mathematical proofs, physical conservation bounds, and observational predictions against empirical data (Planck 2018, GWTC-3/5.0, CODATA 2018).
 
 | Script | Issue / Section | Core Physics / Equations | Primary Output | Dependencies |
 |---|---|---|---|---|
@@ -25,6 +25,7 @@ These 13 scripts formulate and evaluate the framework's mathematical proofs, phy
 | [verify_lambda_strengthening.py](verify_lambda_strengthening.py) | §6.7.2 / Lemma 3 | Kodama-Hayward surface gravity on FRW apparent horizon vs de Sitter Gibbons-Hawking | $\kappa_{\text{dS}}/\kappa_S = 2.000000$, $\Omega_\Lambda = 2/3$ bounds | `math` |
 | [test_session_aug28.py](test_session_aug28.py) | §6.7 & §6.8 | Comprehensive regression test suite for Session Aug 28 derivations (bounce, horizon, entropy) | 48 unit tests covering early framework milestones | `math` |
 | [test_session_aug31.py](test_session_aug31.py) | §2.4, §6.7, §6.8 | Extended regression test suite for Session Aug 31 (Influence Field $\psi$, Theorem 9, Theorem 10) | 56 unit tests verifying ontology-physics bridge | `math` |
+| [derive_cmb_low_multipoles.py](derive_cmb_low_multipoles.py) | ISSUE-4.41, 4.65 / §6.14 | Horizon Neumann trapping BC ( $j_1(k R_{\text{hor}})=0$ ), Sachs-Wolfe IR cutoff $x_0=4.3446$, Kerr oblate $a_{\ell m}$ alignment | $C_2/C_{\text{iso}} = 0.1623$, $C_3/C_{\text{iso}} = 0.5049$, planar $m=\pm\ell$ Axis of Evil | `numpy`, `scipy` |
 
 ---
 
@@ -36,7 +37,7 @@ The scripts are structured modularly to allow direct conversion into interactive
 notebooks/
 ├── 01_cosmological_constant_and_horizons.ipynb   (from derive_lambda.py, verify_lambda_strengthening.py, test_theorem11.py)
 ├── 02_ecsk_torsion_baryogenesis.ipynb           (from derive_baryon_density.py)
-├── 03_cmb_boltzmann_acoustic_peaks.ipynb        (from cmb_comparison.py, cmb_v2_comparison.py)
+├── 03_cmb_boltzmann_and_low_multipoles.ipynb    (from cmb_comparison.py, cmb_v2_comparison.py, derive_cmb_low_multipoles.py)
 ├── 04_primordial_perturbations_ns_r.ipynb       (from primordial_spectrum.py)
 ├── 05_black_hole_gw_echoes_lvk.ipynb           (from bh_echo_prediction.py, echo_confrontation.py)
 ├── 06_engine_thermodynamics_t_cmb.ipynb         (from cmb_temperature.py, derive_parent_bh.py)

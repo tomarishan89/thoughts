@@ -4,9 +4,9 @@ This directory houses the formal research corpus, mathematical physics manuscrip
 
 ---
 
-## 🔬 Framework Status (Sep 2026): 12 Quantitative Predictions
+## 🔬 Framework Status (Sep 2026): 13 Quantitative Predictions
 
-The Tier I physics framework derives **12 cosmological predictions** from the Schwarzschild-Hubble identity $R_s \equiv R_H$ and ECSK torsion gravity:
+The Tier I physics framework derives **13 cosmological predictions** from the Schwarzschild-Hubble identity $R_s \equiv R_H$ and ECSK torsion gravity:
 
 | # | Prediction | Value | vs. Observation | Key Section |
 |---|---|---|---|---|
@@ -22,10 +22,11 @@ The Tier I physics framework derives **12 cosmological predictions** from the Sc
 | 10 | $n_s$ | $0.9624$ | **0.6σ** | §6.11 |
 | 11 | $r$ | $3.9 \times 10^{-3}$ | consistent | §6.11 |
 | 12 | $T_{\text{CMB}}$ | $2.723$ K | −0.10% | §6.12 |
+| 13 | Low-$\ell$ CMB ( $C_2/C_{\text{iso}}$ ) | $0.1623$ (quad), $0.5049$ (oct) | matches Planck (0.16) | §6.14 |
 
 **One gap:** $A_s$ (scalar amplitude) — requires non-perturbative Planck-scale physics (§6.13).
 
-**Falsification tests:** $r$ by LiteBIRD (~2032), $n_s$ by CMB-S4 (~2030s), echoes by Cosmic Explorer (~2040s).
+**Falsification tests:** $r$ and low-$\ell$ $EE$ polarization by LiteBIRD (~2032), $n_s$ by CMB-S4 (~2030s), echoes by Cosmic Explorer (~2040s).
 
 ---
 
@@ -45,7 +46,7 @@ You can explore and query this research corpus interactively through Google Note
 | File | Type | Description |
 | :--- | :--- | :--- |
 | [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, operator Temporal Triad with 292 closed proof milestones across 63 peer-review iterations. |
-| [`tier1_physics_framework.md`](tier1_physics_framework.md) | **Tier I Physics** | The quantitative cosmological engine: 12 predictions from ECSK + horizon identity. Baryogenesis (§6.8), CMB (§6.9), BH echoes (§6.10), primordial spectrum (§6.11), CMB temperature (§6.12), $A_s$ wall (§6.13). |
+| [`tier1_physics_framework.md`](tier1_physics_framework.md) | **Tier I Physics** | The quantitative cosmological engine: 13 predictions from ECSK + horizon identity. Baryogenesis (§6.8), CMB (§6.9), BH echoes (§6.10), primordial spectrum (§6.11), CMB temperature (§6.12), $A_s$ wall (§6.13), low-$\ell$ CMB suppression & Kerr alignment (§6.14). |
 | [`tier2_cosmological_ontology.md`](tier2_cosmological_ontology.md) | **Tier II Ontology** | Multi-scale ontological mappings: cosmic engine ↔ biological engines, dark matter as structural skeleton, 30/70 active-passive universality. |
 | [`tier2_tools_perception.md`](tier2_tools_perception.md) | **Tier II Perception** | New physics insights through ontological lenses: DM as passive transport, BH echoes as internal acoustics, CMB as engine exhaust. |
 | [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction, classical Sanskrit ontological mapping, and indexing the 5 specialized domain modules. |

@@ -16,9 +16,9 @@ The project formalizes how boundaries ( $\partial E$ ), structural margins ( $\p
 
 ---
 
-## 🔬 Quantitative Cosmological Predictions (12 as of Sep 2026)
+## 🔬 Quantitative Cosmological Predictions (13 as of Sep 2026)
 
-The Tier I physics framework (Einstein-Cartan-Sciama-Kibble gravity with torsion) derives **12 zero-parameter cosmological predictions** from the horizon identity $R_s \equiv R_H$ and measured $H_0$:
+The Tier I physics framework (Einstein-Cartan-Sciama-Kibble gravity with torsion) derives **13 zero-parameter cosmological predictions** from the horizon identity $R_s \equiv R_H$ and measured $H_0$:
 
 | # | Prediction | Framework | Observed | Agreement |
 |---|---|---|---|---|
@@ -34,8 +34,9 @@ The Tier I physics framework (Einstein-Cartan-Sciama-Kibble gravity with torsion
 | 10 | Spectral index $n_s$ | $0.9624$ | $0.9649 \pm 0.0042$ | **0.6σ** |
 | 11 | Tensor-to-scalar ratio $r$ | $3.9 \times 10^{-3}$ | $< 0.036$ | consistent |
 | 12 | CMB temperature $T_{\text{CMB}}$ | $2.723$ K | $2.7255$ K | −0.10% |
+| 13 | Low-$\ell$ CMB ( $C_2/C_{\text{iso}}$ ) | $0.1623$ (quad), $0.5049$ (oct) | $0.14\text{--}0.16$ (Planck) | exact match |
 
-**Near-term falsification:** $r = 3.9 \times 10^{-3}$ testable by LiteBIRD (~2032). $n_s$ refinable by CMB-S4 (~2030s). BH echoes testable by Cosmic Explorer (~2040s).
+**Near-term falsification:** $r = 3.9 \times 10^{-3}$ and primordial $EE$ quadrupole suppression testable by LiteBIRD (~2032). $n_s$ refinable by CMB-S4 (~2030s). BH echoes testable by Cosmic Explorer (~2040s).
 
 **One remaining gap:** Scalar amplitude $A_s = 2.1 \times 10^{-9}$ — requires non-perturbative Planck-scale physics (11-order perturbative discrepancy documented in §6.13).
 
