@@ -219,15 +219,24 @@ Applying Tool T2 ($\hat{\mathcal{C}}$) to a single neuron's action potential:
 
 The operator topology is identical: **threshold crossing → discharge → recovery → refractory wait**. The physics is different (electrochemistry vs. magnetohydrodynamics), but the state-machine structure is the same. This is Tool T2 applied at two scales separated by $10^{58}$ orders of magnitude in energy.
 
+**Pulsatile Intake and Duty Cycles across Cosmological and Cellular Scales (Lens L9).** Applying the episodic duty-cycle lens deconstructs the boundary intake flux $\dot{M}(t)$ from an idealized homogeneous continuum into a realistic pulsatile process:
+
+$$\dot{M}(t) = \bar{M}(t) + \sum_k \Delta M_k \, \delta(t - t_k), \qquad \mathcal{D} \equiv \frac{\tau_{\text{active}}}{\tau_{\text{cycle}}}$$
+
+This illuminates three cross-scale structural identities:
+1. **Starvation as Ground-State Maintenance:** In the cosmological child universe, when parent accretion ceases ( $\dot{M} \to 0$, starved quiescent phase of an isolated parent black hole ), the universe does not collapse; rather, by $q = -1 + \frac{2G}{c^3}\dot{M}$, the metric freezes into pure exponential de Sitter expansion ( $w = -1$ ). In cell biology, nutrient starvation ( $\dot{M}_{\text{nutrient}} \to 0$ ) does not trigger instant lysis; it triggers **autophagy**, freezing external growth into a basal maintenance ground state.
+2. **Planar Inflow and Broken Isotropy:** A parent black hole feeding at the center of a host galaxy accretes via an equatorial accretion disk with angular momentum $\vec{L}_{\text{parent}} \neq 0$. This planar boundary feeding breaks spatial $SO(3)$ rotational symmetry down to axial $U(1)$ symmetry on the cosmological horizon, providing an astrophysical mechanism for the observed CMB low-$\ell$ quadrupole/octopole alignment ( "Axis of Evil" ) and quadrupole suppression ( $C_2^{\text{obs}}/C_2^{\Lambda\text{CDM}} \approx 0.14$ ).
+3. **Scale Filtering of Influx Perturbations:** A human cell ingesting an individual ion does not experience an osmotic shock; only synchronized vesicular transport shifts its volume. Identically, the modern universe ( $M_H \approx 3.2 \times 10^{22} \, M_\odot$ ) ingesting a $10 \, M_\odot$ parent star experiences an undetectable horizon strain of $\Delta M / M_H \sim 3 \times 10^{-22}$; macroscopic cosmological perturbations ( $\delta T/T \sim 10^{-5}$ ) could only be seeded by parent macro-clumps ( $\Delta M \sim 10^{13} \, M_\odot$ ) crossing the horizon when $M_H$ was small near recombination.
+
 #### 7.5.4 The Nanochannel-Horizon Isomorphism: Biological Horizons
 
-Applying Tool T1 ($\hat{\mathcal{M}}$) to nanoscale transport reveals a structural isomorphism between black hole horizons and biological nanochannels that extends beyond analogy to operator identity.
+Applying Tool T1 ( $\hat{\mathcal{M}}$ ) to nanoscale transport reveals a structural isomorphism between black hole horizons and biological nanochannels that extends beyond analogy to operator identity.
 
 **The Grotthuss mechanism.** When water fills a channel narrower than $\sim 1$ nm (aquaporin proteins, carbon nanotubes), water molecules form a single-file chain. Protons do not physically traverse the channel — instead, they **hop** along hydrogen bonds from one water molecule to the next. The proton that enters is NOT the proton that exits; only the **charge** (the information) is transmitted. At channel diameters $d \lesssim 0.3$ nm, the proton's de Broglie wavelength $\lambda_{dB} = h/p$ becomes comparable to $d$, and the proton genuinely **delocalizes as a quantum wave** along the entire chain.
 
 **The Horizon Isomorphism.** This process maps exactly onto the black hole horizon crossing:
 
-| Feature | Black Hole Horizon | Nanochannel ($d < 1$ nm) |
+| Feature | Black Hole Horizon | Nanochannel ( $d < 1$ nm ) |
 |---|---|---|
 | Boundary $\partial E$ | Event horizon $r_+$ | Channel entrance |
 | Classical → quantum transition | Matter crosses horizon, loses classical identity | Proton enters channel, delocalizes into wave |

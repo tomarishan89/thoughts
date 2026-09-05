@@ -90,10 +90,29 @@
 
 ---
 
+## L9: The Pulsatile Intake / Episodic Duty-Cycle Lens
+**Discovery:** §6.5 & §6.7 (trans-horizon accretion dynamics under non-uniform parent feeding).
+**What it does:** Deconstructs boundary influx not as a smooth, uninterrupted continuum, but as a pulsatile, episodic duty cycle:
+
+$$\dot{M}(t) = \bar{M}(t) + \sum_k \Delta M_k \, \delta(t - t_k), \qquad \mathcal{D} \equiv \frac{\tau_{\text{active}}}{\tau_{\text{cycle}}}$$
+
+coupled with directional angular momentum $\vec{L} \neq 0$ that breaks spatial isotropy down to axial $U(1)$ symmetry.
+**Key questions it asks:**
+1. "Is the intake continuous or pulsatile? What is the duty cycle $\mathcal{D}$ and recurrence time $\tau_{\text{cycle}}$?"
+2. "What happens during starvation ( $\dot{M} \to 0$ )? Does the boundary collapse, or freeze into a ground-state maintenance mode (de Sitter expansion / cellular autophagy)?"
+3. "Does the feed preserve spherical symmetry, or does planar/disk feeding ( $\vec{L} \neq 0$ ) imprint a permanent preferred axis?"
+4. "What is the scale ratio $\Delta M_k / M_{\text{total}}$? Is an ingestion event sub-threshold noise ( $\sim 10^{-22}$ ) or a macroscopic boundary-altering shock ( $\sim 10^{-5}$ )?"
+**Applied to:**
+- **Cosmological Scale:** Parent black hole AGN duty cycles, de Sitter expansion ( $w \to -1$ ) during starved quiescent phases, equatorial accretion disk feed breaking $SO(3)$ isotropy to explain CMB low-$\ell$ quadrupole/octopole alignment ( "Axis of Evil" ).
+- **Biophysical / Cellular Scale:** Vesicular endocytosis (phagocytosis/pinocytosis), pulsatile insulin and glucose fluxes, feast-and-famine cycles where starvation triggers autophagy (the biological analog of de Sitter horizon freeze).
+- **Neurobiological Scale:** Phasic burst firing vs tonic firing, quantal neurotransmitter release at synaptic vesicles ( $q \sim 10^3 - 10^4$ molecules ).
+
+---
+
 ## How to Use This Catalog
 
 When approaching a new problem or domain:
 1. **Scan all lenses** — systematically ask each lens's question
 2. **Look for isomorphisms** — which lenses reveal the same structure at a new scale?
 3. **Log new lenses** — if the problem requires a perspective not in this catalog, add it
-4. **Combine lenses** — the most powerful insights come from applying 2+ lenses simultaneously (e.g., L6 + L2 = biological horizon + engine cycle → action potential as a horizon-crossing engine)
+4. **Combine lenses** — the most powerful insights come from applying 2+ lenses simultaneously (e.g., L6 + L2 = biological horizon + engine cycle → action potential as a horizon-crossing engine; L9 + L1 = episodic duty cycle + horizon lens → dynamical dark energy steps and CMB low-multipole alignments)
