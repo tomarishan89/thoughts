@@ -25,9 +25,9 @@ $$\Delta t_{\text{echo}} \sim \frac{4 G M}{c^3} \ln\!\left(\frac{R_{\text{horizo
 - **Framework prediction:** Echoes MUST exist if ECSK bounce is correct. No echoes → no bounce → framework falsified.
 
 ### Action Items
-- [ ] Log as Prediction #9 (or ISSUE-4.60)
-- [ ] Compute echo amplitude (what fraction of ringdown energy is reflected?)
-- [ ] Check: does the echo delay formula depend on any framework-specific parameter?
+- [x] Log as Prediction #9 (or ISSUE-4.60) — Formalized in `tier1_physics_framework.md` §6.10 and `issues_log.md` ISSUE-4.60.
+- [x] Compute echo amplitude (what fraction of ringdown energy is reflected?) — Formalized in `tier1_physics_framework.md` §6.10.3 ( $A_1/A_0 \approx 8.3 \times 10^{-5}$ via Boltzmann reflectivity).
+- [x] Check: does the echo delay formula depend on any framework-specific parameter? — Proved parameter-free in §6.10.2: $\Delta t_{\text{echo}} = \frac{4GM}{c^3}\ln(R_+/\ell_P)$.
 
 ---
 
@@ -45,9 +45,9 @@ $$\Delta t_{\text{echo}} \sim \frac{4 G M}{c^3} \ln\!\left(\frac{R_{\text{horizo
 - ECSK bounce could produce primordial GW background with distinctive spectrum
 
 ### Action Items
-- [ ] Does the framework predict a specific GWB spectral shape from the bounce?
-- [ ] Would the primordial GWB from ECSK differ from inflationary GWB?
-- [ ] Connect to ISSUE-4.58 (tensor-to-scalar ratio r)
+- [x] Does the framework predict a specific GWB spectral shape from the bounce? — Solved in `tier1_physics_framework.md` §6.11 via Mukhanov-Sasaki perturbations through ECSK bounce.
+- [x] Would the primordial GWB from ECSK differ from inflationary GWB? — Formalized in §6.11.4: $r = 12/N^2 = 3.9 \times 10^{-3}$, testable by LiteBIRD.
+- [x] Connect to ISSUE-4.58 (tensor-to-scalar ratio r) — Fully resolved in `issues_log.md` ISSUE-4.58.
 
 ---
 
@@ -77,9 +77,9 @@ The mathematical operators governing galaxy structure are isomorphic to those go
 - The specific morphology depends on initial/boundary conditions, not on the operator itself
 
 ### Action Items
-- [ ] Write the accretion disc to membrane mapping explicitly using framework variables
-- [ ] Show that Shakura-Sunyaev alpha-viscosity maps to the framework's nu parameter
-- [ ] This belongs in the tier-2 document as a cross-scale application
+- [x] Write the accretion disc to membrane mapping explicitly using framework variables — Formalized in `tier2_cosmological_ontology.md` §7.5.1 table ( $\partial E, \gamma, \nu, J_k, \Delta P, \kappa$ ).
+- [x] Show that Shakura-Sunyaev alpha-viscosity maps to the framework's nu parameter — Formalized in §7.5.1 line 183.
+- [x] This belongs in the tier-2 document as a cross-scale application — Integrated as Section 7.5.1 in `tier2_cosmological_ontology.md`.
 
 ---
 
@@ -157,18 +157,18 @@ Karl Friston's Free Energy Principle (FEP): the brain minimizes variational free
 - The brain is an entropy-minimizing engine (= the framework's engine cycle applied to neural Ledger updates)
 
 ### Action Items
-- [ ] Formalize the 30/70 split as a structural prediction at the neural scale
-- [ ] Write the neuron-firing to engine-cycle mapping explicitly
-- [ ] Connect to Friston FEP via the framework's free energy
-- [ ] Add Vazza and Feletti (2020) to references
-- [ ] This belongs in tier-2 document — cross-scale structural isomorphism
-- [ ] The "brain simulates universe" claim needs the Ledger formalism from the draft
+- [x] Formalize the 30/70 split as a structural prediction at the neural scale — Derived in `tier2_cosmological_ontology.md` §7.5.2 from Theorem 7 engine cycle equilibrium.
+- [x] Write the neuron-firing to engine-cycle mapping explicitly — Formalized in `tier2_cosmological_ontology.md` §7.5.3 ( Na⁺/K⁺ vs AGN outburst across Phases I–IV ).
+- [x] Connect to Friston FEP via the framework's free energy — Formalized in `tier2_cosmological_ontology.md` §7.6.3 ( Helmholtz free energy ↔ variational free energy ↔ Ledger mismatch ).
+- [x] Add Vazza and Feletti (2020) to references — Added as Reference 32 in `tier2_cosmological_ontology.md`.
+- [x] This belongs in tier-2 document — cross-scale structural isomorphism — Integrated as Sections 7.5 and 7.6 in `tier2_cosmological_ontology.md`.
+- [x] The "brain simulates universe" claim needs the Ledger formalism from the draft — Formalized in `tier2_cosmological_ontology.md` §7.6.1–7.6.4 ( Hierarchy of Ledger Mirrors ).
 
 ---
 
-## Issues to Add to issues_log.md (Future)
+## Issues Added to issues_log.md
 
-1. **ISSUE-4.60: Black Hole Echoes as Prediction #9** — Compute echo delay and amplitude for ECSK bounce interior. Testable by LIGO O4/O5 and LISA.
-2. **Tier-2 ISSUE: Galaxy to Cell Operator Isomorphism** — Formalize the accretion-disc to membrane mapping using framework variables.
-3. **Tier-2 ISSUE: Cosmic Web to Neural Network** — Derive the 30/70 structural partition at neural scale from the engine cycle equilibrium.
-4. **Tier-2 ISSUE: Brain as Universe Simulator** — Formalize the Ledger-mirror hypothesis using the information-theoretic apparatus.
+1. [x] **ISSUE-4.60: Black Hole Echoes as Prediction #9** — Resolved in §6.10 and `scripts/bh_echo_prediction.py`.
+2. [x] **ISSUE-4.70: Galaxy to Cell Operator Isomorphism** — Resolved in `tier2_cosmological_ontology.md` §7.5.1.
+3. [x] **ISSUE-4.71: Cosmic Web to Neural Network (30/70 Partition)** — Resolved in `tier2_cosmological_ontology.md` §7.5.2.
+4. [x] **ISSUE-4.72: Brain as Universe Simulator (Ledger-Mirror Hypothesis)** — Resolved in `tier2_cosmological_ontology.md` §7.6.
