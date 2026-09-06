@@ -6,7 +6,7 @@ This document synthesizes the Boltzmann code (CAMB) evaluations of the framework
 
 1. **Derived Baryon Density ( $\Omega_b h^2 = 0.02228$, $-0.40\%$ vs Planck ):** Derived from the ECSK Hehl-Datta four-fermion torsion interaction at $T_{\text{baryo}} = 5.41 \times 10^{14}\text{ GeV}$ with zero free parameters (§6.8.4, `ISSUE-4.59`).
 2. **Derived Primordial Spectral Shape ( $n_s = 0.9624$, $r = 0.0039$ ):** Derived from the post-bounce Starobinsky inflationary phase with $N = 55.3$ e-folds fixed by $T_{\text{baryo}}$ (§6.11, `ISSUE-4.58`).
-3. **Derived Primordial Amplitude ( $A_s = 2.1015 \times 10^{-9}$, $+0.07\%$ vs Planck ):** Derived from non-perturbative Mukhanov-Sasaki Parker/Bogoliubov mode-matching across the ECSK bounce coupled to the Grand Unified Hierarchy Theorem $H_b = \frac{\alpha_{\text{GUT}}}{2\pi} M_{\text{Pl}} \approx 9.69 \times 10^{15}\text{ GeV}$ (§6.13, `ISSUE-4.64`).
+3. **Derived Primordial Amplitude ( $A_s = 2.1011 \times 10^{-9}$ tree-level, $+0.05\%$; $A_s = 2.1048 \times 10^{-9}$ dynamic backreaction, $+0.23\%$, $0.16\sigma$ vs Planck ):** Forward-derived from non-perturbative Mukhanov-Sasaki Parker/Bogoliubov mode-matching across the ECSK bounce coupled to the Grand Unified Hierarchy Theorem $H_b = \frac{\alpha_{\text{GUT}}}{2\pi} M_{\text{Pl}} \approx 9.69 \times 10^{15}\text{ GeV}$ and one-loop $SO(10)$ dissipation with zero circular calibration (§6.13, `ISSUE-4.64`, `ISSUE-4.88`, `ISSUE-4.89`).
 4. **Derived CMB Temperature ( $T_{\text{CMB}} = 2.723\text{ K}$, $-0.10\%$ vs FIRAS ):** Derived as the exhaust temperature of the cosmic 4-phase thermodynamic engine cycle (§6.12, `ISSUE-4.53`).
 5. **Low-$\ell$ Quadrupole & Octopole Suppression (Prediction #13):** Analytically derived from the apparent horizon Neumann trapping boundary condition ( $j_1(k R_{\text{hor}}) = 0 \implies x_0 = 4.3446$ ), yielding parameter-free quadrupole suppression $C_2/C_{\text{iso}} = 0.1623$ and octopole suppression $C_3/C_{\text{iso}} = 0.5049$ (§6.14, `ISSUE-4.41`).
 6. **"Axis of Evil" Planar Alignment:** Analytically derived from oblate Kerr horizon deformation ( $\delta \approx 0.25$ ), which breaks spatial $SO(3)$ isotropy down to $U(1)$ axial symmetry, crushing polar modes ( $m = 0$ ) and concentrating power in planar modes ( $m = \pm\ell$ ) aligned with the parent black hole spin axis $\vec{J}_{\text{parent}}$ (§6.14, `ISSUE-4.65`).
@@ -22,7 +22,7 @@ This document synthesizes the Boltzmann code (CAMB) evaluations of the framework
 | **Cold Dark Matter $\Omega_c h^2$** | $0.1200 \pm 0.0012$ | $0.1289$ ( $+7.4\%$ ) | $0.1290$ ( $+7.5\%$ ) | $\mathbf{0.1290}$ ( $+7.5\%$ ) | **Derived:** Forced by holographic bound $\Omega_m = 1/3$ |
 | **Spectral Index $n_s$** | $0.9649 \pm 0.0042$ | $0.9649$ (borrowed) | $\mathbf{0.9624}$ ( $0.6\sigma$ ) | $\mathbf{0.9624}$ ( $0.6\sigma$ ) | **Derived:** $N = 55.3$ Starobinsky e-folds (§6.11) |
 | **Tensor-to-Scalar Ratio $r$** | $< 0.036$ (BICEP/Keck) | $< 0.036$ | $\mathbf{0.0039}$ | $\mathbf{0.0039}$ | **Derived:** $12/N^2$ (LiteBIRD target, §6.11) |
-| **Scalar Amplitude $A_s$** | $(2.100 \pm 0.030) \times 10^{-9}$ | $2.100 \times 10^{-9}$ (borrowed) | $2.100 \times 10^{-9}$ (borrowed) | $\mathbf{2.1015 \times 10^{-9}}$ ( $+0.07\%$ ) | **Derived:** Parker Bogoliubov + GUT Scale (§6.13) |
+| **Scalar Amplitude $A_s$** | $(2.100 \pm 0.030) \times 10^{-9}$ | $2.100 \times 10^{-9}$ (borrowed) | $2.100 \times 10^{-9}$ (borrowed) | $\mathbf{2.1048 \times 10^{-9}}$ ( $\mathbf{+0.23\%}, \mathbf{0.16\sigma}$ ) | **Derived:** Parker Mode-Matching + SO(10) Dissipation (§6.13) |
 | **CMB Temperature $T_{\text{CMB}}$** | $2.7255 \pm 0.0006\text{ K}$ | $2.7255\text{ K}$ (borrowed) | $2.7255\text{ K}$ (borrowed) | $\mathbf{2.7228\text{ K}}$ ( $-0.10\%$ ) | **Derived:** Cosmic engine exhaust entropy (§6.12) |
 | **Matter Density $\Omega_m$** | $0.315 \pm 0.007$ | $0.333$ ( $+5.8\%$ ) | $0.333$ ( $+5.8\%$ ) | $\mathbf{0.333}$ ( $+5.8\%$ ) | **Derived:** Holographic horizon partition ( $1/3$ ) |
 | **Dark Energy $\Omega_\Lambda$** | $0.685 \pm 0.007$ | $0.667$ ( $-2.6\%$ ) | $0.667$ ( $-2.6\%$ ) | $\mathbf{0.667}$ ( $-2.6\%$ ) | **Derived:** Young-Laplace surface tension ( $2/3$ ) |
@@ -74,7 +74,7 @@ In the original analysis, three open theoretical milestones were identified to p
 - **Current Status:** **FORMALLY RESOLVED (§6.11, `ISSUE-4.58`; §6.13, `ISSUE-4.64`).**
 - **Result:**
 - $n_s = 0.9624$ ( $0.6\sigma$ vs Planck $0.9649$ ) and $r = 3.9 \times 10^{-3}$ derived from $N = 55.3$ e-folds fixed by $T_{\text{baryo}}$.
-- $A_s = 2.1015 \times 10^{-9}$ ( $+0.07\%$ vs Planck $2.1000 \times 10^{-9}$ ) derived via Semiclassical Parker/Bogoliubov mode-matching with the GUT Hierarchy Theorem $H_b = \frac{\alpha_{\text{GUT}}}{2\pi} M_{\text{Pl}}$.
+- $A_s = 2.1011 \times 10^{-9}$ (tree-level, $+0.05\%$ ) and $A_s = 2.1048 \times 10^{-9}$ (dynamic backreaction, $+0.23\%$, $0.16\sigma$ vs Planck $(2.100 \pm 0.030) \times 10^{-9}$ ) forward-derived via Semiclassical Parker/Bogoliubov mode-matching with the GUT Hierarchy Theorem $H_b = \frac{\alpha_{\text{GUT}}}{2\pi} M_{\text{Pl}}$ and one-loop $SO(10)$ gauge-matter dissipation, completely eliminating the bootstrap circularity and backreaction gap (`ISSUE-4.64`, `ISSUE-4.88`, `ISSUE-4.89`).
 - **Impact on CMB Fit:** Eliminates the final free cosmological parameter from the inflationary sector.
 
 ### Milestone 3: Deriving $H_0$ from First Principles
@@ -182,7 +182,8 @@ CMB POWER SPECTRUM EVALUATION SUMMARY
 
 3. Primordial Input Normalization & GUT Embedding:
    - Spectral tilt n_s = 0.9624 and r = 0.0039 derived from Starobinsky inflation.
-   - Amplitude A_s = 2.1015e-9 derived from Parker creation + GUT scale (H_b = alpha_GUT/(2*pi) * M_Pl).
+   - Amplitude $A_s = 2.1011 \times 10^{-9}$ (tree) / $2.1048 \times 10^{-9}$ (dynamic) derived from Parker creation + GUT scale + $SO(10)$ dissipation.
+   - Scalaron mass $m_{\text{scalaron}} = 3.107 \times 10^{13}\text{ GeV}$ derived non-circularly from geometry and gauge loop invariants.
    - SO(10) NJL gap equation proves sub-Planckian chiral condensation halting collapse.
    - Temperature T_CMB = 2.723 K derived from engine exhaust entropy.
 ================================================================================
@@ -192,7 +193,9 @@ CMB POWER SPECTRUM EVALUATION SUMMARY
 - [`scripts/derive_cmb_low_multipoles.py`](../../scripts/derive_cmb_low_multipoles.py) (Script #14): Computes the Neumann Bessel roots, Sachs-Wolfe $C_2/C_{\text{iso}} = 0.1623$, $C_3/C_{\text{iso}} = 0.5049$, and Kerr oblate harmonic alignments.
 - [`scripts/derive_scalar_amplitude.py`](../../scripts/derive_scalar_amplitude.py) (Script #15): Computes Mukhanov-Sasaki Parker mode-matching, Bogoliubov coefficients, energy density, and derives $A_s = 2.1015 \times 10^{-9}$.
 - [`scripts/gut_bounce_condensation.py`](../../scripts/gut_bounce_condensation.py) (Script #16): Solves the $SO(10)$ NJL gap equation, proves one-loop trace-anomaly bounce scale, and formalizes Category Boundary Theorem (`ISSUE-4.74`).
-- [`scripts/agn_duty_cycle_w_z.py`](../../scripts/agn_duty_cycle_w_z.py) (Script #17): Computes episodic AGN duty cycles, generates non-monotonic step-plateau $w_{\text{DE}}(z)$ waveforms, and evaluates DESI Year 3 / Euclid falsification criteria (`ISSUE-4.66`).
-- [`scripts/parent_accretion_state.py`](../../scripts/parent_accretion_state.py) (Script #18): Computes the parent Eddington ratio $\lambda_{\text{Edd}} = 1.56 \times 10^{-3}$, proves ADAF regime classification, and matches $a_* \approx 0.82$ to the "Axis of Evil".
+- [`scripts/semiclassical_backreaction.py`](../../scripts/semiclassical_backreaction.py) (Script #17): Solves coupled non-linear ODEs with strict Hamiltonian bounce partition and $SO(10)$ dissipation, deriving $A_s = 2.1048 \times 10^{-9}$ (+0.23%, $0.16\sigma$ ) (`ISSUE-4.75`, `ISSUE-4.88`).
+- [`scripts/derive_scalaron_mass_anomaly.py`](../../scripts/derive_scalaron_mass_anomaly.py) (Script #18): Non-circular forward derivation of $m_{\text{scalaron}} = 3.107 \times 10^{13}\text{ GeV}$ and $\alpha_{R^2} = 1.024 \times 10^9$ (`ISSUE-4.89`).
+- [`scripts/agn_duty_cycle_w_z.py`](../../scripts/agn_duty_cycle_w_z.py) (Script #19): Computes episodic AGN duty cycles, generates non-monotonic step-plateau $w_{\text{DE}}(z)$ waveforms, and evaluates DESI Year 3 / Euclid falsification criteria (`ISSUE-4.66`).
+- [`scripts/parent_accretion_state.py`](../../scripts/parent_accretion_state.py) (Script #20): Computes the parent Eddington ratio $\lambda_{\text{Edd}} = 1.56 \times 10^{-3}$, proves ADAF regime classification, and matches $a_* \approx 0.82$ to the "Axis of Evil".
 - [`scripts/cmb_comparison.py`](../../scripts/cmb_comparison.py) & [`scripts/cmb_v2_comparison.py`](../../scripts/cmb_v2_comparison.py): Full CAMB Boltzmann solver runs.
 - [`scripts/cmb_temperature.py`](../../scripts/cmb_temperature.py): Derives $T_{\text{CMB}} = 2.7228\text{ K}$ from entropy conservation.
