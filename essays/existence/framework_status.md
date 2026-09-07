@@ -114,7 +114,7 @@ $$\Omega_c h^2(z_{\text{rec}}) = 0.12078 \quad (\mathbf{+0.65\%}, \quad \mathbf{
 | Dimension | Standard $\Lambda\text{CDM}$ | This Framework |
 |---|---|---|
 | **Free Parameters** | **6** ( $\Omega_b h^2, \Omega_c h^2, \theta_{\text{MC}}, \tau, A_s, n_s$ ) | **0** (All derived from $H_0, R_s \equiv R_H$, ECSK + $SO(10)$ ) |
-| **CMB TT Global Fit** | Sub-percent ( $\chi^2 / \text{dof} \approx 1.0$ ) | $2.1\%$–$4.0\%$ acoustic peak residual (structurally explained) |
+| **CMB TT Global Fit** | Sub-percent ( $\chi^2 / \text{dof} \approx 1.0$ ) | **$0.51\%$ RMS residual** (dynamic ADAF; $4.18\%$ static tree-level) |
 | **$\Omega_\Lambda$ Value** | Fitted to data ( $\Omega_\Lambda \approx 0.685$ ) | **Derived** ( $2/3 \approx 0.667 \to 0.6847$ dynamic, $0.0\sigma$ ) |
 | **Cosmic Coincidence ( $\rho_\Lambda / \rho_m \approx 2$ )** | Unexplained historical accident | **Derived geometric identity** ( $\rho_\Lambda = 2\rho_m$ ) |
 | **Cosmological Constant Problem** | $10^{122}$ QFT cutoff disaster | **Resolved** (Horizon membrane surface pressure) |
