@@ -18,7 +18,7 @@ To allow domain specialists (cosmologists, biophysicists, psychologists, sociolo
 ├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
 │ 🕉️ [core_ontology_and_dharma.md](interpretations/core_ontology_and_dharma.md) │ Sanskrit Ontology &   │ • Verbal root √dhṛ (to sustain)   │
 │                                                      │ Dharma Set Theory     │ • Sanatan Dharm Union: 𝒟_T = ⋃ D  │
-│                                                      │                       │ • Category Error & Inflorescence  │
+│                                                      │                       │ • Set-Theoretic Inflorescence     │
 │                                                      │                       │ • Temporal Triad: ℱ ⟶ P̂ ⟶ 𝓧      │
 ├──────────────────────────────────────────────────────┼───────────────────────┼───────────────────────────────────┤
 │ 🌌 [cosmology_and_brahmanda.md](interpretations/cosmology_and_brahmanda.md)   │ Black Hole Cosmology  │ • Brahmāṇḍa Identity: R_s ≡ R_H   │

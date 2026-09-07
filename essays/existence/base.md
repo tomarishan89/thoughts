@@ -7,7 +7,7 @@
 
 ---
 
-## Section 1: Ontological Baseline, The Category Error Paradox, and Visual Anchors
+## Section 1: Ontological Baseline, Set-Theoretic Subsetting, and Visual Anchors
 
 ### 1.1 Ontological Definition of Dharm (धर्म)
 To establish an unassailable baseline, we return to the Sanskrit root **$\sqrt{\text{धृ}}$ (*dhṛ*)**—formally cataloged in classical grammar as *dhāraṇapoṣaṇayoḥ*: “to hold, sustain, support, and maintain structural integrity.” Classical tradition captures this operational function explicitly:
@@ -22,18 +22,10 @@ Stripped of socio-religious dogma and subjective moralizing, **Dharm** is define
 
 ---
 
-### 1.2 The Category Error Paradox
-Consider a ubiquitous claim in contemporary discourse:
+### 1.2 Set-Theoretic Subsetting & Scale Partition
+From a formal set-theoretic perspective, no localized entity embodies the universal matrix of physical laws. Consider a single hydrogen atom: an atom does not embody the total periodic table, quantum electrodynamics, and cosmic gravitation; it is simply governed by a localized subset of those laws within its immediate boundary conditions. Likewise, an individual physical locus does not execute the total universal set of existence mechanics.
 
-> **"I follow Sanatan Dharm."**
-
-From a formal set-theoretic perspective, this assertion commits a fundamental category error. It is logically equivalent to a single hydrogen atom declaring:
-
-> *"I follow the total periodic table, quantum electrodynamics, and cosmic gravitation."*
-
-A single atom does not "follow" or choose to execute the universal matrix of physical laws; it is simply governed by a localized subset of those laws within its immediate boundary conditions. Likewise, an individual human locus cannot "follow" the total universal set of existence mechanics.
-
-In Sanskrit, **सनातन (Sanatan)** denotes that which is eternal, uncreated, continuous, and timeless. If **Sanatan Dharm** is the eternal, infinite matrix of all structural persistence laws across all forms of existence in spacetime, no localized entity can "follow" it. An entity merely instantiates a temporary, localized subset of those laws.
+In Sanskrit, **सनातन (Sanatan)** denotes that which is eternal, uncreated, continuous, and timeless. When **Sanatan Dharm** is formalized as the total matrix of structural persistence laws across all forms of existence in spacetime ( $\mathcal{D}_T$ ), a localized entity merely instantiates a temporary, localized proper subset of those laws: $D_{\mathfrak{Im}}^i(t) \subset \mathcal{D}_T$.
 
 ---
 
@@ -269,8 +261,8 @@ Instead of a rigid linear pipeline ( $\mathcal{O} \to \mathcal{L} \to \mathcal{K
 
 ---
 
-### 5.4 Systems-Physics Origin of Dogmatic Category Errors & Latent Recall
-The Cybernetic Interaction Triad explains why human cognition naturally produces dogmatic category errors and how dormant survival knowledge is re-mobilized:
+### 5.4 Systems-Physics Origin of Heuristic Compression & Latent Recall
+The Cybernetic Interaction Triad explains how human cognition compresses complex survival knowledge into heuristics and how dormant survival syntax is re-mobilized:
 
 ```
   1. PERCEPTION & LEDGER   Early humans observe natural survival laws and record complex ledgers.
@@ -282,7 +274,7 @@ The Cybernetic Interaction Triad explains why human cognition naturally produces
           v
   3. DRIFT & OPTIMIZATION  Environmental Drift shifts C_t. Re-calculating source code is 
                            bypassed to optimize cognitive bandwidth. Humans execute dogma directly.
-                          ──> RESULT: The Category Error ("I follow Sanatan Dharm").
+                          ──> RESULT: Heuristic Compression (executing cached dogma directly).
           │
           v
   4. LATENT RECALL         When a novel or reactivated challenge vector returns (C_t >> 0) and 
@@ -295,7 +287,7 @@ The Cybernetic Interaction Triad explains why human cognition naturally produces
 3. **Cognitive Bandwidth Optimization:** Re-calculating source code requires immense cognitive energy. Executing the compressed dogma directly allowed human societies to conserve cognitive bandwidth for novel challenge vectors.
 4. **Latent Recall:** When a returning or novel challenge vector causes a negative margin ( $\Delta \mathbf{R} < 0$ ), selective pressure forces the Perception Engine to execute **Latent Recall**, querying dormant code entries in $E^{\text{ledger}}$ and re-mobilizing them into active factor sets ( $\mathcal{F}_{\text{active}}$ ).
 
-Thus, the statement *"I follow Sanatan Dharm"* is an **engineered feature of cognitive bandwidth optimization operating within the cybernetic interaction triad**.
+Thus, compressed cultural heuristics are an **engineered feature of cognitive bandwidth optimization operating within the cybernetic interaction triad**.
 
 ---
 

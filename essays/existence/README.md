@@ -54,7 +54,7 @@ You can explore and query this research corpus interactively through Google Note
 | [`issues_log.md`](issues_log.md) | **Critique & Proof Archive** | Exhaustive calculation log archiving all resolved theoretical milestones and active downstream continuum-closure frontiers. |
 | [`review.md`](review.md) | **Peer Review & Defense Log** | Editorial feedback, referee verdicts, and adversarial stress-tests maintained under the Anti-Premature Closure Invariant. |
 | [`dialogues_and_explorations.md`](dialogues_and_explorations.md) | **Dialectical & Proof Archive** | Extended Socratic dialogues, thought experiments, and step-by-step numerical derivations. |
-| [`base.md`](base.md) | **Foundational Working Paper** | *Deconstructing Sanatan Dharm* — definition of Dharm from root $\sqrt{\text{dhṛ}}$ and resolving the Category Error Paradox. |
+| [`base.md`](base.md) | **Foundational Working Paper** | *Foundational Working Paper* — formalization of Dharm from root $\sqrt{\text{dhṛ}}$ as structural persistence mechanics and the set-theoretic inflorescence model. |
 | [`cases_appendix.md`](cases_appendix.md) | **Case Studies Appendix** | Multi-scale applications across physical, biological, ecological, and institutional domains. |
 | [`entropy.md`](entropy.md) | **Thermodynamic Analysis** | Deep-dive into structural entropy, entropy production rates, and thermodynamic bounds. |
 | [`rough.md`](rough.md) | **Scratchpad** | Working notes, early mathematical formulations, and scratch calculations. |
@@ -69,7 +69,7 @@ To allow domain specialists to explore specific applications without wading thro
 
 | Module File | Domain | Key Theoretical Focus |
 | :--- | :--- | :--- |
-| [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, Sanatan Dharm union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Category Error paradox, Temporal Triad ( $\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ). |
+| [`core_ontology_and_dharma.md`](interpretations/core_ontology_and_dharma.md) | **Sanskrit Ontology & Set Theory** | Root $\sqrt{\text{dhṛ}}$, structural invariant union $\mathcal{D}_T \equiv \bigcup D_{\mathfrak{Im}}^i$, Inflorescence Model, Temporal Triad ( $\mathcal{F} \to \hat{\mathbf{P}} \to \boldsymbol{\mathcal{X}}$ ). |
 | [`cosmology_and_brahmanda.md`](interpretations/cosmology_and_brahmanda.md) | **Astrophysics & Cosmology** | *Brahmāṇḍa* Black Hole Universe ( $R_s \equiv R_H$ ), Horizon Duality, Dark Energy boundary tension, Bondi accretion ( $48,000 \, M_\odot/\mathrm{s}$ ). |
 | [`biophysics_and_syncytia.md`](interpretations/biophysics_and_syncytia.md) | **Cellular Biophysics** | Lipid bilayer Donnan equilibrium, $37.2 \times 10^{12}$ cell human syncytium, Cellular Dharma vs. Outer Līlā, Apoptosis as Karma Yoga. |
 | [`cognitive_and_psychology.md`](../cognitive_social_extensions/cognitive_and_psychology.md) | **Cognitive Science & Psychology** | Sagawa-Ueda bound ( $\chi^* \approx 1$ ), thermodynamics of the 6 *Ariṣaḍvarga* afflictions, *Vāsanā* reflex vs. *Viveka* Landauer veto gating. |

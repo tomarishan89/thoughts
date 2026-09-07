@@ -93,12 +93,12 @@ $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \ri
 
 Combined with ECSK torsion gravity, this identity generates the 12 predictions above — including the spectral index $n_s = 0.9624$ (within 0.6σ of Planck) and tensor-to-scalar ratio $r = 3.9 \times 10^{-3}$ (testable by LiteBIRD ~2032), both with **zero free parameters**.
 
-### 3. Deconstruction of Sanatan Dharm & The Category Error Paradox
-Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), **Sanatan Dharm ( $\mathcal{D}_T$ )** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ( $D_{\mathfrak{Im}}^i(t)$ ):
+### 3. Structural Set Theory: Root √dhṛ and the Universal Invariant Matrix
+Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), the universal invariant matrix **$\mathcal{D}_T$** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ( $D_{\mathfrak{Im}}^i(t)$ ):
 
 $$\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfrak{Im}}^i(t)$$
 
-An individual entity $E^i(t)$ does not "embody" Sanatan Dharm; it merely instantiates its localized proper subset ( $D_{\mathfrak{Im}}^i \subset \mathcal{D}_T$ ), just as a single floret is a constituent instantiation of an entire inflorescence bloom.
+An individual entity $E^i(t)$ instantiates a localized proper subset ( $D_{\mathfrak{Im}}^i \subset \mathcal{D}_T$ ), just as a single floret is a constituent instantiation of an entire inflorescence bloom.
 
 ---
 
@@ -111,12 +111,12 @@ Project_writeup_1/
 │   ├── existence/               # The Continuum Existence & Ontological Framework
 │   │   ├── README.md            # Directory-specific guide and index
 │   │   ├── draft.md             # Flagship mathematical physics paper (292 proof milestones)
-│   │   ├── tier1_physics_framework.md  # Tier I: 12 cosmological predictions (ECSK, CMB, n_s, r)
+│   │   ├── tier1_physics_framework.md  # Tier I: 14 cosmological predictions (ECSK, CMB, n_s, r)
 │   │   ├── tier2_cosmological_ontology.md  # Tier II: Multi-scale ontological mappings
 │   │   ├── tier2_tools_perception.md  # Tier II: Tools, perception, and new physics insights
 │   │   ├── interpretation.md    # Master ontological treatise (comprehensive synthesis)
 │   │   ├── interpretations/     # Specialized Domain Modules
-│   │   │   ├── core_ontology_and_dharma.md    # Sanskrit root √dhṛ, set theory & Category Error
+│   │   │   ├── core_ontology_and_dharma.md    # Sanskrit root √dhṛ, set theory & Inflorescence Model
 │   │   │   ├── cosmology_and_brahmanda.md     # Brahmāṇḍa horizon, Dark Energy & Bondi accretion
 │   │   │   ├── biophysics_and_syncytia.md     # 37T cell hierarchy, membrane & cellular Dharma
 │   │   │   ├── cognitive_and_psychology.md    # Sagawa-Ueda bound, Ariṣaḍvarga & Viveka Veto
@@ -126,7 +126,7 @@ Project_writeup_1/
 │   │   ├── pdfs/                # Publication-grade vector PDF outputs
 │   │   ├── issues_log.md        # Comprehensive technical calculation & proof archive
 │   │   ├── review.md            # Peer review editorial verdict & adversarial defense log
-│   │   ├── base.md              # Deconstructing Sanatan Dharm (foundational working hypothesis)
+│   │   ├── base.md              # Structural persistence mechanics and inflorescence model
 │   │   ├── cases_appendix.md    # Multi-scale applications (quantum to institutional)
 │   │   ├── entropy.md           # Non-equilibrium thermodynamic dissipation metrics
 │   │   └── rough.md             # Scratchpad & exploratory calculations

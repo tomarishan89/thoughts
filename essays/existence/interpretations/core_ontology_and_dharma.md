@@ -41,12 +41,12 @@ $\mathcal{D}_T$ represents the comprehensive space of all physically viable, dis
 
 ---
 
-## 3. The Category Error Paradox & The Inflorescence Model
+## 3. Set-Theoretic Subsetting & The Inflorescence Model
 
 ```
                          THE INFLORESCENCE BLOOM MODEL
                                        │
-                      [SANATAN DHARM: THE TOTAL BLOOM]
+                      [THE TOTAL STRUCTURAL BLOOM: 𝒟_T]
                       𝒟_T = ⋃_t ⋃_i D_𝔗𝔪^i  (Universal Set)
                                        │
          ┌─────────────────────────────┼─────────────────────────────┐
@@ -56,17 +56,14 @@ $\mathcal{D}_T$ represents the comprehensive space of all physically viable, dis
 (Cellular Engine)             (Human Organism)              (Solar Star Core)
 ```
 
-### The Category Error in Philosophical Discourse
+### Universal Matrix vs. Localized Instantiation
 1. **Universal Matrix ( $\mathcal{D}_T$ ):** The infinite set-theoretic union of all operational principles across all scales and epochs.
 2. **Localized Entity ( $E^i$ ):** A finite locus with bounded spatial and phase-space measure ( $\mu(E^i(t)) < \infty$ ).
-3. **The Logical Fallacy:** The assertion *"I practice / embody Sanatan Dharm"* commits a category error identical to a single electron declaring:
-> *"I embody the total set of all quantum electrodynamic, chromodynamic, and general relativistic field equations."*
-
-An individual entity cannot "be" Sanatan Dharm. An entity merely instantiates its localized proper subset:
+3. **Proper Subsetting:** A finite physical system does not embody the total universal matrix of all physical laws; it is governed by and instantiates a localized proper subset:
 
 $$\boxed{D_{\mathfrak{Im}}^i(t) \subset \mathcal{D}_T}$$
 
-### The Failure of Cross-Domain Overreach (*Paradharma*):
+### The Mechanics of Cross-Domain Overreach (*Paradharma*):
 Structural failure occurs when an entity attempts to execute operators belonging to $\mathcal{D}_T \setminus D_{\mathfrak{Im}}^i(t)$ for which it lacks the physical substrate ( $\mathcal{F}_{\mathbb{R}}^i$ ), violating its localized conservation bounds (*"Paradharmo bhayāvahaḥ"*, Bhagavad Gita 3.35).
 
 ---
