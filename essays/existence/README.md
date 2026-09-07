@@ -17,7 +17,7 @@ The Tier I physics framework derives **14 cosmological predictions** from the Sc
 | 5 | $M_{\text{parent}}$ | $4.65 \times 10^{22} M_\odot$ | — (consistent with ADAF state) | §6.7.1, §6.15.3 |
 | 6 | $\Omega_{\text{DM}}$ | $0.266$ (renormalized) | **+0.38%** ( $0.265 \pm 0.007$ ) | §6.8.1 |
 | 7 | $T_{\text{dS}}$ | $3.9 \times 10^{-30}$ K | — ( $2T_H$ horizon duality) | §6.7.7 |
-| 8 | CMB TT spectrum | RMS 4.0% | 4.0% residual vs Planck 2018 | §6.9 |
+| 8 | CMB TT spectrum | RMS 0.51% (dynamic inflow) | 0.51% residual vs Planck 2018 (peak 1: 0.00%) | §6.9.7 |
 | 9 | BH echoes | $A = 8.3 \times 10^{-5}$ | consistent ( $< 0.40$ GWTC-3) | §6.10 |
 | 10 | $n_s$ | $0.9624$ | **0.6σ** ( $0.9649 \pm 0.0042$ ) | §6.11 |
 | 11 | $r$ | $3.9 \times 10^{-3}$ | consistent ( $< 0.036$, LiteBIRD target) | §6.11 |
@@ -47,7 +47,7 @@ You can explore and query this research corpus interactively through Google Note
 | File | Type | Description |
 | :--- | :--- | :--- |
 | [`draft.md`](draft.md) | **Flagship Manuscript** | The complete 6-section formal mathematical physics paper containing axiomatic foundations, level-set kinematics, operator Temporal Triad with 292 closed proof milestones across 63 peer-review iterations. |
-| [`tier1_physics_framework.md`](tier1_physics_framework.md) | **Tier I Physics** | The quantitative cosmological engine: 13 predictions from ECSK + horizon identity. Baryogenesis (§6.8), CMB (§6.9), BH echoes (§6.10), primordial spectrum (§6.11), CMB temperature (§6.12), $A_s$ wall (§6.13), low-$\ell$ CMB suppression & Kerr alignment (§6.14). |
+| [`tier1_physics_framework.md`](tier1_physics_framework.md) | **Tier I Physics** | The quantitative cosmological engine: 14 predictions from ECSK + horizon identity. Baryogenesis (§6.8), CMB (§6.9), BH echoes (§6.10), primordial spectrum (§6.11), CMB temperature (§6.12), $A_s$ wall (§6.13), low-$\ell$ CMB suppression & Kerr alignment (§6.14). |
 | [`tier2_cosmological_ontology.md`](tier2_cosmological_ontology.md) | **Tier II Ontology** | Multi-scale ontological mappings: cosmic engine ↔ biological engines, dark matter as structural skeleton, 30/70 active-passive universality. |
 | [`tier2_tools_perception.md`](tier2_tools_perception.md) | **Tier II Perception** | New physics insights through ontological lenses: DM as passive transport, BH echoes as internal acoustics, CMB as engine exhaust. |
 | [`interpretation.md`](interpretation.md) | **Master Ontological Treatise** | Comprehensive companion paper establishing dimensional semantic transduction, classical Sanskrit ontological mapping, and indexing the 5 specialized domain modules. |
@@ -90,7 +90,7 @@ R_s ≡ R_H  +  H₀ = 67.4 km/s/Mpc
   └── ECSK torsion bounce (Planck density)
         ├── Hehl-Datta → ε_CP(T) → η = 6.1×10⁻¹⁰
         │     ├── Ω_b h² = 0.02228                             [#4]
-        │     ├── Ω_DM = 1/3 − Ω_b                             [#6]
+        │     ├── Ω_DM = 1/3 − Ω_b → 0.266 (dynamic inflow)     [#6]
         │     └── T_CMB = 2.723 K                               [#12]
         ├── Semiclassical Parker Modes + SO(10) GUT Loop
         │     ├── H_b = (α_GUT / 2π) M_Pl = 9.689×10¹⁵ GeV
