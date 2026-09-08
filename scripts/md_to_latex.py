@@ -174,13 +174,14 @@ def main():
     if args.all:
         target_files = [
             "essays/existence/draft.md",
+            "essays/existence/tier1_physics_framework.md",
             "essays/existence/interpretation.md",
             "essays/existence/dialogues_and_explorations.md",
             "essays/existence/interpretations/core_ontology_and_dharma.md",
             "essays/existence/interpretations/cosmology_and_brahmanda.md",
             "essays/existence/interpretations/biophysics_and_syncytia.md",
-            "essays/existence/interpretations/cognitive_and_psychology.md",
-            "essays/existence/interpretations/societal_and_institutional.md",
+            "essays/cognitive_social_extensions/cognitive_and_psychology.md",
+            "essays/cognitive_social_extensions/societal_and_institutional.md",
         ]
         for f in target_files:
             convert_file(f)

@@ -11,7 +11,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 HOOK_CONTENT = """#!/bin/sh
 # Git pre-commit hook for Vidyaman Research Repository
-# Lints all staged Markdown files for LaTeX syntax, GFM collisions, and broken links.
+# 1. Blocks accidental PDF binary commits to prevent git bloat.
+# 2. Lints all staged Markdown files for LaTeX syntax, GFM collisions, and broken links.
+
+echo "[PRE-COMMIT] Checking staged files for binary PDF bloat..."
+python scripts/check_staged_pdfs.py
+PDF_RESULT=$?
+if [ $PDF_RESULT -ne 0 ]; then
+    exit 1
+fi
 
 echo "[PRE-COMMIT] Running Markdown and LaTeX linter on staged files..."
 python scripts/lint_markdown.py --staged
@@ -20,7 +28,7 @@ RESULT=$?
 if [ $RESULT -ne 0 ]; then
     echo ""
     echo "❌ [PRE-COMMIT BLOCKED] Commit rejected due to Markdown/LaTeX linter errors."
-    echo "💡 Hint: Run 'mise run format' or check the line numbers reported above."
+    echo "💡 Hint: Check the line numbers reported above."
     exit 1
 fi
 
