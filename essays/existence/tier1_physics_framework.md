@@ -52,7 +52,7 @@ Tier I entities lack this $E_{\text{self}}^{\mathfrak{Im}}$; their fields projec
 
 $$h(X, Y) = g(X, Y) + i \, \omega(X, Y)$$
 
-satisfying compatibility with almost-complex operator $J$ ( $J^2 = -\mathbb{I}$, $\nabla J = 0$ ), Riemannian metric $g(JX, JY) = g(X, Y)$, fundamental symplectic form $\omega(X, Y) = g(JX, Y)$, and **Canonical Kähler Liouville 6-Form Volume Measure** $d\mu_h \equiv \frac{1}{3!} \omega \wedge \omega \wedge \omega = \sqrt{\det g(\mathbf{x}, \mathbf{y})} \, d^3x \, d^3y$. The Hilbert state space $\mathcal{H} = L^2(\Omega_{\mathbb{C}}, d\mu_h)$ has canonical inner product:
+satisfying compatibility with almost-complex operator $J$ ( $J^2 = -\mathbb{I}$, $\nabla J = 0$; for Tier I physical matter, this Kähler structure is standard since gauge-field phase space carries a canonical symplectic form with parallel complex structure $\nabla J = 0$, whereas biological state-space justification is deferred to Tier II), Riemannian metric $g(JX, JY) = g(X, Y)$, fundamental symplectic form $\omega(X, Y) = g(JX, Y)$, and **Canonical Kähler Liouville 6-Form Volume Measure** $d\mu_h \equiv \frac{1}{3!} \omega \wedge \omega \wedge \omega = \sqrt{\det g(\mathbf{x}, \mathbf{y})} \, d^3x \, d^3y$. The Hilbert state space $\mathcal{H} = L^2(\Omega_{\mathbb{C}}, d\mu_h)$ has canonical inner product:
 
 $$\boxed{d\mu_h \equiv \frac{1}{3!} \omega \wedge \omega \wedge \omega = \sqrt{\det g(\mathbf{x}, \mathbf{y})} \, d^3x \, d^3y, \qquad \langle \psi_1, \psi_2 \rangle_{\mathcal{H}} \equiv \int_{\Omega_{\mathbb{C}}} \bar{\psi}_1(\mathbf{x}, \mathbf{y}) \, \psi_2(\mathbf{x}, \mathbf{y}) \, d\mu_h}$$
 
@@ -93,6 +93,8 @@ $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \ri
 The Bekenstein-Hawking black hole horizon entropy of the universe identically matches the Gibbons-Hawking cosmological de Sitter horizon entropy:
 
 $$\boxed{S_{\text{BH}}(\mathcal{U}) = \frac{k_B c^3 \mathrm{Area}(\partial \mathcal{U})}{4 G \hbar} = \frac{k_B \pi c^5}{G \hbar H_0^2} \equiv S_{\text{GH}}(\mathcal{U}) \approx 10^{122} \, k_B}$$
+
+> **Remark (Epistemic Status: Prior Art & Interpretive Boundary).** The algebraic identity $R_s(M_{\text{Hubble}}) \equiv R_{\text{Hubble}}$ is exact for a spatially flat critical-density universe and has been noted previously in the cosmological literature (Dicke, 1957; Stuckey, 1994; Peacock, 2000; Melia, 2012). What follows — the physical interpretation of this identity as establishing our observable universe as the interior of an open black hole embedded in an asymptotic parent spacetime, and the ECSK torsion bounce replacing the initial Big Bang singularity — constitutes an *interpretive hypothesis*, not a deductive consequence of the geometric identity itself. The falsifiable physical content of this framework lies exclusively in its downstream quantitative predictions: the dark energy equation of state $w(z)$, the cosmic matter fraction $\Omega_m$, the CMB acoustic peak structure, and the primordial tensor-to-scalar ratio $r$, which are systematically confronted with observational data in §6.6–§6.9.
 
 Under the Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion framework (Popławski, 2010), fermion spin density $s^{\mu\nu\rho} \equiv \frac{i\hbar}{4}\bar{\psi} \, \gamma^{[\mu}\gamma^\nu\gamma^{\rho]}\psi$ generates non-singular repulsive gravitational stresses $-\frac{1}{2}\kappa^2 s_{\mu\nu\rho}s^{\mu\nu\rho}$ at trans-nuclear densities ( $\rho \sim 10^{54} \, \mathrm{kg/m^3}$ ), replacing the Big Bang point singularity with a non-singular cosmic bounce at minimum scale factor $a_{\text{min}} = a_0 (\rho_c / \rho_{\text{Planck}})^{1/6} > 0$ where $H^2 = \frac{8\pi G}{3}\rho(1 - \rho/\rho_{\text{torsion}}) = 0$. The interior metric coordinates undergo a signature inversion ( $g_{rr} \leftrightarrow g_{tt}$ ), establishing our expanding universe $\mathcal{U}_{\text{BH}}$ as the interior of an open black hole embedded in a parent spacetime, continuously fueled by trans-horizon relativistic Bondi-Hoyle-Littleton matter accretion:
 
@@ -1089,6 +1091,17 @@ Conversely, under metabolic deprivation or harvest decouple ( $\eta_{AB} \to 0$ 
 
 $$\boxed{\dot{E}_{\text{fuel}}(t) < \dot{E}_{\text{crit}} \implies \frac{d\mathcal{G}_{\text{Ego}}}{dt} < 0 \implies \mathcal{G}_{\text{Ego}}[E(t)] \longrightarrow 0 \quad (\text{Exergy Depletion  and  Lysis})}$$
 
+> **Remark (Sign Convention Clarification: Subsystem vs. Universe).** There is no contradiction between the global Lyapunov relaxation $\frac{d\mathcal{G}_{\text{univ}}}{dt} \le 0$ and the local survival condition $\frac{d\mathcal{G}_{\text{Ego}}}{dt} \ge 0$:
+> 1. $\mathcal{G}_{\text{univ}} = \mathcal{G}_{\text{Ego}} + \mathcal{G}_{\text{env}}$ is the free energy of the closed universe (entity + environment). Its monotonic decrease $\frac{d\mathcal{G}_{\text{univ}}}{dt} \le 0$ is the Second Law of Thermodynamics (Lyapunov stability of the global state).
+> 2. $\mathcal{G}_{\text{Ego}}$ is the free energy of the open subsystem bounded by $\partial E$. Maintaining or increasing $\mathcal{G}_{\text{Ego}}$ ( $\frac{d\mathcal{G}_{\text{Ego}}}{dt} \ge 0$ ) requires continuous exergy influx $\dot{E}_{\text{fuel}} \ge T_{\text{ambient}} \dot{S}_{\text{gen}}^{\text{internal}}$ across $\partial E$.
+> 3. The coupled three-line balance establishes thermodynamic consistency:
+> $$\begin{aligned}
+> \frac{d\mathcal{G}_{\text{univ}}}{dt} &\le 0 \quad &&(\text{Isolated universe: Second Law / Lyapunov relaxation}) \\
+> \frac{d\mathcal{G}_{\text{Ego}}}{dt} &= \dot{E}_{\text{fuel}} - T_{\text{ambient}} \dot{S}_{\text{gen}}^{\text{internal}} \ge 0 \quad &&(\text{Open entity: exergy-driven boundary persistence}) \\
+> \frac{d\mathcal{G}_{\text{env}}}{dt} &= -\dot{E}_{\text{fuel}} - T_{\text{ambient}} \dot{S}_{\text{gen}}^{\text{env}} < -\frac{d\mathcal{G}_{\text{Ego}}}{dt} \quad &&(\text{Environment: entropy sink absorbing exported dissipation})
+> \end{aligned}$$
+> Summing the subsystem rates gives $\frac{d\mathcal{G}_{\text{univ}}}{dt} = \frac{d\mathcal{G}_{\text{Ego}}}{dt} + \frac{d\mathcal{G}_{\text{env}}}{dt} = -T_{\text{ambient}} (\dot{S}_{\text{gen}}^{\text{internal}} + \dot{S}_{\text{gen}}^{\text{env}}) \le 0$, satisfying the Second Law globally while permitting open non-equilibrium structure maintenance locally.
+
 ---
 
 #### 2.3.5 Theorem 6 (First-Principles Derivation of Optimal Predictive Investment Ratio $\chi^*$ )
@@ -2029,7 +2042,7 @@ The multi-scale continuity of the framework is summarized in the **Universal Exi
 
 $$-\frac{16\pi G\hbar^2}{c^4\sqrt{h}} G_{ijkl} \frac{\delta^2 \Psi}{\delta h_{ij} \delta h_{kl}} - \frac{\sqrt{h} c^4}{16\pi G} ({}^{(3)}R - 2\Lambda) \Psi + \hat{\mathcal{H}}_{\text{matter}} \Psi = 0$$
 
-- *Status:* Formally resolved on minisuperspace in §1.1; full non-perturbative quantum gravity diffeomorphism closure remains an active field frontier.
+- *Status:* Correctly applied (following DeWitt, 1967) on the FLRW minisuperspace sector relevant to §1.1; this constitutes a standard application of existing quantization, not a new result. Full non-perturbative quantum gravity diffeomorphism closure remains an open frontier in the field at large.
 2. **Topological Quantum Field Theory (TQFT) Cobordism Invariants of Worldvolumes:**
 - *Equation:* Functorial bordism map $\mathcal{Z}: \mathbf{Bord}_n \to \mathbf{Vect}_{\mathbb{C}}$ satisfying:
 
@@ -5223,3 +5236,7 @@ $$\text{SNR}_{\text{DESI Y3}} \approx 4.6\text{--}4.9\sigma, \qquad \text{SNR}_{
 51. **Parker, L.** (1969). "Quantized Fields and Particle Creation in Expanding Universes. I". *Physical Review*, 183(5), 1057–1068.
 52. **Zel'dovich, Y. B., & Starobinsky, A. A.** (1971). "Particle production and vacuum polarization in an anisotropic gravitational field". *Soviet Physics JETP*, 34(6), 1159–1166.
 53. **Desai, S., & Popławski, N. J.** (2016). "Non-parametric reconstruction of an inflaton potential from Einstein-Cartan-Sciama-Kibble gravity with particle production". *Physics Letters B*, 755, 183–189.
+54. **Dicke, R. H.** (1957). "Gravitation without a Principle of Equivalence". *Reviews of Modern Physics*, 29(3), 363–376.
+55. **Stuckey, W. M.** (1994). "The observable universe inside a black hole". *American Journal of Physics*, 62(9), 788–795.
+56. **Peacock, J. A.** (2000). *Cosmological Physics*. Cambridge: Cambridge University Press.
+57. **Melia, F.** (2012). "The Cosmic Horizon". *Monthly Notices of the Royal Astronomical Society*, 422(2), 1418–1424.
