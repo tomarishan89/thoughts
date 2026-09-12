@@ -1,14 +1,14 @@
-# Tier 1 Master Framework: Relativistic Continuum Mechanics, Horizon Thermodynamics, and Cosmological Applications
+# A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Relativistic Spacetime and Cosmological Horizons
 
 **Author:** Ishan Tomar  
-**Scope:** Strict reactive limit ( $\chi^* \equiv 0$ ), formalizing spacetime continuum mechanics and cosmological horizons without biological or cognitive parameters.  
+**Scope:** Relativistic continuum mechanics and non-equilibrium horizon thermodynamics, applied to spacetime geometry and cosmological boundary conditions.  
 **Companion Document To:** *A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Relativistic Spacetime and Cosmological Horizons* ([`tier1_relativistic_cosmology.pdf`](pdfs/tier1_relativistic_cosmology.pdf))
 
 ---
 
 ## Executive Abstract
 
-We present an axiomatic mathematical physics framework formulating relativistic spacetime as an active viscoelastic continuum and cosmological horizons as physical, non-equilibrium thermodynamic trapping membranes. Operating strictly in the reactive limit ( $\chi^* \equiv 0$ ), physical entities sweep out 4-dimensional worldtubes within an Arnowitt-Deser-Misner (ADM) $3+1$ foliation $\mathcal{M}^4 \cong \mathbb{R} \times \Sigma_t$ and are mapped to a canonical 6-dimensional complexified cotangent phase space $\Omega_{\mathbb{C}} = T^*\Sigma_t \cong \mathbb{C}^3$ equipped with a symplectic Kähler Liouville volume measure $d\mu_h = \frac{1}{3!}\omega \wedge \omega \wedge \omega$.
+We present an axiomatic mathematical physics framework formulating relativistic spacetime as an active viscoelastic continuum and cosmological horizons as physical, non-equilibrium thermodynamic trapping membranes. Physical entities sweep out 4-dimensional worldtubes within an Arnowitt-Deser-Misner (ADM) $3+1$ foliation $\mathcal{M}^4 \cong \mathbb{R} \times \Sigma_t$ and are mapped to a canonical 6-dimensional complexified cotangent phase space $\Omega_{\mathbb{C}} = T^*\Sigma_t \cong \mathbb{C}^3$ equipped with a symplectic Kähler Liouville volume measure $d\mu_h = \frac{1}{3!}\omega \wedge \omega \wedge \omega$.
 
 By treating the observable universe as an open, non-singular black hole interior bounded by an active trapping horizon ( $\partial\mathcal{U} \equiv \mathcal{H}_{\text{Hubble}} = \mathcal{H}_{\text{Schwarzschild}}$ ) embedded in an ambient parent spacetime with Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion dynamics, the framework eliminates the foundational crises of concordance cosmology ( $\Lambda\text{CDM}$ ) with **zero free phenomenological parameters**:
 1. **The Exact Cosmic Energy Budget:** Tree-level geometric dark energy $\Omega_\Lambda = 2/3 \approx 0.667$ and total matter fraction $\Omega_m = 1/3 \approx 0.333$ derived from the Kodama-Hayward horizon surface tension.
@@ -30,24 +30,26 @@ Standard Friedmann-Lemaître-Robertson-Walker (FLRW) concordance cosmology ( $\L
 3. **The Cosmic Coincidence Problem:** Matter dilutes as $a^{-3}$ while $\rho_\Lambda = \text{const}$, leaving the present epoch $\rho_m \sim \rho_\Lambda$ dynamically unexplained.
 4. **Persistent Cosmological Tensions:** High-significance conflicts between early- and late-universe probes (the $> 5\sigma$ $H_0$ tension, the $2.5\sigma$ $S_8$ cosmic shear tension, and the $\approx 27\%$ massive cluster count deficit observed by eROSITA and Planck-SZ).
 
-### 1.2 The Active Thermodynamic Engine
+### 1.2 The Cosmological Horizon as an Open Thermodynamic Engine
 
-In non-equilibrium continuum mechanics, any localized ordered entity persistent over non-zero duration $\Delta t$ must be an **open thermodynamic engine**:
+The Hubble horizon $\partial\mathcal{U} \equiv \mathcal{H}_{\text{Hubble}} = \mathcal{H}_{\text{Schwarzschild}}$ is a physical, non-equilibrium trapping membrane through which mass-energy continuously accretes from the ambient parent spacetime. The observable universe is therefore not an isolated Cauchy slice but an **open thermodynamic engine**: it receives free-energy flux across its horizon boundary, converts that flux into internal work (gravitational clustering, nuclear burning, radiation pressure), and exhausts generated entropy outward across the same trapping membrane.
 
-$$\boxed{E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle}$$
+In the language of non-equilibrium continuum mechanics, this engine is characterised by an ordered internal substrate $\mathcal{S}_{\text{fuel}}$ (the metric, matter fields, and accretion flow) and an active operational cycle $\mathcal{E}$ (the Kodama-Hayward surface gravity driving trans-horizon ADAF inflow):
 
-where $\mathcal{S}_{\text{fuel}}$ is an ordered internal substrate and $\mathcal{E}$ is an active operational cycle that extracts exergy from ambient environmental fluxes, performs internal work, and exhausts generated entropy across its boundary.
+$$\boxed{\mathcal{U} \equiv \langle \mathcal{S}_{\text{fuel}},\, \mathcal{E} \rangle}$$
 
-### 1.3 The Fundamental Existence Invariant
+where $\mathcal{S}_{\text{fuel}}$ encodes the stress-energy tensor $T_{\mu\nu}$ and horizon area $A$, and $\mathcal{E}$ is the Kodama-vector-conserved accretion cycle that extracts exergy from the parent ambient spacetime, performs internal gravitational work, and exhausts irreversible entropy across the trapping membrane $\mathcal{H}$.
 
-For an entity $E$ occupying spatial domain $\Omega_{\mathbb{R}}(t)$ with boundary $\partial E(t)$, existence over interval $[t_1, t_2]$ requires the simultaneous satisfaction of two coupled continuum conditions:
+### 1.3 The Horizon Confinement & Thermodynamic Entropy Balance Conditions
+
+For the cosmological horizon interior occupying spatial domain $\Omega_{\mathbb{R}}(t)$ with trapping boundary $\partial\mathcal{U}(t) \equiv \mathcal{H}$, structural persistence of the bounded continuum over the interval $[t_1, t_2]$ requires the simultaneous satisfaction of two coupled continuum conditions:
 
 $$\boxed{\begin{cases}
-\phi(\mathbf{x}, t) \equiv \sigma_Y(\mathbf{x}, t) - \sigma_{\text{eff}}(\boldsymbol{\sigma}(\mathbf{x}, t)) \ge 0 & \forall \mathbf{x} \in \partial E(t) \quad (\textbf{Mechanical Boundary Confinement}) \\[8pt]
-\dot{S}_{\text{internal}}(t) = \oint_{\partial E(t)} \frac{\mathbf{J}_q \cdot \hat{n}}{T} \, dA + \int_{E(t)} \dot{\sigma}_{\text{irr}} \, dV \le 0 & (\textbf{Thermodynamic Negentropy Harvesting})
+\phi(\mathbf{x}, t) \equiv \sigma_Y(\mathbf{x}, t) - \sigma_{\text{eff}}(\boldsymbol{\sigma}(\mathbf{x}, t)) \ge 0 & \forall \mathbf{x} \in \partial\mathcal{U}(t) \quad (\textbf{Mechanical Horizon Confinement}) \\[8pt]
+\dot{S}_{\text{internal}}(t) = \oint_{\partial\mathcal{U}(t)} \frac{\mathbf{J}_q \cdot \hat{n}}{T} \, dA + \int_{\mathcal{U}(t)} \dot{\sigma}_{\text{irr}} \, dV \le 0 & (\textbf{Thermodynamic Entropy Export across }\mathcal{H})
 \end{cases}}$$
 
-Failure of either condition results in structural dissolution (tensile fracture, compressive buckling, or entropic thermalization).
+Failure of Condition 1 ( $\phi < 0$ ) results in gravitational collapse of the trapping horizon (tidal disruption or Penrose-Hawking singularity formation). Failure of Condition 2 ( $\dot{E}_{\text{fuel}} < T_{\text{amb}}\dot{S}_{\text{gen}}$ ) results in entropic thermalization — the cessation of ordered large-scale structure and gravitational clustering.
 
 ![ADM 3+1 Spacetime Foliation and Canonical 6D Complexified Phase Space](figures/fig1_adm_phase_space.png)
 
