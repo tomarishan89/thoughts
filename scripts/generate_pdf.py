@@ -34,7 +34,9 @@ def get_browser_path():
             return c
     return None
 
-def markdown_to_html_academic(md_content, title="Academic Paper"):
+import base64
+
+def markdown_to_html_academic(md_content, title="Academic Paper", base_dir=None):
     """
     Convert Markdown content into a self-contained HTML page
     with MathJax 3 support and publication-ready academic styling.
@@ -71,14 +73,55 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
         return f"\n\n@@CODEBLOCK_{idx}@@\n\n"
     content = re.sub(r'```([a-zA-Z0-9_-]*)\n(.*?)```', save_code_block, content, flags=re.DOTALL)
     
-    # 4. Process Markdown Headings
-    content = re.sub(r'^# (.*?)$', r'<h1>\1</h1>', content, flags=re.MULTILINE)
-    content = re.sub(r'^## (.*?)$', r'<h2>\1</h2>', content, flags=re.MULTILINE)
-    content = re.sub(r'^### (.*?)$', r'<h3>\1</h3>', content, flags=re.MULTILINE)
-    content = re.sub(r'^#### (.*?)$', r'<h4>\1</h4>', content, flags=re.MULTILINE)
+    # 4. Process Markdown Headings (H1 through H6)
+    # Strictly isolates headings with double newlines so that following prose
+    # is never fused into heading blocks or paragraph text.
+    def replace_heading(match):
+        level = len(match.group(1))
+        heading_text = match.group(2).strip()
+        return f"\n\n<h{level}>{heading_text}</h{level}>\n\n"
+    
+    content = re.sub(r'^\s*(#{1,6})\s+(.*?)$', replace_heading, content, flags=re.MULTILINE)
 
-    # 5. Process Markdown Links [text](url)
-    content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', content)
+    # 5a. Process Markdown Images ![caption](src)
+    def render_image(match):
+        caption = match.group(1).strip()
+        img_src = match.group(2).strip()
+        
+        resolved = None
+        candidates = [
+            img_src,
+            os.path.join(base_dir, img_src) if base_dir else None,
+            os.path.join(os.getcwd(), img_src),
+            os.path.join(os.getcwd(), "papers", "tier1_cosmology", img_src),
+            os.path.join(os.getcwd(), "papers", "tier1_cosmology", "figures", os.path.basename(img_src)),
+            os.path.join(os.getcwd(), "src", "explorations", "existence", "figures", os.path.basename(img_src)),
+            os.path.join("C:/Users/tomar/.gemini/antigravity-ide/brain/b724655d-075b-4339-904c-551d3d86ee66", os.path.basename(img_src))
+        ]
+        for c in candidates:
+            if c and os.path.exists(c) and os.path.isfile(c):
+                resolved = os.path.abspath(c)
+                break
+        
+        if resolved:
+            try:
+                with open(resolved, 'rb') as f:
+                    b64 = base64.b64encode(f.read()).decode('utf-8')
+                ext = os.path.splitext(resolved)[1].lower().replace('.', '')
+                if ext == 'jpg': ext = 'jpeg'
+                uri = f"data:image/{ext};base64,{b64}"
+            except Exception:
+                uri = f"file:///{resolved.replace(os.sep, '/')}"
+        else:
+            uri = img_src
+            
+        cap_html = f"<figcaption>{caption}</figcaption>" if caption else ""
+        return f"\n\n<figure class='academic-figure'><img src='{uri}' alt='{html.escape(caption)}' />{cap_html}</figure>\n\n"
+
+    content = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', render_image, content)
+
+    # 5b. Process Markdown Links [text](url)
+    content = re.sub(r'(?<!\!)\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', content)
 
     # 6. Process Bold, Italic & Inline Code (outside math)
     content = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', content)
@@ -104,7 +147,7 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
             formatted_paras.append(f"<div class='math-display'>{p}</div>")
         elif p.startswith('@@CODEBLOCK_') and p.endswith('@@'):
             formatted_paras.append(p)
-        elif p.startswith('<h') or p.startswith('<hr') or p.startswith('<blockquote'):
+        elif p.startswith('<h') or p.startswith('<hr') or p.startswith('<blockquote') or p.startswith('<figure'):
             formatted_paras.append(p)
         elif p.startswith('|'):
             # Table formatting
@@ -137,7 +180,7 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
     for idx, (lang, code_text) in enumerate(code_blocks):
         escaped_code = html.escape(code_text)
         if lang == 'mermaid':
-            block_html = f"<div class='mermaid-diagram'><pre class='mermaid-code'>{escaped_code}</pre></div>"
+            block_html = f"<div class='mermaid'>{escaped_code}</div>"
         else:
             block_html = f"<pre><code class='language-{lang}'>{escaped_code}</code></pre>"
         body = body.replace(f"@@CODEBLOCK_{idx}@@", block_html)
@@ -172,6 +215,14 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
     }};
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {{
+        if (window.mermaid) {{
+            mermaid.initialize({{ startOnLoad: true, theme: 'neutral' }});
+        }}
+    }});
+    </script>
     <style>
         @page {{
             size: letter;
@@ -229,6 +280,23 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
             margin-bottom: 4px;
             page-break-after: avoid;
         }}
+        h5 {{
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #1b263b;
+            margin-top: 10px;
+            margin-bottom: 3px;
+            page-break-after: avoid;
+        }}
+        h6 {{
+            font-size: 9pt;
+            font-weight: bold;
+            font-style: italic;
+            color: #4a5568;
+            margin-top: 8px;
+            margin-bottom: 2px;
+            page-break-after: avoid;
+        }}
         p {{
             margin-bottom: 8px;
             text-align: justify;
@@ -248,6 +316,32 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
             margin-bottom: 4px;
             text-align: justify;
         }}
+        figure.academic-figure {{
+            margin: 22px auto;
+            text-align: center;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            max-width: 96%;
+        }}
+        figure.academic-figure img {{
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            background: #ffffff;
+        }}
+        figure.academic-figure figcaption {{
+            font-size: 9.5pt;
+            color: #495057;
+            margin-top: 8px;
+            font-style: italic;
+            line-height: 1.45;
+            text-align: center;
+            max-width: 92%;
+            margin-left: auto;
+            margin-right: auto;
+        }}
         blockquote {{
             border-left: 3.5px solid #2b5c8f;
             background: #f4f6f9;
@@ -263,10 +357,21 @@ def markdown_to_html_academic(md_content, title="Academic Paper"):
             border-radius: 4px;
             font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
             font-size: 8pt;
-            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
             border: 1px solid #dee2e6;
             margin: 10px 0;
             page-break-inside: avoid;
+        }}
+        .mermaid {{
+            text-align: center;
+            margin: 16px auto;
+            page-break-inside: avoid;
+            background: #ffffff;
+        }}
+        .mermaid svg {{
+            max-width: 100% !important;
+            height: auto !important;
         }}
         .table-container {{
             margin: 14px 0;
@@ -329,17 +434,18 @@ def convert_md_to_pdf(input_md_path, output_pdf_path=None):
     
     if output_pdf_path is None:
         base = os.path.splitext(os.path.basename(input_md_path))[0]
-        os.makedirs("essays/existence/pdfs", exist_ok=True)
-        output_pdf_path = os.path.abspath(os.path.join("essays/existence/pdfs", f"{base}.pdf"))
+        parent_dir = os.path.dirname(input_md_path)
+        output_pdf_path = os.path.abspath(os.path.join(parent_dir, "pdfs", f"{base}.pdf"))
     else:
         output_pdf_path = os.path.abspath(output_pdf_path)
-        os.makedirs(os.path.dirname(output_pdf_path), exist_ok=True)
+    os.makedirs(os.path.dirname(output_pdf_path), exist_ok=True)
     
     with open(input_md_path, 'r', encoding='utf-8') as f:
         md_text = f.read()
     
     title = os.path.splitext(os.path.basename(input_md_path))[0].replace('_', ' ').title()
-    html_content = markdown_to_html_academic(md_text, title=title)
+    base_dir = os.path.dirname(os.path.abspath(input_md_path))
+    html_content = markdown_to_html_academic(md_text, title=title, base_dir=base_dir)
     
     with tempfile.NamedTemporaryFile('w', delete=False, suffix='.html', encoding='utf-8') as temp_html:
         temp_html.write(html_content)
@@ -351,11 +457,11 @@ def convert_md_to_pdf(input_md_path, output_pdf_path=None):
             "--headless=new",
             "--disable-gpu",
             "--no-sandbox",
-            "--virtual-time-budget=4000",
+            "--virtual-time-budget=25000",
             f"--print-to-pdf={output_pdf_path}",
             f"file:///{os.path.abspath(temp_html_path).replace(os.sep, '/')}"
         ]
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
         if os.path.exists(output_pdf_path) and os.path.getsize(output_pdf_path) > 0:
             print(f"[OK] PDF Generated: {os.path.relpath(output_pdf_path)} ({os.path.getsize(output_pdf_path) // 1024} KB)")
             return True

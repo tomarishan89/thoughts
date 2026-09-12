@@ -46,3 +46,7 @@ essays/existence/latest_reply_tmp.md
 email_*
 mail_*
 
+# Compiled PDF binaries (prevent repo bloat)
+*.pdf
+pdfs/
+**/pdfs/

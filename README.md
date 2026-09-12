@@ -1,4 +1,4 @@
-# Vidyaman: Ontological Physics & Non-Equilibrium Continuum Research
+# Ontological Physics & Non-Equilibrium Continuum Research
 
 > **A multi-scale theoretical framework integrating continuum mechanics, non-equilibrium thermodynamics, open relativistic horizons, and classical Sanskrit ontology.**
 
@@ -77,6 +77,7 @@ The Tier I physics framework (Einstein-Cartan-Sciama-Kibble gravity with torsion
 ## ⚡ Theoretical Highlights & Core Invariants
 
 ### 1. The Operator-Theoretic Temporal Triad
+
 Operational existence across all cognitive and biological scales is mediated by a closed, three-phase causal transduction loop:
 ```mermaid
 graph TD
@@ -87,6 +88,7 @@ graph TD
 ```
 
 ### 2. Cosmological Black Hole Embedding & 12-Prediction Engine
+
 Our observable universe satisfies the exact **Schwarzschild-Hubble Horizon Identity**:
 
 $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \right) = \frac{c}{H_0} \equiv R_{\text{Hubble}} \approx 1.37 \times 10^{26} \, \mathrm{m}}$$
@@ -94,6 +96,7 @@ $$\boxed{R_s(M_{\text{Hubble}}) = \frac{2 G}{c^2} \left( \frac{c^3}{2 G H_0} \ri
 Combined with ECSK torsion gravity, this identity generates the 12 predictions above — including the spectral index $n_s = 0.9624$ (within 0.6σ of Planck) and tensor-to-scalar ratio $r = 3.9 \times 10^{-3}$ (testable by LiteBIRD ~2032), both with **zero free parameters**.
 
 ### 3. Structural Set Theory: Root √dhṛ and the Universal Invariant Matrix
+
 Rooted in the Sanskrit verbal root $\sqrt{\text{धृ}}$ (*dhṛ* — *"to hold, sustain, maintain structural integrity"*), the universal invariant matrix **$\mathcal{D}_T$** is defined as the uncreated, eternal set-theoretic union of all localized intrinsic generator algebras ( $D_{\mathfrak{Im}}^i(t)$ ):
 
 $$\mathcal{D}_T \equiv \bigcup_{t \in T} \bigcup_{i \in I(t)} D_{\mathfrak{Im}}^i(t)$$

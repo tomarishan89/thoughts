@@ -53,7 +53,7 @@ LATEX_PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \newcommand{\ImagPart}{\mathrm{Im}}
 
 \title{\textbf{A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Physical and Biological Existence}}
-\author{\textbf{Ishan Tomar} \\ \textit{Vidyaman Research Institute}}
+\author{\textbf{Ishan Tomar}}
 \date{\today}
 
 \begin{document}
@@ -86,11 +86,13 @@ def md_to_latex(md_content, title="Academic Paper"):
     content = re.sub(r'\$\$(.*?)\$\$', save_block_math, md_content, flags=re.DOTALL)
     content = re.sub(r'(?<!\\)\$(.*?)(?<!\\)\$', save_inline_math, content)
     
-    # 2. Convert Headings
-    content = re.sub(r'^# (.*?)$', r'\\section*{\1}', content, flags=re.MULTILINE)
-    content = re.sub(r'^## (.*?)$', r'\\section{\1}', content, flags=re.MULTILINE)
-    content = re.sub(r'^### (.*?)$', r'\\subsection{\1}', content, flags=re.MULTILINE)
-    content = re.sub(r'^#### (.*?)$', r'\\subsubsection{\1}', content, flags=re.MULTILINE)
+    # 2. Convert Headings (H1 through H6)
+    content = re.sub(r'^\s*######\s+(.*?)$', r'\\subparagraph{\1}', content, flags=re.MULTILINE)
+    content = re.sub(r'^\s*#####\s+(.*?)$', r'\\paragraph{\1}', content, flags=re.MULTILINE)
+    content = re.sub(r'^\s*####\s+(.*?)$', r'\\subsubsection{\1}', content, flags=re.MULTILINE)
+    content = re.sub(r'^\s*###\s+(.*?)$', r'\\subsection{\1}', content, flags=re.MULTILINE)
+    content = re.sub(r'^\s*##\s+(.*?)$', r'\\section{\1}', content, flags=re.MULTILINE)
+    content = re.sub(r'^\s*#\s+(.*?)$', r'\\section*{\1}', content, flags=re.MULTILINE)
     
     # 3. Handle Markdown Links [Text](url) -> \href{url}{Text} or \textbf{Text}
     def convert_link(match):

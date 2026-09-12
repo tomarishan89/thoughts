@@ -98,6 +98,25 @@ def lint_file(filepath):
                     issues.append((ln, "MATH_PADDING", f"Missing blank line after display math '$$'"))
             continue
 
+        # Check Heading Hygiene (Rule 6)
+        if stripped.startswith('#'):
+            if line.startswith(' ') or line.startswith('\t'):
+                issues.append((ln, "HEADING_INDENT", f"Heading '#' must start at column 0 without leading indentation"))
+            m_hd = re.match(r'^(#{1,10})(.*)$', stripped)
+            if m_hd:
+                hashes = m_hd.group(1)
+                rest = m_hd.group(2)
+                if len(hashes) > 6:
+                    issues.append((ln, "HEADING_DEPTH", f"Heading depth {len(hashes)} exceeds H6 (maximum depth is 6)"))
+                elif not rest.startswith(' ') and rest != '':
+                    issues.append((ln, "HEADING_SYNTAX", f"Heading missing space after '#' marker: '{stripped[:40]}'"))
+            
+            if i > 0 and lines[i-1].strip() != '' and not lines[i-1].strip().startswith('#') and not lines[i-1].strip().startswith('---'):
+                issues.append((ln, "HEADING_PADDING_BEFORE", f"Missing blank line before heading: '{stripped[:40]}'"))
+                
+            if i + 1 < len(lines) and lines[i+1].strip() != '' and not lines[i+1].strip().startswith('#'):
+                issues.append((ln, "HEADING_PADDING_AFTER", f"Missing blank line after heading: '{stripped[:40]}'"))
+
         # Check for accidental 3+ space indentation on non-list prose lines
         leading_spaces = len(line) - len(line.lstrip())
         is_list_item = bool(re.match(r'^\s*(\*|-|\d+\.)\s+', line))

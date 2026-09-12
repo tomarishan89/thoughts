@@ -10,7 +10,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 HOOK_CONTENT = """#!/bin/sh
-# Git pre-commit hook for Vidyaman Research Repository
+# Git pre-commit hook for Ontological Physics Repository
 # 1. Blocks accidental PDF binary commits to prevent git bloat.
 # 2. Lints all staged Markdown files for LaTeX syntax, GFM collisions, and broken links.
 
