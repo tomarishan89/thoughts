@@ -1,0 +1,67 @@
+name: Build Research Papers (md -> tex -> pdf)
+
+on:
+  push:
+    paths:
+      - "papers/**/*.md"
+      - "papers/**/BUILD.yaml"
+      - "scripts/build_paper.py"
+  workflow_dispatch:
+    inputs:
+      paper_dir:
+        description: "Paper directory to build (e.g. papers/tier1_cosmology). Leave empty to build all."
+        required: false
+        default: ""
+
+jobs:
+  build:
+    name: Rebuild changed papers
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2          # need HEAD^ to detect changed files
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Chromium (for headless PDF)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y chromium-browser
+
+      - name: Build papers (tex + pdf)
+        env:
+          CHROMIUM_PATH: /usr/bin/chromium-browser
+        run: |
+          if [ -n "${{ github.event.inputs.paper_dir }}" ]; then
+            python scripts/build_paper.py --paper "${{ github.event.inputs.paper_dir }}"
+          else
+            python scripts/build_paper.py --changed
+          fi
+
+      - name: Upload generated PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-papers
+          path: papers/**/pdfs/*.pdf
+          retention-days: 30
+
+      - name: Commit updated tex files back to repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage only .tex files that changed (PDFs are gitignored)
+          git add papers/**/*.tex 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No .tex changes to commit."
+          else
+            git commit -m "auto(build): update .tex from changed .md [skip ci]"
+            git push
+          fi

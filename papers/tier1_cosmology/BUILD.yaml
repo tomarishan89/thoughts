@@ -1,0 +1,11 @@
+# BUILD.yaml — Build manifest for papers/tier1_cosmology
+# Processed by: scripts/build_paper.py
+# Triggers: post-commit hook (local) and .github/workflows/build_papers.yml (CI)
+
+papers:
+  - name: "TIER1 Master Framework"
+    md: TIER1_MASTER_FRAMEWORK.md
+    tex: latex/TIER1_MASTER_FRAMEWORK.tex
+    pdf: pdfs/TIER1_MASTER_FRAMEWORK.pdf
+    author: "Ishan Tomar"
+    title: "A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Relativistic Spacetime and Cosmological Horizons"
