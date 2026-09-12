@@ -49,9 +49,9 @@ def md_to_latex(md: str, title: str, author: str) -> str:
     mblocks, minlines = [], []
 
     def sb(m):
-        i = len(mblocks); mblocks.append(m.group(1).strip()); return f"%%MB{i}%%"
+        i = len(mblocks); mblocks.append(m.group(1).strip()); return f"@@MB{i}@@"
     def si(m):
-        i = len(minlines); minlines.append(m.group(1).strip()); return f"%%MI{i}%%"
+        i = len(minlines); minlines.append(m.group(1).strip()); return f"@@MI{i}@@"
 
     c = re.sub(r'\$\$(.*?)\$\$', sb, md, flags=re.DOTALL)
     c = re.sub(r'(?<!\\)\$(.*?)(?<!\\)\$', si, c)
@@ -91,9 +91,9 @@ def md_to_latex(md: str, title: str, author: str) -> str:
     c = re.sub(r'(?<!\\)&', r'\\&', c)
 
     for i, b in enumerate(mblocks):
-        c = c.replace(f'%%MB{i}%%', f'\n\\begin{{equation}}\n{b}\n\\end{{equation}}\n')
+        c = c.replace(f'@@MB{i}@@', f'\n\\begin{{equation}}\n{b}\n\\end{{equation}}\n')
     for i, b in enumerate(minlines):
-        c = c.replace(f'%%MI{i}%%', f'${b}$')
+        c = c.replace(f'@@MI{i}@@', f'${b}$')
 
     return LATEX_PREAMBLE_TEMPLATE.format(title=title, author=author) + '\n\n' + c + '\n\n\\end{document}\n'
 

@@ -9,3 +9,10 @@ papers:
     pdf: pdfs/TIER1_MASTER_FRAMEWORK.pdf
     author: "Ishan Tomar"
     title: "A Continuum-Mechanical and Non-Equilibrium Thermodynamic Framework of Relativistic Spacetime and Cosmological Horizons"
+
+  - name: "TIER1 Relativistic Cosmology"
+    md: tier1_relativistic_cosmology.md
+    tex: latex/tier1_relativistic_cosmology.tex
+    pdf: pdfs/tier1_relativistic_cosmology.pdf
+    author: "Ishan Tomar"
+    title: "Tier-1 Relativistic Cosmology — Full Technical Companion"
