@@ -3,7 +3,11 @@
 **Date:** 2026-09-13  
 **System:** EPR-Bohm Singlet Spin-½ Pair  
 **Test:** CHSH Inequality $|S| \leq 2$ (classical bound)  
-**References:** Bell (1964); CHSH (1969); Aspect et al. (1982); Hensen et al. (2015)
+**References:** Bell (1964); CHSH (1969); Aspect et al. (1982); Hensen et al. (2015)  
+**Superseded By:** [`quantum_framework.md`](quantum_framework.md), [`shared_field_entanglement_analysis.md`](shared_field_entanglement_analysis.md), and `entanglement_chsh_experiment_v2.py`
+
+> [!NOTE]
+> This document analyzes the v1 CHSH experiment, which identified the Born rule as an unproven import (V-QM-1). That vulnerability and the joint-space question (V-QM-2) were formally resolved in `entanglement_chsh_experiment_v2.py` via Gleason's theorem on $\mathbb{C}^4$ and consolidated into [`quantum_framework.md`](quantum_framework.md).
 
 ---
 

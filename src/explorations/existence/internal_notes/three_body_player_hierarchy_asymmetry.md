@@ -5,6 +5,10 @@
 **Script:** [`threebody_player_hierarchy.py`](../scripts/threebody_player_hierarchy.py)  
 **Persona:** Editorial Board Member / Senior Journal Referee (PRL / CMP / JMP)  
 **Relevant Rules:** AGENTS.md Rules 1, 2, 3, 5 (5.1, 5.2, 5.3, 5.4), 6  
+**Cross-Reference:** [`quantum_framework.md`](quantum_framework.md) §4 (Scale-Dependent Player Hierarchy: Celestial $1/r^2$ vs Quantum Vacuum), [`quantum_issues_log.md`](quantum_issues_log.md) (V-3B-1, V-3B-2, V-QM-10)
+
+> [!NOTE]
+> This celestial experiment established the vector phase-alignment tensor $\mathbf{A}_{\text{phase}}$ for localized $1/r^2$ gravity players. In [`quantum_framework.md`](quantum_framework.md) §4, this is contrasted with the quantum domain where the vacuum has no source location and no $1/r^2$ decay, making the vacuum the dominant player.
 
 ---
 
