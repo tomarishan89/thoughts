@@ -49,6 +49,16 @@ To enforce strict mathematical rigor and maintain transparent epistemic boundari
 | **V-QM-10.1** | Active | Type (a)/(b) | Dynamical Systems | Second-order secular resonance coupling for 5:2 and 7:3 Kirkwood gaps | Extend binary j:1 vs j:j-1 classification to include higher-order secular resonance overlap (Murray & Dermott Ch. 7.3); current model misclassifies 5:2 and 7:3 | `[ ]` |
 | **V-QM-10.2** | Active | Type (a) | Celestial-Exoplanet Bridge | Rank-2 tidal tensor extension for eccentric Jupiter (e_J = 0.048) | Replace scalar $\kappa_J$ with full rank-2 tidal tensor; connects to exoplanet stability theory and Kozai-Lidov mechanism | `[ ]` |
 | **V-QM-10.3** | Active | Type (a) | Existence Equation Bridge | Map orbital Resistance $R_{\text{orbital}} = \Omega_{\text{stab}} - 1$ to framework existence equation | Prove $R_{\text{orbital}} = 0 \Leftrightarrow$ orbital boundary at critical point; close the conceptual loop from celestial to quantum decoherence domain via Core Axiom 1 | `[ ]` |
+| **V-AGP-1** | Active | Type (a) | Variational Dynamics | Action functional for Anisotropy-Gap Principle ( $\delta \int \mathcal{L} d\tau = 0$ ) | Derive Euler-Lagrange trajectory equation; prove reduction to geodesic equation at Tier 1 ( $\chi^* = 0$ ) | `[ ]` |
+| **V-AGP-2** | Active | Type (a) | Differential Geometry | Metric tensor $G_{AB}$ on complexified state space $\Omega_{\mathbb{C}}$ | Construct Riemannian/Kähler metric on $\Omega_{\mathbb{C}}$; without metric, $\nabla\mathcal{G}$ and integral curves are undefined | `[ ]` |
+| **V-AGP-3** | Active | Type (a) | Field Theory | Field equation for Shared Space $\Omega_{\mathbb{R}}^{\text{shared}}$ ( $\hat{\mathcal{D}}\Phi = \sum \mathbf{T}_k$ ) | Formulate exact differential operator coupling entity response stress to shared space geometry | `[ ]` |
+| **V-AGP-4** | Active | Type (a) | Multi-Player Coupling | Formalization of pairwise coupling weight tensor $w_{ij}$ | Derive functional dependence on shared duration, boundary overlap, response intensity, and specificity | `[ ]` |
+| **V-AGP-5** | Active | Type (a) | Hierarchical Thermodynamics | Quantitative derivation of Coupling Loosening Law ( $dR^2/dL < 0$ ) | Derive $R^2$ decay from combinatorial entropy scaling $S = k_B \ln \Omega_{\text{micro}}$ across 7 hierarchy tiers | `[ ]` |
+| **V-VAC-1** | Active | Type (a)/(b) | Compact Objects / Astrophysics | Vacuum work correction to stellar-collapse Chandrasekhar/TOV limits | Calculate cosmological vacuum energy density correction to relativistic stellar collapse; verify if measurable | `[ ]` |
+| **V-VAC-2** | Active | Type (a)/(c) | Cosmological Initial Conditions | Category Boundary: Parent BH bounce constraints on Higgs VEV | Investigate whether post-bounce ECSK initial conditions constrain electroweak symmetry breaking scale $v \approx 246\text{ GeV}$ | `[ ]` |
+| **V-MASS-1** | Active | Type (a) | Mass Generation | Derivation of mass operator $\hat{m}$ on internal space $\Omega_{\mathfrak{Im}}$ | Derive discrete spectrum $\{y_f\}$ from internal vacuum topological defects rather than importing empirical Yukawa parameters | `[ ]` |
+| **V-MASS-2** | Active | Type (a) | Inertial Dynamics | Theoretical & empirical test of Asymmetric Inertia Prediction | Design experimental protocol for ultra-fast attosecond field tests comparing excitation latency ( $d\mathcal{G}/d\tau > 0$ ) vs relaxation ( $d\mathcal{G}/d\tau < 0$ ) | `[ ]` |
+| **V-MASS-3** | Active | Type (a)/(b) | Hadronic Mechanics | Unification of composite hadronic mass with imaginary vacuum condensation | Map QCD chiral $\langle \bar{q}q \rangle$ and gluon condensates to imaginary-sector vacuum anisotropy within color confinement boundary $\partial \Omega_p$ | `[ ]` |
 
 ---
 
@@ -383,3 +393,145 @@ $$e_{\text{cross}} = \text{solve}_e\left[T_J(a, e_{\text{cross}}) = T_{J,0},\; q
 $$\mathbf{A}_{\text{phase}} = \frac{1}{T} \int_0^T \left( \hat{\mathbf{r}}_{\text{ast}}(t) \otimes \hat{\mathbf{r}}_{\text{Jup}}(t) \right) dt$$
 
   For Hilda (3:2), the resonant libration of the conjunction longitude prevents close encounters, yielding a persistent anisotropic tensor eigenvalue structure ( $\lambda_{\text{max}}/\lambda_{\text{min}} > 4.0$ ). For Kirkwood (3:1), chaotic phase wandering washes out the directional correlation ( $\lambda_{\text{max}}/\lambda_{\text{min}} \to 1.0$ ). Numerically verified in `threebody_player_hierarchy.py`. Closed in `three_body_player_hierarchy_asymmetry.md`.
+
+---
+
+### Category 5: Anisotropy-Gap Principle and Vacuum Particle Ontology Frontiers
+
+#### ISSUE V-AGP-1: Variational Action Principle for the Anisotropy Gap
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The Anisotropy-Gap Principle currently asserts that trajectories follow the gradient of the anisotropy gap: $\dot{\mathbf{z}} \propto -\nabla \mathcal{G}$. In mathematical physics, gradient flows must be derived from an underlying variational principle (Hamilton's principle $\delta \mathcal{S} = 0$ ) with a well-defined Lagrangian $\mathcal{L}(\mathbf{z}, \dot{\mathbf{z}}, \tau)$ that accommodates non-conservative dissipative friction.
+- **Formal Target & Kill Condition:**  
+  1. Formulate a Rayleigh-dissipation or Schwinger-Keldysh closed-time-path action on $\Omega_{\mathbb{C}}$.
+  2. Prove that at Tier 1 ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$, $\chi^* = 0$ ), the Euler-Lagrange equations reduce identically to the Riemannian geodesic equation $\ddot{x}^\mu + \Gamma^\mu_{\alpha\beta}\dot{x}^\alpha \dot{x}^\beta = 0$.
+  3. Failure to derive this reduction without arbitrary tuning parameters will invalidate the claim that the geodesic is a special case of the Anisotropy-Gap Principle.
+
+---
+
+#### ISSUE V-AGP-2: Rigorous Metric Tensor on Complex State Space $\Omega_{\mathbb{C}}$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The norm $\|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ and gradient $\nabla_{\Omega_{\mathbb{C}}}$ assume a metric tensor $G_{AB}(\mathbf{z})$ on $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$. Without an explicit metric, distances and gradients in state space are coordinate-dependent artifacts.
+- **Formal Target & Kill Condition:**  
+  Construct a Hermitian or Kähler metric on $\Omega_{\mathbb{C}}$ whose real sector restricts to the spacetime metric $g_{\mu\nu}$ and whose imaginary sector is bounded by the Fisher information metric on the probability distribution of simulated future trajectories.
+
+---
+
+#### ISSUE V-AGP-3: Field Equation for Shared Space Back-Reaction
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The framework claims that entity projections $\mathbf{J}_k^{\text{manifest}}$ back-react on the shared space $\Omega_{\mathbb{R}}^{\text{shared}}$ analogously to Einstein's equations ( $G_{\mu\nu} = 8\pi G T_{\mu\nu}$ ). However, the universal field operator $\hat{\mathcal{D}}_{\text{shared}}$ coupling entity stress-response tensors to the environment is currently unformalized outside classical GR.
+- **Formal Target & Kill Condition:**  
+  Derive the field equation for multi-tier shared space: $\hat{\mathcal{D}}_{\text{shared}} \Phi = \sum_k \mathbf{T}_k^{\text{entity}}$, establishing energy-momentum conservation and causality across both physical and informational channels.
+
+---
+
+#### ISSUE V-AGP-4: Mathematical Formulation of Coupling Weight Tensor $w_{ij}$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  The pairwise coupling weight $w_{ij}$ between co-existing entities is qualitatively specified as a function of duration $\Delta\tau_{\text{shared}}$, boundary overlap $\mathcal{O}$, intensity $\mathcal{I}$, and specificity $\mathcal{S}$. It lacks an explicit, normalized mathematical definition.
+- **Formal Target & Kill Condition:**  
+  Define $w_{ij} \in [0, 1]$ as an overlap integral of boundary projection operators:
+
+$$w_{ij} = \frac{\int_{\Delta\tau} dt \int_{\partial\Omega_i \cap \partial\Omega_j} (\mathbf{T}_i \cdot \mathbf{T}_j) \, da}{\sqrt{\mathcal{E}_i \mathcal{E}_j}}$$
+
+  and prove non-reciprocity ( $w_{ij} \neq w_{ji}$ ) for asymmetric boundary capacities.
+
+---
+
+#### ISSUE V-AGP-5: Quantitative Derivation of the Coupling Loosening Law
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  Prediction A claims $R^2(L)$ decreases monotonically with hierarchy level $L$. While combinatorial entropy $S = k_B \ln \Omega_{\text{micro}}$ increases with scale, the explicit functional relationship between entropy growth and variance determination $R^2 \sim f(S)$ has not been derived from first principles.
+- **Formal Target & Kill Condition:**  
+  Derive $R^2(L) = [1 + \beta \ln \Omega(L)]^{-1}$ from maximum entropy production and verify against numerical simulations across physical, chemical, and biological scales.
+
+---
+
+#### ISSUE V-VAC-1: Cosmological Vacuum Work Correction to Stellar Collapse
+
+- **Epistemic Classification:** Type (a)/(b) — Standard Application
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  The vacuum is established as an active thermodynamic engine doing expansion work $dW = -p_{\text{vac}} dV = \rho_{\text{vac}} c^2 dV$. It remains uncalculated whether cosmological vacuum energy produces a measurable correction to the Tolman-Oppenheimer-Volkoff (TOV) limit or Chandrasekhar mass for relativistic compact objects.
+- **Formal Target & Kill Condition:**  
+  Integrate the modified TOV equation with non-zero cosmological constant $\Lambda$:
+
+$$\frac{dP}{dr} = -\frac{G(\rho + P/c^2)(M(r) + 4\pi r^3(P/c^2 - \rho_\Lambda))}{r^2(1 - 2GM(r)/(c^2 r) - \Lambda r^2/3)}$$
+
+  Compute the fractional correction $\Delta M_{\text{TOV}} / M_{\text{TOV}}$ for neutron stars and establish whether $\Lambda$ produces any observationally accessible deviation.
+
+---
+
+#### ISSUE V-VAC-2: Category Boundary & Cosmological Initial Conditions for the Higgs VEV
+
+- **Epistemic Classification:** Type (a)/(c) — Domain-Extrapolated
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  In accordance with ISSUE-4.55, the framework cannot derive the electroweak scale $v = 246\text{ GeV}$ or Standard Model Yukawa couplings from pure thermodynamics. The hypothesis that the parent black hole's post-bounce ECSK torsion state sets the Higgs VEV via cosmological natural selection (Smolin 1992) remains an unproven conjecture.
+- **Formal Target & Kill Condition:**  
+  Determine whether the minimum bounce radius $r_{\text{bounce}} \sim (r_s \ell_P^2)^{1/3}$ in Einstein-Cartan-Sciama-Kibble (ECSK) gravity can dynamically select the electroweak symmetry breaking scale, or whether the Higgs VEV must be permanently treated as an exogenous boundary condition.
+
+---
+
+### Category 8: Mass Generation & Inertial Dynamics
+
+#### ISSUE V-MASS-1: Derivation of the Mass Operator on Internal State Space
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The dual-anisotropy model defines rest mass as the invariant norm of the imaginary-sector distortion: $m = (1/c^2) \|\mathbf{A}_{\mathfrak{Im}}\|$. While this maps conceptually to the Higgs mechanism (where $m_f = y_f v / \sqrt{2}$ ), the mass operator $\hat{m}$ has not been constructed as a spectral operator on the internal fiber bundle $\mathcal{H}_{\text{int}}$. Standard QFT requires discrete mass eigenvalues; the framework currently lacks an ab initio topological or geometric quantization principle that restricts continuous gauge distortions to the observed discrete fermion mass spectrum.
+- **Formal Target & Kill Condition:**  
+  Formulate $\hat{m}$ as a self-adjoint operator on the internal manifold $\Omega_{\mathfrak{Im}}$. Prove that boundary topological compactification forces discrete spectral eigenvalues matching the charged lepton mass ratios ( $m_\tau / m_\mu \approx 16.82$, $m_\mu / m_e \approx 206.77$ ) without manually inserting empirical Yukawa couplings.
+
+---
+
+#### ISSUE V-MASS-2: Experimental Protocol for Asymmetric Inertial Resistance
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The framework deduces that inertial force operates exclusively during gap widening ( $d\mathcal{G}/d\tau > 0$ ) via the Heaviside-switched constitutive law:
+
+$$\mathbf{F}_{\text{inertial}} = -\frac{1}{c} \, \Theta\left(\frac{d\mathcal{G}}{d\tau}\right) \left(\frac{d\mathcal{G}}{d\tau}\right) \hat{\mathbf{n}}_{\mathcal{G}}$$
+
+  While this successfully explains why spontaneous radiative decay and particle decay proceed without inertial drag (recovering Fermi's Golden Rule), it predicts an observable latency asymmetry during non-equilibrium quantum driving (absorption vs. stimulated emission). An explicit, falsifiable laboratory test protocol has not been formulated.
+- **Formal Target & Kill Condition:**  
+  Design a high-precision experimental test using attosecond laser pulse trains or superconducting microwave cavity resonators. Derive the quantitative phase-lag prediction $\Delta \phi_{\text{asym}}$ for excitation vs. de-excitation cycles. If ultra-fast pump-probe experiments demonstrate strict symmetry between driven excitation and driven de-excitation latencies down to the attosecond limit, the positive-gradient inertia hypothesis is falsified.
+
+---
+
+#### ISSUE V-MASS-3: Hadronic Mass Generation as Trapped Vacuum Polarization
+
+- **Epistemic Classification:** Type (a)/(b) — Standard Application
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  Over 99% of the proton's mass ( $929.3\text{ MeV} / 938.3\text{ MeV}$ ) arises from QCD vacuum condensates ( $\langle \bar{q}q \rangle$ and $\langle G^2 \rangle$ ) rather than bare quark Yukawa masses. Under the claim that "mass exists in imaginary space", the framework must demonstrate that non-perturbative QCD condensates within the confinement boundary $\partial\Omega_p$ represent internal vacuum distortions rather than manifest metric fields.
+- **Formal Target & Kill Condition:**  
+  Demonstrate that the non-perturbative gluon condensate and chiral condensate map directly to the imaginary-sector stress tensor of the vacuum engine:
+
+$$\|\mathbf{A}_{\mathfrak{Im}}^{(\text{hadron})}\| = \int_{\Omega_{\text{bag}}} \left[ \frac{\alpha_s}{\pi} \langle G_{\mu\nu}^a G^{a\mu\nu} \rangle + 2m_q \langle \bar{q}q \rangle \right] dV$$
+
+  Prove that this trapped internal distortion couples to the external spacetime metric via the trace anomaly $T^\mu_\mu = \frac{\beta(g)}{2g} G^2 + m(1+\gamma_m)\bar{q}q$, strictly satisfying the Equivalence Principle ( $m_i \equiv m_g$ ) to within Eötvös bounds ( $\eta < 10^{-15}$ ).

@@ -73,3 +73,24 @@ For any newly introduced formula or fitting function (mass function, concentrati
   1. State the source reference (author, year, equation number).
   2. Verify that the formula's normalization convention matches the intended use.
   3. Check whether the formula is valid in the regime being applied (e.g., ST is calibrated for z=0-1 with ΛCDM; extrapolating to exotic w(z) requires explicit caution).
+
+## 7. Self-Correcting Writing Rules (Closed-Loop Improvement Protocol)
+
+- **Trigger:** Whenever the agent observes a failure from any automated check — including but not limited to `scripts/lint_markdown.py`, numerical benchmark scripts (Rules 5.1–5.4), downstream audit protocols (Rule 4), or structural consistency checks — the agent MUST evaluate whether the failure reflects a **recurring or systematic pattern** rather than a one-off typo.
+- **Obligation:** If a pattern is identified (e.g., repeated LaTeX formatting errors, repeated dimensional inconsistencies, repeated normalization omissions, repeated missing cross-references), the agent MUST:
+  1. **Diagnose the root cause** in the current session output.
+  2. **Propose a new writing sub-rule** (or amendment to an existing rule in this file) that would have prevented the failure.
+  3. **Append the new sub-rule** to the appropriate section of this `AGENTS.md` file, or to the relevant skill file (e.g., `iterative-weakness-auditor/SKILL.md`).
+  4. **Log the rule addition** in the session walkthrough or issues log with a brief rationale.
+- **Scope:** This rule applies to failures in markdown linting, LaTeX syntax, numerical precision, docstring honesty, issues-log synchronization, dimensional homogeneity, and any other automated or semi-automated quality gate.
+- **Constraint:** The agent MUST NOT silently fix a recurring failure without also updating the rules. Fixing the symptom without codifying the prevention is a Rule 7 violation.
+- **Anti-Bloat Guard:** Writing rules should be concise and actionable. If a proposed rule duplicates or subsumes an existing rule, the existing rule should be amended rather than a new one created.
+
+### 7.1 Markdown & LaTeX Formatting Invariants (Pre-Lint Strictures)
+
+Before saving any markdown file, the agent MUST verify the following syntax constraints enforced by `scripts/lint_markdown.py`:
+1. **GFM Math-Punctuation Isolation:** Never place parentheses or punctuation immediately adjacent to inline math delimiters. Always pad math with spaces when enclosed by punctuation (e.g., write `( math )`, never opening-paren abutting math delimiter).
+2. **Display Math Column-0 Alignment:** All display math blocks with double-dollar delimiters MUST start at column 0 with zero leading whitespace, even when logically inside list items or blockquotes.
+3. **Display Math Blank Line Padding:** Always leave exactly one blank line before and after every display math block.
+4. **Heading Padding:** Every heading line (`#`, `##`, `###`, `####`) MUST be followed by a blank line before any subsequent text.
+5. **No Indented Continuation Lines:** In list items, never indent continuation prose lines by 3 or more spaces (which triggers accidental markdown code-block interpretations). Align continuation text at column 0 or use single-line list entries.

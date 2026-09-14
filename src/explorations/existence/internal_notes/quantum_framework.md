@@ -301,7 +301,40 @@ $$\tau_{\text{dec}} \propto \tau_{\text{relax}} \left(\frac{\lambda_{\text{therm
 
 ---
 
-## 7. Downstream Frontiers & Formal Vulnerability Log
+## 7. Particle Ontology: Vacuum Response Modes
+
+### 7.1 Extension of Declaration Q2: Excitations vs. Autonomous Engines
+
+Declaration Q2 established that the quantum vacuum operates as an active, primary thermodynamic form of existence. We now extend this principle to the subatomic particle spectrum:
+
+> **Postulate QP4 (Vacuum-as-Substrate Particle Ontology):** Elementary particles do not operate as autonomous thermodynamic engines with independent private boundaries. They are localized, persistent response modes (excitations) of the underlying quantum vacuum engine.
+
+An elementary particle (such as an electron) does not consume fuel or perform private metabolic work to persist. Its persistence is sustained by the vacuum engine, whose active boundary is the cosmological horizon.
+
+### 7.2 The Four-Class Particle Taxonomy
+
+Under this ontology, the Standard Model particle zoo is functionally categorized into four distinct response classes:
+
+1. **Frozen Responses (Class I — Stable Matter):** Excitations that the vacuum cannot relax because all kinematically accessible decay channels violate exact local or global conservation laws (electric charge, baryon number, angular momentum). Examples: electron ( $e^-$ ), proton ( $p$ ), lightest neutrino ( $\nu_1$ ).
+2. **Relaxable Responses (Class II — Unstable Matter):** Excitations for which kinematically accessible lower-energy configurations exist that preserve all conservation laws. The vacuum relaxes these states at a rate dictated by the mass gap and phase-space volume: $\Gamma \propto |\mathcal{M}|^2 \rho(E_f)$. Examples: muon ( $\mu^-$ ), tau ( $\tau^-$ ), free neutron ( $n$ ), $W^\pm / Z^0$, Higgs ( $H$ ), top quark ( $t$ ).
+3. **Transmission Operators (Class III — Force Carriers):** Gauge connections through which perturbations, stresses, and phase rotations are communicated between localized excitations. Examples: photon ( $\gamma$ ), gluons ( $g$ ), $W^\pm / Z^0$, graviton ( $h_{\mu\nu}$ ). They possess no independent entity state space; they are the connective tissue of the shared space.
+4. **Conjugate Pairs (Class IV — Particle-Antiparticle Duality):** Opposite-orientation distortions of the vacuum state ( $e^- / e^+$ ), ( $q / \bar{q}$ ). Co-location in shared space cancels all global topological constraints, permitting instantaneous vacuum relaxation into gauge radiation (annihilation).
+
+### 7.3 The Zero-Gap Particle Stability Theorem
+
+From Core Axiom 1, Declaration Q2, and the Anisotropy-Gap Principle, we derive:
+
+> **Theorem (Zero-Gap Stability):** A vacuum excitation $X$ is absolutely stable if and only if its accessible anisotropy gap with respect to all lower-energy configurations satisfying all exact conservation laws is identically zero:
+> 
+> $$\mathcal{G}_{\text{accessible}}(X) = \min_{\{Y_k\}} \left( m_X - \sum_k m_{Y_k} \right) \le 0 \implies \nabla \mathcal{G} = 0 \implies \tau_X = \infty$$
+
+The electron does not decay because it has zero accessible states ( $\mathcal{G} = 0$ ). It is stationary on the vacuum's potential landscape. Conversely, the muon has $\Delta m \approx 105.15\text{ MeV} > 0$, driving relaxation toward the electron ground state.
+
+For complete field derivations, QCD color confinement boundary mechanics, and the Higgs VEV as initial condition, see [`vacuum_ontology_particle_taxonomy.md`](vacuum_ontology_particle_taxonomy.md).
+
+---
+
+## 8. Downstream Frontiers & Formal Vulnerability Log
 
 The structural incorporation of quantum mechanics generates specific theoretical frontiers that must be tracked without premature closure (Rule 2).
 
@@ -315,10 +348,17 @@ Full tracking is maintained in [`quantum_issues_log.md`](quantum_issues_log.md).
 6. **V-QM-8.2 (Equation of State Dynamics):** `[ACTIVE]` Formulate dynamical stabilization of $w \approx -1.0$ under the future event horizon.
 7. **V-QM-9 (Gleason Test Complex Basis Invariant):** `[RESOLVED]` Proved real-part probability rule fails normalization ( $\sum P_k = 0.500$ ) on complex-phase basis in `entanglement_chsh_experiment_v2.py`.
 8. **V-QM-10 (Quantum-to-Celestial Hierarchy Unification):** `[ACTIVE]` Derive the transition metric where $1/r^2$ localized field decay supersedes non-decaying vacuum mode coupling as the system mass scales from Planck mass $M_P \sim 21.7\ \mu\text{g}$ to asteroid mass.
+9. **V-AGP-1 (Variational Action Formulation):** `[ACTIVE]` Formalize the anisotropy-gap principle as an action functional $\delta \int \mathcal{L} d\tau = 0$ and prove reduction to the geodesic at Tier 1.
+10. **V-AGP-2 (State Space Metric Definition):** `[ACTIVE]` Construct the metric tensor $G_{AB}$ on $\Omega_{\mathbb{C}}$ to rigorously define gradients and integral curves.
+11. **V-AGP-3 (Shared Space Field Equation):** `[ACTIVE]` Derive the analog of Einstein's field equation coupling entity response tensors to shared space geometry.
+12. **V-AGP-4 (Coupling Weight Formulation):** `[ACTIVE]` Derive the four-variable functional form of $w_{ij}$.
+13. **V-AGP-5 (Coupling Loosening Quantification):** `[ACTIVE]` Quantify the $R^2$ decay law from combinatorial degeneracy growth across hierarchy.
+14. **V-VAC-1 (Vacuum Work Stellar-BH Correction):** `[ACTIVE]` Investigate whether vacuum energy density produces measurable corrections to Chandrasekhar and TOV limits.
+15. **V-VAC-2 (Category Boundary and Cosmological Initial Conditions):** `[ACTIVE]` Formulate whether parent black hole bounce conditions constrain the Higgs VEV and Standard Model mass spectrum.
 
 ---
 
-## 8. Conclusion: The "So What?"
+## 9. Conclusion: The "So What?"
 
 ### Operational Utility
 
@@ -328,5 +368,6 @@ By recognizing that:
 1. The vacuum is an active thermodynamic form of existence (Declaration Q2);
 2. The player hierarchy is scale-dependent, with quantum states residing at the extreme vacuum-dominated limit ( $\kappa_{\text{vac}} \approx 1$ );
 3. Asymmetry resides in complex tensor spaces (Declaration Q1), forcing the Born rule via Gleason's theorem;
+4. Elementary particles are persistent response modes of the vacuum engine whose stability is governed by zero accessible anisotropy gap;
 
 the framework achieves mathematical closure across the quantum-to-classical continuum. Entanglement is not "spooky action at a distance"; it is the direct manifestation of a shared, continuous vacuum player that cannot be spatially severed.
