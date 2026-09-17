@@ -272,3 +272,93 @@ To elevate the Anisotropy-Gap Principle from an evocative organizing concept int
 3. **Shared-Space Field Equation:** The exact differential operator $\hat{\mathcal{D}}_{\text{shared}}$ coupling entity stress tensors to shared space geometry. *(Logged as Frontier Item V-AGP-3)*.
 
 Without these three mathematical closures, the model remains at the level of a powerful ontological scaffolding. With them, it becomes a calculable universal dynamics.
+
+---
+
+## 11. Landscape Topology: Basins, Barriers, and Boundary-Relativity
+
+The gap potential $\mathcal{G}[\mathbf{A}_{\mathfrak{Im}}, \mathbf{A}_{\mathbb{R}}]$ introduced in Section 1 is not a simple flat cost function; it defines a high-dimensional potential landscape $\mathcal{G}(\mathbf{z})$ over the complexified manifold $\Omega_{\mathbb{C}}$.
+
+### 11.1 Boundary-Relative Topology
+
+The gap landscape is strictly boundary-relative. For entity $E_i$ bounded by interface $\partial E_i$:
+
+$$\mathcal{G}_i(\mathbf{z}_i) = \|\mathbf{A}_{\mathfrak{Im}}^{(i)} - \mathbf{A}_{\mathbb{R}}^{(i)}\|_{G_i}$$
+
+There is no universal, absolute landscape. Redefining the boundary $\partial E_i \to \partial E_i'$ transforms the enclosed degrees of freedom, altering the state space dimension, metric $G_i$, and critical point topology.
+
+### 11.2 Neighbor Back-Reaction and Environmental Deformation
+
+No entity traverses an unyielding, static landscape. Adjacent entities $\{E_j\}$ deform $E_i$'s local landscape via their physical or informational boundary emissions:
+
+$$\mathcal{G}_i(\mathbf{z}_i) = \mathcal{G}_i^{(\text{self})}(\mathbf{z}_i) + \sum_{j \neq i} w_{ij} \, \Delta\mathcal{G}_{ij}(\mathbf{z}_i, \mathbf{z}_j)$$
+
+where $w_{ij}$ is the coupling weight tensor defined in Section 3, and $\Delta\mathcal{G}_{ij}$ is the landscape deformation induced by entity $E_j$. In gravitational systems, $\Delta\mathcal{G}_{ij}$ represents tidal and orbital potential perturbations ( such as the Jupiter-induced resonance gaps in Section 7 of the Tier 0 treatise ). In cognitive systems, $\Delta\mathcal{G}_{ij}$ represents social pressure, emotional contagion, or epistemic distortion.
+
+### 11.3 Morse-Theoretic Topology: Basins, Barriers, and Phase Transitions
+
+The dynamical behavior of the trajectory $d\mathbf{z}_i/d\tau = -\mathbf{K} \cdot \nabla \mathcal{G}_i$ is governed by the Morse index of the critical points where $\nabla\mathcal{G}_i = \mathbf{0}$:
+
+1. **Attractor Basins ( $\nabla^2 \mathcal{G}_i > 0$ ):** Stable states. At Tier 0, this corresponds to the electron ground state ( $\mathcal{G}_{\text{accessible}} \le 0$ ). At Tier 3, this corresponds to entrenched habits, psychological equilibrium, or cognitive belief setpoints.
+2. **Saddles and Barriers ( $\det \nabla^2 \mathcal{G}_i < 0$ ):** Unstable configurations requiring critical activation exergy $\Delta\mathcal{G}_{\text{barrier}}$ to traverse.
+3. **Discontinuous Deformations ( Dormant Object Activation ):** In high-dimensional cognitive landscapes, an incoming informational signal can trigger an abrupt reorganization of the internal metric or priors. Consider an observer perceiving an unfamiliar person who is subsequently identified as a prominent celebrity. Prior to recognition, the person occupies a flat, negligible region of the gap landscape ( $\nabla\mathcal{G} \approx \mathbf{0}$ ). Upon informational recognition, the observer's internal salience metric updates discontinuously, transforming the flat region into a massive gravitational attractor basin that drives intense attention and physiological arousal.
+
+---
+
+## 12. Charge Selectivity: The Coupling Algebra
+
+In Sections 2 and 3, coupling was described via the transduction kernel $\mathbf{K}_{\text{trans}}$. We now formalize that $\mathbf{K}_{\text{trans}}$ is the mathematical encoding of the entity's **generalized charge spectrum**:
+
+### 12.1 The Universal Coupling Equation
+
+Every entity carries a set of generalized charges $\{q_k\}$, and the shared space presents a multi-channel flux tensor $\mathbf{J}_{\text{shared}} = ( J_1, J_2, \dots, J_M )$. The coupling force driving boundary deformation or imaginary-sector seeding is:
+
+$$\mathbf{F}_{\text{coupling}} = \sum_{k=1}^M q_k \, \mathcal{O}_k \cdot J_k$$
+
+where $\mathcal{O}_k$ is the channel projection operator.
+
+### 12.2 Cross-Tier Charge Algebras
+
+- **At Tier 0 ( Quantum Vacuum ):** The charge spectrum is discrete, governed by Standard Model gauge group representations: $q \in U(1)_Y \times SU(2)_L \times SU(3)_C$. Leptons carry zero color charge ( $q_{\text{color}} = 0$ ), rendering them deaf to gluon flux. Neutrinos carry zero electric charge ( $q_{\text{EM}} = 0$ ), traversing electromagnetic fields without interaction.
+- **At Tier 1 ( Celestial Mechanics ):** Gravitational mass $M$ couples universally to metric curvature, while net electric charge $Q$ governs electromagnetic Lorentz forces.
+- **At Tier 3 ( Cognitive Systems ):** Cognitive charges $\{q_k^{\text{cog}}\}$ represent domain-specific salience weights, emotional valence parameters, and specialized cultural priors. An agent uninterested in a particular topic carries $q_k^{\text{cog}} \approx 0$, experiencing zero cognitive traction from intense environmental signals in that channel, whereas resonant charges produce immediate, high-amplitude landscape deformations.
+
+### 12.3 Invariant Structure vs. Dynamic Mutability
+
+The mathematical architecture of charge selectivity is strictly invariant across tiers. However, a profound asymmetry separates physical from cognitive charges:
+- **Tier 0 Physical Charges:** Invariant, conserved under gauge symmetries, and immutable ( $de/dt = 0$ ).
+- **Tier 3 Cognitive Charges:** Dynamically updatable through experience, learning, and trauma ( $dq_{\text{cog}}/d\tau \neq 0$ ).
+
+---
+
+## 13. The Memory Kernel: Non-Markovian Anisotropy Accumulation
+
+The baseline trajectory equation $d\mathbf{z}/d\tau = -\mathbf{K} \cdot \nabla \mathcal{G}$ is strictly Markovian: the instantaneous trajectory depends only on the current state $\mathbf{z}(\tau)$. In real physical systems with viscoelastic memory ( Tier 1 Israel-Stewart relaxation ) and cognitive agents with episodic recall ( Tier 3 neural memory ), trajectory evolution is intrinsically non-Markovian.
+
+### 13.1 The Integro-Differential Trajectory Equation
+
+The accumulated imaginary-sector state $\mathbf{A}_{\mathfrak{Im}}(\tau)$ is governed by a causal Volterra convolution over past environmental stimulus history:
+
+$$\mathbf{A}_{\mathfrak{Im}}(\tau) = \int_{-\infty}^\tau \mathcal{K}(\tau - \tau') \cdot \mathbf{J}_{\text{trans}}(\tau') \, d\tau'$$
+
+where $\mathcal{K}(\Delta\tau)$ is the multi-scale **Memory Kernel Tensor**.
+
+### 13.2 Structure of the Memory Kernel
+
+The memory kernel decomposes into distinct phenomenological components:
+
+$$\mathcal{K}(\Delta\tau) = \sum_\alpha C_\alpha \, e^{-\Delta\tau / \tau_\alpha} + \sum_\beta R_\beta \, \cos(\omega_\beta \Delta\tau) \, e^{-\Delta\tau / \tau_\beta}$$
+
+1. **Exponential Dissipation ( $e^{-\Delta\tau/\tau_\alpha}$ ):** Forgetting, thermal relaxation, and viscoelastic dissipation.
+2. **Resonant Reactivation ( $\cos(\omega_\beta \Delta\tau)$ ):** Periodic cycles, traumatic flashback triggers, and associative retrieval where a tiny contemporary stimulus $\mathbf{J}_{\text{trans}}(\tau)$ reactivates dormant, high-amplitude past anisotropies.
+3. **Consolidation Singularities:** Irreversible phase transitions that commit volatile working-memory state into permanent structural ledgers $\mathcal{F}_{\text{ledger}}$ ( e.g., long-term synaptic potentiation, crystalline lattice freezing, or statutory constitutional codification ).
+
+### 13.3 Epistemic Classification and Downstream Frontiers
+
+In accordance with Rule 1, Sections 11, 12, and 13 represent **Type ( c ) Structural Hypotheses**. While they provide a dimensionally consistent, conceptually unified continuum linking Tier 0 gauge selection to Tier 3 cognitive attention, full mathematical closure requires resolving the newly logged theoretical frontiers:
+- **V-L-1:** Morse-theoretic classification of landscape critical points.
+- **V-L-2:** Sourcing equation for neighbor back-reaction $\Delta\mathcal{G}_{ij}$.
+- **V-L-3:** Metric tensor on cognitive imaginary space $\Omega_{\mathfrak{Im}}^{(\text{Tier 3})}$.
+- **V-L-4:** Microscopic constitutive derivation of the memory kernel $\mathcal{K}(\tau - \tau')$.
+- **V-L-5:** Boundary-relative transformation covariance.
+- **V-CS-1:** Representation theory of generalized multi-scale charge algebras.

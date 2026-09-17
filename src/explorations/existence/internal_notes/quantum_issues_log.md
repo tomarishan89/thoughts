@@ -59,6 +59,11 @@ To enforce strict mathematical rigor and maintain transparent epistemic boundari
 | **V-MASS-1** | Active | Type (a) | Mass Generation | Derivation of mass operator $\hat{m}$ on internal space $\Omega_{\mathfrak{Im}}$ | Derive discrete spectrum $\{y_f\}$ from internal vacuum topological defects rather than importing empirical Yukawa parameters | `[ ]` |
 | **V-MASS-2** | Active | Type (a) | Inertial Dynamics | Theoretical & empirical test of Asymmetric Inertia Prediction | Design experimental protocol for ultra-fast attosecond field tests comparing excitation latency ( $d\mathcal{G}/d\tau > 0$ ) vs relaxation ( $d\mathcal{G}/d\tau < 0$ ) | `[ ]` |
 | **V-MASS-3** | Active | Type (a)/(b) | Hadronic Mechanics | Unification of composite hadronic mass with imaginary vacuum condensation | Map QCD chiral $\langle \bar{q}q \rangle$ and gluon condensates to imaginary-sector vacuum anisotropy within color confinement boundary $\partial \Omega_p$ | `[ ]` |
+| **V-PERCEPT-1** | Active | Type (a) | Perception Theory | Perception as scale-invariant boundary coupling and resolution operator | Formulate $\mathcal{R}_{\text{perceptual}}(\Omega, \partial E, \tau_{\text{mem}})$ replacing unquantified $\chi^*$; prove scale-invariance from electron to cognitive syncytia | `[ ]` |
+| **V-PERCEPT-2** | Active | Type (a) | Cognitive Thermodynamics | Perceived Extent of Existence and Chronic Frustration Pathology | Derive critical imaginary inflation bound $\|\mathbf{A}_{\mathfrak{Im}}\|_{\text{crit}}$ before driving gradient causes internal yield or cognitive decoherence | `[ ]` |
+| **V-AGP-6** | Active | Type (a) | Viscosity Mechanics | Log-periodic viscosity layers in state space ( DSI corrections to $R^2(L)$ ) | Test discrete scale invariance; formulate RG flow for $\mathbf{K}_{\text{mobility}}^{-1}(L)$ across boundary thresholds | `[ ]` |
+| **V-ARCH-1** | Active | Type (a) | Architectural Rigor | Ontological de-reification of tiers and retirement of $\chi^*$ | Codify constitutive-specification invariance across all foundational equations; formalize domain translation protocol | `[ ]` |
+
 
 ---
 
@@ -534,4 +539,71 @@ $$\mathbf{F}_{\text{inertial}} = -\frac{1}{c} \, \Theta\left(\frac{d\mathcal{G}}
 
 $$\|\mathbf{A}_{\mathfrak{Im}}^{(\text{hadron})}\| = \int_{\Omega_{\text{bag}}} \left[ \frac{\alpha_s}{\pi} \langle G_{\mu\nu}^a G^{a\mu\nu} \rangle + 2m_q \langle \bar{q}q \rangle \right] dV$$
 
-  Prove that this trapped internal distortion couples to the external spacetime metric via the trace anomaly $T^\mu_\mu = \frac{\beta(g)}{2g} G^2 + m(1+\gamma_m)\bar{q}q$, strictly satisfying the Equivalence Principle ( $m_i \equiv m_g$ ) to within Eötvös bounds ( $\eta < 10^{-15}$ ).
+  Prove that this trapped internal distortion couples to the external spacetime metric via the trace anomaly $T^\mu_\mu = \frac{\beta(g)}{2g} G^2 + m(1+\gamma_m)\bar{q}q$, strictly satisfying the Equivalence Principle ( $m_i \equiv m_g$ ) to within Eötvös bounds ( $\eta < 10^{-15}$ ).
+
+---
+
+### Category 9: Perception, State-Space Extent & Cognitive Pathology
+
+#### ISSUE V-PERCEPT-1: Perception as Scale-Invariant Boundary Coupling and Perceptual Resolution Operator
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+Perception has historically been treated as an emergent property restricted to high-tier biological or cognitive systems. However, within the open-engine ontology, the tripartite structure of perception—boundary interface $\partial E$, external perturbation $\boldsymbol{\sigma}_{\text{ext}}$, and internal state update $\Delta \mathbf{z}$—is universal. An electron responding to electromagnetic field curvature via its $U(1)$ gauge boundary exhibits the exact same formal coupling as a cell sensing a glucose gradient or a neural network processing sensory photons. The framework lacks a rigorous, non-anthropomorphic perceptual resolution operator $\mathcal{R}_{\text{perceptual}}$ to replace the deprecated scalar $\chi^*$.
+- **Formal Target & Kill Condition:**  
+Define the perceptual resolution operator as the channel capacity of the boundary interface weighted by memory retention depth:
+
+$$\mathcal{R}_{\text{perceptual}} = \frac{\dim(\mathcal{F}_{\text{ledger}})}{\tau_{\text{relax}}} \oint_{\partial E} \left( \frac{\delta \mathbf{A}_{\mathfrak{Im}}}{\delta \boldsymbol{\sigma}_{\text{ext}}} \right) dA$$
+
+Prove that for fundamental leptons, $\mathcal{R}_{\text{perceptual}} \to 1$ ( memoryless, instantaneous response recovering standard QED gauge coupling ), whereas for living and cognitive syncytia, $\mathcal{R}_{\text{perceptual}} \gg 1$. If $\mathcal{R}_{\text{perceptual}}$ requires importing subjective or non-physical observer terms, this formulation is falsified.
+
+---
+
+#### ISSUE V-PERCEPT-2: Perceived Extent of Existence and the Chronic Frustration Pathology
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+The Perceived Extent of Existence is defined as the support of an entity's internal/imaginary anisotropy field: $\mathcal{E}_{\text{perceived}} \equiv \text{supp}(\mathbf{A}_{\mathfrak{Im}})$. Because internal state configuration in $\Omega_{\mathfrak{Im}}$ requires minimal thermodynamic work compared to physical boundary deformation ( $\Delta W_{\mathfrak{Im}} \ll \Delta W_{\mathbb{R}}$ ), cognitive entities can expand $\mathcal{E}_{\text{perceived}}$ arbitrarily, generating massive anisotropy gaps $\|\mathcal{G}\| = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$. When physical realization is obstructed ( $d\mathbf{A}_{\mathbb{R}}/d\tau \approx 0$ ), the persistent driving gradient $-\mathbf{K} \cdot \nabla \|\mathcal{G}\|$ dissipates zero kinetic tension, producing the "Chronic Frustration Pathology". The framework lacks a quantitative threshold for when this unrelaxed gradient causes boundary failure or cognitive decoherence.
+- **Formal Target & Kill Condition:**  
+Derive the critical imaginary-sector inflation bound $\|\mathcal{G}\|_{\text{crit}}$ from the internal yield envelope $\phi_{\text{int}} \ge 0$:
+
+$$\|\mathcal{G}\|_{\text{crit}} = \frac{\sigma_Y^{\text{cognitive}}}{\|\mathbf{K}_{\text{mobility}}^{-1}\|}$$
+
+Prove that exceeding this bound forces internal structural rupture ( depressive withdrawal, psychosis, or syncytial fragmentation ) due to the metabolic overhead of maintaining unrelaxed imaginary templates against Landauer bit-erasure dissipation.
+
+---
+
+### Category 10: Multi-Scale Viscosity & Ontological Architecture
+
+#### ISSUE V-AGP-6: Log-Periodic Viscosity Layers and Discrete Scale Invariance
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+The Coupling Loosening Law ( Prediction A, V-AGP-5 ) models determination decay $R^2(L)$ as a smooth monotonic curve across scale $L$. However, physical existence exhibits discrete hierarchical clustering ( Planck scale, Compton wavelength, Bohr radius, cellular boundary, planetary orbit ). If state-space viscosity $\mathbf{K}_{\text{mobility}}^{-1}$ is governed by discrete scale invariance ( DSI ), $R^2(L)$ should exhibit log-periodic oscillations decorating the power-law decay.
+- **Formal Target & Kill Condition:**  
+Formulate the renormalization group ( RG ) flow equation for state-space mobility with complex critical exponent $s = \alpha + i\omega$:
+
+$$R^2(L) = L^{-\alpha} \left[ A_0 + \sum_{n=1}^\infty A_n \cos\left( n \omega \ln \frac{L}{L_0} + \psi_n \right) \right]$$
+
+Extract the fundamental frequency $\omega$ from vacuum boundary conditions. If empirical determination across physical, chemical, and biological scales follows a featureless continuum without log-periodic residuals above $3\sigma$, the discrete viscosity layering hypothesis is rejected.
+
+---
+
+#### ISSUE V-ARCH-1: Ontological De-Reification of Tiers and Constitutive Invariance
+
+- **Epistemic Classification:** Type (a) — Structural / Methodological
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Critical
+- **Theoretical Gap:**  
+Historical framework documents grouped entities into "Tiers 0–4", risking reification into disjoint ontological strata. Furthermore, Predictive Complexity $\chi^*$ was utilized as a classification parameter without an explicit operator definition, violating Rule 3 ( Zero-Tolerance for Unquantified Variables ).
+- **Formal Resolution Target:**  
+1. Formally retire $\chi^*$ from all axiomatic equations, replacing it with the explicit constitutive triad $(\Omega_{\mathbb{C}}, \partial E, \mathcal{F}_{\text{ledger}})$.  
+2. Establish the universal constitutive-specification protocol: any physical, biological, or institutional system is modeled by plugging in its manifold $\Omega$, boundary metric $G$, fuel rate $\dot{E}_{\text{fuel}}$, and memory ledger $\mathcal{F}_{\text{ledger}}$ into the universal open-engine equations.  
+3. Document that "tier" designations are solely retained as pedagogical labels for domain-specific reference treatises.
+

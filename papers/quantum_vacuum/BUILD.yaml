@@ -1,0 +1,11 @@
+# BUILD.yaml — Build manifest for papers/quantum_vacuum
+# Processed by: scripts/build_paper.py
+# Triggers: post-commit hook (local) and .github/workflows/build_papers.yml (CI)
+
+papers:
+  - name: "QUANTUM Master Framework"
+    md: QUANTUM_MASTER_FRAMEWORK.md
+    tex: latex/QUANTUM_MASTER_FRAMEWORK.tex
+    pdf: pdfs/QUANTUM_MASTER_FRAMEWORK.pdf
+    author: "Ishan Tomar"
+    title: "A Non-Equilibrium Thermodynamic and Boundary-Operator Framework of the Quantum Vacuum and Subatomic Particle Ontology"
