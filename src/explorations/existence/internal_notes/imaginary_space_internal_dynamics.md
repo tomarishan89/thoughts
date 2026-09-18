@@ -3,7 +3,7 @@
 **Date:** 2026-09-17  
 **Status:** Theoretical Exploration Note — Type ( c ) Structural Hypothesis  
 **Framework Tiers Affected:** Tier 3 ( Cognitive & Neural ) and Cross-Tier Recursive Foundations  
-**Companion Documents:** [`anisotropy_gap_principle.md`](anisotropy_gap_principle.md), [`universal_evaluation_fidelity_gradient.md`](universal_evaluation_fidelity_gradient.md), [`../tier0_physics/tier0_physics_framework.md`](../tier0_physics/tier0_physics_framework.md)  
+**Companion Documents:** [`anisotropy_gap_principle.md`](anisotropy_gap_principle.md), [`universal_evaluation_fidelity_gradient.md`](universal_evaluation_fidelity_gradient.md), [`../physical_systems/physical_systems_framework.md`](../physical_systems/physical_systems_framework.md)  
 
 ---
 

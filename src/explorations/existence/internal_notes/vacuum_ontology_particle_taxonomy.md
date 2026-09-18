@@ -208,7 +208,7 @@ Evaluating this construction against AGENTS.md Rule 1:
 
 ### 6.2 The Category Boundary (ISSUE-4.55 Cross-Check)
 
-- In accordance with `tier1_physics/issues_log.md` ISSUE-4.55, **the Master Framework does NOT and CANNOT derive the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$ or the 19 free parameters (Yukawa couplings, CKM angles, gauge couplings) from its own axioms**.
+- In accordance with `physical_systems/cosmology_and_black_holes/issues_log.md` ISSUE-4.55, **the Master Framework does NOT and CANNOT derive the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$ or the 19 free parameters (Yukawa couplings, CKM angles, gauge couplings) from its own axioms**.
 - The framework treats these parameters as Cauchy initial conditions of the parent black hole bounce (connected to Frontier Item V-VAC-2). Pretending to derive the fine structure constant $\alpha \approx 1/137$ from thermodynamic axioms would be a fatal Category-1 error.
 
 ### 6.3 Operational Utility: The "So What?"

@@ -77,7 +77,7 @@ The author asks: If hypothetical micro black holes formed at the LHC evaporate i
 
 ### 2.2 What GR Actually Says (No Framework Needed)
 
-The framework's Tier 1 cosmology (§4.7.1–§4.7.8 of `tier1_physics_framework.md`) already resolved the interior-exterior coordinate relationship in ISSUE-4.39:
+The framework's Tier 1 cosmology (§4.7.1–§4.7.8 of `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md`) already resolved the interior-exterior coordinate relationship in ISSUE-4.39:
 
 > Exterior Schwarzschild time $t_{\text{ext}} \to \infty$ freezes at $r = R_s$, while interior Lemaitre proper time $\tau$ across the collapse is finite ( $\sim 10^{-4}$ s for $30 M_\odot$ ). Inside the horizon, the spatial volume expands dynamically with FLRW scale factor $a(t)$, unconstrained by the progenitor's exterior Schwarzschild radius.
 
@@ -120,7 +120,7 @@ The **parent's** observation of BH lifetime (however short) does not constrain t
 
 ### 2.5 Could Our Parent BH Have a Picosecond Lifetime?
 
-The framework already computed this. From §4.7.7 of `tier1_physics_framework.md`:
+The framework already computed this. From §4.7.7 of `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md`:
 
 $$t_{\text{evap}} = 640 \cdot \left(\frac{S_{\text{BH}}}{k_B}\right) \cdot t_{\text{Hubble}}$$
 

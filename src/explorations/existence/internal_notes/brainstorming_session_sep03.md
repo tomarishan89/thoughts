@@ -29,8 +29,8 @@ $$\Delta t_{\text{echo}} \sim \frac{4 G M}{c^3} \ln\!\left(\frac{R_{\text{horizo
 
 ### Action Items
 
-- [x] Log as Prediction #9 (or ISSUE-4.60) — Formalized in `tier1_physics_framework.md` §6.10 and `issues_log.md` ISSUE-4.60.
-- [x] Compute echo amplitude (what fraction of ringdown energy is reflected?) — Formalized in `tier1_physics_framework.md` §6.10.3 ( $A_1/A_0 \approx 8.3 \times 10^{-5}$ via Boltzmann reflectivity).
+- [x] Log as Prediction #9 (or ISSUE-4.60) — Formalized in `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` §6.10 and `issues_log.md` ISSUE-4.60.
+- [x] Compute echo amplitude (what fraction of ringdown energy is reflected?) — Formalized in `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` §6.10.3 ( $A_1/A_0 \approx 8.3 \times 10^{-5}$ via Boltzmann reflectivity).
 - [x] Check: does the echo delay formula depend on any framework-specific parameter? — Proved parameter-free in §6.10.2: $\Delta t_{\text{echo}} = \frac{4GM}{c^3}\ln(R_+/\ell_P)$.
 
 ---
@@ -52,7 +52,7 @@ $$\Delta t_{\text{echo}} \sim \frac{4 G M}{c^3} \ln\!\left(\frac{R_{\text{horizo
 
 ### Action Items
 
-- [x] Does the framework predict a specific GWB spectral shape from the bounce? — Solved in `tier1_physics_framework.md` §6.11 via Mukhanov-Sasaki perturbations through ECSK bounce.
+- [x] Does the framework predict a specific GWB spectral shape from the bounce? — Solved in `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` §6.11 via Mukhanov-Sasaki perturbations through ECSK bounce.
 - [x] Would the primordial GWB from ECSK differ from inflationary GWB? — Formalized in §6.11.4: $r = 12/N^2 = 3.9 \times 10^{-3}$, testable by LiteBIRD.
 - [x] Connect to ISSUE-4.58 (tensor-to-scalar ratio r) — Fully resolved in `issues_log.md` ISSUE-4.58.
 

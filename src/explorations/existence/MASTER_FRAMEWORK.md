@@ -1,7 +1,7 @@
 # The Unified Master Framework of Existence: An Open-Thermodynamic and Continuum-Mechanical Synthesis Across Physical, Biological, Cognitive, and Societal Systems
 
 **Author:** Ishan Tomar  
-**Architecture Overview:** Consolidated Master Framework coordinating domain-specific Master Treatises across Tiers 0–4.
+**Architecture Overview:** Consolidated Master Framework coordinating domain-specific Master Treatises across Physical, Biophysical, Cognitive, and Societal Systems.
 
 ---
 
@@ -9,15 +9,14 @@
 
 We present a unified mathematical and ontological framework demonstrating that across all scales of reality—from the cosmological quantum vacuum and black hole horizons to living cells, conscious minds, and sovereign institutions—**to exist is to be an open thermodynamic engine maintaining an active boundary.** An entity $E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$ maintains structural persistence over non-zero duration $\Delta t$ if and only if it harvests free energy (exergy) from its environment, exhausts generated entropy outward, and maintains a strictly non-negative structural yield margin ( $\phi \ge 0$ ) at its bounding interface $\partial E$.
 
-Across physical and organizational domains, systems do not obey fundamentally disparate ontological laws. Rather, they represent discrete phases of this single master engine differentiated strictly by their **Complex State Space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$**, their **Boundary Operator $\partial E$ and Transduction Kernel $\mathbf{K}_{\text{trans}}$**, their **Memory Ledger $\mathcal{F}_{\text{ledger}}$**, and their position within the **Hierarchy of Coupling Loosening**:
+Across physical and organizational domains, systems do not obey fundamentally disparate ontological laws. Rather, they represent discrete constitutive regimes of this single master engine differentiated strictly by their **Complex State Space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$**, their **Boundary Operator $\partial E$ and Transduction Kernel $\mathbf{K}_{\text{trans}}$**, their **Memory Ledger $\mathcal{F}_{\text{ledger}}$**, and their position within the **Hierarchy of Coupling Loosening**:
 
-0. **Tier 0 (Quantum Vacuum & Particle Excitations):** The primary master engine bounded by the cosmological event horizon $\mathcal{H}_{\text{Hubble}}$, where elementary particles are localized frozen or relaxable response modes governed by the Zero-Gap Stability Theorem.
-1. **Tier 1 (Physical & Cosmological):** The reactive physical limit with $\Omega_{\mathfrak{Im}} \equiv \{0\}$, where boundaries are maintained by gauge-field stress tensors, relativistic continuum elasticity, and horizon membrane tension. Trajectories follow the Anisotropy-Gap Principle at $\mathbf{A}_{\mathfrak{Im}} \equiv 0$, recovering the Riemannian geodesic.
-2. **Tier 2 (Biological & Metabolic):** Active homeostatic syncytia with biochemical state space $\Omega_{\mathbb{C}}$, where boundaries are active cell membranes sustained by chemical exergy (ATP) and genetic and enzymatic repair ledgers.
-3. **Tier 3 (Cognitive & Neural):** High-dimensional imaginary sector $\Omega_{\mathfrak{Im}}$ containing an explicit generative self-model $E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$ that preserves cognitive identity against informational entropy via active inference.
-4. **Tier 4 (Societal & Institutional):** Distributed macro-syncytia enclosing multi-agent collectives defending legal and jurisdictional boundaries sustained by externalized statutory and economic ledgers.
+1. **Physical Systems (Quantum Vacuum to Cosmological Horizons):** The physical master engine spanning quantum vacuum excitations, mass generation, celestial mechanics, and relativistic continuum spacetime bounded by cosmological event and trapping horizons $\mathcal{H}_{\text{Hubble}}$, where trajectories follow the Anisotropy-Gap Principle in the reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ for classical trajectories, recovering Riemannian geodesics).
+2. **Biophysical Systems (Biological & Metabolic Syncytia):** Active homeostatic syncytia with biochemical state space $\Omega_{\mathbb{C}}$, where boundaries are active cell membranes sustained by chemical exergy (ATP) and genetic and enzymatic repair ledgers.
+3. **Cognitive Systems (Perceptual Agents & Active Inference):** High-dimensional imaginary sector $\Omega_{\mathfrak{Im}}$ containing an explicit generative self-model $E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$ that preserves cognitive identity against informational entropy via active inference, meta-cognition ( $\mathcal{O}_{\text{TE}}$ ), and attention arbitration.
+4. **Societal Systems (Institutional & Legal Syncytia):** Distributed macro-syncytia enclosing multi-agent collectives defending legal and jurisdictional boundaries sustained by externalized statutory and economic ledgers.
 
-This Master Framework formalizes the Universal Existence Invariant, details the 5-Tier Taxonomy, articulates the Anisotropy-Gap Variational Principle, and establishes the direct coordinate links to the dedicated Master Framework treatises governing each individual tier.
+This Master Framework formalizes the Universal Existence Invariant, details the 4-Domain Taxonomy, articulates the Anisotropy-Gap Variational Principle, and establishes the direct coordinate links to the dedicated Master Framework treatises governing each domain.
 
 ---
 
@@ -171,40 +170,37 @@ The operator is:
 
 ---
 
-## 2. The Multi-Tier Taxonomy Matrix
+## 2. The Multi-Domain Taxonomy Matrix
 
 > [!IMPORTANT]
-> **Architectural Status of the Multi-Tier Taxonomy:**  
-> The "tiers" ( Tier 0 through Tier 4 ) presented in this matrix and throughout historical framework notes are **pedagogical groupings and constitutive domain specifications**, not discrete ontological categories or foundational axioms. The core equations of existence—the Open Engine Definition ( $E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$ ), the Dual-Condition Theorem ( $\phi \ge 0$, $\dot{S}_{\text{internal}} \le 0$ ), the Anisotropy-Gap Trajectory Rule ( $d\mathbf{z}/d\tau = -\mathbf{K} \cdot \nabla \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ ), Mass as Imaginary-Sector Anisotropy, Inertia as Asymmetric Gap Resistance, and Born Rule decoherence—are strictly **constitutive-specification invariant**.
+> **Architectural Status of Domain Taxonomy:**  
+> The domains presented in this matrix and throughout the framework are **scale-specific constitutive specifications**, not discrete ontological categories or foundational axioms. The core equations of existence—the Open Engine Definition ( $E \equiv \langle \mathcal{S}_{\text{fuel}}, \mathcal{E} \rangle$ ), the Dual-Condition Theorem ( $\phi \ge 0$, $\dot{S}_{\text{internal}} \le 0$ ), the Anisotropy-Gap Trajectory Rule ( $d\mathbf{z}/d\tau = -\mathbf{K} \cdot \nabla \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ ), Mass as Imaginary-Sector Anisotropy, Inertia as Asymmetric Gap Resistance, and Born Rule decoherence—are strictly **constitutive-specification invariant**.
 >
-> Furthermore, the scalar parameter $\chi^*$ ( formerly labeled "Predictive Complexity" ) is **formally deprecated and retired** from axiomatic use, as it functioned as an unquantified qualitative label rather than a closed-form operator. System variation across domains is fully determined by the triad of the complex state-space manifold $\Omega_{\mathbb{C}}$, boundary operator $\partial E$, and memory ledger $\mathcal{F}_{\text{ledger}}$. "Tier" terminology is preserved solely for indexing historical sub-treatises and domain-specific worked examples.
+> Furthermore, the scalar parameter $\chi^*$ ( formerly labeled "Predictive Complexity" ) is **formally deprecated and retired** from axiomatic use, as it functioned as an unquantified qualitative label rather than a closed-form operator. System variation across domains is fully determined by the triad of the complex state-space manifold $\Omega_{\mathbb{C}}$, boundary operator $\partial E$, and memory ledger $\mathcal{F}_{\text{ledger}}$. Historical "Tier" numbers are preserved solely for bibliographic cross-referencing to legacy drafts.
 
 The manifestation of the engine across physical, biological, cognitive, and societal domains is classified by its constitutive specifications:
 - **State Space Manifold & Metric ( $\Omega_{\mathbb{C}}, G$ ):** The topological and metric space spanned by manifest physical ( $\Omega_{\mathbb{R}}$ ) and internal or imaginary ( $\Omega_{\mathfrak{Im}}$ ) degrees of freedom.
 - **Boundary Operator ( $\partial E$ ) & Transduction Kernel ( $\mathbf{K}_{\text{trans}}$ ):** The interfacial confinement envelope and selective transduction tensor governing environmental influx and entropy exhaust.
 - **Memory Ledger ( $\mathcal{F}_{\text{ledger}}$ ):** The physical or informational substrate that records past operational cycles, invariant constraints, and constitutive response functions.
-- *(Legacy reference: $\chi^*$ denotes the former qualitative label "predictive complexity", formally deprecated per Rule 8).*
 
-
-| Tier | Domain | State Space $\Omega_{\mathbb{C}}$ & Metric $G$ | Boundary $\partial E$ & Kernel $\mathbf{K}_{\text{trans}}$ | Exergy / Fuel Source | Memory Ledger $\mathcal{F}_{\text{ledger}}$ | Dissolution Mode ( $\phi < 0$ ) | [Legacy $\chi^*$ (Deprecated)] | Dedicated Framework Document |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tier 0** | **Quantum Vacuum & Particles** | Vacuum Fock space; gauge fiber bundle | Horizon $\mathcal{H}_{\text{Hubble}}$ / Gauge Invariance; channel-selective $\mathbf{K}_{\text{gauge}}$ ( BH: $1/c^2$ ) | Vacuum dark energy $\rho_\Lambda = \frac{\Lambda c^2}{8\pi G}$ | Holographic horizon degrees of freedom $A_H / 4\ell_P^2$ | Mode decay / Particle annihilation | Substrate Engine | [`internal_notes/vacuum_ontology_particle_taxonomy.md`](internal_notes/vacuum_ontology_particle_taxonomy.md) |
-| **Tier 1** | **Physical & Cosmological** | Spacetime manifold $\mathcal{M}$ with metric $g_{\mu\nu}$; $\Omega_{\mathfrak{Im}} \equiv \{0\}$ | Continuum stress interfaces, celestial surfaces, trapping horizons $\mathcal{H}$; $\mathbf{K}_{\text{trans}} \equiv 1/c^2$ | Gravitational accretion, radiation flux, nuclear binding energy | Metric tensor $g_{\mu\nu}$, stress-energy $T_{\mu\nu}$, horizon area $A$ | Gravitational collapse, tidal disruption, thermal evaporation | $\chi^* \equiv 0$ *(Reactive Limit)* | [`tier1_physics/TIER1_MASTER_FRAMEWORK.md`](tier1_physics/TIER1_MASTER_FRAMEWORK.md) |
-| **Tier 2** | **Biological & Metabolic** | Biochemical conformation space; localized homeostatic manifold | Phospholipid membranes, cell walls; stereospecific receptors $\mathbf{K}_{\text{trans}}(\text{ligand})$ | Chemical free energy (ATP, glucose, redox gradients) | DNA / RNA polymers, epigenetic markers, enzymatic networks | Metabolic lysis, membrane rupture, necrotic cell death | $\chi^* > 0$ *(Homeostatic)* | [`tier2_biophysics/TIER2_MASTER_FRAMEWORK.md`](tier2_biophysics/TIER2_MASTER_FRAMEWORK.md) |
-| **Tier 3** | **Cognitive & Neural** | Dual manifold $\Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$ with informational metric $G_{\mathfrak{Im}}$ | Sensory-neural interfaces, ego-model $E_{\text{self}}^{\mathfrak{Im}}$; cognitive transduction $\mathbf{K}_{\text{trans}}(\mathbf{s}, \mathbf{q}_{\text{cog}})$ | Neurochemical metabolic flux, sensory information streams | Synaptic weight matrices, episodic neural circuits, language | Cognitive decoherence, psychic shock, identity collapse | $\chi^* \gg 0$ *(Simulation)* | [`tier3_cognitive/TIER3_MASTER_FRAMEWORK.md`](tier3_cognitive/TIER3_MASTER_FRAMEWORK.md) |
-| **Tier 4** | **Societal & Institutional** | Jurisdictional and socio-economic state space $\Omega_{\mathbb{C}}^{(\text{macro})}$ | Legal jurisdictions, corporate charters, national borders; institutional statutory transduction | Economic surplus, raw materials, energetic infrastructure | Statutory legal codes, central ledgers, contracts, cultural canon | Institutional bankruptcy, regulatory collapse, state dissolution | $\chi^* \ggg 0$ *(Distributed)* | [`tier4_societal/TIER4_MASTER_FRAMEWORK.md`](tier4_societal/TIER4_MASTER_FRAMEWORK.md) |
+| Domain | State Space $\Omega_{\mathbb{C}}$ & Metric $G$ | Boundary $\partial E$ & Kernel $\mathbf{K}_{\text{trans}}$ | Exergy / Fuel Source | Memory Ledger $\mathcal{F}_{\text{ledger}}$ | Dissolution Mode ( $\phi < 0$ ) | [Legacy Index] | Dedicated Framework Document |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Physical Systems** | Spacetime manifold $\mathcal{M}$ with metric $g_{\mu\nu}$, vacuum Fock space; $\Omega_{\mathfrak{Im}} \equiv \{0\}$ (reactive) | Trapping horizons $\mathcal{H}$, gauge confinement envelopes; $\mathbf{K}_{\text{trans}} \equiv 1/c^2$ (BH) / $\mathbf{K}_{\text{gauge}}$ | Vacuum dark energy $\rho_\Lambda = \frac{\Lambda c^2}{8\pi G}$, gravitational accretion, radiation flux | Holographic horizon degrees of freedom $A_H / 4\ell_P^2$, metric $g_{\mu\nu}$, stress-energy $T_{\mu\nu}$ | Mode decay, gravitational collapse, tidal disruption | Tier 0 / Tier 1 *(Reactive Limit)* | [`physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md`](physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md) |
+| **Biophysical Systems** | Biochemical conformation space; localized homeostatic manifold | Phospholipid membranes, cell walls; stereospecific receptors $\mathbf{K}_{\text{trans}}(\text{ligand})$ | Chemical free energy (ATP, glucose, redox gradients) | DNA / RNA polymers, epigenetic markers, enzymatic networks | Metabolic lysis, membrane rupture, necrotic cell death | Tier 2 *(Homeostatic)* | [`biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md`](biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md) |
+| **Cognitive Systems** | Dual manifold $\Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$ with informational metric $G_{\mathfrak{Im}}$ | Sensory-neural interfaces, ego-model $E_{\text{self}}^{\mathfrak{Im}}$; cognitive transduction $\mathbf{K}_{\text{trans}}(\mathbf{s}, \mathbf{q}_{\text{cog}})$ | Neurochemical metabolic flux, sensory information streams | Synaptic weight matrices, episodic neural circuits, language | Cognitive decoherence, psychic shock, identity collapse | Tier 3 *(Simulation)* | [`cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md`](cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md) |
+| **Societal Systems** | Jurisdictional and socio-economic state space $\Omega_{\mathbb{C}}^{(\text{macro})}$ | Legal jurisdictions, corporate charters, national borders; institutional statutory transduction | Economic surplus, raw materials, energetic infrastructure | Statutory legal codes, central ledgers, contracts, cultural canon | Institutional bankruptcy, regulatory collapse, state dissolution | Tier 4 *(Distributed)* | [`societal_systems/SOCIETAL_MASTER_FRAMEWORK.md`](societal_systems/SOCIETAL_MASTER_FRAMEWORK.md) |
 
 ### 2.1 The Coupling Loosening Law (Prediction A)
 
-A foundational architectural discovery across this multi-tier hierarchy is that **parent-level macroscopic states do not rigidly determine child-level microstates**. The determination coefficient $R^2(L \to L-1)$ decreases strictly monotonically across tiers:
+A foundational architectural discovery across this multi-domain hierarchy is that **parent-level macroscopic states do not rigidly determine child-level microstates**. The determination coefficient $R^2(L \to L-1)$ decreases strictly monotonically across constitutive levels:
 
 $$\frac{d R^2}{dL} < 0$$
 
 Driven by combinatorial configuration entropy growth $S = k_B \ln \Omega_{\text{micro}}$:
-- **Tier 0 (Vacuum $\to$ Particles):** $R^2 = 1.0000$ (exact determinism; particles are rigid vacuum excitations).
-- **Tier 1 (Particles $\to$ Atoms):** $R^2 \approx 0.876$ (118 elements, 3,180 nuclides).
-- **Tier 2 (Molecules $\to$ Macromolecules):** $R^2 \approx 0.126 \to 0.022$ ( $10^{60}$ chemical space, $20^{300}$ protein space ).
-- **Tier 3 (Cells $\to$ Multicellular Organism):** $R^2 \ll 0.001$ ( $10^{14}$ synaptic configurations ).
+- **Physical Substrate (Vacuum $\to$ Particles $\to$ Atoms):** $R^2 \approx 1.0000 \to 0.876$ (exact quantum vacuum determinism relaxing to chemical element space).
+- **Biophysical Syncytia (Molecules $\to$ Macromolecules $\to$ Cells):** $R^2 \approx 0.126 \to 0.022$ ( $10^{60}$ chemical space, $20^{300}$ protein space ).
+- **Cognitive Systems (Cells $\to$ Multicellular Brain $\to$ Mind):** $R^2 \ll 0.001$ ( $10^{14}$ synaptic configurations ).
+- **Societal Systems (Individuals $\to$ Collectives $\to$ Institutions):** $R^2 \ll 0.0001$ (loose cultural and statutory potentials).
 
 The vacuum grips the electron with near-absolute determinism; the organism grips the blood cell with statistical hydrodynamics; the society grips the individual with loose cultural potentials.
 
@@ -230,49 +226,45 @@ $$\mathbf{F}_{\text{inertial}} = -\frac{1}{c} \, \Theta\left(\frac{d\mathcal{G}}
 
 ---
 
-## 3. Tier-by-Tier Architectural Overview
+## 3. Domain-by-Domain Architectural Overview
 
-### 3.0 Tier 0: The Quantum Vacuum Master Engine & Particle Taxonomy
+### 3.1 Physical Systems: Quantum Vacuum, Particles, Mass, Orbits, and Relativistic Cosmology
 
-- **Domain:** Quantum fields, vacuum expectation values, and elementary subatomic excitations.
-- **Governing Law:** The quantum vacuum is not an inert background; it is an active thermodynamic engine bounded by the cosmological horizon doing metric expansion work $dW = \rho_{\text{vac}} c^2 dV$.
-- **Key Insight:** Elementary particles are not autonomous engines; they are localized response modes of the vacuum engine. An excitation is absolutely stable if and only if its accessible anisotropy gap is identically zero:
+- **Domain:** Quantum fields, elementary excitations, mass generation, celestial mechanics, relativistic spacetime continuum, and cosmological horizons.
+- **Governing Law:** Physical sector dominance with $\Omega_{\mathfrak{Im}} \equiv \{0\}$ for classical kinematics (the reactive limit). The physical engine possesses no internal predictive self-model; boundaries deform according to gauge field dynamics, continuum elasticity, and Einstein field equations.
+- **Sub-Domains & Key Insights:**
+  1. *Quantum Foundations:* Vacuum master engine bounded by $\mathcal{H}_{\text{Hubble}}$; elementary particles as localized response modes governed by the Zero-Gap Stability Theorem. 1-loop QFT effective action generated by functional Hessian $\mathcal{H}_{\mu\nu} = \delta^2 S / \delta\phi\delta\phi$. ([`physical_systems/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md`](physical_systems/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md))
+  2. *Mass & Inertia:* Rest mass as internal imaginary anisotropy $\|\mathbf{A}_{\mathfrak{Im}}\|$; inertia as dynamic resistance opposing gap widening. ([`physical_systems/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md`](physical_systems/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md))
+  3. *Celestial Mechanics:* Phase-space tensor tracking of N-body gravitational resonance and stability; tidal gravitational tensor $\mathcal{E}_{ij} = \nabla_i \nabla_j \Phi$ driving orbital deformation. ([`physical_systems/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md`](physical_systems/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md))
+  4. *Cosmology & Black Holes:* Relativistic spacetime as viscoelastic continuum; observable universe as black hole interior bounded by Hayward trapping horizon $\mathcal{H}_{\text{Hubble}}$ with membrane tension $\gamma_H = c^4/(8\pi G R_H)$; resolution of $10^{122}$ vacuum catastrophe, CMB TT acoustic power spectrum closure, and dark matter candidate taxonomy. ([`physical_systems/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md`](physical_systems/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md))
+- **Umbrella Master Treatise:** [`physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md`](physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md) (and [`physical_systems/physical_systems_framework.md`](physical_systems/physical_systems_framework.md)).
 
-$$\mathcal{G}_{\text{accessible}} = \min_{\{Y_k\}} \left( m_X - \sum_k m_{Y_k} \right) \le 0 \implies \tau = \infty$$
-
-- **Full Reference:** [`internal_notes/vacuum_ontology_particle_taxonomy.md`](internal_notes/vacuum_ontology_particle_taxonomy.md) and [`internal_notes/quantum_framework.md`](internal_notes/quantum_framework.md).
-
-### 3.1 Tier 1: Relativistic Spacetime & Cosmological Horizons (The Reactive Limit)
-
-- **Domain:** Inanimate matter, stars, black holes, and the observable cosmological horizon.
-- **Governing Law:** Physical sector dominance with $\Omega_{\mathfrak{Im}} \equiv \{0\}$ (the reactive limit, historically indexed as $\chi^* \equiv 0$ ). The system possesses no internal counterfactual model; boundaries deform according to local hyperbolic equations of motion and Einstein field equations.
-- **Key Insight:** Spacetime is an active viscoelastic continuum governed by Israel-Stewart causal relaxation. The observable universe is the interior of an open, non-singular black hole bounded by an active trapping horizon ( $\partial\mathcal{U} \equiv \mathcal{H}_{\text{Hubble}} = \mathcal{H}_{\text{Schwarzschild}}$ ) fueled by trans-horizon accretion.
-- **Master Equations:** ADM $3+1$ foliation with Kähler volume measure, Israel-Stewart viscoelastic relaxation, relativistic level-set front kinematics, open entropy balance, and Kodama-Hayward horizon membrane mechanics.
-- **Full Reference:** [`tier1_physics/TIER1_MASTER_FRAMEWORK.md`](tier1_physics/TIER1_MASTER_FRAMEWORK.md) (and publication PDF [`papers/tier1_cosmology/pdfs/TIER1_MASTER_FRAMEWORK.pdf`](../../../papers/tier1_cosmology/pdfs/TIER1_MASTER_FRAMEWORK.pdf)).
-
-### 3.2 Tier 2: Biophysics, Cellular Syncytia & Metabolic Homeostasis
+### 3.2 Biophysical Systems: Cellular Syncytia, Membrane Mechanics & Metabolic Homeostasis
 
 - **Domain:** Single cells, multicellular organisms, and biological syncytia.
-- **Governing Law:** Active homeostatic regulation with localized biochemical state space $\Omega_{\mathbb{C}}$ (historically indexed as $\chi^* > 0$ ). The entity actively allocates chemical exergy to maintain a non-zero structural yield margin against external mechanical shocks and osmotic pressures.
+- **Governing Law:** Active homeostatic regulation with localized biochemical state space $\Omega_{\mathbb{C}}$. The entity actively allocates chemical exergy to maintain a non-zero structural yield margin against external mechanical shocks and osmotic pressures.
 - **Key Insight:** Biological boundaries are active phospholipid membranes regulated by ATP-driven molecular motors (Peskin-Oster Brownian ratchet) and coupled reaction-diffusion wavefronts (FitzHugh-Nagumo kinetics on deforming manifolds).
 - **Master Equations:** Quantum radical-pair coherence (Gauger-Benjamin-Jones GKSL master equation), Kramers-Grote-Hynes viscously damped ATP catalysis, active actin cytoskeleton boundary kinematics, and metabolic starvation lysis bounds.
-- **Full Reference:** [`tier2_biophysics/TIER2_MASTER_FRAMEWORK.md`](tier2_biophysics/TIER2_MASTER_FRAMEWORK.md).
+- **Full Reference:** [`biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md`](biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md) (and [`biophysical_systems/biophysical_framework.md`](biophysical_systems/biophysical_framework.md)).
 
-### 3.3 Tier 3: Cognitive Agents, Active Inference & The Landauer Veto
+### 3.3 Cognitive Systems: Perceptual Agents, Meta-Cognition & Attention Priority Arbitration
 
 - **Domain:** Conscious organisms, neural networks, and perceptual agents.
-- **Governing Law:** Complexified state space with high-dimensional imaginary sector $\Omega_{\mathfrak{Im}}$ containing an explicit generative self-model $E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$ (historically indexed as $\chi^* \gg 0$ ).
+- **Governing Law:** Complexified state space with high-dimensional imaginary sector $\Omega_{\mathfrak{Im}}$ containing an explicit generative self-model $E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$.
 - **Key Insight:** The boundary being defended is not merely somatic, but informational. Cognitive agents minimize variational free energy via Bayesian active inference. Conscious self-restraint (*Viveka*) operates as an informational veto gating automated reflex arcs (*Vāsanā*), paying an explicit thermodynamic Landauer bit-erasure metabolic tax ( $k_B T \ln 2$ ).
-- **Master Equations:** Sagawa-Ueda information-thermodynamic bound, Landauer voluntary veto dissipation, semantic transduction tensor $\mathbf{K}_{\text{trans}}$, and cognitive yield margin against psychic shock.
-- **Full Reference:** [`tier3_cognitive/TIER3_MASTER_FRAMEWORK.md`](tier3_cognitive/TIER3_MASTER_FRAMEWORK.md).
+- **Sub-Domains & Key Insights:**
+  1. *Meta-Cognition:* The Third Eye evaluation operator $\mathcal{O}_{\text{TE}} = \nabla \otimes \nabla \mathcal{G}_i$ as a boundary-relative recursive sub-engine $E_{\text{TE}}$ paying Landauer erasure taxes. ([`cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md))
+  2. *Linguistic Dynamics:* Internal language as a cognitive sub-engine $E_{\text{lang}}$ possessing epistemic inertia and autocatalytic runaway risks. ([`cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md))
+  3. *Attention Arbitration:* Priority arbitration mechanism $\text{Winner} = \arg\max_k \{q_k \|\mathbf{J}_k\|\}$ explaining sensory interrupt and preemption of meta-cognitive loops. ([`cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md))
+- **Umbrella Master Treatise:** [`cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md`](cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md).
 
-### 3.4 Tier 4: Societal Institutions, Constitutional Ledgers & Collective Syncytia
+### 3.4 Societal Systems: Institutional Envelopes, Constitutional Ledgers & Collective Syncytia
 
 - **Domain:** Sovereign states, legal institutions, corporations, and social networks.
-- **Governing Law:** Distributed macro-syncytial envelopes enclosing millions of constituent cognitive nodes ( $\{E^j\} \in T_{\text{III}}$ ) coordinated via shared externalized ledgers (historically indexed as $\chi^* \ggg 0$ ).
+- **Governing Law:** Distributed macro-syncytial envelopes enclosing millions of constituent cognitive nodes coordinated via shared externalized ledgers.
 - **Key Insight:** Institutions externalize their memory ledgers onto durable physical substrates (paper constitutions, stone monuments, legal registries, cryptographic ledgers). They extract metabolic free energy from human citizens via tax and civic legitimacy coupling operators $\mathcal{O}_{\text{coupling}}^{\text{IV}\to\text{III}}$.
-- **Master Equations:** Inter-tier free energy coupling, semantic transduction of statutory law, institutional level-set boundary maintenance, and systemic failure modes (civic legitimacy decoupling, ledger destruction, predatory *asuric* cleavage).
-- **Full Reference:** [`tier4_societal/TIER4_MASTER_FRAMEWORK.md`](tier4_societal/TIER4_MASTER_FRAMEWORK.md).
+- **Master Equations:** Inter-scale free energy coupling, semantic transduction of statutory law, institutional level-set boundary maintenance, and systemic failure modes (civic legitimacy decoupling, ledger destruction, predatory *asuric* cleavage).
+- **Full Reference:** [`societal_systems/SOCIETAL_MASTER_FRAMEWORK.md`](societal_systems/SOCIETAL_MASTER_FRAMEWORK.md).
 
 ---
 
@@ -282,38 +274,41 @@ $$\mathcal{G}_{\text{accessible}} = \min_{\{Y_k\}} \left( m_X - \sum_k m_{Y_k} \
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                   THE UNIVERSAL CONTINUUM OF EXISTENCE                                   │
 │                                                                                                          │
-│  [TIER 0: VACUUM]    [TIER 1: PHYSICAL]      [TIER 2: BIOLOGICAL]    [TIER 3: COGNITIVE]   [TIER 4: SOCIETAL]    │
-│  Hubble Horizon      Spacetime Metric        Cellular Membrane       Ego-Model Schema      Sovereign Border      │
-│  Substrate Engine    Ω_Im = {0} (Reactive)   Active Homeostasis      Generative Ego-Model  Distributed Syncytia   │
-│  Dark Energy Work    Bondi/ADAF Accretion    ATP Hydrolysis          Glucose/Synaptic Flux Tax / Economic Exergy │
-│  Horizon D.O.F.      g_μν & T_μν Ledger      DNA/RNA & Enzymes       Neural Memory Ledger  Legal/Bank Ledgers    │
-│  Particle Decay      Gravitational Collapse  Cellular Lysis          Psychic Shock         Institutional Decay   │
-│  R^2 = 1.0000        R^2 ≈ 0.876             R^2 ≈ 0.126 → 0.022     R^2 ≈ 0.001           R^2 ≪ 0.0001          │
+│  [PHYSICAL SYSTEMS]               [BIOPHYSICAL SYSTEMS]   [COGNITIVE SYSTEMS]    [SOCIETAL SYSTEMS]      │
+│  Hubble Horizon & Trapping Metric Cellular Membrane       Ego-Model Schema       Sovereign Border        │
+│  Reactive (Ω_Im = {0})            Active Homeostasis      Generative Self-Model  Distributed Macro-Syncytia
+│  Vacuum / Accretion Exergy        ATP Hydrolysis          Glucose/Synaptic Flux  Tax / Economic Exergy   │
+│  Horizon Area & Field Ledgers     DNA/RNA & Enzymes       Neural Synaptic Ledger Statutory Ledgers       │
+│  Collapse / Dissolution           Cellular Lysis          Psychic Shock          Institutional Collapse  │
+│  R^2 ≈ 1.0000 → 0.876             R^2 ≈ 0.126 → 0.022     R^2 ≈ 0.001            R^2 ≪ 0.0001            │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-By recognizing that every tier represents the exact same thermodynamic engine operating under scale-appropriate boundary constraints and ledger substrates, the framework eliminates the artificial philosophical gap between physics, life, mind, and society.
+By recognizing that every domain represents the exact same thermodynamic engine operating under scale-appropriate boundary constraints and ledger substrates, the framework eliminates the artificial philosophical gap between physics, life, mind, and society.
 
 ---
 
 ## 5. Navigation & Repository Index
 
-To explore the exact mathematical derivations, proofs, and simulations for each tier, consult the dedicated master framework documents:
+To explore the exact mathematical derivations, proofs, and simulations for each domain, consult the dedicated master framework documents:
 
-- **Tier 0 (Physical Foundations & Sub-Domains):** [`tier0_physics/TIER0_MASTER_FRAMEWORK.md`](tier0_physics/TIER0_MASTER_FRAMEWORK.md)  
-  *Sub-Domain 1 (Quantum Foundations):* [`tier0_physics/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md`](tier0_physics/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md) ([`manuscript`](tier0_physics/quantum_foundations/quantum_framework.md) | [`issues`](tier0_physics/quantum_foundations/issues_log.md))  
-  *Sub-Domain 2 (Mass & Inertia):* [`tier0_physics/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md`](tier0_physics/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md) ([`manuscript`](tier0_physics/mass_and_inertia/mass_inertia_framework.md) | [`issues`](tier0_physics/mass_and_inertia/issues_log.md))  
-  *Sub-Domain 3 (Celestial Mechanics):* [`tier0_physics/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md`](tier0_physics/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md) ([`manuscript`](tier0_physics/celestial_mechanics/celestial_mechanics_framework.md) | [`issues`](tier0_physics/celestial_mechanics/issues_log.md))  
-  *Sub-Domain 4 (Cosmology & Black Holes):* [`tier0_physics/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md`](tier0_physics/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md) ([`manuscript`](tier0_physics/cosmology_and_black_holes/cosmology_framework.md) | [`issues`](tier0_physics/cosmology_and_black_holes/issues_log.md))  
-  *Issues & Frontiers Master Log:* [`tier0_physics/issues_log.md`](tier0_physics/issues_log.md)  
+- **Physical Systems (Foundations, Mass, Celestial & Cosmology):** [`physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md`](physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md)  
+  *Sub-Domain 1 (Quantum Foundations):* [`physical_systems/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md`](physical_systems/quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md) ([`manuscript`](physical_systems/quantum_foundations/quantum_framework.md) | [`issues`](physical_systems/quantum_foundations/issues_log.md))  
+  *Sub-Domain 2 (Mass & Inertia):* [`physical_systems/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md`](physical_systems/mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md) ([`manuscript`](physical_systems/mass_and_inertia/mass_inertia_framework.md) | [`issues`](physical_systems/mass_and_inertia/issues_log.md))  
+  *Sub-Domain 3 (Celestial Mechanics):* [`physical_systems/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md`](physical_systems/celestial_mechanics/CELESTIAL_MASTER_FRAMEWORK.md) ([`manuscript`](physical_systems/celestial_mechanics/celestial_mechanics_framework.md) | [`issues`](physical_systems/celestial_mechanics/issues_log.md))  
+  *Sub-Domain 4 (Cosmology & Black Holes):* [`physical_systems/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md`](physical_systems/cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md) ([`relativistic manuscript`](physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md) | [`foundations`](physical_systems/cosmology_and_black_holes/cosmological_foundations.md) | [`issues`](physical_systems/cosmology_and_black_holes/issues_log.md))  
+  *Physics Issues & Frontiers Master Log:* [`physical_systems/issues_log.md`](physical_systems/issues_log.md)  
   *Anisotropy-Gap Variational Principle:* [`internal_notes/anisotropy_gap_principle.md`](internal_notes/anisotropy_gap_principle.md)  
   *Dual-Anisotropy Mass & Inertia:* [`internal_notes/mass_inertia_dual_anisotropy.md`](internal_notes/mass_inertia_dual_anisotropy.md)
-- **Tier 1 (Physics & Cosmology):** [`tier1_physics/TIER1_MASTER_FRAMEWORK.md`](tier1_physics/TIER1_MASTER_FRAMEWORK.md)  
-  *Companion manuscript:* [`papers/tier1_cosmology/pdfs/tier1_relativistic_cosmology.pdf`](../../../papers/tier1_cosmology/pdfs/tier1_relativistic_cosmology.pdf)
-- **Tier 2 (Biophysics & Living Systems):** [`tier2_biophysics/TIER2_MASTER_FRAMEWORK.md`](tier2_biophysics/TIER2_MASTER_FRAMEWORK.md)
-- **Tier 3 (Cognitive Systems & Active Inference):** [`tier3_cognitive/TIER3_MASTER_FRAMEWORK.md`](tier3_cognitive/TIER3_MASTER_FRAMEWORK.md)  
-  *Sub-Domain 1 (Meta-Cognition):* [`tier3_cognitive/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](tier3_cognitive/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/meta_cognition/meta_cognition_framework.md) | [`issues`](tier3_cognitive/meta_cognition/issues_log.md))  
-  *Sub-Domain 2 (Linguistic Dynamics):* [`tier3_cognitive/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](tier3_cognitive/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/linguistic_dynamics/linguistic_dynamics_framework.md) | [`issues`](tier3_cognitive/linguistic_dynamics/issues_log.md))  
-  *Sub-Domain 3 (Attention Arbitration):* [`tier3_cognitive/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](tier3_cognitive/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/attention_arbitration/attention_arbitration_framework.md) | [`issues`](tier3_cognitive/attention_arbitration/issues_log.md))
-- **Tier 4 (Societal Institutions & Legal Syncytia):** [`tier4_societal/TIER4_MASTER_FRAMEWORK.md`](tier4_societal/TIER4_MASTER_FRAMEWORK.md)
+- **Biophysical Systems (Living Systems & Active Membranes):** [`biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md`](biophysical_systems/BIOPHYSICAL_MASTER_FRAMEWORK.md)  
+  *Biophysical Treatise:* [`biophysical_systems/biophysical_framework.md`](biophysical_systems/biophysical_framework.md)  
+  *Cosmological Ontology:* [`biophysical_systems/biophysical_cosmological_ontology.md`](biophysical_systems/biophysical_cosmological_ontology.md)
+- **Cognitive Systems (Cognitive Agents & Active Inference):** [`cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md`](cognitive_systems/COGNITIVE_MASTER_FRAMEWORK.md)  
+  *Sub-Domain 1 (Meta-Cognition):* [`cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/meta_cognition/meta_cognition_framework.md) | [`issues`](cognitive_systems/meta_cognition/issues_log.md))  
+  *Sub-Domain 2 (Linguistic Dynamics):* [`cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/linguistic_dynamics/linguistic_dynamics_framework.md) | [`issues`](cognitive_systems/linguistic_dynamics/issues_log.md))  
+  *Sub-Domain 3 (Attention Arbitration):* [`cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/attention_arbitration/attention_arbitration_framework.md) | [`issues`](cognitive_systems/attention_arbitration/issues_log.md))  
+  *Cognitive & Psychology Treatise:* [`cognitive_systems/cognitive_and_psychology.md`](cognitive_systems/cognitive_and_psychology.md)
+- **Societal Systems (Institutional Syncytia & Legal Ledgers):** [`societal_systems/SOCIETAL_MASTER_FRAMEWORK.md`](societal_systems/SOCIETAL_MASTER_FRAMEWORK.md)  
+  *Societal & Institutional Treatise:* [`societal_systems/societal_and_institutional.md`](societal_systems/societal_and_institutional.md)
 - **Core Axiomatic Foundations:** [`core_ontology/draft.md`](core_ontology/draft.md)
+

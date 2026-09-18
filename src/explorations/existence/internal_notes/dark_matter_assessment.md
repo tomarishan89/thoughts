@@ -1,7 +1,7 @@
 # Dark Matter Assessment: What the Framework Can and Cannot Derive
 
 *Updated to Current Framework State (September 2026)*
-*Bilateral Synchronization: `tier1_physics_framework.md` §6.6.5, §6.8.1, §6.8.4, §6.9.7; `framework_status.md` Prediction #6; `issues_log.md` (ISSUES 4.55, 4.56, 4.115 Resolved; ISSUE-4.116 Active Frontier)*
+*Bilateral Synchronization: `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` §6.6.5, §6.8.1, §6.8.4, §6.9.7; `framework_status.md` Prediction #6; `issues_log.md` (ISSUES 4.55, 4.56, 4.115 Resolved; ISSUE-4.116 Active Frontier)*
 
 ---
 
@@ -107,7 +107,7 @@ where each $\hat{\pi}_{\text{sector}} \in \{0, 1\}$.
 
 $$\boxed{\text{Dark Matter} \equiv \text{Physical modes with } \hat{\pi}_{\text{grav}} = +1, \; \hat{\pi}_{\text{EM}} = 0}$$
 
-**Operational Status:** Formally incorporated into §6.8.1.1 of `tier1_physics_framework.md`. It provides the precise topological vocabulary defining dark matter as partially realized existence—gravitationally active while electromagnetically imaginary.
+**Operational Status:** Formally incorporated into §6.8.1.1 of `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md`. It provides the precise topological vocabulary defining dark matter as partially realized existence—gravitationally active while electromagnetically imaginary.
 
 ---
 
@@ -188,10 +188,10 @@ Every recommendation previously identified has been executed and bilateral synch
 | Prior Recommendation / Issue | Destination | Status | Implementation Detail |
 |---|---|---|---|
 | Add $\Omega_{\text{DM}}$ prediction to scorecard | §6.6.8 / `framework_status.md` | ✅ **Completed** | **Prediction #6:** $\Omega_{\text{DM}} = 0.266$ ( $0.1\sigma$ ). |
-| Define force-specific realization operator | §6.8.1.1 / `tier1_physics_framework.md` | ✅ **Completed** | Full operator definition $\hat{\pi}_{\text{real}} = \bigotimes \hat{\pi}_i$. |
+| Define force-specific realization operator | §6.8.1.1 / `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` | ✅ **Completed** | Full operator definition $\hat{\pi}_{\text{real}} = \bigotimes \hat{\pi}_i$. |
 | Log ISSUE-4.55 (ECSK DM microphysics) | `issues_log.md` | ✅ **Resolved** | Complete derivation of Candidates A, B, and C. |
 | Log ISSUE-4.56 (DM-to-baryon ratio) | `issues_log.md` | ✅ **Resolved** | Derived ab initio: $\Omega_{\text{DM}}/\Omega_b = 5.788 \to 5.422$. |
-| Confront $\nu_R$ with Lyman-$\alpha$ & X-ray | ISSUE-4.115 / `tier1_physics_framework.md` | ✅ **Resolved** | Verified via `scripts/sterile_neutrino_lyman_alpha.py`. |
+| Confront $\nu_R$ with Lyman-$\alpha$ & X-ray | ISSUE-4.115 / `physical_systems/cosmology_and_black_holes/relativistic_cosmology_framework.md` | ✅ **Resolved** | Verified via `scripts/sterile_neutrino_lyman_alpha.py`. |
 | Active downstream frontier | ISSUE-4.116 (`issues_log.md`) | 🔄 **Active** | Semiclassical WIMPzilla mode-matching across bounce. |
 
 ---
