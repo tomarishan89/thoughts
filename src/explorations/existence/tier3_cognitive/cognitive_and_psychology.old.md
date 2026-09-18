@@ -1,6 +1,6 @@
 # Cognitive Thermodynamics, The Ariṣaḍvarga, and the Landauer Veto
 
-> **Cognitive & Psychological Focus:** This treatise formalizes **Tier III Cognitive Architectures**, **Bayesian Active Inference Engines**, the **Thermodynamics of the Six Internal Afflictions (*Ariṣaḍvarga*)**, the **Landauer Information-Erasure Cost of Voluntary Veto (*Viveka*)**, and **Evaluation-Conditioned Trajectory Bifurcations**.
+> **Cognitive & Psychological Focus:** This treatise formalizes **Tier III Cognitive Architectures**, **Bayesian Active Inference Engines**, the **Thermodynamics of the Six Internal Afflictions (*Ariṣaḍvarga*)**, and the **Landauer Information-Erasure Cost of Voluntary Veto (*Viveka*)**.
 
 ---
 
@@ -69,7 +69,7 @@ A bottom-up First-Law exergy deficit occurring entirely in real configuration sp
 
 $$\dot{E}_{\text{fuel}} < \dot{E}_{\text{crit}} \equiv T_{\text{ambient}} \int_E \sigma_{\text{total}} \, dV \implies \frac{d\mathcal{G}}{dt} < 0$$
 
-*Kṣudhā* is a biochemical indicator of metabolic depletion ( falling blood glucose, low ATP/AMP ratio ) requiring zero memory simulation.
+*Kṣudhā* is a biochemical indicator of metabolic depletion (falling blood glucose, low ATP/AMP ratio) requiring zero memory simulation.
 
 * **Desire / Craving (*Kāma / Tṛṣṇā*):**
 A top-down simulation executed in imaginary phase space $\Omega_{\mathfrak{Im}}$:
@@ -108,45 +108,3 @@ The generative model divergence explodes ( $\|\hat{\mathbf{C}} - \mathbf{C}_{\te
 The entity sets its predicted external challenge to zero ( $\hat{\mathbf{C}} \equiv \mathbf{0}$ ), disarming its adaptive viscoelastic dampers ( $\nu \to 0$ ). Upon the arrival of real environmental shocks, it undergoes catastrophic brittle fracture without damping.
 6. **Mātsarya (मात्सर्य — Malicious Zero-Sum Trophic Sabotage):**
 An entity expends its own metabolic exergy solely to diminish a neighbor's margin ( $\Delta \phi_{AB} < 0$ ), lowering total syncytial free energy and precipitating mutual systemic lysis.
-
----
-
-## 5. Evaluation-Conditioned Trajectory Bifurcations: Retrospective Evaluation, Depression Loops, and Constructive Planning
-
-A critical psychological phenomenon is how two individuals—or the same individual in differing metabolic states—react to an identical retrospective event $\mathbf{z}_{\text{event}} \in \mathcal{F}_{\text{ledger}}$ ( e.g., a critical remark, an uncompleted task, or a missed deadline ).
-
-### 5.1 The Mathematical Branching Rule
-
-The response trajectory $\dot{\mathbf{z}}_{\text{response}}$ is driven by the Meta-Cognitive Evaluation Operator $\mathcal{O}_{\text{TE}}^{(i)}$:
-
-$$\dot{\mathbf{z}}_{\text{response}} = -\mathbf{K}_{\text{mobility}} \cdot \mathcal{O}_{\text{TE}}^{(i)} \cdot \mathbf{z}_{\text{event}}$$
-
-where $\mathcal{O}_{\text{TE}}^{(i)} \equiv \nabla \otimes \nabla \mathcal{G}_i(\mathbf{z})$ evaluates the local curvature of the event on the agent's internal potential surface.
-
-### 5.2 The Constructive Planning Trajectory ( $\lambda_k > 0$ )
-
-When the agent maintains a positive cognitive yield margin ( $\phi_{\text{cognitive}} \ge 0$ ) supported by healthy metabolic reserves and high perceived active agency $\mathbf{R}_{\text{active}}$:
-- The eigenvalues of $\mathcal{O}_{\text{TE}}^{(i)}$ are strictly positive ( $\lambda_k > 0$ ), characterizing a convex potential well.
-- The retrospective error is treated as a localized gradient pointing toward structural optimization.
-- The internal gap energy is coupled directly into somatic motor channels: $\mathbf{J}_{\text{motor}} > 0$.
-- **Result:** The agent plans a revised working schedule for the next day, dispatches emails, or sets up preventative safeguards. The internal anisotropy gap is closed through real boundary work in $\Omega_{\mathbb{R}}$.
-
-### 5.3 The Depressive Rumination Limit Cycle ( $\lambda_k < 0$ )
-
-When the agent's cognitive margin is depleted ( $\phi_{\text{cognitive}} < 0$ ) due to chronic stress, exhaustion, or low baseline agency:
-- The eigenvalues of $\mathcal{O}_{\text{TE}}^{(i)}$ invert ( $\lambda_k < 0$ ), transforming the memory state into a catastrophic potential ridge or saddle.
-- The agent projects existential collapse ( e.g., "I will be fired", "I am fundamentally incompetent" ).
-- Crucially, physical motor output is suppressed ( $\mathbf{J}_{\text{motor}} = \mathbf{0}$ ) due to psychomotor anergia.
-- **The Limit Cycle:** Because no physical boundary work is executed to discharge the gap, the memory trace remains unresolved in $\mathcal{F}_{\text{ledger}}$. The evaluation sub-engine cycles repeatedly over the same memory state:
-
-$$\oint_{\tau} \dot{\mathbf{z}}_{\mathfrak{Im}} \, d\tau \neq 0, \quad \Delta \mathbf{z}_{\mathbb{R}} \equiv \mathbf{0}$$
-
-This closed imaginary loop continuously dissipates prefrontal metabolic glucose, deepening somatic exhaustion and entrenching psychological paralysis.
-
-### 5.4 Breaking the Depressive Sink: Somatic Preemption
-
-Because depressive rumination is a closed limit cycle in $\Omega_{\mathfrak{Im}}$, it cannot be resolved by further imaginary computation ( e.g., "thinking oneself out of depression" ). 
-
-In accordance with Section 9 of the internal dynamics treatise and Master Equation AA-3, the rumination loop can be broken only by:
-1. **Forced Somatic Motor Discharge ( $\mathbf{J}_{\text{motor}} > 0$ ):** Engaging in physical muscular exertion ( walking, running, cold water immersion ) that forces real boundary displacement, lowering the internal gap via physical action.
-2. **High-Affinity Sensory Interrupts:** Exposing the boundary to strong external stimuli ( social dialogue, intense physical sensations ) whose high coupling charge $q_{\text{ext}} \|\mathbf{J}_{\text{ext}}\| \gg q_{\text{TE}} \|\mathbf{J}_{\text{TE}}\|$ automatically preempts the prefrontal evaluation engine through competitive attention arbitration.

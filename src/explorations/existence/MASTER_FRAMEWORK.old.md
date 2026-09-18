@@ -130,45 +130,6 @@ where $w_{ij}$ is the inter-boundary coupling tensor determined by spatial proxi
 - **Saddle Points & Barriers:** Energy or informational barriers separating distinct attractor basins. Transitioning across a saddle requires an influx of external driving exergy or a critical stimulus perturbation exceeding the barrier height $\Delta\mathcal{G}_{\text{barrier}}$.
 - **Discontinuous Deformations (Phase Transitions):** In high-dimensional cognitive and complex systems, an incoming informational stimulus can trigger an abrupt reorganization of the internal metric $G_i$ or priors $\mathbf{A}_{\mathfrak{Im}}$, instantaneously transforming a flat region of the landscape into a deep gravitational attractor (such as the sudden recognition of a dormant high-salience object or celebrity).
 
-### 1.7 The Universal Meta-Evaluation Operator ( $\mathcal{O}_{\text{eval}}$ ) and Cross-Tier Invariance
-
-A fundamental claim of the framework is that **every form of existence has a meta-evaluation parallel; only the landscape and players differ across constitutive specifications**. 
-
-In conventional philosophical discourse, self-awareness or reflexive monitoring is treated as an anthropomorphic privilege of conscious minds. In mathematical physics, self-evaluation is the capacity of an open engine to compute second-order variations of its state-space trajectory against an internal potential landscape, feeding back curvature corrections into its primary kinematic trajectory.
-
-#### 1.7.1 The Mathematical Operator
-
-For an entity $E_i$ traversing state space $\Omega_{\mathbb{C}}$ with gap potential landscape $\mathcal{G}_i(\mathbf{z}) = \|\mathbf{A}_{\mathfrak{Im}}^{(i)} - \mathbf{A}_{\mathbb{R}}^{(i)}\|_{G_i}$, the **Universal Meta-Evaluation Operator** $\mathcal{O}_{\text{eval}}^{(i)}$ computes the Hessian curvature tensor:
-
-$$\mathcal{O}_{\text{eval}}^{(i)} \equiv \nabla \otimes \nabla \mathcal{G}_i\left(\mathbf{z}; \, \mathbf{A}_{\mathfrak{Im}}^{(i)}, \, \partial E_i\right)$$
-
-The operator is:
-1. **Boundary-Relative & Non-Neutral:** Conditioned on the entity's own memory ledger $\mathcal{F}_{\text{ledger}}$ and sensorimotor boundary channels $\partial E_i$. Objective, coordinate-independent evaluation is physically prohibited.
-2. **A Recursive Sub-Engine:** $\mathcal{O}_{\text{eval}}$ is instantiated by an internal sub-engine $E_{\text{eval}} \subset \Omega$ that satisfies Core Axiom 1, possessing epistemic mass $\mathbf{M}_{\text{epistemic}}$ and paying an unavoidable Landauer information-erasure dissipation tax $\dot{\mathcal{E}}_{\text{eval}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}_{\text{erasure}}$.
-3. **Preemptible under Attention Arbitration:** In systems with multi-channel inputs, evaluation loops are subordinate to survival-critical boundary shocks via softmax priority arbitration: $\text{Winner} = \arg\max_k \{ q_k \|\mathbf{J}_k\| \}$.
-
-#### 1.7.2 Universal Cross-Tier Realization Matrix
-
-| Tier / Domain | Base Dynamic Trajectory ( $\mathbf{z}$ ) | Evaluation Landscape ( $\mathcal{G}$ ) | Evaluator Sub-Engine ( $\mathcal{O}_{\text{eval}}$ ) | Feedback / Trajectory Correction | Evaluator Failure Mode |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tier 0: Quantum Field Theory** | Classical field configuration $\phi_c(x)$ | Classical Action Functional $S[\phi]$ | **1-Loop Effective Action Functional** $\Gamma[\phi] = S[\phi] + \frac{i\hbar}{2}\operatorname{Tr}\ln\left(\frac{\delta^2 S}{\delta\phi\delta\phi}\right)$ | Radiative quantum corrections and vacuum polarization altering tree-level trajectories | Non-renormalizable ultraviolet divergences; ghost poles |
-| **Tier 0: Celestial Mechanics** | Orbital trajectory of extended body $\mathbf{x}(t)$ | Gravitational potential field $\Phi(\mathbf{x})$ | **Tidal Gravitational Tensor** $\mathcal{E}_{ij} = \nabla_i \nabla_j \Phi = R_{0i0j}$ | Tidal deformation, Roche limit tidal disruption, orbital resonance circularization | Tidal disruption ( spaghettification ); chaotic resonance capture |
-| **Tier 1: Continuum Mechanics** | Fluid velocity field $\mathbf{v}(\mathbf{x}, t)$ | Kinetic energy / pressure distribution | **Viscous Strain-Rate Dissipation Tensor** $\mathbf{D} = \frac{1}{2}(\nabla\mathbf{v} + \nabla\mathbf{v}^T)$ | Rayleigh-Bénard convective bifurcation; turbulent vortex shedding | Boundary layer detachment; infinite shear-rate shock singularity |
-| **Tier 2: Bacterial Chemotaxis** | Swimming trajectory ( run-and-tumble path ) | Chemical attractant concentration field $C(\mathbf{x})$ | **Methylation-Comparison Enzyme Complex** ( CheA/CheY kinase cascade ) | Modulates flagellar motor reversal frequency: tumble if $dC/dt < 0$ | Sensory saturation / receptor fatigue; chemotactic paralysis |
-| **Tier 2: Immunology & Cell Fate** | Antigen presentation / cellular transcription | Self vs. non-self peptide spectrum | **T-Cell Receptor (TCR) Affinity Discriminator** & MHC checkpoints | Cytotoxic lysis of rogue cells; regulatory T-cell suppression | Autoimmune self-attack ( loss of self-tolerance ); neoplastic escape |
-| **Tier 3: Cognitive & Neural Systems** | Automatic behavioral impulse / motor plan | Value/Threat representation in $\Omega_{\mathfrak{Im}}$ | **Prefrontal-Anterior Cingulate Meta-Cognitive Circuit** ( $\mathcal{O}_{\text{TE}}$ ) | Landauer conscious veto (*Viveka* over *Vāsanā*); inhibitory motor gating | Obsessive-compulsive rumination; depressive paralysis; manic runaway |
-| **Tier 4: Macro-Economics & Capital** | Market price clearance & asset allocation | Profitability and liquidity surface | **Central Bank Monetary Policy Committee & Regulatory Audit** | Interest rate modulation; quantitative tightening; reserve ratio mandates | Hyperinflationary currency collapse; liquidity trap; boom-bust debt deflation |
-| **Tier 4: Constitutional Governance** | Legislative statutes & executive administrative acts | Constitutional foundational framework | **Supreme / Constitutional Court Judicial Review** | Voiding of ultra vires laws; injunctions; constitutional amendment reviews | Judicial paralysis; constitutional crisis; totalitarian usurpation |
-
-#### 1.7.3 The Three Universal Invariance Theorems of Meta-Evaluation
-
-1. **The Evaluator Non-Neutrality Invariant:** Every evaluation operator is structurally coupled to an evaluator sub-engine with non-zero internal anisotropy $\mathbf{A}_{\text{eval}} \neq \mathbf{0}$. An absolute or detached vantage point is mathematically and physically impossible.
-2. **The Thermodynamic Erasure Tax:** Every non-trivial evaluation compares alternative configurations, dissipating exergy at or above the Landauer-Sagawa-Ueda bound: $\dot{\mathcal{E}}_{\text{dissipated}}^{\text{eval}} \ge k_B T \ln 2 \cdot \dot{\mathcal{H}}_{\text{comparison}}$.
-3. **The Evaluator Failure Triad:** Evaluator sub-engines universally fail via exactly three topological modes across all tiers:
-   - *Hyper-Sensitivity (Autoimmunity):* Baseline stochastic noise is misclassified as existential threat, triggering destructive counter-stress.
-   - *Hypo-Sensitivity (Saturation Blindness):* Sensory receptors or audit channels saturate, rendering the entity blind to steepening hazard gradients.
-   - *Self-Referential Sclerosis (Parasitic Decoupling):* The evaluator ceases evaluating the base trajectory and begins evaluating its own internal states recursively, consuming metabolic fuel while primary boundary maintenance collapses.
-
 ---
 
 ## 2. The Multi-Tier Taxonomy Matrix
@@ -311,9 +272,6 @@ To explore the exact mathematical derivations, proofs, and simulations for each 
 - **Tier 1 (Physics & Cosmology):** [`tier1_physics/TIER1_MASTER_FRAMEWORK.md`](tier1_physics/TIER1_MASTER_FRAMEWORK.md)  
   *Companion manuscript:* [`papers/tier1_cosmology/pdfs/tier1_relativistic_cosmology.pdf`](../../../papers/tier1_cosmology/pdfs/tier1_relativistic_cosmology.pdf)
 - **Tier 2 (Biophysics & Living Systems):** [`tier2_biophysics/TIER2_MASTER_FRAMEWORK.md`](tier2_biophysics/TIER2_MASTER_FRAMEWORK.md)
-- **Tier 3 (Cognitive Systems & Active Inference):** [`tier3_cognitive/TIER3_MASTER_FRAMEWORK.md`](tier3_cognitive/TIER3_MASTER_FRAMEWORK.md)  
-  *Sub-Domain 1 (Meta-Cognition):* [`tier3_cognitive/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](tier3_cognitive/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/meta_cognition/meta_cognition_framework.md) | [`issues`](tier3_cognitive/meta_cognition/issues_log.md))  
-  *Sub-Domain 2 (Linguistic Dynamics):* [`tier3_cognitive/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](tier3_cognitive/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/linguistic_dynamics/linguistic_dynamics_framework.md) | [`issues`](tier3_cognitive/linguistic_dynamics/issues_log.md))  
-  *Sub-Domain 3 (Attention Arbitration):* [`tier3_cognitive/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](tier3_cognitive/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md) ([`manuscript`](tier3_cognitive/attention_arbitration/attention_arbitration_framework.md) | [`issues`](tier3_cognitive/attention_arbitration/issues_log.md))
+- **Tier 3 (Cognitive Systems & Active Inference):** [`tier3_cognitive/TIER3_MASTER_FRAMEWORK.md`](tier3_cognitive/TIER3_MASTER_FRAMEWORK.md)
 - **Tier 4 (Societal Institutions & Legal Syncytia):** [`tier4_societal/TIER4_MASTER_FRAMEWORK.md`](tier4_societal/TIER4_MASTER_FRAMEWORK.md)
 - **Core Axiomatic Foundations:** [`core_ontology/draft.md`](core_ontology/draft.md)

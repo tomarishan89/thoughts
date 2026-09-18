@@ -1,6 +1,13 @@
-# Formal Issues, Critique Log, and Mathematical Milestones (Tier 0: Quantum Vacuum)
+# Formal Issues, Critique Log, and Mathematical Milestones (Tier 0: Physical Foundations)
 
-This log tracks all identified theoretical gaps, mathematical inconsistencies, open vulnerabilities, and milestone resolutions for the quantum domain and microscopic vacuum ontology ([`tier0_physics_framework.md`](tier0_physics_framework.md) and [`TIER0_MASTER_FRAMEWORK.md`](TIER0_MASTER_FRAMEWORK.md)).
+This log tracks all identified theoretical gaps, mathematical inconsistencies, open vulnerabilities, and milestone resolutions across Tier-0 physical foundations ([`TIER0_MASTER_FRAMEWORK.md`](TIER0_MASTER_FRAMEWORK.md)).
+
+### Dedicated Sub-Domain Issue Logs:
+
+- **Sub-Domain 1 (Quantum Foundations):** [`quantum_foundations/issues_log.md`](quantum_foundations/issues_log.md)
+- **Sub-Domain 2 (Mass & Inertia):** [`mass_and_inertia/issues_log.md`](mass_and_inertia/issues_log.md)
+- **Sub-Domain 3 (Celestial Mechanics):** [`celestial_mechanics/issues_log.md`](celestial_mechanics/issues_log.md)
+- **Sub-Domain 4 (Cosmology & Black Holes):** [`cosmology_and_black_holes/issues_log.md`](cosmology_and_black_holes/issues_log.md)
 
 ---
 
@@ -76,6 +83,8 @@ To enforce strict mathematical rigor and maintain transparent epistemic boundari
 | **V-L-4** | Active | Type (a) | Non-Markovian Dynamics | Constitutive integro-differential equation for memory kernel $\mathcal{K}(\tau - \tau')$ | Derive kernel components ( exponential decay, resonant reactivation, consolidation phase transition ) from underlying substrate physics | `[ ]` |
 | **V-L-5** | Active | Type (a) | Covariance / Boundary Theory | Transformation covariance rules under boundary redefinition $\partial E \to \partial E'$ | Establish state-space transition maps $\Omega_{\mathbb{C}} \to \Omega_{\mathbb{C}}'$ proving invariance of existence equations under boundary change | `[ ]` |
 | **V-CS-1** | Active | Type (a) | Representation Theory | Mathematical representation of generalized multi-scale charge algebras | Formalize mapping from discrete gauge charges ( $U(1)\times SU(2)\times SU(3)$ ) to continuous cognitive charge distributions $\{q_k^{\text{cog}}\}$ | `[ ]` |
+| **V-TE-1** | Active | Type (a) | Quantum Field Theory | 1-Loop effective action correspondence for meta-evaluation operator $\mathcal{O}_{\text{eval}}$ | Prove that $\Gamma[\phi] = S[\phi] + \frac{i\hbar}{2}\operatorname{Tr}\ln(\delta^2 S / \delta\phi\delta\phi)$ is the exact Tier 0 path-integral realization of $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$ | `[ ]` |
+| **V-TE-2** | Active | Type (a) | Gravitation / Celestial | Tidal gravitational tensor $\mathcal{E}_{ij} = R_{0i0j}$ as Tier 0/1 realization of $\mathcal{O}_{\text{eval}}$ | Demonstrate that the tidal tensor rigorously maps to the second-order landscape curvature governing extended-body deformation and Roche limit disruption | `[ ]` |
 
 ---
 
@@ -811,4 +820,30 @@ $$G_{AB}(\boldsymbol{\theta}) = \mathbb{E}_{p(\mathbf{x}|\boldsymbol{\theta})}\l
   The Charge Selectivity Principle posits that all open engines possess generalized charges that filter multi-channel environmental fluxes. At Tier 0, these are Standard Model Lie algebra generators; at Tier 3, they are cognitive salience and valence parameters. A unified mathematical representation theory spanning both regimes is missing.
 - **Formal Target & Kill Condition:**  
   Construct the generalized charge space $\mathcal{Q}_E$ and coupling tensor $\mathcal{C}: \mathcal{Q}_E \times \mathcal{F}_{\text{channels}} \to \mathbb{R}$. Prove that in the discrete limit, $\mathcal{Q}_E$ reproduces the $U(1)_Y \times SU(2)_L \times SU(3)_C$ Dynkin labels and Casimir invariants with gauge conservation $d\mathbf{q}/dt = 0$. In the continuum cognitive limit, derive the dynamic renormalization equation $d\mathbf{q}_{\text{cog}}/d\tau = \boldsymbol{\beta}(\mathbf{q}_{\text{cog}}, \mathbf{J}_{\text{stimulus}})$ governing how exposure to environmental fluxes modifies internal charge distributions ( learning, sensitization, habituation ).
+
+---
+
+### Category 13: Meta-Evaluation Operator & Cross-Tier Parallels
+
+#### ISSUE V-TE-1: 1-Loop Effective Action Correspondence for Meta-Evaluation Operator $\mathcal{O}_{\text{eval}}$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The Master Framework posits that the meta-evaluation operator ( Third Eye ) corresponds at Tier 0 to the 1-loop effective action functional $\Gamma[\phi] = S[\phi] + \frac{i\hbar}{2}\operatorname{Tr}\ln\left(\frac{\delta^2 S}{\delta\phi\delta\phi}\right)$, where quantum fluctuations evaluate the tree-level classical trajectory. A rigorous functional derivation proving that $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$ emerges identically from the second functional derivative of the classical action is required.
+- **Formal Target & Kill Condition:**  
+  Derive the functional Hessian $\mathcal{H}_{\mu\nu}(x, y) = \frac{\delta^2 S}{\delta\phi^\mu(x)\delta\phi^\nu(y)}$ as the exact microscopic realization of the curvature tensor $\nabla \otimes \nabla \mathcal{G}$. Prove that renormalization group running $\mu \frac{d\Gamma}{d\mu}$ corresponds to scale-dependent coarse-graining of the evaluation landscape. If the 1-loop quantum correction cannot be mapped to the Hessian curvature of the gap potential without unphysical field redefinitions, this correspondence is rejected.
+
+---
+
+#### ISSUE V-TE-2: Tidal Gravitational Tensor as Realization of $\mathcal{O}_{\text{eval}}$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  In celestial mechanics ( Tier 0 / Tier 1 ), the tidal tensor $\mathcal{E}_{ij} = R_{0i0j} = \nabla_i \nabla_j \Phi$ measures the second-order curvature of the gravitational landscape across an extended body. The formal mapping between tidal self-stress, Roche limit disruption, and the eigenvalue bifurcation of the meta-evaluation operator requires explicit mathematical closure.
+- **Formal Target & Kill Condition:**  
+  Prove that the geodesic deviation equation $\frac{D^2 \xi^i}{d\tau^2} = -R^\mu_{\phantom{\mu}\nu\alpha\beta} u^\nu u^\beta \xi^\alpha$ is the exact non-relativistic and relativistic limit of the trajectory bifurcation equation $\dot{\mathbf{z}} = -\mathbf{K} \cdot \mathcal{O}_{\text{eval}} \cdot \mathbf{z}$. Demonstrate that tidal disruption at the Roche limit corresponds to negative eigenvalue divergence $\det(\mathcal{O}_{\text{eval}}) < 0$ precipitating structural boundary rupture ( $\phi < 0$ ).
 

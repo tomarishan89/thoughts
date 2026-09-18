@@ -1,6 +1,13 @@
-# Tier 0 Quantum Vacuum Manuscript Audit Log
+# Tier 0 Physical Foundations Manuscript Audit Log
 
-This document serves as the permanent, authoritative catalog for all structural, mathematical, dimensional, lexical, and bibliographical audits performed on [`tier0_physics_framework.md`](tier0_physics_framework.md) and [`TIER0_MASTER_FRAMEWORK.md`](TIER0_MASTER_FRAMEWORK.md).
+This document serves as the permanent, authoritative catalog for all structural, mathematical, dimensional, lexical, and bibliographical audits performed across Tier-0 physical foundations ([`TIER0_MASTER_FRAMEWORK.md`](TIER0_MASTER_FRAMEWORK.md)).
+
+### Dedicated Sub-Domain Audit Logs:
+
+- **Sub-Domain 1 (Quantum Foundations):** [`quantum_foundations/manuscript_audit.md`](quantum_foundations/manuscript_audit.md)
+- **Sub-Domain 2 (Mass & Inertia):** [`mass_and_inertia/manuscript_audit.md`](mass_and_inertia/manuscript_audit.md)
+- **Sub-Domain 3 (Celestial Mechanics):** [`celestial_mechanics/manuscript_audit.md`](celestial_mechanics/manuscript_audit.md)
+- **Sub-Domain 4 (Cosmology & Black Holes):** [`cosmology_and_black_holes/manuscript_audit.md`](cosmology_and_black_holes/manuscript_audit.md)
 
 It enforces the unsparing standards of senior journal referees (*Physical Review Letters*, *Journal of Mathematical Physics*, *Communications in Mathematical Physics*) to ensure the quantum vacuum framework remains a standalone, mathematically rigorous, and peer-reviewable theoretical physics manuscript.
 

@@ -1,23 +1,21 @@
 # Tier 3 Master Framework: Cognitive Continuum Mechanics, Bayesian Active Inference, and Information-Thermodynamic Veto Architectures
 
 **Author:** Ishan Tomar  
-**Scope Note:** This executive framework formalizes **Tier 3 Cognitive and Neural Systems** under self-referential simulation across complexified state space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$.  
-**Companion Documents:** [`cognitive_and_psychology.md`](cognitive_and_psychology.md), [`cognitive_social_matrix.md`](cognitive_social_matrix.md)  
-**Modular Sub-Domains:** [`meta_cognition/`](meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md), [`linguistic_dynamics/`](linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md), [`attention_arbitration/`](attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md)  
+**Scope Note:** This executive framework formalizes **Tier 3 Cognitive and Neural Systems** under self-referential simulation ( $\chi^* \gg 0$ ).  
+**Companion Documents:** [`cognitive_and_psychology.md`](cognitive_and_psychology.md), [`cognitive_social_matrix.md`](cognitive_social_matrix.md)
 
 ---
 
 ## Executive Abstract
 
-We present a consolidated mathematical framework formulating cognitive agents and neural networks as active, non-equilibrium thermodynamic engines operating across a complexified state space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$. A cognitive agent is distinguished by its high imaginary state-space capacity, dedicating substantial metabolic free energy to maintaining an internal generative model of its environment and itself ( $\exists\, E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$ ).
+We present a consolidated mathematical framework formulating cognitive agents and neural networks as active, non-equilibrium thermodynamic engines operating across a complexified state space $\Omega_{\mathbb{C}} = \Omega_{\mathbb{R}} \oplus i \Omega_{\mathfrak{Im}}$. A cognitive agent is distinguished by its high predictive complexity ( $\chi^* \gg 0$ ), dedicating substantial metabolic free energy to maintaining an internal generative model of its environment and itself ( $\exists\, E_{\text{self}}^{\mathfrak{Im}} \in \Omega_{\mathfrak{Im}}$ ).
 
-By minimizing variational free energy through Bayesian active inference, the cognitive engine preserves an informational boundary against cognitive decoherence and psychic trauma. Six master continuum equations derive:
+By minimizing variational free energy through Bayesian active inference, the cognitive engine preserves an informational boundary against cognitive decoherence and psychic trauma. Five master continuum equations derive:
 1. **The Self-Referential Topology of Consciousness:** Mathematical formulation of self-awareness as an imaginary-sector sub-model modeling the physical system.
 2. **The Sagawa-Ueda Bound on Dissipation:** Exact thermodynamic reduction of dissipated mechanical shock work via counterfactual mutual information.
 3. **The Landauer Veto Gating Law:** Formulation of conscious restraint (*Viveka*) as an active inhibitory filter paying an exact $k_B T \ln 2$ bit-erasure metabolic tax over automated reflex arcs (*Vāsanā*).
-4. **The Semantic Transduction Tensor ( $\mathbf{K}_{\text{trans}}$ ):** Dimensional bridge converting informational divergence ( relative entropy ) into real physical traction.
+4. **The Semantic Transduction Tensor ( $\mathbf{K}_{\text{trans}}$ ):** Dimensional bridge converting informational divergence (relative entropy) into real physical traction.
 5. **The Cognitive Yield Margin:** Continuum stability condition governing psychological resilience and specifying the exact threshold for trauma-induced identity collapse.
-6. **The Meta-Cognitive Evaluation Operator & Dynamic Priority Routing:** Second-order curvature of the gap landscape ( the Third Eye, $\mathcal{O}_{\text{TE}}$ ) and competitive attention arbitration with sensory preemption.
 
 ---
 
@@ -44,7 +42,7 @@ If informational divergence exceeds the ego yield limit $\sigma_Y^{\text{ego}}$,
 
 ---
 
-## 2. The Six Master Equations of Cognitive Mechanics
+## 2. The Five Master Equations of Cognitive Mechanics
 
 | Layer | Master Equation | Cognitive Continuum Formalism | Downstream Mental Couplings |
 | :--- | :--- | :--- | :--- |
@@ -53,7 +51,6 @@ If informational divergence exceeds the ego yield limit $\sigma_Y^{\text{ego}}$,
 | **Executive Veto** | **Master Eq. 3** | Landauer Voluntary Veto Gating (*Viveka* over *Vāsanā*) | Metabolic expenditure ( $W_{\text{veto}} \ge k_B T \ln 2$ ) overriding autonomic impulses |
 | **Transduction Tensor** | **Master Eq. 4** | Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$ | Transduces physical sensory neural firings to symbolic conceptual topology |
 | **Integrity & Breakdown** | **Master Eq. 5** | Cognitive Yield Margin & Trauma Plastic Breakdown | Quantifies mental resilience ( $\phi_{\text{cog}} \ge 0$ ) and structural breakdown thresholds |
-| **Meta-Evaluation & Attention** | **Master Eq. 6** | Meta-Cognitive Curvature $\mathcal{O}_{\text{TE}}$ & Priority Routing | Boundary-relative evaluation ( Third Eye ) and sensory preemption |
 
 ### Master Equation 1: Self-Referential Phase Space Topology
 
@@ -121,20 +118,6 @@ Recovery requires deploying the Petz transpose recovery channel $\mathcal{R}_{\s
 
 ---
 
-### Master Equation 6: Meta-Cognitive Curvature & Attention Priority Routing
-
-Self-referential evaluation and attentional trajectory selection are governed by the coupled curvature-arbitration system:
-
-$$\boxed{\begin{cases}
-\mathcal{O}_{\text{TE}}^{(i)}(\mathbf{z}) \equiv \nabla \otimes \nabla \mathcal{G}_i\left(\mathbf{z}; \, \mathbf{A}_{\mathfrak{Im}}^{(i)}, \, \partial E_i\right) & (\textbf{Boundary-Relative Third Eye}) \\[10pt]
-\mathbf{J}_{\text{routed}}(\tau) = \sum_{k=1}^M \frac{\exp\left(\beta q_k \|\mathbf{J}_k\|\right)}{\sum_{m=1}^M \exp\left(\beta q_m \|\mathbf{J}_m\|\right)} \mathbf{J}_k & (\textbf{Competitive Attention Arbitration})
-\end{cases}}}$$
-
-1. **Non-Neutral Evaluation:** $\mathcal{O}_{\text{TE}}$ computes the second-order Hessian of the gap landscape $\mathcal{G}_i$, conditioned on the evaluator's own memory ledger $\mathcal{F}_{\text{ledger}}$.
-2. **Nociceptive Preemption:** When somatic damage flux spikes ( $\|\mathbf{J}_{\text{pain}}\| \to \infty$ ), the primary survival charge $q_{\text{pain}} \gg q_{\text{TE}}$ forces the routing tensor to decouple $\mathcal{O}_{\text{TE}}$ within milliseconds, shifting all available metabolic exergy into reflexive physical defense.
-
----
-
 ## 3. Thermodynamics of the Six Afflictions (*Ariṣaḍvarga*)
 
 The framework models the classical Sanskrit psychological afflictions (*Ariṣaḍvarga*) as thermodynamic instabilities:
@@ -156,7 +139,4 @@ The framework models the classical Sanskrit psychological afflictions (*Ariṣa�
 | **Landauer Veto Gating Law (*Viveka*)** | Master Eq. 3 | [`cognitive_and_psychology.md`](cognitive_and_psychology.md) **§2** |
 | **Semantic Transduction Tensor $\mathbf{K}_{\text{trans}}$** | Master Eq. 4 | [`cognitive_social_matrix.md`](cognitive_social_matrix.md) **§2** |
 | **Cognitive Yield Margin & Ego Trauma** | Master Eq. 5 | [`cognitive_and_psychology.md`](cognitive_and_psychology.md) **§3** |
-| **Meta-Cognitive Evaluation Operator ( Third Eye )** | Master Eq. 6 | [`meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md) **Master Eq. MC-1** |
-| **Linguistic Sub-Engines & Runaway Dynamics** | Symbolic $E_{\text{lang}}$ | [`linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md) **Master Eq. LD-2** |
-| **Attention Arbitration & Sensory Preemption** | Softmax routing | [`attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md) **Master Eq. AA-2** |
-| **Thermodynamics of the *Ariṣaḍvarga*** | Metabolic instabilities | [`cognitive_and_psychology.md`](cognitive_and_psychology.md) **§4** |
+| **Thermodynamics of the *Ariṣaḍvarga*** | Metabolic instabilities | [`cognitive_and_psychology.md`](cognitive_and_psychology.md) **§3** |
