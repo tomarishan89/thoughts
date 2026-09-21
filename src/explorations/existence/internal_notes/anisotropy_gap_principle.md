@@ -26,6 +26,10 @@ $$\frac{d\mathbf{z}}{d\tau} = -\mathbf{K}_{\text{mobility}} \cdot \nabla_{\Omega
 
 where $\mathcal{G}[\mathbf{A}_{\mathfrak{Im}}, \mathbf{A}_{\mathbb{R}}] = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ represents the instantaneous anisotropy gap norm, and $\mathbf{K}_{\text{mobility}}$ is a positive-definite constitutive transport tensor.
 
+#### Geometric Note on Tensor Directionality and Scalar Contraction
+
+The imaginary anisotropy $\mathbf{A}_{\mathfrak{Im}}$ is not a scalar; it is a vector (or higher-rank tensor) in the internal manifold $\Omega_{\mathfrak{Im}}$ with coordinate components $A_{\mathfrak{Im}}^a$. The scalar gap $\mathcal{G}$ is defined via a chosen norm (e.g., Riemannian norm $\|\mathbf{V}\| = \sqrt{g_{ab}^{\text{int}} V^a V^b}$ ), which projects the multi-dimensional internal disparity onto a one-dimensional distance. While this scalar contraction dictates the isotropic rate of relaxation, the directional structure is fully preserved in the Hessian spectrum of the universal evaluation operator $\mathcal{O}_{\text{eval}} \equiv \nabla \otimes \nabla \mathcal{G}$: non-zero eigenvalues correspond to directions of active engagement, while null eigenvalues correspond to domain-specific blindness (orthogonal cognitive subspaces).
+
 ---
 
 ## 2. The Shared Space ( $\Omega_{\mathbb{R}}^{\text{shared}}$ )

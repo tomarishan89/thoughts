@@ -622,34 +622,34 @@ $$\boxed{\dot{E}_{\text{fuel}}(t) < \dot{E}_{\text{crit}} \implies \frac{d\mathc
 
 ---
 
-#### 2.3.5 Theorem 6 (First-Principles Derivation of Optimal Predictive Investment Ratio $\chi^*$ )
+#### 2.3.5 Theorem 6 (First-Principles Derivation of Optimal Internal Exergy Allocation Ratio $\mathcal{R}_{\mathcal{E}}^*$ )
 
-* **Information-Thermodynamic Optimization (Active vs. Passive Systems):** For active physical systems possessing internal field or informational degrees of freedom ( $D_{\mathfrak{Im}}$ ), anticipatory internal pre-stressing reduces hydrodynamic shock damage, but operating internal channels incurs a minimum Landauer thermodynamic dissipation rate (Landauer, 1961). The optimal investment ratio $\chi \equiv \dot{\mathcal{E}}_{\mathfrak{Im}} / \dot{\mathcal{E}}_{\mathfrak{Re}}$ minimizes total thermodynamic dissipation. For purely inanimate or celestial physical systems lacking internal feedback degrees of freedom, $\dot{\mathcal{E}}_{\mathfrak{Im}} \equiv 0 \implies \chi^* = 0$, reproducing the degenerate reactive engine limit of Section 3.1.
+* **Information-Thermodynamic Optimization (Active vs. Passive Systems):** For active physical systems possessing internal field or informational degrees of freedom ( $D_{\mathfrak{Im}}$ ), anticipatory internal pre-stressing reduces hydrodynamic shock damage, but operating internal channels incurs a minimum Landauer thermodynamic dissipation rate (Landauer, 1961). The optimal allocation ratio $\mathcal{R}_{\mathcal{E}} \equiv \dot{\mathcal{E}}_{\mathfrak{Im}} / \dot{\mathcal{E}}_{\mathfrak{Re}}$ minimizes total thermodynamic dissipation. For purely inanimate or celestial physical systems lacking internal feedback degrees of freedom, $\dot{\mathcal{E}}_{\mathfrak{Im}} \equiv 0 \implies \mathcal{R}_{\mathcal{E}}^* = 0$, reproducing the degenerate reactive engine limit of Section 3.1.
 
 * **Step 1 (The Global Dissipation Functional):**
 The total thermodynamic dissipation rate of the entity during interaction is the sum of internal computational cost and external boundary shock damage:
 
-$$\sigma_{\text{global}}(\chi) = \sigma_{\text{computation}}(\chi) + \sigma_{\text{shock}}(\chi)$$
+$$\sigma_{\text{global}}(\mathcal{R}_{\mathcal{E}}) = \sigma_{\text{computation}}(\mathcal{R}_{\mathcal{E}}) + \sigma_{\text{shock}}(\mathcal{R}_{\mathcal{E}})$$
 
 * **Step 2 (Monotonicity of Landauer Computational Dissipation):**
-By Landauer's Principle, erasing information generates entropy $\Delta S \ge k_B \ln 2 \, [\mathrm{J/K}]$ per bit. Computing predictions with investment ratio $\chi$ generates erasure entropy rate density:
+By Landauer's Principle, erasing information generates entropy $\Delta S \ge k_B \ln 2 \, [\mathrm{J/K}]$ per bit. Computing predictions with allocation ratio $\mathcal{R}_{\mathcal{E}}$ generates erasure entropy rate density:
 
-$$\sigma_{\text{computation}}(\chi) \equiv \frac{k_B \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\chi) = k_B \ln 2 \cdot \dot{h}_{\mathfrak{Im}}(\chi) \quad [\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}] \implies \frac{\partial \sigma_{\text{computation}}}{\partial \chi} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \chi^2} \ge 0$$
+$$\sigma_{\text{computation}}(\mathcal{R}_{\mathcal{E}}) \equiv \frac{k_B \ln 2}{V} \cdot \dot{\mathcal{H}}(D_{\mathfrak{Im}})(\mathcal{R}_{\mathcal{E}}) = k_B \ln 2 \cdot \dot{h}_{\mathfrak{Im}}(\mathcal{R}_{\mathcal{E}}) \quad [\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}] \implies \frac{\partial \sigma_{\text{computation}}}{\partial \mathcal{R}_{\mathcal{E}}} > 0, \quad \frac{\partial^2 \sigma_{\text{computation}}}{\partial \mathcal{R}_{\mathcal{E}}^2} \ge 0$$
 
 * **Step 3 (Derivation of Shock Dissipation via Rankine-Hugoniot Elastic Rate Expansion):**
-By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\chi)$ directs active boundary pre-stressing $\sigma_{\text{pre}}(\chi) = \kappa_{\text{stress}} \Delta \mathcal{I}(\chi)$, leaving residual unmitigated overpressure $\Delta \sigma_{\text{eff}}(\chi) \equiv \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi)$, where $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{boundary}}} \in [\frac{\mathrm{J/m^3}}{\mathrm{bit}} \equiv \frac{\mathrm{Pa}}{\mathrm{bit}}]$ is the Volumetric Information-Stress Coupling Coefficient. Across characteristic shock impact duration $\tau_{\text{impact}} \in [\mathrm{s}]$, the volumetric shock entropy dissipation rate is derived from the **Rankine-Hugoniot shock jump expansion** (Landau & Lifshitz, 1987) combining linear elastic strain energy with cubic hydrodynamic shock entropy jump:
+By the Generalized Second Law of Information Thermodynamics (Sagawa & Ueda, 2012), mutual information $\Delta \mathcal{I}(\mathcal{R}_{\mathcal{E}})$ directs active boundary pre-stressing $\sigma_{\text{pre}}(\mathcal{R}_{\mathcal{E}}) = \kappa_{\text{stress}} \Delta \mathcal{I}(\mathcal{R}_{\mathcal{E}})$, leaving residual unmitigated overpressure $\Delta \sigma_{\text{eff}}(\mathcal{R}_{\mathcal{E}}) \equiv \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\mathcal{R}_{\mathcal{E}})$, where $\kappa_{\text{stress}} \equiv \frac{k_B T \ln 2}{V_{\text{boundary}}} \in [\frac{\mathrm{J/m^3}}{\mathrm{bit}} \equiv \frac{\mathrm{Pa}}{\mathrm{bit}}]$ is the Volumetric Information-Stress Coupling Coefficient. Across characteristic shock impact duration $\tau_{\text{impact}} \in [\mathrm{s}]$, the volumetric shock entropy dissipation rate is derived from the **Rankine-Hugoniot shock jump expansion** (Landau & Lifshitz, 1987) combining linear elastic strain energy with cubic hydrodynamic shock entropy jump:
 
-$$\boxed{\sigma_{\text{shock}}(\chi) = [ \frac{\left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{\Gamma \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\chi) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} ] \quad [\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}]}$$
+$$\boxed{\sigma_{\text{shock}}(\mathcal{R}_{\mathcal{E}}) = [ \frac{\left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\mathcal{R}_{\mathcal{E}}) \right\rangle_+^2}{2 \rho_0 c_s^2 T \cdot \tau_{\text{impact}}} + \frac{\Gamma \left\langle \sigma_{\text{impact}} - \kappa_{\text{stress}} \Delta \mathcal{I}(\mathcal{R}_{\mathcal{E}}) \right\rangle_+^3}{12 \rho_0^2 c_s^4 T \cdot \tau_{\text{impact}}} ] \quad [\frac{\mathrm{W}}{\mathrm{m^3 \cdot K}}]}$$
 
-where $E_{\text{elastic}} \equiv \rho_0 c_s^2 = K_0$ is the acoustic bulk elastic modulus $[\mathrm{Pa}]$, $\Gamma \equiv \frac{1}{c_s} \left( \frac{\partial(\rho c_s)}{\partial \rho} \right)_s$ is the fundamental gasdynamic derivative, and $\langle x \rangle_+ \equiv \max(0, x)$ is the positive Macauley ramp operator ensuring that transmitted shock dissipation acts strictly on positive unmitigated overpressures ( $\Delta \sigma_{\text{eff}} > 0$ ), guaranteeing $\sigma_{\text{shock}}(\chi) \equiv 0$ when pre-stress fully buffers the impact ( $\kappa_{\text{stress}}\Delta\mathcal{I} \ge \sigma_{\text{impact}}$ ) without double-counting internal pre-stress metabolic power $\dot{\mathcal{W}}_{\text{pre-stress}}$.
-Because channel capacity exhibits diminishing marginal information returns ( $\frac{\partial \Delta \mathcal{I}}{\partial \chi} > 0, \frac{\partial^2 \Delta \mathcal{I}}{\partial \chi^2} \le 0$ ), $\sigma_{\text{shock}}(\chi)$ is strictly decreasing ( $\frac{\partial \sigma_{\text{shock}}}{\partial \chi} < 0$ ) and strictly convex, with explicit analytical Hessian curvature:
+where $E_{\text{elastic}} \equiv \rho_0 c_s^2 = K_0$ is the acoustic bulk elastic modulus $[\mathrm{Pa}]$, $\Gamma \equiv \frac{1}{c_s} \left( \frac{\partial(\rho c_s)}{\partial \rho} \right)_s$ is the fundamental gasdynamic derivative, and $\langle x \rangle_+ \equiv \max(0, x)$ is the positive Macauley ramp operator ensuring that transmitted shock dissipation acts strictly on positive unmitigated overpressures ( $\Delta \sigma_{\text{eff}} > 0$ ), guaranteeing $\sigma_{\text{shock}}(\mathcal{R}_{\mathcal{E}}) \equiv 0$ when pre-stress fully buffers the impact ( $\kappa_{\text{stress}}\Delta\mathcal{I} \ge \sigma_{\text{impact}}$ ) without double-counting internal pre-stress metabolic power $\dot{\mathcal{W}}_{\text{pre-stress}}$.
+Because channel capacity exhibits diminishing marginal information returns ( $\frac{\partial \Delta \mathcal{I}}{\partial \mathcal{R}_{\mathcal{E}}} > 0, \frac{\partial^2 \Delta \mathcal{I}}{\partial \mathcal{R}_{\mathcal{E}}^2} \le 0$ ), $\sigma_{\text{shock}}(\mathcal{R}_{\mathcal{E}})$ is strictly decreasing ( $\frac{\partial \sigma_{\text{shock}}}{\partial \mathcal{R}_{\mathcal{E}}} < 0$ ) and strictly convex, with explicit analytical Hessian curvature:
 
-$$\boxed{\frac{\partial^2 \sigma_{\text{shock}}}{\partial \chi^2} = \kappa_{\text{stress}}^2 \left(\frac{\partial \Delta \mathcal{I}}{\partial \chi}\right)^2 [ \frac{1}{K_0 T \tau_{\text{impact}}} + \frac{\Gamma \langle \Delta \sigma_{\text{eff}} \rangle_+}{2 K_0^2 T \tau_{\text{impact}}} ] - \kappa_{\text{stress}} \frac{\partial^2 \Delta \mathcal{I}}{\partial \chi^2} [ \frac{\langle \Delta \sigma_{\text{eff}} \rangle_+}{K_0 T \tau_{\text{impact}}} + \frac{\Gamma \langle \Delta \sigma_{\text{eff}} \rangle_+^2}{4 K_0^2 T \tau_{\text{impact}}} ] > 0 \quad (\text{for } \Delta \sigma_{\text{eff}} > 0)}$$
+$$\boxed{\frac{\partial^2 \sigma_{\text{shock}}}{\partial \mathcal{R}_{\mathcal{E}}^2} = \kappa_{\text{stress}}^2 \left(\frac{\partial \Delta \mathcal{I}}{\partial \mathcal{R}_{\mathcal{E}}}\right)^2 [ \frac{1}{K_0 T \tau_{\text{impact}}} + \frac{\Gamma \langle \Delta \sigma_{\text{eff}} \rangle_+}{2 K_0^2 T \tau_{\text{impact}}} ] - \kappa_{\text{stress}} \frac{\partial^2 \Delta \mathcal{I}}{\partial \mathcal{R}_{\mathcal{E}}^2} [ \frac{\langle \Delta \sigma_{\text{eff}} \rangle_+}{K_0 T \tau_{\text{impact}}} + \frac{\Gamma \langle \Delta \sigma_{\text{eff}} \rangle_+^2}{4 K_0^2 T \tau_{\text{impact}}} ] > 0 \quad (\text{for } \Delta \sigma_{\text{eff}} > 0)}$$
 
 * **Step 4 (Convexity & Global Thermodynamic Minimum):**
-Because $\sigma_{\text{global}}(\chi)$ is the sum of two strictly convex functions ( $\frac{\partial^2 \sigma_{\text{global}}}{\partial \chi^2} > 0$ ), there exists a unique global thermodynamic minimum $\chi^*$ satisfying $\frac{d\sigma_{\text{global}}}{d\chi} = 0$:
+Because $\sigma_{\text{global}}(\mathcal{R}_{\mathcal{E}})$ is the sum of two strictly convex functions ( $\frac{\partial^2 \sigma_{\text{global}}}{\partial \mathcal{R}_{\mathcal{E}}^2} > 0$ ), there exists a unique global thermodynamic minimum $\mathcal{R}_{\mathcal{E}}^*$ satisfying $\frac{d\sigma_{\text{global}}}{d\mathcal{R}_{\mathcal{E}}} = 0$:
 
-$$\boxed{\left. \frac{\partial \sigma_{\text{computation}}}{\partial \chi} \right|_{\chi^*} = -\left. \frac{\partial \sigma_{\text{shock}}}{\partial \chi} \right|_{\chi^*}}$$
+$$\boxed{\left. \frac{\partial \sigma_{\text{computation}}}{\partial \mathcal{R}_{\mathcal{E}}} \right|_{\mathcal{R}_{\mathcal{E}}^*} = -\left. \frac{\partial \sigma_{\text{shock}}}{\partial \mathcal{R}_{\mathcal{E}}} \right|_{\mathcal{R}_{\mathcal{E}}^*}}$$
 
 * **Step 5 (Prigogine Dissipation-to-Stability Ratio $\Lambda$ ):**
 Comparing internal volumetric entropy generation to outward boundary rejection defines the **Prigogine Stability Ratio**:
@@ -692,7 +692,7 @@ rigorously bounding catastrophic variance-induced margin collapse under acute en
 Active informational fuel allocation ( $\dot{\mathcal{E}}_{\mathfrak{Im}} = k_B T \ln 2 \cdot \dot{\mathcal{H}} > 0$ ) is strictly conditioned on positive forward projection viability:
 
 $$\boxed{\begin{cases}
-\mathcal{P}_{\hat{\mathbf{P}}}(t) > 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}}(t) = \chi^* \dot{\mathcal{E}}_{\text{total}} > 0 & \text{(Proactive Negentropy Investment / Exploratory Expression } \boldsymbol{\mathcal{X}} > 0\text{)} \\
+\mathcal{P}_{\hat{\mathbf{P}}}(t) > 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}}(t) = \mathcal{R}_{\mathcal{E}}^* \dot{\mathcal{E}}_{\mathfrak{Re}} > 0 & \text{(Proactive Negentropy Investment / Exploratory Expression } \boldsymbol{\mathcal{X}} > 0\text{)} \\
 \mathcal{P}_{\hat{\mathbf{P}}}(t) \le 0 \implies \dot{\mathcal{E}}_{\mathfrak{Im}}(t) \longrightarrow 0, \; \mathbf{v}_n \cdot \hat{n} \le 0 & \text{(Projection Collapse / Boundary Regression and Radiative Dissipation)}
 \end{cases}}$$
 
@@ -837,7 +837,7 @@ $$\frac{d\mu_{\text{ext}}}{dt} \geq 0$$
 
 Inanimate and celestial physical systems (crystals, rocks, planetary bodies, stars) possess no predictive feedback apparatus:
 
-$$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \chi^* = 0, \quad \dot{\mathcal{E}}_{\mathfrak{Im}} = 0$$
+$$\mathfrak{Im}(D_{\mathfrak{Im}}) = \{\mathbf{0}\} \implies \mathcal{R}_{\mathcal{E}}^* = 0, \quad \dot{\mathcal{E}}_{\mathfrak{Im}} = 0$$
 
 * **Fuel State ( $\mathcal{S}_{\text{fuel}}$ ):** Cohesive lattice binding potential $U_{\text{bond}}$, electronic bond energies, or gravitational binding energy $U_{\text{grav}} = -\frac{3 G M^2}{5 R}$.
 * **Resistance Field ( $\mathbf{R}$ ):** Instantaneous elastic restoring force $\boldsymbol{\sigma} = \mathbf{C}_{\text{elastic}} : \boldsymbol{\varepsilon}$, with regulated field shear viscosity $\nu_{\text{field}} = \lim_{\epsilon \to 0^+} \frac{1}{k_B T} \int_V \left\langle T_{xy}^{\text{field}}(\mathbf{0}, 0) \, T_{xy}^{\text{field}}(\mathbf{x}, \tau) \right\rangle \exp\left( -\frac{m_D c}{\hbar}\|\mathbf{x}\| \right) d^3x \int_0^\infty \exp\left( -\left(\Gamma_{\text{coll}} + \epsilon\right)\tau \right) d\tau < \infty$.
@@ -861,7 +861,7 @@ $$\|\mathbf{C}\| \ge \sigma_{\text{yield}} \implies \phi(x, t) < 0 \implies \mat
 3. **Astrophysical Coherence (Stars and Black Holes):**
 A main-sequence star consumes nuclear fuel ( $\dot{E}_{\text{fusion}}$ ) to generate outward radiation pressure ( $-\boldsymbol{\sigma}_{\text{rad}}\cdot\hat{n}$ ) balancing inward gravitational traction ( $\mathbf{C}_{\text{grav}}$ ). When fuel is exhausted ( $\dot{E}_{\text{fuel}} \to 0$ ), the Lyapunov functional satisfies $\frac{d\mathcal{G}}{dt} > 0$, inducing gravitational collapse to a degenerate state or black hole.
 
-The framework holds unconditionally for classical and relativistic physical systems as the **$\chi^* = 0$ reactive limit**.
+The framework holds unconditionally for classical and relativistic physical systems as the **$\mathbf{A}_{\mathfrak{Im}} \equiv 0$ reactive limit** ( $\mathcal{R}_{\mathcal{E}}^* = 0$ ).
 
 ---
 

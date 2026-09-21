@@ -76,6 +76,8 @@ $$\Gamma[\phi_c] = S[\phi_c] + \frac{i\hbar}{2}\operatorname{Tr}\ln\left( \mathc
 
 where the trace-log term evaluates the stability and convexity of the potential well across all fluctuation modes. This proves that quantum radiative corrections, Lamb shifts, and Casimir attractions are the exact Tier 0 physical feedback of the Meta-Evaluation Operator into the base trajectory ( formal resolution of **V-TE-1** ).
 
+> **Active Frontier V-AT-1 (Norm Ambiguity & Gleason Uniqueness):** The collapse of state space anisotropy into the $L_2$ scalar norm $\|\cdot\|^2$ is uniquely forced by Gleason's theorem on $\mathbb{C}^4$, excluding $L_1$ and $L_4$ alternatives. Active frontier **V-AT-1** seeks to establish whether this $L_2$ selection on Hilbert space constitutes the unique gauge-invariant norm choice for the complex metric $G_{AB}$ across all scales ( see [`../issues_log.md`](../issues_log.md) Category 14 ).
+
 ---
 
 ## 2. Master Equations of Quantum Foundations

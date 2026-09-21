@@ -60,6 +60,8 @@ $$\mathcal{O}_{\text{eval}}^{\text{tidal}} \equiv \nabla \otimes \nabla \mathcal
 
 The geodesic deviation equation $\frac{d^2 \xi^i}{d\tau^2} = -\mathcal{E}^i_{\phantom{i}j} \xi^j$ is the exact kinematic realization of the trajectory bifurcation equation $\dot{\mathbf{z}} = -\mathbf{K} \cdot \mathcal{O}_{\text{eval}} \cdot \mathbf{z}$. At the Roche limit, the net radial curvature eigenvalue flips negative ( $\lambda_{\text{net}} < 0$ ), driving structural yield collapse $\phi = \sigma_Y - \sigma_{\text{tidal}} < 0$ and precipitating catastrophic tidal boundary disruption ( formal resolution of **V-TE-2** ).
 
+> **Active Frontier V-AT-1 (Directional Preservation under Contraction):** Although the scalar gravitational potential $\Phi(\mathbf{x})$ acts as an isotropic gap scalar $\mathcal{G}$, the tidal evaluation operator $\mathcal{E}_{ij} = \nabla_i \nabla_j \Phi$ restores full tensorial directional sensitivity, yielding distinct radial stretching ( $\lambda > 0$ ) and tangential compressing ( $\lambda < 0$ ) eigenvalues. Proving that this eigenvalue spectrum rigorously preserves anisotropic directionality across multi-body phase contractions connects directly to active frontier **V-AT-1** ( see [`../issues_log.md`](../issues_log.md) Category 14 ).
+
 ---
 
 ## 2. Master Equations of Celestial Mechanics

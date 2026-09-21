@@ -89,3 +89,14 @@ All four sub-domains are bilaterally verified by automated numerical scripts in 
 | **Cosmology & Black Holes** | [`../scripts/holographic_vacuum_work_resolution.py`](../scripts/holographic_vacuum_work_resolution.py) | Dark energy density ratio $\Omega_\Lambda \approx 0.6847$ | Error $< 1.0\%$ | **VERIFIED** |
 | **Meta-Evaluation (T0)** | [`../scripts/vte1_vte2_mathematical_verification.py`](../scripts/vte1_vte2_mathematical_verification.py) | V-TE-1 RG scale invariance & V-TE-2 Roche breakup | Relative error $< 10^{-4}$ & Roche $\phi < 0$ | **VERIFIED** |
 
+---
+
+## 4. Cross-Domain Frontiers & Theoretical Navigation
+
+The physical systems architecture coordinates with the Master Framework ( [`../MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) ) across several active theoretical frontiers tracked in the Master Physics Issues Index ( [`issues_log.md`](issues_log.md) ):
+
+1. **Norm Ambiguity & Directional Preservation (V-AT-1):** Proving that collapsing multi-component gauge or phase tensors into scalar gap $\mathcal{G}$ preserves full directional responsiveness through the Hessian spectrum of the universal evaluation operator $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$.
+2. **Cognitive Equivalence & Physical Duality (V-CEP-1..3):** Establishing the formal duality between the physical quantum vacuum $|0\rangle_{\text{QFT}}$ ( a stable potential minimum ) and the cognitive vacuum $|0\rangle_{\text{cog}}$ ( an unstable holding maximum requiring active metabolic inhibition ).
+3. **Cross-Scale Hierarchy & Transition Thresholds (V-FSH-1..3):** Constructing dimensionless coupling invariants bridging astrophysical accretion boundaries to biological and cognitive organization thresholds.
+
+

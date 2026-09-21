@@ -13,6 +13,9 @@
 | **V-MC-2** | Spatial Dispersion | Tensorial non-locality and spatial dispersion of the Hessian curvature operator $\mathcal{O}_{\text{TE}}$ across distributed cortico-striatal circuits. | OPEN | Major |
 | **V-MC-3** | Energetic Partitioning | Dynamic metabolic partitioning coefficient $\eta_{\text{TE}} = \dot{\mathcal{E}}_{\text{TE}} / \dot{\mathcal{E}}_{\text{metabolic}}$ under acute psychological shock. | OPEN | Minor |
 | **V-MC-4** | Operator Inversion | Exact threshold conditions for eigenvalue sign inversion ( $\lambda_k < 0$ ) triggering depressive limit cycles. | OPEN | Major |
+| **V-CEP-1** | Metric Specification | Derivation of internal Riemannian metric $g_{ab}^{\text{cog}}$ on $\Omega_{\mathfrak{Im}}$ for formal definition of cognitive geodesics. | OPEN | Critical |
+| **V-CEP-2** | Topological Duality | Empirical verification of metabolic signature of the unstable silence-apex ( concave potential $V_{\text{engage}}$ ). | OPEN | Major |
+| **V-CEP-3** | Contraction Mapping | Proof of Banach fixed-point convergence for recursive self-evaluation $\mathcal{O}_{\text{eval}}(\mathcal{O}_{\text{eval}})$ under mobility suppression. | OPEN | Moderate |
 
 ---
 

@@ -24,6 +24,7 @@ This log tracks all identified theoretical gaps, mathematical inconsistencies, o
 | **V-MASS-3** | Active | Type (a)/(b) | Hadronic Mechanics | Unification of composite hadronic mass with QCD condensates | Map QCD chiral $\langle \bar{q}q \rangle$ and gluon condensates to imaginary-sector vacuum anisotropy | `[ ]` |
 | **V-AGP-1** | Active | Type (a) | Variational Dynamics | Action functional for Anisotropy-Gap Principle ( $\delta \int \mathcal{L} d\tau = 0$ ) | Derive Euler-Lagrange trajectory equation; prove reduction to geodesic equation in static limit | `[ ]` |
 | **V-AGP-2** | Active | Type (a) | Differential Geometry | Metric tensor $G_{AB}$ on complexified state space $\Omega_{\mathbb{C}}$ | Construct Riemannian/Kähler metric on $\Omega_{\mathbb{C}}$; without metric, $\nabla\mathcal{G}$ is coordinate-dependent | `[ ]` |
+| **V-AT-1** | Active | Type (a) | Metric / Gauge Geometry | Norm ambiguity and directional preservation in $\mathcal{G} = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ | Prove evaluation operator $\mathcal{O}_{\text{eval}}$ preserves directional eigenvalue spectrum; verify gauge invariance of $\mathbf{\Xi}$ | `[ ]` |
 
 ---
 
@@ -66,3 +67,16 @@ $$\mathcal{G}^2 \equiv g_{\mu\nu}^{(\mathbb{R})} A_{\mathbb{R}}^\mu A_{\mathbb{R
   where $\mathbf{\Xi}_{\mu a}$ carries dimensions of $[\text{momentum} / \text{gauge amplitude}]$.
 - **Downstream Active Frontier (Rule 2):**  
   **ISSUE V-AGP-2:** Closed-form construction of the joint metric tensor $G_{AB}$ on $\Omega_{\mathbb{C}}$.
+
+---
+
+### ISSUE V-AT-1: Norm Ambiguity and Directional Preservation in Metric Contraction
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The metric contraction $\mathcal{G}^2 = G_{AB} \Delta\mathbf{A}^A \Delta\mathbf{A}^B$ collapses the multi-component gauge sector distortion $\mathbf{A}_{\mathfrak{Im}}$ into an isotropic scalar, yielding invariant rest mass $m = \|\mathbf{A}_{\mathfrak{Im}}\|/c^2$. It must be formally proved that the selection of metric $G_{ab}^{(\mathfrak{Im})}$ and conversion tensor $\mathbf{\Xi}_{\mu a}$ preserves gauge invariance and that the directional sensitivity of physical interactions is fully restored by the eigenvalue spectrum of $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$.
+- **Formal Target & Kill Condition:**  
+  Prove that the evaluation operator $\mathcal{O}_{\text{eval}}$ retains the non-trivial rank and directional eigenspaces of $\mathbf{A}_{\mathfrak{Im}}$, and establish the gauge covariance of $\mathbf{\Xi}_{\mu a}$ under electroweak $SU(2)_L \times U(1)_Y$.  
+  *Kill Condition:* If contraction renders the trajectory dynamics insensitive to anisotropic gauge directions in a manner unrecoverable by $\mathcal{O}_{\text{eval}}$, the model collapses to an isotropic scalar toy model.

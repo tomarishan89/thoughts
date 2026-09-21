@@ -73,6 +73,10 @@ Trajectories do not minimize absolute anisotropy (which would force universal en
 - **At Tier 1 (Classical Physics, $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ):** The gap reduces to manifest spacetime metric curvature, and the gradient flow identically reproduces the classical Riemannian geodesic equation $\ddot{x}^\mu + \Gamma^\mu_{\alpha\beta}\dot{x}^\alpha \dot{x}^\beta = 0$.
 - **At Tier 2 & 3 (Living & Cognitive Systems):** The entity aligns its manifest somatic state to match internal anticipatory templates, or accommodates its templates to intractable physical realities.
 
+#### Remark on Tensor Directionality and the Scalar Gap
+
+The accumulated imaginary anisotropy $\mathbf{A}_{\mathfrak{Im}}$ is a geometric object (vector or higher-rank tensor) in the internal configuration space $\Omega_{\mathfrak{Im}}$, with components $A_{\mathfrak{Im}}^a$ (cf. Section 1.1 of [`mass_inertia_framework.md`](physical_systems/mass_and_inertia/mass_inertia_framework.md)). The scalar gap $\mathcal{G} = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ collapses this directional structure into an isotropic magnitude (yielding invariant scalar mass $m = \|\mathbf{A}_{\mathfrak{Im}}\|/c^2$ ). However, the directional sensitivity of an entity is fully restored through the universal evaluation operator $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$ (Section 1.7): its eigenvalue spectrum dictates domain-specific responsiveness along aligned eigenvectors and complete blindness along orthogonal null directions (e.g., an electrician's cognitive manifold responding strongly to electrical gradients while exhibiting near-zero sensitivity along metallurgical dimensions).
+
 ### 1.4 The Charge Selectivity Principle
 
 Every form of existence carries internal constitutive parameters—generalized "charges"—that determine which field channels of its shared environmental space it couples to. Selectivity is not a cognitive or neural idiosyncrasy; it is an invariant property of open engines across all scales:
@@ -307,7 +311,8 @@ To explore the exact mathematical derivations, proofs, and simulations for each 
   *Sub-Domain 1 (Meta-Cognition):* [`cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md`](cognitive_systems/meta_cognition/META_COGNITION_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/meta_cognition/meta_cognition_framework.md) | [`issues`](cognitive_systems/meta_cognition/issues_log.md))  
   *Sub-Domain 2 (Linguistic Dynamics):* [`cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md`](cognitive_systems/linguistic_dynamics/LINGUISTIC_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/linguistic_dynamics/linguistic_dynamics_framework.md) | [`issues`](cognitive_systems/linguistic_dynamics/issues_log.md))  
   *Sub-Domain 3 (Attention Arbitration):* [`cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md`](cognitive_systems/attention_arbitration/ATTENTION_MASTER_FRAMEWORK.md) ([`manuscript`](cognitive_systems/attention_arbitration/attention_arbitration_framework.md) | [`issues`](cognitive_systems/attention_arbitration/issues_log.md))  
-  *Cognitive & Psychology Treatise:* [`cognitive_systems/cognitive_and_psychology.md`](cognitive_systems/cognitive_and_psychology.md)
+  *Cognitive & Psychology Treatise:* [`cognitive_systems/cognitive_and_psychology.md`](cognitive_systems/cognitive_and_psychology.md)  
+  *Cognitive Equivalence Principle & Internal Dynamics:* [`internal_notes/cognitive_equivalence_principle.md`](internal_notes/cognitive_equivalence_principle.md)
 - **Societal Systems (Institutional Syncytia & Legal Ledgers):** [`societal_systems/SOCIETAL_MASTER_FRAMEWORK.md`](societal_systems/SOCIETAL_MASTER_FRAMEWORK.md)  
   *Societal & Institutional Treatise:* [`societal_systems/societal_and_institutional.md`](societal_systems/societal_and_institutional.md)
 - **Core Axiomatic Foundations:** [`core_ontology/draft.md`](core_ontology/draft.md)

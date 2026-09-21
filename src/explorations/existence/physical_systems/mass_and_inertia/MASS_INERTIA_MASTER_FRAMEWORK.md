@@ -48,6 +48,10 @@ $$\mathcal{G}^2 \equiv G_{AB} \Delta\mathbf{A}^A \Delta\mathbf{A}^B = g_{\mu\nu}
 
 where $\mathbf{\Xi}_{\mu a}$ is a fundamental dimensional conversion tensor with physical dimension $[\text{momentum} / \text{gauge amplitude}]$.
 
+### 1.3 Active Frontier: Tensor Directionality & Norm Ambiguity (V-AT-1)
+
+The scalar contraction $\mathcal{G}$ collapses the directional components of the internal gauge distortion $A_{\mathfrak{Im}}^a$ into a single magnitude ( yielding invariant rest mass $m = \|\mathbf{A}_{\mathfrak{Im}}\|/c^2$ ). Under the Master Framework §1.3 directionality principle, directional sensitivity is preserved through the eigenvalue spectrum of the universal evaluation operator $\mathcal{O}_{\text{eval}} = \nabla \otimes \nabla \mathcal{G}$. Proving the gauge invariance and uniqueness of the cross-term $\mathbf{\Xi}_{\mu a}$ and the internal metric $G_{ab}^{(\mathfrak{Im})}$ constitutes active theoretical frontier **V-AT-1** ( see [`../issues_log.md`](../issues_log.md) Category 14 and [`issues_log.md`](issues_log.md) ).
+
 ---
 
 ## 2. Master Equations of Mass & Inertia

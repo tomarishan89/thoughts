@@ -498,7 +498,7 @@ An entity cannot exist in physical isolation from boundary interactions; its bou
 
 ### 8.2 Inanimate Environmental Reflection: The Star Boundary Thought Experiment
 
-Inanimate and celestial systems possess no predictive feedback apparatus ( $\chi^* \equiv 0$ ), yet their boundaries function as physical environmental mirrors:
+Inanimate and celestial systems operate in the strict reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ), possessing no internal imaginary-sector degrees of freedom, yet their boundaries function as physical environmental mirrors:
 - A star's photosphere $\partial E_{\text{star}}$ encodes the ambient pressure, opacity, and gravitational potential of its interstellar environment.
 - When irradiated by an external stellar companion, the photosphere's local emission spectrum, temperature distribution, and acoustic p-mode oscillation spectrum deform in direct reflection of the external field.
 - The boundary does not "choose" to reflect; rather, mechanical boundary continuity across the interface front forces the entity to reflect environmental state.

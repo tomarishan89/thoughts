@@ -57,7 +57,7 @@ To enforce strict mathematical rigor and maintain transparent epistemic boundari
 | **V-QM-10.1** | Active | Type (a)/(b) | Dynamical Systems | Second-order secular resonance coupling for 5:2 and 7:3 Kirkwood gaps | Extend binary j:1 vs j:j-1 classification to include higher-order secular resonance overlap (Murray & Dermott Ch. 7.3); current model misclassifies 5:2 and 7:3 | `[ ]` |
 | **V-QM-10.2** | Active | Type (a) | Celestial-Exoplanet Bridge | Rank-2 tidal tensor extension for eccentric Jupiter ( $e_J = 0.048$ ) | Replace scalar $\kappa_J$ with full rank-2 tidal tensor; connects to exoplanet stability theory and Kozai-Lidov mechanism | `[ ]` |
 | **V-QM-10.3** | Active | Type (a) | Existence Equation Bridge | Map orbital Resistance $R_{\text{orbital}} = \Omega_{\text{stab}} - 1$ to framework existence equation | Prove $R_{\text{orbital}} = 0 \Leftrightarrow$ orbital boundary at critical point; close the conceptual loop from celestial to quantum decoherence domain via Core Axiom 1 | `[ ]` |
-| **V-AGP-1** | Active | Type (a) | Variational Dynamics | Action functional for Anisotropy-Gap Principle ( $\delta \int \mathcal{L} d\tau = 0$ ) | Derive Euler-Lagrange trajectory equation; prove reduction to geodesic equation at Tier 1 ( $\chi^* = 0$ ) | `[ ]` |
+| **V-AGP-1** | Active | Type (a) | Variational Dynamics | Action functional for Anisotropy-Gap Principle ( $\delta \int \mathcal{L} d\tau = 0$ ) | Derive Euler-Lagrange trajectory equation; prove reduction to geodesic equation at the reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ) | `[ ]` |
 | **V-AGP-2** | Active | Type (a) | Differential Geometry | Metric tensor $G_{AB}$ on complexified state space $\Omega_{\mathbb{C}}$ | Construct Riemannian/Kähler metric on $\Omega_{\mathbb{C}}$; without metric, $\nabla\mathcal{G}$ and integral curves are undefined | `[ ]` |
 | **V-AGP-3** | Active | Type (a) | Field Theory | Field equation for Shared Space $\Omega_{\mathbb{R}}^{\text{shared}}$ ( $\hat{\mathcal{D}}\Phi = \sum \mathbf{T}_k$ ) | Formulate exact differential operator coupling entity response stress to shared space geometry | `[ ]` |
 | **V-AGP-4** | Active | Type (a) | Multi-Player Coupling | Formalization of pairwise coupling weight tensor $w_{ij}$ | Derive functional dependence on shared duration, boundary overlap, response intensity, and specificity | `[ ]` |
@@ -91,6 +91,16 @@ To enforce strict mathematical rigor and maintain transparent epistemic boundari
 | **V-TE-2.1** | Active | Type (a) | Relativistic Gravitation | Relativistic gravito-magnetic tidal tensor $\mathcal{B}_{ij}$ for spinning Kerr black holes | Compute parity-odd frame-dragging tidal curvature $\mathcal{B}_{ij} = \frac{1}{2}\epsilon_{ikl} R^{kl}_{\phantom{kl}0j}$ and evaluate spin-orbit precession | `[ ]` |
 | **V-TE-2.2** | Active | Type (a) | Viscoelastic Tidal Dynamics | Viscoelastic dissipation tensor $Q^{-1}_{ij}$ coupling tidal evaluation to spin-orbit synchronization | Derive Darwin-Kaula tidal lag angle and energy dissipation rate $\dot{E}_{\text{tide}} = \frac{k_2 G M^2 R^5}{r^6}\omega_{\text{rel}}$ | `[ ]` |
 | **V-TE-2.3** | Active | Type (a) | Asteroid Morphology | Multipole tidal expansion (octupolar/hexadecapolar) for irregular rubble-pile morphology | Formulate higher-order tensor $\nabla_i \nabla_j \nabla_k \Phi$ for contact binaries and irregularly shaped asteroids | `[ ]` |
+| **V-CEP-1** | Active | Type (a)/(c) | Cognitive / Cross-Tier | Metric tensor $g_{ab}^{\text{cog}}$ specification for cognitive geodesic deviation | Derive Riemannian / Fisher information metric from neural population firing rates; prove geodesic vs non-geodesic trajectory separation | `[ ]` |
+| **V-CEP-2** | Active | Type (a) | Cognitive / Cross-Tier | Metabolic signature of topological duality ( unstable maximum of $V_{\text{engage}}$ ) | Verify sustained non-response meditation consumes elevated prefrontal metabolic energy relative to mind-wandering freefall | `[ ]` |
+| **V-CEP-3** | Active | Type (a) | Cognitive / Cross-Tier | Contraction mapping proof for recursive evaluation $\mathcal{O}_{\text{eval}}(\mathcal{O}_{\text{eval}})$ fixed point | Prove Lipschitz constant $\gamma < 1$ for recursive self-evaluation under mobility suppression $\mathbf{K} \to 0$ | `[ ]` |
+| **V-FSH-1** | Active | Type (c) | Cross-Tier | Biophysical-to-physical coupling operator bridge | Construct dimensionless coupling invariant $\Pi_{\text{bio-phys}}$ linking genomic information to gravitational mass-energy | `[ ]` |
+| **V-FSH-2** | Active | Type (a)/(b) | Cross-Tier | Selection threshold quantification at scale transitions | Formulate closed-form mechanical criteria for transitions (Jeans mass, fusion ignition, multicellularity threshold) | `[ ]` |
+| **V-FSH-3** | Active | Type (a) | Cross-Tier | Self-similar scaling exponent prediction & power-law universality test | Test whether mass, energy, and informational degrees of freedom obey scale-free power laws across astronomical and biological scales | `[ ]` |
+| **V-AT-1** | Active | Type (a) | Foundation / Cross-Tier | Norm ambiguity and directional preservation in $\mathcal{G} = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$ | Formulate variational principle selecting internal metric $G_{\text{int}}$; prove evaluation operator eigenvalue spectrum preserves directional sensitivity | `[ ]` |
+| **V-AT-1.1** | Active | Type (a) | Mass & Inertia | Covariant closure of conversion tensor $\mathbf{\Xi}_{\mu a}$ under gauge transformations | Prove that cross-term $\mathbf{\Xi}_{\mu a}$ is uniquely fixed by $U(1)\times SU(2)\times SU(3)$ gauge invariance and dimensional homogeneity | `[ ]` |
+| **V-AT-1.2** | Active | Type (a) | Quantum Foundations | Equivalence of Gleason $L_2$ projective uniqueness and Riemannian norm selection | Prove that Gleason's frame function uniqueness on $\mathbb{C}^4$ forces the Riemannian norm $\|\mathbf{A}_{\mathfrak{Im}}\|_{G_{\mathfrak{Im}}}$ | `[ ]` |
+| **V-AT-1.3** | Active | Type (a) | Cosmology | ADM Cauchy foliation diffeomorphism invariance of holographic gap scalar | Prove that in the reactive limit $\mathbf{A}_{\mathfrak{Im}} \equiv 0$, the holographic horizon capacity is a proper scalar under 3+1 ADM foliations | `[ ]` |
 
 ---
 
@@ -457,7 +467,7 @@ $$\frac{d\mathbf{z}_{\text{composite}}}{d\tau} = -\mathbf{K}_{\text{composite}} 
   The Anisotropy-Gap Principle currently asserts that trajectories follow the gradient of the anisotropy gap: $\dot{\mathbf{z}} \propto -\nabla \mathcal{G}$. In mathematical physics, gradient flows must be derived from an underlying variational principle (Hamilton's principle $\delta \mathcal{S} = 0$ ) with a well-defined Lagrangian $\mathcal{L}(\mathbf{z}, \dot{\mathbf{z}}, \tau)$ that accommodates non-conservative dissipative friction.
 - **Formal Target & Kill Condition:**  
   1. Formulate a Rayleigh-dissipation or Schwinger-Keldysh closed-time-path action on $\Omega_{\mathbb{C}}$.
-  2. Prove that at Tier 1 ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$, $\chi^* = 0$ ), the Euler-Lagrange equations reduce identically to the Riemannian geodesic equation $\ddot{x}^\mu + \Gamma^\mu_{\alpha\beta}\dot{x}^\alpha \dot{x}^\beta = 0$.
+  2. Prove that at the reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ), the Euler-Lagrange equations reduce identically to the Riemannian geodesic equation $\ddot{x}^\mu + \Gamma^\mu_{\alpha\beta}\dot{x}^\alpha \dot{x}^\beta = 0$.
   3. Failure to derive this reduction without arbitrary tuning parameters will invalidate the claim that the geodesic is a special case of the Anisotropy-Gap Principle.
 
 ---
@@ -872,5 +882,136 @@ $$\exp\left(\frac{i}{\hbar}\Gamma[\phi_c]\right) = \exp\left(\frac{i}{\hbar}S[\p
   **ISSUE V-TE-2.1:** Relativistic gravito-magnetic tidal tensor $\mathcal{B}_{ij} = \frac{1}{2}\epsilon_{ikl} R^{kl}_{\phantom{kl}0j}$ for spinning Kerr black holes.  
   **ISSUE V-TE-2.2:** Viscoelastic dissipation tensor $Q^{-1}_{ij}$ coupling tidal evaluation to spin-orbit synchronization.  
   **ISSUE V-TE-2.3:** Multipole tidal expansion for irregular rubble-pile morphology.
+
+---
+
+### Category 14: Cognitive Equivalence, Anisotropy Tensor Directionality & Cross-Scale Hierarchy
+
+#### ISSUE V-CEP-1: Metric Tensor Specification for Cognitive Geodesic Deviation
+
+- **Epistemic Classification:** Type (a)/(c) — Domain-Extrapolated Formalization
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The Cognitive Equivalence Principle ( [`cognitive_equivalence_principle.md`](../internal_notes/cognitive_equivalence_principle.md) ) asserts that non-response meditation represents an accelerated ( non-inertial ) frame resisting natural cognitive geodesics. However, geodesic deviation $\frac{D^2 \xi^a}{d\tau^2} = \mathcal{R}^a_{\phantom{a}bcd} u^b u^c \xi^d - \nabla^a \nabla_b V_{\text{engage}} \xi^b$ requires an explicit Riemannian or Fisher information metric $g_{ab}^{\text{cog}}$ on the internal manifold $\Omega_{\mathfrak{Im}}$. Without this metric, Christoffel connections and geodesics remain undefined analogies.
+- **Formal Target & Kill Condition:**  
+  Derive $g_{ab}^{\text{cog}}$ from the Fisher information metric of neural population firing vectors or generative state representations.  
+  *Kill Condition:* If no operational neural measurement can distinguish geodesic ( unimpeded ) cognitive drift from non-geodesic ( constrained ) cognitive holding, the Cognitive Equivalence Principle is unpublishable as physical theory.
+
+---
+
+#### ISSUE V-CEP-2: Metabolic Signature of Topological Duality
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The framework identifies the cognitive vacuum $|0\rangle_{\text{cog}}$ as an unstable local maximum of $V_{\text{engage}}$ ( topologically dual to the stable minimum of the quantum vacuum $|0\rangle_{\text{QFT}}$ ). This predicts that maintaining stillness requires continuous active expenditure of metabolic free energy to suppress mobility ( $\mathbf{K} \to 0$ ) against surrounding attractor valleys.
+- **Formal Target & Kill Condition:**  
+  Measure whole-brain and prefrontal metabolic consumption ( via fMRI / PET calorimetry ) in experienced meditators during sustained non-response vs unconstrained mind-wandering.  
+  *Kill Condition:* If sustained non-response meditation consumes *less* metabolic free energy in inhibitory control regions ( dACC / DLPFC ) than unconstrained mind-wandering, the inverted potential topology ( $\nabla^2 V_{\text{engage}} \prec 0$ ) is falsified.
+
+---
+
+#### ISSUE V-CEP-3: Contraction Mapping Proof for Recursive Self-Evaluation Fixed Point
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  Phenomenological observation shows that evaluating self-evaluations under non-response converges back to the silence-apex. This implies that the recursive map $\mathcal{O}_{\text{eval}}^{(n+1)} = \mathcal{M}[\mathcal{O}_{\text{eval}}^{(n)}]$ is a contractive operator on the space of bounded symmetric operators.
+- **Formal Target & Kill Condition:**  
+  Prove that the Lipschitz constant of $\mathcal{M}$ satisfies $\gamma < 1$ under the constraint $\mathbf{K}_{\text{mobility}} \to 0$ in the presence of realistic neural synaptic noise.  
+  *Kill Condition:* If numerical or analytic analysis yields positive Lyapunov exponents ( $\lambda_{\text{Lyapunov}} > 0$ ), recursive introspection diverges chaotically rather than settling to a fixed point, invalidating the stable *sākṣī* convergence theorem.
+
+---
+
+#### ISSUE V-FSH-1: Biophysical-to-Physical Coupling Operator Bridge
+
+- **Epistemic Classification:** Type (c) — Domain-Extrapolated
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  The exploratory fractal hierarchy note ( [`fractal_self_similar_hierarchy.md`](../internal_notes/fractal_self_similar_hierarchy.md) ) proposes a scale-free continuum connecting celestial accretion ( asteroids $\to$ planets $\to$ stars $\to$ galaxies ) to biological speciation. However, physical systems scale with mass-energy ( kg ), while living systems scale with genomic informational depth ( bits ). A cross-domain coupling operator is missing.
+- **Formal Target & Kill Condition:**  
+  Construct a dimensionless coupling invariant $\Pi_{\text{bio-phys}}$ from fundamental physical constants ( $G, \hbar, c, k_B$ ) and biophysical parameters that remains invariant across celestial and ecological scales.  
+  *Kill Condition:* If dimensional homogeneity cannot be satisfied without introducing unmeasurable empirical conversion factors, the unified fractal hierarchy remains quarantined as non-falsifiable metaphor.
+
+---
+
+#### ISSUE V-FSH-2: Selection Threshold Quantification at Scale Transitions
+
+- **Epistemic Classification:** Type (a)/(b) — Standard Application
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Low
+- **Theoretical Gap:**  
+  In celestial mechanics, transitions are bounded by known physical thresholds ( Jeans mass, hydrogen fusion threshold $\approx 0.08\, M_\odot$, TOV limit ). In biological and cognitive domains, the transition thresholds between levels ( cell $\to$ organism, organism $\to$ species, individual $\to$ institution ) lack quantitative mechanical bounds.
+- **Formal Target & Kill Condition:**  
+  Formulate closed-form criteria for biological and cognitive scale transitions based on active boundary stress limits and metabolic dissipation capacity.
+
+---
+
+#### ISSUE V-FSH-3: Self-Similar Scaling Exponent Prediction
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Low
+- **Theoretical Gap:**  
+  True fractals exhibit scale-free power-law distributions $N(s) \propto s^{-\alpha}$. The claim of self-similarity across cosmological and phylogenetic domains has not been quantitatively benchmarked against empirical astrophysical and biological census data.
+- **Formal Target & Kill Condition:**  
+  Perform regression analysis across cataloged astrophysical bodies and biological species counts to test for universal power-law scaling exponents.  
+  *Kill Condition:* Systematic presence of characteristic scale cutoffs that break power-law universality falsifies scale-free self-similarity.
+
+---
+
+#### ISSUE V-AT-1: Norm Ambiguity and Directional Preservation in $\mathcal{G} = \|\mathbf{A}_{\mathfrak{Im}} - \mathbf{A}_{\mathbb{R}}\|$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  The Anisotropy-Gap Trajectory Rule uses a scalar norm $\|\cdot\|$ that contracts the directional components of the internal anisotropy tensor $\mathbf{A}_{\mathfrak{Im}}$ into a 1D magnitude. The selection of norm ( Euclidean, Riemannian $g_{ab}^{\text{int}}$, or Frobenius ) is a constitutive choice that must be shown to preserve gauge invariance and directional sensitivity.
+- **Formal Target & Kill Condition:**  
+  Prove that while the scalar gap $\mathcal{G}$ governs the isotropic rate of trajectory relaxation, the universal evaluation operator $\mathcal{O}_{\text{eval}} \equiv \nabla \otimes \nabla \mathcal{G}$ preserves the full directional eigenvalue spectrum, ensuring domain-specific responsiveness and orthogonal domain blindness ("electrician vs blacksmith").
+
+---
+
+#### ISSUE V-AT-1.1: Covariant Closure and Gauge Invariance of Dimensional Conversion Tensor $\mathbf{\Xi}_{\mu a}$
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** High
+- **Theoretical Gap:**  
+  In the Mass & Inertia sub-domain ( [`mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md`](mass_and_inertia/MASS_INERTIA_MASTER_FRAMEWORK.md) §1.2 ), the metric contraction contains the off-block cross-term $-2\mathbf{\Xi}_{\mu a} A_{\mathbb{R}}^\mu A_{\mathfrak{Im}}^a$. While $\mathbf{\Xi}_{\mu a}$ resolves dimensional homogeneity between momentum and gauge units, its transformation properties under internal gauge rotations ( $SU(2)_L \times U(1)_Y$ ) and spacetime Lorentz transformations must be explicitly proven to guarantee that the scalar gap $\mathcal{G}$ is a true gauge singlet.
+- **Formal Target & Kill Condition:**  
+  Construct the explicit algebraic form of $\mathbf{\Xi}_{\mu a}$ in terms of the Higgs doublet representation and gauge covariant derivatives.  
+  *Kill Condition:* If $\mathbf{\Xi}_{\mu a}$ cannot be made gauge-invariant without introducing coordinate-dependent projection frames, the metric contraction is coordinate-dependent and fails continuum mechanics standards.
+
+---
+
+#### ISSUE V-AT-1.2: Equivalence of Gleason $L_2$ Uniqueness and Riemannian Metric Selection
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  In Quantum Foundations ( [`quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md`](quantum_foundations/QUANTUM_MASTER_FRAMEWORK.md) ), Gleason's theorem on $\mathbb{C}^4$ uniquely forces the $L_2$ Born rule probability measure, strictly ruling out $L_1$ and $L_4$ alternatives. The framework must prove that this microscopic quantum result is the exact Hilbert-space realization of the Riemannian norm selection $\|\mathbf{A}_{\mathfrak{Im}}\|_{G_{\mathfrak{Im}}}$ across complex state space $\Omega_{\mathbb{C}}$, closing the norm ambiguity frontier from first principles.
+- **Formal Target & Kill Condition:**  
+  Prove that any non-Riemannian norm ( e.g., $L_p$ with $p \ne 2$ ) on $\Omega_{\mathbb{C}}$ induces a non-Gleason probability measure on the boundary projector lattice that violates frame independence.  
+  *Kill Condition:* If non-Riemannian norms on $\Omega_{\mathbb{C}}$ can be shown to generate valid Gleason frame functions on $\mathbb{C}^4$, the claim that $L_2$ is uniquely forced by the metric structure is falsified.
+
+---
+
+#### ISSUE V-AT-1.3: ADM Cauchy Foliation Invariance of Cosmological Holographic Gap
+
+- **Epistemic Classification:** Type (a) — Original Derivation
+- **Status:** `[ ]` Open / Active Theoretical Frontier
+- **Priority:** Moderate
+- **Theoretical Gap:**  
+  In Cosmology & Black Holes ( [`cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md`](cosmology_and_black_holes/COSMOLOGY_MASTER_FRAMEWORK.md) ), operating in the reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ), the cosmological gap scalar contracts to the apparent horizon capacity $\rho_{\text{vac}} = 3c^2/(8\pi G R_H^2)$. Because cosmological horizons are dynamic trapping membranes foliated by spacelike hypersurfaces $\Sigma_t$, the scalar nature of $\mathcal{G}$ must remain invariant under arbitrary shifts $N^i$ and lapses $N$ in the ADM $3+1$ decomposition.
+- **Formal Target & Kill Condition:**  
+  Prove that the Lie derivative of the horizon gap scalar along arbitrary spatial shift vectors vanishes: $\mathcal{L}_{\vec{N}} \mathcal{G}_{\text{horizon}} = 0$.  
+  *Kill Condition:* If changes in the ADM spatial foliation gauge alter the predicted cosmological vacuum energy density $\rho_{\text{vac}}$, the holographic bound violates general covariance.
+
 
 

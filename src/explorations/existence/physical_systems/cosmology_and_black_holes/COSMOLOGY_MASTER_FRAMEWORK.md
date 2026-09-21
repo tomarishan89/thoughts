@@ -14,7 +14,7 @@
 
 ## Executive Abstract
 
-We present an axiomatic mathematical physics framework formulating relativistic spacetime as an active viscoelastic continuum and cosmological horizons as physical, non-equilibrium thermodynamic trapping membranes. Operating strictly in the reactive limit ( $\chi^* \equiv 0$ ), physical entities sweep out 4-dimensional worldtubes within an Arnowitt-Deser-Misner (ADM) $3+1$ foliation $\mathcal{M}^4 \cong \mathbb{R} \times \Sigma_t$ and are mapped to a canonical 6-dimensional complexified cotangent phase space $\Omega_{\mathbb{C}} = T^*\Sigma_t \cong \mathbb{C}^3$ equipped with a symplectic Kähler Liouville volume measure $d\mu_h = \frac{1}{3!}\omega \wedge \omega \wedge \omega$.
+We present an axiomatic mathematical physics framework formulating relativistic spacetime as an active viscoelastic continuum and cosmological horizons as physical, non-equilibrium thermodynamic trapping membranes. Operating strictly in the reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ), physical entities sweep out 4-dimensional worldtubes within an Arnowitt-Deser-Misner (ADM) $3+1$ foliation $\mathcal{M}^4 \cong \mathbb{R} \times \Sigma_t$ and are mapped to a canonical 6-dimensional complexified cotangent phase space $\Omega_{\mathbb{C}} = T^*\Sigma_t \cong \mathbb{C}^3$ equipped with a symplectic Kähler Liouville volume measure $d\mu_h = \frac{1}{3!}\omega \wedge \omega \wedge \omega$.
 
 By treating the observable universe as an open, non-singular black hole interior bounded by an active trapping horizon ( $\partial\mathcal{U} \equiv \mathcal{H}_{\text{Hubble}} = \mathcal{H}_{\text{Schwarzschild}}$ ) embedded in an ambient parent spacetime with Einstein-Cartan-Sciama-Kibble (ECSK) spin-torsion dynamics, the framework eliminates the foundational crises of concordance cosmology ( $\Lambda\text{CDM}$ ) with **zero free phenomenological parameters**:
 1. **The Exact Cosmic Energy Budget:** Tree-level geometric dark energy $\Omega_\Lambda = 2/3 \approx 0.667$ and total matter fraction $\Omega_m = 1/3 \approx 0.333$ derived from the Kodama-Hayward horizon surface tension.
@@ -140,6 +140,8 @@ $$\boxed{H^2 = \frac{8\pi G}{3}\rho \left( 1 - \frac{\rho}{\rho_{\text{crit}}} \
 The cosmological constant emerges not from quantum vacuum energy, but as the hydrodynamic surface tension of the cosmological trapping membrane evaluated via the Kodama-Hayward surface gravity $\kappa_{\text{KH}}$:
 
 $$\boxed{\Omega_\Lambda \equiv \frac{\Lambda c^2}{3 H_0^2} = \frac{2}{3} \approx 0.6667, \qquad \Omega_m = 1 - \Omega_\Lambda = \frac{1}{3} \approx 0.3333 \quad (\textbf{Tree-Level Geometric Ratio})}$$
+
+> **Active Frontier V-AT-1 (Cosmological Gap Norm & ADM Foliation Invariance):** In the strict reactive limit ( $\mathbf{A}_{\mathfrak{Im}} \equiv 0$ ), the cosmological gap scalar $\mathcal{G}$ collapses to the manifest scalar curvature and holographic surface density $\rho_{\text{vac}} = 3c^2/(8\pi G R_H^2)$. Proving that this isotropic reduction is invariant under arbitrary ADM Cauchy foliation diffeomorphisms and represents the unique gauge-invariant norm choice connects directly to active frontier **V-AT-1** ( see [`../issues_log.md`](../issues_log.md) Category 14 ).
 
 ---
 

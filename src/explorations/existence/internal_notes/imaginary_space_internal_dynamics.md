@@ -221,3 +221,22 @@ Consequently:
 $$q_{\text{pain}} \|\mathbf{J}_{\text{pain}}\| \gg q_{\text{TE}} \|\mathbf{J}_{\text{TE}}\| \implies \text{Instantaneous Decoupling of } E_{\text{TE}}$$
 
 The softmax arbitration instantly diverts all metabolic and computational exergy away from imaginary-space evaluation and into somatic motor reflex arcs in $\Omega_{\mathbb{R}}$. This establishes the non-sovereignty of the Third Eye: it is an energetically bounded, preemptible sub-engine subordinate to somatic integrity.
+
+---
+
+## 10. Non-Response Dynamics, Mobility Suppression, and Cognitive Equivalence
+
+When an agent actively engages a cognitive excitation, the mobility tensor couples the anisotropy gradient to internal motion ( $ \mathbf{K}_{\text{mobility}} \succ 0 \implies d\mathbf{z}/d\tau \neq 0 $ ), pulling the system down the gradient into habituated attractor wells (emotional loops, discursive rumination).
+
+Under deliberate contemplative non-response ( *sākṣī* ), the agent enforces mobility suppression:
+
+$$\mathbf{K}_{\text{mobility}} \to 0 \quad \text{while} \quad \mathcal{O}_{\text{eval}} \neq 0$$
+
+The universal evaluation operator continues to measure the curvature of the engagement potential $ V_{\text{engage}}(\mathbf{z}) = \|\mathbf{A}_{\mathfrak{Im}}(\mathbf{z}) - \mathbf{A}_{\mathbb{R}}\| $, but kinetic drift is arrested. This reveals the **Cognitive Equivalence Principle (CEP)**:
+
+1. **Cognitive Freefall:** An agent freely engaging thoughts experiences no landscape geometry (analogous to weightlessness in gravitational freefall).
+2. **Non-Inertial Elevation:** Arresting mobility ( $ \mathbf{K} \to 0 $ ) places the agent in a non-inertial reference frame. The perceived "rise" to an apex is the subjective readout of the contact force required to resist the cognitive tidal tensor $ \mathcal{E}_{ab}^{\text{cog}} = \nabla_a \nabla_b V_{\text{engage}} $.
+3. **Topological Duality:** The cognitive vacuum $|0\rangle_{\text{cog}}$ (§4) is topologically dual to the physical vacuum: it is an **unstable local maximum** (concave curvature, $ \nabla^2 V_{\text{engage}} \prec 0 $ ), demanding continuous metabolic free energy to maintain against surrounding downhill basins.
+
+For the full differential geometric derivation, tidal tensor spectrum, and falsifiable metabolic kill conditions, see the dedicated note [`cognitive_equivalence_principle.md`](cognitive_equivalence_principle.md).
+
