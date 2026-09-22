@@ -21,6 +21,7 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+**/predictability_engine/cache/
 
 # Secrets
 .env

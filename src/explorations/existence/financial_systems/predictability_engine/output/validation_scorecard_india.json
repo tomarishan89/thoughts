@@ -1,0 +1,10 @@
+{
+  "market": "NSE/BSE (India)",
+  "total_evaluations": 26,
+  "danger_predictions": 5,
+  "danger_true_positives": 3,
+  "danger_false_positives": 2,
+  "danger_precision": 0.6,
+  "healthy_predictions": 0,
+  "healthy_accuracy": 0.0
+}

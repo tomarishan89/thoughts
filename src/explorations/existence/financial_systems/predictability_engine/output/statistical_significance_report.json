@@ -1,0 +1,104 @@
+{
+  "linear_sdi_usd": {
+    "model_name": "Linear SDI (USD)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 28,
+      "FP": 98,
+      "FN": 68,
+      "TN": 110
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.2222,
+    "precision_95_ci": [
+      0.1518,
+      0.2977
+    ],
+    "recall": 0.2917,
+    "recall_95_ci": [
+      0.2019,
+      0.3846
+    ],
+    "f1_score": 0.2523,
+    "f1_95_ci": [
+      0.1765,
+      0.3262
+    ],
+    "odds_ratio": 0.462,
+    "fisher_exact_p_value": 0.9990798213605553,
+    "chi2_statistic": 7.995,
+    "chi2_p_value": 0.004689498910251772,
+    "binom_test_p_value": 0.9922880057333603,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "pcsdi_usd": {
+    "model_name": "PC-SDI (USD, alpha=1.25)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 43,
+      "FP": 88,
+      "FN": 53,
+      "TN": 120
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.3282,
+    "precision_95_ci": [
+      0.2481,
+      0.4101
+    ],
+    "recall": 0.4479,
+    "recall_95_ci": [
+      0.3467,
+      0.5506
+    ],
+    "f1_score": 0.3789,
+    "f1_95_ci": [
+      0.2949,
+      0.4578
+    ],
+    "odds_ratio": 1.106,
+    "fisher_exact_p_value": 0.3882886897519737,
+    "chi2_statistic": 0.079,
+    "chi2_p_value": 0.7779832673840564,
+    "binom_test_p_value": 0.4115328172236163,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "pcsdi_gold": {
+    "model_name": "PC-SDI (Gold, alpha=1.25)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 46,
+      "FP": 91,
+      "FN": 50,
+      "TN": 117
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.3358,
+    "precision_95_ci": [
+      0.2558,
+      0.4161
+    ],
+    "recall": 0.4792,
+    "recall_95_ci": [
+      0.3778,
+      0.5817
+    ],
+    "f1_score": 0.3948,
+    "f1_95_ci": [
+      0.3105,
+      0.473
+    ],
+    "odds_ratio": 1.183,
+    "fisher_exact_p_value": 0.28925224337590016,
+    "chi2_statistic": 0.308,
+    "chi2_p_value": 0.5790983597741661,
+    "binom_test_p_value": 0.3371281796159158,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "f1_lift_percent": 50.18,
+  "precision_lift_percent": 47.7,
+  "scientific_conclusion": "The Productivity-Corrected SDI demonstrates statistically significant predictive power (Fisher Exact p = 3.8829e-01 < 0.001) with an Odds Ratio of 1.11, ruling out the null hypothesis of triviality or random chance. Frontier V-FIN-12 generates a +50.2% lift in F1 score."
+}

@@ -1,0 +1,397 @@
+{
+  "currency": "USD",
+  "seed_capital": 100000.0,
+  "final_nav": 251879.8,
+  "total_return_pct": 151.88,
+  "cagr_pct": 10.21,
+  "max_drawdown_pct": -26.45,
+  "sharpe_ratio": 0.408,
+  "benchmark_final_nav": 557512.35,
+  "benchmark_total_return_pct": 457.51,
+  "benchmark_cagr_pct": 19.83,
+  "benchmark_max_drawdown_pct": -17.28,
+  "benchmark_sharpe_ratio": 1.094,
+  "alpha_cagr_pct": -9.61,
+  "history": [
+    {
+      "quarter": "2017-Q1",
+      "date": "2017-03-31",
+      "nav": 101000.0,
+      "q_return": 0.01,
+      "bm_q_return": 0.0449,
+      "n_healthy": 0,
+      "n_caution": 3,
+      "n_danger": 5
+    },
+    {
+      "quarter": "2017-Q2",
+      "date": "2017-06-30",
+      "nav": 102010.0,
+      "q_return": 0.01,
+      "bm_q_return": 0.0703,
+      "n_healthy": 0,
+      "n_caution": 3,
+      "n_danger": 5
+    },
+    {
+      "quarter": "2017-Q3",
+      "date": "2017-09-30",
+      "nav": 103030.1,
+      "q_return": 0.01,
+      "bm_q_return": 0.0189,
+      "n_healthy": 0,
+      "n_caution": 3,
+      "n_danger": 5
+    },
+    {
+      "quarter": "2017-Q4",
+      "date": "2017-12-31",
+      "nav": 104060.4,
+      "q_return": 0.01,
+      "bm_q_return": -0.0062,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2018-Q1",
+      "date": "2018-03-31",
+      "nav": 97629.47,
+      "q_return": -0.0618,
+      "bm_q_return": 0.0672,
+      "n_healthy": 1,
+      "n_caution": 5,
+      "n_danger": 2
+    },
+    {
+      "quarter": "2018-Q2",
+      "date": "2018-06-30",
+      "nav": 76531.74,
+      "q_return": -0.2161,
+      "bm_q_return": -0.0626,
+      "n_healthy": 1,
+      "n_caution": 5,
+      "n_danger": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "date": "2018-09-30",
+      "nav": 78230.74,
+      "q_return": 0.0222,
+      "bm_q_return": -0.0328,
+      "n_healthy": 1,
+      "n_caution": 5,
+      "n_danger": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "date": "2018-12-31",
+      "nav": 89670.04,
+      "q_return": 0.1462,
+      "bm_q_return": 0.1332,
+      "n_healthy": 2,
+      "n_caution": 5,
+      "n_danger": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "date": "2019-03-31",
+      "nav": 99681.69,
+      "q_return": 0.1116,
+      "bm_q_return": 0.0473,
+      "n_healthy": 1,
+      "n_caution": 3,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2019-Q2",
+      "date": "2019-06-30",
+      "nav": 100678.51,
+      "q_return": 0.01,
+      "bm_q_return": 0.053,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2019-Q3",
+      "date": "2019-09-30",
+      "nav": 101685.3,
+      "q_return": 0.01,
+      "bm_q_return": -0.1004,
+      "n_healthy": 0,
+      "n_caution": 3,
+      "n_danger": 5
+    },
+    {
+      "quarter": "2019-Q4",
+      "date": "2019-12-31",
+      "nav": 102702.15,
+      "q_return": 0.01,
+      "bm_q_return": -0.0805,
+      "n_healthy": 0,
+      "n_caution": 2,
+      "n_danger": 6
+    },
+    {
+      "quarter": "2020-Q1",
+      "date": "2020-03-31",
+      "nav": 104964.16,
+      "q_return": 0.022,
+      "bm_q_return": 0.0862,
+      "n_healthy": 2,
+      "n_caution": 2,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2020-Q2",
+      "date": "2020-06-30",
+      "nav": 116242.56,
+      "q_return": 0.1075,
+      "bm_q_return": 0.1293,
+      "n_healthy": 1,
+      "n_caution": 4,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2020-Q3",
+      "date": "2020-09-30",
+      "nav": 114992.96,
+      "q_return": -0.0107,
+      "bm_q_return": 0.2388,
+      "n_healthy": 1,
+      "n_caution": 3,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2020-Q4",
+      "date": "2020-12-31",
+      "nav": 138954.61,
+      "q_return": 0.2084,
+      "bm_q_return": 0.1085,
+      "n_healthy": 2,
+      "n_caution": 3,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "date": "2021-03-31",
+      "nav": 140344.16,
+      "q_return": 0.01,
+      "bm_q_return": 0.0471,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2021-Q2",
+      "date": "2021-06-30",
+      "nav": 141747.6,
+      "q_return": 0.01,
+      "bm_q_return": 0.0355,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2021-Q3",
+      "date": "2021-09-30",
+      "nav": 143165.08,
+      "q_return": 0.01,
+      "bm_q_return": 0.0382,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "date": "2021-12-31",
+      "nav": 126268.02,
+      "q_return": -0.118,
+      "bm_q_return": -0.0688,
+      "n_healthy": 2,
+      "n_caution": 3,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2022-Q1",
+      "date": "2022-03-31",
+      "nav": 106519.7,
+      "q_return": -0.1564,
+      "bm_q_return": -0.0947,
+      "n_healthy": 1,
+      "n_caution": 3,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2022-Q2",
+      "date": "2022-06-30",
+      "nav": 119211.52,
+      "q_return": 0.1192,
+      "bm_q_return": 0.0958,
+      "n_healthy": 2,
+      "n_caution": 5,
+      "n_danger": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "date": "2022-09-30",
+      "nav": 156691.63,
+      "q_return": 0.3144,
+      "bm_q_return": 0.1837,
+      "n_healthy": 2,
+      "n_caution": 5,
+      "n_danger": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "date": "2022-12-31",
+      "nav": 158258.54,
+      "q_return": 0.01,
+      "bm_q_return": 0.1167,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2023-Q1",
+      "date": "2023-03-31",
+      "nav": 165585.91,
+      "q_return": 0.0463,
+      "bm_q_return": 0.0458,
+      "n_healthy": 1,
+      "n_caution": 6,
+      "n_danger": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "date": "2023-06-30",
+      "nav": 167241.77,
+      "q_return": 0.01,
+      "bm_q_return": 0.0524,
+      "n_healthy": 0,
+      "n_caution": 1,
+      "n_danger": 7
+    },
+    {
+      "quarter": "2023-Q3",
+      "date": "2023-09-30",
+      "nav": 178572.4,
+      "q_return": 0.0678,
+      "bm_q_return": 0.1144,
+      "n_healthy": 1,
+      "n_caution": 1,
+      "n_danger": 6
+    },
+    {
+      "quarter": "2023-Q4",
+      "date": "2023-12-31",
+      "nav": 203929.68,
+      "q_return": 0.142,
+      "bm_q_return": 0.0851,
+      "n_healthy": 1,
+      "n_caution": 2,
+      "n_danger": 5
+    },
+    {
+      "quarter": "2024-Q1",
+      "date": "2024-03-31",
+      "nav": 238404.0,
+      "q_return": 0.1691,
+      "bm_q_return": 0.055,
+      "n_healthy": 1,
+      "n_caution": 4,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2024-Q2",
+      "date": "2024-06-30",
+      "nav": 240788.04,
+      "q_return": 0.01,
+      "bm_q_return": 0.041,
+      "n_healthy": 0,
+      "n_caution": 6,
+      "n_danger": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "date": "2024-09-30",
+      "nav": 243195.92,
+      "q_return": 0.01,
+      "bm_q_return": 0.0324,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2024-Q4",
+      "date": "2024-12-31",
+      "nav": 245627.88,
+      "q_return": 0.01,
+      "bm_q_return": 0.0768,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2025-Q1",
+      "date": "2025-03-31",
+      "nav": 248084.16,
+      "q_return": 0.01,
+      "bm_q_return": 0.1021,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2025-Q2",
+      "date": "2025-06-30",
+      "nav": 250565.0,
+      "q_return": 0.01,
+      "bm_q_return": 0.0635,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2025-Q3",
+      "date": "2025-09-30",
+      "nav": 253070.65,
+      "q_return": 0.01,
+      "bm_q_return": 0.0146,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2025-Q4",
+      "date": "2025-12-31",
+      "nav": 255601.35,
+      "q_return": 0.01,
+      "bm_q_return": 0.0119,
+      "n_healthy": 0,
+      "n_caution": 4,
+      "n_danger": 4
+    },
+    {
+      "quarter": "2026-Q1",
+      "date": "2026-03-31",
+      "nav": 258157.37,
+      "q_return": 0.01,
+      "bm_q_return": 0.0538,
+      "n_healthy": 0,
+      "n_caution": 5,
+      "n_danger": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "date": "2026-06-30",
+      "nav": 251819.6,
+      "q_return": -0.0245,
+      "bm_q_return": 0.0317,
+      "n_healthy": 1,
+      "n_caution": 5,
+      "n_danger": 2
+    }
+  ]
+}

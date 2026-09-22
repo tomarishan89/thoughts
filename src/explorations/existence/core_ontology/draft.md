@@ -2220,6 +2220,28 @@ From within $\Omega_\mathbb{C}^{L_i}$, the interior observer has no external van
 
 A framework that claimed to *resolve* this question from the interior would be internally inconsistent — it would violate the Interior Observer Axiom by asserting an external reference frame that, by construction, does not exist. The level-invariance of the physics is therefore not a vulnerability but the correct behavior of a closed framework. The only operationally tractable quantity is the **model error** $\delta^j(t) = \|E_j^{\mathfrak{Im}} - E^j\|_{\mathfrak{Im}}$ — how faithfully the shadow tracks the original — which is physically observable via predictive errors in the host's interactions with $E^j$ (ISSUE-4.18).
 
+#### 7.3.4 Lateral Intersection Composition vs. Hierarchical Nesting
+
+The Level-Invariance and Nesting Map theorem (§7.3) formalizes the **vertical embedding** $\iota_i: \Omega_\mathbb{C}^{L_{i+1}} \hookrightarrow \Omega_{\mathfrak{Im}}^{L_i}$ of child state spaces into the imaginary carrier ledgers of parent entities. However, complete ontological closure requires distinguishing this vertical hierarchy from **lateral intersection composition** (The Composition Theorem, [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8).
+
+1. **Vertical Embedding vs. Lateral Intersection:**
+   - *Vertical Nesting ( $\iota$ ):* Operates across asymmetric scale levels $L_i \to L_{i+1}$. The child is physically contained within the boundary horizon of the parent, and the maximum information capacity undergoes monotone contraction ( $S_{\text{max}}^{(i+1)} < S_{\text{max}}^{(i)}$ ). Vertical nesting explains how sub-engines (such as an individual neuron, a specific legal contract, or a single foundry) exist *within* a parent institution or organism.
+   - *Lateral Intersection ( $\bigcap$ ):* Operates across symmetric, co-equal forms of existence at the same resolution level $\ell$:
+
+$$E = \bigcap_{\alpha \in \mathcal{I}_k} E_\alpha, \quad |\mathcal{I}_k| = k$$
+
+Each constituent form $E_\alpha$ carries its own autonomous Open Engine machinery: state space $\Omega_{\mathbb{C}}^{(\alpha)}$, boundary $\partial E^{(\alpha)}$, and memory ledger $\mathcal{F}_{\text{ledger}}^{(\alpha)}$. Lateral intersection explains how an entity (such as a corporation, a living organism, or a sovereign state) is simultaneously constituted by physical, legal, cognitive, and economic forms.
+
+2. **Synthesis in the Nesting Graph:**
+Vertical nesting and lateral intersection synthesize into the **Nesting Graph** $\mathcal{N} = (\mathcal{V}, \, \mathcal{E}_{\text{nest}}, \, \mathcal{E}_{\text{cross}})$:
+   - *Nesting Edges $\mathcal{E}_{\text{nest}}$:* Represent vertical internal structural decomposition ( $E_\alpha^{(\ell)} \to E_{\alpha, m}^{(\ell+1)}$ ) via the injection map $\iota$.
+   - *Lateral Cross-Links $\mathcal{E}_{\text{cross}}$:* Represent inter-form coupling closeness $\kappa(\alpha, \beta)$ governed by the universal Screened Yukawa kernel:
+
+$$\kappa(\alpha, \beta) \equiv w_{\alpha\beta}^{(\text{inter-form})} = \frac{G_{\text{struct}}}{r_{\alpha\beta}} \cdot \exp\left(-\frac{r_{\alpha\beta}}{\xi_{\text{struct}}}\right)$$
+
+3. **Renormalization Truncation & Epistemological Closure:**
+While vertical nesting admits conceptual regress ( $n \to \infty$ ), the Renormalization Cutoff Criterion ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8.4) dictates that an analysis must truncate at level $\ell^*$ where the effective parameter variation satisfies $\|M_{\text{eff}}^{(\ell^*)} - M_{\text{eff}}^{(\ell^* + 1)}\|_G < \epsilon$. Together with the Interior Observer Axiom (§7.3.2), this establishes that composite entities are neither ungrounded illusions nor unresolvable infinite hierarchies, but mathematically closed, scale-renormalized Open Engines.
+
 ---
 
 ## References

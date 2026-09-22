@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-21  
 **Status:** Theoretical Formalization & Candidate Formulation  
-**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6; [`PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md`](../physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md) §4; [`financial_systems_falsifiability_brainstorm.md`](financial_systems_falsifiability_brainstorm.md)
+**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6; [`PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md`](../physical_systems/PHYSICAL_SYSTEMS_MASTER_FRAMEWORK.md) §4; [`financial_systems_falsifiability_brainstorm.md`](financial_systems_falsifiability_brainstorm.md); [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)
 
 ---
 
@@ -39,9 +39,9 @@ where:
 - $V_i$: Enterprise valuation / market capitalization (stock, $[\$ ]$ )
 - $\mathbf{z}_i^*$: Published forward guidance / target state published in regulatory disclosures (10-K, 10-Q)
 
-The corporate mass is the norm of accumulated internal structure:
+The corporate mass is the scalar norm of accumulated internal structure across the five intersecting forms of existence (Legal, Human, Physical, Market, Financial; see [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)):
 
-$$M_i \equiv \|\mathbf{A}_{\mathfrak{Im}}^{(i)}\|_G$$
+$$M_i \equiv \|\mathbf{A}_{\mathfrak{Im}}^{(i)}\|_G = \|\mathbf{M}_i\| = \sqrt{\sum_{\alpha} M_\alpha^2}$$
 
 and the corporate gap vector is:
 
@@ -135,6 +135,10 @@ Here, the apparent time-variation of market dynamics is an artifact of the expan
 ### Candidate C: Gold as the Thermodynamic Vacuum State $|0\rangle_{\text{fin}}$
 
 #### 1. Mathematical Formulation
+
+> [!NOTE]
+> **Constitutive Grounding in Master Framework §1.1 (Open Engine Thermodynamic Sink):**  
+> Under Core Axiom 1 ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.1), every open engine requires a coupling between low-entropy fuel influx and an entropy exhaust $\dot{Q}_{\text{exhaust}}$ rejected into an external sink. In financial state space, nominal fiat debt ledgers can expand without thermodynamic friction, creating ungrounded imaginary-sector inflation. Physical Gold provides the zero-entropy invariant sink that grounds the corporate Dual-Condition Theorem ( $\phi \ge 0$, $\dot{S}_{\text{internal}} \le 0$ ).
 
 In quantum statistical thermodynamics, the vacuum $|0\rangle$ is the lowest-entropy, lowest-energy ground state.
 

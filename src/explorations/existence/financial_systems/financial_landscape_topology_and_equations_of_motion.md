@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-21  
 **Status:** Theoretical Formalization & Empirical Landscape Reconstruction  
-**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`empirical_test_results_gold_field_equations.md`](empirical_test_results_gold_field_equations.md)
+**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`empirical_test_results_gold_field_equations.md`](empirical_test_results_gold_field_equations.md); [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)
 
 ---
 
@@ -24,7 +24,15 @@ We show that:
 
 ## 1. The Corporate Equation of Motion on the Financial Landscape
 
-In the Open Engine framework, a corporate entity $C_i$ has accumulated imaginary mass $M_i = \|\mathbf{A}_{\mathfrak{Im}}^{(i)}\|$ and navigates state space $\mathbf{x}_i(\tau) \in \Omega^{(\text{fin})}$.
+In the Open Engine framework, a corporate entity $C_i$ has accumulated imaginary mass $M_i = \|\mathbf{A}_{\mathfrak{Im}}^{(i)}\| = \|\mathbf{M}_i\| \in \mathbb{R}_+$ — the norm of the 5-component corporate mass vector $\mathbf{M}_i \in \mathbb{R}^5_+$ spanning Legal, Human, Physical, Market, and Financial forms of existence (see [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)) — and navigates state space $\mathbf{x}_i(\tau) \in \Omega^{(\text{fin})}$.
+
+> [!NOTE]
+> **Constitutive Derivation from Master Framework §1.2 & §1.3:**  
+> The foundational Anisotropy-Gap Trajectory Rule ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.3, Master Equation 4) defines the overdamped kinematic velocity:
+>
+> $$\frac{d\mathbf{z}}{d\tau} = -\mathbf{K} \cdot \nabla_{\Omega_{\mathbb{C}}} \mathcal{G}$$
+>
+> When the inertia of the corporate engine (derived in Master Framework §1.2 as Asymmetric Gap Resistance $M \equiv \|\mathbf{A}_{\mathfrak{Im}}\|_G$ ) and finite response latency are resolved beyond the zero-mass overdamped limit, the first-order gradient flow generalizes into a second-order continuum equation of motion with physical dissipative friction $\boldsymbol{\Gamma}_i \equiv \mathbf{K}_i^{-1}$ and external field coupling.
 
 The trajectory of the firm is governed by the second-order dynamical equation:
 
@@ -45,6 +53,8 @@ M_i d^2 x / dtau^2   Gamma_i dx / dtau     -grad G_i(x)         -grad Phi_fin(x)
 structural scale)    entropy exhaust)      gap closure drive)    liquidity pull)
 ```
 
+In the asymptotic limit where corporate structural mass is small or viscous operational friction dominates ( $M_i \ddot{\mathbf{x}}_i \to \mathbf{0}$ and external market coupling $\nabla \Phi_{\text{fin}} \to \mathbf{0}$ ), this equation reduces identically to the first-order Master Equation 4: $\dot{\mathbf{x}}_i = -\boldsymbol{\Gamma}_i^{-1} \cdot \nabla \mathcal{G}_i = -\mathbf{K}_i \cdot \nabla \mathcal{G}_i$.
+
 ### 1.1 Structural Dissection of the Forces:
 
 1. **Inertia ( $M_i$ ):** Resistance to sudden strategic deflection. Larger firms (high market cap, deep IP, massive fixed assets) resist rapid pivots, maintaining momentum along their existing geodesic.
@@ -55,6 +65,14 @@ structural scale)    entropy exhaust)      gap closure drive)    liquidity pull)
 ---
 
 ## 2. The Screened Poisson Field Equation & Gold-Modulated Topology
+
+> [!NOTE]
+> **Constitutive Instantiation of Master Framework §1.6 (Neighbor Coupling):**  
+> In [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.6, the multi-entity landscape coupling is defined as:
+>
+> $$\mathcal{G}_i(\mathbf{z}_i) = \mathcal{G}_i^{(\text{self})}(\mathbf{z}_i) + \sum_{j \neq i} w_{ij} \, \Delta\mathcal{G}_{ij}(\mathbf{z}_i, \mathbf{z}_j)$$
+>
+> The Screened Poisson field equation formulated below is the rigorous continuum field-theoretic closure of this sum in financial state space $\Omega^{(\text{fin})}$, where the discrete coupling tensor $w_{ij}$ corresponds directly to the Green's function of the screened Laplace-Beltrami operator with screening length $\xi_{\text{Au}}$ and coupling $G_{\text{Au}}$.
 
 The financial landscape potential $\Phi_{\text{fin}}(\mathbf{x}, \tau)$ satisfies the boundary-value PDE:
 
@@ -137,7 +155,7 @@ The complete empirical and theoretical architecture is summarized below:
 | Structural Component | Mathematical Realization | Physical & Economic Reality |
 |:---|:---|:---|
 | **Manifold Coordinates** | $\mathbf{x}_i \in \mathbb{R}^2$ via Mantegna metric $d_{ij} = \sqrt{2(1 - \rho_{ij})}$ | Sectoral separation in correlation space (Tech, Finance, Staples, Energy) |
-| **Corporate Mass** | $M_i = \|\mathbf{A}_{\mathfrak{Im}}^{(i)}\| \propto \text{Enterprise Scale}$ | Sets gravitational well depth and inertia to trajectory deflection |
+| **Corporate Mass** | $M_i = \|\mathbf{M}_i\| = \sqrt{\sum_\alpha M_\alpha^2}$ across 5 forms | Sets gravitational well depth and inertia to trajectory deflection |
 | **Field Equation** | $(\nabla^2 - \xi^{-2}) \Phi_{\text{fin}} = -4\pi G_{\text{Au}} \rho_{\text{capital}}$ | Screened Poisson governing capital flow and inter-firm attraction |
 | **Gold Modulation** | $G_{\text{Au}}(\sigma_{\text{Au}}), \, \xi_{\text{Au}}(\sigma_{\text{Au}})$ | Circuit breaker: gold volatility decouples inter-firm gravitation |
 | **Vacuum Hurdle** | $|0\rangle_{\text{fin}} \implies \mu_{\text{Au}} = 12.71\%\text{ p.a.}$ | Physical floor: returns below gold drift represent net entropic decay |
@@ -155,3 +173,11 @@ In the equation of motion, the drag matrix $\boldsymbol{\Gamma}_i$ was modeled a
 The 2D MDS projection captures the two dominant spatial modes. Higher-order modes ( $\lambda_3, \dots, \lambda_{10}$ ) account for residual sectoral sub-structures (e.g., semiconductor supply chains within tech, biopharma within healthcare). A full Riemannian curvature tensor $R^i_{\phantom{i}jkl}$ on the $N$-dimensional correlation manifold remains to be computed.
 3. **Frontier V-FIN-6 (Predictive Horizon for Topological Rupture):**
 Can the contraction rate of the screening length $d\xi / d\tau$ during early gold volatility spikes serve as an **early warning indicator** for systemic credit crashes (e.g., predicting liquidity freezes 30–60 days ahead of major credit spread blowouts)?
+4. **Frontier V-FIN-7 (Micro-Hydrodynamic Closure of Transfer Operator $\boldsymbol{\mathcal{T}}$ ):**
+The transfer operator elements $\mathcal{T}_{\alpha\beta}$ governing cross-form fuel coupling (see [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)) require derivation from micro-level internal collaboration graphs, patent conversion efficiencies, and customer retention dynamics.
+5. **Frontier V-FIN-8 (Higher-Rank Mass Tensor $\mathbf{M}_{\alpha\beta}$ ):**
+Structural mass partially resides in cross-form correlations (e.g., engineer-fab specificity). Generalizing the 5-vector $\mathbf{M} \in \mathbb{R}^5_+$ to a rank-2 tensor $\mathbf{M} \in \mathbb{R}^{5 \times 5}$ remains an open mathematical task.
+6. **Frontier V-FIN-9 (Differential Gold Screening Across Multi-Form Projections):**
+Does gold volatility collapse the screening length purely on the financial front $\xi_{\text{F}}$, or does it also screen physical supply-chain couplings $\xi_{\text{P}}$?
+7. **Frontier V-FIN-10 (Hydrostatic Pressure Balance in Corporate Stars):**
+Deriving a closed-form corporate equation of state $P(\rho_C, T_C)$ that balances outward gross-margin operational pressure against inward debt-service and competitive gravitational compression.
