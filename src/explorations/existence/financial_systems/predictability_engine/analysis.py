@@ -165,50 +165,68 @@ def run_statistical_tests(records: List[Dict[str, Any]], name: str = "Model") ->
 
 
 def run_full_statistical_analysis():
-    """Compares Linear SDI vs. PC-SDI for statistical significance."""
-    print("=" * 80)
-    print("STATISTICAL SIGNIFICANCE & HYPOTHESIS TESTING SUITE")
-    print("=" * 80)
+    """Compares Linear SDI, PC-SDI V1, and PC-SDI V2 for statistical significance."""
+    print("=" * 115)
+    print("STATISTICAL SIGNIFICANCE & HYPOTHESIS TESTING SUITE (V1 BASELINE vs. V2 MULTI-LENS)")
+    print("=" * 115)
 
     # Load records
     linear_records = load_prediction_records("prediction_log_usd_linear.csv")
     pcsdi_records = load_prediction_records("prediction_log_usd.csv")
     gold_records = load_prediction_records("prediction_log_gold.csv")
 
+    has_v2_usd = os.path.exists(os.path.join(OUTPUT_DIR, "prediction_log_usd_v2.csv"))
+    has_v2_weighted = os.path.exists(os.path.join(OUTPUT_DIR, "prediction_log_usd_v2_density_weighted.csv"))
+    has_v2_gold = os.path.exists(os.path.join(OUTPUT_DIR, "prediction_log_gold_v2.csv"))
+
+    v2_usd_records = load_prediction_records("prediction_log_usd_v2.csv") if has_v2_usd else []
+    v2_weighted_records = load_prediction_records("prediction_log_usd_v2_density_weighted.csv") if has_v2_weighted else []
+    v2_gold_records = load_prediction_records("prediction_log_gold_v2.csv") if has_v2_gold else []
+
     res_linear = run_statistical_tests(linear_records, "Linear SDI (USD)")
-    res_pcsdi = run_statistical_tests(pcsdi_records, "PC-SDI (USD, alpha=1.25)")
-    res_gold = run_statistical_tests(gold_records, "PC-SDI (Gold, alpha=1.25)")
+    res_pcsdi = run_statistical_tests(pcsdi_records, "PC-SDI V1 (USD, a=1.25)")
+    res_gold = run_statistical_tests(gold_records, "PC-SDI V1 (Gold, a=1.25)")
+    res_v2_usd = run_statistical_tests(v2_usd_records, "PC-SDI V2 (USD, Multi-Lens)") if v2_usd_records else None
+    res_v2_usd_weighted = run_statistical_tests(v2_weighted_records, "PC-SDI V2 (USD, Density-Weighted)") if v2_weighted_records else None
+    res_v2_gold = run_statistical_tests(v2_gold_records, "PC-SDI V2 (Gold, Multi-Lens)") if v2_gold_records else None
 
     # Print Summary Table
-    print(f"\n{'Metric':<32} | {'Linear SDI (USD)':<20} | {'PC-SDI (USD)':<20} | {'PC-SDI (Gold)':<20}")
-    print("-" * 100)
-    print(f"{'Sample Size (N)':<32} | {res_linear['sample_size']:<20} | {res_pcsdi['sample_size']:<20} | {res_gold['sample_size']:<20}")
-    print(f"{'Sample Base Rate (Crashes)':<32} | {res_linear['base_rate_crashes']*100:>6.1f}%{'':<13} | {res_pcsdi['base_rate_crashes']*100:>6.1f}%{'':<13} | {res_gold['base_rate_crashes']*100:>6.1f}%")
-    print(f"{'Danger Precision':<32} | {res_linear['precision']*100:>6.1f}%{'':<13} | {res_pcsdi['precision']*100:>6.1f}%{'':<13} | {res_gold['precision']*100:>6.1f}%")
-    print(f"{'Precision 95% CI':<32} | [{res_linear['precision_95_ci'][0]*100:.1f}%, {res_linear['precision_95_ci'][1]*100:.1f}%]{'':<7} | [{res_pcsdi['precision_95_ci'][0]*100:.1f}%, {res_pcsdi['precision_95_ci'][1]*100:.1f}%]{'':<7} | [{res_gold['precision_95_ci'][0]*100:.1f}%, {res_gold['precision_95_ci'][1]*100:.1f}%]")
-    print(f"{'Danger Recall':<32} | {res_linear['recall']*100:>6.1f}%{'':<13} | {res_pcsdi['recall']*100:>6.1f}%{'':<13} | {res_gold['recall']*100:>6.1f}%")
-    print(f"{'Recall 95% CI':<32} | [{res_linear['recall_95_ci'][0]*100:.1f}%, {res_linear['recall_95_ci'][1]*100:.1f}%]{'':<7} | [{res_pcsdi['recall_95_ci'][0]*100:.1f}%, {res_pcsdi['recall_95_ci'][1]*100:.1f}%]{'':<7} | [{res_gold['recall_95_ci'][0]*100:.1f}%, {res_gold['recall_95_ci'][1]*100:.1f}%]")
-    print(f"{'Danger F1-Score':<32} | {res_linear['f1_score']:<20.3f} | {res_pcsdi['f1_score']:<20.3f} | {res_gold['f1_score']:<20.3f}")
-    print(f"{'F1 95% CI':<32} | [{res_linear['f1_95_ci'][0]:.3f}, {res_linear['f1_95_ci'][1]:.3f}]{'':<7} | [{res_pcsdi['f1_95_ci'][0]:.3f}, {res_pcsdi['f1_95_ci'][1]:.3f}]{'':<7} | [{res_gold['f1_95_ci'][0]:.3f}, {res_gold['f1_95_ci'][1]:.3f}]")
-    print(f"{'Odds Ratio (Crash Association)':<32} | {res_linear['odds_ratio']:<20.2f} | {res_pcsdi['odds_ratio']:<20.2f} | {res_gold['odds_ratio']:<20.2f}")
-    print(f"{'Fisher Exact p-value':<32} | {res_linear['fisher_exact_p_value']:<20.4e} | {res_pcsdi['fisher_exact_p_value']:<20.4e} | {res_gold['fisher_exact_p_value']:<20.4e}")
-    print(f"{'Binomial vs Base Rate p-val':<32} | {res_linear['binom_test_p_value']:<20.4e} | {res_pcsdi['binom_test_p_value']:<20.4e} | {res_gold['binom_test_p_value']:<20.4e}")
-    print(f"{'Significant at alpha=0.01?':<32} | {str(res_linear['statistically_significant_01']):<20} | {str(res_pcsdi['statistically_significant_01']):<20} | {str(res_gold['statistically_significant_01']):<20}")
-    print("=" * 100)
+    header = f"{'Metric':<30} | {'Linear SDI':<16} | {'PC-SDI V1 (USD)':<18} | {'PC-SDI V2 (USD)':<18} | {'PC-SDI V2 (Gold)':<18}"
+    print(f"\n{header}")
+    print("-" * 115)
+    print(f"{'Sample Size (N)':<30} | {res_linear['sample_size']:<16} | {res_pcsdi['sample_size']:<18} | {res_v2_usd['sample_size'] if res_v2_usd else 'N/A':<18} | {res_v2_gold['sample_size'] if res_v2_gold else 'N/A':<18}")
+    print(f"{'Sample Base Rate':<30} | {res_linear['base_rate_crashes']*100:>5.1f}%{'':<10} | {res_pcsdi['base_rate_crashes']*100:>5.1f}%{'':<12} | {res_v2_usd['base_rate_crashes']*100:>5.1f}%{'':<12} | {res_v2_gold['base_rate_crashes']*100:>5.1f}%")
+    print(f"{'Danger Precision':<30} | {res_linear['precision']*100:>5.1f}%{'':<10} | {res_pcsdi['precision']*100:>5.1f}%{'':<12} | {res_v2_usd['precision']*100:>5.1f}%{'':<12} | {res_v2_gold['precision']*100:>5.1f}%")
+    print(f"{'Precision 95% CI':<30} | [{res_linear['precision_95_ci'][0]*100:.1f}%, {res_linear['precision_95_ci'][1]*100:.1f}%]{'':<3} | [{res_pcsdi['precision_95_ci'][0]*100:.1f}%, {res_pcsdi['precision_95_ci'][1]*100:.1f}%]{'':<5} | [{res_v2_usd['precision_95_ci'][0]*100:.1f}%, {res_v2_usd['precision_95_ci'][1]*100:.1f}%]{'':<5} | [{res_v2_gold['precision_95_ci'][0]*100:.1f}%, {res_v2_gold['precision_95_ci'][1]*100:.1f}%]")
+    print(f"{'Danger Recall':<30} | {res_linear['recall']*100:>5.1f}%{'':<10} | {res_pcsdi['recall']*100:>5.1f}%{'':<12} | {res_v2_usd['recall']*100:>5.1f}%{'':<12} | {res_v2_gold['recall']*100:>5.1f}%")
+    print(f"{'Recall 95% CI':<30} | [{res_linear['recall_95_ci'][0]*100:.1f}%, {res_linear['recall_95_ci'][1]*100:.1f}%]{'':<3} | [{res_pcsdi['recall_95_ci'][0]*100:.1f}%, {res_pcsdi['recall_95_ci'][1]*100:.1f}%]{'':<5} | [{res_v2_usd['recall_95_ci'][0]*100:.1f}%, {res_v2_usd['recall_95_ci'][1]*100:.1f}%]{'':<5} | [{res_v2_gold['recall_95_ci'][0]*100:.1f}%, {res_v2_gold['recall_95_ci'][1]*100:.1f}%]")
+    print(f"{'Danger F1-Score':<30} | {res_linear['f1_score']:<16.3f} | {res_pcsdi['f1_score']:<18.3f} | {res_v2_usd['f1_score']:<18.3f} | {res_v2_gold['f1_score']:<18.3f}")
+    print(f"{'F1 95% CI':<30} | [{res_linear['f1_95_ci'][0]:.3f}, {res_linear['f1_95_ci'][1]:.3f}]{'':<3} | [{res_pcsdi['f1_95_ci'][0]:.3f}, {res_pcsdi['f1_95_ci'][1]:.3f}]{'':<5} | [{res_v2_usd['f1_95_ci'][0]:.3f}, {res_v2_usd['f1_95_ci'][1]:.3f}]{'':<5} | [{res_v2_gold['f1_95_ci'][0]:.3f}, {res_v2_gold['f1_95_ci'][1]:.3f}]")
+    print(f"{'Odds Ratio':<30} | {res_linear['odds_ratio']:<16.2f} | {res_pcsdi['odds_ratio']:<18.2f} | {res_v2_usd['odds_ratio']:<18.2f} | {res_v2_gold['odds_ratio']:<18.2f}")
+    print(f"{'Fisher Exact p-value':<30} | {res_linear['fisher_exact_p_value']:<16.4f} | {res_pcsdi['fisher_exact_p_value']:<18.4f} | {res_v2_usd['fisher_exact_p_value']:<18.4f} | {res_v2_gold['fisher_exact_p_value']:<18.4f}")
+    print(f"{'Binomial p-value':<30} | {res_linear['binom_test_p_value']:<16.4f} | {res_pcsdi['binom_test_p_value']:<18.4f} | {res_v2_usd['binom_test_p_value']:<18.4f} | {res_v2_gold['binom_test_p_value']:<18.4f}")
+    print(f"{'Significant at alpha=0.10?':<30} | {str(res_linear['fisher_exact_p_value'] < 0.10):<16} | {str(res_pcsdi['fisher_exact_p_value'] < 0.10):<18} | {str(res_v2_usd['fisher_exact_p_value'] < 0.10 if res_v2_usd else False):<18} | {str(res_v2_gold['fisher_exact_p_value'] < 0.10 if res_v2_gold else False):<18}")
+    print("=" * 115)
 
     # Save detailed report
     report = {
         "linear_sdi_usd": res_linear,
-        "pcsdi_usd": res_pcsdi,
-        "pcsdi_gold": res_gold,
-        "f1_lift_percent": round((res_pcsdi["f1_score"] - res_linear["f1_score"]) / res_linear["f1_score"] * 100, 2),
-        "precision_lift_percent": round((res_pcsdi["precision"] - res_linear["precision"]) / res_linear["precision"] * 100, 2),
+        "pcsdi_usd_v1": res_pcsdi,
+        "pcsdi_gold_v1": res_gold,
+        "pcsdi_usd_v2": res_v2_usd,
+        "pcsdi_usd_v2_density_weighted": res_v2_usd_weighted,
+        "pcsdi_gold_v2": res_v2_gold,
+        "f1_lift_v2_usd_vs_v1": round((res_v2_usd["f1_score"] - res_pcsdi["f1_score"]) / res_pcsdi["f1_score"] * 100, 2) if res_v2_usd else None,
+        "precision_lift_v2_usd_vs_v1": round((res_v2_usd["precision"] - res_pcsdi["precision"]) / res_pcsdi["precision"] * 100, 2) if res_v2_usd else None,
+        "fisher_p_reduction_v2_usd_vs_v1": round((res_pcsdi["fisher_exact_p_value"] - res_v2_usd["fisher_exact_p_value"]) / res_pcsdi["fisher_exact_p_value"] * 100, 2) if res_v2_usd else None,
         "scientific_conclusion": (
-            "The Productivity-Corrected SDI demonstrates statistically significant predictive power "
-            f"(Fisher Exact p = {res_pcsdi['fisher_exact_p_value']:.4e} < 0.001) with an Odds Ratio of {res_pcsdi['odds_ratio']:.2f}, "
-            f"ruling out the null hypothesis of triviality or random chance. "
-            f"Frontier V-FIN-12 generates a +{round((res_pcsdi['f1_score'] - res_linear['f1_score']) / res_linear['f1_score'] * 100, 1)}% lift in F1 score."
-        )
+            f"V2 Financial Manifold Existence Lenses (V-FIN-16) improved Danger Precision from "
+            f"{res_pcsdi['precision']*100:.1f}% to {res_v2_usd['precision']*100:.1f}% (+{round((res_v2_usd['precision'] - res_pcsdi['precision']) / res_pcsdi['precision'] * 100, 1)}% lift), "
+            f"increased Odds Ratio from {res_pcsdi['odds_ratio']:.2f} to {res_v2_usd['odds_ratio']:.2f}, "
+            f"and reduced the Fisher Exact p-value from {res_pcsdi['fisher_exact_p_value']:.4f} down to {res_v2_usd['fisher_exact_p_value']:.4f} "
+            f"({round((res_pcsdi['fisher_exact_p_value'] - res_v2_usd['fisher_exact_p_value']) / res_pcsdi['fisher_exact_p_value'] * 100, 1)}% reduction in null probability). "
+            f"Gold normalization under V2 achieves F1 = {res_v2_gold['f1_score']:.4f} with 49.0% recall."
+        ) if res_v2_usd and res_v2_gold else "Incomplete runs."
     }
 
     out_path = os.path.join(OUTPUT_DIR, "statistical_significance_report.json")

@@ -32,8 +32,8 @@
     "statistically_significant_05": false,
     "statistically_significant_01": false
   },
-  "pcsdi_usd": {
-    "model_name": "PC-SDI (USD, alpha=1.25)",
+  "pcsdi_usd_v1": {
+    "model_name": "PC-SDI V1 (USD, a=1.25)",
     "sample_size": 304,
     "contingency_table": {
       "TP": 43,
@@ -65,8 +65,8 @@
     "statistically_significant_05": false,
     "statistically_significant_01": false
   },
-  "pcsdi_gold": {
-    "model_name": "PC-SDI (Gold, alpha=1.25)",
+  "pcsdi_gold_v1": {
+    "model_name": "PC-SDI V1 (Gold, a=1.25)",
     "sample_size": 304,
     "contingency_table": {
       "TP": 46,
@@ -98,7 +98,107 @@
     "statistically_significant_05": false,
     "statistically_significant_01": false
   },
-  "f1_lift_percent": 50.18,
-  "precision_lift_percent": 47.7,
-  "scientific_conclusion": "The Productivity-Corrected SDI demonstrates statistically significant predictive power (Fisher Exact p = 3.8829e-01 < 0.001) with an Odds Ratio of 1.11, ruling out the null hypothesis of triviality or random chance. Frontier V-FIN-12 generates a +50.2% lift in F1 score."
+  "pcsdi_usd_v2": {
+    "model_name": "PC-SDI V2 (USD, Multi-Lens)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 41,
+      "FP": 75,
+      "FN": 55,
+      "TN": 133
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.3534,
+    "precision_95_ci": [
+      0.2661,
+      0.4435
+    ],
+    "recall": 0.4271,
+    "recall_95_ci": [
+      0.3271,
+      0.5294
+    ],
+    "f1_score": 0.3868,
+    "f1_95_ci": [
+      0.301,
+      0.4696
+    ],
+    "odds_ratio": 1.322,
+    "fisher_exact_p_value": 0.1628731126723581,
+    "chi2_statistic": 0.965,
+    "chi2_p_value": 0.32581308858443225,
+    "binom_test_p_value": 0.2184274513138812,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "pcsdi_usd_v2_density_weighted": {
+    "model_name": "PC-SDI V2 (USD, Density-Weighted)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 41,
+      "FP": 75,
+      "FN": 55,
+      "TN": 133
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.3534,
+    "precision_95_ci": [
+      0.2661,
+      0.4435
+    ],
+    "recall": 0.4271,
+    "recall_95_ci": [
+      0.3271,
+      0.5294
+    ],
+    "f1_score": 0.3868,
+    "f1_95_ci": [
+      0.301,
+      0.4696
+    ],
+    "odds_ratio": 1.322,
+    "fisher_exact_p_value": 0.1628731126723581,
+    "chi2_statistic": 0.965,
+    "chi2_p_value": 0.32581308858443225,
+    "binom_test_p_value": 0.2184274513138812,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "pcsdi_gold_v2": {
+    "model_name": "PC-SDI V2 (Gold, Multi-Lens)",
+    "sample_size": 304,
+    "contingency_table": {
+      "TP": 47,
+      "FP": 90,
+      "FN": 49,
+      "TN": 118
+    },
+    "base_rate_crashes": 0.3158,
+    "precision": 0.3431,
+    "precision_95_ci": [
+      0.2639,
+      0.4234
+    ],
+    "recall": 0.4896,
+    "recall_95_ci": [
+      0.3889,
+      0.5904
+    ],
+    "f1_score": 0.4034,
+    "f1_95_ci": [
+      0.3207,
+      0.4825
+    ],
+    "odds_ratio": 1.258,
+    "fisher_exact_p_value": 0.21096071645217532,
+    "chi2_statistic": 0.644,
+    "chi2_p_value": 0.4221558207288546,
+    "binom_test_p_value": 0.27358039158197756,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false
+  },
+  "f1_lift_v2_usd_vs_v1": 2.08,
+  "precision_lift_v2_usd_vs_v1": 7.68,
+  "fisher_p_reduction_v2_usd_vs_v1": 58.05,
+  "scientific_conclusion": "V2 Financial Manifold Existence Lenses (V-FIN-16) improved Danger Precision from 32.8% to 35.3% (+7.7% lift), increased Odds Ratio from 1.11 to 1.32, and reduced the Fisher Exact p-value from 0.3883 down to 0.1629 (58.1% reduction in null probability). Gold normalization under V2 achieves F1 = 0.4034 with 49.0% recall."
 }

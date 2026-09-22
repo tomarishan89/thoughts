@@ -15,6 +15,7 @@ Supports parallel evaluation in:
 
 import math
 import datetime
+import bisect
 from dataclasses import dataclass
 from typing import List, Dict, Optional, Tuple
 import numpy as np
@@ -201,6 +202,198 @@ def classify_regime(
     # Substrate growth is flat or negative, but market is not hyping (SDI not spiking)
     confidence = 0.55
     return "Regime 2 (Subcritical)", "CAUTION", float(confidence)
+
+
+# ==============================================================================
+# V2 FINANCIAL MANIFOLD EXISTENCE LENSES (V-FIN-16)
+# ==============================================================================
+
+def compute_manifold_stress_index(
+    gold_series: List[dict],
+    spx_series: List[dict],
+    target_date: str,
+    lookback_days: int = 365
+) -> float:
+    """
+    Computes the Manifold Stress Index (MSI) via the Gold/S&P500 relative return ratio (Lens 1):
+      MSI(tau) = [P_Au(tau) / P_Au(tau - Delta tau)] / [P_SPX(tau) / P_SPX(tau - Delta tau)]
+
+    Physical Rationale (V-FIN-16 §4.2):
+      Gold represents un-falsifiable physical substrate capacity (zero counterparty liability).
+      S&P 500 represents aggregate equity claims on corporate cash flows.
+      When MSI > 1.10: Gold is outperforming equities (>10% outperformance over lookback),
+      indicating systemic friction, risk aversion, or flight from fiat liquidity claims.
+      When MSI < 0.90: Equities outpace gold, indicating tranquil economic accretion.
+    """
+    if not gold_series or not spx_series:
+        return 1.0
+
+    target_dt = datetime.datetime.strptime(target_date, "%Y-%m-%d")
+    lookback_dt = target_dt - datetime.timedelta(days=lookback_days)
+    lookback_str = lookback_dt.strftime("%Y-%m-%d")
+
+    def _get_price(series: List[dict], dt_str: str) -> float:
+        dates = [p["date"] for p in series]
+        idx = bisect.bisect_right(dates, dt_str) - 1
+        if idx >= 0:
+            return float(series[idx]["close"])
+        return float(series[0]["close"])
+
+    p_gold_curr = _get_price(gold_series, target_date)
+    p_gold_prev = _get_price(gold_series, lookback_str)
+    p_spx_curr = _get_price(spx_series, target_date)
+    p_spx_prev = _get_price(spx_series, lookback_str)
+
+    if p_gold_prev <= 0 or p_spx_prev <= 0 or p_spx_curr <= 0:
+        return 1.0
+
+    ret_gold = p_gold_curr / p_gold_prev
+    ret_spx = p_spx_curr / p_spx_prev
+
+    if ret_spx <= 0:
+        return 1.0
+
+    return float(ret_gold / ret_spx)
+
+
+def compute_pdr(mf_growth: float, sub_growth: float) -> float:
+    """
+    Parasitic Decoupling Ratio (PDR, Lens 2):
+      PDR = (dM_F / dtau) / (dM_sub / dtau)
+    Approximated by annualized log-growth rates:
+      - When sub_growth <= 0 and mf_growth > 0: PDR = 100.0 (extreme parasitic divergence:
+        substrate is stagnating or eroding while market cap inflates, e.g. Boeing buybacks).
+      - When sub_growth <= 0 and mf_growth <= 0: PDR = 1.0 (synchronized contraction).
+      - When sub_growth > 0: PDR = mf_growth / sub_growth.
+    """
+    if sub_growth <= 0.0:
+        if mf_growth > 0.0:
+            return 100.0
+        return 1.0
+    return float(mf_growth / max(1e-4, sub_growth))
+
+
+def compute_manifold_sdi_density_weighted(sdis: List[float], masses: List[float]) -> float:
+    """
+    Capitalization-Density-Weighted Manifold SDI (Frontier V-FIN-16.4.1):
+      Sigma_shadow^(manifold, weighted)(tau) = sum_i w_i(tau) * Sigma_shadow^*(i)(tau)
+      where w_i(tau) = M_F^(i)(tau) / sum_j M_F^(j)(tau)
+    Weights systemic shadow divergence by individual entity financial mass density,
+    preventing mega-cap hollowing from being diluted by multiple small firms.
+    """
+    if not sdis or not masses or len(sdis) != len(masses):
+        return 0.0
+    total_mass = sum(masses)
+    if total_mass <= 0:
+        return float(np.median(sdis))
+    weights = [m / total_mass for m in masses]
+    return float(sum(w * s for w, s in zip(weights, sdis)))
+
+
+def compute_macro_screening_length(
+    manifold_sdi: float,
+    xi_0: float = 1.0,
+    beta: float = 1.5
+) -> float:
+    """
+    Constitutive Macroeconomic Screening Length (Frontier V-FIN-16.4.2):
+      xi_manifold(tau) = xi_0 / (1 + beta * max(0, Sigma_shadow^(manifold)(tau)))
+    Quantifies the contraction of systemic counterparty credit screening length
+    under elevated manifold shadow divergence, predicting cross-asset correlation spikes
+    and liquidity freezes.
+    """
+    stress_term = max(0.0, float(manifold_sdi))
+    return float(xi_0 / (1.0 + beta * stress_term))
+
+
+def classify_regime_v2(
+    sdi: float,
+    vam: float,
+    sub_growth: float,
+    mf_growth: float,
+    pdr: Optional[float] = None,
+    manifold_stress: Optional[float] = None,
+    manifold_sdi: Optional[float] = None,
+    pdr_threshold: float = 3.5
+) -> Tuple[str, str, float]:
+    """
+    Enhanced Corporate Dynamical Regime Classifier incorporating Manifold Existence Lenses (V-FIN-16):
+      - Lens 1: Manifold Stress Index (MSI from Gold/SPX) dynamically modulates sdi_danger threshold.
+      - Lens 2: Parasitic Decoupling Ratio (PDR) gates positive growth to eliminate false alarms
+                on balanced corporate expansions.
+      - Lens 3: Manifold-Level Aggregate SDI (cross-sectional median) modulates systemic temperature.
+
+    Parameters:
+      sdi: Effective Productivity-Corrected SDI (Sigma_shadow^*)
+      vam: Vector Anisotropy Metric (Delta_M)
+      sub_growth: Annualized substrate growth rate d/dtau ln(M_sub)
+      mf_growth: Annualized financial mass growth rate d/dtau ln(M_F)
+      pdr: Parasitic Decoupling Ratio (mf_growth / sub_growth)
+      manifold_stress: MSI = ret_Au / ret_SPX
+      manifold_sdi: Systemic cross-sectional median SDI across the active corporate universe
+      pdr_threshold: Minimum growth ratio required to confirm parasitic extraction (default 3.5)
+
+    Returns:
+      (regime_name, prediction, confidence)
+    """
+    cfg = BACKTEST_CONFIG["regime_thresholds"]
+    sdi_danger_base = cfg["sdi_danger"] # 0.15
+    sdi_extreme = cfg["sdi_extreme"]   # 0.35
+    vam_distortion = cfg["vam_distortion"] # 0.45
+
+    # 1. Dynamic Threshold Modulation (Lens 1 & Lens 3)
+    sdi_danger_adj = sdi_danger_base
+
+    if manifold_stress is not None:
+        if manifold_stress > 1.10:
+            # Systemic stress / gold outperformance -> lower threshold (heightened sensitivity)
+            sdi_danger_adj -= 0.02
+        elif manifold_stress < 0.90:
+            # Systemic accretion / equity calm -> raise threshold (suppress false positives)
+            sdi_danger_adj += 0.02
+
+    if manifold_sdi is not None:
+        if manifold_sdi > 0.08:
+            # Systemic shadow expansion across manifold -> lower threshold
+            sdi_danger_adj -= 0.03
+        elif manifold_sdi < 0.0:
+            # Systemic structural discipline / contraction -> raise threshold
+            sdi_danger_adj += 0.03
+
+    # Clamped to physical bounds [0.08, 0.22]
+    sdi_danger_adj = max(0.08, min(0.22, sdi_danger_adj))
+
+    # 2. Regime 3: Parasitic Decoupling
+    # Candidate condition: SDI exceeds dynamic threshold and substrate is lagging
+    is_danger_candidate = (sdi >= sdi_danger_adj) and (sub_growth <= 0.05 or mf_growth > 2.0 * max(0.01, sub_growth))
+
+    if is_danger_candidate:
+        # Lens 2 Confirmation:
+        # In a positive growth environment (sub_growth > 0.05 and mf_growth > 0), verify whether
+        # financial mass is outpacing substrate beyond the balanced accretion threshold.
+        # If PDR <= pdr_threshold, the firm is expanding productively with market appreciation,
+        # not parasitically extracting. Downgrade to Regime 2 (CAUTION).
+        if (sub_growth > 0.05) and (mf_growth > 0):
+            computed_pdr = pdr if pdr is not None else (mf_growth / sub_growth)
+            if computed_pdr <= pdr_threshold:
+                return "Regime 2 (Subcritical)", "CAUTION", 0.55
+
+        # Confirmed Regime 3
+        conf = 0.50 + (sdi / sdi_extreme) * 0.35
+        if pdr is not None and pdr > 5.0:
+            conf += 0.05
+        if manifold_stress is not None and manifold_stress > 1.10:
+            conf += 0.05
+        confidence = min(0.95, conf)
+        return "Regime 3 (Parasitic)", "DANGER", float(confidence)
+
+    # 3. Regime 1: Virtuous Cycle
+    if sub_growth > 0.02 and sdi < sdi_danger_adj and vam < vam_distortion:
+        confidence = min(0.95, 0.60 + sub_growth * 0.50)
+        return "Regime 1 (Virtuous)", "HEALTHY", float(confidence)
+
+    # 4. Regime 2: Subcritical / Stagnant
+    return "Regime 2 (Subcritical)", "CAUTION", 0.55
 
 
 # ==============================================================================

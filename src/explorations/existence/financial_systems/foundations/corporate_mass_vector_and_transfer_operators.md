@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-21  
 **Status:** Theoretical Formalization & Empirical Case Study  
-**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.3, §1.6, §1.7, §1.8, §2.1, §2.2; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`financial_landscape_topology_and_equations_of_motion.md`](financial_landscape_topology_and_equations_of_motion.md)
+**Framework References:** [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.2, §1.3, §1.6, §1.7, §1.8, §2.1, §2.2; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`financial_landscape_topology_and_equations_of_motion.md`](financial_landscape_topology_and_equations_of_motion.md)
 
 ---
 
@@ -16,7 +16,7 @@ In conventional financial analysis, a corporation is treated strictly as a finan
 > **Axiomatic Grounding in Master Framework §1.7 (Evaluator Non-Neutrality):**  
 > Under Master Framework §1.7.1 and the Evaluator Non-Neutrality Invariant (§1.7.3), any evaluation operator $\mathcal{O}_{\text{eval}}$ is physically conditioned on specific sensorimotor boundary channels $\partial E$. Treating the scalar projection $\Pi_{\text{F}} \mathbf{M}_C$ as the whole entity mistakes a single measurement channel for the complex multi-sector engine, directly triggering Mode 3 of the Evaluator Failure Triad (Self-Referential Sclerosis).
 
-A corporate entity $C$ is a composite open thermodynamic engine situated at the intersection of **five distinct forms of existence** (a working constitutive resolution $k = 5$ under the Composition Theorem, [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8):
+A corporate entity $C$ is a composite open thermodynamic engine situated at the intersection of **five distinct forms of existence** (a working constitutive resolution $k = 5$ under the Composition Theorem, [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.8):
 1. **Legal Existence ( $\Omega_{\text{L}}$ ):** Corporate charter, statutory jurisdiction, contractual architecture, patent and intellectual property portfolios.
 2. **Human / Syncytial Existence ( $\Omega_{\text{H}}$ ):** Cognitive talent pool, institutional memory, cultural cohesion, engineering leadership, coordination protocols.
 3. **Physical / Substrate Existence ( $\Omega_{\text{P}}$ ):** Manufacturing plants, foundries, data centers, logistics networks, proprietary tooling, raw inventory.
@@ -25,7 +25,7 @@ A corporate entity $C$ is a composite open thermodynamic engine situated at the 
 
 Consequently, **corporate mass is not a scalar quantity.** It is a **five-dimensional vector** $\mathbf{M}_C \in \mathbb{R}^5_+$. The observable recorded on any single front $\alpha$ is merely the scalar projection $\Pi_\alpha \mathbf{M}_C$.
 
-Furthermore, these five forms are dynamically linked through a non-equilibrium **Transfer Operator** $\boldsymbol{\mathcal{T}}$ derived from the universal Yukawa coupling kernel ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8.2), where structural mass in one form serves as the primary **fuel** to sustain, repair, and expand adjacent forms.
+Furthermore, these five forms are dynamically linked through a non-equilibrium **Transfer Operator** $\boldsymbol{\mathcal{T}}$ derived from the universal Yukawa coupling kernel ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.8.2), where structural mass in one form serves as the primary **fuel** to sustain, repair, and expand adjacent forms.
 
 Finally, we establish the **Corporate Stellar Analogy**: corporate genesis, stabilization, over-expansion, and demise strictly mirror the astrophysical life cycle of stars—from molecular cloud accretion and gravitational ignition (product-market fit), through main-sequence hydrostatic equilibrium, to red giant shell-burning financialization, and core-collapse supernova (bankruptcy). We validate this framework through a longitudinal case study of **Apple Inc. (1976–2026)**.
 
@@ -45,7 +45,7 @@ The **Corporate Mass Vector** $\mathbf{M}_C$ is defined as:
 
 $$\mathbf{M}_C \equiv \begin{pmatrix} M_{\text{L}} \\ M_{\text{H}} \\ M_{\text{P}} \\ M_{\text{M}} \\ M_{\text{F}} \end{pmatrix} \in \mathbb{R}^5_+$$
 
-where each component $M_\alpha \equiv \|\mathbf{A}_{\mathfrak{Im}}^{(\alpha)}\|$ represents the accumulated imaginary-sector anisotropy ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2 & §2.2) of that constituent form, evaluated as the total irreversible thermodynamic work $\mathcal{W}_\alpha^{\text{replace}}$ required to rebuild that structural dimension from zero, denominated in invariant gold structural ounces ( $P_{\text{Au}}$ ):
+where each component $M_\alpha \equiv \|\mathbf{A}_{\mathfrak{Im}}^{(\alpha)}\|$ represents the accumulated imaginary-sector anisotropy ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.2 & §2.2) of that constituent form, evaluated as the total irreversible thermodynamic work $\mathcal{W}_\alpha^{\text{replace}}$ required to rebuild that structural dimension from zero, denominated in invariant gold structural ounces ( $P_{\text{Au}}$ ):
 
 $$M_\alpha \equiv \frac{\mathcal{W}_\alpha^{\text{replace}}}{P_{\text{Au}}} \quad [ \text{oz}_{\text{Au}}^{\text{struct}} ]$$
 
@@ -83,7 +83,7 @@ $$m_\alpha \equiv \hat{\mathbf{e}}_\alpha \cdot \mathbf{M}_C = \Pi_\alpha \mathb
 
 ### 1.3 Total Magnitude and Structural Directional Cosines
 
-Under the Composition Theorem ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8.1), total composite mass is determined by the Intersection Metric Tensor $G_{\alpha\beta}$:
+Under the Composition Theorem ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.8.1), total composite mass is determined by the Intersection Metric Tensor $G_{\alpha\beta}$:
 
 $$M_C \equiv \|\mathbf{M}_C\|_G = \sqrt{\sum_{\alpha,\beta} M_\alpha \, G_{\alpha\beta} \, M_\beta}$$
 
@@ -102,14 +102,14 @@ $$\hat{\mathbf{M}}_C = \begin{pmatrix} \cos \theta_{\text{L}} \\ \cos \theta_{\t
 
 ### 1.4 Yukawa-Derived Form Intersection Weights & Open Ontological Basis
 
-In foundational ontology ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8.1), an entity exists at the intersection of an open index set $\mathcal{I}_k$ of forms. The five-fold basis $\{\text{L}, \text{H}, \text{P}, \text{M}, \text{F}\}$ is a **working constitutive resolution ( $k = 5$ )**, not an immutable ontological axiom:
+In foundational ontology ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.8.1), an entity exists at the intersection of an open index set $\mathcal{I}_k$ of forms. The five-fold basis $\{\text{L}, \text{H}, \text{P}, \text{M}, \text{F}\}$ is a **working constitutive resolution ( $k = 5$ )**, not an immutable ontological axiom:
 - The minimum viable economic resolution is $k = 1$ (the physical/gold baseline, $E_{\text{Au}}$ ).
 - Expanding the basis monotonically improves predictive capacity: $k = 2$ (Physical + Financial), $k = 3$ (+ Human), $k = 4$ (+ Legal), $k = 5$ (+ Market). One could extend to $k = 6$ by distinguishing Brand from Market Distribution, or Cultural Cohesion from Human Engineering Skill.
 - The choice of $k$ is governed by the operational question and measurement capacity, bounded by the Renormalization Cutoff ( $\ell^*$, §1.5 below).
 
 #### 1.4.1 Inter-Form Coupling Closeness from the Universal Yukawa Kernel
 
-Rather than postulating arbitrary coupling parameters, the inter-form coupling closeness $\kappa(\alpha, \beta)$ between form $\alpha$ and form $\beta$ within a single corporate body is derived directly from the universal landscape coupling kernel ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.6 & §1.8.2):
+Rather than postulating arbitrary coupling parameters, the inter-form coupling closeness $\kappa(\alpha, \beta)$ between form $\alpha$ and form $\beta$ within a single corporate body is derived directly from the universal landscape coupling kernel ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.6 & §1.8.2):
 
 $$\kappa(\alpha, \beta) \equiv w_{\alpha\beta}^{(\text{inter-form})} = \frac{G_{\text{struct}}}{r_{\alpha\beta}} \cdot \exp\left(-\frac{r_{\alpha\beta}}{\xi_{\text{struct}}}\right)$$
 
@@ -162,7 +162,7 @@ ents  latory  utive  neering   Bldgs  ing     Trust  ing Moat Liquid Credit (Lev
 
 #### 1.5.2 The Corporate Renormalization Cutoff ( $\ell^*$ ):
 
-Applying the Renormalization Cutoff Criterion ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.8.4):
+Applying the Renormalization Cutoff Criterion ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.8.4):
 - For standard public credit ratings and macro market-clearing models, **$\ell^* = 1$** (the 5-vector $\mathbf{M}_C$ ) satisfies $\|M_{\text{eff}}^{(1)} - M_{\text{eff}}^{(2)}\| < \epsilon$.
 - For hostile takeover analysis, anti-trust break-up litigation, or post-merger integration audits, **$\ell^* = 2$** is mandatory: treating $E_{\text{H}}$ as a monolith obscures whether talent will defect when executive sub-engines are replaced.
 
@@ -194,7 +194,7 @@ $$\mathbf{G}_{\mu\nu}^{(\text{culture})} \propto \mathbf{T}_{\mu\nu}^{(\text{cor
 
 > [!NOTE]
 > **Constitutive Instantiation of Master Framework §1.6 & §1.8.2:**  
-> The Transfer Operator $\boldsymbol{\mathcal{T}}$ is the intra-entity, non-equilibrium generalization of the inter-boundary coupling tensor $w_{ij}$ ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.6). While $w_{ij}$ describes mutual deformation of external gap landscapes, $\mathcal{T}_{\alpha\beta} = \kappa(\alpha, \beta) \cdot \dot{E}_{\text{fuel}}^{(\beta)}$ describes the internal thermodynamic transduction of accumulated structural mass from form $\beta$ into maintenance fuel for form $\alpha$, mediated by selective internal boundaries ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.4).
+> The Transfer Operator $\boldsymbol{\mathcal{T}}$ is the intra-entity, non-equilibrium generalization of the inter-boundary coupling tensor $w_{ij}$ ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.6). While $w_{ij}$ describes mutual deformation of external gap landscapes, $\mathcal{T}_{\alpha\beta} = \kappa(\alpha, \beta) \cdot \dot{E}_{\text{fuel}}^{(\beta)}$ describes the internal thermodynamic transduction of accumulated structural mass from form $\beta$ into maintenance fuel for form $\alpha$, mediated by selective internal boundaries ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.4).
 
 The five forms of existence do not exist in isolation. Rather, mass accumulated in one projection acts as **exergy fuel** for another projection.
 
@@ -266,7 +266,7 @@ The corporation generates endogenous mass growth without requiring external capi
 
 > [!NOTE]
 > **Connection to Master Framework §2.1 (Coupling Loosening Law) & §1.6 (Topological Phase Transitions):**  
-> Corporate lifecycle transitions represent macroscopic topological phase transitions on the gap potential landscape $\mathcal{G}_C$ ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.6). As a corporation ages and financializes (Phase V), its internal determination coefficient $R^2(L \to L-1)$ degrades in accordance with the Coupling Loosening Law ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §2.1): parent executive guidance ceases to tightly govern shop-floor engineering microstates, inducing operational turbulence and accelerating the onset of core collapse.
+> Corporate lifecycle transitions represent macroscopic topological phase transitions on the gap potential landscape $\mathcal{G}_C$ ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.6). As a corporation ages and financializes (Phase V), its internal determination coefficient $R^2(L \to L-1)$ degrades in accordance with the Coupling Loosening Law ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §2.1): parent executive guidance ceases to tightly govern shop-floor engineering microstates, inducing operational turbulence and accelerating the onset of core collapse.
 
 The birth, maturity, senescence, and death of corporate engines map onto the astrophysical mechanics of stellar evolution:
 
@@ -384,7 +384,7 @@ $$\Delta_{\mathbf{M}} \equiv 1 - \frac{\left( \sum_{\alpha=1}^5 M_\alpha \right)
 
 > [!NOTE]
 > **Mapping to Master Framework §1.7.3 (Evaluator Failure Triad Mode 3):**  
-> An anomalous spike in the Shadow Divergence Indicator ( $\Sigma_{\text{shadow}} \gg 0$ ) is the exact corporate-economic realization of **Mode 3: Self-Referential Sclerosis (Parasitic Decoupling)** from the Universal Evaluator Failure Triad ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.7.3). The corporate governance loop ceases evaluating real-world physical and human execution and begins optimizing the shadow projection $m_{\text{F}}$ recursively via financial engineering, burning internal operational reserves until catastrophic boundary rupture.
+> An anomalous spike in the Shadow Divergence Indicator ( $\Sigma_{\text{shadow}} \gg 0$ ) is the exact corporate-economic realization of **Mode 3: Self-Referential Sclerosis (Parasitic Decoupling)** from the Universal Evaluator Failure Triad ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.7.3). The corporate governance loop ceases evaluating real-world physical and human execution and begins optimizing the shadow projection $m_{\text{F}}$ recursively via financial engineering, burning internal operational reserves until catastrophic boundary rupture.
 
 The **Shadow Divergence Indicator** $\Sigma_{\text{shadow}}$ computes the instantaneous rate of divergence between the financial projection and the underlying structural substrate:
 
@@ -431,7 +431,7 @@ In strict accordance with the Anti-Premature Closure Invariant, resolving the ve
 ### Frontier V-FIN-11: Constitutive Micro-Closure of Structural Distance $r_{\alpha\beta}$ & Overlap Metric $G_{\alpha\beta}$
 
 - **Deficiency:** While §1.4 derives the coupling closeness $\kappa(\alpha, \beta)$ from the universal Yukawa potential kernel ( $G_{\text{struct}} r_{\alpha\beta}^{-1} e^{-r_{\alpha\beta}/\xi}$ ), the operational distance $r_{\alpha\beta}$ and intersection Gram matrix $G_{\alpha\beta}$ are currently parameterized empirically through qualitative case studies (e.g., TSMC vs. law firm). A micro-hydrodynamic metric definition on the organizational coordination graph is required to compute $r_{\alpha\beta}$ from first principles.
-- **Structural Overlap with Physics Frontiers:** This frontier is the corporate-sector manifestation of **Frontier V-3B-3 (Composite Imaginary-Sector Closure Problem)** documented in [`physical_systems/issues_log.md`](../physical_systems/issues_log.md), which identifies the exact same open question in physical multi-body bound states: how imaginary-sector anisotropies of intersecting constituent engines superpose without unquantified empirical mixing parameters.
+- **Structural Overlap with Physics Frontiers:** This frontier is the corporate-sector manifestation of **Frontier V-3B-3 (Composite Imaginary-Sector Closure Problem)** documented in [`physical_systems/issues_log.md`](../../physical_systems/issues_log.md), which identifies the exact same open question in physical multi-body bound states: how imaginary-sector anisotropies of intersecting constituent engines superpose without unquantified empirical mixing parameters.
 - **Downstream Attack:** Formulate $r_{\alpha\beta}$ via graph spectral distance on corporate collaboration networks, defining $r_{\alpha\beta} \equiv \|\mathbf{u}_\alpha - \mathbf{u}_\beta\|_{\mathcal{L}^{-1}}$, where $\mathcal{L}$ is the graph Laplacian of organizational communication flows and capital allocations.
 
 ### Frontier V-FIN-12: Resolution of the Growth-Stock False-Positive Problem via Substrate Productivity Coupling [FORMALLY RESOLVED]

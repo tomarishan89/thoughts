@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-21  
 **Status:** Completed Empirical Test & Numerical Ground-Truth Benchmark  
-**Script Reference:** [`test_financial_field_gold_hypotheses.py`](scripts/test_financial_field_gold_hypotheses.py)  
+**Script Reference:** [`test_financial_field_gold_hypotheses.py`](../scripts/test_financial_field_gold_hypotheses.py)  
 **Execution Log:** `task-4040.log`  
-**Framework References:** [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6
+**Framework References:** [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.2, §1.6
 
 ---
 

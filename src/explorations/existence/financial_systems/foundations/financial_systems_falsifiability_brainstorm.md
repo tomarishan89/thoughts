@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-21
 **Status:** Discovery-Phase Brainstorm
-**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.3, §1.6; [`SOCIETAL_MASTER_FRAMEWORK.md`](../societal_systems/SOCIETAL_MASTER_FRAMEWORK.md) §1-2
+**Framework References:** [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.2, §1.3, §1.6; [`SOCIETAL_MASTER_FRAMEWORK.md`](../../societal_systems/SOCIETAL_MASTER_FRAMEWORK.md) §1-2
 
 ---
 

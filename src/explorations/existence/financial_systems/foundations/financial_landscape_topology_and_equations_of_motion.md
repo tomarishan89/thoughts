@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-21  
 **Status:** Theoretical Formalization & Empirical Landscape Reconstruction  
-**Framework References:** [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.2, §1.6; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`empirical_test_results_gold_field_equations.md`](empirical_test_results_gold_field_equations.md); [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)
+**Framework References:** [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.2, §1.6; [`financial_field_equations_and_gold_candidates.md`](financial_field_equations_and_gold_candidates.md); [`empirical_test_results_gold_field_equations.md`](empirical_test_results_gold_field_equations.md); [`corporate_mass_vector_and_transfer_operators.md`](corporate_mass_vector_and_transfer_operators.md)
 
 ---
 
@@ -28,7 +28,7 @@ In the Open Engine framework, a corporate entity $C_i$ has accumulated imaginary
 
 > [!NOTE]
 > **Constitutive Derivation from Master Framework §1.2 & §1.3:**  
-> The foundational Anisotropy-Gap Trajectory Rule ([`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.3, Master Equation 4) defines the overdamped kinematic velocity:
+> The foundational Anisotropy-Gap Trajectory Rule ([`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.3, Master Equation 4) defines the overdamped kinematic velocity:
 >
 > $$\frac{d\mathbf{z}}{d\tau} = -\mathbf{K} \cdot \nabla_{\Omega_{\mathbb{C}}} \mathcal{G}$$
 >
@@ -68,7 +68,7 @@ In the asymptotic limit where corporate structural mass is small or viscous oper
 
 > [!NOTE]
 > **Constitutive Instantiation of Master Framework §1.6 (Neighbor Coupling):**  
-> In [`MASTER_FRAMEWORK.md`](../MASTER_FRAMEWORK.md) §1.6, the multi-entity landscape coupling is defined as:
+> In [`MASTER_FRAMEWORK.md`](../../MASTER_FRAMEWORK.md) §1.6, the multi-entity landscape coupling is defined as:
 >
 > $$\mathcal{G}_i(\mathbf{z}_i) = \mathcal{G}_i^{(\text{self})}(\mathbf{z}_i) + \sum_{j \neq i} w_{ij} \, \Delta\mathcal{G}_{ij}(\mathbf{z}_i, \mathbf{z}_j)$$
 >
