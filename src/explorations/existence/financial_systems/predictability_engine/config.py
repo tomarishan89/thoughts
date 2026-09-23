@@ -90,9 +90,17 @@ UNIVERSE_VALIDATION = {
     }
 }
 
+# S&P 500 55-Firm Expanded Universe (Option C)
+from sp500_universe import SP500_55_UNIVERSE, GICS_SECTORS, get_universe
+
+# Active Universe Selection: 'sp55' (default) or 'validation_8'
+UNIVERSE_MODE = "sp55"
+ACTIVE_UNIVERSE = SP500_55_UNIVERSE if UNIVERSE_MODE == "sp55" else UNIVERSE_VALIDATION
+
 # Gold Benchmark Symbol
 GOLD_SYMBOL = "GC=F"
 SP500_SYMBOL = "^GSPC"
+TREASURY_10Y_SYMBOL = "^TNX"
 
 # XBRL Tag Search Hierarchies (in priority order)
 XBRL_TAG_MAP = {
@@ -115,7 +123,12 @@ XBRL_TAG_MAP = {
     "sga_expense": [
         "SellingGeneralAndAdministrativeExpense",
         "GeneralAndAdministrativeExpense",
-        "OperatingExpenses"
+        "OperatingExpenses",
+        "NoninterestExpense",
+        "OperatingCostsAndExpenses",
+        "OtherOperatingIncomeExpenseNet",
+        "CostsAndExpenses",
+        "LaborAndRelatedExpenses"
     ],
     
     # Physical Mass (M_P): Net Property, Plant & Equipment
@@ -129,8 +142,12 @@ XBRL_TAG_MAP = {
         "Revenues",
         "RevenueFromContractWithCustomerExcludingAssessedTax",
         "SalesRevenueNet",
+        "RegulatedAndUnregulatedOperatingRevenue",
+        "ElectricUtilityRevenue",
         "InterestAndDividendIncomeOperating",
-        "TotalRevenuesAndOtherIncome"
+        "TotalRevenuesAndOtherIncome",
+        "ElectricOperatingRevenue",
+        "RegulatedOperatingRevenue"
     ],
     "gross_profit": [
         "GrossProfit",
@@ -154,9 +171,64 @@ XBRL_TAG_MAP = {
         "DebtCurrent",
         "ShortTermBorrowings"
     ],
+    "short_term_debt": [
+        "DebtCurrent",
+        "ShortTermBorrowings",
+        "CommercialPaper",
+        "LongTermDebtCurrent"
+    ],
     "shares_outstanding": [
         "CommonStockSharesOutstanding",
-        "EntityCommonStockSharesOutstanding"
+        "EntityCommonStockSharesOutstanding",
+        "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "WeightedAverageNumberOfSharesOutstandingBasic",
+        "CommonStockSharesIssued"
+    ],
+
+    # Working Capital & Continuum Plasticity (V-FIN-1.1, V-FIN-4, V-FIN-10)
+    "inventory": [
+        "InventoryNet",
+        "InventoryGross",
+        "Inventories",
+        "InventoryNetOfAllowancesCustomerAdvancesAndProgressBillings",
+        "InventoryFinishedGoods"
+    ],
+    "accounts_receivable": [
+        "AccountsReceivableNetCurrent",
+        "ReceivablesNetCurrent",
+        "AccountsAndOtherReceivablesNetCurrent"
+    ],
+    "accounts_payable": [
+        "AccountsPayableCurrent",
+        "AccountsPayableAndAccruedLiabilitiesCurrent",
+        "AccountsPayableOtherCurrent"
+    ],
+    "cost_of_goods_sold": [
+        "CostOfGoodsAndServicesSold",
+        "CostOfRevenue",
+        "CostOfGoodsSold",
+        "CostsAndExpenses",
+        "OperatingCostsAndExpenses"
+    ],
+    "total_assets": [
+        "Assets",
+        "AssetsCurrent"
+    ],
+    "current_liabilities": [
+        "LiabilitiesCurrent",
+        "OtherLiabilitiesCurrent",
+        "Liabilities"
+    ],
+    "ebit": [
+        "OperatingIncomeLoss",
+        "GrossProfit",
+        "NetIncomeLoss"
+    ],
+    "interest_expense": [
+        "InterestExpense",
+        "InterestAndDebtExpense",
+        "FinancingInterestExpense",
+        "InterestExpenseDebt"
     ]
 }
 
@@ -171,5 +243,19 @@ BACKTEST_CONFIG = {
         "sdi_extreme": 0.35,           # SDI > 0.35 -> High Alert / Severe Decoupling
         "vam_distortion": 0.45,        # VAM > 0.45 indicates severe single-axis skew
     },
-    "forward_horizons_quarters": [2, 4, 8]  # 6m, 12m, 24m
+    "forward_horizons_quarters": [2, 4, 8],  # 6m, 12m, 24m
+    "holdout_split_year": 2022,              # Boundary: Train <= 2021, Out-of-Sample >= 2022
+    "in_sample_range": (2016, 2021),         # 6 years in-sample calibration
+    "out_of_sample_range": (2022, 2026),     # 4.5 years out-of-sample holdout validation
+
+    # Continuum Plasticity & Mechanical Parameters (Option B / V-FIN-1, 4, 10, 12)
+    "continuum_plasticity": {
+        "alpha_dp": 0.25,               # Drucker-Prager friction angle coefficient
+        "alpha_0": 1.25,                # Base productivity coupling coefficient
+        "gamma_sec": 1.0,               # Sector capital intensity scaling exponent
+        "tau_bar_gestation": 2.5,       # Mean capital gestation delay (years = 10 quarters)
+        "use_retarded_gestation": True, # Non-Markovian Gamma memory convolution
+        "use_sector_coupling": True,    # Sector-adaptive alpha(rho_capex)
+        "use_drucker_prager_gate": True # Balance-sheet plastic rupture gate
+    }
 }

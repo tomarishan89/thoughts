@@ -1,0 +1,54 @@
+{
+  "v3_usd": {
+    "in_sample_2016_2021": {
+      "total_samples": 1100,
+      "danger_count": 351,
+      "actual_crashes": 419,
+      "precision": 0.433,
+      "recall": 0.3628,
+      "f1_score": 0.3948,
+      "TP": 152,
+      "FP": 199,
+      "FN": 267,
+      "TN": 482
+    },
+    "out_of_sample_2022_2026": {
+      "total_samples": 990,
+      "danger_count": 264,
+      "actual_crashes": 260,
+      "precision": 0.2576,
+      "recall": 0.2615,
+      "f1_score": 0.2595,
+      "TP": 68,
+      "FP": 196,
+      "FN": 192,
+      "TN": 534
+    }
+  },
+  "v3_gold": {
+    "in_sample_2016_2021": {
+      "total_samples": 1100,
+      "danger_count": 376,
+      "actual_crashes": 419,
+      "precision": 0.4229,
+      "recall": 0.3795,
+      "f1_score": 0.4,
+      "TP": 159,
+      "FP": 217,
+      "FN": 260,
+      "TN": 464
+    },
+    "out_of_sample_2022_2026": {
+      "total_samples": 990,
+      "danger_count": 317,
+      "actual_crashes": 260,
+      "precision": 0.2429,
+      "recall": 0.2962,
+      "f1_score": 0.2669,
+      "TP": 77,
+      "FP": 240,
+      "FN": 183,
+      "TN": 490
+    }
+  }
+}

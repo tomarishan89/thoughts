@@ -1,0 +1,351 @@
+{
+  "N_firms": 55,
+  "marchenko_pastur_random_bound": 0.06966401603962441,
+  "covid_peak_trace": 0.7772271038990048,
+  "covid_peak_date": "2020-03-17",
+  "quarterly_summary": [
+    {
+      "quarter": "2017-Q1",
+      "date": "2017-03-31",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.1916487621276263,
+      "mean_corr": 0.1273003183956671,
+      "lambda_1": 10.540681917019448,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2017-Q2",
+      "date": "2017-06-30",
+      "macro_xi": 0.9673,
+      "alpha_trace": 0.18755192208532878,
+      "mean_corr": 0.13246623466066706,
+      "lambda_1": 10.315355714693084,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2017-Q3",
+      "date": "2017-09-30",
+      "macro_xi": 0.9293,
+      "alpha_trace": 0.1943916871698651,
+      "mean_corr": 0.1515163830868229,
+      "lambda_1": 10.691542794342581,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2017-Q4",
+      "date": "2017-12-31",
+      "macro_xi": 0.8513,
+      "alpha_trace": 0.1502427714269797,
+      "mean_corr": 0.07747609774418711,
+      "lambda_1": 8.263352428483884,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2018-Q1",
+      "date": "2018-03-31",
+      "macro_xi": 0.888,
+      "alpha_trace": 0.47874269545380044,
+      "mean_corr": 0.44445167599103824,
+      "lambda_1": 26.330848249959026,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2018-Q2",
+      "date": "2018-06-30",
+      "macro_xi": 0.9129,
+      "alpha_trace": 0.308974480110671,
+      "mean_corr": 0.23909437592101274,
+      "lambda_1": 16.9935964060869,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2018-Q3",
+      "date": "2018-09-30",
+      "macro_xi": 0.8538,
+      "alpha_trace": 0.16693870882536252,
+      "mean_corr": 0.12227264158817204,
+      "lambda_1": 9.181628985394939,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2018-Q4",
+      "date": "2018-12-31",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.4740193332279904,
+      "mean_corr": 0.4280114223375456,
+      "lambda_1": 26.071063327539484,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2019-Q1",
+      "date": "2019-03-31",
+      "macro_xi": 0.9025,
+      "alpha_trace": 0.31603769618689437,
+      "mean_corr": 0.26845059144139327,
+      "lambda_1": 17.382073290279187,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2019-Q2",
+      "date": "2019-06-30",
+      "macro_xi": 0.95,
+      "alpha_trace": 0.26590981859617974,
+      "mean_corr": 0.22211741072723049,
+      "lambda_1": 14.625040022789882,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2019-Q3",
+      "date": "2019-09-30",
+      "macro_xi": 0.9934,
+      "alpha_trace": 0.37236346934538933,
+      "mean_corr": 0.32203649004472323,
+      "lambda_1": 20.47999081399641,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2019-Q4",
+      "date": "2019-12-31",
+      "macro_xi": 0.7443,
+      "alpha_trace": 0.25543941409448173,
+      "mean_corr": 0.18649102449147856,
+      "lambda_1": 14.049167775196494,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2020-Q1",
+      "date": "2020-03-31",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.7085854392464052,
+      "mean_corr": 0.6928172611432516,
+      "lambda_1": 38.972199158552286,
+      "state": "EXTREME ABSORPTION (>=60%)"
+    },
+    {
+      "quarter": "2020-Q2",
+      "date": "2020-06-30",
+      "macro_xi": 0.9511,
+      "alpha_trace": 0.5436819032253952,
+      "mean_corr": 0.5104208749509422,
+      "lambda_1": 29.902504677396728,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2020-Q3",
+      "date": "2020-09-30",
+      "macro_xi": 0.8309,
+      "alpha_trace": 0.3090003095976231,
+      "mean_corr": 0.2782219568674224,
+      "lambda_1": 16.995017027869267,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2020-Q4",
+      "date": "2020-12-31",
+      "macro_xi": 0.842,
+      "alpha_trace": 0.3114233012954865,
+      "mean_corr": 0.2487669151352147,
+      "lambda_1": 17.128281571251755,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2021-Q1",
+      "date": "2021-03-31",
+      "macro_xi": 0.6738,
+      "alpha_trace": 0.24949392023539946,
+      "mean_corr": 0.22329635442420342,
+      "lambda_1": 13.72216561294697,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2021-Q2",
+      "date": "2021-06-30",
+      "macro_xi": 0.7343,
+      "alpha_trace": 0.2647625228944449,
+      "mean_corr": 0.22310241128321376,
+      "lambda_1": 14.561938759194465,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2021-Q3",
+      "date": "2021-09-30",
+      "macro_xi": 0.8282,
+      "alpha_trace": 0.28998595855122844,
+      "mean_corr": 0.24160373220394796,
+      "lambda_1": 15.949227720317559,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2021-Q4",
+      "date": "2021-12-31",
+      "macro_xi": 0.7878,
+      "alpha_trace": 0.30256893102454274,
+      "mean_corr": 0.2587302456770391,
+      "lambda_1": 16.641291206349848,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2022-Q1",
+      "date": "2022-03-31",
+      "macro_xi": 0.873,
+      "alpha_trace": 0.3337824309877932,
+      "mean_corr": 0.24816243869761068,
+      "lambda_1": 18.358033704328626,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2022-Q2",
+      "date": "2022-06-30",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.49700754932069796,
+      "mean_corr": 0.4732562262683148,
+      "lambda_1": 27.335415212638388,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2022-Q3",
+      "date": "2022-09-30",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.48225199269271507,
+      "mean_corr": 0.451371819292934,
+      "lambda_1": 26.523859598099328,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2022-Q4",
+      "date": "2022-12-31",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.5052612596043766,
+      "mean_corr": 0.48164263357113424,
+      "lambda_1": 27.789369278240713,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2023-Q1",
+      "date": "2023-03-31",
+      "macro_xi": 1.0,
+      "alpha_trace": 0.35000066477489505,
+      "mean_corr": 0.32127979163210196,
+      "lambda_1": 19.250036562619222,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2023-Q2",
+      "date": "2023-06-30",
+      "macro_xi": 0.9034,
+      "alpha_trace": 0.2785128720961945,
+      "mean_corr": 0.23373247932445376,
+      "lambda_1": 15.3182079652907,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2023-Q3",
+      "date": "2023-09-30",
+      "macro_xi": 0.8692,
+      "alpha_trace": 0.25624094390036967,
+      "mean_corr": 0.22328171300925007,
+      "lambda_1": 14.093251914520327,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2023-Q4",
+      "date": "2023-12-31",
+      "macro_xi": 0.9618,
+      "alpha_trace": 0.27102216515329614,
+      "mean_corr": 0.22613173337143808,
+      "lambda_1": 14.906219083431282,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2024-Q1",
+      "date": "2024-03-31",
+      "macro_xi": 0.8763,
+      "alpha_trace": 0.2092106896810251,
+      "mean_corr": 0.15973242706170543,
+      "lambda_1": 11.50658793245638,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2024-Q2",
+      "date": "2024-06-30",
+      "macro_xi": 0.9213,
+      "alpha_trace": 0.2336980542732726,
+      "mean_corr": 0.17909648843859557,
+      "lambda_1": 12.853392985029991,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2024-Q3",
+      "date": "2024-09-30",
+      "macro_xi": 0.7576,
+      "alpha_trace": 0.25052240034662604,
+      "mean_corr": 0.18336120888548355,
+      "lambda_1": 13.778732019064435,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2024-Q4",
+      "date": "2024-12-31",
+      "macro_xi": 0.8926,
+      "alpha_trace": 0.18602384805346184,
+      "mean_corr": 0.14439082067089365,
+      "lambda_1": 10.231311642940401,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2025-Q1",
+      "date": "2025-03-31",
+      "macro_xi": 0.9386,
+      "alpha_trace": 0.2243992548073732,
+      "mean_corr": 0.182517319202264,
+      "lambda_1": 12.341959014405528,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2025-Q2",
+      "date": "2025-06-30",
+      "macro_xi": 0.917,
+      "alpha_trace": 0.5196112708242572,
+      "mean_corr": 0.47205600174142665,
+      "lambda_1": 28.578619895334135,
+      "state": "ELEVATED ABSORPTION (>=45%)"
+    },
+    {
+      "quarter": "2025-Q3",
+      "date": "2025-09-30",
+      "macro_xi": 0.9864,
+      "alpha_trace": 0.1717045210133768,
+      "mean_corr": 0.10524589489908454,
+      "lambda_1": 9.443748655735721,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2025-Q4",
+      "date": "2025-12-31",
+      "macro_xi": 0.9686,
+      "alpha_trace": 0.1646414593922173,
+      "mean_corr": 0.12003068256790343,
+      "lambda_1": 9.055280266571948,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2026-Q1",
+      "date": "2026-03-31",
+      "macro_xi": 0.9845,
+      "alpha_trace": 0.1765902762089979,
+      "mean_corr": 0.12165455648635762,
+      "lambda_1": 9.712465191494886,
+      "state": "DIVERSE ACCRETION (<45%)"
+    },
+    {
+      "quarter": "2026-Q2",
+      "date": "2026-06-30",
+      "macro_xi": 0.931,
+      "alpha_trace": 0.214828791837542,
+      "mean_corr": 0.10042430001090215,
+      "lambda_1": 11.815583551064812,
+      "state": "DIVERSE ACCRETION (<45%)"
+    }
+  ],
+  "total_rolling_evaluations": 491
+}

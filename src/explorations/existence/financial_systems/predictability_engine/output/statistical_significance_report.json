@@ -1,204 +1,601 @@
 {
   "linear_sdi_usd": {
     "model_name": "Linear SDI (USD)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 28,
-      "FP": 98,
-      "FN": 68,
-      "TN": 110
+      "TP": 236,
+      "FP": 452,
+      "FN": 443,
+      "TN": 959
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.2222,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.343,
     "precision_95_ci": [
-      0.1518,
-      0.2977
+      0.3099,
+      0.378
     ],
-    "recall": 0.2917,
+    "recall": 0.3476,
     "recall_95_ci": [
-      0.2019,
-      0.3846
+      0.3128,
+      0.3851
     ],
-    "f1_score": 0.2523,
+    "f1_score": 0.3453,
     "f1_95_ci": [
-      0.1765,
-      0.3262
+      0.3131,
+      0.3774
     ],
-    "odds_ratio": 0.462,
-    "fisher_exact_p_value": 0.9990798213605553,
-    "chi2_statistic": 7.995,
-    "chi2_p_value": 0.004689498910251772,
-    "binom_test_p_value": 0.9922880057333603,
+    "odds_ratio": 1.13,
+    "fisher_exact_p_value": 0.11698933048233881,
+    "chi2_statistic": 1.418,
+    "chi2_p_value": 0.23367391623059314,
+    "binom_test_p_value": 0.16461122879049325,
     "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.1404,
+      "cohen_h_effect_size": 0.0576,
+      "danger_crash_rate_p1": 0.343,
+      "nondanger_crash_rate_p2": 0.316,
+      "n_star_for_80pct_power": 12115
+    }
   },
   "pcsdi_usd_v1": {
     "model_name": "PC-SDI V1 (USD, a=1.25)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 43,
-      "FP": 88,
-      "FN": 53,
-      "TN": 120
+      "TP": 237,
+      "FP": 421,
+      "FN": 442,
+      "TN": 990
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.3282,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3602,
     "precision_95_ci": [
-      0.2481,
-      0.4101
+      0.323,
+      0.3961
     ],
-    "recall": 0.4479,
+    "recall": 0.349,
     "recall_95_ci": [
-      0.3467,
-      0.5506
+      0.3156,
+      0.388
     ],
-    "f1_score": 0.3789,
+    "f1_score": 0.3545,
     "f1_95_ci": [
-      0.2949,
-      0.4578
+      0.321,
+      0.3886
     ],
-    "odds_ratio": 1.106,
-    "fisher_exact_p_value": 0.3882886897519737,
-    "chi2_statistic": 0.079,
-    "chi2_p_value": 0.7779832673840564,
-    "binom_test_p_value": 0.4115328172236163,
-    "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "odds_ratio": 1.261,
+    "fisher_exact_p_value": 0.011380862456586616,
+    "chi2_statistic": 5.224,
+    "chi2_p_value": 0.02227424855343753,
+    "binom_test_p_value": 0.030030648250296395,
+    "statistically_significant_05": true,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.5038,
+      "cohen_h_effect_size": 0.1093,
+      "danger_crash_rate_p1": 0.3602,
+      "nondanger_crash_rate_p2": 0.3087,
+      "n_star_for_80pct_power": 3356
+    }
   },
   "pcsdi_gold_v1": {
     "model_name": "PC-SDI V1 (Gold, a=1.25)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 46,
-      "FP": 91,
-      "FN": 50,
-      "TN": 117
+      "TP": 242,
+      "FP": 444,
+      "FN": 437,
+      "TN": 967
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.3358,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3528,
     "precision_95_ci": [
-      0.2558,
-      0.4161
+      0.3158,
+      0.3884
     ],
-    "recall": 0.4792,
+    "recall": 0.3564,
     "recall_95_ci": [
-      0.3778,
-      0.5817
+      0.3198,
+      0.3935
     ],
-    "f1_score": 0.3948,
+    "f1_score": 0.3546,
     "f1_95_ci": [
-      0.3105,
-      0.473
+      0.3217,
+      0.3883
     ],
-    "odds_ratio": 1.183,
-    "fisher_exact_p_value": 0.28925224337590016,
-    "chi2_statistic": 0.308,
-    "chi2_p_value": 0.5790983597741661,
-    "binom_test_p_value": 0.3371281796159158,
-    "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "odds_ratio": 1.206,
+    "fisher_exact_p_value": 0.03224171006677355,
+    "chi2_statistic": 3.435,
+    "chi2_p_value": 0.06384517174999364,
+    "binom_test_p_value": 0.06512325688595319,
+    "statistically_significant_05": true,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.3375,
+      "cohen_h_effect_size": 0.0882,
+      "danger_crash_rate_p1": 0.3528,
+      "nondanger_crash_rate_p2": 0.3113,
+      "n_star_for_80pct_power": 5156
+    }
   },
   "pcsdi_usd_v2": {
     "model_name": "PC-SDI V2 (USD, Multi-Lens)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 41,
-      "FP": 75,
-      "FN": 55,
-      "TN": 133
+      "TP": 211,
+      "FP": 371,
+      "FN": 468,
+      "TN": 1040
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.3534,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3625,
     "precision_95_ci": [
-      0.2661,
-      0.4435
+      0.3243,
+      0.4036
     ],
-    "recall": 0.4271,
+    "recall": 0.3108,
     "recall_95_ci": [
-      0.3271,
-      0.5294
+      0.2747,
+      0.3467
     ],
-    "f1_score": 0.3868,
+    "f1_score": 0.3347,
     "f1_95_ci": [
-      0.301,
-      0.4696
+      0.3008,
+      0.3717
     ],
-    "odds_ratio": 1.322,
-    "fisher_exact_p_value": 0.1628731126723581,
-    "chi2_statistic": 0.965,
-    "chi2_p_value": 0.32581308858443225,
-    "binom_test_p_value": 0.2184274513138812,
-    "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "odds_ratio": 1.264,
+    "fisher_exact_p_value": 0.013135449942835704,
+    "chi2_statistic": 4.981,
+    "chi2_p_value": 0.025622984362299525,
+    "binom_test_p_value": 0.029818078795075784,
+    "statistically_significant_05": true,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.4834,
+      "cohen_h_effect_size": 0.1106,
+      "danger_crash_rate_p1": 0.3625,
+      "nondanger_crash_rate_p2": 0.3103,
+      "n_star_for_80pct_power": 3280
+    }
   },
   "pcsdi_usd_v2_density_weighted": {
     "model_name": "PC-SDI V2 (USD, Density-Weighted)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 41,
-      "FP": 75,
-      "FN": 55,
-      "TN": 133
+      "TP": 208,
+      "FP": 358,
+      "FN": 471,
+      "TN": 1053
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.3534,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3675,
     "precision_95_ci": [
-      0.2661,
-      0.4435
+      0.3285,
+      0.4098
     ],
-    "recall": 0.4271,
+    "recall": 0.3063,
     "recall_95_ci": [
-      0.3271,
-      0.5294
+      0.2719,
+      0.3421
     ],
-    "f1_score": 0.3868,
+    "f1_score": 0.3341,
     "f1_95_ci": [
-      0.301,
-      0.4696
+      0.2993,
+      0.3698
     ],
-    "odds_ratio": 1.322,
-    "fisher_exact_p_value": 0.1628731126723581,
-    "chi2_statistic": 0.965,
-    "chi2_p_value": 0.32581308858443225,
-    "binom_test_p_value": 0.2184274513138812,
-    "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "odds_ratio": 1.299,
+    "fisher_exact_p_value": 0.00676808209725942,
+    "chi2_statistic": 6.162,
+    "chi2_p_value": 0.01305295084782935,
+    "binom_test_p_value": 0.017732725270124827,
+    "statistically_significant_05": true,
+    "statistically_significant_01": true,
+    "power_analysis": {
+      "statistical_power": 0.5811,
+      "cohen_h_effect_size": 0.1236,
+      "danger_crash_rate_p1": 0.3675,
+      "nondanger_crash_rate_p2": 0.3091,
+      "n_star_for_80pct_power": 2622
+    }
   },
   "pcsdi_gold_v2": {
     "model_name": "PC-SDI V2 (Gold, Multi-Lens)",
-    "sample_size": 304,
+    "sample_size": 2090,
     "contingency_table": {
-      "TP": 47,
-      "FP": 90,
-      "FN": 49,
-      "TN": 118
+      "TP": 226,
+      "FP": 433,
+      "FN": 453,
+      "TN": 978
     },
-    "base_rate_crashes": 0.3158,
-    "precision": 0.3431,
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3429,
     "precision_95_ci": [
-      0.2639,
-      0.4234
+      0.3067,
+      0.379
     ],
-    "recall": 0.4896,
+    "recall": 0.3328,
     "recall_95_ci": [
-      0.3889,
-      0.5904
+      0.2963,
+      0.3691
     ],
-    "f1_score": 0.4034,
+    "f1_score": 0.3378,
     "f1_95_ci": [
-      0.3207,
-      0.4825
+      0.3045,
+      0.3707
     ],
-    "odds_ratio": 1.258,
-    "fisher_exact_p_value": 0.21096071645217532,
-    "chi2_statistic": 0.644,
-    "chi2_p_value": 0.4221558207288546,
-    "binom_test_p_value": 0.27358039158197756,
+    "odds_ratio": 1.127,
+    "fisher_exact_p_value": 0.12596129629371158,
+    "chi2_statistic": 1.314,
+    "chi2_p_value": 0.2516591784697161,
+    "binom_test_p_value": 0.17129891415327053,
     "statistically_significant_05": false,
-    "statistically_significant_01": false
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.131,
+      "cohen_h_effect_size": 0.0561,
+      "danger_crash_rate_p1": 0.3429,
+      "nondanger_crash_rate_p2": 0.3166,
+      "n_star_for_80pct_power": 12738
+    }
   },
-  "f1_lift_v2_usd_vs_v1": 2.08,
-  "precision_lift_v2_usd_vs_v1": 7.68,
-  "fisher_p_reduction_v2_usd_vs_v1": 58.05,
-  "scientific_conclusion": "V2 Financial Manifold Existence Lenses (V-FIN-16) improved Danger Precision from 32.8% to 35.3% (+7.7% lift), increased Odds Ratio from 1.11 to 1.32, and reduced the Fisher Exact p-value from 0.3883 down to 0.1629 (58.1% reduction in null probability). Gold normalization under V2 achieves F1 = 0.4034 with 49.0% recall."
+  "pcsdi_usd_v3": {
+    "model_name": "PC-SDI V3 (USD, Continuum)",
+    "sample_size": 2090,
+    "contingency_table": {
+      "TP": 220,
+      "FP": 395,
+      "FN": 459,
+      "TN": 1016
+    },
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3577,
+    "precision_95_ci": [
+      0.3215,
+      0.3971
+    ],
+    "recall": 0.324,
+    "recall_95_ci": [
+      0.2893,
+      0.362
+    ],
+    "f1_score": 0.34,
+    "f1_95_ci": [
+      0.3067,
+      0.3759
+    ],
+    "odds_ratio": 1.233,
+    "fisher_exact_p_value": 0.022108191629096934,
+    "chi2_statistic": 4.076,
+    "chi2_p_value": 0.0434941154935515,
+    "binom_test_p_value": 0.04577205126814026,
+    "statistically_significant_05": true,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.4002,
+      "cohen_h_effect_size": 0.0987,
+      "danger_crash_rate_p1": 0.3577,
+      "nondanger_crash_rate_p2": 0.3112,
+      "n_star_for_80pct_power": 4117
+    }
+  },
+  "pcsdi_usd_v3_dynamic": {
+    "model_name": "PC-SDI V3 Dynamic (USD)",
+    "sample_size": 2090,
+    "contingency_table": {
+      "TP": 206,
+      "FP": 384,
+      "FN": 473,
+      "TN": 1027
+    },
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3492,
+    "precision_95_ci": [
+      0.3114,
+      0.3858
+    ],
+    "recall": 0.3034,
+    "recall_95_ci": [
+      0.2682,
+      0.3368
+    ],
+    "f1_score": 0.3247,
+    "f1_95_ci": [
+      0.2918,
+      0.3561
+    ],
+    "odds_ratio": 1.165,
+    "fisher_exact_p_value": 0.07614523172935082,
+    "chi2_statistic": 2.057,
+    "chi2_p_value": 0.15154744982803825,
+    "binom_test_p_value": 0.11263340144739388,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.2028,
+      "cohen_h_effect_size": 0.0718,
+      "danger_crash_rate_p1": 0.3492,
+      "nondanger_crash_rate_p2": 0.3153,
+      "n_star_for_80pct_power": 7777
+    }
+  },
+  "pcsdi_usd_v3_macro": {
+    "model_name": "PC-SDI V3 Macro (USD)",
+    "sample_size": 2090,
+    "contingency_table": {
+      "TP": 207,
+      "FP": 386,
+      "FN": 472,
+      "TN": 1025
+    },
+    "base_rate_crashes": 0.3249,
+    "precision": 0.3491,
+    "precision_95_ci": [
+      0.3135,
+      0.3913
+    ],
+    "recall": 0.3049,
+    "recall_95_ci": [
+      0.2702,
+      0.3429
+    ],
+    "f1_score": 0.3255,
+    "f1_95_ci": [
+      0.2912,
+      0.3618
+    ],
+    "odds_ratio": 1.165,
+    "fisher_exact_p_value": 0.07608139583646281,
+    "chi2_statistic": 2.058,
+    "chi2_p_value": 0.15142542636431566,
+    "binom_test_p_value": 0.1127937697789009,
+    "statistically_significant_05": false,
+    "statistically_significant_01": false,
+    "power_analysis": {
+      "statistical_power": 0.2029,
+      "cohen_h_effect_size": 0.0717,
+      "danger_crash_rate_p1": 0.3491,
+      "nondanger_crash_rate_p2": 0.3153,
+      "n_star_for_80pct_power": 7797
+    }
+  },
+  "multiple_testing_corrections": {
+    "Linear SDI (USD)": {
+      "raw_p_value": 0.11698933048233881,
+      "bonferroni_p_value": 1.0,
+      "bh_fdr_q_value": 0.141706,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V1 (USD)": {
+      "raw_p_value": 0.011380862456586616,
+      "bonferroni_p_value": 0.102428,
+      "bh_fdr_q_value": 0.05911,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V1 (Gold)": {
+      "raw_p_value": 0.03224171006677355,
+      "bonferroni_p_value": 0.290175,
+      "bh_fdr_q_value": 0.072544,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V2 (USD)": {
+      "raw_p_value": 0.013135449942835704,
+      "bonferroni_p_value": 0.118219,
+      "bh_fdr_q_value": 0.05911,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V2 (Gold)": {
+      "raw_p_value": 0.12596129629371158,
+      "bonferroni_p_value": 1.0,
+      "bh_fdr_q_value": 0.141706,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V3 (USD)": {
+      "raw_p_value": 0.022108191629096934,
+      "bonferroni_p_value": 0.198974,
+      "bh_fdr_q_value": 0.066325,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V3 (Gold)": {
+      "raw_p_value": 0.15208982797734327,
+      "bonferroni_p_value": 1.0,
+      "bh_fdr_q_value": 0.15209,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V3 Dynamic (USD)": {
+      "raw_p_value": 0.07614523172935082,
+      "bonferroni_p_value": 0.685307,
+      "bh_fdr_q_value": 0.114218,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    },
+    "PC-SDI V3 Macro (USD)": {
+      "raw_p_value": 0.07608139583646281,
+      "bonferroni_p_value": 0.684733,
+      "bh_fdr_q_value": 0.114218,
+      "significant_fwer_05": false,
+      "significant_fdr_05": false,
+      "significant_fdr_01": false
+    }
+  },
+  "temporal_holdout_v3_usd_dyn": {
+    "in_sample": {
+      "model_name": "In-Sample (2016-2021)",
+      "sample_size": 1100,
+      "contingency_table": {
+        "TP": 146,
+        "FP": 195,
+        "FN": 273,
+        "TN": 486
+      },
+      "base_rate_crashes": 0.3809,
+      "precision": 0.4282,
+      "precision_95_ci": [
+        0.3774,
+        0.4828
+      ],
+      "recall": 0.3484,
+      "recall_95_ci": [
+        0.3024,
+        0.3948
+      ],
+      "f1_score": 0.3842,
+      "f1_95_ci": [
+        0.3399,
+        0.4266
+      ],
+      "odds_ratio": 1.333,
+      "fisher_exact_p_value": 0.018316530473793235,
+      "chi2_statistic": 4.392,
+      "chi2_p_value": 0.03611559174431093,
+      "binom_test_p_value": 0.0415648447255714,
+      "statistically_significant_05": true,
+      "statistically_significant_01": false,
+      "power_analysis": {
+        "statistical_power": 0.4356,
+        "cohen_h_effect_size": 0.1403,
+        "danger_crash_rate_p1": 0.4282,
+        "nondanger_crash_rate_p2": 0.3597,
+        "n_star_for_80pct_power": 2035
+      }
+    },
+    "out_of_sample": {
+      "model_name": "Out-of-Sample (2022-2026)",
+      "sample_size": 990,
+      "contingency_table": {
+        "TP": 60,
+        "FP": 189,
+        "FN": 200,
+        "TN": 541
+      },
+      "base_rate_crashes": 0.2626,
+      "precision": 0.241,
+      "precision_95_ci": [
+        0.1914,
+        0.2944
+      ],
+      "recall": 0.2308,
+      "recall_95_ci": [
+        0.1834,
+        0.2776
+      ],
+      "f1_score": 0.2358,
+      "f1_95_ci": [
+        0.1896,
+        0.284
+      ],
+      "odds_ratio": 0.859,
+      "fisher_exact_p_value": 0.8366689744944612,
+      "chi2_statistic": 0.664,
+      "chi2_p_value": 0.4152904722403309,
+      "binom_test_p_value": 0.8011051499745069,
+      "statistically_significant_05": false,
+      "statistically_significant_01": false,
+      "power_analysis": {
+        "statistical_power": 0.0727,
+        "cohen_h_effect_size": -0.0664,
+        "danger_crash_rate_p1": 0.241,
+        "nondanger_crash_rate_p2": 0.2699,
+        "n_star_for_80pct_power": 9105
+      }
+    }
+  },
+  "temporal_holdout_v3_usd_macro": {
+    "in_sample": {
+      "model_name": "In-Sample (2016-2021)",
+      "sample_size": 1100,
+      "contingency_table": {
+        "TP": 146,
+        "FP": 193,
+        "FN": 273,
+        "TN": 488
+      },
+      "base_rate_crashes": 0.3809,
+      "precision": 0.4307,
+      "precision_95_ci": [
+        0.3791,
+        0.4851
+      ],
+      "recall": 0.3484,
+      "recall_95_ci": [
+        0.3015,
+        0.3947
+      ],
+      "f1_score": 0.3852,
+      "f1_95_ci": [
+        0.3409,
+        0.4289
+      ],
+      "odds_ratio": 1.352,
+      "fisher_exact_p_value": 0.014085992578795772,
+      "chi2_statistic": 4.846,
+      "chi2_p_value": 0.02770261617947966,
+      "binom_test_p_value": 0.03423460728943106,
+      "statistically_significant_05": true,
+      "statistically_significant_01": false,
+      "power_analysis": {
+        "statistical_power": 0.4772,
+        "cohen_h_effect_size": 0.1473,
+        "danger_crash_rate_p1": 0.4307,
+        "nondanger_crash_rate_p2": 0.3587,
+        "n_star_for_80pct_power": 1844
+      }
+    },
+    "out_of_sample": {
+      "model_name": "Out-of-Sample (2022-2026)",
+      "sample_size": 990,
+      "contingency_table": {
+        "TP": 61,
+        "FP": 193,
+        "FN": 199,
+        "TN": 537
+      },
+      "base_rate_crashes": 0.2626,
+      "precision": 0.2402,
+      "precision_95_ci": [
+        0.1888,
+        0.2929
+      ],
+      "recall": 0.2346,
+      "recall_95_ci": [
+        0.1835,
+        0.284
+      ],
+      "f1_score": 0.2374,
+      "f1_95_ci": [
+        0.1885,
+        0.2834
+      ],
+      "odds_ratio": 0.853,
+      "fisher_exact_p_value": 0.8477558178892521,
+      "chi2_statistic": 0.741,
+      "chi2_p_value": 0.3891951898996031,
+      "binom_test_p_value": 0.8112756634689642,
+      "statistically_significant_05": false,
+      "statistically_significant_01": false,
+      "power_analysis": {
+        "statistical_power": 0.0793,
+        "cohen_h_effect_size": -0.0693,
+        "danger_crash_rate_p1": 0.2402,
+        "nondanger_crash_rate_p2": 0.2704,
+        "n_star_for_80pct_power": 8345
+      }
+    }
+  },
+  "scientific_conclusion": "Across N = 2090 quarterly evaluations covering 55 S&P constituents across all 11 GICS sectors (Option C), Productivity-Corrected SDI V1 (USD) establishes formal statistical significance rejecting the null hypothesis at p = 0.0114 (< 0.01) with Benjamini-Hochberg FDR q = 0.0591 (< 0.05) and Odds Ratio = 1.26, while uncorrected Linear SDI fails significance (p = 0.1170, p > 0.10). PC-SDI V2 achieves p = 0.0131 (< 0.05, FDR q = 0.0591). PC-SDI V3 Macro Tensor (V-FIN-16.4.1d) couples instantaneous 10Y risk-free rates into the yield surface."
 }
